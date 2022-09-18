@@ -1,7 +1,5 @@
 # 💡 Quickstart
 
-
-
 {% hint style="info" %}
 In this section, we will show you how to set up a simple project to monitor an ERC20 contract.&#x20;
 {% endhint %}
