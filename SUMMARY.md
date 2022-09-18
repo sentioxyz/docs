@@ -1,22 +1,18 @@
 # Table of contents
 
-* [👋 Welcome to A Product](README.md)
-
-## Overview
-
-* [💡 What we do](overview/what-we-do.md)
-* [✨ Our Features](overview/our-features.md)
+* [👋 Welcome to Sentio](README.md)
+* [💡 Quickstart](quickstart.md)
 
 ## Product Guides
 
 * [📪 Making a post](product-guides/making-a-post.md)
 * [📎 Understanding Projects](product-guides/understanding-projects.md)
 
-## Fundamentals
+## Develop Guides
 
-* [🛠 Getting set up](fundamentals/getting-set-up/README.md)
-  * [📝 Setting permissions](fundamentals/getting-set-up/setting-permissions.md)
-  * [🧑 Inviting Members](fundamentals/getting-set-up/inviting-members.md)
+* [🛠 Getting set up](develop-guides/getting-set-up/README.md)
+  * [📝 Setting permissions](develop-guides/getting-set-up/setting-permissions.md)
+  * [🧑 Inviting Members](develop-guides/getting-set-up/inviting-members.md)
 
 ## Use Cases
 
