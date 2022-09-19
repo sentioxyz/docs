@@ -28,8 +28,8 @@ Here are a couple of example overviews from products with really great docs:
 
 We've put together some helpful guides for you to get setup with our product quickly and easily.
 
-{% content-ref url="develop-guides/sdk-guide/" %}
-[sdk-guide](develop-guides/sdk-guide/)
+{% content-ref url="develop-guides/sdk-reference/" %}
+[sdk-reference](develop-guides/sdk-reference/)
 {% endcontent-ref %}
 
 {% content-ref url="product-guides/sharing.md" %}
