@@ -28,14 +28,14 @@ Here are a couple of example overviews from products with really great docs:
 
 We've put together some helpful guides for you to get setup with our product quickly and easily.
 
-{% content-ref url="develop-guides/getting-set-up/" %}
-[getting-set-up](develop-guides/getting-set-up/)
+{% content-ref url="develop-guides/sdk-reference/" %}
+[sdk-reference](develop-guides/sdk-reference/)
 {% endcontent-ref %}
 
-{% content-ref url="develop-guides/getting-set-up/setting-permissions.md" %}
-[setting-permissions.md](develop-guides/getting-set-up/setting-permissions.md)
+{% content-ref url="product-guides/sharing.md" %}
+[sharing.md](product-guides/sharing.md)
 {% endcontent-ref %}
 
-{% content-ref url="develop-guides/getting-set-up/inviting-members.md" %}
-[inviting-members.md](develop-guides/getting-set-up/inviting-members.md)
+{% content-ref url="develop-guides/cli-reference.md" %}
+[cli-reference.md](develop-guides/cli-reference.md)
 {% endcontent-ref %}

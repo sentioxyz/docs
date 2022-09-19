@@ -5,16 +5,15 @@
 
 ## Product Guides
 
-* [📪 Making a post](product-guides/making-a-post.md)
-* [📎 Understanding Projects](product-guides/understanding-projects.md)
+* [💨 Examine Metrics](product-guides/examine-metrics.md)
+* [📊 Making Dashboard](product-guides/making-dashboard.md)
+* [⏰ Create Alert](product-guides/create-alert.md)
+* [📝 Sharing](product-guides/sharing.md)
 
 ## Develop Guides
 
-* [🛠 Getting set up](develop-guides/getting-set-up/README.md)
-  * [📝 Setting permissions](develop-guides/getting-set-up/setting-permissions.md)
-  * [🧑 Inviting Members](develop-guides/getting-set-up/inviting-members.md)
-
-## Use Cases
-
-* [🎨 For Designers](use-cases/for-designers.md)
-* [🖥 For Developers](use-cases/for-developers.md)
+* [🖥 CLI Reference](develop-guides/cli-reference.md)
+* [🛠 SDK Reference](develop-guides/sdk-reference/README.md)
+  * [Basic](develop-guides/sdk-reference/basic.md)
+  * [Handle Big Numbers](develop-guides/sdk-reference/handle-big-numbers.md)
+  * [Write Test](develop-guides/sdk-reference/write-test.md)

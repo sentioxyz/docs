@@ -1,4 +1,4 @@
-# 📪 Making a post
+# 📊 Making Dashboard
 
 ## Step 1 - Start journalling
 
