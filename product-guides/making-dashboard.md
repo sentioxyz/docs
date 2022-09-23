@@ -1,13 +1,35 @@
 # 📊 Making Dashboard
 
-## Step 1 - Start journalling
+### Graphing <a href="#graphing" id="graphing"></a>
 
-Donec sed odio dui. Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla. Maecenas sed diam eget risus varius blandit sit amet non magna. Aenean lacinia bibendum nulla sed consectetur.
+Use the query editor to customize the graph displayed on the Metrics Explorer page.
 
-![](https://images.unsplash.com/photo-1522881451255-f59ad836fdfb?crop=entropy\&cs=tinysrgb\&fm=jpg\&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHw0fHx3cml0ZXxlbnwwfHx8fDE2NjA1ODc5Nzk\&ixlib=rb-1.2.1\&q=80)
+You can specify the time frame in the top right corner of the page. The default is **Past 3 Months**.
 
-## Step 2 - Create Post
+Metrics that are not reported in the last 24 hours do not appear in the query editor. You can add these metrics to your graphs manually by entering the metric name or full query.
 
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullamcorper nulla non metus auctor fringilla. Nullam quis risus eget urna mollis ornare vel eu leo. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+#### Scope <a href="#scope" id="scope"></a>
 
-![](https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?crop=entropy\&cs=tinysrgb\&fm=jpg\&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHw2fHxwb3N0fGVufDB8fHx8MTY2MDU4ODAzMg\&ixlib=rb-1.2.1\&q=80)
+Define a filtering scope with the **from** text box by selecting or searching for tag values. For example, you can use the **from** text box to filter metric values from a specific address, contract or any other tags defined in the processor
+
+#### Space aggregation <a href="#space-aggregation" id="space-aggregation"></a>
+
+Define the [space aggregation](https://docs.datadoghq.com/metrics/introduction/#space-aggregation) used to combine the values of the series of a metric. For example, you can use it to sum up the withdrawal amount of different pool addresses.
+
+The possible options are:
+
+* Average of reported values (default)
+* Max of reported values
+* Min of reported values
+* Sum of reported values
+* Count of reported values
+
+#### Functions <a href="#functions" id="functions"></a>
+
+You can optionally add functions to your query using the function button. Not all functions are available for all metric types.
+
+#### Export <a href="#export" id="export"></a>
+
+Export your graph to a dashboard or notebook with the buttons at the top right. You can also use **Split Graph in Notebook** to view the data split into individual graphs by things like region, service, or environment.
+
+##
