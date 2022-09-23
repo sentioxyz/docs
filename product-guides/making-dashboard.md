@@ -8,7 +8,7 @@ You can specify the time frame in the top right corner of the page. The default 
 
 Metrics that are not reported in the last 24 hours do not appear in the query editor. You can manually add these metrics to your graphs by entering the metric name or full query.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 #### Scope <a href="#scope" id="scope"></a>
 
@@ -30,6 +30,6 @@ The possible options are:
 
 You can optionally add functions to your query using the function button. Not all functions are available for all metric types.
 
+#### Formulas <a href="#functions" id="functions"></a>
 
-
-##
+You can combine two or more metrics by using a formula. For example, you can calculate the net mint amount of a smart contract by subtracting the burn amount from the mint amount. You do this by first adding two queries of the burn and mint metrics, and then adding a formula with the expression `b - a`.

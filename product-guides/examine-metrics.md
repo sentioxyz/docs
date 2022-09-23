@@ -6,7 +6,7 @@ After the processor is successfully uploaded, you can first check the status of 
 
 You can also examine the status of the collected metrics on the Metrics tab.&#x20;
 
-![](<../.gitbook/assets/image (1).png>)
+![](<../.gitbook/assets/image (1) (2).png>)
 
 Clicking on each metric gives you a more detailed view of the metric, including tags and visualization of the metrics.
 
