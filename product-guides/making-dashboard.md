@@ -8,7 +8,7 @@ You can specify the time frame in the top right corner of the page. The default 
 
 Metrics that are not reported in the last 24 hours do not appear in the query editor. You can manually add these metrics to your graphs by entering the metric name or full query.
 
-![](../.gitbook/assets/image.png)
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 #### Scope <a href="#scope" id="scope"></a>
 
