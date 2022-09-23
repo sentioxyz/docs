@@ -16,7 +16,7 @@
 * [🛠 SDK Guide](develop-guides/sdk-reference/README.md)
   * [Processor Basic](develop-guides/sdk-reference/basic.md)
   * [Supported Networks](develop-guides/sdk-guide/supported-networks.md)
-  * [Metric Types](develop-guides/sdk-guide/metric-types.md)
+  * [Metrics](develop-guides/sdk-guide/metrics.md)
   * [Dynamic Processor Creation](develop-guides/sdk-guide/dynamic-processor-creation.md)
   * [Handle Big Numbers](develop-guides/sdk-reference/handle-big-numbers.md)
   * [Write Test](develop-guides/sdk-reference/write-test.md)
