@@ -7,4 +7,6 @@ Currently, we support users to submit two types of metric data
 
 A metric name could contain characters, digits or `_`, any other characters will be converted to `_`. It will also be truncated to 100 characters.
 
+Labels is a map of key to string values, the key name follow the same rule of metric name, and any reserved keywords will be appended with `_` .
+
 &#x20;
