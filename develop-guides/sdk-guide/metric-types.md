@@ -9,4 +9,28 @@ A metric name could contain characters, digits or `_`, any other characters will
 
 Labels is a map of key to string values, the key name follow the same rule of metric name, and any reserved keywords will be appended with `_` .
 
-&#x20;
+The simplest way to submit a metric is call `ctx.meter` inside handler function, e.g.&#x20;
+
+```
+async function handleTransfer(event: TransferEvent, ctx: ERC20Context) {
+  ctx.meter.Counter('token').add(event.args.value)
+}
+```
+
+&#x20;But sometimes you want to give the metric more information, or want to share the same counter/gauge in different handle functions, then you can first declare your counter
+
+```
+const tokenCount = new Gauge(
+  'token_count', 
+  { description: 'token transferred to my wallet',
+    unit: 'eth' 
+  })
+```
+
+and then use them as&#x20;
+
+```
+async function handleTransfer(event: TransferEvent, ctx: ERC20Context) {
+  tokenCount.add(ctx, event.args.value)
+}
+```
