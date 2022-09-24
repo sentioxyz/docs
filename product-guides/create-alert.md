@@ -4,7 +4,7 @@
 
 Alerts can be created for a query or formula to notify when a certain condition is met. For example, you can use Alerts to notify your team when a large mint event is emitted or a large discrepancy is detected.&#x20;
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ### Define Query or Formula
 

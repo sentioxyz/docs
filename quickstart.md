@@ -18,7 +18,7 @@ By default, Sentio will create an empty "default" project for you, if you want t
 
 Click the profile page on the left bottom corner and then create an API key.
 
-<figure><img src=".gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 4: Login with Your API Key
 
