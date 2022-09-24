@@ -17,10 +17,10 @@ async function handleTransfer(event: TransferEvent, ctx: ERC20Context) {
 }
 ```
 
-&#x20;But sometimes you want to give the metric more information, or want to share the same counter/gauge in different handle functions, then you can first declare your counter
+&#x20;But sometimes you want to give the metric more information, or want to share the same counter/gauge in different handle functions, then you can first declare your counter with an optional descriptor.
 
 ```
-const tokenCount = new Gauge(
+const tokenCount = new Counter(
   'token_count', 
   { description: 'token transferred to my wallet',
     unit: 'eth' 
