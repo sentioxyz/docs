@@ -1,21 +1,43 @@
 # ⏰ Create Alert
 
-## How Projects work
+## Alerts
 
-Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Maecenas sed diam eget risus varius blandit sit amet non magna. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus.
+Alerts can be created for a query or formula to notify when a certain condition is met. For example, you can use Alerts to notify your team when a large mint event is emitted or a large discrepancy is detected.&#x20;
 
-### The Basics
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+### Define Query or Formula
 
-Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+The process of defining the query or formula to be monitored is very similar to creating a dashboard. The main difference is for each alert a single series needs to be produced as the result.
 
-### Creating a Project
+### Conditions
 
-Nullam quis risus eget urna mollis ornare vel eu leo. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Praesent commodo cursus magna, vel scelerisque nisl consectetur et.
+The next step is to specify what condition needs to be met for the result above to trigger the alert. Currently, Sentio supports the following conditions:
 
-### Organizing your Projects
+`greater than`
 
-Sed posuere consectetur est at lobortis. Curabitur blandit tempus porttitor. Donec ullamcorper nulla non metus auctor fringilla. Donec sed odio dui.
+`greater or equal`
 
-Curabitur blandit tempus porttitor. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+`less than`
+
+`less or equal`
+
+`not equal`
+
+`equal`
+
+### Notification Channel and Message
+
+Next, you can specify the title and message when an alert is triggered. You can also specify the channel via which the notification is sent. Currently, Sentio supports the following channels:
+
+`Slack`
+
+`Email`
+
+`Webhook`
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+You will need to set up these channels in the N`otification channels` sub tab before using them when creating the alert.
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>

@@ -2,7 +2,7 @@
 
 After the processor is successfully uploaded, you can first check the status of the processor on Datasource tab. Make sure the status is shown as processing. Also, take notice of the block number each chain is processed at.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can also examine the status of the collected metrics on the Metrics tab.&#x20;
 
