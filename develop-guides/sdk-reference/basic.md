@@ -7,13 +7,13 @@ A Sentio processor could handle multiple contracts on multiple chains. To import
 ```
 import { ERC20Processor } from '@sentio/sdk/lib/builtin/erc20'
 
-ERC20Processor.bind({ address: '0x1e4ede388cbc9f4b5c79681b7f94d36a11abebc9', network: 5 })
+ERC20Processor.bind({ address: '0x1e4ede388cbc9f4b5c79681b7f94d36a11abebc9', network: 1 })
   .onEventTransfer((event, ctx) => {
     ctx.meter.Counter('token').add(event.args.value)
   }
 )
 ```
 
-The above code first bind ERC20 contract processor to a specific address on the Goerli network (specify with `network=5` , can be omit if just using Ethereum mainnet). Then it registers a function that handles `Transfer` event, for each of these events, we add the transfer value to a metric named `token`.
+The above code first bind ERC20 contract processor to a specific address on the ethereum mainnet (specify with `network=1` , can be omitted if just using Ethereum mainnet). Then it registers a function that handles `Transfer` event, for each of these events, we add the transfer value to a metric named `token`.
 
 If you bring your own ABI, our code gen will automatically generate all event handler registration method in a typesafe way as well.
