@@ -20,42 +20,44 @@ Click the profile page on the left bottom corner and then create an API key.
 
 <figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
-## Step 4: Login with Your API Key
+## Step 4: Login with API Key
 
-As will be mentioned in the last step, you could copy and paste the login command, this will only need to be run once, you don't need to run this for your next projects.
+Copy and paste the login command from Step 3 on your command line. Note that this only needs to be run once unless the API key is deleted in the future.
 
 ```
 npx -p @sentio/sdk sentio login --api-key $YOUR_API_KEY
 ```
 
-Also make sure you have Node.js installed in your local environment.
+You need to install Node.js for the command to run.
 
-## Step 5: Create Your Processor
+## Step 5: Create Processor Project
 
-You can simply run the following command to create your processor which will submit metrics into your project.&#x20;
+You can simply run the following command to create a processor project with the name `default`
 
 ```
 npx -p @sentio/sdk sentio create
 ```
 
-If you have specified a different project name other than "default", then run following instead:
+You can also give the processor project a name by using the following command
 
 ```
 npx -p @sentio/sdk sentio create $PROJECT_NAME
 ```
 
-## Step 6: Upload your Processor
+The commands will generate a sample project based on X2Y2 token. This should be a good starting point to write your own processor logic. For more information on how to write a processor you can refer to [basic.md](develop-guides/sdk-reference/basic.md "mention")
 
-The sample project includes a simple processor that tracks ERC20 mints event of X2Y2 token. To upload and run it, run
+## Step 6: Upload Processor
+
+You can build and upload the processor project by using the following command
 
 ```
 yarn install
 yarn sentio upload
 ```
 
-## End: verify your data
+## End: Verify Metrics
 
 The command line should tell you the processor has been uploaded correctly and give you a link to check the status of the processor, such as what chains this processor is running, how many blocks have it processed, the version, etc. &#x20;
 
-You can go to the metrics page to check the metrics that are submitted to the projects. Checkout [Broken link](broken-reference "mention") for more details.
+You can go to the metrics page to check the metrics submitted to the project. Checkout  [examine-metrics.md](product-guides/examine-metrics.md "mention")for more details.
 
