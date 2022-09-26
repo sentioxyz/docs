@@ -1,29 +1,51 @@
 # 🖥 CLI Reference
 
-{% hint style="info" %}
-**GitBook tip:** Try out a range of different content types to keep folks engaged and interested in each feature, some content types work for different chunks of information
-{% endhint %}
+Sentio provides a command line tool to easily create and upload processors for your project. To start using it, you need to have [Node.js](https://nodejs.org/en/download/) environment. Then you could run&#x20;
 
-<details>
+```
+npx -y -p @sentio/sdk sentio --help
+```
 
-<summary>As a Guest User</summary>
+to see all available commands.&#x20;
 
+## sentio login
 
+Login into sentio for your command line. You need first to create your API key.
 
-</details>
+```
+npx -y -p @sentio/sdk sentio login --api-key=<api-key>
+```
 
-<details>
+## sentio create
 
-<summary>As an Editor</summary>
+Create a sentio processor
 
+```
+npx -y -p @sentio/sdk sentio create -n <project name>
+```
 
+## sentio upload
 
-</details>
+Build and upload your processor to your project.&#x20;
 
-<details>
+```
+npx -y -p @sentio/sdk sentio upload
+```
 
-<summary>As an Admin</summary>
+## sentio gen
 
+Generate type binding into `src/types` according to ABIs that in `abis` folder.
 
+```
+npx -y -p @sentio/sdk sentio gen
+```
 
-</details>
+## sentio build
+
+Generate code and then build the processor into `dist` folder.
+
+```
+npx -y -p @sentio/sdk sentio build
+```
+
+##
