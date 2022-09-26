@@ -9,9 +9,9 @@ When you create a processor through the command line, it will automatically gene
   })
 ```
 
-It simply starts the processor, checks if there is any basic error that failed the processor declaration.&#x20;
+It simply starts the processor and checks if there is any basic error that failed the processor declaration.&#x20;
 
-To check the logic of your handler function, we can use `testLog` , `testBlock`, `testTrace` , to send events to your processor. In the code we generated for your contract, there are also some test utils that helps you generate mocked data. e.g. we want to mock a transfer event and send it to the processor and verify the result, we could do:
+To check the logic of your handler function, we can use `testLog` , `testBlock`, `testTrace` , to send events to your processor. In the code we generated for your contract, there are also some test utils that help you generate mocked data. Below is a test example that mocks a transfer event, sends it to the processor, and verifies the result :
 
 ```
 import { TestProcessorServer, firstCounterValue } from '@sentio/sdk/lib/test'
