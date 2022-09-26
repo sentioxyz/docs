@@ -1,4 +1,4 @@
-# 📊 Create Dashboard
+# 📊 Making Dashboard
 
 ### Graphing <a href="#graphing" id="graphing"></a>
 

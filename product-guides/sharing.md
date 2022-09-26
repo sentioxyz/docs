@@ -1,4 +1,4 @@
-# 📝 Permission and Sharing
+# 📝 Sharing
 
 ## Permission levels
 
@@ -26,4 +26,4 @@ There are two types of visibility for a project, Public access or Private.&#x20;
 
 <figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-You can add Collaborators to your project in the `Collaborators` sub tab by adding either their email or username. Once a user is added as a collaborator, the shared project will also appear in their project selector.
+You can add `Collaborators` to your project in the `Collaborators` sub tab by adding either their email or username. Once a user is added as a collaborator, the shared project will also appear in their project selector.
