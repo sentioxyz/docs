@@ -6,9 +6,9 @@
 ## Product Guides
 
 * [💨 Examine Metrics](product-guides/examine-metrics.md)
-* [📊 Create Dashboard](product-guides/create-dashboard.md)
+* [📊 Create Dashboard](product-guides/making-dashboard.md)
 * [⏰ Create Alert](product-guides/create-alert.md)
-* [📝 Permission and Sharing](product-guides/permission-and-sharing.md)
+* [📝 Permission and Sharing](product-guides/sharing.md)
 
 ## Develop Guides
 

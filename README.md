@@ -18,8 +18,8 @@ We've put together some helpful guides for you to get set up with our product qu
 [sdk-reference](develop-guides/sdk-reference/)
 {% endcontent-ref %}
 
-{% content-ref url="product-guides/permission-and-sharing.md" %}
-[permission-and-sharing.md](product-guides/permission-and-sharing.md)
+{% content-ref url="product-guides/sharing.md" %}
+[sharing.md](product-guides/sharing.md)
 {% endcontent-ref %}
 
 {% content-ref url="develop-guides/cli-reference.md" %}
