@@ -2,7 +2,7 @@
 
 When you create a processor through the command line, it will automatically generate a basic jest test for you.
 
-```
+```typescript
   test('has valid config', async () => {
     const config = await service.getConfig({})
     expect(config.contractConfigs.length > 0).toBeTruthy()
@@ -13,7 +13,7 @@ It simply starts the processor and checks if there is any basic error that faile
 
 To check the logic of your handler function, we can use `testLog` , `testBlock`, `testTrace` , to send events to your processor. In the code we generated for your contract, there are also some test utils that help you generate mocked data. Below is a test example that mocks a transfer event, sends it to the processor, and verifies the result :
 
-```
+```typescript
 import { TestProcessorServer, firstCounterValue } from '@sentio/sdk/lib/test'
 import { mockTransferLog } from '@sentio/sdk/lib/builtin/erc20/test-utils'
 import { BigNumber } from 'ethers'

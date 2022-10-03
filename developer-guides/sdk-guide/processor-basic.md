@@ -4,7 +4,7 @@ The core concept of a Sentio project is Processor. A processor is usually a type
 
 A Sentio processor could handle multiple contracts on multiple chains. To import a contract, simple copy the contract's ABI JSON file into `abis` directory. Run `sentio build` or `sentio gen` will generate contract processor files into the `src/types` directory. Then you can use the generated contract processor class to bind to an address, and add event/call/block handler, the SDK also comes up with several built-in contract processors, a minimal processor example with built-in ERC20 processor is:
 
-```
+```typescript
 import { ERC20Processor } from '@sentio/sdk/lib/builtin/erc20'
 
 ERC20Processor.bind({ address: '0x1e4ede388cbc9f4b5c79681b7f94d36a11abebc9', network: 1 })

@@ -4,7 +4,7 @@ The basic processor use case is static bind a contract processor with a contract
 
 &#x20;Suppose we have  a factory contract named `MyFactory` which creates `MyPool` contract and submit a `PoolCreated` event, then you can write your processor logic as following
 
-```
+```typescript
 import { MyPoolProcessorTemplate } from './types/mypool'
 import { MyFactoryProcessor } from './types/myfactory'
 

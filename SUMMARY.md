@@ -1,22 +1,33 @@
 # Table of contents
 
 * [👋 Welcome to Sentio](README.md)
+* [🔗 Setup](setup.md)
 * [💡 Quickstart](quickstart.md)
 
-## Product Guides
+## UI Guides
 
-* [💨 Examine Metrics](product-guides/examine-metrics.md)
-* [📊 Create Dashboard](product-guides/making-dashboard.md)
-* [⏰ Create Alert](product-guides/create-alert.md)
-* [💎 Supported Networks](product-guides/supported-networks.md)
-* [📝 Permission and Sharing](product-guides/sharing.md)
+* [📊 Create Dashboard](ui-guides/create-dashboard.md)
+* [💨 Examine Metrics](ui-guides/examine-metrics.md)
+* [⏰ Create Alert](ui-guides/create-alert.md)
+* [💎 Supported Networks](ui-guides/supported-networks.md)
+* [📝 Permission and Sharing](ui-guides/permission-and-sharing.md)
 
-## Develop Guides
+## Developer Guides
 
-* [🖥 CLI Reference](develop-guides/cli-reference.md)
-* [🛠 SDK Guide](develop-guides/sdk-reference/README.md)
-  * [Processor Basic](develop-guides/sdk-reference/basic.md)
-  * [Metrics](develop-guides/sdk-guide/metric-types.md)
-  * [Dynamic Processor Creation](develop-guides/sdk-guide/dynamic-processor-creation.md)
-  * [Handle Big Numbers](develop-guides/sdk-reference/handle-big-numbers.md)
-  * [Write Test](develop-guides/sdk-reference/write-test.md)
+* [🖥 CLI Reference](developer-guides/cli-reference.md)
+* [🛠 SDK Guide](developer-guides/sdk-guide/README.md)
+  * [Processor Basic](developer-guides/sdk-guide/processor-basic.md)
+  * [Metrics](developer-guides/sdk-guide/metrics.md)
+  * [Dynamic Processor Creation](developer-guides/sdk-guide/dynamic-processor-creation.md)
+  * [Handle Big Numbers](developer-guides/sdk-guide/handle-big-numbers.md)
+  * [Write Test](developer-guides/sdk-guide/write-test.md)
+
+## References
+
+* [🖥 Concepts](references/concepts.md)
+* [🛠 How Sentio Works](references/how-sentio-works.md)
+
+## FAQ
+
+* [🖥 Updating processors](faq/updating-processors.md)
+* [🛠 Understanding errors](faq/understanding-errors.md)

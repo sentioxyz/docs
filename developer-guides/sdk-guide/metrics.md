@@ -11,7 +11,7 @@ A metric name could contain characters, digits or `_`, any other characters will
 
 The simplest way to submit a metric is to call `ctx.meter` inside handler function, e.g.&#x20;
 
-```
+```typescript
 async function handleTransfer(event: TransferEvent, ctx: ERC20Context) {
   ctx.meter.Counter('token').add(event.args.value)
 }
@@ -19,7 +19,7 @@ async function handleTransfer(event: TransferEvent, ctx: ERC20Context) {
 
 &#x20;But sometimes you want to give the metric more informatio, or want to share the same counter/gauge in different handle functions, then you can first declare your counter with an optional descriptor.
 
-```
+```typescript
 const tokenCount = new Counter(
   'token_count', 
   { description: 'token transferred to my wallet',
@@ -29,7 +29,7 @@ const tokenCount = new Counter(
 
 and then use them as&#x20;
 
-```
+```typescript
 async function handleTransfer(event: TransferEvent, ctx: ERC20Context) {
   tokenCount.add(ctx, event.args.value)
 }

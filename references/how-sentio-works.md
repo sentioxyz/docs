@@ -1,0 +1,2 @@
+# 🛠 How Sentio Works
+

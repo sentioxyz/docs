@@ -2,9 +2,9 @@
 
 ## Overview
 
-Sentio is an observability platform for smart contracts. The supported networks are listed [here](product-guides/supported-networks.md).
+Sentio is an observability platform for smart contracts (both **EVM** and **non-EVM** chains). The supported networks are listed [here](ui-guides/supported-networks.md).
 
-With Sentio, you can collect on-chain data and emit customized metrics/logs/alerts centered around your smart contracts through our easy-to-use and flexible processing engine, and build real-time dashboards and alerts to visualize and monitor your most mission-critical metrics.
+With Sentio, you can collect on-chain data and emit customized metrics/logs/alerts centered around your smart contracts through our easy-to-use and flexible processing engine, and build **real-time dashboards** and **alerts** to visualize and monitor your most mission-critical metrics.
 
 ## Get Started
 
@@ -14,14 +14,14 @@ We've put together some helpful guides for you to get set up with our product qu
 [quickstart.md](quickstart.md)
 {% endcontent-ref %}
 
-{% content-ref url="develop-guides/sdk-reference/" %}
-[sdk-reference](develop-guides/sdk-reference/)
+{% content-ref url="developer-guides/sdk-guide/" %}
+[sdk-guide](developer-guides/sdk-guide/)
 {% endcontent-ref %}
 
-{% content-ref url="product-guides/sharing.md" %}
-[sharing.md](product-guides/sharing.md)
+{% content-ref url="ui-guides/permission-and-sharing.md" %}
+[permission-and-sharing.md](ui-guides/permission-and-sharing.md)
 {% endcontent-ref %}
 
-{% content-ref url="develop-guides/cli-reference.md" %}
-[cli-reference.md](develop-guides/cli-reference.md)
+{% content-ref url="developer-guides/cli-reference.md" %}
+[cli-reference.md](developer-guides/cli-reference.md)
 {% endcontent-ref %}
