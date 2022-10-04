@@ -13,7 +13,8 @@
     * [Handling factory contract](how-to-guides/submitting-metrics/evm-chains/handling-factory-contract.md)
   * [Solana](how-to-guides/submitting-metrics/solana.md)
   * [Aptos](how-to-guides/submitting-metrics/aptos.md)
-* [➡ View metrics and creating Dashboard](how-to-guides/view-metrics-and-creating-dashboard.md)
+* [➡ View metrics](how-to-guides/view-metrics.md)
+* [➡ Build dashboards](how-to-guides/build-dashboards.md)
 * [➡ Creating alerts](how-to-guides/creating-alerts.md)
 * [➡ Share your project](how-to-guides/share-your-project.md)
 
@@ -31,6 +32,11 @@
 
 * [✅ How Sentio Works](references/how-sentio-works.md)
 * [🖥 Concepts](references/concepts/README.md)
+  * [⛓ Chain concepts](references/concepts/chain-concepts/README.md)
+    * [EVM](references/concepts/chain-concepts/evm.md)
+    * [Aptos](references/concepts/chain-concepts/aptos.md)
+    * [Solana](references/concepts/chain-concepts/solana.md)
+  * [⌨ Processor](references/concepts/processor.md)
   * [💨 Metrics](references/concepts/metrics.md)
   * [📐 Functions and Formulas](references/concepts/functions-and-formulas.md)
   * [📊 Dashboard](references/concepts/dashboard.md)

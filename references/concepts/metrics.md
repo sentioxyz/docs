@@ -1,16 +1,11 @@
 # 💨 Metrics
 
-After the processor is successfully uploaded, you can first check the status of the processor on Datasource tab. Make sure the status is shown as processing. Also, take notice of the block number each chain is processed at.
+Currently, we support users to submit two types of metric data
 
-<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+## Counter&#x20;
 
-You can also examine the status of the collected metrics on the Metrics tab.&#x20;
+Counter represents the cumulative value at a given time, each data point reported is a delta value (**add or subtract**) to the last value. Usually used to record e.g the total number of tokens transferred.
 
-<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+## Gauge
 
-Clicking on each metric gives you a more detailed view of the metric, including tags and visualization of the metrics.
-
-&#x20;&#x20;
-
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
-
+Gauge represents a sampled value at a given time, each data point reported is the current value. Usually used to record e.g. balance or total Supply.
