@@ -1,4 +1,4 @@
-# 📝 Permission and Sharing
+# 🤝 Permission and Sharing
 
 ## Permission levels
 

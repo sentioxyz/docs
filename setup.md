@@ -21,7 +21,7 @@ Click the profile page on the **left bottom corner** and then create an [API key
 Copy the command given and execute in any terminal. Then you are all set.
 
 {% hint style="warning" %}
-Note, Please replace the API key by your own API key.
+Note, Please replace with your own API key.
 {% endhint %}
 
 ```bash

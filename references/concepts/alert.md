@@ -1,10 +1,10 @@
-# ⏰ Create Alert
+# ⏰ Alert
 
 ## Alerts
 
 Alerts can be created for a query or formula to notify when a certain condition is met. For example, you can use Alerts to notify your team when a large mint event is emitted or a large discrepancy is detected.&#x20;
 
-<figure><img src="../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 ### Define Query or Formula
 
@@ -36,8 +36,8 @@ Next, you can specify the title and message when an alert is triggered. You can 
 
 `Webhook`
 
-<figure><img src="../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 You will need to set up these channels in the N`otification channels` sub tab before using them when creating the alert.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>

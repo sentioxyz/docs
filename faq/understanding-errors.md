@@ -1,2 +1,2 @@
-# 🛠 Understanding errors
+# 🔍 Understanding errors
 

@@ -4,18 +4,23 @@
 * [🔗 Setup](setup.md)
 * [💡 Quickstart](quickstart.md)
 
-## UI Guides
+## How-to Guides
 
-* [📊 Create Dashboard](ui-guides/create-dashboard.md)
-* [💨 Examine Metrics](ui-guides/examine-metrics.md)
-* [⏰ Create Alert](ui-guides/create-alert.md)
-* [💎 Supported Networks](ui-guides/supported-networks.md)
-* [📝 Permission and Sharing](ui-guides/permission-and-sharing.md)
+* [➡ Submitting Metrics](how-to-guides/submitting-metrics/README.md)
+  * [EVM chains](how-to-guides/submitting-metrics/evm-chains/README.md)
+    * [Monitor view functions](how-to-guides/submitting-metrics/evm-chains/monitor-view-functions.md)
+    * [Monitor event and traces](how-to-guides/submitting-metrics/evm-chains/monitor-event-and-traces.md)
+    * [Handling factory contract](how-to-guides/submitting-metrics/evm-chains/handling-factory-contract.md)
+  * [Solana](how-to-guides/submitting-metrics/solana.md)
+  * [Aptos](how-to-guides/submitting-metrics/aptos.md)
+* [➡ View metrics and creating Dashboard](how-to-guides/view-metrics-and-creating-dashboard.md)
+* [➡ Creating alerts](how-to-guides/creating-alerts.md)
+* [➡ Share your project](how-to-guides/share-your-project.md)
 
 ## Developer Guides
 
-* [🖥 CLI Reference](developer-guides/cli-reference.md)
-* [🛠 SDK Guide](developer-guides/sdk-guide/README.md)
+* [➡ CLI Reference](developer-guides/cli-reference.md)
+* [➡ SDK Guide](developer-guides/sdk-guide/README.md)
   * [Processor Basic](developer-guides/sdk-guide/processor-basic.md)
   * [Metrics](developer-guides/sdk-guide/metrics.md)
   * [Dynamic Processor Creation](developer-guides/sdk-guide/dynamic-processor-creation.md)
@@ -24,10 +29,19 @@
 
 ## References
 
-* [🖥 Concepts](references/concepts.md)
-* [🛠 How Sentio Works](references/how-sentio-works.md)
+* [✅ How Sentio Works](references/how-sentio-works.md)
+* [🖥 Concepts](references/concepts/README.md)
+  * [💨 Metrics](references/concepts/metrics.md)
+  * [📐 Functions and Formulas](references/concepts/functions-and-formulas.md)
+  * [📊 Dashboard](references/concepts/dashboard.md)
+  * [⏰ Alert](references/concepts/alert.md)
+* [🔒 Quotas and Limits](references/quotas-and-limits.md)
+* [💎 Supported Networks](references/supported-networks.md)
+* [🤝 Permission and Sharing](references/permission-and-sharing.md)
 
 ## FAQ
 
-* [🖥 Updating processors](faq/updating-processors.md)
-* [🛠 Understanding errors](faq/understanding-errors.md)
+* [🔍 Multi-chain support](faq/multi-chain-support.md)
+* [🔍 Avoid high cardinality](faq/avoid-high-cardinality.md)
+* [🔍 Updating processors](faq/updating-processors.md)
+* [🔍 Understanding errors](faq/understanding-errors.md)

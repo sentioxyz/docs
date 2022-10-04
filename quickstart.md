@@ -55,5 +55,5 @@ yarn sentio upload
 
 The command line should tell you the processor has been uploaded correctly and give you a link to check the status of the processor, such as what chains this processor is running, how many blocks have it processed, the version, etc. &#x20;
 
-You can go to the metrics page to check the metrics submitted to the project. Checkout  [examine-metrics.md](ui-guides/examine-metrics.md "mention")for more details.
+You can go to the metrics page to check the metrics submitted to the project. Checkout  [metrics.md](references/concepts/metrics.md "mention")for more details.
 
