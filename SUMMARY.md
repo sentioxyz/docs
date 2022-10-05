@@ -30,6 +30,7 @@
   * [Handlers and Filters](developer-guides/sdk-guide/handlers-and-filters.md)
   * [Dynamic Processor Creation](developer-guides/sdk-guide/dynamic-processor-creation.md)
   * [Handle Big Numbers](developer-guides/sdk-guide/handle-big-numbers.md)
+  * [Price Feed](developer-guides/sdk-guide/price-feed.md)
   * [Write Test](developer-guides/sdk-guide/write-test.md)
 
 ## References
