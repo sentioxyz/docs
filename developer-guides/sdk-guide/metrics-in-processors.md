@@ -1,8 +1,12 @@
-# Metrics
+# Metrics in processors
 
+You can find the general metrics definition in [metrics.md](../../references/concepts/metrics.md "mention")
 
+## Metric Naming
 
 A metric name could contain characters, digits or `_`, any other characters will be converted to `_`. It will also be truncated to 100 characters.
+
+## Labels
 
 `Labels` is a map of key to string values, the key name follows the same rule as the metric name, and any reserved keywords will be appended with `_` .
 
@@ -14,7 +18,13 @@ async function handleTransfer(event: TransferEvent, ctx: ERC20Context) {
 }
 ```
 
-&#x20;But sometimes you want to give the metric more informatio, or want to share the same counter/gauge in different handle functions, then you can first declare your counter with an optional descriptor.
+Our system automatically adds a few reserved labels, including **address**, **contract** and **chain**.
+
+<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption><p>System labels</p></figcaption></figure>
+
+## Descriptor
+
+But sometimes you want to give the metric more information, or want to share the same [counter](../../references/concepts/metrics.md#counter)/[gauge](../../references/concepts/metrics.md#gauge) in different handle functions, then you can first declare your counter with an optional descriptor.
 
 ```typescript
 const tokenCount = new Counter(

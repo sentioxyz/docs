@@ -28,3 +28,5 @@ SPLTokenProcessor.bind({
 ```
 
 You could see the metrics are submitted using `ctx.meter.Counter`
+
+See this [repo](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/wormhole) for full implementation. To learn how to view metrics from the UI, go to [view-metrics.md](../../view-metrics.md "mention")

@@ -16,7 +16,7 @@ Go to [app.sentio.xyz](https://app.sentio.xyz) to register an account. We suppor
 
 Click the profile page on the **left bottom corner** and then create an [API key](https://app.sentio.xyz/profile#tab=apikey).
 
-<figure><img src=".gitbook/assets/image (1).png" alt=""><figcaption><p>Generate API key</p></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (3).png" alt=""><figcaption><p>Generate API key</p></figcaption></figure>
 
 Copy the command given and execute in any terminal. Then you are all set.
 

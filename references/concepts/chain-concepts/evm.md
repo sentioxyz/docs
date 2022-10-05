@@ -10,7 +10,7 @@ emit Swap(msg.sender, recipient, amount0, amount1, state.sqrtPriceX96, state.liq
 
 Sentio allows users to trigger processor for a specific set of events
 
-## New Block
+## Block
 
 Blocks are batches of transactions with a hash of the previous block in the chain. This links blocks together (in a chain) because hashes are cryptographically derived from the block data.
 

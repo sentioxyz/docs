@@ -14,7 +14,7 @@ There are 3 types of permission levels for a project
 
 There are two types of visibility for a project, Public access or Private.&#x20;
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
 `Public access` means everyone, including guest visitors who have not signed up, will have `Viewer` access to the dashboard of the project. This setting is typically used when you want to share the dashboards you created publicly via social media or blogs.&#x20;
 

@@ -1,6 +1,6 @@
 # Monitor wormhole WETH balance (via view function)
 
-Here is an example to monitor wormhole WETH balance by using the view function (`balanceOf`) defined in the [WETH9 contract](https://github.com/makerdao/sai/blob/master/src/weth9.sol#L28).
+Here is an example to monitor wormhole WETH balance by using the [view function](../../../references/concepts/chain-concepts/evm.md#view-function) (`balanceOf`) defined in the [WETH9 contract](https://github.com/makerdao/sai/blob/master/src/weth9.sol#L28).
 
 
 
@@ -27,7 +27,7 @@ Here, you could see
 * The `balance` can be accessed by calling `ctx.contract.balanceOf(TOKEN_BRIDGE_ADDRESS)`
 * You can submit the metric `balance` typed [Gauge](../../../references/concepts/metrics.md#gauge) by calling  `ctx.meter.Gauge('balance').record(balance)`
 
-
-
-
+{% hint style="success" %}
+See this [repo](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/wormhole) for full implementation. To learn how to view metrics from the UI, go [view-metrics.md](../../view-metrics.md "mention")
+{% endhint %}
 
