@@ -2,7 +2,7 @@
 
 ## Metadata
 
-After the processor is successfully uploaded, you can first check the status of the processor on [**Datasource**](../references/ui-layout.md) tab. Make sure the status is shown as processing. Also, take notice of the **block number** each chain (Yes, we support multi-chain: [multi-chain-support.md](../faq/multi-chain-support.md "mention")) is processed at.
+After the processor is successfully uploaded, you can first check the status of the processor on [**Datasource**](../references/ui-layout.md) tab. Make sure the status is shown as processing. Also, take notice of the **block number** each chain (Yes, we support multi-chain: [multi-chain-support.md](../best-practices/multi-chain-support.md "mention")) is processed at.
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 

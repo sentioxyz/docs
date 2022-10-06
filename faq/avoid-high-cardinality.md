@@ -1,2 +1,0 @@
-# 🔍 Avoid high cardinality
-

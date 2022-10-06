@@ -52,9 +52,9 @@
 * [💎 Supported Networks](references/supported-networks.md)
 * [🤝 Permission and Sharing](references/permission-and-sharing.md)
 
-## FAQ
+## Best Practices
 
-* [🔍 Multi-chain support](faq/multi-chain-support.md)
-* [🔍 Avoid high cardinality](faq/avoid-high-cardinality.md)
-* [🔍 Updating processors](faq/updating-processors.md)
-* [🔍 Understanding errors](faq/understanding-errors.md)
+* [🔍 Multi-chain support](best-practices/multi-chain-support.md)
+* [🔍 Avoid high cardinality](best-practices/avoid-high-cardinality.md)
+* [🔍 Updating processors](best-practices/updating-processors.md)
+* [🔍 Understanding errors](best-practices/understanding-errors.md)

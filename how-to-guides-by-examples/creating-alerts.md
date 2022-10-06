@@ -12,4 +12,6 @@ Note you can also use [formula](../references/concepts/functions-and-formulas.md
 
 ## Setup notifications
 
+You could easily setup alert messages once you setup your notification channel, see details [alert.md](../references/concepts/alert.md "mention")
+
 <figure><img src="../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
