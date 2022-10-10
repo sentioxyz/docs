@@ -1,6 +1,6 @@
 # Monitor wormhole WETH balance (via view function)
 
-Here is an example to monitor wormhole WETH balance by using the [view function](../../../references/concepts/chain-concepts/evm.md#view-function) (`balanceOf`) defined in the [WETH9 contract](https://github.com/makerdao/sai/blob/master/src/weth9.sol#L28).
+Here is an example to monitor wormhole WETH balance by using the [view function](../../../references/concepts/chain-concepts/evm.md#view-function) (`balanceOf`) defined in the [WETH9 contract](https://github.com/makerdao/sai/blob/master/src/weth9.sol).
 
 
 
