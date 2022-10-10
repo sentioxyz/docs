@@ -1,8 +1,8 @@
-# 📐 Functions and Formulas
+# 📐 Aggregation, Functions and Formulas
 
 #### Space aggregation <a href="#space-aggregation" id="space-aggregation"></a>
 
-Define the space aggregation used to combine the values of the series of a metric. For example, you can use it to sum up the withdrawal amount of different pool addresses.
+Define the space aggregation used to combine the values of **multiple series** of a metric. For example, you can use it to sum up the withdrawal amount of different pool addresses.
 
 The possible options are:
 
@@ -14,7 +14,7 @@ The possible options are:
 
 #### Functions <a href="#functions" id="functions"></a>
 
-You can optionally add functions to your query using the function button. Not all functions are available for all metric types.
+You can optionally add functions to your query using the function button. Not all functions are available for all metric types. The function will apply to **each of the individual series**.
 
 We currently support a subset of [PromQL query functions](https://prometheus.io/docs/prometheus/latest/querying/functions/) and are expanding the supports. The functions are grouped as:
 

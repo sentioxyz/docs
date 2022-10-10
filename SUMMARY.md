@@ -44,7 +44,7 @@
     * [Solana](references/concepts/chain-concepts/solana.md)
   * [⌨ Processor](references/concepts/processor.md)
   * [💨 Metrics](references/concepts/metrics.md)
-  * [📐 Functions and Formulas](references/concepts/functions-and-formulas.md)
+  * [📐 Aggregation, Functions and Formulas](references/concepts/aggregation-functions-and-formulas.md)
   * [📊 Dashboard](references/concepts/dashboard.md)
   * [⏰ Alert](references/concepts/alert.md)
 * [▶ UI layout](references/ui-layout.md)
