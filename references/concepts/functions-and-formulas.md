@@ -16,6 +16,13 @@ The possible options are:
 
 You can optionally add functions to your query using the function button. Not all functions are available for all metric types.
 
+We currently support a subset of [PromQL query functions](https://prometheus.io/docs/prometheus/latest/querying/functions/) and are expanding the supports. The functions are grouped as:
+
+* Math: simple math expressions such as `abs`, `floor`, etc
+* Aggregation over time: calculate the `sum/average/max/min` of all values in the specific time interval, e.g. you could use `sum_over_time` of 24 hours to draw bar charts of a defi contract's  daily trading volume.&#x20;
+* Rate: compute delta or per seconds rate of the series.&#x20;
+* Rank: select top K series or bottom K series, a series is in top/bottom K as long as it has been top/bottom K during the time span that user selects.
+
 #### Formulas <a href="#functions" id="functions"></a>
 
 You can combine two or more metrics by using a formula. For example, you can calculate the net mint amount of a smart contract by subtracting the burn amount from the mint amount. You do this by first adding two queries of the burn and mint metrics, and then adding a formula with the expression `b - a`.
