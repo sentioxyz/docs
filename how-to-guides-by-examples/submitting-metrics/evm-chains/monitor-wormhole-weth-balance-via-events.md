@@ -68,7 +68,7 @@ WETH9Processor.bind({ address: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', sta
   }, transferFilters)
 ```
 
-Here, you could see we `add` or `subtract` amount based on different event type, and report the metrics `using ctx.meter.Counter`
+Here, you could see we [add](https://sentioxyz.github.io/sentio-sdk/classes/core.CounterBinding.html#add.add-1) or [`subtract`](https://sentioxyz.github.io/sentio-sdk/classes/core.CounterBinding.html#sub) amount based on different event type, and report the metrics `using ctx.meter.Counter`
 
 {% hint style="success" %}
 See this [repo](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/wormhole) for full implementation. To learn how to view metrics from the UI, go [view-metrics.md](../../view-metrics.md "mention")

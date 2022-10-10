@@ -2,10 +2,10 @@
 
 In the wormhole example, one can also monitor SPL token program.
 
-First, import your builtin SPL token processor
+First, import your builtin [SPL token processor](https://sentioxyz.github.io/sentio-sdk/classes/builtin.solana.SPLTokenProcessor.html)
 
 ```typescript
-import { SPLTokenProcessor } from '@sentio/sdk'
+import { SPLTokenProcessor } from '@sentio/sdk/lib/builtin/solana'
 ```
 
 Then we trigger user written callback on both `Mint` and `Burn` instructions (Both are standard in SPL program). The code is as follows

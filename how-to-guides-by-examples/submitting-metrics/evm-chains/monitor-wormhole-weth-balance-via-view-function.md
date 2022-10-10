@@ -4,7 +4,7 @@ Here is an example to monitor wormhole WETH balance by using the [view function]
 
 
 
-First, you import builtin ABIs for WETH9.
+First, you import builtin processor for [WETH9](https://sentioxyz.github.io/sentio-sdk/classes/builtin.weth9.WETH9Processor.html).
 
 ```typescript
 import { WETH9Processor, WETH9Context } from '@sentio/sdk/lib/builtin/weth9'
