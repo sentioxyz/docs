@@ -24,6 +24,8 @@ The next step is to specify what condition needs to be met for the result above 
 
 `equal`
 
+If the query contains multiple series, then the condition will be met when on of the series meet the condition, so you may want to do aggregation if needed.
+
 ### Notification Channel and Message
 
 Next, you can specify the title and message when an alert is triggered. You can also specify the channel via which the notification is sent. Currently, Sentio supports the following channels:
