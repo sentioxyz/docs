@@ -16,4 +16,7 @@ Normally, you can either generate ABI from your solidity code or get it from [et
 
 ## Solana Anchor
 
-TBD
+Anchor can generate [IDL](https://en.wikipedia.org/wiki/Interface\_description\_language) specifications for Solana programs, we treat them as ABIs in Solana. &#x20;
+
+If your Solana program is built by Anchor, you can find the IDL after running the Anchor build, normally placed in `target/idl` folder.
+
