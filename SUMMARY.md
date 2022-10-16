@@ -13,6 +13,7 @@
     * [Decoding from custom ABIs](how-to-guides-by-examples/submitting-metrics/evm-chains/decoding-from-custom-abis.md)
     * [Handling factory contract](how-to-guides-by-examples/submitting-metrics/evm-chains/handling-factory-contract.md)
   * [Solana](how-to-guides-by-examples/submitting-metrics/solana/README.md)
+    * [Decode Solana instructions](how-to-guides-by-examples/submitting-metrics/solana/decode-solana-instructions.md)
     * [Monitor WETH balance on Solana (via Native program)](how-to-guides-by-examples/submitting-metrics/solana/monitor-weth-balance-on-solana-via-native-program.md)
     * [Monitor anchor programs](how-to-guides-by-examples/submitting-metrics/solana/monitor-anchor-programs.md)
   * [Aptos](how-to-guides-by-examples/submitting-metrics/aptos.md)
