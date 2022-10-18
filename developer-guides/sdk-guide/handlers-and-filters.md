@@ -20,7 +20,18 @@ For some handler type you can pass a filter to significantly speed up your data 
     )
     ```
     {% endcode %}
-* onCallXXX: execute on certain function calls based on Ethereum traces. You need to code-gen the processor or use a builtin processor as well. An example call handler is [`ERC20Processor`.`onCallBurnFrom`](https://sentioxyz.github.io/sentio-sdk/classes/builtin.erc20.ERC20Processor.html#onCallBurnFrom) which captures all burn from calls, notice you might need to check the `error` field before using the data to generate metrics.&#x20;
+*   onCallXXX: execute on certain function calls based on Ethereum traces. You need to code-gen the processor or use a builtin processor as well. An example call handler is [`ERC20Processor`.`onCallBurnFrom`](https://sentioxyz.github.io/sentio-sdk/classes/builtin.erc20.ERC20Processor.html#onCallBurnFrom) which captures all burn from calls. Notice you might need to check the `error` field before using the data to generate metrics.&#x20;
+
+    {% code overflow="wrap" %}
+    ```
+    ERC20Processor.bind(...)
+      .onCallBurnFrom((call, ctx) => { 
+         if (!call.error) {   
+           ctx.meter.Counter("burned").add(call.args.amount) 
+         }
+      })
+    ```
+    {% endcode %}
 * [`onAllEvent`](https://sentioxyz.github.io/sentio-sdk/classes/core.BaseProcessor.html#onAllEvents) : execute on all types of event occurrences of this contract, usually use  [`GenericProcessor`](https://sentioxyz.github.io/sentio-sdk/classes/core.GenericProcessor.html) when you don't want to use a full ABI JSON to do code gen.
 
 ### Solana
@@ -29,8 +40,32 @@ TBD
 
 ### Aptos
 
-* `onEntryXXXFunction`: execute on all of your specific entry function calls. The first argument is the payload of the function with fully decoded and typed arguments. Refer [`coin.TransferPayload`](https://sentioxyz.github.io/sentio-sdk/interfaces/builtin.aptos.\_0x1.coin.TransferPayload.html) as an example. The second argument is [`AptosContext`](https://sentioxyz.github.io/sentio-sdk/classes/aptos.AptosContext.html) that holds APIs and additional information like the full user transaction.
-* `onEventXXX`:  execute on all the specific event occurrences. Similar to the above handler, the first argument is the event data structure, e.g. [`coin.WithdrawEventInstance`](https://sentioxyz.github.io/sentio-sdk/interfaces/builtin.aptos.\_0x1.coin.WithdrawEventInstance.html) . The second argument is also the [`AptosContext`](https://sentioxyz.github.io/sentio-sdk/classes/aptos.AptosContext.html) . Notice the transaction object in event handler's context will not hold full transaction info. The event list and the entry function payload will be ignored. If you need those, then consider the function handler.
+*   `onEntryXXXFunction`: execute on all of your specific entry function calls. The first argument is the payload of the function with fully decoded and typed arguments. Refer [`coin.TransferPayload`](https://sentioxyz.github.io/sentio-sdk/interfaces/builtin.aptos.\_0x1.coin.TransferPayload.html) as an example. The second argument is [`AptosContext`](https://sentioxyz.github.io/sentio-sdk/classes/aptos.AptosContext.html) that holds APIs and additional information like the full user transaction. A full example looks like follows.&#x20;
+
+    ```
+    SouffleChefCampaign.bind({ startVersion: 6604913 })
+      .onEntryPullTokenV2((call, ctx) => {
+        ctx.meter.Counter('pulled').add(call.arguments_typed[3])
+      })
+    ```
+
+    Notice by default it will only capture the successful entry function calls. If you also want to  inspect the failed ones, you can pass an extra argument as follow. The failed transaction payload will not include the `arguments_typed` field so you need to guard the access.
+
+    ```
+    SouffleChefCampaign.bind({ startVersion: 6604913 })
+        .onEntryPullTokenV2((call, ctx) => {
+        ...
+      }, { incluedFailed: true })
+    ```
+* `onEventXXX`:  execute on all the specific event occurrences. Similar to the above handler, the first argument is the event data structure, e.g. [`coin.WithdrawEventInstance`](https://sentioxyz.github.io/sentio-sdk/interfaces/builtin.aptos.\_0x1.coin.WithdrawEventInstance.html) . The second argument is also the [`AptosContext`](https://sentioxyz.github.io/sentio-sdk/classes/aptos.AptosContext.html) . Notice the transaction object in event handler's context will not hold full transaction info. The event list and the entry function payload will be ignored. If you need those, then consider the function handler.&#x20;
+* ```
+  SouffleChefCampaign.bind({ startVersion: 6604913 })
+    .onEventBurnEnjoyEvent((evt, ctx) => {
+      ctx.meter.Counter('burned').add(1)
+    })
+  ```
+
+
 
 Aptos filters are still developing in progress. Welcome to submit your feedback through our [telegram group](https://t.me/sentioxyz).
 
