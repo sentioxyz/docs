@@ -8,8 +8,8 @@ For some handler type you can pass a filter to significantly speed up your data 
 
 ### EVM
 
-* [`onBlock`](https://sentioxyz.github.io/sentio-sdk/classes/core.BaseProcessor.html#onBlock) , execute on certain blocks interval backfill historical data, and execute every block processing new data. &#x20;
-*   `onXXXEvent`, execute on certain event occurrences of this contract, to have those handlers available you need to [code-gen](../../how-to-guides-by-examples/submitting-metrics/evm-chains/decoding-from-custom-abis.md) your own types of processor, or use builtin processors, e.g. [`ERC20Processor.onEventApproval`](https://sentioxyz.github.io/sentio-sdk/classes/builtin.erc20.ERC20Processor.html#onEventApproval). You can filter events using event filter also generated for your contract. e.g. for [`ApprovalEventFilter`](https://sentioxyz.github.io/sentio-sdk/types/builtin.erc20.ApprovalEventFilter.html) , you can create and use it as follow, each parameter represents the desired value of the event, `undefined` or `null` value meaning match all.  The semantics is the same as Ethereum's own log filter, read more details [here](https://docs.ethers.io/v5/concepts/events/#events--filters).
+* [`onBlock`](https://sentioxyz.github.io/sentio-sdk/classes/core.BaseProcessor.html#onBlock) : execute on certain blocks interval backfill historical data, and execute every block processing new data. &#x20;
+*   `onXXXEvent`: execute on certain event occurrences of this contract, to have those handlers available you need to [code-gen](../../how-to-guides-by-examples/submitting-metrics/evm-chains/decoding-from-custom-abis.md) your own types of processor, or use builtin processors, e.g. [`ERC20Processor.onEventApproval`](https://sentioxyz.github.io/sentio-sdk/classes/builtin.erc20.ERC20Processor.html#onEventApproval). You can filter events using event filter also generated for your contract. e.g. for [`ApprovalEventFilter`](https://sentioxyz.github.io/sentio-sdk/types/builtin.erc20.ApprovalEventFilter.html) , you can create and use it as follow, each parameter represents the desired value of the event, `undefined` or `null` value meaning match all.  The semantics is the same as Ethereum's own log filter, read more details [here](https://docs.ethers.io/v5/concepts/events/#events--filters).
 
     {% code overflow="wrap" %}
     ```
@@ -20,11 +20,17 @@ For some handler type you can pass a filter to significantly speed up your data 
     )
     ```
     {% endcode %}
-
-``[`onAllEvent`](https://sentioxyz.github.io/sentio-sdk/classes/core.BaseProcessor.html#onAllEvents) , execute on all types of event occurrences of this contract, usually use  [`GenericProcessor`](https://sentioxyz.github.io/sentio-sdk/classes/core.GenericProcessor.html) when you don't want to use a full ABI JSON to do code gen.
+* [`onAllEvent`](https://sentioxyz.github.io/sentio-sdk/classes/core.BaseProcessor.html#onAllEvents) : execute on all types of event occurrences of this contract, usually use  [`GenericProcessor`](https://sentioxyz.github.io/sentio-sdk/classes/core.GenericProcessor.html) when you don't want to use a full ABI JSON to do code gen.
 
 ### Solana
 
+TBD
+
 ### Aptos
+
+* `onEntryXXXFunction`: execute on all of your specific entry function calls. The first argument is the payload of the function with fully decoded and typed arguments. Refer [`coin.TransferPayload`](https://sentioxyz.github.io/sentio-sdk/interfaces/builtin.aptos.\_0x1.coin.TransferPayload.html) as an example. The second argument is [`AptosContext`](https://sentioxyz.github.io/sentio-sdk/classes/aptos.AptosContext.html) that holds APIs and additional information like the full user transaction.
+* `onEventXXX`:  execute on all the specific event occurrences. Similar to the above handler, the first argument is the event data structure, e.g. [`coin.WithdrawEventInstance`](https://sentioxyz.github.io/sentio-sdk/interfaces/builtin.aptos.\_0x1.coin.WithdrawEventInstance.html) . The second argument is also the [`AptosContext`](https://sentioxyz.github.io/sentio-sdk/classes/aptos.AptosContext.html) . Notice the transaction object in event handler's context will not hold full transaction info. The event list and the entry function payload will be ignored. If you need those, then consider the function handler.
+
+Aptos filters are still developing in progress. Welcome to submit your feedback through our [telegram group](https://t.me/sentioxyz).
 
 ## Filters
