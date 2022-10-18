@@ -9,7 +9,7 @@ For some handler type you can pass a filter to significantly speed up your data 
 ### EVM
 
 * [`onBlock`](https://sentioxyz.github.io/sentio-sdk/classes/core.BaseProcessor.html#onBlock) : execute on certain blocks interval backfill historical data, and execute every block processing new data. &#x20;
-*   `onXXXEvent`: execute on certain event occurrences of this contract, to have those handlers available you need to [code-gen](../../how-to-guides-by-examples/submitting-metrics/evm-chains/decoding-from-custom-abis.md) your own types of processor, or use builtin processors, e.g. [`ERC20Processor.onEventApproval`](https://sentioxyz.github.io/sentio-sdk/classes/builtin.erc20.ERC20Processor.html#onEventApproval). You can filter events using event filter also generated for your contract. e.g. for [`ApprovalEventFilter`](https://sentioxyz.github.io/sentio-sdk/types/builtin.erc20.ApprovalEventFilter.html) , you can create and use it as follow, each parameter represents the desired value of the event, `undefined` or `null` value meaning match all.  The semantics is the same as Ethereum's own log filter, read more details [here](https://docs.ethers.io/v5/concepts/events/#events--filters).
+*   `onEventXXX`: execute on certain event occurrences of this contract, to have those handlers available you need to [code-gen](../../how-to-guides-by-examples/submitting-metrics/evm-chains/decoding-from-custom-abis.md) your own types of processor, or use builtin processors, e.g. [`ERC20Processor.onEventApproval`](https://sentioxyz.github.io/sentio-sdk/classes/builtin.erc20.ERC20Processor.html#onEventApproval). You can filter events using event filter also generated for your contract. e.g. for [`ApprovalEventFilter`](https://sentioxyz.github.io/sentio-sdk/types/builtin.erc20.ApprovalEventFilter.html) , you can create and use it as follow, each parameter represents the desired value of the event, `undefined` or `null` value meaning match all.  The semantics is the same as Ethereum's own log filter, read more details [here](https://docs.ethers.io/v5/concepts/events/#events--filters).
 
     {% code overflow="wrap" %}
     ```
@@ -20,6 +20,7 @@ For some handler type you can pass a filter to significantly speed up your data 
     )
     ```
     {% endcode %}
+* onCallXXX: execute on certain function calls based on Ethereum traces. You need to code-gen the processor or use a builtin processor as well. An example call handler is [`ERC20Processor`.`onCallBurnFrom`](https://sentioxyz.github.io/sentio-sdk/classes/builtin.erc20.ERC20Processor.html#onCallBurnFrom) which captures all burn from calls, notice you might need to check the `error` field before using the data to generate metrics.&#x20;
 * [`onAllEvent`](https://sentioxyz.github.io/sentio-sdk/classes/core.BaseProcessor.html#onAllEvents) : execute on all types of event occurrences of this contract, usually use  [`GenericProcessor`](https://sentioxyz.github.io/sentio-sdk/classes/core.GenericProcessor.html) when you don't want to use a full ABI JSON to do code gen.
 
 ### Solana
