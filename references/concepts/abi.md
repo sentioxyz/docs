@@ -10,7 +10,7 @@ You can read an article for Ethereum ABI [here](https://www.geeksforgeeks.org/ap
 
 Normally, you can either generate ABI from your solidity code or get it from [etherscan](https://etherscan.io/address/0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2#code).
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (5).png" alt=""><figcaption></figcaption></figure>
 
 
 

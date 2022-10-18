@@ -2,6 +2,16 @@
 
 You can find the general metrics definition in [metrics.md](../../references/concepts/metrics.md "mention")
 
+## Submitting Metrics
+
+The simplest way to submit a metric is to call `ctx.meter` inside handler function, e.g.&#x20;
+
+```typescript
+async function handleTransfer(event: TransferEvent, ctx: ERC20Context) {
+  ctx.meter.Counter('token').add(event.args.value)
+}
+```
+
 ## Metric Naming
 
 A metric name could contain characters, digits or `_`, any other characters will be converted to `_`. It will also be truncated to 100 characters.
@@ -22,9 +32,17 @@ Our system automatically adds a few reserved labels, including **address**, **co
 
 <figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption><p>System labels</p></figcaption></figure>
 
+You could also add your own custom labels to differentiate the characteristics of the thing that is being measured. For example:
+
+```typescript
+ctx.meter.Gauge("withdraw").record(amount, {token: tokenInfo.symbol})
+```
+
+This submits an amount with **symbol** being used as a tag.
+
 ## Descriptor
 
-But sometimes you want to give the metric more information, or want to share the same [counter](../../references/concepts/metrics.md#counter)/[gauge](../../references/concepts/metrics.md#gauge) in different handle functions, then you can first declare your counter with an optional descriptor.
+Sometimes you want to give the metric more information, or want to share the same [counter](../../references/concepts/metrics.md#counter)/[gauge](../../references/concepts/metrics.md#gauge) in different handle functions, then you can first declare your counter with an optional descriptor.
 
 ```typescript
 const tokenCount = new Counter(

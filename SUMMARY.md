@@ -2,6 +2,7 @@
 
 * [👋 Welcome to Sentio](README.md)
 * [🔗 Setup](setup.md)
+* [🗄 Samples](samples.md)
 * [💡 Quickstart](quickstart.md)
 
 ## How-to Guides (by examples)
@@ -10,6 +11,7 @@
   * [EVM chains](how-to-guides-by-examples/submitting-metrics/evm-chains/README.md)
     * [Monitor wormhole WETH balance (via Events)](how-to-guides-by-examples/submitting-metrics/evm-chains/monitor-wormhole-weth-balance-via-events.md)
     * [Monitor wormhole WETH balance (via view function)](how-to-guides-by-examples/submitting-metrics/evm-chains/monitor-wormhole-weth-balance-via-view-function.md)
+    * [Submitting metrics with your labels](how-to-guides-by-examples/submitting-metrics/evm-chains/submitting-metrics-with-your-labels.md)
     * [Decoding from custom ABIs](how-to-guides-by-examples/submitting-metrics/evm-chains/decoding-from-custom-abis.md)
     * [Handling factory contract](how-to-guides-by-examples/submitting-metrics/evm-chains/handling-factory-contract.md)
   * [Solana](how-to-guides-by-examples/submitting-metrics/solana/README.md)

@@ -18,4 +18,14 @@ Gauge represents a sampled value at a given time, each data point reported is th
 
 It shows up on the **Metrics** page like the following:
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>A typical gauge</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>A typical gauge</p></figcaption></figure>
+
+## Series
+
+It is possible to have multiple **series** in one **metric**. Any label combination generate a different series. For example, if you have a metric which uses a token symbol as label. You'd generate multiple series in the dashboard by default. For example:
+
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+You can easily sum them by using [#space-aggregation](aggregation-functions-and-formulas.md#space-aggregation "mention")
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
