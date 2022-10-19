@@ -7,16 +7,18 @@ The supported network and its status are listed below, we are actively supportin
 | Chain    | Stage | Block Handle | Event Handle | Trace Handle |
 | -------- | ----- | ------------ | ------------ | ------------ |
 | Ethereum | Beta  | ✓            | ✓            | ✓            |
+| Goerli   | Alpha | ✓            | ✓            |              |
 | BSC      | Alpha | ✓            | ✓            |              |
 | Polygon  | Alpha | ✓            | ✓            |              |
 | Abitrum  | Alpha | ✓            | ✓            |              |
 
 ## Move Chains
 
-| Chain | Stage | Transaction Handle | Event Handle | Entry Function Handle |
-| ----- | ----- | ------------------ | ------------ | --------------------- |
-| Aptos | Alpha | ✓                  | ✓            | ✓                     |
-| SUI   | Alpha | ✓                  |              |                       |
+| Chain         | Stage | Transaction Handle | Event Handle | Entry Function Handle |
+| ------------- | ----- | ------------------ | ------------ | --------------------- |
+| Aptos Mainnet | Alpha | ✓                  | ✓            | ✓                     |
+| Aptos Testnet | Alpha | ✓                  | ✓            | ✓                     |
+| SUI           | Alpha | ✓                  |              |                       |
 
 ## Solana
 
