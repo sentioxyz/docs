@@ -6,11 +6,11 @@ Define the space aggregation used to combine the values of **multiple series** o
 
 The possible options are:
 
-* Average of reported values
-* Max of reported values
-* Min of reported values
-* Sum of reported values
-* Count of reported values
+* **Average** of reported values
+* **Max** of reported values
+* **Min** of reported values
+* **Sum** of reported values
+* **Count** of reported values
 
 #### Functions <a href="#functions" id="functions"></a>
 
@@ -18,10 +18,10 @@ You can optionally add functions to your query using the function button. Not al
 
 We currently support a subset of [PromQL query functions](https://prometheus.io/docs/prometheus/latest/querying/functions/) and are expanding the supports. The functions are grouped as:
 
-* Math: simple math expressions such as `abs`, `floor`, etc
-* Aggregation over time: calculate the `sum/average/max/min` of all values in the specific time interval, e.g. you could use `sum_over_time` of 24 hours to draw bar charts of a defi contract's  daily trading volume.&#x20;
-* Rate: compute delta or per seconds rate of the series.&#x20;
-* Rank: select top K series or bottom K series, a series is in top/bottom K as long as it has been top/bottom K during the time span that user selects.
+* **Math**: simple math expressions such as `abs`, `floor`, etc
+* **Aggregation over time**: calculate the `sum/average/max/min` of all values in the specific time interval, e.g. you could use `sum_over_time` of 24 hours to draw bar charts of a Defi contract's  daily trading volume.&#x20;
+* **Rate**: compute **delta or per seconds** rate of the series.&#x20;
+* **Rank**: select top K series or bottom K series, a series is in top/bottom K as long as it has been top/bottom K during the time span that user selects.
 
 #### Formulas <a href="#functions" id="functions"></a>
 

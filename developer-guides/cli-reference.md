@@ -2,7 +2,7 @@
 
 Sentio provides a command line tool to easily create and upload processors for your project. To start using it, you need to have [Node.js](https://nodejs.org/en/download/) environment. Then you could run&#x20;
 
-```
+```bash
 npx -y -p @sentio/sdk sentio --help
 ```
 
@@ -12,7 +12,7 @@ to see all available commands.&#x20;
 
 Login into sentio for your command line. You need first to create your API key.
 
-```
+```bash
 npx -y -p @sentio/sdk sentio login --api-key=<api-key>
 ```
 
@@ -20,7 +20,7 @@ npx -y -p @sentio/sdk sentio login --api-key=<api-key>
 
 Create a sentio processor
 
-```
+```bash
 npx -y -p @sentio/sdk sentio create -n <project name>
 ```
 
@@ -28,7 +28,7 @@ npx -y -p @sentio/sdk sentio create -n <project name>
 
 Build and upload your processor to your project.&#x20;
 
-```
+```bash
 npx -y -p @sentio/sdk sentio upload
 ```
 
@@ -36,7 +36,7 @@ npx -y -p @sentio/sdk sentio upload
 
 Generate type binding into `src/types` according to ABIs that in `abis` folder.
 
-```
+```bash
 npx -y -p @sentio/sdk sentio gen
 ```
 
@@ -44,7 +44,7 @@ npx -y -p @sentio/sdk sentio gen
 
 Generate code and then build the processor into `dist` folder.
 
-```
+```bash
 npx -y -p @sentio/sdk sentio build
 ```
 
