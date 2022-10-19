@@ -24,4 +24,4 @@ The supported network and its status are listed below, we are actively supportin
 
 | Chain  | Stage | Transaction Handle | Instruction Handle |
 | ------ | ----- | ------------------ | ------------------ |
-| Solana | Alpha | ✓                  |                    |
+| Solana | Alpha | ✓                  | ✓                  |
