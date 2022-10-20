@@ -1,8 +1,8 @@
 # Generate all the types
 
-Sentio has a list of builtin ABIs for aptos, e.g. the 0x1, and 0x3 modules. You can directly use them, e.g.
+Sentio has a list of builtin ABIs for aptos, e.g. the **0x1**, and **0x3** modules. You can directly use them, e.g.
 
-```
+```typescript
 import { coin } from '@sentio/sdk/lib/builtin/aptos/0x1'
 
 coin.bind().onEventWithdrawEvent((evt, ctx) => {
@@ -14,7 +14,7 @@ coin.bind().onEventWithdrawEvent((evt, ctx) => {
 
 To generate processor for your own modules, download the account modules through [https://mainnet.aptoslabs.com/v1/accounts/0x7d7e436f0b2aafde60774efb26ccc432cf881b677aca7faaf2a01879bd19fb8/modules](https://mainnet.aptoslabs.com/v1/accounts/0x7d7e436f0b2aafde60774efb26ccc432cf881b677aca7faaf2a01879bd19fb8/modules), replace the address with your own account address, and put the result as a json file under `abi/aptos` directory.  Then run
 
-```
+```bash
 yarn sentio build
 ```
 
@@ -24,7 +24,7 @@ If you want to work on testnet. Download the directory to `abi/aptos/testnet` in
 
 If you mainnet and testnet has the same exact ABI, you don't need to download ABI twice. Just download module for mainnet, and then use `BindOptions` to override network. e.g.
 
-```
+```typescript
 // This is for testnet
 SouffleChefCampaign.bind({ network: aptos.AptosNetwork.TEST_NET })
   .onEntryPullTokenV2((call, ctx) => {
