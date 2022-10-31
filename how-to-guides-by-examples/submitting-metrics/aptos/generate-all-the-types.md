@@ -12,15 +12,15 @@ coin.bind().onEventWithdrawEvent((evt, ctx) => {
 })
 ```
 
-To generate processor for your own modules, download the account modules through [https://mainnet.aptoslabs.com/v1/accounts/0x7d7e436f0b2aafde60774efb26ccc432cf881b677aca7faaf2a01879bd19fb8/modules](https://mainnet.aptoslabs.com/v1/accounts/0x7d7e436f0b2aafde60774efb26ccc432cf881b677aca7faaf2a01879bd19fb8/modules), replace the address with your own account address, and put the result as a json file under `abi/aptos` directory.  Then run
+To generate processor for your own modules, download the account modules through [https://mainnet.aptoslabs.com/v1/accounts/0x7d7e436f0b2aafde60774efb26ccc432cf881b677aca7faaf2a01879bd19fb8/modules](https://mainnet.aptoslabs.com/v1/accounts/0x7d7e436f0b2aafde60774efb26ccc432cf881b677aca7faaf2a01879bd19fb8/modules), replace the address with your own account address, and put the result as a json file under `abis/aptos` directory.  Then run
 
 ```bash
 yarn sentio build
 ```
 
-It will generate all the types under `src/types/aptos`. And download all depended account modules' abi into `abi/aptos` directory.
+It will generate all the types under `src/types/aptos`. And download all depended account modules' abi into `abis/aptos` directory.
 
-If you want to work on testnet. Download the directory to `abi/aptos/testnet` instead and files will be generated to `abi/apots/testnet` . We need to know it's under testnet directory so that we could try located the depended modules in testnet.
+If you want to work on testnet. Download the directory to `abis/aptos/testnet` instead and files will be generated to `abis/apots/testnet` . We need to know it's under testnet directory so that we could try located the depended modules in testnet.
 
 If you mainnet and testnet has the same exact ABI, you don't need to download ABI twice. Just download module for mainnet, and then use `BindOptions` to override network. e.g.
 
