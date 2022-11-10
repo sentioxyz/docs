@@ -1,6 +1,6 @@
 # ➡ Compute unique users
 
-Assume you'd like to compute the DAU, MAU of your contract. You could use `AccountTracker` [tracking-distinct-events.md](../developer-guides/sdk-guide/tracking-distinct-events.md "mention")
+Assume you'd like to compute the DAU, MAU of your contract. You could use `AccountTracker` [track-distinct-events.md](../developer-guides/sdk-guide/track-distinct-events.md "mention")
 
 ```typescript
 export const accountTracker = AccountEventTracker.register("users")
