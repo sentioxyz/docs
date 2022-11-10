@@ -6,4 +6,24 @@ Sentio allows you to define the json message you want to send to webhook. In eve
 * **timestamp\_micros:** The timestamp in microseconds when the event happened.
 * **version:** The processor version. Every new upload of the processor bumps the version by 1.
 
-The actual json data is in the field "`data`"
+The actual json data is in the field "`data`" (What you pass in from the processor). A sample data looks like:
+
+```json
+[ ... array of following object
+  {
+    "export_name": "SwapEvent",
+    "event_id": 1
+    "timestamp_micros": 1668099816652000,
+    "version": 1,
+    "data": { ... your exporting data }
+  },
+  {
+    "export_name": "SwapEvent",
+    "event_id": 2
+    "timestamp_micros": 1668099816653000,
+    "version": 1,
+    "data": { ... your exporting data }
+  },
+  ...
+]
+```

@@ -28,4 +28,4 @@ It is possible to have multiple **series** in one **metric**. Any label combinat
 
 You can easily sum them by using [#space-aggregation](aggregation-functions-and-formulas.md#space-aggregation "mention")
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
