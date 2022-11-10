@@ -7,7 +7,7 @@
 
 ## How-to Guides (by examples)
 
-* [➡ Submitting Metrics](how-to-guides-by-examples/submitting-metrics/README.md)
+* [➡ Submitting metrics](how-to-guides-by-examples/submitting-metrics/README.md)
   * [EVM chains](how-to-guides-by-examples/submitting-metrics/evm-chains/README.md)
     * [Monitor wormhole WETH balance (via Events)](how-to-guides-by-examples/submitting-metrics/evm-chains/monitor-wormhole-weth-balance-via-events.md)
     * [Monitor wormhole WETH balance (via view function)](how-to-guides-by-examples/submitting-metrics/evm-chains/monitor-wormhole-weth-balance-via-view-function.md)
@@ -21,6 +21,7 @@
   * [Aptos](how-to-guides-by-examples/submitting-metrics/aptos/README.md)
     * [Generate all the types](how-to-guides-by-examples/submitting-metrics/aptos/generate-all-the-types.md)
     * [Monitor event/function/transaction](how-to-guides-by-examples/submitting-metrics/aptos/monitor-event-function-transaction.md)
+* [➡ Compute unique users](how-to-guides-by-examples/compute-unique-users.md)
 * [➡ View metrics](how-to-guides-by-examples/view-metrics.md)
 * [➡ Build dashboards](how-to-guides-by-examples/build-dashboards.md)
 * [➡ Creating alerts](how-to-guides-by-examples/creating-alerts.md)
@@ -32,6 +33,7 @@
 * [➡ SDK Guide](developer-guides/sdk-guide/README.md)
   * [Processor Basic](developer-guides/sdk-guide/processor-basic.md)
   * [Metrics in processors](developer-guides/sdk-guide/metrics-in-processors.md)
+  * [Tracking (distinct) events](developer-guides/sdk-guide/tracking-distinct-events.md)
   * [Handlers and Filters](developer-guides/sdk-guide/handlers-and-filters.md)
   * [Dynamic Processor Creation](developer-guides/sdk-guide/dynamic-processor-creation.md)
   * [Handle Big Numbers](developer-guides/sdk-guide/handle-big-numbers.md)
