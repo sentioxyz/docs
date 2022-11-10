@@ -18,7 +18,7 @@ Gauge represents a sampled value at a given time, each data point reported is th
 
 It shows up on the **Metrics** page like the following:
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>A typical gauge</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>A typical gauge</p></figcaption></figure>
 
 ## Series
 
@@ -28,4 +28,4 @@ It is possible to have multiple **series** in one **metric**. Any label combinat
 
 You can easily sum them by using [#space-aggregation](aggregation-functions-and-formulas.md#space-aggregation "mention")
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>

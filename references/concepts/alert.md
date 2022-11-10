@@ -35,7 +35,3 @@ Next, you can specify the title and message when an alert is triggered. You can 
 * Webhook
 
 <figure><img src="../../.gitbook/assets/image (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
-
-You will need to set up these channels in the N`otification channels` sub tab before using them when creating the alert.
-
-<figure><img src="../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
