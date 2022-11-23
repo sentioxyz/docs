@@ -27,3 +27,18 @@ The actual json data is in the field "`data`" (What you pass in from the process
   ...
 ]
 ```
+
+Your webhook endpoint should acknowledge a message by returning http status code 20x (currently the acknowledgement deadline is 5 seconds), otherwise Sentio will retry sending the message with an exponential backoff policy.&#x20;
+
+If Sentio attempts to deliver the message but can't receive acknowledgement, the message will be considered a dead letter eventually. Dead letters won't be delivered anymore, but can be pulled manually. The retention duration of dead letters is 7 days.
+
+## Pulling dead letters&#x20;
+
+You can call pulling API to get the dead letters in your project.
+
+Method: GET
+
+Endpoint: /api/v1/webhook/deadletter/{**ownerName**}/{**slug**}?limit={**limit**}
+
+Currently {**limit**} needs to be less equal than 10.
+
