@@ -36,9 +36,15 @@ If Sentio attempts to deliver the message but can't receive acknowledgement, the
 
 You can call pulling API to get the dead letters in your project.
 
-Method: GET
+### HTTP Request
 
-Endpoint: /api/v1/webhook/deadletter/{**ownerName**}/{**slug**}?limit={**limit**}
+```
+GET https://app.sentio.xyz/api/v1/webhook/deadletter/{owner}/{project}?limit={limit}
+```
+
+{owner}: name of the project owner
+
+{project}: name of the project
 
 Currently {**limit**} needs to be less equal than 10.
 
