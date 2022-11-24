@@ -42,9 +42,31 @@ You can call pulling API to get the dead letters in your project.
 GET https://app.sentio.xyz/api/v1/webhook/deadletter/{owner}/{project}?limit={limit}
 ```
 
-{owner}: name of the project owner
+| Fields  | Description                                                           |
+| ------- | --------------------------------------------------------------------- |
+| owner   | (string) The name of the project owner                                |
+| project | (string) The name of the project                                      |
+| limit   | (integer) Maximum messages pulled at once, must be less equal than 10 |
 
-{project}: name of the project
+### Response body
 
-Currently {**limit**} needs to be less equal than 10.
+A sample response looks like:
+
+```json
+{
+  "messages":[ 
+    {
+      "id": "6312269039920155",
+      "channel_name": "test_channel",
+      "data": { ... array of messages }
+    },
+    {
+      "id": "6312269039920729",
+      "channel_name": "test_channel",
+      "data": { ... array of messages }
+    },
+    ...
+  ]
+}
+```
 
