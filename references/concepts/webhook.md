@@ -54,7 +54,7 @@ A sample response looks like:
 
 ```json
 {
-  "messages":[ 
+  "messages": [ 
     {
       "id": "6312269039920155",
       "attributes": {
