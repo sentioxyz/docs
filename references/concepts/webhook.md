@@ -57,13 +57,17 @@ A sample response looks like:
   "messages":[ 
     {
       "id": "6312269039920155",
-      "channel_name": "test_channel",
-      "data": { ... array of messages }
+      "attributes": {
+        "channel_name": "test_channel"
+      },
+      "data": "{ ... array of messages }"
     },
     {
-      "id": "6312269039920729",
-      "channel_name": "test_channel",
-      "data": { ... array of messages }
+      "id": "6312269039920729",      
+      "attributes": {
+        "channel_name": "test_channel"
+      },
+      "data": "{ ... array of messages }"
     },
     ...
   ]
