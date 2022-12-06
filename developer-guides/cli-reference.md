@@ -13,7 +13,7 @@ to see all available commands.&#x20;
 Login into sentio for your command line. You need first to create your API key.
 
 ```bash
-npx -y -p @sentio/sdk sentio login --api-key=<api-key>
+npx -y -p @sentio/sdk sentio login
 ```
 
 ## sentio create

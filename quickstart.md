@@ -6,7 +6,7 @@ In this section, we will show you how to set up a simple project to monitor an E
 
 ## Step 1: Create a Sentio Account
 
-Simply go to [https://app.sentio.xyz](https://app.sentio.xyz) and login/create your account.
+Simply go to [https://app.sentio.xyz](https://app.sentio.xyz) and login/create your account.&#x20;
 
 ## Step 2: Create a Project (optional)
 
@@ -16,9 +16,7 @@ By default, Sentio will create an empty "default" project for you, if you want t
 
 ## Step 3: Setup Dev environment
 
-We require users to setup [node](https://nodejs.dev/en/) and [API key](https://app.sentio.xyz/profile#tab=apikey) before submitting processors.
-
-For more information about setup, refer to [setup.md](setup.md "mention")
+We require users to follow [setup.md](setup.md "mention") before working on the projects.
 
 ## Step 4: Create Processor Project
 

@@ -14,6 +14,8 @@ Go to [app.sentio.xyz](https://app.sentio.xyz) to register an account. We suppor
 npx -p @sentio/sdk sentio login
 ```
 
+This would prompt a link and you could signin using the link. This will create an valid **API key** and store it locally.
+
 ## Generate the API key (optional)
 
 Click the profile page on the **left bottom corner** and then create an [API key](https://app.sentio.xyz/profile#tab=apikey).
