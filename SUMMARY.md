@@ -42,6 +42,10 @@
   * [Price Feed](developer-guides/sdk-guide/price-feed.md)
   * [Write Test](developer-guides/sdk-guide/write-test.md)
 
+## Access Sentio Via APIs
+
+* [Aptos Composer](access-sentio-via-apis/aptos-composer.md)
+
 ## References
 
 * [✅ How Sentio Works](references/how-sentio-works.md)
@@ -69,7 +73,3 @@
 * [🔍 Avoid high cardinality](best-practices/avoid-high-cardinality.md)
 * [🔍 Updating processors](best-practices/updating-processors.md)
 * [🔍 Understanding errors](best-practices/understanding-errors.md)
-
-## Others
-
-* [Aptos Composer](others/aptos-composer.md)
