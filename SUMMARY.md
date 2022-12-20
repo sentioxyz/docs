@@ -69,3 +69,7 @@
 * [🔍 Avoid high cardinality](best-practices/avoid-high-cardinality.md)
 * [🔍 Updating processors](best-practices/updating-processors.md)
 * [🔍 Understanding errors](best-practices/understanding-errors.md)
+
+## Others
+
+* [Aptos Composer](others/aptos-composer.md)
