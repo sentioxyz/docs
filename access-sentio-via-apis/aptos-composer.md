@@ -12,7 +12,7 @@ First, you need to have a Sentio account at [https://app.sentio.xyz](https://app
 
 {% code overflow="wrap" %}
 ```shell
-curl 'https://app.sentio.xyz/api/v1/composer/call_function?api-key=$API_KEYs' \
+curl 'https://app.sentio.xyz/api/v1/composer/call_function?api-key=$API_KEY' \
   -i \
   -H 'accept: application/json' \
   -H 'content-type: application/json' \
