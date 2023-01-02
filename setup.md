@@ -11,7 +11,7 @@ To install node, please follow the instructions [here](https://nodejs.dev/en/).
 Go to [app.sentio.xyz](https://app.sentio.xyz) to register an account. We support standard google/github login. To upload processor, you can do:
 
 ```
-npx -p @sentio/sdk sentio login
+npx -y -p @sentio/cli sentio login
 ```
 
 This would prompt a link and you could signin using the link. This will create an valid **API key** and store it locally.
@@ -30,5 +30,5 @@ Note, Please replace with your own API key.
 
 ```bash
 export YOUR_API_KEY=generated from UI
-npx -p @sentio/sdk sentio login --api-key $YOUR_API_KEY
+npx -y -p @sentio/cli sentio login --api-key $YOUR_API_KEY
 ```

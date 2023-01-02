@@ -24,6 +24,12 @@ Create a sentio processor
 npx -y -p @sentio/sdk sentio create -n <project name>
 ```
 
+By default it creates EVM based project, if you want to create project for other chains, you could do
+
+```
+npx -y -p @sentio/cli sentio create -c <evm|aptos|solana|raw> <project name>
+```
+
 ## sentio upload
 
 Build and upload your processor to your project.&#x20;
