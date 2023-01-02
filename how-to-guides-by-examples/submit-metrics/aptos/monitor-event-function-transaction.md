@@ -8,7 +8,7 @@ You could import both libs from custom generated types from sentio codegen, or s
 
 ```typescript
 import { SouffleChefCampaign, CandyMachine } from './types/aptos/souffle'
-import { token } from '@sentio/sdk/lib/builtin/aptos/0x3'
+import { token } from '@sentio/sdk-aptos/lib/builtin/0x3'
 ```
 
 ## Monitor Event

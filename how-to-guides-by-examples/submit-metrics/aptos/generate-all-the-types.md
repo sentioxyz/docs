@@ -3,7 +3,7 @@
 Sentio has a list of builtin ABIs for aptos, e.g. the **0x1**, and **0x3** modules. You can directly use them, e.g.
 
 ```typescript
-import { coin } from '@sentio/sdk/lib/builtin/aptos/0x1'
+import { coin } from '@sentio/sdk-aptos/lib/builtin/0x1'
 
 coin.bind().onEventWithdrawEvent((evt, ctx) => {
   if (evt.guid.account_address === '0x9c5382a5aa6cd92f38ffa50bd8ec2879833997116499cc5bcd6d4688a962e330') {
@@ -26,7 +26,7 @@ If you mainnet and testnet has the same exact ABI, you don't need to download AB
 
 ```typescript
 // This is for testnet
-SouffleChefCampaign.bind({ network: aptos.AptosNetwork.TEST_NET })
+SouffleChefCampaign.bind({ network: AptosNetwork.TEST_NET })
   .onEntryPullTokenV2((call, ctx) => {
     ...
   })
