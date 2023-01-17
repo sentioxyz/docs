@@ -8,12 +8,13 @@ For production use, it's recommended you host your own instance, or use our prod
 
 #### Use Dedicate Composer Instance
 
-First, you need to have a Sentio account at [https://app.sentio.xyz](https://app.sentio.xyz/). Then [generate an API Key](../setup.md#generate-the-api-key-optional). Once you have the API key, you can access the endpoint using `https://app.sentio.xyz/api/v1/composer/call_function?api-key=$API_KEY.` Here is an example of how you can access composer view cURL.
+First, you need to have a Sentio account at [https://app.sentio.xyz](https://app.sentio.xyz/). Then [generate an API Key](../setup.md#generate-the-api-key-optional). Once you have the API key, you can access the endpoint using `https://app.sentio.xyz/api/v1/composer/${owner}/${project}/call_function`. Please also put your API key in the header. Here is an example of how you can access composer view cURL.
 
 {% code overflow="wrap" %}
 ```shell
-curl 'https://app.sentio.xyz/api/v1/composer/call_function?api-key=$API_KEY' \
+curl 'https://app.sentio.xyz/api/v1/composer/${owner}/${project}/call_function' \
   -i \
+  -H 'api-key: ${apiKey}' \
   -H 'accept: application/json' \
   -H 'content-type: application/json' \
   --data-raw '{"func":"0x1::coin::balance","type_args":["0x1::aptos_coin::AptosCoin"],"args":["0x21ddba785f3ae9c6f03664ab07e9ad83595a0fa5ca556cec2b9d9e7100db0f07"],"ledger_version":35842267,"network":"mainnet"}' 

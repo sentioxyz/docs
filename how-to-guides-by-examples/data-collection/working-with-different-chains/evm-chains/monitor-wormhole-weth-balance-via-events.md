@@ -1,6 +1,6 @@
 # Monitor wormhole WETH balance (via Events)
 
-Here is an example to monitor wormhole WETH balance by using the WETH9 [events](../../../references/concepts/chain-concepts/evm.md#event).
+Here is an example to monitor wormhole WETH balance by using the WETH9 [events](../../../../references/concepts/chain-concepts/evm.md#event).
 
 First, you import builtin ABIs for WETH9.
 
@@ -31,7 +31,7 @@ const transferFilters = [
 ]
 ```
 
-See the full guide of writing filters, see [handlers-and-filters.md](../../../developer-guides/sdk-guide/handlers-and-filters.md "mention")
+See the full guide of writing filters, see [handlers-and-filters.md](../../../../developer-guides/sdk-guide/handlers-and-filters.md "mention")
 
 
 
@@ -71,5 +71,5 @@ WETH9Processor.bind({ address: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2', sta
 Here, you could see we [add](https://sentioxyz.github.io/sentio-sdk/classes/core.CounterBinding.html#add.add-1) or [`subtract`](https://sentioxyz.github.io/sentio-sdk/classes/core.CounterBinding.html#sub) amount based on different event type, and report the metrics `using ctx.meter.Counter`
 
 {% hint style="success" %}
-See this [repo](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/wormhole) for full implementation. To learn how to view metrics from the UI, go [view-metrics.md](../../view-metrics.md "mention")
+See this [repo](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/wormhole) for full implementation. To learn how to view metrics from the UI, go [view-metrics.md](../../../visualize-results/view-metrics.md "mention")
 {% endhint %}

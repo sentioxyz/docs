@@ -10,6 +10,6 @@ TODO
 
 You can config the followings:
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 To config the authentication, add **custom headers**. You can then validate the `myKeyString` in the receiver code.
