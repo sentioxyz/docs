@@ -1,6 +1,6 @@
 # 💡 Data Source
 
-From the data source page, you can do the followings
+From the data source page, you can do the followings:
 
 * Monitor status of the processor (by chain)
 * Debug processor (console logs)
