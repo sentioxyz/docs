@@ -8,4 +8,4 @@ console.log("num of pools: ", pools.length, ctx.version.toString())
 
 Then you could view the debug log from the UI.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>processor console log</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>processor console log</p></figcaption></figure>

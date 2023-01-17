@@ -24,7 +24,7 @@ There are generally 2 ways to select time range. One is using **Time picker**
 
 The other approach is to directly select from graph, you can use standard browser forward/backward to control the range selected.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then the graph will show only range selected
 

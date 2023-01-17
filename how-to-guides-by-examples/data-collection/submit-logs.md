@@ -25,3 +25,5 @@ Assume you'd like to emit a log on some significant (`amount>1000`) staking/unst
   })
 ```
 
+To view the results of the submitted logs, see [view-logs.md](../visualize-results/view-logs.md "mention")
+

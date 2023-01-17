@@ -16,4 +16,4 @@ Metrics have 2 types: [Counter](../../references/concepts/metrics.md#counter) an
 
 Please refer to [metrics-in-processors.md](../../developer-guides/sdk-guide/metrics-in-processors.md "mention")for more definitions.
 
-Please refer to [working-with-different-chains](working-with-different-chains/ "mention")for detailed examples from different chains.
+Please refer to [working-with-different-chains](../data-collection/working-with-different-chains/ "mention")for detailed examples from different chains.

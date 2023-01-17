@@ -43,8 +43,8 @@ amm.bind({startVersion: 2331560})
 
 ## Using filters
 
-For a more detailed guide, read [#aptos](../../../../developer-guides/sdk-guide/handlers-and-filters.md#aptos "mention")
+For a more detailed guide, read [#aptos](../../../developer-guides/sdk-guide/handlers-and-filters.md#aptos "mention")
 
 {% hint style="info" %}
-See this [repo](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/aptos) for full implementation. To learn how to view metrics from the UI, go to [view-metrics.md](../../../visualize-results/view-metrics.md "mention")
+See this [repo](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/aptos) for full implementation. To learn how to view metrics from the UI, go to [view-metrics.md](../../view-metrics.md "mention")
 {% endhint %}
