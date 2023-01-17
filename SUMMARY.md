@@ -67,6 +67,7 @@
   * [📕 Logs](references/concepts/logs.md)
   * [📐 Aggregation, Functions and Formulas](references/concepts/aggregation-functions-and-formulas.md)
   * [📊 Dashboard](references/concepts/dashboard.md)
+  * [💡 Data Source](references/concepts/data-source.md)
   * [📶 Channel](references/concepts/channel.md)
   * [🪝 Webhook](references/concepts/webhook.md)
   * [⏰ Alert](references/concepts/alert.md)

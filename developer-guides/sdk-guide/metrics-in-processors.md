@@ -30,7 +30,7 @@ async function handleTransfer(event: TransferEvent, ctx: ERC20Context) {
 
 Our system automatically adds a few reserved labels, including **address**, **contract** and **chain**.
 
-<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption><p>System labels</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (25) (1).png" alt=""><figcaption><p>System labels</p></figcaption></figure>
 
 You could also add your own custom labels to differentiate the characteristics of the thing that is being measured. For example:
 

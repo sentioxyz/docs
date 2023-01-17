@@ -4,11 +4,11 @@
 
 After the processor is successfully uploaded, you can first check the status of the processor on [**Datasource**](../references/ui-layout.md) tab. Make sure the status is shown as processing. Also, take notice of the **block number** each chain (Yes, we support multi-chain: [multi-chain-support.md](../best-practices/multi-chain-support.md "mention")) is processed at.
 
-<figure><img src="../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 You can also examine the status of the collected [metrics](../references/ui-layout.md) on the Metrics tab.&#x20;
 
-<figure><img src="../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 Clicking on each [metric](../references/concepts/metrics.md) gives you a more detailed view of the metric, including tags and visualization of the metrics.
 

@@ -18,7 +18,7 @@ Gauge represents a sampled value at a given time, each data point reported is th
 
 It shows up on the **Metrics** page like the following:
 
-<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>A typical gauge</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption><p>A typical gauge</p></figcaption></figure>
 
 ## Series
 
