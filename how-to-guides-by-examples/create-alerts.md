@@ -1,4 +1,4 @@
-# ➡ Creating alerts
+# ➡ Create alerts
 
 ## Define alerts
 
@@ -7,7 +7,7 @@ Assume we want to alert if `token_bridge_weth` is lower than a given threshold, 
 <figure><img src="../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Note you can also use [formula](../references/concepts/aggregation-functions-and-formulas.md) in alerts
+Note you can also use [formula](../references/concepts/visualizations/aggregation-functions-and-formulas.md) in alerts
 {% endhint %}
 
 ## Setup notifications

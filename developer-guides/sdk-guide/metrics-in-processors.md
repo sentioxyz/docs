@@ -1,6 +1,6 @@
 # Metrics in processors
 
-You can find the general metrics definition in [metrics.md](../../references/concepts/metrics.md "mention")
+You can find the general metrics definition in [metrics.md](../../references/concepts/data-types/metrics.md "mention")
 
 ## Submitting Metrics
 
@@ -42,7 +42,7 @@ This submits an amount with **symbol** being used as a tag.
 
 ## Descriptor
 
-Sometimes you want to give the metric more information, or want to share the same [counter](../../references/concepts/metrics.md#counter)/[gauge](../../references/concepts/metrics.md#gauge) in different handle functions, then you can first declare your counter with an optional descriptor.
+Sometimes you want to give the metric more information, or want to share the same [counter](../../references/concepts/data-types/metrics.md#counter)/[gauge](../../references/concepts/data-types/metrics.md#gauge) in different handle functions, then you can first declare your counter with an optional descriptor.
 
 ```typescript
 const tokenCount = new Counter(

@@ -4,14 +4,14 @@ To use the metrics to better do visualization and computation, you could build d
 
 <figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-Note, even these 2 metrics should track each other closely, but they have different decimals. We could use [formula](../references/concepts/aggregation-functions-and-formulas.md) to **normalize** `balance` to make them match.
+Note, even these 2 metrics should track each other closely, but they have different decimals. We could use [formula](../references/concepts/visualizations/aggregation-functions-and-formulas.md) to **normalize** `balance` to make them match.
 
 <figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 A few things to notice here:
 
-* You can control which query to show by clicking the left hand side of a [**metric**](../references/concepts/metrics.md) or [**formula**](../references/concepts/aggregation-functions-and-formulas.md)****
+* You can control which query to show by clicking the left hand side of a [**metric**](../references/concepts/data-types/metrics.md) or [**formula**](../references/concepts/visualizations/aggregation-functions-and-formulas.md)****
 * You could add alias to a query
 {% endhint %}
 

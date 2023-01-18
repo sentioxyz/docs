@@ -4,7 +4,7 @@
 Metrics API is the same among all different chains.
 {% endhint %}
 
-Metrics have 2 types: [Counter](../../references/concepts/metrics.md#counter) and [Gauge](../../references/concepts/metrics.md#gauge).
+Metrics have 2 types: [Counter](../../references/concepts/data-types/metrics.md#counter) and [Gauge](../../references/concepts/data-types/metrics.md#gauge).
 
 ```typescript
  const totalSupply = scaleDown(await ctx.contract.totalSupply(), tokenInfo.decimal)
@@ -13,6 +13,8 @@ Metrics have 2 types: [Counter](../../references/concepts/metrics.md#counter) an
  const amount = scaleDown(event.args.amount, tokenInfo.decimal)
  ctx.meter.Counter("mint_acc").add(amount, {token: tokenInfo.symbol})
 ```
+
+Note, `token` is the [#labels](../../developer-guides/sdk-guide/metrics-in-processors.md#labels "mention") you can attach when you submit the metric.
 
 Please refer to [metrics-in-processors.md](../../developer-guides/sdk-guide/metrics-in-processors.md "mention")for more definitions.
 

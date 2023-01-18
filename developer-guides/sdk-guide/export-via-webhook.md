@@ -14,4 +14,4 @@ exporter.emit(ctx, {evt})
 
 For configuring the notification channel, please refer to [channel.md](../../references/concepts/channel.md "mention")
 
-For understanding the webhook message, please refer to [webhook.md](../../references/concepts/webhook.md "mention")
+For understanding the webhook message, please refer to [webhook.md](../../references/concepts/data-types/webhook.md "mention")

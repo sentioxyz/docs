@@ -10,4 +10,4 @@ If you'd like to search for all **stake** event, you could simply type "stake" i
 
 For more details regarding submitting logs in processor, refer to [logs-in-processor.md](../../developer-guides/sdk-guide/logs-in-processor.md "mention")
 
-For more details regarding the definition of logs, refer to [logs.md](../../references/concepts/logs.md "mention")
+For more details regarding the definition of logs, refer to [logs.md](../../references/concepts/data-types/logs.md "mention")
