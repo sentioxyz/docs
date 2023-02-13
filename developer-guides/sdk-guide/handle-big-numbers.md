@@ -1,10 +1,13 @@
 # Handle Big Numbers
 
-Sentio SDK uses `ethers.js`, which use [`BigNumber`](https://docs.ethers.io/v5/api/utils/bignumber/) class for all the data type which is a big integer. However, if you want to do operations like division, you need to convert it to [`BigDecimal`](https://sentioxyz.github.io/sentio-sdk/classes/core.BigDecimal-1.html) , otherwise, you may lose precision during the operation.
+Sentio SDK uses javascript's native `bigint` for big integer calculations. However, if you want to do operations like division, you need to convert it to [`BigDecimal`](https://sentioxyz.github.io/sentio-sdk/modules/BigDecimal.html) , otherwise, you may lose precision during the operation. We do provide utils for `bigint` to convert to `BigDecimal`.
 
 ```typescript
-import { toBigDecimal } from "@sentio/sdk/lib/utils"
+const latestAnswer: bigint = 10n
 
-...
-const eth_usdc_price = BigDecimal(10).pow(18).div(toBigDecimal(latestAnswer))
+// Use asBigDecimal to convert bigint to BigDecimal
+const eth_usdc_price: BigDecimal = latestAnswer.asBigDecimal().div(BigDecimal(10).pow(18))
+
+// Use scaleDown to further simplify code in some cases.
+const eth_usdc_price2: BigDecimal = latestAnswer.scaleDown(18)
 ```
