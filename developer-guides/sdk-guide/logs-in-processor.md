@@ -3,7 +3,14 @@
 Users can write the following code to submit logs in processor using the following code:
 
 ```typescript
-ctx.logger.info(`Deposit ${amount} ${tokenInfo.symbol} at ${ctx.blockNumber}`)
+ctx.eventLogger.emit("Deposit",
+  {
+    distinctId: event.args.from, // optional, enable for analytic use case
+    severity: LogLevel.INFO, // optional
+    message: `Deposit ${amount} ${tokenInfo.symbol} at ${ctx.blockNumber}`), // optional, enable for better text search
+    amount: amount, // you can also put other attributes
+  }
+
 ```
 
 The supported log levels are:

@@ -1,4 +1,4 @@
-# Tracking (distinct) events
+# Track (distinct) events
 
 Sentio supports tracking APIs that allow users to do (approximate) distinct count, or accurate count.
 
@@ -14,7 +14,7 @@ The code below will record a metric that contains a few series:
 
 ```typescript
 // Definition
-const tracker =EventTracker.register("event", {
+const tracker = EventTracker.register("event", {
     totalByDay: true,
     unique: true,
     distinctByDays: [1, 10],

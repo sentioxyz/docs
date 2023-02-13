@@ -7,7 +7,7 @@ A Sentio processor could handle multiple contracts on multiple chains. To import
 Then you can use the generated contract processor class to bind to an address, and add different [handlers](handlers-and-filters.md), the SDK also comes up with several built-in contract processors, a minimal processor example with built-in [ERC20 processor](https://sentioxyz.github.io/sentio-sdk/classes/builtin.erc20.ERC20Processor.html) is:
 
 ```typescript
-import { ERC20Processor } from '@sentio/sdk/lib/builtin/erc20'
+import { ERC20Processor } from '@sentio/sdk/eth/builtin/erc20'
 
 ERC20Processor.bind({ address: '0x1e4ede388cbc9f4b5c79681b7f94d36a11abebc9', network: 1 })
   .onEventTransfer((event, ctx) => {

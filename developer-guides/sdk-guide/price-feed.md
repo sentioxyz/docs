@@ -3,7 +3,7 @@
 One common task is to get the price feed of a token and calculate e.g. trading volume. Currently, we provide price feed from chainlink oracle at Ethereum mainnet and Goerli testnet. You can calculate the price using the following code.
 
 ```typescript
-import { EthereumDexPrice, PriceUnit } from '@sentio/sdk/lib/utils/dex-price'
+import { EthereumDexPrice, PriceUnit } from '@sentio/sdk/utils/dex-price'
 
 ...
 

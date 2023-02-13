@@ -30,12 +30,6 @@ By default it creates EVM based project, if you want to create project for other
 npx -y -p @sentio/cli sentio create -c <evm|aptos|solana|raw> <project name>
 ```
 
-If you are working in a mono-repo setup with many processors in repo and have your root package.json control all versions, you need to do the following or delete the sentio dependencies in your child package.json manually.
-
-```
-npx -y -p @sentio/cli sentio create --subproject -n <project name>
-```
-
 ## sentio upload
 
 Build and upload your processor to your project.&#x20;

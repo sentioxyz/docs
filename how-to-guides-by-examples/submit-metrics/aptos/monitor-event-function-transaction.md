@@ -7,8 +7,8 @@ Here we go through one example as follows
 You could import both libs from custom generated types from sentio codegen, or system builtin types
 
 ```typescript
-import { stake_router } from "./types/aptos/tortuga";
-import { amm } from './types/aptos/auxexchange'
+import { stake_router } from "./types/aptos/tortuga.js";
+import { amm } from './types/aptos/auxexchange.js'
 ```
 
 ## Monitor Event

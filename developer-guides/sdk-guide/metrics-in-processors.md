@@ -45,7 +45,7 @@ This submits an amount with **symbol** being used as a tag.
 Sometimes you want to give the metric more information, or want to share the same [counter](../../references/concepts/data-types/metrics.md#counter)/[gauge](../../references/concepts/data-types/metrics.md#gauge) in different handle functions, then you can first declare your counter with an optional descriptor.
 
 ```typescript
-const tokenCount = new Counter(
+const tokenCount = Counter.register(
   'token_count', 
   { description: 'token transferred to my wallet',
     unit: 'eth' 

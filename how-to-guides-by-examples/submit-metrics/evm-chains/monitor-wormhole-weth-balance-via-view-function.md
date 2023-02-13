@@ -7,7 +7,7 @@ Here is an example to monitor wormhole WETH balance by using the [view function]
 First, you import builtin processor for [WETH9](https://sentioxyz.github.io/sentio-sdk/classes/builtin.weth9.WETH9Processor.html).
 
 ```typescript
-import { WETH9Processor, WETH9Context } from '@sentio/sdk/lib/builtin/weth9'
+import { WETH9Processor, WETH9Context } from '@sentio/sdk/eth/builtin/weth9'
 ```
 
 Then you write the simple callback that is triggered `OnBlock` , Note: OnBlock is not called on every block. It is executed using a sampling algorithm, could be specified by the users.
