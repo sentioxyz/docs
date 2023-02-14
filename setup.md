@@ -18,17 +18,5 @@ This would prompt a link and you could signin using the link. This will create a
 
 ## Generate the API key (optional)
 
-Click the profile page on the **left bottom corner** and then create an [API key](https://app.sentio.xyz/profile#tab=apikey).
+Normally, you do not need to explicit generate API keys for uploading [processor.md](references/concepts/processor.md "mention"). But you can always sign in manually, please refer to [api-key.md](references/concepts/api-key.md "mention")
 
-<figure><img src=".gitbook/assets/image (1) (3).png" alt=""><figcaption><p>Generate API key</p></figcaption></figure>
-
-API key could be used for API call and login with command line. To login, copy the command given and execute in any terminal. Then you are all set.
-
-{% hint style="warning" %}
-Note, Please replace with your own API key.
-{% endhint %}
-
-```bash
-export YOUR_API_KEY=generated from UI
-npx -y -p @sentio/cli sentio login --api-key $YOUR_API_KEY
-```
