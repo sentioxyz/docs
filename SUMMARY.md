@@ -70,7 +70,7 @@
   * [📔 ABI](references/concepts/abi.md)
   * [⌨ Processor](references/concepts/processor.md)
   * [📶 Channel](references/concepts/channel.md)
-  * [⏰ Alert](references/concepts/alert.md)
+  * [⏰ Alerts](references/concepts/alerts.md)
   * [💡 Data Source](references/concepts/data-source.md)
 * [▶ UI layout](references/ui-layout.md)
 * [🔒 Quotas and Limits](references/quotas-and-limits.md)
