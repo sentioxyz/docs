@@ -25,10 +25,10 @@ We only include mainnet in the list
 
 ## Move Chains
 
-| Chain         | Stage  | Transaction Handle | Event Handle | Entry Function Handle |
-| ------------- | ------ | ------------------ | ------------ | --------------------- |
-| Aptos Mainnet | Stable | ✓                  | ✓            | ✓                     |
-| SUI           | Alpha  | ✓                  |              |                       |
+| Chain | Stage  | Transaction | Event  | Entry Function | Data staleness |
+| ----- | ------ | ----------- | ------ | -------------- | -------------- |
+| Aptos | Stable | ✓           | ✓      | ✓              | Real-time      |
+| SUI   | Alpha  | ✓           |        |                | Real-time      |
 
 ## Solana
 
