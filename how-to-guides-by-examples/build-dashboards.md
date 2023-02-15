@@ -1,20 +1,22 @@
-# ➡ Build dashboards
+# ➡ Build Dashboards
 
-To use the metrics to better do visualization and computation, you could build dashboard using the metrics collected. Here is one example we have a dashboard overlay `balance` and `token_bridge_weth` in the same dashboard.
+## Build Metrics Dashboard <a href="#graphing" id="graphing"></a>
 
-<figure><img src="../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+To use the metrics to better do visualization and computation, you could build dashboard using the metrics collected.&#x20;
 
-Note, even these 2 metrics should track each other closely, but they have different decimals. We could use [formula](../references/concepts/visualizations/aggregation-functions-and-formulas.md) to **normalize** `balance` to make them match.
+This is following the metrics submitted by [monitor-coinbase-cbeth-mint-burn-via-events.md](data-collection/working-with-different-chains/evm-chains/monitor-coinbase-cbeth-mint-burn-via-events.md "mention")
 
-<figure><img src="../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
+Here is one example we have a dashboard to show the **Mint Activity - 24 Hours Aggregation.**
 
-{% hint style="info" %}
-A few things to notice here:
+<figure><img src="../.gitbook/assets/dashboard (1).gif" alt=""><figcaption></figcaption></figure>
 
-* You can control which query to show by clicking the left hand side of a [**metric**](../references/concepts/data-types/metrics.md) or [**formula**](../references/concepts/visualizations/aggregation-functions-and-formulas.md)****
-* You could add alias to a query
-{% endhint %}
+Here we take a metric and apply a rollup function to perform 24 hours sum aggregation. For more about the formula and functions, refer to [aggregation-functions-and-formulas.md](../references/concepts/visualizations/aggregation-functions-and-formulas.md "mention")
 
-Putting them all together, we have a dashboard ready
+## Build Event Analytics Dashboard <a href="#graphing" id="graphing"></a>
 
-<figure><img src="../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+Following [monitor-pancake-swap-ifo-deposit.md](data-collection/working-with-different-chains/aptos/monitor-pancake-swap-ifo-deposit.md "mention"), we could build a dashboard to show Daily Active Users.
+
+<figure><img src="../.gitbook/assets/eventAnalytics.gif" alt=""><figcaption></figcaption></figure>
+
+For more complete features of dashboard, refer to [dashboard.md](../references/concepts/visualizations/dashboard.md "mention")
+

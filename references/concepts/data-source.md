@@ -46,7 +46,7 @@ By default, every new upload overrides the previous upload. But users can enable
 
 After you enable multi-version, your previous version **keeps running** until you explicit switch the active version. The data of the old version will be deleted after a small delay.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 ### Abandon a version
 

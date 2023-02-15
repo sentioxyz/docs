@@ -8,7 +8,7 @@ Counter represents the **cumulative value** at a given time, each data point rep
 
 To see a complete example about how to use it, start from [monitor-coinbase-cbeth-mint-burn-via-events.md](../../../how-to-guides-by-examples/data-collection/working-with-different-chains/evm-chains/monitor-coinbase-cbeth-mint-burn-via-events.md "mention")
 
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption><p>A typical counter</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>A typical counter</p></figcaption></figure>
 
 ## Gauge
 
