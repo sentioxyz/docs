@@ -1,4 +1,4 @@
-# ➡ Submit metrics
+# ➡ Submitting Metrics
 
 {% hint style="info" %}
 Metrics API is the same among all different chains.
@@ -7,10 +7,10 @@ Metrics API is the same among all different chains.
 Metrics have 2 types: [Counter](../../references/concepts/data-types/metrics.md#counter) and [Gauge](../../references/concepts/data-types/metrics.md#gauge).
 
 ```typescript
- const totalSupply = scaleDown(await ctx.contract.totalSupply(), tokenInfo.decimal)
+ const totalSupply = (await ctx.contract.totalSupply()).scaleDown(tokenInfo.decimal)
  ctx.meter.Gauge("total_supply").record(totalSupply, {token: tokenInfo.symbol})
  
- const amount = scaleDown(event.args.amount, tokenInfo.decimal)
+ const amount = event.args.amount.scaleDown(tokenInfo.decimal)
  ctx.meter.Counter("mint_acc").add(amount, {token: tokenInfo.symbol})
 ```
 
@@ -18,4 +18,4 @@ Note, `token` is the [#labels](../../developer-guides/sdk-guide/metrics-in-proce
 
 Please refer to [metrics-in-processors.md](../../developer-guides/sdk-guide/metrics-in-processors.md "mention")for more definitions.
 
-Please refer to [working-with-different-chains](../data-collection/working-with-different-chains/ "mention")for detailed examples from different chains.
+Please refer to [working-with-different-chains](working-with-different-chains/ "mention")for detailed examples from different chains.

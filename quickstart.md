@@ -10,9 +10,9 @@ Simply go to [https://app.sentio.xyz](https://app.sentio.xyz) and login/create y
 
 ## Step 2: Create a Project (optional)
 
-By default, Sentio will create an empty "default" project for you, if you want to have a default project ID, then click "**Create Project**" on the project selector.
+By default, Sentio will create an empty "default" project for you, if you want to have a default project ID, then click "**Create Project**" on the project selector. In addition, our CLI can also automatically create a project for you.
 
-<figure><img src=".gitbook/assets/image (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/createProject.gif" alt=""><figcaption></figcaption></figure>
 
 ## Step 3: Setup Dev environment
 

@@ -29,6 +29,6 @@ StepStakingProcessor.bind({ address: 'StKLLTf7CQ9n5BgXPSDXENovLTCuNc7N2ehvTb6JZ5
 You could see the metrics are submitted using `ctx.meter.Counter`
 
 {% hint style="info" %}
-See this [repo](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/aurory) for full implementation. To learn how to view metrics from the UI, go to [view-metrics.md](../../view-metrics.md "mention")
+See this [repo](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/aurory) for full implementation. To learn how to view metrics from the UI, go to [view-metrics.md](../../../view-metrics.md "mention")
 {% endhint %}
 

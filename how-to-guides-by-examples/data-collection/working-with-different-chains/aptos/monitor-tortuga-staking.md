@@ -1,4 +1,4 @@
-# Monitor event/function/transaction
+# Monitor tortuga staking
 
 Here we go through one example as follows
 
@@ -18,10 +18,15 @@ You could setup the processor to be triggered by any **StakeEvent (**Generated f
 ```typescript
 stake_router.bind()
   .onEventStakeEvent((evt, ctx) => {
-    accountTracker.trackEvent(ctx, { distinctId: ctx.transaction.sender})
-    const amount = scaleDown(evt.data_typed.amount)
+    ctx.eventLogger.emit("user event", { distinctId: ctx.transaction.sender})
+    const amount = scaleDown(evt.data_decoded.amount)
     stakeAmount.add(ctx, amount, { coin: "APT"})
-    stakeAmount.add(ctx, scaleDown(evt.data_typed.t_apt_coins), { coin: "tAPT"})
+    stakeAmount.add(ctx, scaleDown(evt.data_decoded.t_apt_coins), { coin: "tAPT"})
+    if (evt.data_decoded.amount > 0n) {
+      lastStakeAmount.record(ctx, amount, {coin: "APT"})
+      lastStakeAmount.record(ctx, scaleDown(evt.data_decoded.t_apt_coins), { coin: "tAPT"})
+    }
+    ctx.eventLogger.emit("stake", { message: "stake " + amount + " APT", type: "stake", amount: amount.toNumber()})
     stake.add(ctx, 1)
   })
 ```
@@ -34,17 +39,14 @@ You could setup the processor to be triggered by any **function call: CreatePool
 amm.bind({startVersion: 2331560})
   .onEntryCreatePool(async (evt, ctx) => {
     ctx.meter.Counter("num_pools").add(1)
-    accountTracker.trackEvent(ctx, { distinctId: ctx.transaction.sender })
   })
 
 ```
 
-****
-
 ## Using filters
 
-For a more detailed guide, read [#aptos](../../../developer-guides/sdk-guide/handlers-and-filters.md#aptos "mention")
+For a more detailed guide, read [#aptos](../../../../developer-guides/sdk-guide/handlers-and-filters.md#aptos "mention")
 
 {% hint style="info" %}
-See this [repo](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/aptos) for full implementation. To learn how to view metrics from the UI, go to [view-metrics.md](../../view-metrics.md "mention")
+See this [repo](https://github.com/sentioxyz/sentio-processors/tree/main/projects/tortuga) for full implementation. To learn how to view metrics from the UI, go to [view-metrics.md](../../../view-metrics.md "mention")
 {% endhint %}

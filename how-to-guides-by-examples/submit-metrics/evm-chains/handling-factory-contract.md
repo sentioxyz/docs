@@ -1,4 +1,4 @@
-# Handling factory contract
+# Handling Factory Contract
 
 In many cases, there is a factory contract that is responsible to create multiple actual contracts. The typical example is [UniswapV3Factory](https://github.com/Uniswap/v3-core/blob/main/contracts/UniswapV3Factory.sol#L50), every time a pool is created, an `PoolCreated` event is emitted.
 
@@ -36,5 +36,5 @@ Notice the template must be declared in the top level of your processor file to 
 {% endhint %}
 
 {% hint style="success" %}
-A slightly different implementation of this is at this [repo](https://github.com/sentioxyz/sentio-processors/tree/main/projects/uniswap).
+The complete implementation of this is at this [repo](https://github.com/sentioxyz/sentio-processors/tree/main/projects/uniswap).
 {% endhint %}

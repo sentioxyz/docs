@@ -25,4 +25,4 @@ export enum LogLevel {
 }
 ```
 
-The logs will be shown from the logs page, see details at [logs.md](../../references/concepts/data-types/logs.md "mention")
+The logs will be shown from the logs page, see details at [event-logs.md](../../references/concepts/data-types/event-logs.md "mention")
