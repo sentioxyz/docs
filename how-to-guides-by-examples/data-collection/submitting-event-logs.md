@@ -4,6 +4,8 @@
 Event Log API is the same among all different chains.
 {% endhint %}
 
+## Typical Case For DAU
+
 Assume you'd like to emit a log for all `swap` user activities in order to compute the Daily unique wallets. You could do the followings:
 
 ```typescript
@@ -11,6 +13,8 @@ Assume you'd like to emit a log for all `swap` user activities in order to compu
    ctx.eventLogger.emit("user", { distinctId: ctx.transaction.sender })
  })
 ```
+
+## Submit Attributes
 
 You could also attach attributes to the event log:
 
@@ -22,7 +26,4 @@ You could also attach attributes to the event log:
  })
 </code></pre>
 
-
-
 To view the results of the submitted logs, see [view-and-search-event-logs.md](../visualize-results/view-and-search-event-logs.md "mention")
-

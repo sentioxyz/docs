@@ -73,6 +73,7 @@
   * [⌨ Processor](references/concepts/processor.md)
   * [📶 Channel](references/concepts/channel.md)
   * [⏰ Alerts](references/concepts/alerts.md)
+  * [🥫 Notification Channel](references/concepts/notification-channel.md)
   * [🔑 API Key](references/concepts/api-key.md)
   * [💡 Data Source](references/concepts/data-source.md)
 * [▶ UI layout](references/ui-layout.md)
