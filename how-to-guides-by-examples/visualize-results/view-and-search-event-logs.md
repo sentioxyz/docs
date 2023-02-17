@@ -8,7 +8,7 @@ If you'd like to do a range search on Amount between **1000 and 10000** submitte
 
 If you'd like to search for all the swaps from USDC, you can do full text search:
 
-<figure><img src="../../.gitbook/assets/fulltext.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/fulltext (2).gif" alt=""><figcaption></figcaption></figure>
 
 For more details regarding submitting logs in processor, refer to [logs-in-processor.md](../../developer-guides/sdk-guide/logs-in-processor.md "mention")
 
