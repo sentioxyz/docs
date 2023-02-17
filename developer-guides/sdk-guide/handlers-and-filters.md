@@ -2,7 +2,7 @@
 
 Sentio processors basically provide you with an event-driven model to handle and submit data. Once a processor is created, you can register your event handler functions with filters.&#x20;
 
-The handler function usually takes two parameters, the first one is `data` and the second one is the `context`. Data usually refers to the actual object that is selected by the handler.  Context usually holds  all the API objects  such as `meter` , `logger` and all the additional information such as block number, contract reference, etc.
+The handler function usually takes two parameters, the first one is `data` and the second one is the `context`. Data usually refers to the actual object that is selected by the handler.  Context usually holds  all the API objects  such as `meter` , `eventLogger` and all the additional information such as block number, contract reference, etc.
 
 For some handler type you can pass a filter to significantly speed up your data processing.
 

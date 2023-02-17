@@ -14,7 +14,7 @@ async function handleTransfer(event: TransferEvent, ctx: ERC20Context) {
 
 ## Metric Naming
 
-A metric name could contain characters, digits or `_`, any other characters will be converted to `_`. It will also be truncated to 100 characters.
+A metric name could contain characters, digits or `_`, any other characters will be converted to `_`. It will also be truncated to 512 characters.
 
 ## Labels
 
@@ -28,9 +28,7 @@ async function handleTransfer(event: TransferEvent, ctx: ERC20Context) {
 }
 ```
 
-Our system automatically adds a few reserved labels, including **address**, **contract** and **chain**.
-
-<figure><img src="../../.gitbook/assets/image (25) (1).png" alt=""><figcaption><p>System labels</p></figcaption></figure>
+Our system automatically adds a few reserved labels, including **chain, version, contract\_name, contract\_address, aggregation\_minutes, aggregation\_days**. If users use these labels, an error will  be returned and visible on the UI.
 
 You could also add your own custom labels to differentiate the characteristics of the thing that is being measured. For example:
 

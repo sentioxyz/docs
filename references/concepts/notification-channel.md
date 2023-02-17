@@ -7,6 +7,6 @@ We support creating notification channel for
 * Slack
 * Telegram
 
-## Creating email channel
+## Creating Email Channel
 
 <figure><img src="../../.gitbook/assets/createChannel.gif" alt=""><figcaption><p>Creating Email Channel</p></figcaption></figure>

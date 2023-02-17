@@ -6,10 +6,10 @@ If you'd like to do a range search on Amount between **1000 and 10000** submitte
 
 <figure><img src="../../.gitbook/assets/searchlogs.gif" alt=""><figcaption></figcaption></figure>
 
-If you'd like to search for all IFO **** contract, you could simply type "IFO" in the search bar.
+If you'd like to search for all the swaps from USDC, you can do full text search:
 
 <figure><img src="../../.gitbook/assets/fulltext.gif" alt=""><figcaption></figcaption></figure>
 
-For more details regarding submitting logs in processor, refer to [logs-in-processor.md](../../developer-guides/sdk-guide/logs-in-processor.md "mention")
+For more details regarding submitting logs in processor, refer to [event-logs-in-processors.md](../../developer-guides/sdk-guide/event-logs-in-processors.md "mention")
 
 For more details regarding the definition of logs, refer to [event-logs.md](../../references/concepts/data-types/event-logs.md "mention")
