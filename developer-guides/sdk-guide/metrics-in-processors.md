@@ -33,10 +33,14 @@ Our system automatically adds a few reserved labels, including **chain, version,
 You could also add your own custom labels to differentiate the characteristics of the thing that is being measured. For example:
 
 ```typescript
-ctx.meter.Gauge("withdraw").record(amount, {token: tokenInfo.symbol})
+tvl.record(ctx, v, {coin: coinInfo.symbol, bridge: coinInfo.bridge, type: coinInfo.token_type.type})
 ```
 
-This submits an amount with **symbol** being used as a tag.
+This submits TVL with **symbol** being used as a tag.
+
+{% hint style="info" %}
+Assuming there are **N** symbols, **M** bridges and **K** coin types, the total number of series generated could be as large as **N \* M \* K** (but won't exceed the total number of points submitted)
+{% endhint %}
 
 ## Descriptor
 
