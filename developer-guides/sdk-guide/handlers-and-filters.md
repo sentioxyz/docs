@@ -8,7 +8,8 @@ For some handler type you can pass a filter to significantly speed up your data 
 
 ### EVM
 
-* [`onBlock`](https://sentioxyz.github.io/sentio-sdk/classes/core.BaseProcessor.html#onBlock) : execute on certain blocks interval backfill historical data, and execute every block processing new data. &#x20;
+* onBlockInterval : execute on certain blocks interval **X** backfill historical data, and execute every **Y** blocks processing new data. Both **X and Y** are configurable.
+* onTimeInterval: execute on certain time interval **X minutes** backfill historical data, and execute every **Y** minutes processing new data. Both **X and Y** are configurable.
 *   `onEventXXX`: execute on certain event occurrences of this contract, to have those handlers available you need to [code-gen](decoding-from-custom-abis.md) your own types of processor, or use builtin processors, e.g. [`ERC20Processor.onEventApproval`](https://sentioxyz.github.io/sentio-sdk/classes/builtin.erc20.ERC20Processor.html#onEventApproval). You can filter events using event filter also generated for your contract. e.g. for [`ApprovalEventFilter`](https://sentioxyz.github.io/sentio-sdk/types/builtin.erc20.ApprovalEventFilter.html) , you can create and use it as follow, each parameter represents the desired value of the event, `undefined` or `null` value meaning match all.  The semantics is the same as Ethereum's own log filter, read more details [here](https://docs.ethers.io/v5/concepts/events/#events--filters).
 
     {% code overflow="wrap" %}
@@ -40,6 +41,8 @@ TBD
 
 ### Aptos
 
+* onTimeInterval: execute on certain time interval **X minutes** backfill historical data, and execute every **Y** minutes processing new data. Both **X and Y** are configurable.
+* onVersionInterval : execute on certain versions interval **X** backfill historical data, and execute every **Y** blocks processing new data. Both **X and Y** are configurable.
 *   `onEntryXXXFunction`: execute on all of your specific entry function calls. The first argument is the payload of the function with fully decoded and typed arguments. Refer [`coin.TransferPayload`](https://sentioxyz.github.io/sentio-sdk/interfaces/builtin.aptos.\_0x1.coin.TransferPayload.html) as an example. The second argument is [`AptosContext`](https://sentioxyz.github.io/sentio-sdk/classes/aptos.AptosContext.html) that holds APIs and additional information like the full user transaction. A full example looks like follows.&#x20;
 
     ```typescript

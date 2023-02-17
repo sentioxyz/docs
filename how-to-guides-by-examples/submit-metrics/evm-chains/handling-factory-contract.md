@@ -34,7 +34,3 @@ const poolTemplate = new UniswapProcessorTemplate()
 {% hint style="warning" %}
 Notice the template must be declared in the top level of your processor file to be successfully registered.
 {% endhint %}
-
-{% hint style="success" %}
-The complete implementation of this is at this [repo](https://github.com/sentioxyz/sentio-processors/tree/main/projects/uniswap).
-{% endhint %}
