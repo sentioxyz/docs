@@ -34,7 +34,7 @@ If your processor reports an error, you could visualize it by clicking the **Err
 
 <figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
-## Version Control
+## Version Control (Only available for Paid Users)
 
 ### Enable multi-version
 

@@ -8,17 +8,9 @@ Counter represents the **cumulative value** at a given time, each data point rep
 
 To see a complete example about how to use it, start from [monitor-coinbase-cbeth-mint-burn-via-events.md](../../../how-to-guides-by-examples/data-collection/working-with-different-chains/evm-chains/monitor-coinbase-cbeth-mint-burn-via-events.md "mention")
 
-<figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>A typical counter</p></figcaption></figure>
-
 ## Gauge
 
 Gauge represents a sampled value at a given time, each data point reported is the current value. Usually used to record e.g. **balance** or **total Supply**. To see a complete example about how to use it, start from [monitor-totalsupply-of-cbeth-via-interval.md](../../../how-to-guides-by-examples/data-collection/working-with-different-chains/evm-chains/monitor-totalsupply-of-cbeth-via-interval.md "mention")
-
-
-
-It shows up on the **Metrics** page like the following:
-
-<figure><img src="../../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption><p>A typical gauge</p></figcaption></figure>
 
 ## Series
 

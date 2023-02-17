@@ -40,7 +40,7 @@
   * [Processor Basic](developer-guides/sdk-guide/processor-basic.md)
   * [Decoding from custom ABIs](developer-guides/sdk-guide/decoding-from-custom-abis.md)
   * [Metrics in processors](developer-guides/sdk-guide/metrics-in-processors.md)
-  * [Event Logs In Processors](developer-guides/sdk-guide/event-logs-in-processors.md)
+  * [Event Logs In Processors](developer-guides/sdk-guide/logs-in-processor.md)
   * [Handlers and Filters](developer-guides/sdk-guide/handlers-and-filters.md)
   * [Export via WebHook](developer-guides/sdk-guide/export-via-webhook.md)
   * [Debug Processors](developer-guides/sdk-guide/debug-processors.md)
@@ -51,7 +51,7 @@
 
 ## Access Sentio Via APIs
 
-* [Aptos Composer](access-sentio-via-apis/aptos-composer.md)
+* [Sentio API](access-sentio-via-apis/sentio-api.md)
 
 ## References
 
@@ -63,6 +63,8 @@
     * [Solana](references/concepts/chain-concepts/solana.md)
   * [🔍 Visualizations](references/concepts/visualizations/README.md)
     * [📊 Dashboard](references/concepts/visualizations/dashboard.md)
+    * [🔺 Metrics Dashboard](references/concepts/visualizations/metrics-dashboard.md)
+    * [⚡ Event Analytics Dashboard](references/concepts/visualizations/event-analytics-dashboard.md)
     * [📐 Aggregation, Functions and Formulas](references/concepts/visualizations/aggregation-functions-and-formulas.md)
   * [◻ Data types](references/concepts/data-types/README.md)
     * [💨 Metrics](references/concepts/data-types/metrics.md)
@@ -70,7 +72,6 @@
     * [🪝 Webhook](references/concepts/data-types/webhook.md)
   * [📔 ABI](references/concepts/abi.md)
   * [⌨ Processor](references/concepts/processor.md)
-  * [📶 Channel](references/concepts/channel.md)
   * [⏰ Alerts](references/concepts/alerts.md)
   * [🥫 Notification Channel](references/concepts/notification-channel.md)
   * [🔑 API Key](references/concepts/api-key.md)

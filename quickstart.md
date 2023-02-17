@@ -53,7 +53,7 @@ yarn sentio upload
 
 You will see a link to [data-source.md](references/concepts/data-source.md "mention") printed and you can open it in a browser to see the upload status.
 
-<figure><img src=".gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (4) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## End: Verify Metrics
 
