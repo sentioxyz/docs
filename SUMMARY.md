@@ -86,4 +86,6 @@
 * [🔍 Multi-chain support](best-practices/multi-chain-support.md)
 * [🔍 Avoid high cardinality](best-practices/avoid-high-cardinality.md)
 * [🔍 Updating processors](best-practices/updating-processors.md)
-* [🔍 Understanding errors](best-practices/understanding-errors.md)
+* [🔍 Handling errors](best-practices/handling-errors.md)
+* [🔍 Performance Tuning](best-practices/performance-tuning.md)
+* [🔍 Cost Reduction](best-practices/cost-reduction.md)

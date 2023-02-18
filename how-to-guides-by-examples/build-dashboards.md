@@ -18,5 +18,9 @@ Following [monitor-pancake-swap-ifo-deposit.md](data-collection/working-with-dif
 
 <figure><img src="../.gitbook/assets/eventAnalytics.gif" alt=""><figcaption></figcaption></figure>
 
+{% hint style="warning" %}
+This requires the event were submitted with [#distinct-id](../developer-guides/sdk-guide/logs-in-processor.md#distinct-id "mention")
+{% endhint %}
+
 For more complete features of dashboard, refer to [dashboard.md](../references/concepts/visualizations/dashboard.md "mention")
 

@@ -25,4 +25,10 @@ export enum LogLevel {
 }
 ```
 
+## Distinct ID
+
+You might notice there is an `distinctId` field. If missing, `null` is used. Note, this is critical for Sentio to compute analytics related to DAU, WAU, etc.
+
+
+
 The logs will be shown from the logs page, see details at [event-logs.md](../../references/concepts/data-types/event-logs.md "mention")

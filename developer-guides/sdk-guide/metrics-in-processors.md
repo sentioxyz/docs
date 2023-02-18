@@ -61,3 +61,29 @@ async function handleTransfer(event: TransferEvent, ctx: ERC20Context) {
   tokenCount.add(ctx, event.args.value)
 }
 ```
+
+## Resolution
+
+You can define pre-aggregation rules for the metrics
+
+```typescript
+export const gaugeOptions: MetricOptions = {
+  sparse: true,
+  aggregationConfig: {
+    intervalInMinutes: [60],
+    discardOrigin: true,
+  }
+}
+
+export const vol = Gauge.register("vol", gaugeOptions)
+```
+
+This will generate 2 new metrics vol\_count and vol\_sum.
+
+* **vol\_count** represents the count of data pre-aggregated every 60 minutes.
+* **vol\_sum** represents the sum of data pre-aggregated every 60 minutes.
+* The original metric **vol** will be omitted since `discardOrigin` is true.
+
+{% hint style="info" %}
+We only support resolution of [#gauge](../../references/concepts/data-types/metrics.md#gauge "mention")at this point.
+{% endhint %}

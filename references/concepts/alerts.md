@@ -1,37 +1,25 @@
-# ⏰ Alert
+# ⏰ Alerts
 
-Alerts can be created for a query or formula to notify when a certain condition is met. For example, you can use Alerts to notify your team when a large mint event is emitted or a large discrepancy is detected.&#x20;
+Alerts can be created for a query or formula to notify (via [notification-channel.md](notification-channel.md "mention")) when a certain condition is met.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+## Metrics based alert (same as [create-alerts.md](../../how-to-guides-by-examples/create-alerts.md "mention"))
 
-### Define Query or Formula
+Assume we want to alert if TVL of your project is below a threshold, you could&#x20;
 
-The process of defining the query or formula to be monitored is very similar to creating a dashboard. The main difference is for each alert a single series needs to be produced as the result.
+* Select the metric that represents the TVL
+* Add a alert condition
+* Choose a notification channel [notification-channel.md](notification-channel.md "mention")
 
-### Conditions
+<figure><img src="../../.gitbook/assets/creatingAlert.gif" alt=""><figcaption></figcaption></figure>
 
-The next step is to specify what condition needs to be met for the result above to trigger the alert. Currently, Sentio supports the following conditions:
+{% hint style="info" %}
+Note you can also use [formula](visualizations/aggregation-functions-and-formulas.md) in alerts
+{% endhint %}
 
-`greater than`
+## Log based Alerts
 
-`greater or equal`
+You can count certain number of logs matching a criteria, and setup alerts based on the condition.
 
-`less than`
+<figure><img src="../../.gitbook/assets/log.gif" alt=""><figcaption></figcaption></figure>
 
-`less or equal`
-
-`not equal`
-
-`equal`
-
-If the query contains multiple series, then the condition will be met when on of the series meet the condition, so you may want to do aggregation if needed.
-
-### Notification Channel and Message
-
-Next, you can specify the title and message when an alert is triggered. You can also specify the channel via which the notification is sent. Currently, Sentio supports the following channels:
-
-* Slack
-* Email
-* Webhook
-
-<figure><img src="../../.gitbook/assets/image (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+###

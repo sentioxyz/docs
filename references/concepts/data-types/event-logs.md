@@ -18,6 +18,10 @@ Sentio also attach system labels automatically to the log, including:
 * Address
 * Chain
 
+## Event Analytics
+
+Follow [event-analytics-dashboard.md](../visualizations/event-analytics-dashboard.md "mention")to learn how to visualize Events.
+
 ## Filter Event Logs on UI
 
 Using the menu on the left hand side, users can filter the log based on [#log-levels](event-logs.md#log-levels "mention")and [#system-labels](event-logs.md#system-labels "mention"). The Labels selection is standard faceted search filters.

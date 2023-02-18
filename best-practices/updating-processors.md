@@ -7,3 +7,5 @@ yarn sentio upload
 ```
 
 Our system will re-run all the historical data and update your metrics.
+
+This means that it will erase the historical data, and your usage will be interrupted. Our paid users can use [#version-control-only-available-for-paid-users](../references/concepts/data-source.md#version-control-only-available-for-paid-users "mention")to avoid downtime.
