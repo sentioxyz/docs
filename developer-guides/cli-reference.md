@@ -55,7 +55,7 @@ npx -y -p @sentio/cli sentio add --chain <mainnet|goerli|arbitrum|avalanche|apto
 By default, the ABI will be downloaded with its address as the name, which will lead the generated binding to use the address for the name as well. To override the name, use `-n <name>`, e.g.
 
 ```
-npx -y -p @sentio/cli sentio add --chain mainnet --name MyToken <contract address>
+npx -y -p @sentio/cli sentio add --name MyToken <contract address>
 ```
 
 ## sentio upload
