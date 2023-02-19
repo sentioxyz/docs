@@ -38,13 +38,25 @@ npx -y -p @sentio/cli sentio create --subproject -n <project name>
 
 ## sentio add
 
-Add contract ABI to your project and generate bindings.
+Add contract ABI to your project and generate bindings for a contract in Ethereum mainnet.
 
 {% code overflow="wrap" %}
 ```
-npx -y -p @sentio/cli sentio add -c <mainnet|goerli|arbitrum|avalanche|aptos|aptos/testnet> <contract address>
+npx -y -p @sentio/cli sentio add <contract address>
 ```
 {% endcode %}
+
+To use a different network, try `--chain` flag as follows
+
+```
+npx -y -p @sentio/cli sentio add --chain <mainnet|goerli|arbitrum|avalanche|aptos|aptos/testnet> <contract address>
+```
+
+By default, the ABI will be downloaded with its address as the name, which will lead the generated binding to use the address for the name as well. To override the name, use `-n <name>`, e.g.
+
+```
+npx -y -p @sentio/cli sentio add --chain mainnet --name MyToken <contract address>
+```
 
 ## sentio upload
 
