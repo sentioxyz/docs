@@ -42,7 +42,7 @@ Add contract ABI to your project and generate bindings.
 
 {% code overflow="wrap" %}
 ```
-npx -y -p @sentio/cli sentio add <mainnet|goerli|arbitrum|avalanche|aptos|aptos/testnet> <contract address>
+npx -y -p @sentio/cli sentio add -c <mainnet|goerli|arbitrum|avalanche|aptos|aptos/testnet> <contract address>
 ```
 {% endcode %}
 
