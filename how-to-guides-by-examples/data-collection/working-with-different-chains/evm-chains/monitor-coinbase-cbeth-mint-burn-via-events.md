@@ -1,8 +1,8 @@
 # Monitor Coinbase cbETH Mint/Burn (via Events)
 
-Here is an example to monitor wormhole WETH balance by using the WETH9 [events](../../../../references/concepts/chain-concepts/evm.md#event).
+Here is an example to monitor [cbETH](https://help.coinbase.com/en/coinbase/trading-and-funding/staking-rewards/cbeth) mint/burn events.
 
-First, you import builtin ABIs for WETH9.
+First, you import builtin ABIs for cbETH. (First fetch them by [#sentio-add](../../../../developer-guides/cli-reference.md#sentio-add "mention"))
 
 ```typescript
 import { MintEvent, BurnEvent, StakedTokenV1Context, StakedTokenV1Processor } 

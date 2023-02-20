@@ -83,9 +83,11 @@
 
 ## Best Practices
 
-* [🔍 Multi-chain support](best-practices/multi-chain-support.md)
-* [🔍 Avoid high cardinality](best-practices/avoid-high-cardinality.md)
-* [🔍 Updating processors](best-practices/updating-processors.md)
-* [🔍 Handling errors](best-practices/handling-errors.md)
+* [🔍 Multi-Chain Support](best-practices/multi-chain-support.md)
+* [🔍 Avoid High Cardinality](best-practices/avoid-high-cardinality.md)
+* [🔍 Updating Processors](best-practices/updating-processors.md)
+* [🔍 Handling Errors](best-practices/handling-errors.md)
 * [🔍 Performance Tuning](best-practices/performance-tuning.md)
 * [🔍 Cost Reduction](best-practices/cost-reduction.md)
+* [🔍 How To Handle Proxy Contracts?](best-practices/how-to-handle-proxy-contracts.md)
+* [🔍 Upgrade SDK Version](best-practices/upgrade-sdk-version.md)

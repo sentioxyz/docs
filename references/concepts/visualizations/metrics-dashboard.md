@@ -11,4 +11,4 @@ Here is one example to make a dashboard to show the daily trading volume from a 
 <figure><img src="../../../.gitbook/assets/rollup.gif" alt=""><figcaption></figcaption></figure>
 
 * Initially, it is multiple series for multiple pairs.
-* Adding aggregation makes it only one series.
+* Adding aggregation (rollup sum) makes it only one series.

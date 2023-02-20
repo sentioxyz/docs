@@ -1,5 +1,9 @@
 # 📕 Event Logs
 
+Every event log is a structured data stored in Sentio. Users can submit it from Sentio Processor.
+
+
+
 ## Log Levels
 
 Sentio allows users to submit and search for logs. Logs naturally have 5 levels:

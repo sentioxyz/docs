@@ -32,7 +32,7 @@ You can also give the processor project a name by using the following command
 npx -y -p @sentio/cli sentio create $PROJECT_NAME
 ```
 
-The commands will generate a template project based on [X2Y2 token](https://github.com/X2Y2-io/x2y2-sdk). This should be a good starting point to write your own processor logic.  It is also possible to create template projects for other types of chains, please refer [CLI Reference](developer-guides/cli-reference.md#sentio-create). &#x20;
+The commands will generate a template project based on [X2Y2 token](https://github.com/X2Y2-io/x2y2-sdk). This should be a good starting point to write your own processor logic.  It is also possible to create template projects for other types of chains, please refer [CLI Reference](developer-guides/cli-reference.md#sentio-create).  You can run `yarn install` to make everything compile.
 
 {% hint style="info" %}
 You can directly **modify the code (**`src/processor.ts`**)** to fit your use case as well.
@@ -47,7 +47,6 @@ For more information on how to write a processor you can refer to [processor-bas
 You can build and upload the processor project by using the following command
 
 ```bash
-yarn install
 yarn sentio upload
 ```
 

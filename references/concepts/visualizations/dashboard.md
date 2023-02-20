@@ -18,6 +18,16 @@ You can select them on the UI
 
 <figure><img src="../../../.gitbook/assets/charts.gif" alt=""><figcaption></figcaption></figure>
 
+### Line, Bars, Areas
+
+These 3 are very similar. The only difference is the visual. It still represent a time series.
+
+### Bar Gauge, Query Value, Table, Pie
+
+These 4 **reduce** **One** time series to **One** single number. Using this option below:
+
+<figure><img src="../../../.gitbook/assets/reduce.gif" alt=""><figcaption></figcaption></figure>
+
 ### Selecting Time Range
 
 There are generally 2 ways to select time range. One is using **Time picker**
