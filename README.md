@@ -14,8 +14,8 @@ Users can use Sentio’s SDK to **collect** and **transform** [metrics.md](refer
 
 For the complete samples which cover both [metrics.md](references/concepts/data-types/metrics.md "mention")and [event-logs.md](references/concepts/data-types/event-logs.md "mention"), See
 
-* [cbETH](https://help.coinbase.com/en/coinbase/trading-and-funding/staking-rewards/cbeth) (EVM): [Metrics](https://app.sentio.xyz/pancakeswap/pancakeswap/dashboards/zgvs3pm6?from=%22-90d%22\&to=%22now%22), [Event Logs](https://app.sentio.xyz/pancakeswap/pancakeswap/logs?query=)
-* [PancakeSwap](https://aptos.pancakeswap.finance/swap) (Aptos): [Metrics](https://app.sentio.xyz/sentio/coinbase/dashboards/XAc6e8Jr), [Event Logs](https://app.sentio.xyz/sentio/coinbase/logs?query=)
+* [PancakeSwap](https://aptos.pancakeswap.finance/swap) (Aptos): [Metrics](https://app.sentio.xyz/pancakeswap/pancakeswap/dashboards/zgvs3pm6?from=%22-90d%22\&to=%22now%22), [Event Logs](https://app.sentio.xyz/pancakeswap/pancakeswap/logs?query=)
+* [cbETH](https://help.coinbase.com/en/coinbase/trading-and-funding/staking-rewards/cbeth) (EVM): [Metrics](https://app.sentio.xyz/sentio/coinbase/dashboards/XAc6e8Jr), [Event Logs](https://app.sentio.xyz/sentio/coinbase/logs?query=)
 
 See [supported-networks.md](references/supported-networks.md "mention")for chains supported.
 
