@@ -1,6 +1,6 @@
 # 🗄 Samples
 
-You can see some samples from here
+Some sample projects you can refer to below:
 
 * This [repository](https://github.com/sentioxyz/sentio-processors) has samples for variety of projects (mostly **EVM + Aptos**).
 * For a typical **EVM project**, see [coinbase](https://github.com/sentioxyz/sentio-processors/tree/main/projects/coinbase)

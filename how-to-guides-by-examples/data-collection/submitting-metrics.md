@@ -16,6 +16,9 @@ Metrics have 2 types: [Counter](../../references/concepts/data-types/metrics.md#
 
 Note, `token` is the [#labels](../../developer-guides/sdk-guide/metrics-in-processors.md#labels "mention") you can attach when you submit the metric.
 
+{% hint style="info" %}
 Please refer to [metrics-in-processors.md](../../developer-guides/sdk-guide/metrics-in-processors.md "mention")for more definitions.
 
-Please refer to [working-with-different-chains](working-with-different-chains/ "mention")for detailed examples from different chains.
+Please refer to [metrics.md](../../references/concepts/data-types/metrics.md "mention")for the definitions.
+{% endhint %}
+

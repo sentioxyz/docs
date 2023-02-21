@@ -9,7 +9,7 @@ Sentio supports a limited set of price feed, it can be accessed by a combination
 ```typescript
 let price : any
 try {
-  price = await getPriceByType("1", TOKEN_ARRAY[i], ctx.timestamp)
+  price = await getPriceByType(CHAIN_IDS.ETHEREUM, TOKEN_ARRAY[i], ctx.timestamp)
 } catch (error) {
   if (error instanceof ClientError && error.code === Status.NOT_FOUND) {
     continue

@@ -45,6 +45,7 @@
   * [Export via WebHook](developer-guides/sdk-guide/export-via-webhook.md)
   * [Debug Processors](developer-guides/sdk-guide/debug-processors.md)
   * [Dynamic Processor Creation](developer-guides/sdk-guide/dynamic-processor-creation.md)
+  * [Handle ERC-20 Token](developer-guides/sdk-guide/handle-erc-20-token.md)
   * [Handle Big Numbers](developer-guides/sdk-guide/handle-big-numbers.md)
   * [Price Feed](developer-guides/sdk-guide/price-feed.md)
   * [Write Test](developer-guides/sdk-guide/write-test.md)
@@ -91,3 +92,4 @@
 * [🔍 Cost Reduction](best-practices/cost-reduction.md)
 * [🔍 How To Handle Proxy Contracts?](best-practices/how-to-handle-proxy-contracts.md)
 * [🔍 Upgrade SDK Version](best-practices/upgrade-sdk-version.md)
+* [🔍 Processor State and Execution Order](best-practices/processor-state-and-execution-order.md)

@@ -56,7 +56,7 @@ You will see a link to [data-source.md](references/concepts/data-source.md "ment
 
 ## End: Verify Metrics
 
-The command line should tell you the processor has been uploaded correctly and give you a link to check the status of the processor, such as what chains this processor is running, how many blocks have it processed, the version, etc. &#x20;
+The command line should tell you that the processor has been uploaded correctly and give you a link to check the status of the processor, such as what chains this processor is running, how many blocks it has processed, the version, etc.
 
 You can go to the metrics page to check the metrics submitted to the project. Checkout  [metrics.md](references/concepts/data-types/metrics.md "mention")for more details.
 

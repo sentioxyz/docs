@@ -20,7 +20,7 @@ When the processor is doing backfill, you can visualize the detailed process sta
 
 ### Console log
 
-You can see all the console logs (and part of the system logs) under chain status.
+You can see all the console logs (and part of the system logs) under chain status. See [#debug-processors](data-source.md#debug-processors "mention")
 
 <figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 

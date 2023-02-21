@@ -39,7 +39,7 @@ tvl.record(ctx, v, {coin: coinInfo.symbol, bridge: coinInfo.bridge, type: coinIn
 This submits TVL with **symbol** being used as a tag.
 
 {% hint style="info" %}
-Assuming there are **N** symbols, **M** bridges and **K** coin types, the total number of series generated could be as large as **N \* M \* K** (but won't exceed the total number of points submitted)
+Assuming there are **N** symbols, **M** bridges and **K** coin types, the total number of series generated could be as large as **N \* M \* K** (but won't exceed the total number of points submitted). Read [avoid-high-cardinality.md](../../best-practices/avoid-high-cardinality.md "mention")for more details.
 {% endhint %}
 
 ## Descriptor
