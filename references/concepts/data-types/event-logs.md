@@ -1,8 +1,6 @@
 # 📕 Event Logs
 
-Every event log is a structured data stored in Sentio. Users can submit it from Sentio Processor.
-
-
+Every event log is a structured data stored in Sentio. Users can submit it from Sentio Processor as decribed in [logs-in-processor.md](../../../developer-guides/sdk-guide/logs-in-processor.md "mention")
 
 ## Log Levels
 
