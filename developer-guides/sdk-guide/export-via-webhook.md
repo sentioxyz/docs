@@ -6,6 +6,10 @@ You could use `Exporter` to send webhook. Note you need to give the channel name
 const exporter = Exporter.register("SwapEvents", "WebhookChannel")
 ```
 
+Note, the `WebhookChannel` should be replaced by the name you created on UI
+
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+
 To send webhook, use:
 
 ```typescript

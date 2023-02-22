@@ -1,5 +1,9 @@
 # 🪝 Webhook
 
+{% hint style="success" %}
+Refer [export-via-webhook.md](../../../developer-guides/sdk-guide/export-via-webhook.md "mention")for the details of emitting webhook messages in the processor.
+{% endhint %}
+
 Sentio allows you to define the json message you want to send to webhook. In every webhook call, Sentio sends **an array** of json messages along with a few more metadata fields.
 
 * **event\_id：**This is unique for the messages from a channel. If you receive a ID more than once, the new message should override the old message. This is required due to block chain reorg.
