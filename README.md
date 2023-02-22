@@ -19,6 +19,10 @@ For the complete samples which cover both [metrics.md](references/concepts/data-
 
 See [supported-networks.md](references/supported-networks.md "mention")for chains supported.
 
+See Sentio 101 tutorial below
+
+{% embed url="https://www.youtube.com/watch?ab_channel=Sentio&v=yKggwExqKTw" %}
+
 ## Get Started
 
 We've put together some helpful guides for you to get set up with our product quickly and easily.
