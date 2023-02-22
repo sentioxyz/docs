@@ -14,8 +14,8 @@ Users can use Sentio’s SDK to **collect** and **transform** [metrics.md](refer
 
 For the **complete real-time monitoring of sample projects** which cover both [metrics.md](references/concepts/data-types/metrics.md "mention")and [event-logs.md](references/concepts/data-types/event-logs.md "mention"), See
 
-* [PancakeSwap](https://aptos.pancakeswap.finance/swap) (Aptos): [Metrics](https://app.sentio.xyz/sentio/pancakeswap/dashboards/W8drA6Gu?from=%22-6M%22\&to=%22now%22), [Event Logs](https://app.sentio.xyz/sentio/pancakeswap/logs?query=)
-* [cbETH](https://help.coinbase.com/en/coinbase/trading-and-funding/staking-rewards/cbeth) (EVM): [Metrics](https://app.sentio.xyz/sentio/coinbase/dashboards/XAc6e8Jr), [Event Logs](https://app.sentio.xyz/sentio/coinbase/logs?query=)
+* [PancakeSwap](https://aptos.pancakeswap.finance/swap) (Aptos): [Metrics](https://app.sentio.xyz/sentio/pancakeswap/dashboards/W8drA6Gu?from=%22-6M%22\&to=%22now%22), [Event Logs](https://app.sentio.xyz/sentio/pancakeswap/logs?query=)--->Use [this](https://github.com/sentioxyz/sentio-processors/tree/main/projects/pancake-swap) to upload
+* [cbETH](https://help.coinbase.com/en/coinbase/trading-and-funding/staking-rewards/cbeth) (EVM): [Metrics](https://app.sentio.xyz/sentio/coinbase/dashboards/XAc6e8Jr), [Event Logs](https://app.sentio.xyz/sentio/coinbase/logs?query=) --->Use [this](https://github.com/sentioxyz/sentio-processors/tree/main/projects/coinbase) to upload
 
 See [supported-networks.md](references/supported-networks.md "mention")for chains supported.
 
