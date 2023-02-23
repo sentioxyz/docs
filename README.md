@@ -27,7 +27,7 @@ See Sentio 101 tutorial below
 
 We've put together some helpful guides for you to get set up with our product quickly and easily.
 
-## Get Help
+## Getting Help
 
 If there are issues or problem can't be resolved in the doc, please contact us
 

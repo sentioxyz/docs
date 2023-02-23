@@ -28,7 +28,7 @@ When you do ethers call in your processor, it's very easy to produce errors. You
   * If you are using `ctx.contract.function` then the default block number is `ctx.blockNumber`&#x20;
   * If you just call contract view outside of context, it by default `latest`&#x20;
 
-&#x20;Contact support@sentio.xyz, if you still have problems.&#x20;
+&#x20;If you still have problems, feel free to [contact us](../#getting-help).
 
 
 
