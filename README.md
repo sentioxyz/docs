@@ -27,6 +27,14 @@ See Sentio 101 tutorial below
 
 We've put together some helpful guides for you to get set up with our product quickly and easily.
 
+## Get Help
+
+If there are issues or problem can't be resolved in the doc, please contact us
+
+* Email: [support@sentio.xyz](mailto:support@sentio.xyz)
+* [Discord](https://discord.gg/vSdkMYqnjb)
+* [Telegram](https://t.me/sentioxyz)&#x20;
+
 {% content-ref url="quickstart.md" %}
 [quickstart.md](quickstart.md)
 {% endcontent-ref %}
