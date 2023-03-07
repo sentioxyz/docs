@@ -36,3 +36,7 @@ Free tier users can have at most **3 projects**.
 ## Number of Alerts
 
 Free tier users can have at most **3 alerts**.
+
+## How the usage of multi-version is computed?
+
+If you enabled multi-version (say the 2 versions are _X_ and _Y, X being the new version_), the backfill stage is always free. Once version _X_ reaches the state of **Watching,** the Sentio units usage of both _X_ and _Y_ will be counted until you switch to the active version to _X._ (then the usage of _Y_ will no longer be counted). Similarly, if you abandon version _X_, then the usage of _X_ will no longer be counted.
