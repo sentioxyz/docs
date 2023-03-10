@@ -84,7 +84,7 @@
 
 ## Best Practices
 
-* [Best Way To Manage nodejs](best-practices/best-way-to-manage-nodejs.md)
+* [🔍 Best Way To Manage nodejs](best-practices/best-way-to-manage-nodejs.md)
 * [🔍 Multi-Chain Support](best-practices/multi-chain-support.md)
 * [🔍 Avoid High Cardinality](best-practices/avoid-high-cardinality.md)
 * [🔍 Updating Processors](best-practices/updating-processors.md)
