@@ -14,7 +14,7 @@ Users can use Sentio’s SDK to **collect** and **transform** [metrics.md](refer
 
 For the **complete real-time monitoring of sample projects** which cover both [metrics.md](references/concepts/data-types/metrics.md "mention")and [event-logs.md](references/concepts/data-types/event-logs.md "mention"), See
 
-* [PancakeSwap](https://app.sentio.xyz/sentio/pancakeswap/dashboards/W8drA6Gu?from=%22-6M%22\&to=%22now%22) (Aptos): Click this to see [Metrics](https://app.sentio.xyz/sentio/pancakeswap/dashboards/W8drA6Gu?from=%22-6M%22\&to=%22now%22), [Event Logs](https://app.sentio.xyz/sentio/pancakeswap/logs?query=) --->Use [this](https://github.com/sentioxyz/sentio-processors/tree/main/projects/pancake-swap) to upload
+* [PancakeSwap](https://app.sentio.xyz/sentio/pancakeswap/dashboards/W8drA6Gu?from=%22-6M%22\&to=%22now%22) (Aptos): Click this to see [Metrics](https://app.sentio.xyz/sentio/pancakeswap/dashboards/W8drA6Gu?from=%22-30d%22\&to=%22now%22), [Event Logs](https://app.sentio.xyz/sentio/pancakeswap/logs?query=) --->Use [this](https://github.com/sentioxyz/sentio-processors/tree/main/projects/pancake-swap) to upload
 * [cbETH](https://app.sentio.xyz/sentio/coinbase/dashboards/XAc6e8Jr) (EVM): Click this to see [Metrics](https://app.sentio.xyz/sentio/coinbase/dashboards/XAc6e8Jr), [Event Logs](https://app.sentio.xyz/sentio/coinbase/logs?query=) --->Use [this](https://github.com/sentioxyz/sentio-processors/tree/main/projects/coinbase) to upload
 
 See [supported-networks.md](references/supported-networks.md "mention")for chains supported.
