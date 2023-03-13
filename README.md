@@ -19,7 +19,7 @@ For the **complete real-time monitoring of sample projects** which cover both [m
 
 See [supported-networks.md](references/supported-networks.md "mention")for chains supported.
 
-See Sentio 101 tutorial below
+See Sentio 101 tutorial below (The aptos version is [here](https://www.youtube.com/watch?v=l4RsxPrGyqE\&ab\_channel=Sentio))
 
 {% embed url="https://www.youtube.com/watch?ab_channel=Sentio&v=yKggwExqKTw" %}
 

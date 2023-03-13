@@ -13,5 +13,7 @@ network: CHAIN_IDS.GOERLI })
 )
 ```
 
+See the video tutorial below:
 
+{% embed url="https://www.youtube.com/watch?ab_channel=Sentio&v=yKggwExqKTw" %}
 
