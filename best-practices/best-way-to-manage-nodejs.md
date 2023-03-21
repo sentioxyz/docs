@@ -1,4 +1,4 @@
-# Best Way To Manage nodejs
+# 🔍 Best Way To Manage nodejs
 
 It is very common that you have multiple versions of nodejs. In this case, we recommend using [nvm](https://github.com/nvm-sh/nvm) to manage the node versions.
 
@@ -16,7 +16,7 @@ brew install nvm
 
 Then you can follow the instructions:
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Make sure you restart the terminal or run `source ~/.zshrc`
