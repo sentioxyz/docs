@@ -27,6 +27,7 @@ When you do ethers call in your processor, it's very easy to produce errors. You
 * Using the wrong block number to call, when calling the view function, the default block number are the following, it's common that call fail for certain block, contact support@sentio.xyz, if you still have a problem.&#x20;
   * If you are using `ctx.contract.function` then the default block number is `ctx.blockNumber`&#x20;
   * If you just call contract view outside of context, it by default `latest`&#x20;
+* If it says `UNRECOGNIZED_NAME` , it's likely that you pass invalid ENS name to a field that is the address type.
 
 &#x20;If you still have problems, feel free to [contact us](../#getting-help).
 
