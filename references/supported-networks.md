@@ -8,25 +8,27 @@ We only include mainnet in the list
 
 ## EVM Chains
 
-| Chain     | Stage  | Events | Archive RPCs | Traces | Data Staleness      |
-| --------- | ------ | ------ | ------------ | ------ | ------------------- |
-| Ethereum  | Stable | ✓      | ✓            | ✓      | Real-time           |
-| BSC       | Stable | ✓      | ✓            |        | up to a few minutes |
-| Polygon   | Stable | ✓      | ✓            |        | up to a few minutes |
-| Abitrum   | Stable | ✓      | ✓            |        | up to a few minutes |
-| Optimism  | Stable | ✓      | ✓            |        | up to a few minutes |
-| Avalanche | Stable | ✓      | ✓            |        | up to a few minutes |
-| Moonbeam  | Stable | ✓      | ✓            |        | up to a few minutes |
-| Fantom    | Beta   | ✓      | ✓            |        | up to a few minutes |
-| KCC       | Beta   | ✓      | ✓            |        | up to a few minutes |
-| Aurora    | Beta   | ✓      | ✓            |        | up to a few minutes |
+| Chain      | Stage  | Events | Archive RPCs | Traces | Data Staleness      |
+| ---------- | ------ | ------ | ------------ | ------ | ------------------- |
+| Ethereum   | Stable | ✓      | ✓            | ✓      | Real-time           |
+| BSC        | Stable | ✓      | ✓            |        | up to a few minutes |
+| Polygon    | Stable | ✓      | ✓            |        | up to a few minutes |
+| Arbitrum   | Stable | ✓      | ✓            |        | up to a few minutes |
+| Optimism   | Stable | ✓      | ✓            |        | up to a few minutes |
+| Avalanche  | Stable | ✓      | ✓            |        | up to a few minutes |
+| Moonbeam   | Stable | ✓      | ✓            | ✓      | Real-time           |
+| Fantom     | Beta   | ✓      | ✓            |        | up to a few minutes |
+| Polygon ZK | Beta   | ✓      | ✓            |        | up to a few minutes |
+| zkSync era | Beta   | ✓      | ✓            |        | up to a few minutes |
+| KCC        | Beta   | ✓      | ✓            |        | up to a few minutes |
+| Aurora     | Beta   | ✓      | ✓            |        | up to a few minutes |
 
 ## Move Chains
 
 | Chain | Stage  | Txn | Event  | Entry Func | Account | Data staleness |
 | ----- | ------ | --- | ------ | ---------- | ------- | -------------- |
 | Aptos | Stable | ✓   | ✓      | ✓          | ✓       | Real-time      |
-| SUI   | Alpha  | ✓   | ✓      | ✓          |         | Up to 1-minute |
+| SUI   | Alpha  | ✓   | ✓      | ✓          | ✓       | Real-time      |
 
 ## Solana
 
