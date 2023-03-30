@@ -22,6 +22,8 @@ We only include mainnet in the list
 | zkSync era | Beta   | ✓      | ✓            |        | up to a few minutes |
 | KCC        | Beta   | ✓      | ✓            |        | up to a few minutes |
 | Aurora     | Beta   | ✓      | ✓            |        | up to a few minutes |
+| Astar      | Beta   | ✓      | ✓            |        | up to a few minutes |
+| Cronos     | Beta   | ✓      | ✓            |        | up to a few minutes |
 
 ## Move Chains
 
