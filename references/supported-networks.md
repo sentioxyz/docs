@@ -24,6 +24,7 @@ We only include mainnet in the list
 | Aurora     | Beta   | ✓      | ✓            |        | up to a few minutes |
 | Astar      | Beta   | ✓      | ✓            |        | up to a few minutes |
 | Cronos     | Beta   | ✓      | ✓            |        | up to a few minutes |
+| OKC        | Beta   | ✓      | ✓            |        | up to a few minutes |
 
 ## Move Chains
 
