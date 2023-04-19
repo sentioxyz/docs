@@ -7,6 +7,7 @@
 
 ## How-to Guides (by examples)
 
+* [➡ Adding ABIs](how-to-guides-by-examples/adding-abis.md)
 * [➡ Data collection](how-to-guides-by-examples/data-collection/README.md)
   * [➡ Submitting Metrics](how-to-guides-by-examples/data-collection/submitting-metrics.md)
   * [➡ Submitting Event Logs](how-to-guides-by-examples/data-collection/submitting-event-logs.md)
