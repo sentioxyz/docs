@@ -55,7 +55,7 @@ yarn sentio add --chain <chain_id> <contract address>
 By default, the ABI will be downloaded with its address as the name, which will lead the generated binding to use the address for the name as well. To override the name, use `-n <name>`, e.g.
 
 ```bash
-yarn sentio add --name MyToken <contract address>
+yarn sentio add --name MyToken --chain <chain_id> <contract address>
 ```
 
 ## sentio upload
