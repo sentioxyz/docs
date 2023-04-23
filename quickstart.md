@@ -23,13 +23,13 @@ We require users to follow [setup.md](setup.md "mention") before working on the 
 You can simply run the following command to create a processor project with the name <mark style="color:blue;">`default`</mark>
 
 ```bash
-npx -y -p @sentio/cli@latest sentio create
+npx @sentio/cli@latest create
 ```
 
 You can also give the processor project a name by using the following command
 
 ```bash
-npx -y -p @sentio/cli@latest sentio create $PROJECT_NAME
+npx @sentio/cli@latest create $PROJECT_NAME
 ```
 
 The commands will generate a template project based on [X2Y2 token](https://github.com/X2Y2-io/x2y2-sdk). This should be a good starting point to write your own processor logic.  It is also possible to create template projects for other types of chains, please refer [CLI Reference](developer-guides/cli-reference.md#sentio-create).&#x20;
