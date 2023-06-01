@@ -8,30 +8,11 @@ We only include mainnet in the list
 
 ## EVM Chains
 
-| Chain      | Stage  | Events | Archive RPCs | Traces | Data Staleness      |
-| ---------- | ------ | ------ | ------------ | ------ | ------------------- |
-| Ethereum   | Stable | ✓      | ✓            | ✓      | Real-time           |
-| BSC        | Stable | ✓      | ✓            |        | up to a few minutes |
-| Polygon    | Stable | ✓      | ✓            |        | up to a few minutes |
-| Arbitrum   | Stable | ✓      | ✓            |        | up to a few minutes |
-| Optimism   | Stable | ✓      | ✓            |        | up to a few minutes |
-| Avalanche  | Stable | ✓      | ✓            |        | up to a few minutes |
-| Moonbeam   | Stable | ✓      | ✓            | ✓      | Real-time           |
-| Fantom     | Beta   | ✓      | ✓            |        | up to a few minutes |
-| Polygon ZK | Beta   | ✓      | ✓            |        | up to a few minutes |
-| zkSync era | Beta   | ✓      | ✓            |        | up to a few minutes |
-| KCC        | Beta   | ✓      | ✓            |        | up to a few minutes |
-| Aurora     | Beta   | ✓      | ✓            |        | up to a few minutes |
-| Astar      | Beta   | ✓      | ✓            |        | up to a few minutes |
-| Cronos     | Beta   | ✓      | ✓            |        | up to a few minutes |
-| OKC        | Beta   | ✓      | ✓            |        | up to a few minutes |
+<table><thead><tr><th width="137">Chain</th><th width="92">Stage</th><th width="88">Events</th><th width="137">Archive RPCs</th><th width="91">Traces</th><th>Data Staleness</th></tr></thead><tbody><tr><td>Ethereum</td><td>Stable</td><td>✓</td><td>✓</td><td>✓</td><td>Real-time</td></tr><tr><td>BSC</td><td>Stable</td><td>✓</td><td>✓</td><td></td><td>up to a few minutes</td></tr><tr><td>Polygon</td><td>Stable</td><td>✓</td><td>✓</td><td>✓</td><td>Real-time</td></tr><tr><td>Arbitrum</td><td>Stable</td><td>✓</td><td>✓</td><td></td><td>up to a few minutes</td></tr><tr><td>Optimism</td><td>Stable</td><td>✓</td><td>✓</td><td></td><td>up to a few minutes</td></tr><tr><td>Avalanche</td><td>Stable</td><td>✓</td><td>✓</td><td>✓</td><td>Real-time</td></tr><tr><td>Moonbeam</td><td>Stable</td><td>✓</td><td>✓</td><td>✓</td><td>Real-time</td></tr><tr><td>Fantom</td><td>Beta</td><td>✓</td><td>✓</td><td></td><td>up to a few minutes</td></tr><tr><td>Polygon ZK</td><td>Beta</td><td>✓</td><td>✓</td><td></td><td>up to a few minutes</td></tr><tr><td>zkSync era</td><td>Beta</td><td>✓</td><td>✓</td><td></td><td>up to a few minutes</td></tr><tr><td>KCC</td><td>Beta</td><td>✓</td><td>✓</td><td></td><td>up to a few minutes</td></tr><tr><td>Aurora</td><td>Beta</td><td>✓</td><td>✓</td><td></td><td>up to a few minutes</td></tr><tr><td>Astar</td><td>Beta</td><td>✓</td><td>✓</td><td></td><td>up to a few minutes</td></tr><tr><td>Cronos</td><td>Beta</td><td>✓</td><td>✓</td><td></td><td>up to a few minutes</td></tr><tr><td>OKC</td><td>Beta</td><td>✓</td><td>✓</td><td></td><td>up to a few minutes</td></tr></tbody></table>
 
 ## Move Chains
 
-| Chain | Stage  | Txn | Event  | Entry Func | Account | Data staleness |
-| ----- | ------ | --- | ------ | ---------- | ------- | -------------- |
-| Aptos | Stable | ✓   | ✓      | ✓          | ✓       | Real-time      |
-| SUI   | Alpha  | ✓   | ✓      | ✓          | ✓       | Real-time      |
+<table><thead><tr><th width="98">Chain</th><th width="101">Stage</th><th width="66">Txn</th><th width="78">Event </th><th width="112">Entry Func</th><th width="108">Account</th><th>Data staleness</th></tr></thead><tbody><tr><td>Aptos</td><td>Stable</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>Real-time</td></tr><tr><td>SUI</td><td>Alpha</td><td>✓</td><td>✓</td><td>✓</td><td>✓</td><td>Real-time</td></tr></tbody></table>
 
 ## Solana
 
