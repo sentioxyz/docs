@@ -6,6 +6,7 @@ We support creating notification channel for
 * Webhook
 * Slack
 * Telegram
+* PagerDuty (beta)
 
 ## Creating Email Channel
 
@@ -20,4 +21,14 @@ You could follow UI instructions to perform slack integration.
 <figure><img src="../../.gitbook/assets/webhook.gif" alt=""><figcaption></figcaption></figure>
 
 Note, you can perform authentication through adding a custom header. In this example, we use a **key** with value **mockkey.**
+
+## Creating PagerDuty Channel
+
+You could follow UI instructions to perform slack integration. First Click Connect button.
+
+![](../../.gitbook/assets/image.png)
+
+After the authentication, choose a service you created in PagerDuty.
+
+![](<../../.gitbook/assets/image (1).png>)
 

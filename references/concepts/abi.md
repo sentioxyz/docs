@@ -12,8 +12,6 @@ Normally, you can either generate ABI from your solidity code or get it from [et
 
 <figure><img src="../../.gitbook/assets/image (1) (5).png" alt=""><figcaption></figcaption></figure>
 
-
-
 ## Solana Anchor
 
 Anchor can generate [IDL](https://en.wikipedia.org/wiki/Interface\_description\_language) specifications for Solana programs, we treat them as ABIs in Solana. &#x20;
@@ -28,5 +26,5 @@ If your Solana program is built by Anchor, you can find the IDL after running th
 * SUI: use `sui_getNormalizedMoveModulesByPackage` JSON RPC call.\
   `curl -L -X POST 'https://fullnode.devnet.sui.io/' -H 'Content-Type: application/json' --data-raw '{ "jsonrpc": "2.0", "id": 1, "method": "sui_getNormalizedMoveModulesByPackage", "params": [ "0x2" ] }'`
 
-``
+
 

@@ -46,11 +46,7 @@ You can call pulling API to get the dead letters in your project.
 GET https://app.sentio.xyz/api/v1/webhook/deadletter/{owner}/{project}?limit={limit}
 ```
 
-| Fields  | Description                                                                      |
-| ------- | -------------------------------------------------------------------------------- |
-| owner   | (string) The name of the project owner                                           |
-| project | (string) The name of the project                                                 |
-| limit   | (integer) Maximum batches of messages pulled at once, must be less equal than 10 |
+<table><thead><tr><th width="159">Fields</th><th>Description</th></tr></thead><tbody><tr><td>owner</td><td>(string) The name of the project owner</td></tr><tr><td>project</td><td>(string) The name of the project</td></tr><tr><td>limit</td><td>(integer) Maximum batches of messages pulled at once, must be less equal than 10</td></tr></tbody></table>
 
 ### Response body
 
