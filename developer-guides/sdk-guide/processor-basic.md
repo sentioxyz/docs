@@ -9,7 +9,7 @@ Then you can use the generated contract processor class to bind to an address, a
 ```typescript
 import { ERC20Processor } from '@sentio/sdk/eth/builtin/erc20'
 
-ERC20Processor.bind({ address: '0x1e4ede388cbc9f4b5c79681b7f94d36a11abebc9', network: CHAIN_IDS.ETHEREUM })
+ERC20Processor.bind({ address: '0x1e4ede388cbc9f4b5c79681b7f94d36a11abebc9', network: EthChainId.ETHEREUM })
   .onEventTransfer((event, ctx) => {
     ctx.meter.Counter('token').add(event.args.value)
   }
