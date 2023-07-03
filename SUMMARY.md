@@ -83,6 +83,10 @@
 * [💎 Supported Networks](references/supported-networks.md)
 * [🤝 Permission and Sharing](references/permission-and-sharing.md)
 
+## Sentio Debugger
+
+* [⚙ Basic](sentio-debugger/basic.md)
+
 ## Best Practices
 
 * [🔍 Best Way To Manage nodejs](best-practices/best-way-to-manage-nodejs.md)
