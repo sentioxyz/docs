@@ -86,6 +86,19 @@
 ## Sentio Debugger
 
 * [⚙ Basic](sentio-debugger/basic.md)
+* [ℹ TX info](sentio-debugger/tx-info/README.md)
+  * [Transaction metadata](sentio-debugger/tx-info/transaction-metadata.md)
+  * [Events](sentio-debugger/tx-info/events.md)
+  * [State Diff](sentio-debugger/tx-info/state-diff.md)
+  * [Contract Code Explorer](sentio-debugger/tx-info/contract-code-explorer.md)
+* [💰 Trace the money](sentio-debugger/trace-the-money/README.md)
+  * [⚖ Balance Change](sentio-debugger/trace-the-money/balance-change.md)
+  * [🌊 Fund Flow](sentio-debugger/trace-the-money/fund-flow.md)
+* [🛣 Trace and Call](sentio-debugger/trace-and-call.md)
+* [🔎 Debugging](sentio-debugger/debugging/README.md)
+  * [Page layout](sentio-debugger/debugging/page-layout.md)
+  * [Single-step mode](sentio-debugger/debugging/single-step-mode.md)
+  * [Function-only mode](sentio-debugger/debugging/function-only-mode.md)
 
 ## Best Practices
 

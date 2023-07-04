@@ -26,9 +26,9 @@ Note, you can perform authentication through adding a custom header. In this exa
 
 You could follow UI instructions to perform slack integration. First Click Connect button.
 
-![](<../../.gitbook/assets/image (1).png>)
+![](<../../.gitbook/assets/image (1) (1).png>)
 
 After the authentication, choose a service you created in PagerDuty.
 
-![](../../.gitbook/assets/image.png)
+![](<../../.gitbook/assets/image (12).png>)
 

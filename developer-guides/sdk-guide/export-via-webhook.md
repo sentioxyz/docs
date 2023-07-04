@@ -8,7 +8,7 @@ const exporter = Exporter.register("SwapEvents", "WebhookChannel")
 
 Note, the `WebhookChannel` should be replaced by the name you created on UI
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (2).png" alt=""><figcaption></figcaption></figure>
 
 To send webhook, use:
 
