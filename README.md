@@ -4,6 +4,10 @@ description: Monitor. Analyze. Diagnose. All In One Place.
 
 # 👋 Welcome to Sentio
 
+## New!!!!!
+
+Sentio launched [Transaction Search](https://app.sentio.xyz/explorer) and [Broken link](broken-reference "mention").
+
 ## Overview
 
 Sentio provides modern **monitoring**, **alerting, log management and debugging** for decentralized applications as an _**integrated**_ and **hosted** experience.&#x20;
@@ -56,3 +60,4 @@ If there are issues or problem can't be resolved in the doc, please contact us
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)
 {% endcontent-ref %}
+
