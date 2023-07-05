@@ -15,4 +15,4 @@ The debugger has standard definitions of
 
 Under this mode, users can visualize **Inputs**, **Return Value** and **Gas info**.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>

@@ -8,7 +8,7 @@ After the processor is successfully uploaded, you can first check the status of 
 
 You can also examine the status of the collected [metrics](../references/ui-layout.md) on the Metrics tab.&#x20;
 
-<figure><img src="../.gitbook/assets/image (5) (4).png" alt=""><figcaption><p>Viewing Metrics</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (4) (1).png" alt=""><figcaption><p>Viewing Metrics</p></figcaption></figure>
 
 Clicking on each [metric](../references/concepts/data-types/metrics.md) gives you a more detailed view of the metric, including tags and visualization of the metrics.
 

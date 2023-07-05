@@ -12,7 +12,7 @@ Metrics that are not reported in the last 24 hours do not appear in the query ed
 
 There are 5 types of charts
 
-![](<../../../.gitbook/assets/image (5).png>)
+![](<../../../.gitbook/assets/image (5) (4).png>)
 
 You can select them on the UI
 

@@ -22,4 +22,4 @@ Users can hide static calls and select the level of trace displayed.
 
 Sentio provides the call graph that shows the contract interactions within a transaction.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>Call Graph</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (3) (3).png" alt=""><figcaption><p>Call Graph</p></figcaption></figure>
