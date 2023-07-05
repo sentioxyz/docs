@@ -10,5 +10,5 @@ Users can search any transaction on the [explorer page](https://app.sentio.xyz/e
 
 
 
-It has a few major components, including [tx-info](tx-info/ "mention"), [trace-the-money](trace-the-money/ "mention"), [trace-and-call.md](trace-and-call.md "mention")and [debugging](debugging/ "mention")
+It has a few major components, including [transaction-info](transaction-info/ "mention"), [trace-the-money](trace-the-money/ "mention"), [trace-and-call.md](trace-and-call.md "mention")and [debugging](debugging/ "mention")
 

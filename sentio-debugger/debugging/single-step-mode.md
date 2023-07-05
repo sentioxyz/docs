@@ -4,7 +4,7 @@
 To use single-step mode, you need:
 
 * Turn on single-step mode
-* **Strongly recommended**: Turn on optimizer -- Sentio will recompile the contract with different compiler parameters to achieve the best source mappings.
+* Turn on optimizer -- Sentio will recompile the contract with different compiler parameters to achieve the best source mappings. See [single-stepping-limitations.md](../../best-practices/single-stepping-limitations.md "mention")
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption><p>Debugger options</p></figcaption></figure>

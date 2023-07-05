@@ -86,11 +86,11 @@
 ## Sentio Debugger
 
 * [⚙ Basic](sentio-debugger/basic.md)
-* [ℹ TX info](sentio-debugger/tx-info/README.md)
-  * [Transaction metadata](sentio-debugger/tx-info/transaction-metadata.md)
-  * [Events](sentio-debugger/tx-info/events.md)
-  * [State Diff](sentio-debugger/tx-info/state-diff.md)
-  * [Contract Code Explorer](sentio-debugger/tx-info/contract-code-explorer.md)
+* [ℹ Transaction info](sentio-debugger/transaction-info/README.md)
+  * [Transaction metadata](sentio-debugger/transaction-info/transaction-metadata.md)
+  * [Events](sentio-debugger/transaction-info/events.md)
+  * [State Diff](sentio-debugger/transaction-info/state-diff.md)
+  * [Contract Code Explorer](sentio-debugger/transaction-info/contract-code-explorer.md)
 * [💰 Trace the money](sentio-debugger/trace-the-money/README.md)
   * [⚖ Balance Change](sentio-debugger/trace-the-money/balance-change.md)
   * [🌊 Fund Flow](sentio-debugger/trace-the-money/fund-flow.md)
@@ -102,6 +102,7 @@
 
 ## Best Practices
 
+* [🔍 Single Stepping Limitations](best-practices/single-stepping-limitations.md)
 * [🔍 Best Way To Manage nodejs](best-practices/best-way-to-manage-nodejs.md)
 * [🔍 Multi-Chain Support](best-practices/multi-chain-support.md)
 * [🔍 Avoid High Cardinality](best-practices/avoid-high-cardinality.md)
