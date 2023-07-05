@@ -102,7 +102,6 @@
 
 ## Best Practices
 
-* [🔍 Single Stepping Limitations](best-practices/single-stepping-limitations.md)
 * [🔍 Best Way To Manage nodejs](best-practices/best-way-to-manage-nodejs.md)
 * [🔍 Multi-Chain Support](best-practices/multi-chain-support.md)
 * [🔍 Avoid High Cardinality](best-practices/avoid-high-cardinality.md)

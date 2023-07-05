@@ -1,10 +1,12 @@
 # Single-step mode
 
+
+
 {% hint style="info" %}
 To use single-step mode, you need:
 
 * Turn on single-step mode
-* (optionally) Use Debug Build -- Sentio will recompile the contract with different compiler parameters to achieve the best source mappings. See [single-stepping-limitations.md](../../best-practices/single-stepping-limitations.md "mention")
+* (optionally) Use Debug Build -- Sentio will recompile the contract with different compiler parameters to achieve the best source mappings. See [#limitations](single-step-mode.md#limitations "mention")
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Debugger options</p></figcaption></figure>
@@ -29,3 +31,8 @@ The debugger also supports adding **user defined watched variables (similar to a
 
 <figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+## Limitations
+
+* contract compiled with viaIR option is not fully supported
+* When debug with **release build**, since it's fully optimized, there might be source-mapping issues and unexpected execution orders.
+* When debug **debug build**, gas usage is ignored, this may cause different code execution. e.g. if the original transaction is out of gas, using debug build will make the transaction fully executed.
