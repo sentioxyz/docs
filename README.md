@@ -4,9 +4,9 @@ description: Monitor. Analyze. Diagnose. All In One Place.
 
 # 👋 Welcome to Sentio
 
-## New!!!!!
+##
 
-Sentio launched [Transaction Search](https://app.sentio.xyz/explorer) and [Broken link](broken-reference "mention").
+(New) Sentio launched [Transaction Search](https://app.sentio.xyz/explorer) and [Broken link](broken-reference "mention").
 
 ## Overview
 
