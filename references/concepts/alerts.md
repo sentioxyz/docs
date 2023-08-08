@@ -22,4 +22,18 @@ You can count certain number of logs matching a criteria, and setup alerts based
 
 <figure><img src="../../.gitbook/assets/log.gif" alt=""><figcaption></figcaption></figure>
 
-###
+## Alert Message
+
+Beyond static content, you can also reference variables inside your alert message. In log based alert, you can use `.Samples` to reference the list of the event log instances. e.g. For event log recored an  `amount` field, you can customize the message like this:
+
+```
+Transfer events found:
+{{ range .Samples }}
+value {{.amount}}, at chain: {{.chain}}
+{{ end }}
+```
+
+The syntax is straightforward here:
+
+* `{{.VARIABLE_NAME}}` is to reference a variable or field (same as you defined in your event log) by name.
+* `{{range .VARIABLE_NAME}} ... {{ end }}` is to loop through a list of elemments if the variable is a list.
