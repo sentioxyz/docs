@@ -9,7 +9,7 @@ To use single-step mode, you need:
 * (optionally) Use Debug Build -- Sentio will recompile the contract with different compiler parameters to achieve the best source mappings. See [#limitations](single-step-mode.md#limitations "mention")
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Debugger options</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (6).png" alt=""><figcaption><p>Debugger options</p></figcaption></figure>
 
 ## Use the debugger
 
@@ -25,11 +25,11 @@ The debugger has standard definitions of
 
 The debugger automatically shows the local variables within the call context, and all the contract variables.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 The debugger also supports adding **user defined watched variables (similar to a regular debugger)**
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 ## Limitations
 

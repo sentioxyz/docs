@@ -99,6 +99,9 @@
   * [Page layout](sentio-debugger/debugging/page-layout.md)
   * [Single-step mode](sentio-debugger/debugging/single-step-mode.md)
   * [Function-only mode](sentio-debugger/debugging/function-only-mode.md)
+* [⚙ Simulation](sentio-debugger/simulation/README.md)
+  * [Simulation UI](sentio-debugger/simulation/simulation-ui.md)
+  * [Simulation API](sentio-debugger/simulation/simulation-api.md)
 
 ## Best Practices
 
