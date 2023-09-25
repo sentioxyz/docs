@@ -24,4 +24,3 @@ Use compilation tab upload a local contract compilation, the compilation is usua
 
 ![](<../../.gitbook/assets/image (3).png>)
 
-TODO, example how to use override in simulation page
