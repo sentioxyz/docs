@@ -2,17 +2,17 @@
 
 ## Create simulation
 
-For all simulation API calls, you should have an API key, and pass it by the header with the field `api-key`.&#x20;
+For all simulation API calls, you should have an API key, and pass it by the header with the field `api-key`, refer [api-key.md](../../references/concepts/api-key.md "mention") to create one.
 
 The simulation body should be included in the request body. You can follow the example below.
 
 ```json
 curl --location 'https://app.sentio.xyz/api/v1/solidity/simulate' \
---header 'api-key: API_KEY' \
+--header 'api-key: <API_KEY>' \
 --header 'Content-Type: application/json' \
 --data '{
-    "projectOwner": "USER",
-    "projectSlug": "PROJECT",
+    "projectOwner": "<USER>",
+    "projectSlug": "<PROJECT>",
     "simulation": {
         "networkId": "1",          // Chain ID, "1" for Ethereum mainnet. See chainlist.org for details
         "blockNumber": "17415072",
@@ -53,10 +53,12 @@ API key is required.
 
 Example:
 
+{% code overflow="wrap" %}
 ```bash
-curl --location 'https://app.sentio.xyz/api/v1/solidity/state_diff?networkId=1&txId.simulationId=pVwBCxr3&projectOwner=USER&projectSlug=PROJECT' \
---header 'api-key: API_KEY'
+curl --location 'https://app.sentio.xyz/api/v1/solidity/state_diff?networkId=1&txId.simulationId=pVwBCxr3&projectOwner=<USER>&projectSlug=<PROJECT>' \
+--header 'api-key: <API_KEY>'
 ```
+{% endcode %}
 
 ### Trace Decoded Trace
 
@@ -68,10 +70,12 @@ API key is required.
 
 Example:
 
+{% code overflow="wrap" %}
 ```bash
-curl --location 'https://app.sentio.xyz/api/v1/solidity/call_trace?withInternalCalls=true&networkId=1&txId.simulationId=pVwBCxr3&projectOwner=USER&projectSlug=PROJECT' \
---header 'api-key: API_KEY'
+curl --location 'https://app.sentio.xyz/api/v1/solidity/call_trace?withInternalCalls=true&networkId=1&txId.simulationId=pVwBCxr3&projectOwner=<USER>&projectSlug=<PROJECT>' \
+--header 'api-key: <API_KEY>'
 ```
+{% endcode %}
 
 
 
