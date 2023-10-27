@@ -16,7 +16,7 @@ Gauge represents a sampled value at a given time, each data point reported is th
 
 It is possible to have multiple **series** in one **metric (i.e. Counter or Gauge)**. Any label combination generate a different series (see [#labels](../../../developer-guides/sdk-guide/metrics-in-processors.md#labels "mention")). For example, if you have a metric which uses a token symbol as label. You'd generate multiple series in the dashboard by default. For example:
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 You can easily sum them by using [#space-aggregation](../visualizations/aggregation-functions-and-formulas.md#space-aggregation "mention")
 

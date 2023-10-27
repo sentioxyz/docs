@@ -9,7 +9,7 @@ To use single-step mode, you need:
 * (optionally) Use Debug Build -- Sentio will recompile the contract with different compiler parameters to achieve the best source mappings. See [#limitations](single-step-mode.md#limitations "mention")
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (4) (6).png" alt=""><figcaption><p>Debugger options</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (6) (1).png" alt=""><figcaption><p>Debugger options</p></figcaption></figure>
 
 ## Use the debugger
 

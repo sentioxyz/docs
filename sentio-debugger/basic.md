@@ -12,5 +12,5 @@ It has a few major components, including&#x20;
 * [trace-the-money](trace-the-money/ "mention")&#x20;
 * [trace-and-call.md](trace-and-call.md "mention")
 * [debugging](debugging/ "mention")
-* [simulation.md](simulation.md "mention")
+* [simulation](simulation/ "mention")
 
