@@ -2,8 +2,6 @@
 
 ## Create simulation
 
-For all simulation API calls, you should have an API key, and pass it by the header with the field `api-key`, refer [api-key.md](../../references/concepts/api-key.md "mention") to create one.
-
 The simulation body should be included in the request body. You can follow the example below.
 
 ```json

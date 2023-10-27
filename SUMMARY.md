@@ -53,7 +53,10 @@
 
 ## Access Sentio Via APIs
 
-* [Sentio API](access-sentio-via-apis/sentio-api.md)
+* [Prerequisite](access-sentio-via-apis/prerequisite.md)
+* [Debug API](access-sentio-via-apis/debug-api.md)
+* [Simulation API](access-sentio-via-apis/simulation-api.md)
+* [Code Intelligence API](access-sentio-via-apis/code-intelligence-api.md)
 
 ## References
 
@@ -99,9 +102,7 @@
   * [Page layout](sentio-debugger/debugging/page-layout.md)
   * [Single-step mode](sentio-debugger/debugging/single-step-mode.md)
   * [Function-only mode](sentio-debugger/debugging/function-only-mode.md)
-* [⚙ Simulation](sentio-debugger/simulation/README.md)
-  * [Simulation UI](sentio-debugger/simulation/simulation-ui.md)
-  * [Simulation API](sentio-debugger/simulation/simulation-api.md)
+* [⚙ Simulation](sentio-debugger/simulation.md)
 
 ## Best Practices
 
