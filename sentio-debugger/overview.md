@@ -17,10 +17,14 @@ In addition, it also provides a set of unique abilities like
 
 ## Get started
 
+### Explorer Page
+
 Users can search for any transaction on the [Explorer page](https://app.sentio.xyz/explorer), and then use the debugger.&#x20;
 
 <figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption><p>Transaction Search</p></figcaption></figure>
 
-Or you can install our [Chrome plugin](https://chromewebstore.google.com/detail/sentio/kkdofmcnddcnldoingfpiojnnkdcbhnf), which brings all the functionalities directly into your favorite explorer.
+### Chrome Plugin
+
+You can also install our [Chrome plugin](https://chromewebstore.google.com/detail/sentio/kkdofmcnddcnldoingfpiojnnkdcbhnf), which brings all the functionalities directly into your favorite explorer.
 
 <figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
