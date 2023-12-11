@@ -18,4 +18,14 @@ However in this case, it uses more gas, so you may see out of gas error, or if s
 
 Similar to the debug build, except gas usage is ignored.&#x20;
 
-This solves out of gas issue in normal debug build, but noted this may cause different code execution. e.g. if the original transaction is out of gas, using debug build will make the transaction fully executed
+This solves out of gas issue in normal debug build, but noted this may cause different code execution. e.g. if the original transaction is out of gas, using debug build will make the transaction fully executed.
+
+## Example
+
+You could try this [example](https://app.sentio.xyz/tx/1/0x6585fd39cd22ad2c558855403dc367462b48cd48b56431424138dc9df8227853) and switch it's build mode, you will see the trace is different:
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>release build</p></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption><p>debug build</p></figcaption></figure>
+
+The debug build will reflect the logic code flow more accurately while the release build reflect the more real execution order after inline optimization.

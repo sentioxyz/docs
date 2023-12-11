@@ -25,7 +25,7 @@ The debugger has standard definitions of
 
 The debugger automatically shows the local variables within the call context, and all the contract variables.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 The debugger also supports adding **user defined watched variables (similar to a regular debugger)**
 
