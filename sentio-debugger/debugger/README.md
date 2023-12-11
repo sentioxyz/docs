@@ -18,5 +18,5 @@ The bottom-left section contains the current call stack information, for example
 
 Sentio has two debug modes, [function-only-mode.md](function-only-mode.md "mention") and [single-step-mode.md](single-step-mode.md "mention"), while the first one is the default, the latter enables you to examine execution in much greater detail.
 
-&#x20;![](<../../.gitbook/assets/image (2).png>)
+&#x20;![](<../../.gitbook/assets/image (2) (1).png>)
 

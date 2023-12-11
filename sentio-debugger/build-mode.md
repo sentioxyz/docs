@@ -24,7 +24,7 @@ This solves out of gas issue in normal debug build, but noted this may cause dif
 
 You could try this [example](https://app.sentio.xyz/tx/1/0x6585fd39cd22ad2c558855403dc367462b48cd48b56431424138dc9df8227853) and switch it's build mode, you will see the trace is different:
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>release build</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>release build</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>debug build</p></figcaption></figure>
 
