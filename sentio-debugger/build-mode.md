@@ -1,2 +1,21 @@
 # 🛠 Build Mode
 
+Debugging solidity on-chain could be more tricky than you thought, debugger results sometimes show missing function calls, or show unexpected parameter values, weird execution order, or mismatched source code. This is largely due to solidities compiler optimization. e.g. function inline, function specializer, etc.
+
+Sentio lets you choose different build modes of the solidity binary on chain to overcome the problem.
+
+You can choose Build Mode in either [trace-view.md](trace-view.md "mention") or [debugger](debugger/ "mention").&#x20;
+
+<figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+
+## Debug Build
+
+Debug build essentially replaces the binary with the one that doesn't use optimization and makes the execution flow very clean.&#x20;
+
+However in this case, it uses more gas, so you may see out of gas error, or if some contract is use gas to do some checking, it may not work well.
+
+## Debug Build without Gas
+
+Similar to the debug build, except gas usage is ignored.&#x20;
+
+This solves out of gas issue in normal debug build, but noted this may cause different code execution. e.g. if the original transaction is out of gas, using debug build will make the transaction fully executed
