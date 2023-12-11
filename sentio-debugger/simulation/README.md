@@ -12,7 +12,7 @@ The simplest way to start a simulation is to click the simulator button as shown
 
 In this case, it will copy all the parameters from the existing transaction and you could make adjustments on top of it. Like block number, block index, gas fee, block header, state, etc.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 Click the simulate transaction button will save this run to the simulation history of your project and show you the result, just like what you see from the normal debugger UI.
 
@@ -20,13 +20,13 @@ Click the simulate transaction button will save this run to the simulation histo
 
 You can also click the simulator button on the left navigation bar and go to the simulator page which shows all the history simulations. Click the simulation button on the right corner will pop a similar UI but without prepopulated transaction data.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Override Contract
 
-Use the compilations tab to upload a local contract compilation,folder.
+Use the compilations tab to upload a local contract compilation folder. See [upload-compilation.md](upload-compilation.md "mention") for more details.&#x20;
 
-![](<../../.gitbook/assets/image (3) (1).png>)
+![](<../../.gitbook/assets/image (3) (1) (1).png>)
 
 When doing the simulation, choose the contract override.
 

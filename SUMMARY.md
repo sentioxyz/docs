@@ -93,10 +93,10 @@
 * [💰 Fund Tracing](sentio-debugger/fund-tracing.md)
 * [🛣 Trace view](sentio-debugger/trace-view.md)
 * [🔎 Debugger](sentio-debugger/debugger/README.md)
-  * [Page layout](sentio-debugger/debugger/page-layout.md)
+  * [Function only Mode](sentio-debugger/debugger/function-only-mode.md)
   * [Single-step mode](sentio-debugger/debugger/single-step-mode.md)
-  * [Function-only mode](sentio-debugger/debugger/function-only-mode.md)
 * [⚙ Simulation](sentio-debugger/simulation/README.md)
+  * [Upload Compilation](sentio-debugger/simulation/upload-compilation.md)
 * [✳ Code Intelligence](sentio-debugger/code-intelligence.md)
 * [🛠 Build Mode](sentio-debugger/build-mode.md)
 

@@ -1,6 +1,6 @@
-# Function-only mode
+# Function only Mode
 
-If single-step is turned off, the debugger behave only on function level.
+By default, the debugger behaves only on function level.
 
 ## Use the debugger
 
