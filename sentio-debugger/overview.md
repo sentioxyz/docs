@@ -13,7 +13,7 @@ In addition, it also provides a set of unique abilities like
 * [code-intelligence.md](code-intelligence.md "mention"): navigate through code like IDE
 * [build-mode.md](build-mode.md "mention"):  avoid debug information misses due to compiler optimization&#x20;
 * [#override-contract](simulation/#override-contract "mention"): easily replace contract on a specific address&#x20;
-* [single-step-mode.md](debugger/single-step-mode.md "mention") (alpha):&#x20;
+* [single-step-mode.md](debugger/single-step-mode.md "mention") (alpha):  examine execution in much greater detail
 
 ## Get started
 
