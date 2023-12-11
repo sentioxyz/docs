@@ -88,21 +88,17 @@
 
 ## Sentio Debugger
 
-* [⚙ Basic](sentio-debugger/basic.md)
-* [ℹ Transaction info](sentio-debugger/transaction-info/README.md)
-  * [Transaction metadata](sentio-debugger/transaction-info/transaction-metadata.md)
-  * [Events](sentio-debugger/transaction-info/events.md)
-  * [State Diff](sentio-debugger/transaction-info/state-diff.md)
-  * [Contract Code Explorer](sentio-debugger/transaction-info/contract-code-explorer.md)
-* [💰 Trace the money](sentio-debugger/trace-the-money/README.md)
-  * [⚖ Balance Change](sentio-debugger/trace-the-money/balance-change.md)
-  * [🌊 Fund Flow](sentio-debugger/trace-the-money/fund-flow.md)
-* [🛣 Trace and Call](sentio-debugger/trace-and-call.md)
-* [🔎 Debugging](sentio-debugger/debugging/README.md)
-  * [Page layout](sentio-debugger/debugging/page-layout.md)
-  * [Single-step mode](sentio-debugger/debugging/single-step-mode.md)
-  * [Function-only mode](sentio-debugger/debugging/function-only-mode.md)
+* [⚙ Overview](sentio-debugger/overview.md)
+* [ℹ Transaction info](sentio-debugger/transaction-info.md)
+* [💰 Fund Tracing](sentio-debugger/fund-tracing.md)
+* [🛣 Trace view](sentio-debugger/trace-view.md)
+* [🔎 Debugger](sentio-debugger/debugger/README.md)
+  * [Page layout](sentio-debugger/debugger/page-layout.md)
+  * [Single-step mode](sentio-debugger/debugger/single-step-mode.md)
+  * [Function-only mode](sentio-debugger/debugger/function-only-mode.md)
 * [⚙ Simulation](sentio-debugger/simulation/README.md)
+* [✳ Code Intelligence](sentio-debugger/code-intelligence.md)
+* [🛠 Build Mode](sentio-debugger/build-mode.md)
 
 ## Best Practices
 

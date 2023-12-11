@@ -1,6 +1,6 @@
 # Single-step mode
 
-
+Single-step mode allows you to step into/over the contract execution,  examining contract state and local variables just like what you can do on a normal web2 debugger.
 
 {% hint style="info" %}
 To use single-step mode, you need:
