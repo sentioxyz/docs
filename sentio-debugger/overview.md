@@ -15,6 +15,8 @@ In addition, it also provides a set of unique abilities like
 * [#override-contract](simulation/#override-contract "mention"): easily replace contract on a specific address&#x20;
 * [single-step-mode.md](debugger/single-step-mode.md "mention") (alpha):  examine execution in much greater detail
 
+Most of functions can be access through API as well, such as [debug-api.md](../access-sentio-via-apis/debug-api.md "mention"), [simulation-api.md](simulation/simulation-api.md "mention") and [code-index-api.md](../access-sentio-via-apis/code-index-api.md "mention").
+
 ## Get started
 
 ### Explorer Page
