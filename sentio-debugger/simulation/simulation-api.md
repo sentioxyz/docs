@@ -116,7 +116,7 @@ curl --location 'https://app.sentio.xyz/api/v1/solidity/state_diff?networkId=1&t
 ```
 {% endcode %}
 
-If this is bundle simulation, then use `txId.bundleId`  instead of `txId.simulationId`.
+If this is bundle simulation, then use `txId.bundleId`  instead of `txId.simulationId`, it will only return traces that were successfully executed.&#x20;
 
 ### Trace Decoded Trace
 
