@@ -2,6 +2,8 @@
 
 ## Create simulation
 
+### Single Simulation
+
 The simulation body should be included in the request body. You can follow the example below.
 
 ```json
@@ -39,6 +41,62 @@ curl --location 'https://app.sentio.xyz/api/v1/solidity/simulate' \
 
 Your simulations will be saved, and a unique ID for each simulation is included in the response. It will be useful for fetching simulation details.
 
+### Bundle Simulation
+
+You could also create bundle simulations so that one transaction could be executed one after another.
+
+```
+curl -L 'https://app.sentio.xyz/api/v1/solidity/simulate_bundle' \
+--header 'api-key: <API_KEY>' \
+--header 'Content-Type: application/json' \
+--data '{
+    "_project_slug": "coinbase",
+    "_project_owner": "sentio",
+    "simulations": [
+        {
+            "blockNumber": "17415072",
+            "transactionIndex": "97",
+            "network_id": "1",
+            "from": "0x5e8bb488e85ea732e17150862b1acfc213a7c13d",
+            "to": "0xef1c6e67703c7bd7107eed8303fbe6ec2554bf6b",
+            "gas": "0x31ae2",
+            "gasPrice": "0xe59a1adbe",
+            "input": "0x3593564c000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000647dffef0000000000000000000000000000000000000000000000000000000000000002080c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000160000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000003077b58d5d378391980000000000000000000000000000000000000000000000000000000032b2ced3e40e9d100000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000002000000000000000000000000082646b22a3960da69ef7a778c16dd6fb85dd999000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000032b2ced3e40e9d1",
+            "value": "0x0"
+        },
+        {
+            "from": "0x99922ca65188cc218a5d316969dc66d8672994f2",
+            "to": "0xae96a46b64e08861cf2af8c7d954b722e0725a0c",
+            "gas": "0x52",
+            "gasPrice": "0xe5909173e",
+            "maxPriorityFeePerGas": "0x3b023380",
+            "maxFeePerGas": "0x147d03",
+            "input": "0x",
+            "value": "0xbe32c0faed7400"
+        }
+    ]
+}'
+```
+
+It will return a list of successful simulation results, it will stop at the transaction that failed to be executed. e.g. if you simulate 4 transactions, while the 3 transactions can't be executed (e.g. wrong gas spec), then the result willlooks like this
+
+````
+{
+    "bundleId": "WKTMcdBc",
+    "simulations": [
+        {
+            ... result for tx 1
+        },
+        {
+            ... result for tx 1
+        }
+    ],
+    // tx 3 failed to execute, error will be recorded for this bundle
+    "error": "tracing failed: tip higher than fee cap: address 0x99922ca65188cC218A5d316969dc66d8672994f2, tip: 990000000, gasFeeCap: 1342723"
+}
+```
+````
+
 ## Get detail trace
 
 ### State Diff
@@ -47,7 +105,7 @@ Endpoint: https://app.sentio.xyz/api/v1/solidity/state\_diff
 
 API key is required.
 
-<table><thead><tr><th width="175">URL Param</th><th>Description</th></tr></thead><tbody><tr><td>networkId</td><td>Chain ID, "1" for Ethereum mainnet. See chainlist.org for details</td></tr><tr><td>projectOwner</td><td>User name</td></tr><tr><td>projectSlug</td><td>Project name</td></tr><tr><td>txId.simulationId</td><td>The unique ID for each simulation</td></tr></tbody></table>
+<table><thead><tr><th width="175">URL Param</th><th>Description</th></tr></thead><tbody><tr><td>networkId</td><td>Chain ID, "1" for Ethereum mainnet. See chainlist.org for details</td></tr><tr><td>projectOwner</td><td>User name</td></tr><tr><td>projectSlug</td><td>Project name</td></tr><tr><td>txId.simulationId</td><td>The unique ID for each simulation</td></tr><tr><td>txId.bundleId</td><td>The unique ID for bundle</td></tr></tbody></table>
 
 Example:
 
@@ -57,6 +115,8 @@ curl --location 'https://app.sentio.xyz/api/v1/solidity/state_diff?networkId=1&t
 --header 'api-key: <API_KEY>'
 ```
 {% endcode %}
+
+If this is bundle simulation, then use `txId.bundleId`  instead of `txId.simulationId`.
 
 ### Trace Decoded Trace
 
