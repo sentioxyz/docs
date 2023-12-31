@@ -135,7 +135,21 @@ curl --location 'https://app.sentio.xyz/api/v1/solidity/call_trace?withInternalC
 ```
 {% endcode %}
 
+## Get SImulation
 
+To retrieve old simulation results, use the following API for single simulation,
 
+```
+curl -L 'https://app.sentio.xyz/api/v1/solidity/simulate/ExHljPH0?&projectOwner=<USER>&projectSlug=<PROJECT>' \
+-H 'api-key: <API_KEY>'
+```
 
+and use the following for bundle simulation
+
+{% code overflow="wrap" %}
+```
+curl -L 'https://app.sentio.xyz/api/v1/solidity/simulate_bundle/ExHljPH0?&projectOwner=<USER>&projectSlug=<PROJECT>' \
+-H 'api-key: <API_KEY>'
+```
+{% endcode %}
 
