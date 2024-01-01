@@ -43,7 +43,7 @@ Your simulations will be saved, and a unique ID for each simulation is included 
 
 ### Bundle Simulation
 
-You could also create bundle simulations so that one transaction could be executed one after another.
+You could also create bundle simulations so that one transaction could be executed one after another. For `blockNumber` `transactionIndex` `networkId` and `stateOverrides` `blockOverrides` fields, only the first simulation takes effect.
 
 ```
 curl -L 'https://app.sentio.xyz/api/v1/solidity/simulate_bundle' \
@@ -78,7 +78,7 @@ curl -L 'https://app.sentio.xyz/api/v1/solidity/simulate_bundle' \
 }'
 ```
 
-It will return a list of successful simulation results, it will stop at the transaction that failed to be executed. e.g. if you simulate 4 transactions, while the 3 transactions can't be executed (e.g. wrong gas spec), then the result willlooks like this
+It will return a list of successful simulation results, it will stop at the transaction that failed to be executed. e.g. if you simulate 4 transactions, while the 3 transactions can't be executed (e.g. wrong gas spec), then the result looks like this.
 
 ````
 {
