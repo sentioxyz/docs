@@ -45,7 +45,7 @@ Your simulations will be saved, and a unique ID for each simulation is included 
 
 You could also create bundle simulations so that one transaction could be executed one after another. For `blockNumber` `transactionIndex` `networkId` and `stateOverrides` `blockOverrides` fields, only the first simulation takes effect.
 
-```
+```sh
 curl -L 'https://app.sentio.xyz/api/v1/solidity/simulate_bundle' \
 --header 'api-key: <API_KEY>' \
 --header 'Content-Type: application/json' \
@@ -130,7 +130,7 @@ Example:
 
 {% code overflow="wrap" %}
 ```bash
-curl --location 'https://app.sentio.xyz/api/v1/solidity/call_trace?withInternalCalls=true&networkId=1&txId.simulationId=pVwBCxr3&projectOwner=<USER>&projectSlug=<PROJECT>' \
+curl --location 'https://app.sentio.xyz/api/v1/solidity/call_trace?withInternalCalls=true&networkId=<CHAIN_ID>&txId.simulationId=<SIMULATION_ID>&projectOwner=<USER>&projectSlug=<PROJECT>' \
 --header 'api-key: <API_KEY>'
 ```
 {% endcode %}
@@ -139,16 +139,18 @@ curl --location 'https://app.sentio.xyz/api/v1/solidity/call_trace?withInternalC
 
 To retrieve old simulation results, use the following API for single simulation,
 
-```
-curl -L 'https://app.sentio.xyz/api/v1/solidity/simulate/ExHljPH0?&projectOwner=<USER>&projectSlug=<PROJECT>' \
+{% code overflow="wrap" %}
+```sh
+curl -L 'https://app.sentio.xyz/api/v1/solidity/simulate/<SIMULATION_ID>?&projectOwner=<USER>&projectSlug=<PROJECT>' \
 -H 'api-key: <API_KEY>'
 ```
+{% endcode %}
 
 and use the following for bundle simulation
 
 {% code overflow="wrap" %}
-```
-curl -L 'https://app.sentio.xyz/api/v1/solidity/simulate_bundle/ExHljPH0?&projectOwner=<USER>&projectSlug=<PROJECT>' \
+```sh
+curl -L 'https://app.sentio.xyz/api/v1/solidity/simulate_bundle/<BUNDLE_ID>?&projectOwner=<USER>&projectSlug=<PROJECT>' \
 -H 'api-key: <API_KEY>'
 ```
 {% endcode %}
