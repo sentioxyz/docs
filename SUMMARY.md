@@ -97,7 +97,7 @@
   * [Single-step mode](sentio-debugger/debugger/single-step-mode.md)
 * [⚙ Simulation](sentio-debugger/simulation/README.md)
   * [Upload Compilation](sentio-debugger/simulation/upload-compilation.md)
-* [✳ Code Intelligence](sentio-debugger/code-intelligence.md)
+* [✳ Code Insight](sentio-debugger/code-insight.md)
 * [🛠 Build Mode](sentio-debugger/build-mode.md)
 
 ## Best Practices
