@@ -50,8 +50,8 @@ curl -L 'https://app.sentio.xyz/api/v1/solidity/simulate_bundle' \
 --header 'api-key: <API_KEY>' \
 --header 'Content-Type: application/json' \
 --data '{
-    "_project_slug": "coinbase",
-    "_project_owner": "sentio",
+    "projectOwner": "<USER>",
+    "projectSlug": "<PROJECT>",
     "simulations": [
         {
             "blockNumber": "17415072",
