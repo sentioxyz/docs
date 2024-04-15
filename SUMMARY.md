@@ -113,3 +113,4 @@
 * [🔍 Upgrade SDK Version](best-practices/upgrade-sdk-version.md)
 * [🔍 Processor State and Execution Order](best-practices/processor-state-and-execution-order.md)
 * [🔍 Formula usage best practices](best-practices/formula-usage-best-practices.md)
+* [🔍 Download contract for debugging](best-practices/download-contract-for-debugging.md)
