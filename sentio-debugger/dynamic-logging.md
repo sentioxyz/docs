@@ -1,6 +1,6 @@
 # ℹ️ Dynamic Logging
 
-Dynamic logging provide an easy way to inspect state of transaction during execution with [simulation](simulation/ "mention"). It allow developer could add statements like things like
+Dynamic logging provide an easy way to inspect state of transaction during execution with [simulation](simulation/ "mention"). It allow developer to add logs like
 
 ```
 console.log("%d", localVar);
