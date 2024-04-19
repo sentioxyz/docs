@@ -89,7 +89,7 @@
 ## Sentio Debugger
 
 * [⚙️ Overview](sentio-debugger/overview.md)
-* [ℹ️ Transaction info](sentio-debugger/transaction-info.md)
+* [💱 Transaction info](sentio-debugger/transaction-info.md)
 * [💰 Fund Tracing](sentio-debugger/fund-tracing.md)
 * [🛣️ Trace view](sentio-debugger/trace-view.md)
 * [🔎 Debugger](sentio-debugger/debugger/README.md)
@@ -97,6 +97,7 @@
   * [Single-step mode](sentio-debugger/debugger/single-step-mode.md)
 * [⚙️ Simulation](sentio-debugger/simulation/README.md)
   * [Upload Compilation](sentio-debugger/simulation/upload-compilation.md)
+* [ℹ️ Dynamic Logging](sentio-debugger/dynamic-logging.md)
 * [✳️ Code Insight](sentio-debugger/code-insight.md)
 * [🛠️ Build Mode](sentio-debugger/build-mode.md)
 
@@ -113,4 +114,3 @@
 * [🔍 Upgrade SDK Version](best-practices/upgrade-sdk-version.md)
 * [🔍 Processor State and Execution Order](best-practices/processor-state-and-execution-order.md)
 * [🔍 Formula usage best practices](best-practices/formula-usage-best-practices.md)
-* [🔍 Download contract for debugging](best-practices/download-contract-for-debugging.md)

@@ -1,4 +1,4 @@
-# ℹ Transaction info
+# 💱 Transaction info
 
 Sentio provides standard info for a given transaction.
 
