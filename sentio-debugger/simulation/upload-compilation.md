@@ -6,11 +6,11 @@ There are two ways to upload a compilation for the use of [#override-contract](.
 
 Navigate to Contracts -> Compilations, and then click "Upload Compilation"
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then you could choose a json file that existed in your hardhat artifact directory. e.g. `./artifacts/build-info/c8ebc50e7bb836cebb977bb299387552.json` , then you can choose which contract listed there should be uploaded.
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Via Hardhat Plugin
 

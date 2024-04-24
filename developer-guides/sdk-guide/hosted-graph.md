@@ -14,7 +14,11 @@ graph deploy --node https://www.sentio.xyz/api/v1/graph-node --ipfs https://www.
 ```
 {% endcode %}
 
-Recomended subgraph version is:
+Once it get uploaded, use [data-source.md](../../references/concepts/data-source.md "mention") page to view progress. And use data studio to access either GraphQL or SQL.
+
+<figure><img src="../../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
+
+Recommended subgraph version is:
 
 ```
 @graphprotocol/graph-cli: 0.68.5
@@ -23,4 +27,4 @@ Recomended subgraph version is:
 
 ## Limitation
 
-Currently Sentio Subgraph doesn't trace handler.
+Currently Sentio Subgraph doesn't have trace handler.
