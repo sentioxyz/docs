@@ -85,6 +85,7 @@
 * [🔒 Quotas and Limits](references/quotas-and-limits.md)
 * [💎 Supported Networks](references/supported-networks.md)
 * [🤝 Permission and Sharing](references/permission-and-sharing.md)
+* [🧩 Remix IDE Plugin](references/remix-ide-plugin.md)
 
 ## Sentio Debugger
 
