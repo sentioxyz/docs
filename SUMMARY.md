@@ -50,7 +50,7 @@
   * [Handle Big Numbers](developer-guides/sdk-guide/handle-big-numbers.md)
   * [Price Feed](developer-guides/sdk-guide/price-feed.md)
   * [Write Test](developer-guides/sdk-guide/write-test.md)
-  * [Hosted Graph](developer-guides/sdk-guide/hosted-graph.md)
+  * [Hosted Subgraph](developer-guides/sdk-guide/hosted-subgraph.md)
 
 ## Access Sentio Via APIs
 
