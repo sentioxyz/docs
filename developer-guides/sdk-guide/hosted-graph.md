@@ -1,0 +1,26 @@
+# Hosted Graph
+
+In addition to Sentio processor, Sentio also compatible Subgraph, while still provide same GraphQL API endpoint, Sentio also provide SQL API / editor, analytic, multi-versioning, etc, many of the benefits that Sentio processor also provides. However in order to get max performance and usability, we still highly recommend to use use [Sentio Processor](../../references/concepts/processor.md).
+
+To create a Subgraph, first create a project and choose Subgraph as project type.
+
+<figure><img src="../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+
+Then upload your graph to this project with:
+
+{% code overflow="wrap" %}
+```
+graph deploy --node https://www.sentio.xyz/api/v1/graph-node --ipfs https://www.sentio.xyz/api/v1/ipfs $PROJECT --version-label v0.0.12 --deploy-key $SENTIO_API_KEY
+```
+{% endcode %}
+
+Recomended subgraph version is:
+
+```
+@graphprotocol/graph-cli: 0.68.5
+@graphprotocol/graph-ts: 0.32.0
+```
+
+## Limitation
+
+Currently Sentio Subgraph doesn't trace handler.
