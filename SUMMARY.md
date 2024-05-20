@@ -55,6 +55,7 @@
 ## Access Sentio Via APIs
 
 * [Prerequisite](access-sentio-via-apis/prerequisite.md)
+* [Data API](access-sentio-via-apis/data-api.md)
 * [Debug API](access-sentio-via-apis/debug-api.md)
 * [Simulation API](sentio-debugger/simulation/simulation-api.md)
 * [Code Index API](access-sentio-via-apis/code-index-api.md)
