@@ -4,14 +4,47 @@
 
 {% embed url="https://github.com/sentioxyz/sentio-processors/tree/main/fuel/spark" %}
 
-Two import files:
+Two important files:
 
-* `abis/fuel/orderbook-abi.json` project's abi file in json, used to do code generation
-* `processor.ts` main processing logic
+* `abis/fuel/orderbook-abi.json` project's ABI file in json format, used to do codegen
+* `processor.ts` entry point for processing logic
 
 ## OnLog Handler
 
-The ABI defines logs types so that we'll be able to generate a processor that you could hook your logic after the log is collected, e.g.
+In your sway code, if you define statement as follow
+
+```
+log(TradeEvent(...))
+```
+
+There will be related entries in the ABI file,
+
+```json
+{
+  ...
+  "types": [
+   ...
+    "typeId": 20,
+    "type": "struct TradeEvent",
+    "components": [
+      ...
+    ]
+  ],
+  "loggedTypes": [
+    ...
+    {
+      "logId": 27,
+      "loggedType": {
+        "name": "",
+        "type": 20,
+        "typeArguments": []
+      }
+    }
+  ]
+}
+```
+
+Then Sentio SDK will use this definition to generate an Processor you could add your custom logic afte r the log is collected
 
 ```typescript
 import { OrderbookProcessor } from "./types/fuel/OrderbookProcessor.js";
