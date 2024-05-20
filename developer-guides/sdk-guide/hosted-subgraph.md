@@ -16,7 +16,7 @@ graph deploy --node https://www.sentio.xyz/api/v1/graph-node --ipfs https://www.
 
 Once it get uploaded, use [data-source.md](../../references/concepts/data-source.md "mention") page to view progress. And use data studio to access either GraphQL or SQL.
 
-<figure><img src="../../.gitbook/assets/image.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Recommended subgraph version is:
 

@@ -12,7 +12,7 @@ The simplest way to start a simulation is to click the simulator button as shown
 
 In this case, it will copy all the parameters from the existing transaction and you could make adjustments on top of it. Like block number, block index, gas fee, block header, state, etc.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 Click the simulate transaction button will save this run to the simulation history of your project and show you the result, just like what you see from the normal debugger UI.
 
