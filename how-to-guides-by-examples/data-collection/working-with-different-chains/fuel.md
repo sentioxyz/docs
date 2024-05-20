@@ -1,4 +1,4 @@
-# Fuel (beta)
+# Fuel
 
 [Fuel](https://fuel.network/) support is in beta staging. Here is a simple example built for [spark.fi](https://app.sprk.fi).&#x20;
 
@@ -9,11 +9,11 @@ Two import files:
 * `abis/fuel/orderbook-abi.json` project's abi file in json, used to do code generation
 * `processor.ts` main processing logic
 
-## Log Handling
+## OnLog Handler
 
 The ABI defines logs types so that we'll be able to generate a processor that you could hook your logic after the log is collected, e.g.
 
-```
+```typescript
 import { OrderbookProcessor } from "./types/fuel/OrderbookProcessor.js";
 
 OrderbookProcessor.bind({
@@ -42,7 +42,7 @@ The handler takes two parameters
 
 In additional to log handler, you can also do function call handler, notice it only capture the entry transaction call:
 
-```
+```typescript
 OrderbookProcessor.bind({
   chainId: FuelNetwork.TEST_NET,
   address: '0x0f0c1065a7b82d026069c5cf070b21ee65713fd1ac92ec1d25eacc3100187f78'
@@ -53,6 +53,27 @@ OrderbookProcessor.bind({
       }
     })
 ```
+
+## OnTransfer Handler
+
+You can also track assets changes by using [`FuelAssetProcessor`](https://sdk.sentio.xyz/classes/fuel.FuelAssetProcessor.html), you can filter it by `from`, `to`, or `assetsId`, all or them could be single element or a list. Then the handler will be taking [`FuelTransfer`](https://sdk.sentio.xyz/types/fuel.FuelTransfer.html) which represent all assets transfers (not limited by the the filter) in the transactions that  satisfied the filter.
+
+<pre class="language-typescript"><code class="lang-typescript">
+import { BaseAssetId } from '@fuel-ts/address/configs'
+import { FuelAssetProcessor, FuelNetwork } from "@sentio/sdk/fuel";
+
+<strong>FuelAssetProcessor.bind({
+</strong>  chainId: FuelNetwork.TEST_NET
+}).onTransfer(
+    {
+      from: "0xd3fe20c8ff68a4054d8587ac170c40db7d1e200208a575780542bd9a7e3eec08",
+      assetId: BaseAssetId
+    },
+    async (transfer: FuelTransfer, ctx) => {
+      ...
+    }
+)
+</code></pre>
 
 ## Handle Big Numbers
 
