@@ -1,6 +1,6 @@
 # Fuel
 
-[Fuel](https://fuel.network/) support is in beta staging. Here is a simple example built for [spark.fi](https://app.sprk.fi).&#x20;
+[Fuel](https://fuel.network/) support is in beta stage. Here is a simple example built for [spark.fi](https://app.sprk.fi).&#x20;
 
 {% embed url="https://github.com/sentioxyz/sentio-processors/tree/main/fuel/spark" %}
 
