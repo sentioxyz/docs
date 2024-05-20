@@ -25,7 +25,7 @@
       * [Decode Solana instructions](how-to-guides-by-examples/data-collection/working-with-different-chains/solana-alpha/decode-solana-instructions.md)
       * [Monitor WETH balance on Solana (via Native program)](how-to-guides-by-examples/data-collection/working-with-different-chains/solana-alpha/monitor-weth-balance-on-solana-via-native-program.md)
       * [Monitor anchor programs](how-to-guides-by-examples/data-collection/working-with-different-chains/solana-alpha/monitor-anchor-programs.md)
-    * [Fuel (beta)](how-to-guides-by-examples/data-collection/working-with-different-chains/fuel-beta.md)
+    * [Fuel](how-to-guides-by-examples/data-collection/working-with-different-chains/fuel.md)
   * [➡️ Send Events Via Webhook](how-to-guides-by-examples/send-events-via-webhook.md)
   * [➡️ Using PriceFeed](how-to-guides-by-examples/data-collection/using-pricefeed.md)
 * [➡️ Visualize results](how-to-guides-by-examples/visualize-results/README.md)
