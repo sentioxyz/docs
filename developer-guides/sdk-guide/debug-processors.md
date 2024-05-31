@@ -1,4 +1,9 @@
-# Debug Processors
+---
+title: Debug Processors
+categorySlug: developer-guides
+parentDocSlug: sdk-guide
+hidden: false
+---
 
 You can debug processor via console logs. Simply do
 

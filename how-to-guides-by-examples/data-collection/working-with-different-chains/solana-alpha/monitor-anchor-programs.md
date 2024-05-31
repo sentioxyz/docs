@@ -1,4 +1,9 @@
-# Monitor anchor programs
+---
+title: Monitor anchor programs
+categorySlug: how-to-guides-by-examples
+parentDocSlug: solana-alpha
+hidden: false
+---
 
 You can also monitor Solana contracts built by [Anchor ](https://www.anchor-lang.com/)in Sentio.
 

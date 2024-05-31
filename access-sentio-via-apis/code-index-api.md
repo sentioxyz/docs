@@ -1,4 +1,8 @@
-# Code Index API
+---
+title: Code Index API
+categorySlug: access-sentio-via-apis
+hidden: false
+---
 
 Code intelligence experience like jumping to the definition and finding reference experience is powered by index API. Two parameters to be provided, numeric chain ID (e.g. polygon 137 as in the example), and the transaction ID.
 

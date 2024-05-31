@@ -1,4 +1,9 @@
-# ⚙️ Simulation
+---
+slug: simulation
+title: ⚙️ Simulation
+categorySlug: sentio-debugger
+hidden: false
+---
 
 The Sentio simulator allows you to run simulations quickly and inspect the simulation result with great detail.
 

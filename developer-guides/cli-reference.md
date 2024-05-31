@@ -1,4 +1,8 @@
-# ➡ CLI Reference
+---
+title: ➡ CLI Reference
+categorySlug: developer-guides
+hidden: false
+---
 
 Sentio provides a command line tool to easily create and upload processors for your project. To start using it, you need to have [Node.js](https://nodejs.org/en/download/) environment. Then you could run&#x20;
 

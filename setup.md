@@ -1,4 +1,8 @@
-# 🔗 Setup
+---
+title: 🔗 Setup
+categorySlug: documentation
+hidden: false
+---
 
 ## Before you begin
 

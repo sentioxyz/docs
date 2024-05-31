@@ -1,4 +1,9 @@
-# Metrics in processors
+---
+title: Metrics in processors
+categorySlug: developer-guides
+parentDocSlug: sdk-guide
+hidden: false
+---
 
 You can find the general metrics definition in [metrics.md](../../references/concepts/data-types/metrics.md "mention")
 

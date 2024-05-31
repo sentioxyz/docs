@@ -1,4 +1,9 @@
-# ➡ Data collection
+---
+slug: data-collection
+title: ➡ Data collection
+categorySlug: how-to-guides-by-examples
+hidden: false
+---
 
 Generally, users write [processors](../../developer-guides/sdk-guide/processor-basic.md) to work with certain blockchain transactions, events, traces, account resources and time/block/version intervals, etc.
 

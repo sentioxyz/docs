@@ -1,4 +1,9 @@
-# ➡ View And Search Event Logs
+---
+title: ➡ View And Search Event Logs
+categorySlug: how-to-guides-by-examples
+parentDocSlug: visualize-results
+hidden: false
+---
 
 The logs are available from Sentio UI. It contains all the Deposit Event we submitted from [submitting-event-logs.md](../data-collection/submitting-event-logs.md "mention")
 

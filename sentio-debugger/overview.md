@@ -1,4 +1,8 @@
-# ⚙️ Overview
+---
+title: ⚙️ Overview
+categorySlug: sentio-debugger
+hidden: false
+---
 
 Sentio debugger is a tool to help users understand how a transaction works in detail. It has basic functions such as:
 

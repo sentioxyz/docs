@@ -1,4 +1,9 @@
-# ➡ Submitting Event Logs
+---
+title: ➡ Submitting Event Logs
+categorySlug: how-to-guides-by-examples
+parentDocSlug: data-collection
+hidden: false
+---
 
 {% hint style="info" %}
 Event Log API is the same among all different chains.

@@ -1,4 +1,9 @@
-# ⏰ Alerts
+---
+title: ⏰ Alerts
+categorySlug: references
+parentDocSlug: concepts
+hidden: false
+---
 
 Alerts can be created for a query or formula to notify (via [notification-channel.md](notification-channel.md "mention")) when a certain condition is met.&#x20;
 

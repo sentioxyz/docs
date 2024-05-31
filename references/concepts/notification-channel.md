@@ -1,4 +1,9 @@
-# 🥫 Notification Channel
+---
+title: 🥫 Notification Channel
+categorySlug: references
+parentDocSlug: concepts
+hidden: false
+---
 
 We support creating notification channel for
 

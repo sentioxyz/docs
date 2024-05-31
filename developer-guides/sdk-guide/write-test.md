@@ -1,4 +1,9 @@
-# Write Test
+---
+title: Write Test
+categorySlug: developer-guides
+parentDocSlug: sdk-guide
+hidden: false
+---
 
 When you create a processor through the command line, it will automatically generate a basic jest test for you.
 

@@ -1,4 +1,9 @@
-# Export via WebHook
+---
+title: Export via WebHook
+categorySlug: developer-guides
+parentDocSlug: sdk-guide
+hidden: false
+---
 
 You could use `Exporter` to send webhook. Note you need to give the channel name [notification-channel.md](../../references/concepts/notification-channel.md "mention") in the exporter (Config on the UI).
 

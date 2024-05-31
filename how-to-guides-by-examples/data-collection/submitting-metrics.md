@@ -1,4 +1,9 @@
-# ➡ Submitting Metrics
+---
+title: ➡ Submitting Metrics
+categorySlug: how-to-guides-by-examples
+parentDocSlug: data-collection
+hidden: false
+---
 
 {% hint style="info" %}
 Metrics API is the same among all different chains.

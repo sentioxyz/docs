@@ -1,4 +1,8 @@
-# 🤝 Permission and Sharing
+---
+title: 🤝 Permission and Sharing
+categorySlug: references
+hidden: false
+---
 
 ## Permission levels
 

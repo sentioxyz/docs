@@ -1,4 +1,8 @@
-# 🔒 Quotas and Limits
+---
+title: 🔒 Quotas and Limits
+categorySlug: references
+hidden: false
+---
 
 ## Sentio Units
 

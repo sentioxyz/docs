@@ -1,4 +1,9 @@
-# Event Logs In Processors
+---
+title: Event Logs In Processors
+categorySlug: developer-guides
+parentDocSlug: sdk-guide
+hidden: false
+---
 
 Users can write the following code to submit logs in processor using the following code:
 

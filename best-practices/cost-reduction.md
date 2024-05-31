@@ -1,4 +1,8 @@
-# 🔍 Cost Reduction
+---
+title: 🔍 Cost Reduction
+categorySlug: best-practices
+hidden: false
+---
 
 ## Use metrics whenever possible
 

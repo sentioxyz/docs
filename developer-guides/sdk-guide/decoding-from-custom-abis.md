@@ -1,4 +1,9 @@
-# Decoding from custom ABIs
+---
+title: Decoding from custom ABIs
+categorySlug: developer-guides
+parentDocSlug: sdk-guide
+hidden: false
+---
 
 Sentio already have a list of builtin ABIs. However, you would still need to provide your own ABI so sentio can generate [type safe](https://en.wikipedia.org/wiki/Type\_safety) methods for you to write elegant processor code.
 

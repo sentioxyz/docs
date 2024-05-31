@@ -1,4 +1,8 @@
-# 🔍 How To Handle Proxy Contracts?
+---
+title: 🔍 How To Handle Proxy Contracts?
+categorySlug: best-practices
+hidden: false
+---
 
 It is very common that users are using proxy contracts on EVM chain. For proxy contracts:
 

@@ -1,4 +1,9 @@
-# 🔑 API Key
+---
+title: 🔑 API Key
+categorySlug: references
+parentDocSlug: concepts
+hidden: false
+---
 
 Click the profile page on the **left bottom corner** and then create an [API key](https://app.sentio.xyz/profile/apikeys).
 

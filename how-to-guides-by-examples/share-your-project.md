@@ -1,4 +1,8 @@
-# ➡ Share your project
+---
+title: ➡ Share your project
+categorySlug: how-to-guides-by-examples
+hidden: false
+---
 
 You could share the project by making it public
 

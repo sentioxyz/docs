@@ -1,4 +1,9 @@
-# 🔎 Debugger
+---
+slug: debugger
+title: 🔎 Debugger
+categorySlug: sentio-debugger
+hidden: false
+---
 
 To understand a transaction even further, users can use the debugger to visualize the execution line-by-line.&#x20;
 

@@ -1,4 +1,8 @@
-# 🛣 Trace and Call
+---
+title: 🛣 Trace and Call
+categorySlug: sentio-debugger
+hidden: false
+---
 
 Sentio provides trace view of a transaction.
 

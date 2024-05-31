@@ -1,4 +1,9 @@
-# 🪝 Webhook
+---
+title: 🪝 Webhook
+categorySlug: references
+parentDocSlug: data-types
+hidden: false
+---
 
 {% hint style="success" %}
 Refer [export-via-webhook.md](../../../developer-guides/sdk-guide/export-via-webhook.md "mention")for the details of emitting webhook messages in the processor.

@@ -1,4 +1,9 @@
-# Handle ERC-20 Token
+---
+title: Handle ERC-20 Token
+categorySlug: developer-guides
+parentDocSlug: sdk-guide
+hidden: false
+---
 
 Use this API to get token info.
 

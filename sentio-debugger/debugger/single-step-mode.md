@@ -1,4 +1,9 @@
-# Single-step mode
+---
+title: Single-step mode
+categorySlug: sentio-debugger
+parentDocSlug: debugger
+hidden: false
+---
 
 
 

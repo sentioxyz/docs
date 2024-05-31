@@ -1,4 +1,9 @@
-# 💨 Metrics
+---
+title: 💨 Metrics
+categorySlug: references
+parentDocSlug: data-types
+hidden: false
+---
 
 We refer time series data as **Metrics.** Currently, we support users to submit two types of metric data.
 

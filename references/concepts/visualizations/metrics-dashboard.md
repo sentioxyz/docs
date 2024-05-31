@@ -1,4 +1,9 @@
-# 🔺 Metrics Dashboard
+---
+title: 🔺 Metrics Dashboard
+categorySlug: references
+parentDocSlug: visualizations
+hidden: false
+---
 
 Metrics dashboard for [#counter](../data-types/metrics.md#counter "mention")and [#gauge](../data-types/metrics.md#gauge "mention")only.
 

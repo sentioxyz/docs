@@ -1,4 +1,9 @@
-# Fuel
+---
+title: Fuel
+categorySlug: how-to-guides-by-examples
+parentDocSlug: working-with-different-chains
+hidden: false
+---
 
 [Fuel](https://fuel.network/) support is in beta stage. Here is a simple example built for [spark.fi](https://app.sprk.fi).&#x20;
 

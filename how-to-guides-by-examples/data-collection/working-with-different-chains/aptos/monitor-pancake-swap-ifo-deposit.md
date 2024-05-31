@@ -1,4 +1,9 @@
-# Monitor Pancake Swap IFO deposit
+---
+title: Monitor Pancake Swap IFO deposit
+categorySlug: how-to-guides-by-examples
+parentDocSlug: aptos
+hidden: false
+---
 
 Here we go through one example as follows
 

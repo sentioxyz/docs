@@ -1,4 +1,8 @@
-# 🔍 Upgrade SDK Version
+---
+title: 🔍 Upgrade SDK Version
+categorySlug: best-practices
+hidden: false
+---
 
 You can upgrade your SDK version by modifying `package.json`
 

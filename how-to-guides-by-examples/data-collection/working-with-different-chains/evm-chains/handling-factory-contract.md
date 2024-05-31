@@ -1,4 +1,9 @@
-# Handling Factory Contract
+---
+title: Handling Factory Contract
+categorySlug: how-to-guides-by-examples
+parentDocSlug: evm-chains
+hidden: false
+---
 
 In many cases, there is a factory contract that is responsible to create multiple actual contracts. The typical example is [UniswapV3Factory](https://github.com/Uniswap/v3-core/blob/main/contracts/UniswapV3Factory.sol#L50), every time a pool is created, an `PoolCreated` event is emitted.
 

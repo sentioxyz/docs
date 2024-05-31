@@ -1,4 +1,8 @@
-# 🔍 Performance Tuning
+---
+title: 🔍 Performance Tuning
+categorySlug: best-practices
+hidden: false
+---
 
 ## My Query speed is slow, what should I do?
 

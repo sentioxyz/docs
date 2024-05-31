@@ -1,4 +1,8 @@
-# ➡ Build Dashboards
+---
+title: ➡ Build Dashboards
+categorySlug: how-to-guides-by-examples
+hidden: false
+---
 
 ## Build Metrics Dashboard <a href="#graphing" id="graphing"></a>
 

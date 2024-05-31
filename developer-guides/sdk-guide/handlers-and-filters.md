@@ -1,4 +1,9 @@
-# Handlers and Filters
+---
+title: Handlers and Filters
+categorySlug: developer-guides
+parentDocSlug: sdk-guide
+hidden: false
+---
 
 Sentio processors basically provide you with an event-driven model to handle and submit data. Once a processor is created, you can register your event handler functions with filters.&#x20;
 

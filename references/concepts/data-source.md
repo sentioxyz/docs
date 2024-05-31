@@ -1,4 +1,9 @@
-# 💡 Data Source
+---
+title: 💡 Data Source
+categorySlug: references
+parentDocSlug: concepts
+hidden: false
+---
 
 From the data source page, you can do the followings:
 

@@ -1,4 +1,9 @@
-# Monitor Pool Total Value Locked
+---
+title: Monitor Pool Total Value Locked
+categorySlug: how-to-guides-by-examples
+parentDocSlug: aptos
+hidden: false
+---
 
 Say you have a swap, and you want to monitor its Total Value Locked. You can do it by periodically access account resources. For example, you can do the following:
 

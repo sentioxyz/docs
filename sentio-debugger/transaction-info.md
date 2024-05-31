@@ -1,4 +1,8 @@
-# 💱 Transaction info
+---
+title: 💱 Transaction info
+categorySlug: sentio-debugger
+hidden: false
+---
 
 Sentio provides standard info for a given transaction.
 

@@ -1,4 +1,8 @@
-# Debug API
+---
+title: Debug API
+categorySlug: access-sentio-via-apis
+hidden: false
+---
 
 ## Get Indexed Call Trace
 

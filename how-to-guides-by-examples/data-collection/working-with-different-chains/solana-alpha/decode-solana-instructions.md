@@ -1,4 +1,9 @@
-# Decode Solana instructions
+---
+title: Decode Solana instructions
+categorySlug: how-to-guides-by-examples
+parentDocSlug: solana-alpha
+hidden: false
+---
 
 There are three main types of Solana smart contract programs: Anchor programs, System programs like SPL token programs, and customized programs built on top of solana API. Those different types of Solana programs use different ways to encode and decode their instructions.
 

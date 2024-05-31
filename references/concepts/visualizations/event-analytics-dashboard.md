@@ -1,4 +1,9 @@
-# ⚡ Event Analytics Dashboard
+---
+title: ⚡ Event Analytics Dashboard
+categorySlug: references
+parentDocSlug: visualizations
+hidden: false
+---
 
 Event Analytics Dashboard is used to visualize data submitted by [logs-in-processor.md](../../../developer-guides/sdk-guide/logs-in-processor.md "mention")
 

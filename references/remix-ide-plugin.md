@@ -1,4 +1,8 @@
-# 🧩 Remix IDE Plugin
+---
+title: 🧩 Remix IDE Plugin
+categorySlug: references
+hidden: false
+---
 
 The Sentio plugin for [Remix IDE](https://remix.ethereum.org/) is a powerful tool designed to enhance your smart contract development experience.&#x20;
 

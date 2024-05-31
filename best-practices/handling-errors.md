@@ -1,4 +1,8 @@
-# 🔍 Handling Errors
+---
+title: 🔍 Handling Errors
+categorySlug: best-practices
+hidden: false
+---
 
 ## Over Quota
 

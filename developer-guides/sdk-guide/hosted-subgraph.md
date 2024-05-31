@@ -1,4 +1,9 @@
-# Hosted Subgraph
+---
+title: Hosted Subgraph
+categorySlug: developer-guides
+parentDocSlug: sdk-guide
+hidden: false
+---
 
 In addition to Sentio processor, Sentio is also compatible Subgraph, while Sentio still provide same GraphQL API endpoint, we also provide SQL API, dashboards, multi-versioning, etc, many of the benefits that Sentio processor have provided. However in order to get max performance and usability, we still highly recommend to use [Sentio Processor](../../references/concepts/processor.md).
 

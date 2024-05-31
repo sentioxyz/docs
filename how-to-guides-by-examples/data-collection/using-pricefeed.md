@@ -1,4 +1,9 @@
-# ➡ Using PriceFeed
+---
+title: ➡ Using PriceFeed
+categorySlug: how-to-guides-by-examples
+parentDocSlug: data-collection
+hidden: false
+---
 
 Sentio supports a limited set of price feed, it can be accessed by a combination of
 

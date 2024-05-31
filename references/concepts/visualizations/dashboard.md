@@ -1,4 +1,9 @@
-# 📊 Dashboard
+---
+title: 📊 Dashboard
+categorySlug: references
+parentDocSlug: visualizations
+hidden: false
+---
 
 ## Graphing <a href="#graphing" id="graphing"></a>
 

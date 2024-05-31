@@ -1,4 +1,9 @@
-# Function only Mode
+---
+title: Function only Mode
+categorySlug: sentio-debugger
+parentDocSlug: debugger
+hidden: false
+---
 
 By default, the debugger behaves only on function level.
 

@@ -1,4 +1,8 @@
-# ▶ UI layout
+---
+title: ▶ UI layout
+categorySlug: references
+hidden: false
+---
 
 <figure><img src="../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
 

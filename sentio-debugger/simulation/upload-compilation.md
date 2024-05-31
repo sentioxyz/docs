@@ -1,4 +1,9 @@
-# Upload Compilation
+---
+title: Upload Compilation
+categorySlug: sentio-debugger
+parentDocSlug: simulation
+hidden: false
+---
 
 There are two ways to upload a compilation for the use of [#override-contract](./#override-contract "mention").
 

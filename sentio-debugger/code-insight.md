@@ -1,4 +1,8 @@
-# ✳ Code Intelligence
+---
+title: ✳ Code Intelligence
+categorySlug: sentio-debugger
+hidden: false
+---
 
 Sentio makes the debugging and contract reading experience smoother by fully analyzing the solidity source code.  This experiences is built into every parts that has solidity source code like [trace view](trace-view.md), [debugger view](debugger/) or [contract view](transaction-info.md#contract-code-explorer).&#x20;
 

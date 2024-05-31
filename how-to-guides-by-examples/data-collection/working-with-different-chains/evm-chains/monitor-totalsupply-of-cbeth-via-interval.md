@@ -1,4 +1,9 @@
-# Monitor totalSupply of cbETH (via Interval)
+---
+title: Monitor totalSupply of cbETH (via Interval)
+categorySlug: how-to-guides-by-examples
+parentDocSlug: evm-chains
+hidden: false
+---
 
 Here is an example to monitor total Supply of cbETH.
 

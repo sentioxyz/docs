@@ -1,4 +1,9 @@
-# Processor Basic
+---
+title: Processor Basic
+categorySlug: developer-guides
+parentDocSlug: sdk-guide
+hidden: false
+---
 
 The core concept of a Sentio project is **Processor**. A processor is usually a typescript project that contains logic to use blockchain data to generate **user-defined data** to sentio. The processor should be written using Sentio's SDK framework and be submitted and run on Sentio.
 

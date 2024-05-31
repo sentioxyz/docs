@@ -1,4 +1,8 @@
-# 🗄 Samples
+---
+title: 🗄 Samples
+categorySlug: documentation
+hidden: false
+---
 
 Some sample projects you can refer to below:
 

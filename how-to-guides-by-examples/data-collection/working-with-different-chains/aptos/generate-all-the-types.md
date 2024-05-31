@@ -1,4 +1,9 @@
-# Generate all the types
+---
+title: Generate all the types
+categorySlug: how-to-guides-by-examples
+parentDocSlug: aptos
+hidden: false
+---
 
 Sentio has a list of builtin ABIs for aptos, e.g. the **0x1**, and **0x3** modules. You can directly use them, e.g.
 

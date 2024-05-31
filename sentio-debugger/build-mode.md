@@ -1,4 +1,8 @@
-# 🛠️ Build Mode
+---
+title: 🛠️ Build Mode
+categorySlug: sentio-debugger
+hidden: false
+---
 
 Debugging solidity on-chain could be more tricky than you thought, debugger results sometimes show missing function calls, or show unexpected parameter values, weird execution order, or mismatched source code. This is largely due to solidities compiler optimization. e.g. function inline, function specializer, etc.
 

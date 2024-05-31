@@ -1,4 +1,9 @@
-# Monitor Coinbase cbETH Mint/Burn (via Events)
+---
+title: Monitor Coinbase cbETH Mint/Burn (via Events)
+categorySlug: how-to-guides-by-examples
+parentDocSlug: evm-chains
+hidden: false
+---
 
 Here is an example to monitor [cbETH](https://help.coinbase.com/en/coinbase/trading-and-funding/staking-rewards/cbeth) mint/burn events.
 

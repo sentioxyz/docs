@@ -1,4 +1,9 @@
-# Monitor Call count by Trace
+---
+title: Monitor Call count by Trace
+categorySlug: how-to-guides-by-examples
+parentDocSlug: evm-chains
+hidden: false
+---
 
 {% hint style="warning" %}
 Trace is only supported in a subset of networks. See full list in [supported-networks.md](../../../../references/supported-networks.md "mention")

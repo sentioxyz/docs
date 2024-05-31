@@ -1,4 +1,8 @@
-# ℹ️ Dynamic Logging
+---
+title: ℹ️ Dynamic Logging
+categorySlug: sentio-debugger
+hidden: false
+---
 
 Dynamic logging provide an easy way to inspect state of transaction during execution with [simulation](simulation/ "mention"). It allow developer to add logs like
 

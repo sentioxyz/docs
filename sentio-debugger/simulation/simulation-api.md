@@ -1,4 +1,9 @@
-# Simulation API
+---
+title: Simulation API
+categorySlug: sentio-debugger
+parentDocSlug: simulation
+hidden: false
+---
 
 ## Create simulation
 

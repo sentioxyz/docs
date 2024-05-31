@@ -1,4 +1,9 @@
-# Dynamic Processor Creation
+---
+title: Dynamic Processor Creation
+categorySlug: developer-guides
+parentDocSlug: sdk-guide
+hidden: false
+---
 
 {% hint style="info" %}
 This feature is currently only supported in EVM-compatible chains.

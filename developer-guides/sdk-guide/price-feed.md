@@ -1,4 +1,9 @@
-# Price Feed
+---
+title: Price Feed
+categorySlug: developer-guides
+parentDocSlug: sdk-guide
+hidden: false
+---
 
 ## PriceFeed Sample
 

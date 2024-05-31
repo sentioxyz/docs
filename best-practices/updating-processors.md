@@ -1,4 +1,8 @@
-# 🔍 Updating processors
+---
+title: 🔍 Updating processors
+categorySlug: best-practices
+hidden: false
+---
 
 It is quite common for users to update your processor code. To update it, simply rerun the upload command.
 

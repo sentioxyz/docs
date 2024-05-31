@@ -1,4 +1,8 @@
-# ➡ Create alerts
+---
+title: ➡ Create alerts
+categorySlug: how-to-guides-by-examples
+hidden: false
+---
 
 ## Define alerts
 

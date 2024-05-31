@@ -1,4 +1,9 @@
-# 📐 Aggregation, Functions and Formulas
+---
+title: 📐 Aggregation, Functions and Formulas
+categorySlug: references
+parentDocSlug: visualizations
+hidden: false
+---
 
 #### Space aggregation <a href="#space-aggregation" id="space-aggregation"></a>
 

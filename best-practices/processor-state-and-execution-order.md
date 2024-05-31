@@ -1,4 +1,8 @@
-# 🔍 Processor State and Execution Order
+---
+title: 🔍 Processor State and Execution Order
+categorySlug: best-practices
+hidden: false
+---
 
 ## Execution Order
 

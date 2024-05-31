@@ -1,4 +1,9 @@
-# Monitor WETH balance on Solana (via Native program)
+---
+title: Monitor WETH balance on Solana (via Native program)
+categorySlug: how-to-guides-by-examples
+parentDocSlug: solana-alpha
+hidden: false
+---
 
 In the wormhole example, one can also monitor SPL token program.
 

@@ -1,4 +1,8 @@
-# 🔍 Formula usage best practices
+---
+title: 🔍 Formula usage best practices
+categorySlug: best-practices
+hidden: false
+---
 
 ## Aggregation before add or sub
 
