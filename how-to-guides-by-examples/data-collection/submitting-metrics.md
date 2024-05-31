@@ -1,10 +1,16 @@
-# ➡ Submitting Metrics
+---
+title: ➡ Submitting Metrics
+categorySlug: how-to-guides-by-examples
+parentDocSlug: data-collection
+hidden: false
+---
 
-{% hint style="info" %}
-Metrics API is the same among all different chains.
-{% endhint %}
+> ℹ️
+>
+> Metrics API is the same among all different chains.
 
-Metrics have 2 types: [Counter](../../references/concepts/data-types/metrics.md#counter) and [Gauge](../../references/concepts/data-types/metrics.md#gauge).
+
+Metrics have 2 types: [Counter](metrics#counter) and [Gauge](metrics#gauge).
 
 ```typescript
  const totalSupply = (await ctx.contract.totalSupply()).scaleDown(tokenInfo.decimal)
@@ -14,11 +20,12 @@ Metrics have 2 types: [Counter](../../references/concepts/data-types/metrics.md#
  ctx.meter.Counter("mint_acc").add(amount, {token: tokenInfo.symbol})
 ```
 
-Note, `token` is the [#labels](../../developer-guides/sdk-guide/metrics-in-processors.md#labels "mention") you can attach when you submit the metric.
+Note, `token` is the [#labels](metrics-in-processors#labels "mention") you can attach when you submit the metric.
 
-{% hint style="info" %}
-Please refer to [metrics-in-processors.md](../../developer-guides/sdk-guide/metrics-in-processors.md "mention")for more definitions.
+> ℹ️
+>
+> Please refer to [metrics-in-processors](metrics-in-processors "mention")for more definitions.
 
-Please refer to [metrics.md](../../references/concepts/data-types/metrics.md "mention")for the definitions.
-{% endhint %}
+Please refer to [metrics](metrics "mention")for the definitions.
+
 

@@ -1,4 +1,8 @@
-# ➡ CLI Reference
+---
+title: ➡ CLI Reference
+categorySlug: developer-guides
+hidden: false
+---
 
 Sentio provides a command line tool to easily create and upload processors for your project. To start using it, you need to have [Node.js](https://nodejs.org/en/download/) environment. Then you could run&#x20;
 
@@ -40,11 +44,9 @@ npx @sentio/cli@latest create --subproject -n <project name>
 
 Inside project directory, add contract ABI to your project and generate bindings for a contract in Ethereum mainnet.
 
-{% code overflow="wrap" %}
 ```bash
 yarn sentio add <contract address>
 ```
-{% endcode %}
 
 To use a different network, try `--chain` flag as follows
 

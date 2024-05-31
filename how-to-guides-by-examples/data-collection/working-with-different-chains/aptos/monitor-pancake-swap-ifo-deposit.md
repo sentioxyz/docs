@@ -1,4 +1,9 @@
-# Monitor Pancake Swap IFO deposit
+---
+title: Monitor Pancake Swap IFO deposit
+categorySlug: how-to-guides-by-examples
+parentDocSlug: aptos
+hidden: false
+---
 
 Here we go through one example as follows
 
@@ -29,8 +34,9 @@ IFO.bind()
 
 ## Using filters
 
-For a more detailed guide, read [#aptos](../../../../developer-guides/sdk-guide/handlers-and-filters.md#aptos "mention")
+For a more detailed guide, read [#aptos](handlers-and-filters#aptos "mention")
 
-{% hint style="info" %}
-See this [repo](https://github.com/sentioxyz/sentio-processors/blob/main/projects/pancake-swap/src/processor.ts) for full implementation. To learn how to view metrics and build dashboards from the UI, go to [#graphing-1](../../../build-dashboards.md#graphing-1 "mention")
-{% endhint %}
+> ℹ️
+>
+> See this [repo](https://github.com/sentioxyz/sentio-processors/blob/main/projects/pancake-swap/src/processor.ts) for full implementation. To learn how to view metrics and build dashboards from the UI, go to [#graphing-1](build-dashboards#graphing-1 "mention")
+

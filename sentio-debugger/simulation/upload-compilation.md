@@ -1,4 +1,9 @@
-# Upload Compilation
+---
+title: Upload Compilation
+categorySlug: sentio-debugger
+parentDocSlug: simulation
+hidden: false
+---
 
 There are two ways to upload a compilation for the use of [#override-contract](./#override-contract "mention").
 
@@ -6,15 +11,15 @@ There are two ways to upload a compilation for the use of [#override-contract](.
 
 Navigate to Contracts -> Compilations, and then click "Upload Compilation"
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then you could choose a json file that existed in your hardhat artifact directory. e.g. `./artifacts/build-info/c8ebc50e7bb836cebb977bb299387552.json` , then you can choose which contract listed there should be uploaded.
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Via Hardhat Plugin
 
-We also provide a hardhat plugin for more seamless integration with your contract development workflow. You can find our plugin in [Github](https://github.com/sentioxyz/hardhat-sentio/blob/main/README.md).
+We also provide a hardhat plugin for more seamless integration with your contract development workflow. You can find our plugin in [Github](https://github.com/sentioxyz/hardhat-sentio/blob/main/README).
 
 To get started, add dependencies in your hardhat project.
 

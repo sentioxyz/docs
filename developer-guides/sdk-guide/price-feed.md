@@ -1,4 +1,9 @@
-# Price Feed
+---
+title: Price Feed
+categorySlug: developer-guides
+parentDocSlug: sdk-guide
+hidden: false
+---
 
 ## PriceFeed Sample
 
@@ -12,17 +17,17 @@ const price = await getPriceByType(CHAIN_IDS.ETHEREUM, address, ctx.timestamp) |
 
 The function sigatures are:
 
-<pre class="language-typescript"><code class="lang-typescript">interface PriceOptions {
+```
+interface PriceOptions {
   toleranceInDays?: number
 }
-<strong>
-</strong>export async function getPriceByType(
+export async function getPriceByType(
   chainId: string,
   coinType: string,
   date: Date,
   options?: PriceOptions
-): Promise&#x3C;number | undefined>
-</code></pre>
+): Promise<number | undefined>
+```
 
 ## API Semantics
 
@@ -35,4 +40,3 @@ The function sigatures are:
 ```typescript
 getPriceBySymbol(symbol: string, date: Date, options?: PriceOptions)
 ```
-

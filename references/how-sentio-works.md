@@ -1,4 +1,8 @@
-# ✅ How Sentio Works
+---
+title: ✅ How Sentio Works
+categorySlug: references
+hidden: false
+---
 
 Sentio roughly works as the following
 

@@ -1,4 +1,8 @@
-# 🔗 Setup
+---
+title: 🔗 Setup
+categorySlug: documentation
+hidden: false
+---
 
 ## Before you begin
 
@@ -6,7 +10,7 @@ Sentio requires users to install [**node (v16+)**](https://nodejs.dev/en/) befor
 
 To install node, please follow the instructions [here](https://nodejs.dev/en/).
 
-Follow [best-way-to-manage-nodejs.md](best-practices/best-way-to-manage-nodejs.md "mention") for node version management
+Follow [best-way-to-manage-nodejs](best-way-to-manage-nodejs "mention") for node version management
 
 ## Register an Account and Command Line Login
 
@@ -16,9 +20,9 @@ Go to [app.sentio.xyz](https://app.sentio.xyz) to register an account. We suppor
 npx @sentio/cli@latest login
 ```
 
-This should prompt for a link, and you can login using that link. It will generate a valid [api-key.md](references/concepts/api-key.md "mention") and store it locally.
+This should prompt for a link, and you can login using that link. It will generate a valid [api-key](api-key "mention") and store it locally.
 
 ## Generate the API key (optional)
 
-Normally, you do not need to explicitly generate API keys for uploading [processor.md](references/concepts/processor.md "mention"). But you can always sign in manually, see [api-key.md](references/concepts/api-key.md "mention")
+Normally, you do not need to explicitly generate API keys for uploading [processor](processor "mention"). But you can always sign in manually, see [api-key](api-key "mention")
 

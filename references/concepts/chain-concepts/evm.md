@@ -1,4 +1,9 @@
-# EVM
+---
+title: EVM
+categorySlug: references
+parentDocSlug: chain-concepts
+hidden: false
+---
 
 ## Event
 

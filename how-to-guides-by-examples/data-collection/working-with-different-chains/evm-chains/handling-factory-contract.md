@@ -1,8 +1,13 @@
-# Handling Factory Contract
+---
+title: Handling Factory Contract
+categorySlug: how-to-guides-by-examples
+parentDocSlug: evm-chains
+hidden: false
+---
 
 In many cases, there is a factory contract that is responsible to create multiple actual contracts. The typical example is [UniswapV3Factory](https://github.com/Uniswap/v3-core/blob/main/contracts/UniswapV3Factory.sol#L50), every time a pool is created, an `PoolCreated` event is emitted.
 
-In this case, you could use [dynamic-processor-creation.md](../../../developer-guides/sdk-guide/dynamic-processor-creation.md "mention")to handle this case. In this very concrete uniswap case, you'd first create a factory processor to track `PoolCreated` event:
+In this case, you could use [dynamic-processor-creation](dynamic-processor-creation "mention")to handle this case. In this very concrete uniswap case, you'd first create a factory processor to track `PoolCreated` event:
 
 ```typescript
 UniswapFactoryProcessor.bind({address: '0x1F98431c8aD98523631AE4a59f267346ea31F984'})
@@ -31,6 +36,7 @@ const poolTemplate = new UniswapProcessorTemplate()
     )
 ```
 
-{% hint style="warning" %}
-Notice the template must be declared in the top level of your processor file to be successfully registered.
-{% endhint %}
+> ⚠️
+>
+> Notice the template must be declared in the top level of your processor file to be successfully registered.
+

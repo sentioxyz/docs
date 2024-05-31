@@ -1,12 +1,16 @@
-# 🛠️ Build Mode
+---
+title: 🛠️ Build Mode
+categorySlug: sentio-debugger
+hidden: false
+---
 
 Debugging solidity on-chain could be more tricky than you thought, debugger results sometimes show missing function calls, or show unexpected parameter values, weird execution order, or mismatched source code. This is largely due to solidities compiler optimization. e.g. function inline, function specializer, etc.
 
 Sentio lets you choose different build modes of the solidity binary on chain to overcome the problem.
 
-You can choose Build Mode in either [trace-view.md](trace-view.md "mention") or [debugger](debugger/ "mention").&#x20;
+You can choose Build Mode in either [trace-view](trace-view "mention") or [debugger](debugger/ "mention").&#x20;
 
-<figure><img src="../.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 
 ## Debug Build
 
@@ -24,8 +28,8 @@ This solves out of gas issue in normal debug build, but noted this may cause dif
 
 You could try this [example](https://app.sentio.xyz/tx/1/0x6585fd39cd22ad2c558855403dc367462b48cd48b56431424138dc9df8227853) and switch it's build mode, you will see the trace is different:
 
-<figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>release build</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>release build</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption><p>debug build</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (3).png" alt=""><figcaption><p>debug build</p></figcaption></figure>
 
 The debug build will reflect the logic code flow more accurately while the release build reflect the more real execution order after inline optimization.

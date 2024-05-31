@@ -1,4 +1,9 @@
-# Generate all the types
+---
+title: Generate all the types
+categorySlug: how-to-guides-by-examples
+parentDocSlug: aptos
+hidden: false
+---
 
 Sentio has a list of builtin ABIs for aptos, e.g. the **0x1**, and **0x3** modules. You can directly use them, e.g.
 
@@ -14,7 +19,7 @@ coin.bind().onEventWithdrawEvent((evt, ctx) => {
 
 
 
-Use [#sentio-add](../../../developer-guides/cli-reference.md#sentio-add "mention")to fetch ABIs for your modules.
+Use [#sentio-add](developer-guides/cli-reference#sentio-add "mention")to fetch ABIs for your modules.
 
 Then run
 
@@ -22,9 +27,10 @@ Then run
 yarn sentio build
 ```
 
-{% hint style="info" %}
-You can also download the account modules through [https://mainnet.aptoslabs.com/v1/accounts/0x7d7e436f0b2aafde60774efb26ccc432cf881b677aca7faaf2a01879bd19fb8/modules](https://mainnet.aptoslabs.com/v1/accounts/0x7d7e436f0b2aafde60774efb26ccc432cf881b677aca7faaf2a01879bd19fb8/modules), replace the address with your own account address, and put the result as a json file under `abis/aptos` directory. &#x20;
-{% endhint %}
+> ℹ️
+>
+> You can also download the account modules through [https://mainnet.aptoslabs.com/v1/accounts/0x7d7e436f0b2aafde60774efb26ccc432cf881b677aca7faaf2a01879bd19fb8/modules](https://mainnet.aptoslabs.com/v1/accounts/0x7d7e436f0b2aafde60774efb26ccc432cf881b677aca7faaf2a01879bd19fb8/modules), replace the address with your own account address, and put the result as a json file under `abis/aptos` directory. &#x20;
+
 
 It will generate all the types under `src/types/aptos`. And download all depended account modules' abi into `abis/aptos` directory.
 

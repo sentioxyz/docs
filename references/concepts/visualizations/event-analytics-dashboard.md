@@ -1,14 +1,20 @@
-# ⚡ Event Analytics Dashboard
+---
+title: ⚡ Event Analytics Dashboard
+categorySlug: references
+parentDocSlug: visualizations
+hidden: false
+---
 
-Event Analytics Dashboard is used to visualize data submitted by [logs-in-processor.md](../../../developer-guides/sdk-guide/logs-in-processor.md "mention")
+Event Analytics Dashboard is used to visualize data submitted by [logs-in-processor](logs-in-processor "mention")
 
 Here is one example we make a dashboard for **Accumulative Unique Users**
 
-<figure><img src="../../../.gitbook/assets/AAU.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/AAU.gif" alt=""><figcaption></figcaption></figure>
 
-{% hint style="warning" %}
-This requires the event were submitted with [#distinct-id](../../../developer-guides/sdk-guide/logs-in-processor.md#distinct-id "mention")
-{% endhint %}
+> ⚠️
+>
+> This requires the event were submitted with [#distinct-id](logs-in-processor#distinct-id "mention")
+
 
 ## All Events
 

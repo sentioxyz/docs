@@ -1,20 +1,25 @@
-# 🔒 Quotas and Limits
+---
+title: 🔒 Quotas and Limits
+categorySlug: references
+hidden: false
+---
 
 ## Sentio Units
 
 Sentio charges usage via **Sentio Units.**
 
-* Every Logical [metrics.md](concepts/data-types/metrics.md "mention")costs **1** Sentio Units
-* Every Logical [event-logs.md](concepts/data-types/event-logs.md "mention")costs **2** Sentio Units
-* Every Logical [webhook.md](concepts/data-types/webhook.md "mention")costs **3** Sentio Units
+* Every Logical [metrics](metrics "mention")costs **1** Sentio Units
+* Every Logical [event-logs](event-logs "mention")costs **2** Sentio Units
+* Every Logical [webhook](webhook "mention")costs **3** Sentio Units
 * Every Node RPC costs **1** Sentio Units (List will be updated)
   * [EVM calls](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block) involving the state.
   * [get table item](https://fullnode.devnet.aptoslabs.com/v1/spec#/operations/get\_table\_item) for Aptos
 * Every Sentio API request costs **1** Sentio Unit.
 
-{% hint style="success" %}
-"Logical" means the emission from the processor. We do not charge the actual physical storage data, which could often be more than what users actually submit in processor.
-{% endhint %}
+> ✅
+>
+> "Logical" means the emission from the processor. We do not charge the actual physical storage data, which could often be more than what users actually submit in processor.
+
 
 ## Backfill
 
@@ -28,7 +33,7 @@ Since backfill is free, we limit the concurrent backfill one user can run. Curre
 
 ## Number of Series
 
-We limit the total number of [#series](concepts/data-types/metrics.md#series "mention") you can submit in one processor. Current the limit is set to **10,000.**
+We limit the total number of [#series](metrics#series "mention") you can submit in one processor. Current the limit is set to **10,000.**
 
 ## Number of Projects
 

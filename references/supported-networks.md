@@ -1,10 +1,15 @@
-# 💎 Supported Networks
+---
+title: 💎 Supported Networks
+categorySlug: references
+hidden: false
+---
 
 The supported network and its status are listed below, we are actively supporting more networks, let us know via [`support@sentio.xyz`](mailto:support@sentio.xyz) about your use case to help us prioritize network support.
 
-{% hint style="success" %}
-We only include mainnet in the list
-{% endhint %}
+> ✅
+>
+> We only include mainnet in the list
+
 
 ## EVM Chains
 

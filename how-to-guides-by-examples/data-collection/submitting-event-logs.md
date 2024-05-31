@@ -1,8 +1,14 @@
-# ➡ Submitting Event Logs
+---
+title: ➡ Submitting Event Logs
+categorySlug: how-to-guides-by-examples
+parentDocSlug: data-collection
+hidden: false
+---
 
-{% hint style="info" %}
-Event Log API is the same among all different chains.
-{% endhint %}
+> ℹ️
+>
+> Event Log API is the same among all different chains.
+
 
 ## Typical Case For DAU
 
@@ -18,19 +24,19 @@ Assume you'd like to emit a log for all `swap` user activities in order to compu
 
 You could also attach attributes to the event log:
 
-<pre class="language-typescript"><code class="lang-typescript"><strong>.onEventDepositEvent(async (evt, ctx)=>{
+```typescript
+.onEventDepositEvent(async (evt, ctx)=>{
 </strong>  ctx.eventLogger.emit("user", {
     distinctId: evt.data_decoded.user, eventLabel: "Deposit",
     amount: evt.data_decoded.amount,
   })
  })
-</code></pre>
+```
 
-To view the results of the submitted logs, see [view-and-search-event-logs.md](../visualize-results/view-and-search-event-logs.md "mention")
+To view the results of the submitted logs, see [view-and-search-event-logs](visualize-results/view-and-search-event-logs "mention")
 
-{% hint style="info" %}
-For more detailed information about how to submit logs in processor, refer to [logs-in-processor.md](../../developer-guides/sdk-guide/logs-in-processor.md "mention")
+> ℹ️
+>
+> For more detailed information about how to submit logs in processor, refer to [logs-in-processor](logs-in-processor "mention")
 
-For the definition, refer to [event-logs.md](../../references/concepts/data-types/event-logs.md "mention")
-{% endhint %}
-
+For the definition, refer to [event-logs](event-logs "mention")

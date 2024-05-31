@@ -1,8 +1,13 @@
-# 💡 Quickstart
+---
+title: 💡 Quickstart
+categorySlug: documentation
+hidden: false
+---
 
-{% hint style="info" %}
-In this section, we will show you how to set up a simple project to monitor an ERC20 contract.&#x20;
-{% endhint %}
+> ℹ️
+>
+> In this section, we will show you how to set up a simple project to monitor an ERC20 contract.&#x20;
+
 
 ## Step 1: Create a Sentio Account
 
@@ -12,11 +17,11 @@ Simply go to [https://app.sentio.xyz](https://app.sentio.xyz) and login/create y
 
 By default, Sentio will create an empty "default" project for you, if you want to have a default project ID, then click "**Create Project**" on the project selector. In addition, our CLI can also automatically create a project for you.
 
-<figure><img src=".gitbook/assets/createProject.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/createProject.gif" alt=""><figcaption></figcaption></figure>
 
 ## Step 3: Setup Dev environment
 
-We require users to follow [setup.md](setup.md "mention") before working on the projects.
+We require users to follow [setup](setup "mention") before working on the projects.
 
 ## Step 4: Create Processor Project
 
@@ -32,15 +37,16 @@ You can also give the processor project a name by using the following command
 npx @sentio/cli@latest create $PROJECT_NAME
 ```
 
-The commands will generate a template project based on [X2Y2 token](https://github.com/X2Y2-io/x2y2-sdk). This should be a good starting point to write your own processor logic.  It is also possible to create template projects for other types of chains, please refer [CLI Reference](developer-guides/cli-reference.md#sentio-create).&#x20;
+The commands will generate a template project based on [X2Y2 token](https://github.com/X2Y2-io/x2y2-sdk). This should be a good starting point to write your own processor logic.  It is also possible to create template projects for other types of chains, please refer [CLI Reference](developer-guides/cli-reference#sentio-create).&#x20;
 
-{% hint style="info" %}
-You can directly **modify the code (**`src/processor.ts`**)** to fit your use case as well.
-{% endhint %}
+> ℹ️
+>
+> You can directly **modify the code (**`src/processor.ts`**)** to fit your use case as well.
 
-Sentio has a list of builtin ABIs. We also support custom ABIs for your own project. See [decoding-from-custom-abis.md](developer-guides/sdk-guide/decoding-from-custom-abis.md "mention") for more details.&#x20;
 
-For more information on how to write a processor you can refer to [processor-basic.md](developer-guides/sdk-guide/processor-basic.md "mention")
+Sentio has a list of builtin ABIs. We also support custom ABIs for your own project. See [decoding-from-custom-abis](decoding-from-custom-abis "mention") for more details.&#x20;
+
+For more information on how to write a processor you can refer to [processor-basic](processor-basic "mention")
 
 ## Step 5: Upload Processor
 
@@ -50,13 +56,12 @@ You can build and upload the processor project by using the following command
 yarn sentio upload
 ```
 
-You will see a link to [data-source.md](references/concepts/data-source.md "mention") printed and you can open it in a browser to see the upload status.
+You will see a link to [data-source](data-source "mention") printed and you can open it in a browser to see the upload status.
 
-<figure><img src=".gitbook/assets/image (4) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (4) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## End: Verify Metrics
 
 The command line should tell you that the processor has been uploaded correctly and give you a link to check the status of the processor, such as what chains this processor is running, how many blocks it has processed, the version, etc.
 
-You can go to the metrics page to check the metrics submitted to the project. Checkout  [metrics.md](references/concepts/data-types/metrics.md "mention")for more details.
-
+You can go to the metrics page to check the metrics submitted to the project. Checkout  [metrics](metrics "mention") for more details.

@@ -1,4 +1,9 @@
-# ➡ Using PriceFeed
+---
+title: ➡ Using PriceFeed
+categorySlug: how-to-guides-by-examples
+parentDocSlug: data-collection
+hidden: false
+---
 
 Sentio supports a limited set of price feed, it can be accessed by a combination of
 
@@ -66,7 +71,8 @@ ExchangeV3Processor.bind({address: LOOPRING_EXCHANGE})
     .onTimeInterval(tvl, 60, 24 * 60 * 30)
 ```
 
-{% hint style="info" %}
-For more information regarding price feed, please refer to [price-feed.md](../../developer-guides/sdk-guide/price-feed.md "mention")
-{% endhint %}
+> ℹ️
+>
+> For more information regarding price feed, please refer to [price-feed](price-feed "mention")
+
 

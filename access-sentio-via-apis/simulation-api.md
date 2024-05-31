@@ -1,4 +1,9 @@
-# Simulation API
+---
+title: Simulation API
+categorySlug: access-sentio-via-apis
+parentDocSlug: ""
+hidden: false
+---
 
 ## Create simulation
 
@@ -17,7 +22,7 @@ curl --location 'https://app.sentio.xyz/api/v1/solidity/simulate' \
         "networkId": "1",          // Chain ID, "1" for Ethereum mainnet. See chainlist.org for details
         "blockNumber": "17415072",
         "transactionIndex": "97",  // transaction index in the block
-        
+
         // standard field for evm transactions
         "from": "0x5e8bb488e85ea732e17150862b1acfc213a7c13d",
         "to": "0xef1c6e67703c7bd7107eed8303fbe6ec2554bf6b",
@@ -25,7 +30,7 @@ curl --location 'https://app.sentio.xyz/api/v1/solidity/simulate' \
         "gas": "0x31ae2",
         "gasPrice": "0xe59a1adbe",
         "input": "0x3593564c000000000000000000000000000000000000000000000000000000000000006000000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000647dffef0000000000000000000000000000000000000000000000000000000000000002080c000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000160000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000020000000000000000000000000000000000000003077b58d5d378391980000000000000000000000000000000000000000000000000000000032b2ced3e40e9d100000000000000000000000000000000000000000000000000000000000000a000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000002000000000000000000000000082646b22a3960da69ef7a778c16dd6fb85dd999000000000000000000000000c02aaa39b223fe8d0a0e5c4f27ead9083c756cc200000000000000000000000000000000000000000000000000000000000000400000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000032b2ced3e40e9d1",
-        
+
         // overrides
         "stateOverrides": {
             "0x0811fd1808e14f0b93f0514313965a5f142c5539": {
@@ -109,12 +114,10 @@ API key is required.
 
 Example:
 
-{% code overflow="wrap" %}
 ```bash
 curl --location 'https://app.sentio.xyz/api/v1/solidity/state_diff?networkId=1&txId.simulationId=pVwBCxr3&projectOwner=<USER>&projectSlug=<PROJECT>' \
 --header 'api-key: <API_KEY>'
 ```
-{% endcode %}
 
 If this is bundle simulation, then use `txId.bundleId`  instead of `txId.simulationId`, it will only return traces that were successfully executed.&#x20;
 
@@ -128,30 +131,23 @@ API key is required.
 
 Example:
 
-{% code overflow="wrap" %}
 ```bash
 curl --location 'https://app.sentio.xyz/api/v1/solidity/call_trace?withInternalCalls=true&networkId=<CHAIN_ID>&txId.simulationId=<SIMULATION_ID>&projectOwner=<USER>&projectSlug=<PROJECT>' \
 --header 'api-key: <API_KEY>'
 ```
-{% endcode %}
 
 ## Get SImulation
 
 To retrieve old simulation results, use the following API for single simulation,
 
-{% code overflow="wrap" %}
 ```sh
 curl -L 'https://app.sentio.xyz/api/v1/solidity/simulate/<SIMULATION_ID>?&projectOwner=<USER>&projectSlug=<PROJECT>' \
 -H 'api-key: <API_KEY>'
 ```
-{% endcode %}
 
 and use the following for bundle simulation
 
-{% code overflow="wrap" %}
 ```sh
 curl -L 'https://app.sentio.xyz/api/v1/solidity/simulate_bundle/<BUNDLE_ID>?&projectOwner=<USER>&projectSlug=<PROJECT>' \
 -H 'api-key: <API_KEY>'
 ```
-{% endcode %}
-

@@ -1,4 +1,9 @@
-# Monitor WETH balance on Solana (via Native program)
+---
+title: Monitor WETH balance on Solana (via Native program)
+categorySlug: how-to-guides-by-examples
+parentDocSlug: solana-alpha
+hidden: false
+---
 
 In the wormhole example, one can also monitor SPL token program.
 
@@ -29,6 +34,7 @@ SPLTokenProcessor.bind({
 
 You could see the metrics are submitted using `ctx.meter.Counter`
 
-{% hint style="info" %}
-See this [repo](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/wormhole) for full implementation. To learn how to view metrics from the UI, go to [view-metrics.md](../../../view-metrics.md "mention")
-{% endhint %}
+> ℹ️
+>
+> See this [repo](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/wormhole) for full implementation. To learn how to view metrics from the UI, go to [view-metrics](view-metrics "mention")
+

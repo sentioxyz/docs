@@ -1,4 +1,9 @@
-# Write Test
+---
+title: Write Test
+categorySlug: developer-guides
+parentDocSlug: sdk-guide
+hidden: false
+---
 
 When you create a processor through the command line, it will automatically generate a basic jest test for you.
 
@@ -18,7 +23,7 @@ import { TestProcessorServer, firstCounterValue } from '@sentio/sdk/testing'
 import { mockTransferLog } from '@sentio/sdk/eth/builtin/erc20'
 
 describe('Test Processor', () => {
-  const service = new TestProcessorServer(() => import('./processor.js'))
+  const service = new TestProcessorServer(() => import(processor.js'))
 
   beforeAll(async () => {
     await service.start()

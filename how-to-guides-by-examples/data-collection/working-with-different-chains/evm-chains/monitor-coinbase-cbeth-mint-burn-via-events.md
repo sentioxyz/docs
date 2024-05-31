@@ -1,8 +1,13 @@
-# Monitor Coinbase cbETH Mint/Burn (via Events)
+---
+title: Monitor Coinbase cbETH Mint/Burn (via Events)
+categorySlug: how-to-guides-by-examples
+parentDocSlug: evm-chains
+hidden: false
+---
 
 Here is an example to monitor [cbETH](https://help.coinbase.com/en/coinbase/trading-and-funding/staking-rewards/cbeth) mint/burn events.
 
-First, you import builtin ABIs for cbETH. (First fetch them by [#sentio-add](../../../../developer-guides/cli-reference.md#sentio-add "mention"))
+First, you import builtin ABIs for cbETH. (First fetch them by [#sentio-add](cli-reference#sentio-add "mention"))
 
 ```typescript
 import { MintEvent, BurnEvent, StakedTokenV1Context, StakedTokenV1Processor } 
@@ -36,8 +41,9 @@ StakedTokenV1Processor.bind({address: CBETH_PROXY})
   .onEventBurn(burnEventHandler)
 ```
 
-See the full guide of writing filters, see [handlers-and-filters.md](../../../../developer-guides/sdk-guide/handlers-and-filters.md "mention")
+See the full guide of writing filters, see [handlers-and-filters](handlers-and-filters "mention")
 
-{% hint style="success" %}
-See this [repo](https://github.com/sentioxyz/sentio-processors/tree/main/projects/coinbase) for full implementation. To learn how to view metrics from the UI, go [view-metrics.md](../../../view-metrics.md "mention")
-{% endhint %}
+> ✅
+>
+> See this [repo](https://github.com/sentioxyz/sentio-processors/tree/main/projects/coinbase) for full implementation. To learn how to view metrics from the UI, go [view-metrics](view-metrics "mention")
+

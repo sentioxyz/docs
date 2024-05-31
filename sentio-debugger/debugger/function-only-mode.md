@@ -1,4 +1,9 @@
-# Function only Mode
+---
+title: Function only Mode
+categorySlug: sentio-debugger
+parentDocSlug: debugger
+hidden: false
+---
 
 By default, the debugger behaves only on function level.
 
@@ -15,4 +20,4 @@ The debugger has standard definitions of
 
 Under this mode, users can visualize **Inputs**, **Return Value** and **Gas info**.
 
-<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>

@@ -1,6 +1,10 @@
-# Data API
+---
+title: Data API
+categorySlug: access-sentio-via-apis
+hidden: false
+---
 
-Two kinds of data API are commonly used, for metrics and event logs related, it's called [#insight-api](data-api.md#insight-api "mention"), and you can also use raw [#sql-api](data-api.md#sql-api "mention").
+Two kinds of data API are commonly used, for metrics and event logs related, it's called [#insight-api](data-api#insight-api "mention"), and you can also use raw [#sql-api](data-api#sql-api "mention").
 
 ## Insight API
 
@@ -8,7 +12,7 @@ The easiest way to build query is through UI, you could first create an insight 
 
 and then
 
-<figure><img src="../.gitbook/assets/image (101).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (101).png" alt="" width="563"><figcaption></figcaption></figure>
 
 The result is like:
 
@@ -78,7 +82,7 @@ curl -L -X POST 'https://app.sentio.xyz/api/v1/metrics/sentio/coinbase/query_ran
 
 For SQL API, go to "Data Studio" -> "SQL Editor", write your query and then click "Export as cURL"
 
-<figure><img src="../.gitbook/assets/image (102).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (102).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Then it shows things like
 

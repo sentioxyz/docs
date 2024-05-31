@@ -1,8 +1,12 @@
-# 🔍 Performance Tuning
+---
+title: 🔍 Performance Tuning
+categorySlug: best-practices
+hidden: false
+---
 
 ## My Query speed is slow, what should I do?
 
-It is possible that you have too much data, one trick you can do is to use [#resolution](../developer-guides/sdk-guide/metrics-in-processors.md#resolution "mention") to reduce the number of data points stored. Note, this is for [#gauge](../references/concepts/data-types/metrics.md#gauge "mention")only at this moment.
+It is possible that you have too much data, one trick you can do is to use [#resolution](metrics-in-processors#resolution "mention") to reduce the number of data points stored. Note, this is for [#gauge](metrics#gauge "mention")only at this moment.
 
 
 
