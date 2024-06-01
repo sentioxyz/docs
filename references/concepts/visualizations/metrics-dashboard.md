@@ -13,7 +13,7 @@ For the list you could view all the available metrics you submitted from the pro
 
 Here is one example to make a dashboard to show the daily trading volume from a metric `vol_sum` collected.
 
-<figure><img src="../../../.gitbook/assets/rollup.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/rollup.gif" alt=""><figcaption></figcaption></figure>
 
 * Initially, it is multiple series for multiple pairs.
 * Adding aggregation (rollup sum) makes it only one series.

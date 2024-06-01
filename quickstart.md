@@ -16,7 +16,7 @@ Simply go to [https://app.sentio.xyz](https://app.sentio.xyz) and login/create y
 
 By default, Sentio will create an empty "default" project for you, if you want to have a default project ID, then click "**Create Project**" on the project selector. In addition, our CLI can also automatically create a project for you.
 
-<figure><img src=".gitbook/assets/createProject.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/createProject.gif" alt=""><figcaption></figcaption></figure>
 
 ## Step 3: Setup Dev environment
 
@@ -56,7 +56,7 @@ yarn sentio upload
 
 You will see a link to [data-source.md](references/concepts/data-source.md "mention") printed and you can open it in a browser to see the upload status.
 
-<figure><img src=".gitbook/assets/image (4) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (4) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## End: Verify Metrics
 

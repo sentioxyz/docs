@@ -9,7 +9,7 @@ In addition to Sentio processor, Sentio is also compatible Subgraph, while Senti
 
 To create a Subgraph, first create a project and choose Subgraph as project type.
 
-<figure><img src="../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
 
 Then upload your graph to this project with:
 
@@ -18,7 +18,7 @@ Then upload your graph to this project with:
 
 Once it get uploaded, use [data-source.md](../../references/concepts/data-source.md "mention") page to view progress. And use data studio to access either GraphQL or SQL.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 Recommended subgraph version is:
 

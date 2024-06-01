@@ -13,7 +13,7 @@ Sentio provides modern **monitoring**, **alerting, log management and debugging*
 
 Users can use Sentio’s SDK to **collect** and **transform** [metrics.md](references/concepts/data-types/metrics.md "mention") and [event-logs.md](references/concepts/data-types/event-logs.md "mention") generated based on their smart contracts’ events, transactions, traces and states. Sentio fully manages the indexing process, and users can visualize and set up [alerts.md](references/concepts/alerts.md "mention") on the metrics and perform advanced search on the logs, all via Sentio’s web interface. Users can further dig into a transaction via [Broken link](broken-reference "mention").
 
-<figure><img src=".gitbook/assets/all.gif" alt=""><figcaption><p>Fully Integrated Experience</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/all.gif" alt=""><figcaption><p>Fully Integrated Experience</p></figcaption></figure>
 
 For the **complete real-time monitoring of sample projects** which cover both [metrics.md](references/concepts/data-types/metrics.md "mention")and [event-logs.md](references/concepts/data-types/event-logs.md "mention"), See
 

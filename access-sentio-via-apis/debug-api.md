@@ -17,7 +17,7 @@ The results looks very similar to the normal [Ethereum call trace](https://geth.
 
 This allows you to build chart that marks the order of fund flow.
 
-<figure><img src="../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Get Decoded Call Trace
 

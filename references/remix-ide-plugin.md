@@ -8,7 +8,7 @@ The Sentio plugin for [Remix IDE](https://remix.ethereum.org/) is a powerful too
 
 This plugin provides a set of functionalities that allow you to easily navigate and explore smart contract functions, search for related transactions, and analyze function usages. With this plugin, you can streamline your development workflow and gain valuable insights into your smart contracts.
 
-<figure><img src="../.gitbook/assets/sentio_plugin_overview.png" alt=""><figcaption><p>Plugin Overview</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/sentio_plugin_overview.png" alt=""><figcaption><p>Plugin Overview</p></figcaption></figure>
 
 ## Features
 
@@ -18,7 +18,7 @@ The plugin enables you to quickly locate and navigate to specific functions with
 
 By simply clicking on a function name, you can jump directly to its location in the contract source code, saving you time and effort in searching for specific functions.
 
-<figure><img src="../.gitbook/assets/plugin-function-navigation.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/plugin-function-navigation.gif" alt=""><figcaption></figcaption></figure>
 
 ### 2. Search Related Transactions using Function Signature
 
@@ -28,7 +28,7 @@ By clicking the `Related Transaction` button, you can retrieve a list of transac
 
 In the search result, click transaction hash to jump to the Sentio Transaction Analyzer page for more details. For example,  view the fund flow, balance changes, call trace, events and state diffs.
 
-<figure><img src="../.gitbook/assets/plugin-related-txn.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/plugin-related-txn.gif" alt=""><figcaption></figcaption></figure>
 
 ### 3. Search Function Usages (Coming soon)
 

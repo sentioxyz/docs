@@ -27,10 +27,10 @@ Most of functions can be access through API as well, such as [debug-api.md](../a
 
 Users can search for any transaction on the [Explorer page](https://app.sentio.xyz/explorer), and then use the debugger.&#x20;
 
-<figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption><p>Transaction Search</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (32).png" alt=""><figcaption><p>Transaction Search</p></figcaption></figure>
 
 ### Chrome Plugin
 
 You can also install our [Chrome plugin](https://chromewebstore.google.com/detail/sentio/kkdofmcnddcnldoingfpiojnnkdcbhnf), which brings all the functionalities directly into your favorite explorer.
 
-<figure><img src="../.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (39).png" alt=""><figcaption></figcaption></figure>

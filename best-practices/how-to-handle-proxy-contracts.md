@@ -10,6 +10,6 @@ It is very common that users are using proxy contracts on EVM chain. For proxy c
 
 
 
-<figure><img src="../.gitbook/assets/proxy.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/proxy.gif" alt=""><figcaption></figcaption></figure>
 
 * In processor binding, it does not matter which address you bind with. Sentio can work with both the proxy address or the underlying contract address.

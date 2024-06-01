@@ -15,7 +15,7 @@ Assume we want to alert if TVL of your project is below a threshold, you could&#
 * Add a alert condition
 * Choose a notification channel [notification-channel.md](notification-channel.md "mention")
 
-<figure><img src="../../.gitbook/assets/creatingAlert.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/creatingAlert.gif" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Note you can also use [formula](visualizations/aggregation-functions-and-formulas.md) in alerts
@@ -25,7 +25,7 @@ Note you can also use [formula](visualizations/aggregation-functions-and-formula
 
 You can count certain number of logs matching a criteria, and setup alerts based on the condition.
 
-<figure><img src="../../.gitbook/assets/log.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/log.gif" alt=""><figcaption></figcaption></figure>
 
 ## Alert Message
 

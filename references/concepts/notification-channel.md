@@ -15,7 +15,7 @@ We support creating notification channel for
 
 ## Creating Email Channel
 
-<figure><img src="../../.gitbook/assets/createChannel.gif" alt=""><figcaption><p>Creating Email Channel</p></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/createChannel.gif" alt=""><figcaption><p>Creating Email Channel</p></figcaption></figure>
 
 ## Creating Slack Channel
 
@@ -23,7 +23,7 @@ You could follow UI instructions to perform slack integration.
 
 ## Creating Webhook Channel
 
-<figure><img src="../../.gitbook/assets/webhook.gif" alt=""><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/webhook.gif" alt=""><figcaption></figcaption></figure>
 
 Note, you can perform authentication through adding a custom header. In this example, we use a **key** with value **mockkey.**
 
@@ -31,9 +31,9 @@ Note, you can perform authentication through adding a custom header. In this exa
 
 You could follow UI instructions to perform slack integration. First Click Connect button.
 
-![](<../../.gitbook/assets/image (1) (1) (1) (2) (1).png>)
+![](<https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (1) (1) (1) (2) (1).png>)
 
 After the authentication, choose a service you created in PagerDuty.
 
-![](<../../.gitbook/assets/image (12).png>)
+![](<https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (12).png>)
 
