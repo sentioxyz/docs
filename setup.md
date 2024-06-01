@@ -10,7 +10,7 @@ Sentio requires users to install [**node (v16+)**](https://nodejs.dev/en/) befor
 
 To install node, please follow the instructions [here](https://nodejs.dev/en/).
 
-Follow [best-way-to-manage-nodejs](best-practices/best-way-to-manage-nodejs "mention") for node version management
+Follow [best-way-to-manage-nodejs](best-way-to-manage-nodejs "mention") for node version management
 
 ## Register an Account and Command Line Login
 

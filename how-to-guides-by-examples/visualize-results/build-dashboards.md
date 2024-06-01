@@ -9,7 +9,7 @@ parentDocSlug: visualize-results
 
 To use the metrics to better do visualization and computation, you could build dashboard using the metrics collected.&#x20;
 
-This is following the metrics submitted by [monitor-coinbase-cbeth-mint-burn-via-events](working-with-different-chains/evm-chains/monitor-coinbase-cbeth-mint-burn-via-events "mention")
+This is following the metrics submitted by [monitor-coinbase-cbeth-mint-burn-via-events](monitor-coinbase-cbeth-mint-burn-via-events "mention")
 
 Here is one example we have a dashboard to show the **Mint Activity - 24 Hours Aggregation.**
 
