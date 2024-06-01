@@ -16,7 +16,15 @@ into any on-chain contract and extract the information with simulation.&#x20;
 
 The following video shows the full workflow how you can use it.
 
-{% embed url="https://www.youtube.com/watch?v=A42sM0J_QMI" %}
+[block:embed]
+{
+  "html": "<iframe src=\"https://www.youtube.com/embed/A42sM0J_QMI\" width=\"640\" height=\"480\" frameborder=\"0\"></iframe>",
+  "url": "https://www.youtube.com/embed/A42sM0J_QMI",
+  "typeOfEmbed": "youtube",
+  "provider": "embed"
+}
+[/block]
+
 
 To do dynamical logging, there are multiple ways, either by [#web-ui](dynamic-logging.md#web-ui "mention") or [#ide-and-command-line](dynamic-logging.md#ide-and-command-line "mention"). If the contract is developed by yourself, also consider use hardhat plugin to [upload-compilation.md](simulation/upload-compilation.md "mention").&#x20;
 
@@ -86,4 +94,3 @@ If you haven't login with Sentio CLI before, you may need to login first followi
 Now you can go back to the original transaction page, open simulator and choose your compilation in Source Override section and start simulation.&#x20;
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (90).png" alt="" width="563"><figcaption></figcaption></figure>
-

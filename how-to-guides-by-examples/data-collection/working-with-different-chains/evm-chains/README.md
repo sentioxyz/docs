@@ -11,7 +11,7 @@ Here we give a few real examples for how to submit metrics from EVM chains. Make
 We use standard chain ID  as mentioned [here](https://chainlist.org/). You only need to put the network parameter when you bind the processor. Here is an example we bind **Goerli** instead of **ETH mainnet**.
 
 ```typescript
-ERC20Processor.bind({ address: '0x1e4ede388cbc9f4b5c79681b7f94d36a11abebc9', 
+ERC20Processor.bind({ address: '0x1e4ede388cbc9f4b5c79681b7f94d36a11abebc9',
 network: CHAIN_IDS.GOERLI })
   .onEventTransfer((event, ctx) => {
     ...
@@ -21,5 +21,11 @@ network: CHAIN_IDS.GOERLI })
 
 See the video tutorial below:
 
-{% embed url="https://www.youtube.com/watch?ab_channel=Sentio&v=yKggwExqKTw" %}
-
+[block:embed]
+{
+  "html": "<iframe src=\"https://www.youtube.com/embed/yKggwExqKTw\" width=\"640\" height=\"480\" frameborder=\"0\"></iframe>",
+  "url": "https://www.youtube.com/embed/yKggwExqKTw",
+  "typeOfEmbed": "youtube",
+  "provider": "embed"
+}
+[/block]

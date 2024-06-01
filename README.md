@@ -25,7 +25,14 @@ See [supported-networks.md](references/supported-networks.md "mention")for chain
 
 See Sentio 101 tutorial below (The aptos version is [here](https://www.youtube.com/watch?v=l4RsxPrGyqE\&ab\_channel=Sentio))
 
-{% embed url="https://www.youtube.com/watch?ab_channel=Sentio&v=yKggwExqKTw" %}
+[block:embed]
+{
+  "html": "<iframe src=\"https://www.youtube.com/embed/yKggwExqKTw\" width=\"640\" height=\"480\" frameborder=\"0\"></iframe>",
+  "url": "https://www.youtube.com/embed/yKggwExqKTw",
+  "typeOfEmbed": "youtube",
+  "provider": "embed"
+}
+[/block]
 
 ## Get Started
 
@@ -59,4 +66,3 @@ If there are issues or problem can't be resolved in the doc, please contact us
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)
 {% endcontent-ref %}
-
