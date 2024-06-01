@@ -6,20 +6,20 @@ hidden: false
 
 Sentio debugger is a tool to help users understand how a transaction works in detail. It has basic functions such as:
 
-* [transaction-info.md](transaction-info.md "mention")
-* [trace-view.md](trace-view.md "mention")
-* [fund-tracing.md](fund-tracing.md "mention")
+* [transaction-info](transaction-info "mention")
+* [trace-view](trace-view "mention")
+* [fund-tracing](fund-tracing "mention")
 * [debugger](debugger/ "mention")
 * [simulation](simulation/ "mention")
 
 In addition, it also provides a set of unique abilities like
 
-* [code-insight.md](code-insight.md "mention"): navigate through code like IDE
-* [build-mode.md](build-mode.md "mention"):  avoid debug information misses due to compiler optimization&#x20;
-* [dynamic-logging.md](dynamic-logging.md "mention"): add additional `console.log` for on-chain transaction to extract information. It is part of more general [#override-contract](simulation/#override-contract "mention") that allow you to override contract on a specific address.
-* [single-step-mode.md](debugger/single-step-mode.md "mention") (alpha):  examine execution in much greater detail
+* [code-insight](code-insight "mention"): navigate through code like IDE
+* [build-mode](build-mode "mention"):  avoid debug information misses due to compiler optimization&#x20;
+* [dynamic-logging](dynamic-logging "mention"): add additional `console.log` for on-chain transaction to extract information. It is part of more general [#override-contract](simulation/#override-contract "mention") that allow you to override contract on a specific address.
+* [single-step-mode](debugger/single-step-mode "mention") (alpha):  examine execution in much greater detail
 
-Most of functions can be access through API as well, such as [debug-api.md](../access-sentio-via-apis/debug-api.md "mention"), [simulation-api.md](simulation/simulation-api.md "mention") and [code-index-api.md](../access-sentio-via-apis/code-index-api.md "mention").
+Most of functions can be access through API as well, such as [debug-api](../access-sentio-via-apis/debug-api "mention"), [simulation-api](simulation/simulation-api "mention") and [code-index-api](../access-sentio-via-apis/code-index-api "mention").
 
 ## Get started
 

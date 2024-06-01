@@ -11,7 +11,7 @@ You can debug processor via console logs. Simply do
 console.log("num of pools: ", pools.length, ctx.version.toString())
 ```
 
-Then you could view the debug log from the [data-source.md](../../references/concepts/data-source.md "mention")page.
+Then you could view the debug log from the [data-source](../../references/concepts/data-source "mention")page.
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/console.gif" alt=""><figcaption><p>Viewing Console Logs</p></figcaption></figure>
 

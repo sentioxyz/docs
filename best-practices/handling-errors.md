@@ -10,7 +10,7 @@ If you get the Quota exceeded error, the processor will stop running. You can co
 
 ## Time series exceeds 10k
 
-Please refer to [avoid-high-cardinality.md](avoid-high-cardinality.md "mention")
+Please refer to [avoid-high-cardinality](avoid-high-cardinality "mention")
 
 ## Invalid Label Name
 
@@ -18,7 +18,7 @@ If your metric or label name contains invalid character or conflicts with system
 
 ## Regular Processor Error
 
-If you observe an error, it is always possible to use [debug-processors.md](../developer-guides/sdk-guide/debug-processors.md "mention")to help with the debugging.
+If you observe an error, it is always possible to use [debug-processors](../developer-guides/sdk-guide/debug-processors "mention")to help with the debugging.
 
 ## Ethers Error
 

@@ -29,7 +29,7 @@ You can also click the simulator button on the left navigation bar and go to the
 
 ## Override Contract
 
-Use the compilations tab to upload a local contract compilation folder. See [upload-compilation.md](upload-compilation.md "mention") for more details.&#x20;
+Use the compilations tab to upload a local contract compilation folder. See [upload-compilation](upload-compilation "mention") for more details.&#x20;
 
 ![](<https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (3) (1) (1).png>)
 

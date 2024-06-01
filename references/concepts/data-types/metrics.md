@@ -11,11 +11,11 @@ We refer time series data as **Metrics.** Currently, we support users to submit 
 
 Counter represents the **cumulative value** at a given time, each data point reported is a delta value (**add or subtract**) to the last value. Usually used to record e.g the accumulated number of tokens transferred.&#x20;
 
-To see a complete example about how to use it, start from [monitor-coinbase-cbeth-mint-burn-via-events.md](../../../how-to-guides-by-examples/data-collection/working-with-different-chains/evm-chains/monitor-coinbase-cbeth-mint-burn-via-events.md "mention")
+To see a complete example about how to use it, start from [monitor-coinbase-cbeth-mint-burn-via-events](../../../how-to-guides-by-examples/data-collection/working-with-different-chains/evm-chains/monitor-coinbase-cbeth-mint-burn-via-events "mention")
 
 ## Gauge
 
-Gauge represents a sampled value at a given time, each data point reported is the current value. Usually used to record e.g. **balance** or **total Supply**. To see a complete example about how to use it, start from [monitor-totalsupply-of-cbeth-via-interval.md](../../../how-to-guides-by-examples/data-collection/working-with-different-chains/evm-chains/monitor-totalsupply-of-cbeth-via-interval.md "mention")
+Gauge represents a sampled value at a given time, each data point reported is the current value. Usually used to record e.g. **balance** or **total Supply**. To see a complete example about how to use it, start from [monitor-totalsupply-of-cbeth-via-interval](../../../how-to-guides-by-examples/data-collection/working-with-different-chains/evm-chains/monitor-totalsupply-of-cbeth-via-interval "mention")
 
 ## Series
 

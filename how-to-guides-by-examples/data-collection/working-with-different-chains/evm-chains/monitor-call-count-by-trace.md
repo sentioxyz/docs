@@ -7,7 +7,7 @@ hidden: false
 
 > ⚠️
 >
-> Trace is only supported in a subset of networks. See full list in [supported-networks.md](../../../../references/supported-networks.md "mention")
+> Trace is only supported in a subset of networks. See full list in [supported-networks](../../../../references/supported-networks "mention")
 
 
 Sometimes you may not be getting proper events; in this case, trace is the way to go.

@@ -7,7 +7,7 @@ hidden: false
 
 The core concept of a Sentio project is **Processor**. A processor is usually a typescript project that contains logic to use blockchain data to generate **user-defined data** to sentio. The processor should be written using Sentio's SDK framework and be submitted and run on Sentio.
 
-While Sentio processor provides max performance and flexibility, we also support [hosted-subgraph.md](hosted-subgraph.md "mention") that still have lots of feature like SQL/GraphQL API, analytic dashboard, multi-versioning. So that you could easily run data pipeline on Sentio without writing new code.
+While Sentio processor provides max performance and flexibility, we also support [hosted-subgraph](hosted-subgraph "mention") that still have lots of feature like SQL/GraphQL API, analytic dashboard, multi-versioning. So that you could easily run data pipeline on Sentio without writing new code.
 
 A Sentio processor could handle multiple contracts on multiple chains. To import a contract, simple copy the contract's [ABI](../../references/concepts/abi.md) JSON file into `abis` directory. Run `sentio build` or `sentio gen` will generate contract processor files into the `src/types` directory.&#x20;
 

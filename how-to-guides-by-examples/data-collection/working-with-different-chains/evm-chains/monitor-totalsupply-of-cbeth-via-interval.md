@@ -35,6 +35,6 @@ Here, you could see
 
 > ✅
 >
-> See this [repo](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/wormhole) for full implementation. To learn how to view metrics from the UI, go [view-metrics.md](../../../view-metrics.md "mention")
+> See this [repo](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/wormhole) for full implementation. To learn how to view metrics from the UI, go [view-metrics](../../../view-metrics "mention")
 
 

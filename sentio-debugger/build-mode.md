@@ -8,7 +8,7 @@ Debugging solidity on-chain could be more tricky than you thought, debugger resu
 
 Sentio lets you choose different build modes of the solidity binary on chain to overcome the problem.
 
-You can choose Build Mode in either [trace-view.md](trace-view.md "mention") or [debugger](debugger/ "mention").&#x20;
+You can choose Build Mode in either [trace-view](trace-view "mention") or [debugger](debugger/ "mention").&#x20;
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (40).png" alt=""><figcaption></figcaption></figure>
 

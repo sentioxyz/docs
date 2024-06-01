@@ -5,7 +5,7 @@ parentDocSlug: visualizations
 hidden: false
 ---
 
-Event Analytics Dashboard is used to visualize data submitted by [logs-in-processor.md](../../../developer-guides/sdk-guide/logs-in-processor.md "mention")
+Event Analytics Dashboard is used to visualize data submitted by [logs-in-processor](../../../developer-guides/sdk-guide/logs-in-processor "mention")
 
 Here is one example we make a dashboard for **Accumulative Unique Users**
 

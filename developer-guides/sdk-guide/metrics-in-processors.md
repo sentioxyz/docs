@@ -5,7 +5,7 @@ parentDocSlug: sdk-guide
 hidden: false
 ---
 
-You can find the general metrics definition in [metrics.md](../../references/concepts/data-types/metrics.md "mention")
+You can find the general metrics definition in [metrics](../../references/concepts/data-types/metrics "mention")
 
 ## Submitting Metrics
 
@@ -45,7 +45,7 @@ This submits TVL with **symbol** being used as a tag.
 
 > ℹ️
 >
-> Assuming there are **N** symbols, **M** bridges and **K** coin types, the total number of series generated could be as large as **N \* M \* K** (but won't exceed the total number of points submitted). Read [avoid-high-cardinality.md](../../best-practices/avoid-high-cardinality.md "mention")for more details.
+> Assuming there are **N** symbols, **M** bridges and **K** coin types, the total number of series generated could be as large as **N \* M \* K** (but won't exceed the total number of points submitted). Read [avoid-high-cardinality](../../best-practices/avoid-high-cardinality "mention")for more details.
 
 
 ## Descriptor

@@ -11,4 +11,4 @@ For [#counter](../references/concepts/data-types/metrics.md#counter "mention")an
 * A random and non-whitelisted pool address
 * ...
 
-In these cases, use [event-logs.md](../references/concepts/data-types/event-logs.md "mention")instead
+In these cases, use [event-logs](../references/concepts/data-types/event-logs "mention")instead

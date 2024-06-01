@@ -21,7 +21,7 @@ By default, Sentio will create an empty "default" project for you, if you want t
 
 ## Step 3: Setup Dev environment
 
-We require users to follow [setup.md](setup.md "mention") before working on the projects.
+We require users to follow [setup](setup "mention") before working on the projects.
 
 ## Step 4: Create Processor Project
 
@@ -44,9 +44,9 @@ The commands will generate a template project based on [X2Y2 token](https://gith
 > You can directly **modify the code (**`src/processor.ts`**)** to fit your use case as well.
 
 
-Sentio has a list of builtin ABIs. We also support custom ABIs for your own project. See [decoding-from-custom-abis.md](developer-guides/sdk-guide/decoding-from-custom-abis.md "mention") for more details.&#x20;
+Sentio has a list of builtin ABIs. We also support custom ABIs for your own project. See [decoding-from-custom-abis](developer-guides/sdk-guide/decoding-from-custom-abis "mention") for more details.&#x20;
 
-For more information on how to write a processor you can refer to [processor-basic.md](developer-guides/sdk-guide/processor-basic.md "mention")
+For more information on how to write a processor you can refer to [processor-basic](developer-guides/sdk-guide/processor-basic "mention")
 
 ## Step 5: Upload Processor
 
@@ -56,7 +56,7 @@ You can build and upload the processor project by using the following command
 yarn sentio upload
 ```
 
-You will see a link to [data-source.md](references/concepts/data-source.md "mention") printed and you can open it in a browser to see the upload status.
+You will see a link to [data-source](references/concepts/data-source "mention") printed and you can open it in a browser to see the upload status.
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (4) (3) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -64,5 +64,5 @@ You will see a link to [data-source.md](references/concepts/data-source.md "ment
 
 The command line should tell you that the processor has been uploaded correctly and give you a link to check the status of the processor, such as what chains this processor is running, how many blocks it has processed, the version, etc.
 
-You can go to the metrics page to check the metrics submitted to the project. Checkout  [metrics.md](references/concepts/data-types/metrics.md "mention")for more details.
+You can go to the metrics page to check the metrics submitted to the project. Checkout  [metrics](references/concepts/data-types/metrics "mention")for more details.
 

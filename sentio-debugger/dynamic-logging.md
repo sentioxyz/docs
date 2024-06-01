@@ -26,7 +26,7 @@ The following video shows the full workflow how you can use it.
 [/block]
 
 
-To do dynamical logging, there are multiple ways, either by [#web-ui](dynamic-logging.md#web-ui "mention") or [#ide-and-command-line](dynamic-logging.md#ide-and-command-line "mention"). If the contract is developed by yourself, also consider use hardhat plugin to [upload-compilation.md](simulation/upload-compilation.md "mention").&#x20;
+To do dynamical logging, there are multiple ways, either by [#web-ui](dynamic-logging.md#web-ui "mention") or [#ide-and-command-line](dynamic-logging.md#ide-and-command-line "mention"). If the contract is developed by yourself, also consider use hardhat plugin to [upload-compilation](simulation/upload-compilation "mention").&#x20;
 
 ## Web UI
 

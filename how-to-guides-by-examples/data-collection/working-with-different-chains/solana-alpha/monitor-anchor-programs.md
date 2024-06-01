@@ -35,6 +35,6 @@ You could see the metrics are submitted using `ctx.meter.Counter`
 
 > ℹ️
 >
-> See this [repo](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/aurory) for full implementation. To learn how to view metrics from the UI, go to [view-metrics.md](../../../view-metrics.md "mention")
+> See this [repo](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/aurory) for full implementation. To learn how to view metrics from the UI, go to [view-metrics](../../../view-metrics "mention")
 
 

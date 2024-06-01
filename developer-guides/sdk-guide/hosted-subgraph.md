@@ -16,7 +16,7 @@ Then upload your graph to this project with:
 <pre data-overflow="wrap"><code><strong>npx @sentio/cli graph deploy --node https://www.sentio.xyz/api/v1/graph-node --ipfs https://www.sentio.xyz/api/v1/ipfs $PROJECT --version-label v0.0.12 --deploy-key $SENTIO_API_KEY
 </strong></code></pre>
 
-Once it get uploaded, use [data-source.md](../../references/concepts/data-source.md "mention") page to view progress. And use data studio to access either GraphQL or SQL.
+Once it get uploaded, use [data-source](../../references/concepts/data-source "mention") page to view progress. And use data studio to access either GraphQL or SQL.
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
 

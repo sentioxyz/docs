@@ -41,9 +41,9 @@ StakedTokenV1Processor.bind({address: CBETH_PROXY})
   .onEventBurn(burnEventHandler)
 ```
 
-See the full guide of writing filters, see [handlers-and-filters.md](../../../../developer-guides/sdk-guide/handlers-and-filters.md "mention")
+See the full guide of writing filters, see [handlers-and-filters](../../../../developer-guides/sdk-guide/handlers-and-filters "mention")
 
 > ✅
 >
-> See this [repo](https://github.com/sentioxyz/sentio-processors/tree/main/projects/coinbase) for full implementation. To learn how to view metrics from the UI, go [view-metrics.md](../../../view-metrics.md "mention")
+> See this [repo](https://github.com/sentioxyz/sentio-processors/tree/main/projects/coinbase) for full implementation. To learn how to view metrics from the UI, go [view-metrics](../../../view-metrics "mention")
 

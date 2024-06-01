@@ -9,7 +9,7 @@ There are three main types of Solana smart contract programs: Anchor programs, S
 
 ### Anchor programs
 
-For an Anchor program, one can import the program's IDL into Sentio, and by running the code-gen, Sentio will automatically generate proper `decodeInstruction` functions for the instructions defined in the smart contract. Details can be found at [monitor-anchor-programs.md](monitor-anchor-programs.md "mention").
+For an Anchor program, one can import the program's IDL into Sentio, and by running the code-gen, Sentio will automatically generate proper `decodeInstruction` functions for the instructions defined in the smart contract. Details can be found at [monitor-anchor-programs](monitor-anchor-programs "mention").
 
 ### System programs
 

@@ -7,7 +7,7 @@ hidden: false
 
 > ✅
 >
-> Refer [export-via-webhook.md](../../../developer-guides/sdk-guide/export-via-webhook.md "mention")for the details of emitting webhook messages in the processor.
+> Refer [export-via-webhook](../../../developer-guides/sdk-guide/export-via-webhook "mention")for the details of emitting webhook messages in the processor.
 
 
 Sentio allows you to define the json message you want to send to webhook. In every webhook call, Sentio sends **an array** of json messages along with a few more metadata fields.

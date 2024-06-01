@@ -24,8 +24,8 @@ Note, `token` is the [#labels](../../developer-guides/sdk-guide/metrics-in-proce
 
 > ℹ️
 >
-> Please refer to [metrics-in-processors.md](../../developer-guides/sdk-guide/metrics-in-processors.md "mention")for more definitions.
+> Please refer to [metrics-in-processors](../../developer-guides/sdk-guide/metrics-in-processors "mention")for more definitions.
 
-Please refer to [metrics.md](../../references/concepts/data-types/metrics.md "mention")for the definitions.
+Please refer to [metrics](../../references/concepts/data-types/metrics "mention")for the definitions.
 
 

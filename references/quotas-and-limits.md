@@ -8,9 +8,9 @@ hidden: false
 
 Sentio charges usage via **Sentio Units.**
 
-* Every Logical [metrics.md](concepts/data-types/metrics.md "mention")costs **1** Sentio Units
-* Every Logical [event-logs.md](concepts/data-types/event-logs.md "mention")costs **2** Sentio Units
-* Every Logical [webhook.md](concepts/data-types/webhook.md "mention")costs **3** Sentio Units
+* Every Logical [metrics](concepts/data-types/metrics "mention")costs **1** Sentio Units
+* Every Logical [event-logs](concepts/data-types/event-logs "mention")costs **2** Sentio Units
+* Every Logical [webhook](concepts/data-types/webhook "mention")costs **3** Sentio Units
 * Every Node RPC costs **1** Sentio Units (List will be updated)
   * [EVM calls](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block) involving the state.
   * [get table item](https://fullnode.devnet.aptoslabs.com/v1/spec#/operations/get\_table\_item) for Aptos
