@@ -11,9 +11,10 @@ Click the profile page on the **left bottom corner** and then create an [API key
 
 API key could be used for API call and login with command line. To login, copy the command given and execute in any terminal. Then you are all set.
 
-{% hint style="warning" %}
-Note, Please replace with your own API key.
-{% endhint %}
+> ⚠️
+>
+> Note, Please replace with your own API key.
+
 
 ```bash
 export YOUR_API_KEY=generated from UI

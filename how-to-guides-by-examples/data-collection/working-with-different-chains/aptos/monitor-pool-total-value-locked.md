@@ -29,7 +29,8 @@ async function syncPools(resources: MoveResource[], ctx: AptosResourceContext) {
 }
 ```
 
-{% hint style="success" %}
-See this [file](https://github.com/sentioxyz/sentio-processors/blob/main/common/src/aptos/aptos-dex.ts#L67) for more context.
-{% endhint %}
+> ✅
+>
+> See this [file](https://github.com/sentioxyz/sentio-processors/blob/main/common/src/aptos/aptos-dex.ts#L67) for more context.
+
 

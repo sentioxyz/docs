@@ -7,12 +7,13 @@ hidden: false
 
 
 
-{% hint style="info" %}
-To use single-step mode, you need:
+> ℹ️
+>
+> To use single-step mode, you need:
 
 * Turn on single-step mode
 * (optionally) Use Debug Build -- Sentio will recompile the contract with different compiler parameters to achieve the best source mappings. See [#limitations](single-step-mode.md#limitations "mention")
-{% endhint %}
+
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (4) (6) (1).png" alt=""><figcaption><p>Debugger options</p></figcaption></figure>
 

@@ -5,9 +5,10 @@ parentDocSlug: data-collection
 hidden: false
 ---
 
-{% hint style="info" %}
-Event Log API is the same among all different chains.
-{% endhint %}
+> ℹ️
+>
+> Event Log API is the same among all different chains.
+
 
 ## Typical Case For DAU
 
@@ -33,9 +34,10 @@ You could also attach attributes to the event log:
 
 To view the results of the submitted logs, see [view-and-search-event-logs.md](../visualize-results/view-and-search-event-logs.md "mention")
 
-{% hint style="info" %}
-For more detailed information about how to submit logs in processor, refer to [logs-in-processor.md](../../developer-guides/sdk-guide/logs-in-processor.md "mention")
+> ℹ️
+>
+> For more detailed information about how to submit logs in processor, refer to [logs-in-processor.md](../../developer-guides/sdk-guide/logs-in-processor.md "mention")
 
 For the definition, refer to [event-logs.md](../../references/concepts/data-types/event-logs.md "mention")
-{% endhint %}
+
 

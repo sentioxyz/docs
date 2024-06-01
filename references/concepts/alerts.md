@@ -17,9 +17,10 @@ Assume we want to alert if TVL of your project is below a threshold, you could&#
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/creatingAlert.gif" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-Note you can also use [formula](visualizations/aggregation-functions-and-formulas.md) in alerts
-{% endhint %}
+> ℹ️
+>
+> Note you can also use [formula](visualizations/aggregation-functions-and-formulas.md) in alerts
+
 
 ## Log based Alerts
 

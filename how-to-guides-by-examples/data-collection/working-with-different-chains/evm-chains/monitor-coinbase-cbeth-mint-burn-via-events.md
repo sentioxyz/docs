@@ -43,6 +43,7 @@ StakedTokenV1Processor.bind({address: CBETH_PROXY})
 
 See the full guide of writing filters, see [handlers-and-filters.md](../../../../developer-guides/sdk-guide/handlers-and-filters.md "mention")
 
-{% hint style="success" %}
-See this [repo](https://github.com/sentioxyz/sentio-processors/tree/main/projects/coinbase) for full implementation. To learn how to view metrics from the UI, go [view-metrics.md](../../../view-metrics.md "mention")
-{% endhint %}
+> ✅
+>
+> See this [repo](https://github.com/sentioxyz/sentio-processors/tree/main/projects/coinbase) for full implementation. To learn how to view metrics from the UI, go [view-metrics.md](../../../view-metrics.md "mention")
+

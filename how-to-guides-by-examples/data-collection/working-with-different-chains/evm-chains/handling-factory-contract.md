@@ -36,6 +36,7 @@ const poolTemplate = new UniswapProcessorTemplate()
     )
 ```
 
-{% hint style="warning" %}
-Notice the template must be declared in the top level of your processor file to be successfully registered.
-{% endhint %}
+> ⚠️
+>
+> Notice the template must be declared in the top level of your processor file to be successfully registered.
+

@@ -16,9 +16,10 @@ Sentio charges usage via **Sentio Units.**
   * [get table item](https://fullnode.devnet.aptoslabs.com/v1/spec#/operations/get\_table\_item) for Aptos
 * Every Sentio API request costs **1** Sentio Unit.
 
-{% hint style="success" %}
-"Logical" means the emission from the processor. We do not charge the actual physical storage data, which could often be more than what users actually submit in processor.
-{% endhint %}
+> ✅
+>
+> "Logical" means the emission from the processor. We do not charge the actual physical storage data, which could often be more than what users actually submit in processor.
+
 
 ## Backfill
 

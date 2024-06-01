@@ -43,9 +43,10 @@ tvl.record(ctx, v, {coin: coinInfo.symbol, bridge: coinInfo.bridge, type: coinIn
 
 This submits TVL with **symbol** being used as a tag.
 
-{% hint style="info" %}
-Assuming there are **N** symbols, **M** bridges and **K** coin types, the total number of series generated could be as large as **N \* M \* K** (but won't exceed the total number of points submitted). Read [avoid-high-cardinality.md](../../best-practices/avoid-high-cardinality.md "mention")for more details.
-{% endhint %}
+> ℹ️
+>
+> Assuming there are **N** symbols, **M** bridges and **K** coin types, the total number of series generated could be as large as **N \* M \* K** (but won't exceed the total number of points submitted). Read [avoid-high-cardinality.md](../../best-practices/avoid-high-cardinality.md "mention")for more details.
+
 
 ## Descriptor
 
@@ -89,6 +90,7 @@ This will generate 2 new metrics vol\_count and vol\_sum.
 * **vol\_sum** represents the sum of data pre-aggregated every 60 minutes.
 * The original metric **vol** will be omitted since `discardOrigin` is true.
 
-{% hint style="info" %}
-We only support resolution of [#gauge](../../references/concepts/data-types/metrics.md#gauge "mention")at this point.
-{% endhint %}
+> ℹ️
+>
+> We only support resolution of [#gauge](../../references/concepts/data-types/metrics.md#gauge "mention")at this point.
+

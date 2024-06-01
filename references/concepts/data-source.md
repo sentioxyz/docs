@@ -29,9 +29,10 @@ You can see all the console logs (and part of the system logs) under chain statu
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-Note: console log has a **7-day** retention
-{% endhint %}
+> ℹ️
+>
+> Note: console log has a **7-day** retention
+
 
 ### Error status
 
@@ -59,6 +60,7 @@ It is possible that you upload a new processor and found an issue in it, you cou
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (30) (1).png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-We support at most 2 versions with running processors and data stored. It means that you can have at most **one active** version and **one pending** version.
-{% endhint %}
+> ℹ️
+>
+> We support at most 2 versions with running processors and data stored. It means that you can have at most **one active** version and **one pending** version.
+

@@ -5,9 +5,10 @@ parentDocSlug: evm-chains
 hidden: false
 ---
 
-{% hint style="warning" %}
-Trace is only supported in a subset of networks. See full list in [supported-networks.md](../../../../references/supported-networks.md "mention")
-{% endhint %}
+> ⚠️
+>
+> Trace is only supported in a subset of networks. See full list in [supported-networks.md](../../../../references/supported-networks.md "mention")
+
 
 Sometimes you may not be getting proper events; in this case, trace is the way to go.
 
@@ -23,6 +24,7 @@ ExchangeV3Processor.bind({address: LOOPRING_EXCHANGE})
     })
 ```
 
-{% hint style="success" %}
-See this [repo](https://github.com/sentioxyz/sentio-processors/blob/main/projects/loopring/src/processor.ts#L85) for more context.&#x20;
-{% endhint %}
+> ✅
+>
+> See this [repo](https://github.com/sentioxyz/sentio-processors/blob/main/projects/loopring/src/processor.ts#L85) for more context.&#x20;
+

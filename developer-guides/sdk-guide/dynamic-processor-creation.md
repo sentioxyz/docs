@@ -5,9 +5,10 @@ parentDocSlug: sdk-guide
 hidden: false
 ---
 
-{% hint style="info" %}
-This feature is currently only supported in EVM-compatible chains.
-{% endhint %}
+> ℹ️
+>
+> This feature is currently only supported in EVM-compatible chains.
+
 
 The basic processor use case is static bind a contract processor with a contract address, but it's quite common for projects to use a factory contract to dynamic create contracts, e.g. a defi project dynamic create multiple pools for different token pairs. We support this via `ProcessorTemplate`, which has the exact handler registration methods as the normal contract processor, but could be used to be bind dynamic. Note currently the template definition must be declared at the top level.&#x20;
 

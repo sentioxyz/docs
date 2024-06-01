@@ -22,9 +22,10 @@ Then you can follow the instructions:
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-Make sure you restart the terminal or run `source ~/.zshrc`
-{% endhint %}
+> ℹ️
+>
+> Make sure you restart the terminal or run `source ~/.zshrc`
+
 
 Then you can run this command to install node of a specific version
 
