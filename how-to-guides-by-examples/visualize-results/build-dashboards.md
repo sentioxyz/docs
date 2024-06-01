@@ -2,6 +2,7 @@
 title: ➡ Build Dashboards
 categorySlug: how-to-guides-by-examples
 hidden: false
+parentDocSlug: visualize-results
 ---
 
 ## Build Metrics Dashboard <a href="#graphing" id="graphing"></a>

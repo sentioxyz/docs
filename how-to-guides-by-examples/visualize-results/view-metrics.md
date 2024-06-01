@@ -2,6 +2,7 @@
 title: ➡ View Metrics
 categorySlug: how-to-guides-by-examples
 hidden: false
+parentDocSlug: visualize-results
 ---
 
 ## Metadata
