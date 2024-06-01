@@ -24,13 +24,14 @@ Assume you'd like to emit a log for all `swap` user activities in order to compu
 
 You could also attach attributes to the event log:
 
-<pre class="language-typescript"><code class="lang-typescript"><strong>.onEventDepositEvent(async (evt, ctx)=>{
+```typescript
+.onEventDepositEvent(async (evt, ctx)=>{
 </strong>  ctx.eventLogger.emit("user", {
     distinctId: evt.data_decoded.user, eventLabel: "Deposit",
     amount: evt.data_decoded.amount,
   })
  })
-</code></pre>
+```
 
 To view the results of the submitted logs, see [view-and-search-event-logs](visualize-results/view-and-search-event-logs "mention")
 
@@ -39,5 +40,3 @@ To view the results of the submitted logs, see [view-and-search-event-logs](visu
 > For more detailed information about how to submit logs in processor, refer to [logs-in-processor](logs-in-processor "mention")
 
 For the definition, refer to [event-logs](event-logs "mention")
-
-

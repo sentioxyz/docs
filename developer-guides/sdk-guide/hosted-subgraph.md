@@ -13,8 +13,9 @@ To create a Subgraph, first create a project and choose Subgraph as project type
 
 Then upload your graph to this project with:
 
-<pre data-overflow="wrap"><code><strong>npx @sentio/cli graph deploy --node https://www.sentio.xyz/api/v1/graph-node --ipfs https://www.sentio.xyz/api/v1/ipfs $PROJECT --version-label v0.0.12 --deploy-key $SENTIO_API_KEY
-</strong></code></pre>
+```
+npx @sentio/cli graph deploy --node https://www.sentio.xyz/api/v1/graph-node --ipfs https://www.sentio.xyz/api/v1/ipfs $PROJECT --version-label v0.0.12 --deploy-key $SENTIO_API_KEY
+```
 
 Once it get uploaded, use [data-source](data-source "mention") page to view progress. And use data studio to access either GraphQL or SQL.
 

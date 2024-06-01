@@ -14,8 +14,8 @@ The basic processor use case is static bind a contract processor with a contract
 
 &#x20;Suppose we have  a factory contract named `MyFactory` which creates `MyPool` contract and submit a `PoolCreated` event, then you can write your processor logic as following
 
-<pre class="language-typescript"><code class="lang-typescript"><strong>import { MyPoolProcessorTemplate, MyFactoryProcessor } from './types/eth/mypool.js'
-</strong>
+```typescript
+import { MyPoolProcessorTemplate, MyFactoryProcessor } from './types/eth/mypool.js'
 const poolTemplate = new MyPoolProcessorTemplate()
     .onEventSwap((evt, ctx) => { ... })
 
@@ -26,5 +26,4 @@ MyFactoryProcessor.bind({address: "0xd20508E1E971b80EE172c73517905bfFfcBD87f9"})
       startBlock: ctx.blockNumber
     })
   })
-
-</code></pre>
+```

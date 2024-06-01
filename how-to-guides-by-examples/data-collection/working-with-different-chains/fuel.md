@@ -7,7 +7,7 @@ hidden: false
 
 [Fuel](https://fuel.network/) support is in beta stage. Here is a simple example built for [spark.fi](https://app.sprk.fi).&#x20;
 
-{% embed url="https://github.com/sentioxyz/sentio-processors/tree/main/fuel/spark" %}
+[](https://github.com/sentioxyz/sentio-processors/tree/main/fuel/spark "@embed")
 
 Two important files:
 
@@ -98,12 +98,12 @@ You can access arguments in `orderTx.args` or `orderTx.argsObject`,  and result 
 
 You can also track assets changes by using [`FuelAssetProcessor`](https://sdk.sentio.xyz/classes/fuel.FuelAssetProcessor.html), you can filter it by `from`, `to`, or `assetsId`, all or them could be single element or a list. Then the handler will be taking [`FuelTransfer`](https://sdk.sentio.xyz/types/fuel.FuelTransfer.html) which represent all assets transfers (not limited by the the filter) in the transactions that  satisfied the filter.
 
-<pre class="language-typescript"><code class="lang-typescript">
+```typescript
 import { BaseAssetId } from '@fuel-ts/address/configs'
 import { FuelAssetProcessor, FuelNetwork } from "@sentio/sdk/fuel";
 
-<strong>FuelAssetProcessor.bind({
-</strong>  chainId: FuelNetwork.TEST_NET
+FuelAssetProcessor.bind({
+  chainId: FuelNetwork.TEST_NET
 }).onTransfer(
     {
       from: "0xd3fe20c8ff68a4054d8587ac170c40db7d1e200208a575780542bd9a7e3eec08",
@@ -113,7 +113,7 @@ import { FuelAssetProcessor, FuelNetwork } from "@sentio/sdk/fuel";
       ...
     }
 )
-</code></pre>
+```
 
 ## Handle Big Numbers
 
