@@ -4,7 +4,7 @@ categorySlug: sentio-debugger
 hidden: false
 ---
 
-The best way to understand a transaction is to trace the fund, Sentio provides both [#balance-change](fund-tracing.md#balance-change "mention") and [#fund-flow](fund-tracing.md#fund-flow "mention")
+The best way to understand a transaction is to trace the fund, Sentio provides both [#balance-change](fund-tracing#balance-change "mention") and [#fund-flow](fund-tracing#fund-flow "mention")
 
 ## Balance Change
 

@@ -10,13 +10,13 @@ Assume we want to alert if TVL of your project is below a threshold, you could&#
 
 * Select the metric that represents the TVL
 * Add a alert condition
-* Choose a notification channel [notification-channel](../references/concepts/notification-channel "mention")
+* Choose a notification channel [notification-channel](notification-channel "mention")
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/creatingAlert.gif" alt=""><figcaption></figcaption></figure>
 
 > ℹ️
 >
-> Note you can also use [formula](../references/concepts/visualizations/aggregation-functions-and-formulas.md) in alerts
+> Note you can also use [formula](visualizations/aggregation-functions-and-formulas) in alerts
 
 
 ## Viewing Alert Instances

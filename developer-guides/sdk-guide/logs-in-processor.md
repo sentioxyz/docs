@@ -36,4 +36,4 @@ You might notice there is an `distinctId` field. If missing, `null` is used. Not
 
 
 
-The logs will be shown from the logs page, see details at [event-logs](../../references/concepts/data-types/event-logs "mention")
+The logs will be shown from the logs page, see details at [event-logs](event-logs "mention")

@@ -44,11 +44,9 @@ npx @sentio/cli@latest create --subproject -n <project name>
 
 Inside project directory, add contract ABI to your project and generate bindings for a contract in Ethereum mainnet.
 
-{% code overflow="wrap" %}
 ```bash
 yarn sentio add <contract address>
 ```
-{% endcode %}
 
 To use a different network, try `--chain` flag as follows
 

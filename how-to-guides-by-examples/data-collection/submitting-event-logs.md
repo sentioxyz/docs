@@ -32,12 +32,12 @@ You could also attach attributes to the event log:
  })
 </code></pre>
 
-To view the results of the submitted logs, see [view-and-search-event-logs](../visualize-results/view-and-search-event-logs "mention")
+To view the results of the submitted logs, see [view-and-search-event-logs](visualize-results/view-and-search-event-logs "mention")
 
 > ℹ️
 >
-> For more detailed information about how to submit logs in processor, refer to [logs-in-processor](../../developer-guides/sdk-guide/logs-in-processor "mention")
+> For more detailed information about how to submit logs in processor, refer to [logs-in-processor](logs-in-processor "mention")
 
-For the definition, refer to [event-logs](../../references/concepts/data-types/event-logs "mention")
+For the definition, refer to [event-logs](event-logs "mention")
 
 

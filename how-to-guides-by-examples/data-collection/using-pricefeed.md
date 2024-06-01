@@ -73,6 +73,6 @@ ExchangeV3Processor.bind({address: LOOPRING_EXCHANGE})
 
 > ℹ️
 >
-> For more information regarding price feed, please refer to [price-feed](../../developer-guides/sdk-guide/price-feed "mention")
+> For more information regarding price feed, please refer to [price-feed](price-feed "mention")
 
 

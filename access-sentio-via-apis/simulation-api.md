@@ -114,12 +114,10 @@ API key is required.
 
 Example:
 
-{% code overflow="wrap" %}
 ```bash
 curl --location 'https://app.sentio.xyz/api/v1/solidity/state_diff?networkId=1&txId.simulationId=pVwBCxr3&projectOwner=<USER>&projectSlug=<PROJECT>' \
 --header 'api-key: <API_KEY>'
 ```
-{% endcode %}
 
 If this is bundle simulation, then use `txId.bundleId`  instead of `txId.simulationId`, it will only return traces that were successfully executed.&#x20;
 
@@ -133,29 +131,23 @@ API key is required.
 
 Example:
 
-{% code overflow="wrap" %}
 ```bash
 curl --location 'https://app.sentio.xyz/api/v1/solidity/call_trace?withInternalCalls=true&networkId=<CHAIN_ID>&txId.simulationId=<SIMULATION_ID>&projectOwner=<USER>&projectSlug=<PROJECT>' \
 --header 'api-key: <API_KEY>'
 ```
-{% endcode %}
 
 ## Get SImulation
 
 To retrieve old simulation results, use the following API for single simulation,
 
-{% code overflow="wrap" %}
 ```sh
 curl -L 'https://app.sentio.xyz/api/v1/solidity/simulate/<SIMULATION_ID>?&projectOwner=<USER>&projectSlug=<PROJECT>' \
 -H 'api-key: <API_KEY>'
 ```
-{% endcode %}
 
 and use the following for bundle simulation
 
-{% code overflow="wrap" %}
 ```sh
 curl -L 'https://app.sentio.xyz/api/v1/solidity/simulate_bundle/<BUNDLE_ID>?&projectOwner=<USER>&projectSlug=<PROJECT>' \
 -H 'api-key: <API_KEY>'
 ```
-{% endcode %}

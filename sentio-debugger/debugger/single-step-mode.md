@@ -12,7 +12,7 @@ hidden: false
 > To use single-step mode, you need:
 
 * Turn on single-step mode
-* (optionally) Use Debug Build -- Sentio will recompile the contract with different compiler parameters to achieve the best source mappings. See [#limitations](single-step-mode.md#limitations "mention")
+* (optionally) Use Debug Build -- Sentio will recompile the contract with different compiler parameters to achieve the best source mappings. See [#limitations](single-step-mode#limitations "mention")
 
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (4) (6) (1).png" alt=""><figcaption><p>Debugger options</p></figcaption></figure>
@@ -40,4 +40,4 @@ The debugger also supports adding **user defined watched variables (similar to a
 ## Limitations
 
 * contract compiled with viaIR option is not fully supported
-* When debug with **release build**, since it's fully optimized, there might be source-mapping issues and unexpected execution orders. You may read more about [build-mode](../build-mode "mention"), and consider switching to other build mode.
+* When debug with **release build**, since it's fully optimized, there might be source-mapping issues and unexpected execution orders. You may read more about [build-mode](build-mode "mention"), and consider switching to other build mode.

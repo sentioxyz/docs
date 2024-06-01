@@ -5,7 +5,7 @@ parentDocSlug: visualizations
 hidden: false
 ---
 
-Metrics dashboard for [#counter](../data-types/metrics.md#counter "mention")and [#gauge](../data-types/metrics.md#gauge "mention")only.
+Metrics dashboard for [#counter](metrics#counter "mention")and [#gauge](metrics#gauge "mention")only.
 
 For the list you could view all the available metrics you submitted from the processor. You could then apply [aggregation-functions-and-formulas](aggregation-functions-and-formulas "mention")on top of the metrics
 

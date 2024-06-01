@@ -20,9 +20,9 @@ Go to [app.sentio.xyz](https://app.sentio.xyz) to register an account. We suppor
 npx @sentio/cli@latest login
 ```
 
-This should prompt for a link, and you can login using that link. It will generate a valid [api-key](references/concepts/api-key "mention") and store it locally.
+This should prompt for a link, and you can login using that link. It will generate a valid [api-key](api-key "mention") and store it locally.
 
 ## Generate the API key (optional)
 
-Normally, you do not need to explicitly generate API keys for uploading [processor](references/concepts/processor "mention"). But you can always sign in manually, see [api-key](references/concepts/api-key "mention")
+Normally, you do not need to explicitly generate API keys for uploading [processor](processor "mention"). But you can always sign in manually, see [api-key](api-key "mention")
 

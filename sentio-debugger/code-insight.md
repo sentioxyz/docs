@@ -4,7 +4,7 @@ categorySlug: sentio-debugger
 hidden: false
 ---
 
-Sentio makes the debugging and contract reading experience smoother by fully analyzing the solidity source code.  This experiences is built into every parts that has solidity source code like [trace view](trace-view.md), [debugger view](debugger/) or [contract view](transaction-info.md#contract-code-explorer).&#x20;
+Sentio makes the debugging and contract reading experience smoother by fully analyzing the solidity source code.  This experiences is built into every parts that has solidity source code like [trace view](trace-view), [debugger view](debugger/) or [contract view](transaction-info#contract-code-explorer).&#x20;
 
 ## Jump to definition / Find References
 

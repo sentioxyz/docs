@@ -23,7 +23,7 @@ import { TestProcessorServer, firstCounterValue } from '@sentio/sdk/testing'
 import { mockTransferLog } from '@sentio/sdk/eth/builtin/erc20'
 
 describe('Test Processor', () => {
-  const service = new TestProcessorServer(() => import('./processor.js'))
+  const service = new TestProcessorServer(() => import(processor.js'))
 
   beforeAll(async () => {
     await service.start()

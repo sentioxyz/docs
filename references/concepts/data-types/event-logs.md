@@ -5,7 +5,7 @@ parentDocSlug: data-types
 hidden: false
 ---
 
-Every event log is a structured data stored in Sentio. Users can submit it from Sentio Processor as decribed in [logs-in-processor](../../../developer-guides/sdk-guide/logs-in-processor "mention")
+Every event log is a structured data stored in Sentio. Users can submit it from Sentio Processor as decribed in [logs-in-processor](logs-in-processor "mention")
 
 ## Log Levels
 
@@ -27,11 +27,11 @@ Sentio also attach system labels automatically to the log, including:
 
 ## Event Analytics
 
-Follow [event-analytics-dashboard](../visualizations/event-analytics-dashboard "mention")to learn how to visualize Events.
+Follow [event-analytics-dashboard](event-analytics-dashboard "mention")to learn how to visualize Events.
 
 ## Filter Event Logs on UI
 
-Using the menu on the left hand side, users can filter the log based on [#log-levels](event-logs.md#log-levels "mention")and [#system-labels](event-logs.md#system-labels "mention"). The Labels selection is standard faceted search filters.
+Using the menu on the left hand side, users can filter the log based on [#log-levels](event-logs#log-levels "mention")and [#system-labels](event-logs#system-labels "mention"). The Labels selection is standard faceted search filters.
 
 * Click a label switch between **All** and **Only**
 

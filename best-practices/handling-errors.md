@@ -18,7 +18,7 @@ If your metric or label name contains invalid character or conflicts with system
 
 ## Regular Processor Error
 
-If you observe an error, it is always possible to use [debug-processors](../developer-guides/sdk-guide/debug-processors "mention")to help with the debugging.
+If you observe an error, it is always possible to use [debug-processors](debug-processors "mention")to help with the debugging.
 
 ## Ethers Error
 
@@ -37,7 +37,7 @@ When you do ethers call in your processor, it's very easy to produce errors. You
   * If you just call contract view outside of context, it by default `latest`&#x20;
 * If it says `UNRECOGNIZED_NAME` , it's likely that you pass invalid ENS name to a field that is the address type.
 
-&#x20;If you still have problems, feel free to [contact us](../#getting-help).
+&#x20;If you still have problems, feel free to [contact us](#getting-help).
 
 
 

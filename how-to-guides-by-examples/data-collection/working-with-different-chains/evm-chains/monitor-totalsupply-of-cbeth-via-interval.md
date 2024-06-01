@@ -31,10 +31,10 @@ StakedTokenV1Processor.bind({address: CBETH_PROXY})
 Here, you could see
 
 * The `totalSupply` can be accessed by calling `ctx.contract.totalSupply()`
-* You can submit the metric `total_supply` typed [Gauge](../../../../references/concepts/data-types/metrics.md#gauge) by calling  `ctx.meter.Gauge("total_supply").record(totalSupply, {token: tokenInfo.symbol})`
+* You can submit the metric `total_supply` typed [Gauge](metrics#gauge) by calling  `ctx.meter.Gauge("total_supply").record(totalSupply, {token: tokenInfo.symbol})`
 
 > ✅
 >
-> See this [repo](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/wormhole) for full implementation. To learn how to view metrics from the UI, go [view-metrics](../../../view-metrics "mention")
+> See this [repo](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/wormhole) for full implementation. To learn how to view metrics from the UI, go [view-metrics](view-metrics "mention")
 
 

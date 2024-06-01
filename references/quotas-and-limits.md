@@ -8,9 +8,9 @@ hidden: false
 
 Sentio charges usage via **Sentio Units.**
 
-* Every Logical [metrics](concepts/data-types/metrics "mention")costs **1** Sentio Units
-* Every Logical [event-logs](concepts/data-types/event-logs "mention")costs **2** Sentio Units
-* Every Logical [webhook](concepts/data-types/webhook "mention")costs **3** Sentio Units
+* Every Logical [metrics](metrics "mention")costs **1** Sentio Units
+* Every Logical [event-logs](event-logs "mention")costs **2** Sentio Units
+* Every Logical [webhook](webhook "mention")costs **3** Sentio Units
 * Every Node RPC costs **1** Sentio Units (List will be updated)
   * [EVM calls](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block) involving the state.
   * [get table item](https://fullnode.devnet.aptoslabs.com/v1/spec#/operations/get\_table\_item) for Aptos
@@ -33,7 +33,7 @@ Since backfill is free, we limit the concurrent backfill one user can run. Curre
 
 ## Number of Series
 
-We limit the total number of [#series](concepts/data-types/metrics.md#series "mention") you can submit in one processor. Current the limit is set to **10,000.**
+We limit the total number of [#series](metrics#series "mention") you can submit in one processor. Current the limit is set to **10,000.**
 
 ## Number of Projects
 

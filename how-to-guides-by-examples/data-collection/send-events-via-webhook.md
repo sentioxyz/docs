@@ -5,4 +5,4 @@ hidden: false
 parentDocSlug: data-collection
 ---
 
-If you'd like to collect all the swap events of your project, you could refer to the details [export-via-webhook](../developer-guides/sdk-guide/export-via-webhook "mention")
+If you'd like to collect all the swap events of your project, you could refer to the details [export-via-webhook](export-via-webhook "mention")

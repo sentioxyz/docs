@@ -7,7 +7,7 @@ hidden: false
 
 Alerts can be created for a query or formula to notify (via [notification-channel](notification-channel "mention")) when a certain condition is met.&#x20;
 
-## Metrics based alert (same as [create-alerts](../../how-to-guides-by-examples/create-alerts "mention"))
+## Metrics based alert (same as [create-alerts](../how-to-guides-by-examples/create-alerts "mention"))
 
 Assume we want to alert if TVL of your project is below a threshold, you could&#x20;
 
@@ -19,7 +19,7 @@ Assume we want to alert if TVL of your project is below a threshold, you could&#
 
 > ℹ️
 >
-> Note you can also use [formula](visualizations/aggregation-functions-and-formulas.md) in alerts
+> Note you can also use [formula](visualizations/aggregation-functions-and-formulas) in alerts
 
 
 ## Log based Alerts

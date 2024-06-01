@@ -4,7 +4,7 @@ categorySlug: access-sentio-via-apis
 hidden: false
 ---
 
-Two kinds of data API are commonly used, for metrics and event logs related, it's called [#insight-api](data-api.md#insight-api "mention"), and you can also use raw [#sql-api](data-api.md#sql-api "mention").
+Two kinds of data API are commonly used, for metrics and event logs related, it's called [#insight-api](data-api#insight-api "mention"), and you can also use raw [#sql-api](data-api#sql-api "mention").
 
 ## Insight API
 

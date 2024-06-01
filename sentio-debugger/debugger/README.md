@@ -9,7 +9,7 @@ To understand a transaction even further, users can use the debugger to visualiz
 
 ## Traces
 
-On the upper-left section, Sentio shows the trace of the transaction, this is the same as [trace-view](../trace-view "mention"). Users can use this to select a location and execute directly to that position.
+On the upper-left section, Sentio shows the trace of the transaction, this is the same as [trace-view](trace-view "mention"). Users can use this to select a location and execute directly to that position.
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (2) (4).png" alt=""><figcaption></figcaption></figure>
 
