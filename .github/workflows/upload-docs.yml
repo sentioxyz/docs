@@ -1,0 +1,18 @@
+name: Upload docs
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  rdme-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Upload to readme
+        uses: readmeio/rdme@v8
+        with:
+          rdme: docs . --key=${{ secrets.README_API_KEY }}
