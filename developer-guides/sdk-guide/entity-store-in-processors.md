@@ -113,7 +113,7 @@ type Course @entity {
 }
 ```
 
-#### Interfaces
+### Interfaces
 Interfaces are a type of structure in GraphQL that can be used by entities. They are created using the interface keyword and can contain fields of scalar types or other entities. Entities can implement these interfaces using the implements keyword. They are beneficial for defining fields that are common across multiple entities.
 
 ```graphql
@@ -140,7 +140,7 @@ type Organization implements ProjectOwner @entity {
 
 ```
 
-#### Enums
+### Enums
 Enums are a type of structure in GraphQL that can be used to define a set of constants. They are created using the enum keyword and can contain a list of values. Enums are useful for defining fields that have a fixed set of values.
 
 ```graphql
