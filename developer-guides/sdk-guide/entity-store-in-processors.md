@@ -1,3 +1,10 @@
+---
+title: Entity Store In Processors
+categorySlug: developer-guides
+parentDocSlug: sdk-guide
+hidden: false
+---
+
 # Entity Store In Processors
 Starting from SDK version 2.38, you have the ability to structure your data according to a predefined schema. This data can be accessed during the execution of the processor. Furthermore, this data can be retrieved using our SQL and GraphQL API.
 
