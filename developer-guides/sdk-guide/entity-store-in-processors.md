@@ -236,9 +236,9 @@ await ctx.store.delete(User, id)
 ### Query Data using SQL
 You can query the data store using SQL.  Just like you do with event logs data. The entity will show up in table schema. 
 
-![img.png](../../.gitbook/assets/entity-sql-screenshot.png) 
+![img.png](https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/entity-sql-screenshot.png) 
 
 ### Query Data using GraphQL
 You can query the data store using GraphQL. The query schema will be generated based on the schema definition. 
 
-![img.png](../../.gitbook/assets/entity-graqphql-screenshot.png)
+![img.png](https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/entity-graqphql-screenshot.png)
