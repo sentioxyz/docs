@@ -45,7 +45,7 @@ This submits TVL with **symbol** being used as a tag.
 
 > ℹ️
 >
-> Assuming there are **N** symbols, **M** bridges and **K** coin types, the total number of series generated could be as large as **N \* M \* K** (but won't exceed the total number of points submitted). Read [avoid-high-cardinality](../best-practices/avoid-high-cardinality "mention")for more details.
+> Assuming there are **N** symbols, **M** bridges and **K** coin types, the total number of series generated could be as large as **N \* M \* K** (but won't exceed the total number of points submitted). Read [avoid-high-cardinality](avoid-high-cardinality "mention")for more details.
 
 
 ## Descriptor
@@ -54,9 +54,9 @@ Sometimes you want to give the metric more information, or want to share the sam
 
 ```typescript
 const tokenCount = Counter.register(
-  'token_count', 
+  'token_count',
   { description: 'token transferred to my wallet',
-    unit: 'eth' 
+    unit: 'eth'
   })
 ```
 
@@ -93,4 +93,3 @@ This will generate 2 new metrics vol\_count and vol\_sum.
 > ℹ️
 >
 > We only support resolution of [#gauge](metrics#gauge "mention")at this point.
-

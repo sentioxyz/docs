@@ -47,12 +47,33 @@ If there are issues or problem can't be resolved in the doc, please contact us
 * [Telegram](https://t.me/sentioxyz)&#x20;
 * For the documentation issues, you can contact (Telegram:qiaokan@) directly.
 
-[Quickstart](quickstart "@embed")
 
-[Adding ABIs](adding-abis "@embed")
+[block:html]
+{
+  "html": "<div class=\"embed\"><a class=\"embed-link\" href=\"quickstart\"><div class=\"embed-body\"><small class=\"embed-provider\"><code style=\"font-family:var(--md-code-font, monospace)\">quickstart</code></small><div style=\"font-size: 15px\">Quickstart</div></div></a></div>"
+}
+[/block]
 
-[SDK-Guide](sdk-guide "@embed")
+[block:html]
+{
+  "html": "<div class=\"embed\"><a class=\"embed-link\" href=\"adding-abis\"><div class=\"embed-body\"><small class=\"embed-provider\"><code style=\"font-family:var(--md-code-font, monospace)\">add-abis</code></small><div style=\"font-size: 15px\">Adding ABIs</div></div></a></div>"
+}
+[/block]
 
-[How Sentio Works](how-sentio-works "@embed")
+[block:html]
+{
+  "html": "<div class=\"embed\"><a class=\"embed-link\" href=\"sdk-guide\"><div class=\"embed-body\"><small class=\"embed-provider\"><code style=\"font-family:var(--md-code-font, monospace)\">sdk-guide</code></small><div style=\"font-size: 15px\">SDK-Guide</div></div></a></div>"
+}
+[/block]
 
-[Best Way To Manage nodejs](best-way-to-manage-nodejs "@embed")
+[block:html]
+{
+  "html": "<div class=\"embed\"><a class=\"embed-link\" href=\"how-sentio-works\"><div class=\"embed-body\"><small class=\"embed-provider\"><code style=\"font-family:var(--md-code-font, monospace)\">how-sentio-works</code></small><div style=\"font-size: 15px\">How Sentio Works</div></div></a></div>"
+}
+[/block]
+
+[block:html]
+{
+  "html": "<div class=\"embed\"><a class=\"embed-link\" href=\"best-way-to-manage-nodejs\"><div class=\"embed-body\"><small class=\"embed-provider\"><code style=\"font-family:var(--md-code-font, monospace)\">best-way-to-manage-nodejs</code></small><div style=\"font-size: 15px\">Best Way To Manage nodejs</div></div></a></div>"
+}
+[/block]

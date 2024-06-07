@@ -7,7 +7,7 @@ hidden: false
 
 Alerts can be created for a query or formula to notify (via [notification-channel](notification-channel "mention")) when a certain condition is met.&#x20;
 
-## Metrics based alert (same as [create-alerts](../how-to-guides-by-examples/create-alerts "mention"))
+## Metrics based alert (same as [create-alerts](create-alerts "mention"))
 
 Assume we want to alert if TVL of your project is below a threshold, you could&#x20;
 

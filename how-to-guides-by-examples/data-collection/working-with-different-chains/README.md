@@ -1,6 +1,6 @@
 ---
 slug: working-with-different-chains
-title: ➡️ Working With Different Chains
+title:️ ➡ Working With Different Chains
 categorySlug: how-to-guides-by-examples
 parentDocSlug: data-collection
 hidden: false
