@@ -1,3 +1,10 @@
+---
+title: Profile Processor Performance
+categorySlug: developer-guides
+parentDocSlug: sdk-guide
+hidden: false
+---
+
 ## What's a CPU profile?
 A CPU profile is a report that shows how the CPU was used over a period of time. It can show which programs were using the most CPU time, which processes were running, and how much time was spent in each state. With CPU profiles, you can identify performance bottlenecks and optimize CPU resource utilization.
 
