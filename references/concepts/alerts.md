@@ -19,7 +19,7 @@ Assume we want to alert if TVL of your project is below a threshold, you could&#
 
 > ℹ️
 >
-> Note you can also use [formula](visualizations/aggregation-functions-and-formulas) in alerts
+> Note you can also use [formula](aggregation-functions-and-formulas) in alerts
 
 
 ## Log based Alerts

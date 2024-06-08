@@ -7,7 +7,7 @@ hidden: false
 order: 2
 ---
 
-Here we give a few real examples for how to submit metrics from Aptos. Make sure you briefly read our [sdk-guide]( "mention") to get a general idea about how it work.
+Here we give a few real examples for how to submit metrics from Aptos. Make sure you briefly read our [sdk-guide](sdk-guide) to get a general idea about how it work.
 
 See the video tutorial below
 

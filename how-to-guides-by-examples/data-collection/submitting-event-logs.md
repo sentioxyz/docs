@@ -33,7 +33,7 @@ You could also attach attributes to the event log:
  })
 ```
 
-To view the results of the submitted logs, see [view-and-search-event-logs](visualize-results/view-and-search-event-logs "mention")
+To view the results of the submitted logs, see [view-and-search-event-logs](view-and-search-event-logs "mention")
 
 > ℹ️
 >

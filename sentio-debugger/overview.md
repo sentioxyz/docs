@@ -17,9 +17,9 @@ In addition, it also provides a set of unique abilities like
 * [code-insight](code-insight "mention"): navigate through code like IDE
 * [build-mode](build-mode "mention"):  avoid debug information misses due to compiler optimization&#x20;
 * [dynamic-logging](dynamic-logging "mention"): add additional `console.log` for on-chain transaction to extract information. It is part of more general [#override-contract](simulation/#override-contract "mention") that allow you to override contract on a specific address.
-* [single-step-mode](debugger/single-step-mode "mention") (alpha):  examine execution in much greater detail
+* [single-step-mode](single-step-mode "mention") (alpha):  examine execution in much greater detail
 
-Most of functions can be access through API as well, such as [debug-api](access-sentio-via-apis/debug-api "mention"), [simulation-api](simulation/simulation-api "mention") and [code-index-api](access-sentio-via-apis/code-index-api "mention").
+Most of functions can be access through API as well, such as [debug-api](debug-api "mention"), [simulation-api](simulation-api "mention") and [code-index-api](code-index-api "mention").
 
 ## Get started
 

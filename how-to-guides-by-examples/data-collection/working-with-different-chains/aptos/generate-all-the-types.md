@@ -19,7 +19,7 @@ coin.bind().onEventWithdrawEvent((evt, ctx) => {
 
 
 
-Use [#sentio-add](developer-guides/cli-reference#sentio-add "mention")to fetch ABIs for your modules.
+Use [#sentio-add](cli-reference#sentio-add "mention")to fetch ABIs for your modules.
 
 Then run
 
@@ -51,6 +51,3 @@ SouffleChefCampaign.bind()
     ...
   })
 ```
-
-
-

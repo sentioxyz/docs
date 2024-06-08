@@ -37,7 +37,7 @@ You can also give the processor project a name by using the following command
 npx @sentio/cli@latest create $PROJECT_NAME
 ```
 
-The commands will generate a template project based on [X2Y2 token](https://github.com/X2Y2-io/x2y2-sdk). This should be a good starting point to write your own processor logic.  It is also possible to create template projects for other types of chains, please refer [CLI Reference](developer-guides/cli-reference#sentio-create).&#x20;
+The commands will generate a template project based on [X2Y2 token](https://github.com/X2Y2-io/x2y2-sdk). This should be a good starting point to write your own processor logic.  It is also possible to create template projects for other types of chains, please refer [CLI Reference](cli-reference#sentio-create).&#x20;
 
 > ℹ️
 >
