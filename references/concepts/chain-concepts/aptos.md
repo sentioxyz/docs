@@ -1,4 +1,5 @@
 ---
+slug: concepts-aptos
 title: Aptos
 categorySlug: references
 parentDocSlug: chain-concepts
