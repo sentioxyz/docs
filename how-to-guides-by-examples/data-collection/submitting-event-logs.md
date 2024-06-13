@@ -26,7 +26,7 @@ You could also attach attributes to the event log:
 
 ```typescript
 .onEventDepositEvent(async (evt, ctx)=>{
-</strong>  ctx.eventLogger.emit("user", {
+  ctx.eventLogger.emit("user", {
     distinctId: evt.data_decoded.user, eventLabel: "Deposit",
     amount: evt.data_decoded.amount,
   })
