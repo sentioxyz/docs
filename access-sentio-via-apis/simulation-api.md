@@ -85,7 +85,7 @@ curl -L 'https://app.sentio.xyz/api/v1/solidity/simulate_bundle' \
 
 It will return a list of successful simulation results, it will stop at the transaction that failed to be executed. e.g. if you simulate 4 transactions, while the 3 transactions can't be executed (e.g. wrong gas spec), then the result looks like this.
 
-````
+```
 {
     "bundleId": "WKTMcdBc",
     "simulations": [
@@ -100,7 +100,6 @@ It will return a list of successful simulation results, it will stop at the tran
     "error": "tracing failed: tip higher than fee cap: address 0x99922ca65188cC218A5d316969dc66d8672994f2, tip: 990000000, gasFeeCap: 1342723"
 }
 ```
-````
 
 ## Get detail trace
 
