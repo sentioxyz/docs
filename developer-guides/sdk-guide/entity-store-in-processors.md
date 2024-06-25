@@ -5,7 +5,15 @@ parentDocSlug: sdk-guide
 hidden: false
 ---
 
-Starting from SDK version 2.38, you have the ability to structure your data according to a predefined schema. This data can be accessed during the execution of the processor. Furthermore, this data can be retrieved using our SQL and GraphQL API.
+By using entity store, you now have the capability to organize your data based on a predefined schema. This structured data can be accessed during the processor's execution and can also be retrieved using our SQL and GraphQL API.
+
+*Beginning with version 2.39.6, we have implemented the use of decorators to minimize codegen sizes. Please ensure that your ts.config file has the following configurations enabled.*
+```json
+{
+  "experimentalDecorators": true,
+  "emitDecoratorMetadata": true
+}
+```
 
 ## Schema
 The schema can be established utilizing the GraphQL schema definition language. This schema is specified in the store.graphql file located at the root of the processor directory. The following is an example of a schema definition:
