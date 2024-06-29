@@ -17,7 +17,7 @@ For some handler type you can pass a filter to significantly speed up your data 
 * onTimeInterval: execute on certain time interval **X minutes** backfill historical data, and execute every **Y** minutes processing new data. Both **X and Y** are configurable.
 *   `onEventXXX`: execute on certain event occurrences of this contract, to have those handlers available you need to [code-gen](decoding-from-custom-abis) your own types of processor, or use builtin processors, e.g. [`ERC20Processor.onEventApproval`](https://sentioxyz.github.io/sentio-sdk/classes/builtin.erc20.ERC20Processor.html#onEventApproval). You can filter events using event filter also generated for your contract. e.g. for [`ApprovalEventFilter`](https://sentioxyz.github.io/sentio-sdk/types/builtin.erc20.ApprovalEventFilter.html) , you can create and use it as follow, each parameter represents the desired value of the event, `undefined` or `null` value meaning match all.  The semantics is the same as Ethereum's own log filter, read more details [here](https://docs.ethers.io/v5/concepts/events/#events--filters).
 
-        ```typescript
+    ```typescript
     const filter = ERC20Processor.filters.Approval(  '0x0000000000000000000000000000000000000000',  '0xb329e39ebefd16f40d38f07643652ce17ca5bac1')
 
     ERC20Processor.bind(...).onEventTransfer(...,
@@ -26,11 +26,11 @@ For some handler type you can pass a filter to significantly speed up your data 
     ```
     *   onCallXXX: execute on certain function calls based on Ethereum traces. You need to code-gen the processor or use a builtin processor as well. An example call handler is [`ERC20Processor`.`onCallBurnFrom`](https://sentioxyz.github.io/sentio-sdk/classes/builtin.erc20.ERC20Processor.html#onCallBurnFrom) which captures all burn from calls. Notice you might need to check the `error` field before using the data to generate metrics.&#x20;
 
-        ```typescript
+    ```typescript
     ERC20Processor.bind(...)
-      .onCallBurnFrom((call, ctx) => { 
-         if (!call.error) {   
-           ctx.meter.Counter("burned").add(call.args.amount) 
+      .onCallBurnFrom((call, ctx) => {
+         if (!call.error) {
+           ctx.meter.Counter("burned").add(call.args.amount)
          }
       })
     ```
@@ -70,4 +70,3 @@ TBD
   ```
 
 Aptos filters are still developing in progress. Welcome to submit your feedback through our [telegram group](https://t.me/sentioxyz).
-
