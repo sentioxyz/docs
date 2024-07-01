@@ -4,8 +4,6 @@ categorySlug: developer-guides
 hidden: false
 ---
 
-# Sentio VSCode Extension
-
 ## Overview
 
 Sentio is a powerful VSCode extension designed to streamline the development of Sentio processors. With a suite of tools at your fingertips, including build, code generation, and upload functionalities, Sentio helps you focus on writing efficient and scalable processors. Whether you're targeting different web3 chains or working with various SDKs, Sentio has you covered.
@@ -20,7 +18,7 @@ Sentio is a powerful VSCode extension designed to streamline the development of 
 ## Getting Started
 
 1. **Installation**
-   - Download and install the Sentio extension from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/).
+   - Download and install the Sentio extension from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=sentio.sentio).
    - Alternatively, you can install it via the VSCode Extensions sidebar by searching for "Sentio".
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/vscode_search_extension.png" alt=""><figcaption><p>Search sentio in VSCode marketplace</p></figcaption></figure>
 
