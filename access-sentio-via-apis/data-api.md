@@ -75,7 +75,7 @@ curl -L -X POST 'https://app.sentio.xyz/api/v1/metrics/sentio/coinbase/query_ran
   "samplesLimit": 20
 }'
 ```
-  
+
 ### Time Range Configuration Guide
 
 When configuring a time range, you can specify the `start` and `end` times, as well as the `step` interval and `timezone`. Below are the details on how to set these parameters:
@@ -116,7 +116,7 @@ Here’s an example configuration that uses these parameters:
 - **Timezone**: The times are adjusted to the Eastern Time Zone (America/New_York).
 
 This configuration ensures that you get hourly data points for the last 30 days, adjusted to the specified timezone.
-       
+
 
 ## SQL API
 
@@ -139,7 +139,7 @@ curl -L -X POST 'https://app.sentio.xyz/api/v1/analytics/sentio/coinbase/sql/exe
 
 ## Cache Control
 
-Each API could directly control cache strategy by adding an `cachePolicy` field as follow. The default cache behavior is have a long cache TTL and short short refresh TTL, so the query is cached most of the time but if it's stale trigger background refreshing.&#x20;
+Each API could directly control cache strategy by adding an `cachePolicy` field as follow. The default cache behavior is have a long cache TTL and short refresh TTL, so the query is cached most of the time but if it's stale trigger background refreshing.&#x20;
 
 ```
 {
@@ -166,4 +166,3 @@ API would also return information about the caching and other stats like follow:
    }
 }
 ```
-

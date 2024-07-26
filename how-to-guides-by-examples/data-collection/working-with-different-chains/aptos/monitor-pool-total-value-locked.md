@@ -13,12 +13,12 @@ AptosAccountProcessor.bind({address: "0x5a97986a9d031c4567e15b797be516910cfcb415
         syncPools(resources, ctx), 60, 24 * 60)
 ```
 
-The program will fetch account resources for the given address and **trigger** syncPools
+The program will fetch account resources for the given address and **trigger** `syncPools`
 
 * Every **24 \* 60** minutes when backfill of historical data.
 * Every **60** minutes when processing the real-time data.
 
-In syncPools, you could fetch the pools and compute the TVL
+In `syncPools`, you could fetch the pools and compute the TVL
 
 ```typescript
 async function syncPools(resources: MoveResource[], ctx: AptosResourceContext) {
@@ -32,5 +32,3 @@ async function syncPools(resources: MoveResource[], ctx: AptosResourceContext) {
 > ✅
 >
 > See this [file](https://github.com/sentioxyz/sentio-processors/blob/main/common/src/aptos/aptos-dex.ts#L67) for more context.
-
-

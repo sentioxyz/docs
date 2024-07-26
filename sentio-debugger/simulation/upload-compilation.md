@@ -19,7 +19,7 @@ Then you could choose a json file that existed in your hardhat artifact director
 
 ## Via Hardhat Plugin
 
-We also provide a hardhat plugin for more seamless integration with your contract development workflow. You can find our plugin in [Github](https://github.com/sentioxyz/hardhat-sentio/blob/main/README).
+We also provide a hardhat plugin for more seamless integration with your contract development workflow. You can find our plugin in [GitHub](https://github.com/sentioxyz/hardhat-sentio/blob/main/README).
 
 To get started, add dependencies in your hardhat project.
 

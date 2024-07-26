@@ -105,7 +105,7 @@ It will return a list of successful simulation results, it will stop at the tran
 
 ### State Diff
 
-Endpoint: https://app.sentio.xyz/api/v1/solidity/state\_diff
+Endpoint: https://app.sentio.xyz/api/v1/solidity/state_diff
 
 API key is required.
 
@@ -122,7 +122,7 @@ If this is bundle simulation, then use `txId.bundleId`  instead of `txId.simulat
 
 ### Trace Decoded Trace
 
-Endpoint: https://app.sentio.xyz/api/v1/solidity/call\_trace
+Endpoint: https://app.sentio.xyz/api/v1/solidity/call_trace
 
 API key is required.
 

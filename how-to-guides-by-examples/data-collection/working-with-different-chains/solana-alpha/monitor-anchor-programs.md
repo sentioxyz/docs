@@ -17,7 +17,7 @@ yarn sentio build
 
 You can find the generated processors under `src/types`
 
-Then import the processor from types, with proper contract address binded. As what we have for evm, you can register instruction handlers into the processor, with auto-complete support in modern IDEs.
+Then import the processor from types, with proper contract address bound. As what we have for evm, you can register instruction handlers into the processor, with auto-complete support in modern IDEs.
 
 ```typescript
 StepStakingProcessor.bind({ address: 'StKLLTf7CQ9n5BgXPSDXENovLTCuNc7N2ehvTb6JZ5x' })
@@ -36,5 +36,3 @@ You could see the metrics are submitted using `ctx.meter.Counter`
 > ℹ️
 >
 > See this [repo](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/aurory) for full implementation. To learn how to view metrics from the UI, go to [view-metrics](view-metrics "mention")
-
-

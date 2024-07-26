@@ -14,7 +14,7 @@ Follow [best-way-to-manage-nodejs](best-way-to-manage-nodejs "mention") for node
 
 ## Register an Account and Command Line Login
 
-Go to [app.sentio.xyz](https://app.sentio.xyz) to register an account. We support standard **Google/Github** login. To login from the commandline, you can do:
+Go to [app.sentio.xyz](https://app.sentio.xyz) to register an account. We support standard **Google/GitHub** login. To login from the command line, you can do:
 
 ```
 npx @sentio/cli@latest login
@@ -25,4 +25,3 @@ This should prompt for a link, and you can login using that link. It will genera
 ## Generate the API key (optional)
 
 Normally, you do not need to explicitly generate API keys for uploading [processor](processor "mention"). But you can always sign in manually, see [api-key](api-key "mention")
-

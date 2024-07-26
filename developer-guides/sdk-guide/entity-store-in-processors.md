@@ -45,7 +45,7 @@ Every entity is required to define a field named id with the type of ID!. This i
 
 #### Scalar Types
 The scalar types are the basic building blocks of the schema. The scalar types includes:
-- Int 
+- Int
 - Float
 - String
 - Boolean
@@ -54,7 +54,7 @@ The scalar types are the basic building blocks of the schema. The scalar types i
 - BigDecimal
 
 #### Relationships
-Entities can have relationships with other entities. The relationships can be one-to-one, one-to-many, or many-to-many.   
+Entities can have relationships with other entities. The relationships can be one-to-one, one-to-many, or many-to-many.
 
 ##### One-to-One relationship
 In instances where a single entity is linked to another single entity, it's typically referred to as a one-to-one relationship.
@@ -181,7 +181,7 @@ export class User extends Entity {
 }
 ```
 
-The generated types can be used to access the data in the processor. use `ctx.store` to interact with the data store.  
+The generated types can be used to access the data in the processor. use `ctx.store` to interact with the data store.
 
 ### Insert or Update Data
 To insert or update data in the store, you can use the `ctx.store.upsert` method. The following is an example of inserting a new user:
@@ -227,8 +227,8 @@ await ctx.store.delete(User, id)
 
 ```
 
-### Query entities 
-In your store, there are two methods to query and filter entities: list and listIterator.
+### Query entities
+In your store, there are two methods to query and filter entities: `list` and `listIterator`.
 
 #### `store.list(Entity, filters)`
 For simplicity, the `list` method returns entities based on the `Entity` and `filters` parameters.
@@ -242,7 +242,7 @@ ERC20Processor.onEventTransfer(
         const users = await ctx.store.list(User, [{field:"amount", op:">", value: 0}])
         for (const user of users) {
             console.log(user)
-        } 
+        }
     }
 )
 ```
@@ -266,11 +266,11 @@ Unlike the `list` method, the `listIterator` method does not load all entities i
 you can handle entities one by one, or in batches, which is more memory-efficient.
 The following is an example of handling entities in batches:
 
-```typescript   
+```typescript
 ERC20Processor.onEventTransfer (
     async (event, ctx) => {
         const iterator = ctx.store.listIterator(User, [{field:"name", op:"=", value: "Alice"}])
-        
+
         let batch: User[] = []
         let promises: Promise<any> = []
         for await (const users of iterator) {
@@ -287,10 +287,10 @@ ERC20Processor.onEventTransfer (
             promises.push(handleBatch([...batch]))
         }
         // wait for all promises to complete
-        await Promise.all(promises) 
+        await Promise.all(promises)
     }
 )
-```  
+```
 
 #### Filters
 The `filters` parameter is an array of objects that specify the filter conditions. Each object has the following fields:
@@ -304,7 +304,7 @@ The `filters` parameter is an array of objects that specify the filter condition
     - `<=`: Less than or equal
     - `in`: In the list
     - `not in`: Not in the list
-    
+
 - `value`: The value or the array of values to filter on.
 
 Multiple filters are combined using the logical AND operator.
@@ -320,9 +320,9 @@ ctx.store.listIterator(User, [
 
 ## Query Data using SQL
 You can query the data store using SQL.  Just like you do with event logs data. The entity will show up in table schema.
-![img.png](https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/entity-sql-screenshot.png) 
+![img.png](https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/entity-sql-screenshot.png)
 
 ## Query Data using GraphQL
-You can query the data store using GraphQL. The query schema will be generated based on the schema definition. 
+You can query the data store using GraphQL. The query schema will be generated based on the schema definition.
 
 ![img.png](https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/entity-graqphql-screenshot.png)

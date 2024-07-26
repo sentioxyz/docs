@@ -5,7 +5,7 @@ parentDocSlug: data-types
 hidden: false
 ---
 
-Every event log is a structured data stored in Sentio. Users can submit it from Sentio Processor as decribed in [logs-in-processor](logs-in-processor "mention")
+Every event log is a structured data stored in Sentio. Users can submit it from Sentio Processor as described in [logs-in-processor](logs-in-processor "mention")
 
 ## Log Levels
 
@@ -51,7 +51,7 @@ We support **full-text search** on logs. If you want to search all the **SWAP US
 
 ### Term
 
-Let's find all the logs with a given poolName
+Let's find all the logs with a given `poolName`
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/term.gif" alt=""><figcaption></figcaption></figure>
 
@@ -66,4 +66,3 @@ Let's find all the logs with **amount** between 1000 to 10000.
 The conditions are composable
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/composite.gif" alt=""><figcaption></figcaption></figure>
-

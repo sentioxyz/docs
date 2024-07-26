@@ -44,7 +44,7 @@ to the import section of the file. And then you can do any console log just as y
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (96).png" alt=""><figcaption></figcaption></figure>
 
-Sucess uploading will generate an compilation with ID.
+Success uploading will generate an compilation with ID.
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
 
