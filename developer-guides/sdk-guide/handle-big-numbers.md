@@ -5,7 +5,7 @@ parentDocSlug: sdk-guide
 hidden: false
 ---
 
-Sentio SDK uses javascript's native `bigint` For big integer calculations. However, if you want to do operations like division, you need to convert it to [`BigDecimal`](https://github.com/MikeMcl/bignumber.js) , otherwise, you may lose precision during the operation. We do provide utils for `bigint` and other type like `BN` to convert to `BigDecimal`.
+Sentio SDK uses javascript's native `bigint` for big integer calculations. However, if you want to do operations like division, you need to convert it to [`BigDecimal`](https://github.com/MikeMcl/bignumber.js) , otherwise, you may lose precision during the operation. We do provide utils for `bigint` and other type like `BN` to convert to `BigDecimal`.
 
 ```typescript
 const latestAnswer: bigint = 10n

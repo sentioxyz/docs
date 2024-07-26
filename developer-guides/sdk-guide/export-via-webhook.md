@@ -5,7 +5,7 @@ parentDocSlug: sdk-guide
 hidden: false
 ---
 
-You could use `Exporter` to send webhook. Note you need to give the channel name [notification-channel](notification-channel "mention") in the exporter (Config on the UI).
+You could use `Exporter` to send webhook. Note you need to give the channel name [notification-channel](notification-channel "mention") in the exporter (config on the UI).
 
 ```typescript
 const exporter = Exporter.register("SwapEvents", "WebhookChannel")

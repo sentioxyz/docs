@@ -12,7 +12,7 @@ import {token} from "@sentio/sdk/utils"
 const tokenInfo = await token.getERC20TokenInfo(tokenAddress, chainId)
 ```
 
-tokenInfo contains
+`tokenInfo` contains
 
 * _symbol_
 * _name_

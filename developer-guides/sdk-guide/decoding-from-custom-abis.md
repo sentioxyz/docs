@@ -22,7 +22,7 @@ yarn sentio build
 
 It will generate all the types under `src/types`
 
-Then you can write functions using modern IDEs like IntelliJ or VScode, it will show auto-complete on the method `OnEventSwap` (which correspond to the [event in the contract](https://github.com/Uniswap/v3-core/blob/main/contracts/UniswapV3Pool.sol#L786)).
+Then you can write functions using modern IDEs like IntelliJ or VSCode, it will show auto-complete on the method `OnEventSwap` (which correspond to the [event in the contract](https://github.com/Uniswap/v3-core/blob/main/contracts/UniswapV3Pool.sol#L786)).
 
 ```typescript
 UniswapProcessor.bind({address: '0x5777d92f208679db4b9778590fa3cab3ac9e2168'})

@@ -12,4 +12,4 @@ hidden: false
 
 ## Reduce interval from onTimeInterval, onBlockInterval or onVersionInterval
 
-From [handlers-and-filters](handlers-and-filters "mention"), we introduced that processor could wakeup and execute a handler, then emit some data. You could always adjust the interval to reduce the frequency, thus reduce the cost.
+From [handlers-and-filters](handlers-and-filters "mention"), we introduced that processor could wake up and execute a handler, then emit some data. You could always adjust the interval to reduce the frequency, thus reduce the cost.

@@ -25,7 +25,7 @@ You could follow UI instructions to perform slack integration.
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/webhook.gif" alt=""><figcaption></figcaption></figure>
 
-Note, you can perform authentication through adding a custom header. In this example, we use a **key** with value **mockkey.**
+Note, you can perform authentication through adding a custom header. In this example, we use a **key** with value `mockkey`.
 
 ## Creating PagerDuty Channel
 
@@ -36,4 +36,3 @@ You could follow UI instructions to perform slack integration. First Click Conne
 After the authentication, choose a service you created in PagerDuty.
 
 ![](<https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (12).png>)
-

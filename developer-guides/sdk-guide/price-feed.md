@@ -15,7 +15,7 @@ import { getPriceByType,  token } from "@sentio/sdk/utils"
 const price = await getPriceByType(CHAIN_IDS.ETHEREUM, address, ctx.timestamp) || 0
 ```
 
-The function sigatures are:
+The function signatures are:
 
 ```
 interface PriceOptions {

@@ -38,7 +38,7 @@ The actual json data is in the field "`data`" (What you pass in from the process
 ]
 ```
 
-Your webhook endpoint should acknowledge a message by returning http status code 20x (currently the acknowledgement deadline is 5 seconds), otherwise Sentio will retry sending the message with an exponential backoff policy.&#x20;
+Your webhook endpoint should acknowledge a message by returning http status code 20x (currently the acknowledgement deadline is 5 seconds), otherwise Sentio will retry sending the message with an exponential back off policy.&#x20;
 
 If Sentio attempts to deliver the message but can't receive acknowledgement, the message will be considered a dead letter eventually. Dead letters won't be delivered anymore, but can be pulled manually. The retention duration of dead letters is 7 days.
 
@@ -60,7 +60,7 @@ A sample response looks like:
 
 ```json
 {
-  "messages": [ 
+  "messages": [
     {
       "id": "6312269039920155",
       "attributes": {
@@ -69,7 +69,7 @@ A sample response looks like:
       "data": "{ ... array of messages }"
     },
     {
-      "id": "6312269039920729",      
+      "id": "6312269039920729",
       "attributes": {
         "channel_name": "test_channel"
       },
@@ -79,4 +79,3 @@ A sample response looks like:
   ]
 }
 ```
-
