@@ -62,10 +62,16 @@ yarn sentio add --name MyToken --chain <chain_id> <contract address>
 
 ## sentio upload
 
-Inside project directory, build and upload your processor to your project.&#x20;
+Inside project directory, build and upload your processor to your project.
 
 ```bash
 yarn sentio upload
+```
+
+It's also possible hot-swap a running processor version with new logic, without re-index old data.
+
+```bash
+yarn sentio upload --continue-from=<old version>
 ```
 
 ## sentio gen
