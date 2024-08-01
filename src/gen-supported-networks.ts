@@ -1,7 +1,7 @@
 import { EthChainId, EthChainInfo } from "@sentio/chain";
 import * as fs from "node:fs";
 
-let content = fs.readFileSync('supported-networks-header.md', 'utf8');
+let content = fs.readFileSync('supported-networks-header.md.template', 'utf8');
 const infos= Object.values(EthChainInfo).sort((a, b) => a.name.localeCompare(b.name)).filter((info) => !info.name.includes("Testnet"));
 
 const debuggerChains = new Map(Object.entries({
@@ -34,7 +34,7 @@ for (const network of infos) {
 
 content = content.replace("${supported-evm}", supportedEvm)
 
-const template = fs.readFileSync('evm-chain-template.md', 'utf8');
+const template = fs.readFileSync('evm-chain-template.md.template', 'utf8');
 
 let chainContent = ""
 for (const network of infos) {

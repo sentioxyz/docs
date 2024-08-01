@@ -18,6 +18,8 @@ The supported network and its status are listed below, we are actively supportin
 |-------|---------|--------------|---------|----------|----------------|
 ${supported-evm}
 
+More on [EVM](evm-chains)
+
 ## Move Chains
 
 | Chain	         | Txn	 | Event	 | Entry Func	 | Archive RPCs | Account	 | Debugger	 | Data staleness |
@@ -27,12 +29,26 @@ ${supported-evm}
 | SUI	           | ✓	   | ✓	     | ✓	     | ✓    | ✓		      | ✓   | Real-time      |
 | SUI	Testnet    | ✓	   | ✓	     | ✓	     |     | 		       |     | Real-time      |
 | Move	Testnet   | ✓	   | ✓	     | ✓	     | ✓    | ✓		      |     | Real-time      |
+More on [Aptos](aptos) and [SUI](sui)
+
+## Fuel
+| Chain        | Stage | Log Handle | Call Handle | Transfer Handle |Data staleness |
+|--------------|-------|------------|-------------|-------------|------|
+| Fuel Testnet | Beta  | ✓          | ✓           |✓  | Real-time      |
+More on [Fuel](fuel)
+
+## Starknet
+|Chain	       | Stage | Events	   | Archive RPCs |		Data Staleness|
+|--------------|-------|------------|-------------|-------------|
+| Starknet     | Beta  | ✓          |       ✓       |   Real-time        |
+More on [starknet](starknet)
+
 ## Solana
 
 | Chain  | Stage | Transaction Handle | Instruction Handle |
 |--------|-------|--------------------|--------------------|
 | Solana | Alpha | ✓                  | ✓                  |
-
+More on [Solana](solana)
 ## Examples
 
 To quickly create single chain processor or subgraph, you can use the following command.

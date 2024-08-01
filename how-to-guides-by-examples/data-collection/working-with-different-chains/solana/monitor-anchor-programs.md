@@ -1,7 +1,7 @@
 ---
 title: Monitor anchor programs
 categorySlug: how-to-guides-by-examples
-parentDocSlug: solana-alpha
+parentDocSlug: solana
 hidden: false
 ---
 

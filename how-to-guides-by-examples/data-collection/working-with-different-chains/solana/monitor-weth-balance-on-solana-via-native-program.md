@@ -1,7 +1,7 @@
 ---
 title: Monitor WETH balance on Solana (via Native program)
 categorySlug: how-to-guides-by-examples
-parentDocSlug: solana-alpha
+parentDocSlug: solana
 hidden: false
 ---
 

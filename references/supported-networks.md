@@ -55,22 +55,37 @@ The supported network and its status are listed below, we are actively supportin
 | zkLink Nova | ✓ | ✓ |  |   | Real-time |
 | zkSync Era | ✓ | ✓ |  |   | Real-time |
 
+More on [EVM](evm-chains).
 
 ## Move Chains
 
-| Chain	         | Txn	 | Event	 | Entry Func	 | Archive RPCs | Account	 | Debugger	 | Data staleness |
-|----------------|------|--------|-------------|--|----------|-----|----------------|
-| Aptos	         | ✓	   | ✓	     | ✓ 	    |  ✓   | ✓	       | 	 ✓ | Real-time      |
-| Aptos Testnet	 | ✓	   | ✓	     | ✓	     |     | 		       |     | Real-time      |
-| SUI	           | ✓	   | ✓	     | ✓	     | ✓    | ✓		      | ✓   | Real-time      |
-| SUI	Testnet    | ✓	   | ✓	     | ✓	     |     | 		       |     | Real-time      |
-| Move	Testnet   | ✓	   | ✓	     | ✓	     | ✓    | ✓		      |     | Real-time      |
+| Chain	                 | Txn	 | Event	 | Entry Func	 | Archive RPCs | Account/Object	 | Debugger	 | Data staleness |
+|------------------------|------|--------|-------------|--|-----------------------|-----|----------------|
+| Aptos	                 | ✓	   | ✓	     | ✓ 	    |  ✓  | ✓	                    | 	 ✓ | Real-time      |
+| Aptos Testnet	         | ✓	   | ✓	     | ✓	     |     | 		                    |     | Real-time      |
+| SUI	                   | ✓	   | ✓	     | ✓	     | ✓   | ✓		                   | ✓   | Real-time      |
+| SUI	Testnet            | ✓	   | ✓	     | ✓	     |     | 		                    |     | Real-time      |
+| Movement	Testnet Aptos | ✓	   | ✓	     | ✓	     |     | 	✓ 	                  |     | Real-time      |
+More on [Aptos](aptos) and [SUI](sui).
+
+## Fuel
+| Chain        | Stage | Log Handle | Call Handle | Transfer Handle |Data staleness |
+|--------------|-------|------------|-------------|-------------|------|
+| Fuel Testnet | Beta  | ✓          | ✓           |✓  | Real-time      |
+More on [Fuel](fuel).
+
+## Starknet
+|Chain	       | Stage | Events	   | Archive RPCs |		Data Staleness|
+|--------------|-------|------------|-------------|-------------|
+| Starknet     | Beta  | ✓          |       ✓       |   Real-time        |
+More on [Starknet](starknet).
+
 ## Solana
 
 | Chain  | Stage | Transaction Handle | Instruction Handle |
 |--------|-------|--------------------|--------------------|
 | Solana | Alpha | ✓                  | ✓                  |
-
+More on [Solana](solana)
 ## Examples
 
 To quickly create single chain processor or subgraph, you can use the following command.
@@ -79,7 +94,7 @@ To quickly create single chain processor or subgraph, you can use the following 
 
 [//]: # (ChainId: 42161)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -99,7 +114,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 592)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -119,7 +134,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 3776)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -139,7 +154,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 1313161554)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -159,7 +174,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 43114)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -179,7 +194,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 223)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -199,7 +214,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 8453)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -219,7 +234,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 11501)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -239,7 +254,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 56)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -259,7 +274,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 200901)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -279,7 +294,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 81457)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -299,7 +314,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 168587773)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -319,7 +334,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 88888)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -339,7 +354,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 1030)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -359,7 +374,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 25)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -379,7 +394,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 1)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -399,7 +414,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 250)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -419,7 +434,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 252)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -439,7 +454,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 17000)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -459,7 +474,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 321)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -479,7 +494,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 59144)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -499,7 +514,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 169)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -519,7 +534,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 5000)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -539,7 +554,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 4200)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -559,7 +574,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 1088)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -579,7 +594,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 34443)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -599,7 +614,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 60808)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -619,7 +634,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 1284)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -639,7 +654,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 10)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -659,7 +674,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 137)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -679,7 +694,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 1101)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -699,7 +714,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 534352)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -719,7 +734,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 11155111)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -739,7 +754,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 167000)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -759,7 +774,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 196)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -779,7 +794,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 48900)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -799,7 +814,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 810180)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
@@ -819,7 +834,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 [//]: # (ChainId: 324)
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```

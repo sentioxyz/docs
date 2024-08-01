@@ -1,7 +1,7 @@
 ---
 title: Decode Solana instructions
 categorySlug: how-to-guides-by-examples
-parentDocSlug: solana-alpha
+parentDocSlug: solana
 hidden: false
 ---
 

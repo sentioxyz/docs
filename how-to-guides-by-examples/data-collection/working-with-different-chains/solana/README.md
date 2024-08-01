@@ -1,5 +1,5 @@
 ---
-slug: solana-alpha
+slug: solana
 title: Solana (alpha)
 categorySlug: how-to-guides-by-examples
 parentDocSlug: working-with-different-chains
