@@ -6,7 +6,7 @@ hidden: false
 
 > ℹ️
 >
-> In this section, we will show you how to set up a simple project to monitor an ERC20 contract.&#x20;
+> In this section, we will show you how to set up a simple project to monitor an ERC20 contract.
 
 
 ## Step 1: Create a Sentio Account
@@ -15,7 +15,8 @@ Simply go to [https://app.sentio.xyz](https://app.sentio.xyz) and login/create y
 
 ## Step 2: Create a Project (optional)
 
-By default, Sentio will create an empty "default" project for you, if you want to have a default project ID, then click "**Create Project**" on the project selector. In addition, our CLI can also automatically create a project for you.
+We recommend you to create project via clicking "**Create Project**" on the project selector. 
+Though this is optional because our CLI can also automatically create a project for you upon uploading.
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/createProject.gif" alt=""><figcaption></figcaption></figure>
 
@@ -25,16 +26,10 @@ We require users to follow [setup](setup "mention") before working on the projec
 
 ## Step 4: Create Processor Project
 
-You can simply run the following command to create a processor project with the name <mark style="color:blue;">`default`</mark>
+You can simply run the following command to create a sentio processor project.
 
 ```bash
-npx @sentio/cli@latest create
-```
-
-You can also give the processor project a name by using the following command
-
-```bash
-npx @sentio/cli@latest create $PROJECT_NAME
+npx @sentio/cli@latest create <project name>
 ```
 
 The commands will generate a template project based on [X2Y2 token](https://github.com/X2Y2-io/x2y2-sdk). This should be a good starting point to write your own processor logic.  It is also possible to create template projects for other types of chains, please refer [CLI Reference](cli-reference#sentio-create).&#x20;

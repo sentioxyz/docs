@@ -5,8 +5,6 @@ categorySlug: documentation
 hidden: false
 ---
 
-(New) Sentio launched [Transaction Search](https://app.sentio.xyz/explorer) and [Overview](overview "mention").
-
 ## Overview
 
 Sentio provides modern **monitoring**, **alerting, log management and debugging** for decentralized applications as an _**integrated**_ and **hosted** experience.&#x20;
