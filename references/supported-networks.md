@@ -93,917 +93,995 @@ To quickly create single chain processor or subgraph, you can use the following 
 
 ### Arbitrum
 
-[//]: # (ChainId: 42161)
-
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 42161
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 42161
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Astar
+</details>
 
-[//]: # (ChainId: 592)
+### Astar
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 592
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 592
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Astar zkEVM
+</details>
 
-[//]: # (ChainId: 3776)
+### Astar zkEVM
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 3776
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 3776
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Auroa
+</details>
 
-[//]: # (ChainId: 1313161554)
+### Auroa
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 1313161554
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 1313161554
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Avalanche
+</details>
 
-[//]: # (ChainId: 43114)
+### Avalanche
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 43114
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 43114
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### B2
+</details>
 
-[//]: # (ChainId: 223)
+### B2
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 223
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 223
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Base
+</details>
 
-[//]: # (ChainId: 8453)
+### Base
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 8453
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 8453
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### BEVM
+</details>
 
-[//]: # (ChainId: 11501)
+### BEVM
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 11501
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 11501
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Binance
+</details>
 
-[//]: # (ChainId: 56)
+### Binance
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 56
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 56
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Bitlayer
+</details>
 
-[//]: # (ChainId: 200901)
+### Bitlayer
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 200901
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 200901
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Blast
+</details>
 
-[//]: # (ChainId: 81457)
+### Blast
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 81457
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 81457
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
+</details>
+
 >️ Testnet is available at chain id: 168587773 with limited capabilities.
 ### Blast
-
-[//]: # (ChainId: 168587773)
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 168587773
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 168587773
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Chiliz
+</details>
 
-[//]: # (ChainId: 88888)
+### Chiliz
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 88888
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 88888
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Conflux eSpace
+</details>
 
-[//]: # (ChainId: 1030)
+### Conflux eSpace
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 1030
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 1030
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Cronos
+</details>
 
-[//]: # (ChainId: 25)
+### Cronos
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 25
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
+<details>
+<summary>Create and deploy an example Subgraph</summary>
+
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 25
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
+</details>
+
 >️ Testnet is available at chain id: 338.
 ### Ethereum
-
-[//]: # (ChainId: 1)
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 1
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 1
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
+</details>
+
 >️ Testnets are available at chain id: 17000, 11155111 with limited capabilities.
 ### Fantom Opera
-
-[//]: # (ChainId: 250)
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 250
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 250
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Fraxtal
+</details>
 
-[//]: # (ChainId: 252)
+### Fraxtal
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 252
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 252
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Holesky
+</details>
 
-[//]: # (ChainId: 17000)
+### Holesky
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 17000
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 17000
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### KCC
+</details>
 
-[//]: # (ChainId: 321)
+### KCC
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 321
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 321
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Linea
+</details>
 
-[//]: # (ChainId: 59144)
+### Linea
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 59144
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 59144
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Manta Pacific
+</details>
 
-[//]: # (ChainId: 169)
+### Manta Pacific
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 169
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 169
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Mantle
+</details>
 
-[//]: # (ChainId: 5000)
+### Mantle
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 5000
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 5000
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Merlin
+</details>
 
-[//]: # (ChainId: 4200)
+### Merlin
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 4200
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 4200
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Metis
+</details>
 
-[//]: # (ChainId: 1088)
+### Metis
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 1088
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 1088
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Mode
+</details>
 
-[//]: # (ChainId: 34443)
+### Mode
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 34443
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 34443
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Mode
+</details>
 
-[//]: # (ChainId: 60808)
+### Mode
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 60808
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 60808
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Moonbeam
+</details>
 
-[//]: # (ChainId: 1284)
+### Moonbeam
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 1284
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 1284
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Optimism
+</details>
 
-[//]: # (ChainId: 10)
+### Optimism
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 10
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 10
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Polygon
+</details>
 
-[//]: # (ChainId: 137)
+### Polygon
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 137
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 137
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Polygon zkEVM
+</details>
 
-[//]: # (ChainId: 1101)
+### Polygon zkEVM
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 1101
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 1101
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Scroll
+</details>
 
-[//]: # (ChainId: 534352)
+### Scroll
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 534352
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 534352
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Sepolia
+</details>
 
-[//]: # (ChainId: 11155111)
+### Sepolia
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 11155111
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 11155111
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### Taiko
+</details>
 
-[//]: # (ChainId: 167000)
+### Taiko
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 167000
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 167000
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
+</details>
+
 >️ Testnet is available at chain id: 167008.
 ### X Layer
-
-[//]: # (ChainId: 196)
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 196
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 196
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
+</details>
+
 >️ Testnet is available at chain id: 195 with limited capabilities.
 ### Zircuit
-
-[//]: # (ChainId: 48900)
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 48900
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 48900
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
+</details>
+
 >️ Testnet is available at chain id: 48899.
 ### zkLink Nova
-
-[//]: # (ChainId: 810180)
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 810180
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 810180
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
-### zkSync Era
+</details>
 
-[//]: # (ChainId: 324)
+### zkSync Era
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
-<summary>Create and upload an example Sentio processor project.</summary>
+<summary>Create and upload an example Sentio processor</summary>
+
 ```
 npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 324
 ...
 npx @sentio/cli@latest upload
 ```
+
 </details>
 
+<details>
+<summary>Create and deploy an example Subgraph</summary>
 
-
-To create and deploy an example [subgraph](hosted-subgraph "mention") project, run the following command:
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 324
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
+
+</details>
 
