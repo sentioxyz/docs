@@ -55,30 +55,31 @@ The supported network and its status are listed below, we are actively supportin
 | zkLink Nova | ✓ | ✓ |  |   | Real-time |
 | zkSync Era | ✓ | ✓ |  |   | Real-time |
 
-More on [EVM](evm-chains).
+
+More on [EVM](evm-chains)
 
 ## Move Chains
 
-| Chain	                 | Txn	 | Event	 | Entry Func	 | Archive RPCs | Account/Object	 | Debugger	 | Data staleness |
-|------------------------|------|--------|-------------|--|-----------------------|-----|----------------|
-| Aptos	                 | ✓	   | ✓	     | ✓ 	    |  ✓  | ✓	                    | 	 ✓ | Real-time      |
-| Aptos Testnet	         | ✓	   | ✓	     | ✓	     |     | 		                    |     | Real-time      |
-| SUI	                   | ✓	   | ✓	     | ✓	     | ✓   | ✓		                   | ✓   | Real-time      |
-| SUI	Testnet            | ✓	   | ✓	     | ✓	     |     | 		                    |     | Real-time      |
-| Movement	Testnet Aptos | ✓	   | ✓	     | ✓	     |     | 	✓ 	                  |     | Real-time      |
-More on [Aptos](aptos) and [SUI](sui).
+| Chain	         | Txn	 | Event	 | Entry Func	 | Archive RPCs | Account	 | Debugger	 | Data staleness |
+|----------------|------|--------|-------------|--|----------|-----|----------------|
+| Aptos	         | ✓	   | ✓	     | ✓ 	    |  ✓   | ✓	       | 	 ✓ | Real-time      |
+| Aptos Testnet	 | ✓	   | ✓	     | ✓	     |     | 		       |     | Real-time      |
+| SUI	           | ✓	   | ✓	     | ✓	     | ✓    | ✓		      | ✓   | Real-time      |
+| SUI	Testnet    | ✓	   | ✓	     | ✓	     |     | 		       |     | Real-time      |
+| Move	Testnet   | ✓	   | ✓	     | ✓	     | ✓    | ✓		      |     | Real-time      |
+More on [Aptos](aptos) and [SUI](sui)
 
 ## Fuel
 | Chain        | Stage | Log Handle | Call Handle | Transfer Handle |Data staleness |
 |--------------|-------|------------|-------------|-------------|------|
 | Fuel Testnet | Beta  | ✓          | ✓           |✓  | Real-time      |
-More on [Fuel](fuel).
+More on [Fuel](fuel)
 
 ## Starknet
 |Chain	       | Stage | Events	   | Archive RPCs |		Data Staleness|
 |--------------|-------|------------|-------------|-------------|
 | Starknet     | Beta  | ✓          |       ✓       |   Real-time        |
-More on [Starknet](starknet).
+More on [starknet](starknet)
 
 ## Solana
 
@@ -310,6 +311,7 @@ npx @sentio/cli@latest graph create -n <project name> --chain-id 81457
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
+>️ Testnet is available at chain id: 168587773 with limited capabilities.
 ### Blast
 
 [//]: # (ChainId: 168587773)
@@ -390,6 +392,7 @@ npx @sentio/cli@latest graph create -n <project name> --chain-id 25
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
+>️ Testnet is available at chain id: 338.
 ### Ethereum
 
 [//]: # (ChainId: 1)
@@ -410,6 +413,7 @@ npx @sentio/cli@latest graph create -n <project name> --chain-id 1
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
+>️ Testnets are available at chain id: 17000, 11155111 with limited capabilities.
 ### Fantom Opera
 
 [//]: # (ChainId: 250)
@@ -770,6 +774,7 @@ npx @sentio/cli@latest graph create -n <project name> --chain-id 167000
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
+>️ Testnet is available at chain id: 167008.
 ### X Layer
 
 [//]: # (ChainId: 196)
@@ -790,6 +795,7 @@ npx @sentio/cli@latest graph create -n <project name> --chain-id 196
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
+>️ Testnet is available at chain id: 195 with limited capabilities.
 ### Zircuit
 
 [//]: # (ChainId: 48900)
@@ -810,6 +816,7 @@ npx @sentio/cli@latest graph create -n <project name> --chain-id 48900
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
+>️ Testnet is available at chain id: 48899.
 ### zkLink Nova
 
 [//]: # (ChainId: 810180)
