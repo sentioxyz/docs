@@ -2,7 +2,7 @@
 
 [//]: # (ChainId: ${chainId})
 
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](#processor-basic "mention") or [subgraph](#hosted-subgraph "mention") format.
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 To create and upload an example [sentio processor](processor-basic "mention") project, run the following command:
 ```
