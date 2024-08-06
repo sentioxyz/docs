@@ -32,8 +32,6 @@ Recommended subgraph version is:
 When uploading the subgraph, the API endpoint will be printed in console, you can
 also find docs and API in the data studio page for the GraphQL.
 
-[//]: # (![img.png]&#40;/assets/subgraph-graphql.png&#41;)
-
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/assets/subgraph-graphql.png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## Limitation
