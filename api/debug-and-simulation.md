@@ -176,8 +176,7 @@ and use the following for bundle simulation
 curl -L 'https://app.sentio.xyz/api/v1/solidity/simulate_bundle/<BUNDLE_ID>?&projectOwner=<USER>&projectSlug=<PROJECT>' \
 -H 'api-key: <API_KEY>'
 ```
-
-[//]: # (## Code Index)
+# Code Index)
 
 [//]: # (Code intelligence experience like jumping to the definition and finding reference experience is powered by index API. Two parameters to be provided, numeric chain ID &#40;e.g. polygon 137 as in the example&#41;, and the transaction ID.)
 
@@ -199,3 +198,5 @@ curl -L 'https://app.sentio.xyz/api/v1/solidity/simulate_bundle/<BUNDLE_ID>?&pro
 [//]: # (We also provided an NPM package [@sentio/scip]&#40;https://www.npmjs.com/package/@sentio/scip&#41; that provides utils to help process the results.)
 
 [//]: # ()
+
+[//]: # (#

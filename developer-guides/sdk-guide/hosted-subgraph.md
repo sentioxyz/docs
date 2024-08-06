@@ -28,6 +28,14 @@ Recommended subgraph version is:
 @graphprotocol/graph-ts: 0.32.0
 ```
 
+## Docs and API
+When uploading the subgraph, the API endpoint will be printed in console, you can
+also find docs and API in the data studio page for the GraphQL.
+
+[//]: # (![img.png]&#40;/assets/subgraph-graphql.png&#41;)
+
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/assets/subgraph-graphql.png" alt="" width="563"><figcaption></figcaption></figure>
+
 ## Limitation
 
 Currently Sentio Subgraph doesn't have trace handler.
