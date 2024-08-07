@@ -1,6 +1,7 @@
 ---
 title: ⚙️ Overview
 categorySlug: sentio-debugger
+slug: debugger-overview
 hidden: false
 ---
 
