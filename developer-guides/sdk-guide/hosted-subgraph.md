@@ -28,6 +28,18 @@ Recommended subgraph version is:
 @graphprotocol/graph-ts: 0.32.0
 ```
 
+## Network Supported
+All the EVM network listed in [here](supported-networks "mention") are supported.
+For `network` field, we recommend to use chain id instead of network slug which could be ambiguous, e.g.
+```
+network: '1`
+```
+
+We also supported using your own customized RPC or forked network, just put the  RPC endpoint in the `network` field, e.g.
+```
+network: 'http://my-forked-rpc-endpoint'
+```
+
 ## Docs and API
 When uploading the subgraph, the API endpoint will be printed in console, you can
 also find docs and API in the data studio page for the GraphQL.
