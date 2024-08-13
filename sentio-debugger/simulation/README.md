@@ -7,7 +7,7 @@ hidden: false
 
 The Sentio simulator allows you to run simulations quickly and inspect the simulation result with great detail.
 
-You could quickly start the simulation as follows or calling [API](simulation-api).
+You could quickly start the simulation as follows or calling [API](https://docs.sentio.xyz/reference/debug-and-simulation).
 
 ## From existed transaction
 

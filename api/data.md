@@ -4,8 +4,8 @@ categorySlug: sentio-api
 slug: data
 ---
 
-Two kinds of data API are commonly used, for metrics, event logs and entity related, it's called [Insight API](#insight-api "mention"), and you can also use raw [SQL API](#sql-api "mention").
-For subgraph project, you could use both [SQL API](#sql-api "mention") and [Subgraph API](hosted-subgraph#api "mention").
+Two kinds of data API are commonly used, for metrics, event logs and entity related, it's called [Insight API](https://docs.sentio.xyz/reference/data#insight-api "mention"), and you can also use raw [SQL API](https://docs.sentio.xyz/reference/data#sql-api "mention").
+For subgraph project, you could use both [SQL API](https://docs.sentio.xyz/reference/data#sql-api "mention") and [Subgraph API](hosted-subgraph#api "mention").
 
 ## Insight API
 

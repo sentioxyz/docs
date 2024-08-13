@@ -20,13 +20,15 @@ In addition, it also provides a set of unique abilities like
 * [dynamic-logging](dynamic-logging "mention"): add additional `console.log` for on-chain transaction to extract information. It is part of more general [#override-contract](simulation/#override-contract "mention") that allow you to override contract on a specific address.
 * [single-step-mode](single-step-mode "mention") (alpha):  examine execution in much greater detail
 
-Most of functions can be access through API as well, such as [debug-api](debug-api "mention"), [simulation-api](simulation-api "mention") and [code-index-api](code-index-api "mention").
+Most of functions can be access through [API](https://docs.sentio.xyz/reference/debug-and-simulation) as well.
+
+<!-- and [code-index-api](code-index-api "mention"). -->
 
 ## Get started
 
 ### Explorer Page
 
-Users can search for any transaction on the [Explorer page](https://app.sentio.xyz/explorer), and then use the debugger.&#x20;
+Users can search for any transaction on the [Explorer page](https://app.sentio.xyz/explorer), and then use the debugger.
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (32).png" alt=""><figcaption><p>Transaction Search</p></figcaption></figure>
 
