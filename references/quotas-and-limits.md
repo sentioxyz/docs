@@ -6,16 +6,17 @@ hidden: false
 
 ## Sentio Units
 
-Sentio charges usage via **Sentio Units.**
+Sentio charges usage via **Sentio Units**
 
-* Every logical [metrics](metrics "mention") in watching stage costs **400** Sentio Units
-* Every logical [event-logs](event-logs "mention") and [entities](entities "mention") in watching stage costs **800** Sentio Units
-* Every logical [webhook](webhook "mention") in watching stage costs **800** Sentio Units
+* Every logical [metrics](metrics "mention") in watching stage costs **4000** Sentio Units
+* Every logical [event-logs](event-logs "mention") and [entities](entities "mention") in watching stage costs **8000** Sentio Units
+* Every logical [webhook](webhook "mention") in watching stage costs **8000** Sentio Units
 * Every node RPC costs **25** in watching state Sentio Units (List will be updated)
   * [EVM calls](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block) involving the state.
   * [get table item](https://fullnode.devnet.aptoslabs.com/v1/spec#/operations/get\_table\_item) for Aptos
-* All above is FREE in [Backfill](#Backfill) stage.
-* Every Sentio API request costs **400** Sentio Unit.
+* All above cost zero in [Backfill](#Backfill) stage
+* All visualizations cost zero sentio unit
+* Every Sentio API request costs **4000** Sentio Unit.
 
 > ✅
 >
