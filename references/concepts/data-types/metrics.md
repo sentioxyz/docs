@@ -7,7 +7,7 @@ hidden: false
 
 We refer time series data as **Metrics.** Currently, we support users to submit two types of metric data.
 
-## Counter&#x20;
+## Counter
 
 Counter represents the **cumulative value** at a given time, each data point reported is a delta value (**add or subtract**) to the last value. Usually used to record e.g the accumulated number of tokens transferred.&#x20;
 
