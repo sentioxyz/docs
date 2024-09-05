@@ -9,7 +9,7 @@ hidden: false
 Sentio charges usage via **Sentio Units.**
 
 * Every logical [metrics](metrics "mention") in watching stage costs **400** Sentio Units
-* Every logical [event-logs](event-logs "mention" and [entities](entities "mention") in watching stage costs **800** Sentio Units
+* Every logical [event-logs](event-logs "mention") and [entities](entities "mention") in watching stage costs **800** Sentio Units
 * Every logical [webhook](webhook "mention") in watching stage costs **800** Sentio Units
 * Every node RPC costs **25** in watching state Sentio Units (List will be updated)
   * [EVM calls](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block) involving the state.
