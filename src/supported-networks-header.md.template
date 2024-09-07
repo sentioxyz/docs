@@ -34,6 +34,7 @@ More on [Aptos](aptos) and [SUI](sui)
 ## Fuel
 | Chain        | Stage | Log Handle | Call Handle | Transfer Handle |Data staleness |
 |--------------|-------|------------|-------------|-------------|------|
+| Fuel Mainnet | Beta  | ✓          | ✓           |✓  | Real-time      |
 | Fuel Testnet | Beta  | ✓          | ✓           |✓  | Real-time      |
 More on [Fuel](fuel)
 

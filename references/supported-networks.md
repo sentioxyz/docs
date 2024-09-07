@@ -28,6 +28,7 @@ The supported network and its status are listed below, we are actively supportin
 | Bitlayer Mainnet | ✓ | ✓ |  |   | Real-time |
 | Blast Mainnet | ✓ | ✓ |  | ✓   | Real-time |
 | Blast Mainnet | ✓ | ✓ |  |   | Real-time |
+| Bob Mainnet | ✓ | ✓ |  |   | Real-time |
 | Chiliz | ✓ | ✓ |  |   | Real-time |
 | Conflux eSpace | ✓ | ✓ |  |   | Real-time |
 | Cronos Mainnet | ✓ | ✓ |  |   | Real-time |
@@ -41,7 +42,6 @@ The supported network and its status are listed below, we are actively supportin
 | Mantle | ✓ | ✓ |  |   | Real-time |
 | Merlin Mainnet | ✓ | ✓ |  |   | Real-time |
 | Metis | ✓ | ✓ |  |   | Real-time |
-| Mode Mainnet | ✓ | ✓ |  |   | Real-time |
 | Mode Mainnet | ✓ | ✓ |  |   | Real-time |
 | Moonbeam | ✓ | ✓ | ✓  | ✓   | Real-time |
 | Optimism Mainnet | ✓ | ✓ |  |   | Real-time |
@@ -72,6 +72,7 @@ More on [Aptos](aptos) and [SUI](sui)
 ## Fuel
 | Chain        | Stage | Log Handle | Call Handle | Transfer Handle |Data staleness |
 |--------------|-------|------------|-------------|-------------|------|
+| Fuel Mainnet | Beta  | ✓          | ✓           |✓  | Real-time      |
 | Fuel Testnet | Beta  | ✓          | ✓           |✓  | Real-time      |
 More on [Fuel](fuel)
 
@@ -398,6 +399,32 @@ npx @sentio/cli@latest upload
 
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 168587773
+...
+npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
+```
+
+</details>
+
+### Bob
+
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
+
+<details>
+<summary>Create and upload an example Sentio processor</summary>
+
+```
+npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 60808
+...
+npx @sentio/cli@latest upload
+```
+
+</details>
+
+<details>
+<summary>Create and deploy an example Subgraph</summary>
+
+```
+npx @sentio/cli@latest graph create -n <project name> --chain-id 60808
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
@@ -764,32 +791,6 @@ npx @sentio/cli@latest upload
 
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 34443
-...
-npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-```
-
-</details>
-
-### Mode
-
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
-
-<details>
-<summary>Create and upload an example Sentio processor</summary>
-
-```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 60808
-...
-npx @sentio/cli@latest upload
-```
-
-</details>
-
-<details>
-<summary>Create and deploy an example Subgraph</summary>
-
-```
-npx @sentio/cli@latest graph create -n <project name> --chain-id 60808
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```

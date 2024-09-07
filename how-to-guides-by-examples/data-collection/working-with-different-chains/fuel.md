@@ -15,6 +15,11 @@ Two important files:
 * `abis/fuel/orderbook-abi.json` project's ABI file in json format, used to do codegen
 * `processor.ts` entry point for processing logic
 
+You can also create an example project by
+```
+npx @sentio/cli@latest create -n <project name> --chain-type fuel
+```
+
 ## OnLog Handler
 
 In your sway code, if you define statement as follow
@@ -77,6 +82,7 @@ The handler takes two parameters
   * hold the tools for doing data submission, like `eventLogger` and `meter`, which records [logs-in-processor](logs-in-processor "mention") and [metrics-in-processors](metrics-in-processors "mention").&#x20;
   * hold the [FuelTransaction](https://sdk.sentio.xyz/types/fuel.FuelTransaction.html), which is extends from official SDK's [TransactionSummary](https://docs.fuel.network/docs/nightly/fuels-ts/account/#transactionsummary) and also decoded logs an
 
+<!--
 ## Call Handling
 
 In additional to log handler, you can also do function call handler, notice it only capture the entry transaction call:
@@ -93,7 +99,7 @@ OrderbookProcessor.bind({
     })
 ```
 
-You can access arguments in `orderTx.args` or `orderTx.argsObject`,  and result in `orderTx.returnValue`, all the objects is typed in the TS code.&#x20;
+You can access arguments in `orderTx.args` or `orderTx.argsObject`,  and result in `orderTx.returnValue`, all the objects is typed in the TS code. -->
 
 ## OnTransfer Handler
 
