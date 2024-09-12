@@ -6,9 +6,9 @@ hidden: false
 order: 4
 ---
 
-[Fuel](https://fuel.network/) support is in beta stage. Here is a simple example built for [spark.fi](https://app.sprk.fi).&#x20;
+[Fuel](https://fuel.network/) support is in beta stage. Here is a simple example built for [spark.fi](https://app.sprk.fi).
 
-[](https://github.com/sentioxyz/sentio-processors/tree/main/fuel/spark "@embed")
+[](https://github.com/sentioxyz/sentio-processors/tree/main/fuel/counter "@embed")
 
 Two important files:
 
