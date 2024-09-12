@@ -1,8 +1,10 @@
 import { EthChainId, EthChainInfo } from "@sentio/chain";
 import * as fs from "node:fs";
 
-let content = fs.readFileSync('supported-networks-header.md.template', 'utf8');
-const mainnetInfos = Object.values(EthChainInfo).sort((a, b) => a.name.localeCompare(b.name)).filter((info) => !info.name.includes("Testnet"));
+const whitelistTestnet = new Set([EthChainId.SONEIUM_TESTNET])
+
+let content = fs.readFileSync('./src/supported-networks-header.md.template', 'utf8');
+const mainnetInfos = Object.values(EthChainInfo).sort((a, b) => a.name.localeCompare(b.name)).filter((info) => !info.name.includes("Testnet") || whitelistTestnet.has(info.chainId) );
 
 const testChainMap = new Map<EthChainId, EthChainInfo[]>()
 for (const network of Object.values(EthChainInfo)) {
@@ -48,7 +50,7 @@ for (const network of mainnetInfos) {
 
 content = content.replace("${supported-evm}", supportedEvm)
 
-const template = fs.readFileSync('evm-chain-template.md.template', 'utf8');
+const template = fs.readFileSync('./src/evm-chain-template.md.template', 'utf8');
 
 let chainContents = ""
 for (const network of mainnetInfos) {
@@ -72,4 +74,4 @@ for (const network of mainnetInfos) {
 
 content = content.replace("${chain-content}", chainContents)
 
-fs.writeFileSync('../references/supported-networks.md', content)
+fs.writeFileSync('references/supported-networks.md', content)

@@ -15,8 +15,9 @@ Sentio charges usage via **Sentio Units**
   * [EVM calls](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block) involving the state.
   * [get table item](https://fullnode.devnet.aptoslabs.com/v1/spec#/operations/get\_table\_item) for Aptos
 * All above cost zero in [Backfill](#Backfill) stage
-* All visualizations cost zero sentio unit
-* Every Sentio API request costs **4000** Sentio Unit.
+* All visualizations cost zero Sentio Unit
+* Every Sentio GraphQL API request costs **100** Sentio Unit
+* Every Sentio SQL API request costs **1000** Sentio Units
 
 > ✅
 >
