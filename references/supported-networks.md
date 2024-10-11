@@ -103,7 +103,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 42161
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 42161
 ...
 npx @sentio/cli@latest upload
 ```
@@ -129,7 +129,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 592
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 592
 ...
 npx @sentio/cli@latest upload
 ```
@@ -155,7 +155,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 3776
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 3776
 ...
 npx @sentio/cli@latest upload
 ```
@@ -181,7 +181,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 1313161554
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 1313161554
 ...
 npx @sentio/cli@latest upload
 ```
@@ -207,7 +207,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 43114
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 43114
 ...
 npx @sentio/cli@latest upload
 ```
@@ -233,7 +233,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 223
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 223
 ...
 npx @sentio/cli@latest upload
 ```
@@ -259,7 +259,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 8453
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 8453
 ...
 npx @sentio/cli@latest upload
 ```
@@ -285,7 +285,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 11501
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 11501
 ...
 npx @sentio/cli@latest upload
 ```
@@ -311,7 +311,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 56
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 56
 ...
 npx @sentio/cli@latest upload
 ```
@@ -337,7 +337,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 200901
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 200901
 ...
 npx @sentio/cli@latest upload
 ```
@@ -363,7 +363,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 81457
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 81457
 ...
 npx @sentio/cli@latest upload
 ```
@@ -390,7 +390,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 168587773
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 168587773
 ...
 npx @sentio/cli@latest upload
 ```
@@ -416,7 +416,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 60808
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 60808
 ...
 npx @sentio/cli@latest upload
 ```
@@ -442,7 +442,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 88888
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 88888
 ...
 npx @sentio/cli@latest upload
 ```
@@ -468,7 +468,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 1030
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 1030
 ...
 npx @sentio/cli@latest upload
 ```
@@ -494,7 +494,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 25
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 25
 ...
 npx @sentio/cli@latest upload
 ```
@@ -521,7 +521,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 388
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 388
 ...
 npx @sentio/cli@latest upload
 ```
@@ -547,7 +547,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 1
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 1
 ...
 npx @sentio/cli@latest upload
 ```
@@ -574,7 +574,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 250
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 250
 ...
 npx @sentio/cli@latest upload
 ```
@@ -600,7 +600,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 252
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 252
 ...
 npx @sentio/cli@latest upload
 ```
@@ -626,7 +626,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 17000
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 17000
 ...
 npx @sentio/cli@latest upload
 ```
@@ -652,7 +652,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 321
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 321
 ...
 npx @sentio/cli@latest upload
 ```
@@ -678,7 +678,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 59144
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 59144
 ...
 npx @sentio/cli@latest upload
 ```
@@ -704,7 +704,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 957
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 957
 ...
 npx @sentio/cli@latest upload
 ```
@@ -730,7 +730,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 169
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 169
 ...
 npx @sentio/cli@latest upload
 ```
@@ -756,7 +756,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 5000
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 5000
 ...
 npx @sentio/cli@latest upload
 ```
@@ -782,7 +782,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 4200
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 4200
 ...
 npx @sentio/cli@latest upload
 ```
@@ -808,7 +808,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 1088
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 1088
 ...
 npx @sentio/cli@latest upload
 ```
@@ -834,7 +834,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 34443
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 34443
 ...
 npx @sentio/cli@latest upload
 ```
@@ -860,7 +860,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 1284
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 1284
 ...
 npx @sentio/cli@latest upload
 ```
@@ -886,7 +886,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 10
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 10
 ...
 npx @sentio/cli@latest upload
 ```
@@ -912,7 +912,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 137
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 137
 ...
 npx @sentio/cli@latest upload
 ```
@@ -938,7 +938,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 1101
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 1101
 ...
 npx @sentio/cli@latest upload
 ```
@@ -964,7 +964,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 534352
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 534352
 ...
 npx @sentio/cli@latest upload
 ```
@@ -990,7 +990,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 11155111
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 11155111
 ...
 npx @sentio/cli@latest upload
 ```
@@ -1017,7 +1017,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 1946
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 1946
 ...
 npx @sentio/cli@latest upload
 ```
@@ -1043,7 +1043,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 167000
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 167000
 ...
 npx @sentio/cli@latest upload
 ```
@@ -1070,7 +1070,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 196
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 196
 ...
 npx @sentio/cli@latest upload
 ```
@@ -1097,7 +1097,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 48900
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 48900
 ...
 npx @sentio/cli@latest upload
 ```
@@ -1124,7 +1124,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 810180
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 810180
 ...
 npx @sentio/cli@latest upload
 ```
@@ -1150,7 +1150,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type evm --chain-id 324
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 324
 ...
 npx @sentio/cli@latest upload
 ```
