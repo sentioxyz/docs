@@ -1,7 +1,7 @@
 import { EthChainId, EthChainInfo } from "@sentio/chain";
 import * as fs from "node:fs";
 
-const whitelistTestnet = new Set([EthChainId.SONEIUM_TESTNET])
+const whitelistTestnet = new Set([EthChainId.SONEIUM_TESTNET, EthChainId.SONIC_TESTNET])
 
 let content = fs.readFileSync('./src/supported-networks-header.md.template', 'utf8');
 const mainnetInfos = Object.values(EthChainInfo).sort((a, b) => a.name.localeCompare(b.name)).filter((info) => !info.name.includes("Testnet") || whitelistTestnet.has(info.chainId) );
@@ -54,7 +54,13 @@ const template = fs.readFileSync('./src/evm-chain-template.md.template', 'utf8')
 
 let chainContents = ""
 for (const network of mainnetInfos) {
-  let chainContent = template.replaceAll("${name}", network.name).replace(" Mainnet", "").replaceAll("${chainId}", network.chainId) + '\n';
+  let chainContent = template.replaceAll("${name}", network.name).replace(" Mainnet", "").replace(" Testnet", "").replaceAll("${chainId}", network.chainId) + '\n';
+  let notes = ""
+  if (whitelistTestnet.has(network.chainId)) {
+    notes = network.name.replace(" Testnet", "") + " support is currently for testnet only."
+  }
+  chainContent = chainContent.replace("${notes}", notes)
+
   const testChains = testChainMap.get(network.chainId)
 
 

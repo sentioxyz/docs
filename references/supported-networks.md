@@ -52,6 +52,7 @@ The supported network and its status are listed below, we are actively supportin
 | Scroll | ✓ | ✓ |  | ✓   | Real-time |
 | Sepolia | ✓ | ✓ |  |   | Real-time |
 | Soneium Testnet | ✓ | ✓ |  |   | Real-time |
+| Sonic Testnet | ✓ | ✓ |  |   | Real-time |
 | Taiko Mainnet | ✓ | ✓ |  |   | Real-time |
 | X Layer Mainnet | ✓ | ✓ |  | ✓   | Real-time |
 | Zircuit Mainnet | ✓ | ✓ |  |   | Real-time |
@@ -97,6 +98,7 @@ To quickly create single chain processor or subgraph, you can use the following 
 
 ### Arbitrum
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -122,6 +124,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### Astar
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -149,6 +152,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Astar zkEVM
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -174,6 +178,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### Auroa
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -201,6 +206,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Avalanche
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -226,6 +232,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### B2
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -253,6 +260,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Base
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -278,6 +286,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### BEVM
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -305,6 +314,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Binance
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -331,6 +341,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Bitlayer
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -356,6 +367,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### Blast
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -384,6 +396,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 >️ Testnet is available at chain id: 168587773 with limited capabilities.
 ### Blast
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -409,6 +422,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### Bob
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -436,6 +450,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Chiliz
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -462,6 +477,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Conflux eSpace
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -487,6 +503,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### Cronos
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -515,6 +532,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 >️ Testnet is available at chain id: 338.
 ### Cronos zkEVM
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -540,6 +558,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### Ethereum
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -568,6 +587,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 >️ Testnets are available at chain id: 17000, 11155111 with limited capabilities.
 ### Fantom Opera
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -593,6 +613,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### Fraxtal
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -620,6 +641,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Holesky
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -645,6 +667,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### KCC
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -672,6 +695,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Linea
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -697,6 +721,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### Lyra
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -724,6 +749,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Manta Pacific
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -749,6 +775,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### Mantle
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -776,6 +803,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Merlin
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -801,6 +829,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### Metis
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -828,6 +857,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Mode
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -853,6 +883,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### Moonbeam
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -880,6 +911,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Optimism
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -905,6 +937,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### Polygon
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -932,6 +965,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Polygon zkEVM
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -957,6 +991,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### Scroll
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -984,6 +1019,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Sepolia
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -1009,7 +1045,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### Soneium
-Currently support is for testnet only.
+Soneium support is currently for testnet only.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1035,7 +1071,35 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 </details>
 
+### Sonic
+Sonic support is currently for testnet only.
+
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
+
+<details>
+<summary>Create and upload an example Sentio processor</summary>
+
+```
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 64165
+...
+npx @sentio/cli@latest upload
+```
+
+</details>
+
+<details>
+<summary>Create and deploy an example Subgraph</summary>
+
+```
+npx @sentio/cli@latest graph create -n <project name> --chain-id 64165
+...
+npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
+```
+
+</details>
+
 ### Taiko
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1064,6 +1128,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 >️ Testnet is available at chain id: 167008.
 ### X Layer
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -1090,6 +1155,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 >️ Testnet is available at chain id: 195 with limited capabilities.
 ### Zircuit
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1118,6 +1184,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 >️ Testnet is available at chain id: 48899.
 ### zkLink Nova
 
+
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
 <details>
@@ -1143,6 +1210,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### zkSync Era
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
