@@ -57,7 +57,7 @@ for (const network of mainnetInfos) {
   let chainContent = template.replaceAll("${name}", network.name).replace(" Mainnet", "").replace(" Testnet", "").replaceAll("${chainId}", network.chainId) + '\n';
   let notes = ""
   if (whitelistTestnet.has(network.chainId)) {
-    notes = network.name.replace(" Testnet", "") + " support is currently for testnet only."
+    notes = "Currently support is for testnet only."
   }
   chainContent = chainContent.replace("${notes}", notes)
 

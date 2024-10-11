@@ -1045,7 +1045,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### Soneium
-Soneium support is currently for testnet only.
+Currently support is for testnet only.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1072,7 +1072,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### Sonic
-Sonic support is currently for testnet only.
+Currently support is for testnet only.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
