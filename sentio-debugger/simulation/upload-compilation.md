@@ -42,7 +42,7 @@ import "@sentio/hardhat-sentio"
 
 const config: HardhatUserConfig = {
   sentio: {
-     # optional, if emit, the verification is globally avaliable
+     # optional, if omit, the verification is globally avaliable
     project: "<user|org>/<project_name>"
   }
 }
