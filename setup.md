@@ -6,7 +6,7 @@ hidden: false
 
 ## Before you begin
 
-Sentio requires users to install [**node (v18+)**](https://nodejs.dev/en/) before uploading user code.
+Sentio requires users to install [**node (v22+)**](https://nodejs.dev/en/) before uploading user code.
 
 To install node, please follow the instructions [here](https://nodejs.dev/en/).
 

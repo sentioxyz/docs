@@ -45,7 +45,6 @@ If there are issues or problem can't be resolved in the doc, please contact us
 * [Telegram](https://t.me/sentioxyz)&#x20;
 * For the documentation issues, you can contact (Telegram:qiaokan@) directly.
 
-
 [block:html]
 {
   "html": "<div class=\"embed\"><a class=\"embed-link\" href=\"quickstart\"><div class=\"embed-body\"><small class=\"embed-provider\"><code style=\"font-family:var(--md-code-font, monospace)\">quickstart</code></small><div style=\"font-size: 15px\">Quickstart</div></div></a></div>"

@@ -5,6 +5,7 @@ slug: debug-and-simulation
 ---
 
 ## Debug API
+
 ### Get Indexed Call Trace
 
 API to get Sentio call trace. It takes `txId.txHash` and `networkId` arguments, where the first is transaction hash, and the second is the numeric ethereum chain ID. An example call looks like the following.
@@ -15,7 +16,7 @@ curl --header 'api-key: <API_KEY>' \
      --location 'https://app.sentio.xyz/api/v1/solidity/call_trace?txId.txHash=0x4564f9720643fcf54732172d1f29b9a5f16991ca5ae171307181851c37511089&#x26;networkId=1'
 ```
 
-The results looks very similar to the normal [Ethereum call trace](https://geth.ethereum.org/docs/developers/evm-tracing/built-in-tracers). But we have an additional `startIndex` and `startIndex` on each trace entry even for the LOG, representing the execution order in the trace.&#x20;
+The results looks very similar to the normal [Ethereum call trace](https://geth.ethereum.org/docs/developers/evm-tracing/built-in-tracers). But we have an additional `startIndex` and `startIndex` on each trace entry even for the LOG, representing the execution order in the trace.
 
 This allows you to build chart that marks the order of fund flow.
 
@@ -32,7 +33,9 @@ curl --header 'api-key: <API_KEY>' \
 An extra `withInternalCalls=true` parameter could be attach to fetch the decoded trace, which will give you the function info, decoded parameters of both external and internal call trace.
 
 ## Simulation API
+
 ### Create simulation
+
 #### Single Simulation
 
 The simulation body should be included in the request body. You can follow the example below.

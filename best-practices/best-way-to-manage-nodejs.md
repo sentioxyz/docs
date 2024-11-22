@@ -23,23 +23,17 @@ Then you can follow the instructions:
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
 
 > ℹ️
->
+> 
 > Make sure you restart the terminal or run `source ~/.zshrc`
-
 
 Then you can run this command to install node of a specific version
 
 ```bash
-nvm install 16
-nvm install 18
+nvm install 22
 ```
 
 If you have multiple versions, you can use this command to switch versions
 
 ```bash
-nvm use 18
-nvm use 16
+nvm use 22
 ```
-
-
-

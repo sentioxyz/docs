@@ -5,9 +5,8 @@ hidden: false
 ---
 
 > ℹ️
->
+> 
 > In this section, we will show you how to set up a simple project to monitor an ERC20 contract.
-
 
 ## Step 1: Create a Sentio Account
 
@@ -35,9 +34,8 @@ npx @sentio/cli@latest create <project name>
 The commands will generate a template project based on [X2Y2 token](https://github.com/X2Y2-io/x2y2-sdk). This should be a good starting point to write your own processor logic.  It is also possible to create template projects for other types of chains, please refer [CLI Reference](cli-reference#sentio-create).&#x20;
 
 > ℹ️
->
+> 
 > You can directly **modify the code (**`src/processor.ts`**)** to fit your use case as well.
-
 
 Sentio has a list of builtin ABIs. We also support custom ABIs for your own project. See [decoding-from-custom-abis](decoding-from-custom-abis "mention") for more details.&#x20;
 
