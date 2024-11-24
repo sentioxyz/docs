@@ -54,7 +54,7 @@ const template = fs.readFileSync('./src/evm-chain-template.md.template', 'utf8')
 
 let chainContents = ""
 for (const network of mainnetInfos) {
-  let chainContent = template.replaceAll("${name}", network.name).replace(" Mainnet", "").replace(" Testnet", "").replaceAll("${chainId}", network.chainId) + '\n';
+  let chainContent = template.replaceAll("${name}", network.name.replace(/ [^ ]+net$/, "")).replace(" Testnet", "").replaceAll("${chainId}", network.chainId) + '\n';
   let notes = ""
   if (whitelistTestnet.has(network.chainId)) {
     notes = "Currently support is for testnet only."
