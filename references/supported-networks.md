@@ -19,7 +19,7 @@ The supported network and its status are listed below, we are actively supportin
 | Arbitrum | ✓ | ✓ |  | ✓   | Real-time |
 | Astar | ✓ | ✓ | ✓  | ✓   | Real-time |
 | Astar zkEVM | ✓ | ✓ |  |   | Real-time |
-| Auroa | ✓ | ✓ |  |   | Real-time |
+| Aurora | ✓ | ✓ |  |   | Real-time |
 | Avalanche | ✓ | ✓ |  | ✓   | Real-time |
 | B2 Mainnet | ✓ | ✓ |  |   | Real-time |
 | Base | ✓ | ✓ |  | ✓   | Real-time |
@@ -34,23 +34,26 @@ The supported network and its status are listed below, we are actively supportin
 | Corn Maizenet | ✓ | ✓ |  |   | Real-time |
 | Cronos Mainnet | ✓ | ✓ |  |   | Real-time |
 | Cronos zkEVM | ✓ | ✓ |  |   | Real-time |
+| Dervie Mainnet | ✓ | ✓ |  |   | Real-time |
 | Ethereum | ✓ | ✓ | ✓  | ✓   | Real-time |
 | Fantom Opera | ✓ | ✓ |  |   | Real-time |
 | Fraxtal Mainnet | ✓ | ✓ |  |   | Real-time |
 | Holesky | ✓ | ✓ |  |   | Real-time |
+| Karak Mainnet | ✓ | ✓ |  |   | Real-time |
 | KCC Mainnet | ✓ | ✓ |  |   | Real-time |
 | Linea | ✓ | ✓ | ✓  | ✓   | Real-time |
-| Lyra | ✓ | ✓ |  |   | Real-time |
 | Manta Pacific | ✓ | ✓ |  |   | Real-time |
 | Mantle | ✓ | ✓ |  |   | Real-time |
 | Merlin Mainnet | ✓ | ✓ |  |   | Real-time |
 | Metis | ✓ | ✓ |  |   | Real-time |
 | Mode Mainnet | ✓ | ✓ |  |   | Real-time |
 | Moonbeam | ✓ | ✓ | ✓  | ✓   | Real-time |
+| opBNB Mainnet | ✓ | ✓ |  |   | Real-time |
 | Optimism Mainnet | ✓ | ✓ |  |   | Real-time |
 | Polygon | ✓ | ✓ | ✓  | ✓   | Real-time |
 | Polygon zkEVM | ✓ | ✓ |  |   | Real-time |
 | Scroll | ✓ | ✓ |  | ✓   | Real-time |
+| Sei Mainnet | ✓ | ✓ |  |   | Real-time |
 | Sepolia | ✓ | ✓ |  |   | Real-time |
 | Soneium Testnet | ✓ | ✓ |  |   | Real-time |
 | Sonic Testnet | ✓ | ✓ |  |   | Real-time |
@@ -179,7 +182,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 </details>
 
-### Auroa
+### Aurora
 
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
@@ -586,6 +589,33 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 </details>
 
+### Dervie
+
+
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
+
+<details>
+<summary>Create and upload an example Sentio processor</summary>
+
+```
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 957
+...
+npx @sentio/cli@latest upload
+```
+
+</details>
+
+<details>
+<summary>Create and deploy an example Subgraph</summary>
+
+```
+npx @sentio/cli@latest graph create -n <project name> --chain-id 957
+...
+npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
+```
+
+</details>
+
 ### Ethereum
 
 
@@ -695,6 +725,33 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 </details>
 
+### Karak
+
+
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
+
+<details>
+<summary>Create and upload an example Sentio processor</summary>
+
+```
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 2410
+...
+npx @sentio/cli@latest upload
+```
+
+</details>
+
+<details>
+<summary>Create and deploy an example Subgraph</summary>
+
+```
+npx @sentio/cli@latest graph create -n <project name> --chain-id 2410
+...
+npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
+```
+
+</details>
+
 ### KCC
 
 
@@ -743,33 +800,6 @@ npx @sentio/cli@latest upload
 
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 59144
-...
-npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-```
-
-</details>
-
-### Lyra
-
-
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
-
-<details>
-<summary>Create and upload an example Sentio processor</summary>
-
-```
-npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 957
-...
-npx @sentio/cli@latest upload
-```
-
-</details>
-
-<details>
-<summary>Create and deploy an example Subgraph</summary>
-
-```
-npx @sentio/cli@latest graph create -n <project name> --chain-id 957
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
@@ -938,6 +968,33 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 </details>
 
+### opBNB
+
+
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
+
+<details>
+<summary>Create and upload an example Sentio processor</summary>
+
+```
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 204
+...
+npx @sentio/cli@latest upload
+```
+
+</details>
+
+<details>
+<summary>Create and deploy an example Subgraph</summary>
+
+```
+npx @sentio/cli@latest graph create -n <project name> --chain-id 204
+...
+npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
+```
+
+</details>
+
 ### Optimism
 
 
@@ -1040,6 +1097,33 @@ npx @sentio/cli@latest upload
 
 ```
 npx @sentio/cli@latest graph create -n <project name> --chain-id 534352
+...
+npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
+```
+
+</details>
+
+### Sei
+
+
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
+
+<details>
+<summary>Create and upload an example Sentio processor</summary>
+
+```
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 1329
+...
+npx @sentio/cli@latest upload
+```
+
+</details>
+
+<details>
+<summary>Create and deploy an example Subgraph</summary>
+
+```
+npx @sentio/cli@latest graph create -n <project name> --chain-id 1329
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
