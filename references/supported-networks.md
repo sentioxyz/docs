@@ -57,6 +57,7 @@ The supported network and its status are listed below, we are actively supportin
 | Sepolia | ✓ | ✓ |  |   | Real-time |
 | Soneium Testnet | ✓ | ✓ |  |   | Real-time |
 | Sonic Testnet | ✓ | ✓ |  |   | Real-time |
+| Swell Mainnet | ✓ | ✓ |  |   | Real-time |
 | Taiko Mainnet | ✓ | ✓ |  |   | Real-time |
 | Unchain Sepolia | ✓ | ✓ |  |   | Real-time |
 | X Layer Mainnet | ✓ | ✓ |  | ✓   | Real-time |
@@ -1211,6 +1212,34 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 </details>
 
+### Swell
+
+
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
+
+<details>
+<summary>Create and upload an example Sentio processor</summary>
+
+```
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 1923
+...
+npx @sentio/cli@latest upload
+```
+
+</details>
+
+<details>
+<summary>Create and deploy an example Subgraph</summary>
+
+```
+npx @sentio/cli@latest graph create -n <project name> --chain-id 1923
+...
+npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
+```
+
+</details>
+
+>️ Testnet is available at chain id: 1924.
 ### Taiko
 
 
