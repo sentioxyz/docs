@@ -14,56 +14,56 @@ The supported network and its status are listed below, we are actively supportin
 
 ## EVM Chains
 
-|Chain	| Events	| Archive RPCs |	Traces	| Debugger |	Data Staleness|
-|-------|---------|--------------|---------|----------|----------------|
-| Arbitrum | ✓ | ✓ |  | ✓   | Real-time |
-| Astar | ✓ | ✓ | ✓  | ✓   | Real-time |
-| Astar zkEVM | ✓ | ✓ |  |   | Real-time |
-| Aurora | ✓ | ✓ |  |   | Real-time |
-| Avalanche | ✓ | ✓ |  | ✓   | Real-time |
-| B2 Mainnet | ✓ | ✓ |  |   | Real-time |
-| Base | ✓ | ✓ |  | ✓   | Real-time |
-| BEVM | ✓ | ✓ |  |   | Real-time |
-| Binance | ✓ | ✓ |  | ✓   | Real-time |
-| Bitlayer Mainnet | ✓ | ✓ |  |   | Real-time |
-| Blast Mainnet | ✓ | ✓ |  | ✓   | Real-time |
-| Blast Mainnet | ✓ | ✓ |  |   | Real-time |
-| Bob Mainnet | ✓ | ✓ |  |   | Real-time |
-| Chiliz | ✓ | ✓ |  |   | Real-time |
-| Conflux eSpace | ✓ | ✓ |  |   | Real-time |
-| Corn Maizenet | ✓ | ✓ |  |   | Real-time |
-| Cronos Mainnet | ✓ | ✓ |  |   | Real-time |
-| Cronos zkEVM | ✓ | ✓ |  |   | Real-time |
-| Dervie Mainnet | ✓ | ✓ |  |   | Real-time |
-| Ethereum | ✓ | ✓ | ✓  | ✓   | Real-time |
-| Fantom Opera | ✓ | ✓ |  |   | Real-time |
-| Fraxtal Mainnet | ✓ | ✓ |  |   | Real-time |
-| Holesky | ✓ | ✓ |  |   | Real-time |
-| Karak Mainnet | ✓ | ✓ |  |   | Real-time |
-| KCC Mainnet | ✓ | ✓ |  |   | Real-time |
-| Linea | ✓ | ✓ | ✓  | ✓   | Real-time |
-| Manta Pacific | ✓ | ✓ |  |   | Real-time |
-| Mantle | ✓ | ✓ |  |   | Real-time |
-| Merlin Mainnet | ✓ | ✓ |  |   | Real-time |
-| Metis | ✓ | ✓ |  |   | Real-time |
-| Mode Mainnet | ✓ | ✓ |  |   | Real-time |
-| Moonbeam | ✓ | ✓ | ✓  | ✓   | Real-time |
-| opBNB Mainnet | ✓ | ✓ |  |   | Real-time |
-| Optimism Mainnet | ✓ | ✓ |  |   | Real-time |
-| Polygon | ✓ | ✓ | ✓  | ✓   | Real-time |
-| Polygon zkEVM | ✓ | ✓ |  |   | Real-time |
-| Scroll | ✓ | ✓ |  | ✓   | Real-time |
-| Sei Mainnet | ✓ | ✓ |  |   | Real-time |
-| Sepolia | ✓ | ✓ |  |   | Real-time |
-| Soneium Testnet | ✓ | ✓ |  |   | Real-time |
-| Sonic Testnet | ✓ | ✓ |  |   | Real-time |
-| Swell Mainnet | ✓ | ✓ |  |   | Real-time |
-| Taiko Mainnet | ✓ | ✓ |  |   | Real-time |
-| Unchain Sepolia | ✓ | ✓ |  |   | Real-time |
-| X Layer Mainnet | ✓ | ✓ |  | ✓   | Real-time |
-| Zircuit Mainnet | ✓ | ✓ |  |   | Real-time |
-| zkLink Nova | ✓ | ✓ |  |   | Real-time |
-| zkSync Era | ✓ | ✓ |  |   | Real-time |
+|Chain	| ID| Slug |Events	| Archive RPCs |	Traces	| Debugger |	Data Staleness|
+|-------|--|--|---------|--------------|---------|----------|----------------|
+| Arbitrum | `42161` | `arbitrum-one`  | ✓ | ✓ |  | ✓   | Real-time |
+| Astar | `592` | `astar`  | ✓ | ✓ | ✓  | ✓   | Real-time |
+| Astar zkEVM | `3776` | `astar-zkevm`  | ✓ | ✓ |  |   | Real-time |
+| Aurora | `1313161554` | `aurora`  | ✓ | ✓ |  |   | Real-time |
+| Avalanche | `43114` | `avalanche`  | ✓ | ✓ |  | ✓   | Real-time |
+| B2 Mainnet | `223` | `b2-mainnet`  | ✓ | ✓ |  |   | Real-time |
+| Base | `8453` | `base`  | ✓ | ✓ |  | ✓   | Real-time |
+| BEVM | `11501` | `bevm`  | ✓ | ✓ |  |   | Real-time |
+| Binance | `56` | `bsc`  | ✓ | ✓ |  | ✓   | Real-time |
+| Bitlayer Mainnet | `200901` | `bitlayer`  | ✓ | ✓ |  |   | Real-time |
+| Blast Mainnet | `81457` | `blast-mainnet`  | ✓ | ✓ |  | ✓   | Real-time |
+| Blast Mainnet | `168587773` | `blast-testnet`  | ✓ | ✓ |  |   | Real-time |
+| Bob Mainnet | `60808` | `bob`  | ✓ | ✓ |  |   | Real-time |
+| Chiliz | `88888` | `chiliz`  | ✓ | ✓ |  |   | Real-time |
+| Conflux eSpace | `1030` | `conflux-espace`  | ✓ | ✓ |  |   | Real-time |
+| Corn Maizenet | `21000000` | `corn-maizenet`  | ✓ | ✓ |  |   | Real-time |
+| Cronos Mainnet | `25` | `cronos`  | ✓ | ✓ |  |   | Real-time |
+| Cronos zkEVM | `388` | `cronos-zkevm`  | ✓ | ✓ |  |   | Real-time |
+| Dervie Mainnet | `957` | `derive-mainnet`  | ✓ | ✓ |  |   | Real-time |
+| Ethereum | `1` | `mainnet`  | ✓ | ✓ | ✓  | ✓   | Real-time |
+| Fantom Opera | `250` | `fantom`  | ✓ | ✓ |  |   | Real-time |
+| Fraxtal Mainnet | `252` | `frax-mainnet`  | ✓ | ✓ |  |   | Real-time |
+| Holesky | `17000` | `holesky`  | ✓ | ✓ |  |   | Real-time |
+| Karak Mainnet | `2410` | `karak-mainnet`  | ✓ | ✓ |  |   | Real-time |
+| KCC Mainnet | `321` | `kucoin`  | ✓ | ✓ |  |   | Real-time |
+| Linea | `59144` | `linea`  | ✓ | ✓ | ✓  | ✓   | Real-time |
+| Manta Pacific | `169` | `manta-pacific-mainnet`  | ✓ | ✓ |  |   | Real-time |
+| Mantle | `5000` | `mantle`  | ✓ | ✓ |  |   | Real-time |
+| Merlin Mainnet | `4200` | `merlin`  | ✓ | ✓ |  |   | Real-time |
+| Metis | `1088` | `metis`  | ✓ | ✓ |  |   | Real-time |
+| Mode Mainnet | `34443` | `mode-mainnet`  | ✓ | ✓ |  |   | Real-time |
+| Moonbeam | `1284` | `moonbeam`  | ✓ | ✓ | ✓  | ✓   | Real-time |
+| opBNB Mainnet | `204` | `opbnb`  | ✓ | ✓ |  |   | Real-time |
+| Optimism Mainnet | `10` | `optimism`  | ✓ | ✓ |  |   | Real-time |
+| Polygon | `137` | `matic`  | ✓ | ✓ | ✓  | ✓   | Real-time |
+| Polygon zkEVM | `1101` | `polygon-zkevm`  | ✓ | ✓ |  |   | Real-time |
+| Scroll | `534352` | `scroll`  | ✓ | ✓ |  | ✓   | Real-time |
+| Sei Mainnet | `1329` | `sei`  | ✓ | ✓ |  |   | Real-time |
+| Sepolia | `11155111` | `sepolia`  | ✓ | ✓ |  |   | Real-time |
+| Soneium Testnet | `1946` | `soneium-minato`  | ✓ | ✓ |  |   | Real-time |
+| Sonic Testnet | `64165` | `sonic-testnet`  | ✓ | ✓ |  |   | Real-time |
+| Swell Mainnet | `1923` | `swell-mainnet`  | ✓ | ✓ |  |   | Real-time |
+| Taiko Mainnet | `167000` | `taiko`  | ✓ | ✓ |  |   | Real-time |
+| Unchain Sepolia | `1301` | `unchain-sepolia`  | ✓ | ✓ |  |   | Real-time |
+| X Layer Mainnet | `196` | `xlayer-mainnet`  | ✓ | ✓ |  | ✓   | Real-time |
+| Zircuit Mainnet | `48900` | `zircuit`  | ✓ | ✓ |  |   | Real-time |
+| zkLink Nova | `810180` | `zklink-nova`  | ✓ | ✓ |  |   | Real-time |
+| zkSync Era | `324` | `zksync-era`  | ✓ | ✓ |  |   | Real-time |
 
 
 More on [EVM](evm-chains)

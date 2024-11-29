@@ -14,8 +14,8 @@ The supported network and its status are listed below, we are actively supportin
 
 ## EVM Chains
 
-|Chain	| Events	| Archive RPCs |	Traces	| Debugger |	Data Staleness|
-|-------|---------|--------------|---------|----------|----------------|
+|Chain	| ID| Slug |Events	| Archive RPCs |	Traces	| Debugger |	Data Staleness|
+|-------|--|--|---------|--------------|---------|----------|----------------|
 ${supported-evm}
 
 More on [EVM](evm-chains)

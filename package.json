@@ -2,16 +2,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "gen": "tsx src/gen-supported-networks.ts"
+    "gen": "pnpm upgrade @sentio/chain && tsx src/gen-supported-networks.ts"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
     "@eslint/compat": "^1.1.0",
     "@eslint/eslintrc": "^3.1.0",
     "@eslint/js": "^9.6.0",
+    "@sentio/chain": "^2.2.2",
+    "@types/node": "^20.0.0",
     "@typescript-eslint/eslint-plugin": "^7.13.1",
     "@typescript-eslint/parser": "^7.13.1",
-    "@sentio/chain": "^2.2.1",
     "eslint": "^9.6.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-import-resolver-typescript": "^3.6.1",
