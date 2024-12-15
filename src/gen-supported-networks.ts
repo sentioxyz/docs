@@ -1,7 +1,7 @@
 import { EthChainId, EthChainInfo } from "@sentio/chain";
 import * as fs from "node:fs";
 
-const whitelistTestnet = new Set([EthChainId.SONEIUM_TESTNET, EthChainId.SONIC_TESTNET])
+const whitelistTestnet = new Set([EthChainId.TAC_TESTNET])
 
 let content = fs.readFileSync('./src/supported-networks-header.md.template', 'utf8');
 const mainnetInfos = Object.values(EthChainInfo).sort((a, b) => a.name.localeCompare(b.name)).filter((info) => !info.name.includes("Testnet") || whitelistTestnet.has(info.chainId) );

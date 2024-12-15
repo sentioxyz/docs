@@ -34,7 +34,7 @@ The supported network and its status are listed below, we are actively supportin
 | Corn Maizenet | `21000000` | `corn-maizenet`  | ✓ | ✓ |  |   | Real-time |
 | Cronos Mainnet | `25` | `cronos`  | ✓ | ✓ |  |   | Real-time |
 | Cronos zkEVM | `388` | `cronos-zkevm`  | ✓ | ✓ |  |   | Real-time |
-| Dervie Mainnet | `957` | `derive-mainnet`  | ✓ | ✓ |  |   | Real-time |
+| Derive Mainnet | `957` | `derive-mainnet`  | ✓ | ✓ |  |   | Real-time |
 | Ethereum | `1` | `mainnet`  | ✓ | ✓ | ✓  | ✓   | Real-time |
 | Fantom Opera | `250` | `fantom`  | ✓ | ✓ |  |   | Real-time |
 | Fraxtal Mainnet | `252` | `frax-mainnet`  | ✓ | ✓ |  |   | Real-time |
@@ -55,11 +55,12 @@ The supported network and its status are listed below, we are actively supportin
 | Scroll | `534352` | `scroll`  | ✓ | ✓ |  | ✓   | Real-time |
 | Sei Mainnet | `1329` | `sei`  | ✓ | ✓ |  |   | Real-time |
 | Sepolia | `11155111` | `sepolia`  | ✓ | ✓ |  |   | Real-time |
-| Soneium Testnet | `1946` | `soneium-minato`  | ✓ | ✓ |  |   | Real-time |
-| Sonic Testnet | `64165` | `sonic-testnet`  | ✓ | ✓ |  |   | Real-time |
+| Soneium Mainnet | `1868` | `soneium-mainnet`  | ✓ | ✓ |  |   | Real-time |
+| Sonic Mainnet | `146` | `sonic-mainnet`  | ✓ | ✓ |  |   | Real-time |
 | Swell Mainnet | `1923` | `swell-mainnet`  | ✓ | ✓ |  |   | Real-time |
+| TAC Testnet | `2390` | `tac-testnet`  | ✓ | ✓ |  |   | Real-time |
 | Taiko Mainnet | `167000` | `taiko`  | ✓ | ✓ |  |   | Real-time |
-| Unchain Sepolia | `1301` | `unchain-sepolia`  | ✓ | ✓ |  |   | Real-time |
+| Unichain Sepolia | `1301` | `unichain-sepolia`  | ✓ | ✓ |  |   | Real-time |
 | X Layer Mainnet | `196` | `xlayer-mainnet`  | ✓ | ✓ |  | ✓   | Real-time |
 | Zircuit Mainnet | `48900` | `zircuit`  | ✓ | ✓ |  |   | Real-time |
 | zkLink Nova | `810180` | `zklink-nova`  | ✓ | ✓ |  |   | Real-time |
@@ -590,7 +591,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 </details>
 
-### Dervie
+### Derive
 
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
@@ -1159,7 +1160,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 ### Soneium
-Currently support is for testnet only.
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1167,7 +1168,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 1946
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 1868
 ...
 npx @sentio/cli@latest upload
 ```
@@ -1178,15 +1179,16 @@ npx @sentio/cli@latest upload
 <summary>Create and deploy an example Subgraph</summary>
 
 ```
-npx @sentio/cli@latest graph create -n <project name> --chain-id 1946
+npx @sentio/cli@latest graph create -n <project name> --chain-id 1868
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
 </details>
 
+>️ Testnet is available at chain id: 1946.
 ### Sonic
-Currently support is for testnet only.
+
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1194,7 +1196,7 @@ Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexe
 <summary>Create and upload an example Sentio processor</summary>
 
 ```
-npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 64165
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 146
 ...
 npx @sentio/cli@latest upload
 ```
@@ -1205,13 +1207,14 @@ npx @sentio/cli@latest upload
 <summary>Create and deploy an example Subgraph</summary>
 
 ```
-npx @sentio/cli@latest graph create -n <project name> --chain-id 64165
+npx @sentio/cli@latest graph create -n <project name> --chain-id 146
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
 </details>
 
+>️ Testnet is available at chain id: 222.
 ### Swell
 
 
@@ -1240,6 +1243,33 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 >️ Testnet is available at chain id: 1924.
+### TAC
+Currently support is for testnet only.
+
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
+
+<details>
+<summary>Create and upload an example Sentio processor</summary>
+
+```
+npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 2390
+...
+npx @sentio/cli@latest upload
+```
+
+</details>
+
+<details>
+<summary>Create and deploy an example Subgraph</summary>
+
+```
+npx @sentio/cli@latest graph create -n <project name> --chain-id 2390
+...
+npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
+```
+
+</details>
+
 ### Taiko
 
 
@@ -1268,7 +1298,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 >️ Testnet is available at chain id: 167008.
-### Unchain Sepolia
+### Unichain Sepolia
 
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
