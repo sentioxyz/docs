@@ -5,7 +5,7 @@ parentDocSlug: sdk-guide
 hidden: false
 ---
 
-You can find the general entity definition in [entities](metentitiesrics "mention")
+You can find the general entity definition in [entities](metentitientitiesesrics "mention")
 
 ## Accessing Data in Processor
 After defining the schema, you can use `sentio build` to generate the TypeScript types for the schema. The generated files is located in the `src/schema` directory. The following is an example of the generated types:

@@ -1214,7 +1214,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 </details>
 
->️ Testnet is available at chain id: 222.
+>️ Testnet is available at chain id: 57054.
 ### Swell
 
 
