@@ -17,6 +17,12 @@ Then upload your graph to this project with:
 npx @sentio/cli graph deploy --owner $PROJECT_OWNER --name $PROJECT_NAME
 ```
 
+If you want to hot swap a running processor version without re-indexing old data, run:
+
+```
+npx @sentio/cli graph deploy --owner $PROJECT_OWNER --name $PROJECT_NAME --continue-from=<old version>
+```
+
 Once it get uploaded, use [data-source](data-source "mention") page to view progress. And use data studio to access either GraphQL or SQL.
 
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (1).png" alt="" width="563"><figcaption></figcaption></figure>
