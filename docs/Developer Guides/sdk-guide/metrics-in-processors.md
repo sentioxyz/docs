@@ -14,7 +14,7 @@ You can find the general metrics definition in [metrics](metrics "mention")
 
 ## Submitting Metrics
 
-The simplest way to submit a metric is to call `ctx.meter` inside handler function, e.g.&#x20;
+The simplest way to submit a metric is to call `ctx.meter` inside handler function, e.g. 
 
 ```typescript
 async function handleTransfer(event: TransferEvent, ctx: ERC20Context) {
@@ -30,7 +30,7 @@ A metric name could contain characters, digits or `_`, any other characters will
 
 `Labels` is a map of key to string values, the key name follows the same rule as the metric name, and any reserved keywords will be appended with `_` .
 
-The simplest way to submit a metric is to call `ctx.meter` inside handler function, e.g.&#x20;
+The simplest way to submit a metric is to call `ctx.meter` inside handler function, e.g. 
 
 ```typescript
 async function handleTransfer(event: TransferEvent, ctx: ERC20Context) {
@@ -50,8 +50,7 @@ This submits TVL with **symbol** being used as a tag.
 
 > ℹ️
 >
-> Assuming there are **N** symbols, **M** bridges and **K** coin types, the total number of series generated could be as large as **N \* M \* K** (but won't exceed the total number of points submitted). Read [avoid-high-cardinality](avoid-high-cardinality "mention")for more details.
-
+> Assuming there are **N** symbols, **M** bridges and **K** coin types, the total number of series generated could be as large as **N\* M \* K** (but won't exceed the total number of points submitted). Read [avoid-high-cardinality](avoid-high-cardinality "mention")for more details.
 
 ## Descriptor
 
@@ -65,7 +64,7 @@ const tokenCount = Counter.register(
   })
 ```
 
-and then use them as&#x20;
+and then use them as 
 
 ```typescript
 async function handleTransfer(event: TransferEvent, ctx: ERC20Context) {
