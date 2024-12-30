@@ -12,7 +12,7 @@ next:
 ---
 ## Event
 
-Events are defined with the _event_ keyword in EVM smart contracts. When the defined event is called, the event is emitted. Here is [an example](https://github.com/Uniswap/v3-core/blob/main/contracts/UniswapV3Pool.sol#L786) of emitting one of the Uniswap Events.
+Events are defined with the *event* keyword in EVM smart contracts. When the defined event is called, the event is emitted. Here is [an example](https://github.com/Uniswap/v3-core/blob/main/contracts/UniswapV3Pool.sol#L786) of emitting one of the Uniswap Events.
 
 ```solidity
 emit Swap(msg.sender, recipient, amount0, amount1, state.sqrtPriceX96, state.liquidity, state.tick);
@@ -23,8 +23,6 @@ Sentio allows users to trigger processor for a specific set of events
 ## Block
 
 Blocks are batches of transactions with a hash of the previous block in the chain. This links blocks together (in a chain) because hashes are cryptographically derived from the block data.
-
-
 
 Sentio allows users to trigger processor for every sampled blocks.
 
