@@ -2,3 +2,4 @@
 - createfork
 - getcalltraceonforkbundle
 - simulatetransactiononfork
+- getcalltraceonforksimulation
