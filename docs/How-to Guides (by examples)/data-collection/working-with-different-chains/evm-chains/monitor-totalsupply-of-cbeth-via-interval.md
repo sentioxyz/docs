@@ -32,7 +32,6 @@ StakedTokenV1Processor.bind({address: CBETH_PROXY})
     .onTimeInterval(blockHandler)
 ```
 
-
 Here, you could see
 
 * The `totalSupply` can be accessed by calling `ctx.contract.totalSupply()`
