@@ -120,13 +120,31 @@ Similar to object processor, you have use [`SuiAddressProcessor`](\[https://sdk.
 
 ### Object type processor
 
-If you want to handle all objects that has the same type instead of single object, use \[`SuiObjectTypeProcessor.onTimeInterval`](https://sdk.sentio.xyz/classes/sui.SuiObjectTypeProcessor.html#ontimeinterval))
+If you want to handle all objects that has the same type instead of single object, use [`SuiObjectTypeProcessor.onTimeInterval`](https://sdk.sentio.xyz/classes/sui.SuiObjectTypeProcessor.html#ontimeinterval)
 
-```
-import { sui_system, validator, staking_pool } from '@sentio/sdk/sui/builtin/0x3'
+```typescript
+import { staking_pool } from '@sentio/sdk/sui/builtin/0x3'
 
 SuiObjectTypeProcessor.bind({
   objectType: staking_pool.StakedSui.type()
 })
+  .onTimeInterval(
+    (self, objects, ctx) => {
+      ctx.meter.Gauge('voting_power').record(self.data_decoded.principal, { pool: self.data_decoded.pool_id })
+    },
+    60,
+    60 * 24 * 30
+  )
 
+```
+
+If you want to handle all object changes for certain object type, use [`SuiObjectTypeProcessor.onObjectChange`](https://sdk.sentio.xyz/classes/sui.SuiObjectTypeProcessor.html#onobjectchange)
+
+```typescript
+SuiObjectTypeProcessor.bind({
+  objectType: staking_pool.StakedSui.type()
+})
+  .onObjectChange((changes, ctx) => {
+    ctx.meter.Counter('updates').add(changes.length)
+  })
 ```
