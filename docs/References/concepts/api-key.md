@@ -13,7 +13,7 @@ next:
 Click the profile page on the **left bottom corner** and then create an [API key](https://app.sentio.xyz/profile/apikeys).
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/apikey.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/apikey.gif" alt="" />
   <figcaption>
     <p>Obtain API Key</p>
   </figcaption>

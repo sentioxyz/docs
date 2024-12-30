@@ -15,14 +15,14 @@ The logs are available from Sentio UI. It contains all the Deposit Event we subm
 If you'd like to do a range search on Amount between **1000 and 10000** submitted from [#submit-attributes](submitting-event-logs#submit-attributes "mention"), you could easily do this from the UI:
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/searchlogs.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/searchlogs.gif" alt="" />
   <figcaption></figcaption>
 </figure>
 
 If you'd like to search for all the swaps from USDC, you can do full text search:
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/fulltext (2).gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/fulltext (2).gif" alt="" />
   <figcaption></figcaption>
 </figure>
 

@@ -15,7 +15,7 @@ Event Analytics Dashboard is used to visualize data submitted by [logs-in-proces
 Here is one example we make a dashboard for **Accumulative Unique Users**
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/AAU.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/AAU.gif" alt="" />
   <figcaption></figcaption>
 </figure>
 

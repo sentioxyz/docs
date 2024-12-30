@@ -37,7 +37,7 @@ To access Sentio Code Workspace, navigate through:\
 2. The system will initiate a new workspace, and the workspace status on the left will display **Starting**.  
 3. After a few moments, the status will update to **Running** (see Screenshot below).
    <figure>
-     <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/Sentio_Workspace_Running.png" alt="" />
+     <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/Sentio_Workspace_Running.png" alt="" />
      <figcaption><p>Running Workspace</p></figcaption>
    </figure>
 
@@ -71,7 +71,7 @@ To access Sentio Code Workspace, navigate through:\
 
 1. Each workspace has a default lifespan of **24 hours**. Once the time limit is reached, the workspace will automatically stop, with the **Workspace Status** changing to **Stopped** (see Screenshot below).
    <figure>
-     <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/Sentio_Workspace_Stopped.png" alt="" />
+     <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/Sentio_Workspace_Stopped.png" alt="" />
      <figcaption><p>Stopped Workspace</p></figcaption>
    </figure>
 2. To restart, click **Restart** on the right side of the workspace panel.

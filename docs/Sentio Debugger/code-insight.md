@@ -17,7 +17,7 @@ Sentio makes the debugging and contract reading experience smoother by fully ana
 You can navigate from a code usage to code definition with the "Go to Definition" button or use `cmd/ctrl`+ `left click`, or list all the usages for a definition within the contract.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (34).png" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (34).png" alt="" />
   <figcaption></figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ You can navigate from a code usage to code definition with the "Go to Definition
 For external functions, you can use "Related Transaction" to search transactions that involves this call.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (37).png" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (37).png" alt="" />
   <figcaption></figcaption>
 </figure>
 
@@ -35,6 +35,6 @@ For external functions, you can use "Related Transaction" to search transactions
 Sentio can show the solidity symbol structure, click any of the symbol on the left side will bring you to the actual code definition place.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (36).png" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (36).png" alt="" />
   <figcaption></figcaption>
 </figure>

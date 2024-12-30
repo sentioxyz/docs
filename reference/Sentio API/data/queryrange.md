@@ -5,7 +5,7 @@ excerpt: >-
   insight chart, and then **Export as cURL**.
 
 
-  ![screenshot](https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image%20(101).png)
+  ![screenshot](https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image%20(101).png)
 api:
   file: sentio-api.json
   operationId: QueryRange

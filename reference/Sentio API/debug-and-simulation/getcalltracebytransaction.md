@@ -7,7 +7,7 @@ excerpt: >-
 
 
   The results looks very similar to the normal [Ethereum call
-  trace](https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image%20(2)%20(1)%20(1)%20(1).png).
+  trace](https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image%20(2)%20(1)%20(1)%20(1).png).
   But we have an additional `startIndex` and `startIndex` on each trace entry
   even for the LOG, representing the execution order in the trace.
 
@@ -15,7 +15,7 @@ excerpt: >-
   This allows you to build chart that marks the order of fund flow.
 
 
-  ![screenshot](https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image%20(2)%20(1)%20(1)%20(1).png)
+  ![screenshot](https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image%20(2)%20(1)%20(1)%20(1).png)
 api:
   file: sentio-api.json
   operationId: GetCallTraceByTransaction

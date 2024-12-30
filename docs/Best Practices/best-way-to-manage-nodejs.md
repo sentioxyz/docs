@@ -27,7 +27,7 @@ brew install nvm
 Then you can follow the instructions:
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (31) (1).png" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (31) (1).png" alt="" />
   <figcaption></figcaption>
 </figure>
 

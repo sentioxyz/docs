@@ -22,12 +22,12 @@ Metrics that are not reported in the last 24 hours do not appear in the query ed
 
 There are 5 types of charts
 
-![](https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image%20(5)%20(4).png)
+![](https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image%20(5)%20(4).png)
 
 You can select them on the UI
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/charts.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/charts.gif" alt="" />
   <figcaption></figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ These 3 are very similar. The only difference is the visual. It still represent 
 These 4 **reduce** **One** time series to **One** single number. Using this option below:
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/reduce.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/reduce.gif" alt="" />
   <figcaption></figcaption>
 </figure>
 
@@ -49,14 +49,14 @@ These 4 **reduce** **One** time series to **One** single number. Using this opti
 There are generally 2 ways to select time range. One is using **Time picker**
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/timepicker.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/timepicker.gif" alt="" />
   <figcaption></figcaption>
 </figure>
 
 The other approach is to directly select from graph, you can use standard browser forward/backward to control the range selected.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/selecrange.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/selecrange.gif" alt="" />
   <figcaption></figcaption>
 </figure>
 
@@ -65,6 +65,6 @@ The other approach is to directly select from graph, you can use standard browse
 Define a filtering scope with the **from** text box by selecting or searching for tag values. For example, you can use the **from** text box to filter metric values from a specific **address, contract** or any other custom labels defined in the processor
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image%20(26).png" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image%20(26).png" alt="" />
   <figcaption></figcaption>
 </figure>

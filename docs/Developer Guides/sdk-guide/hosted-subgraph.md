@@ -15,7 +15,7 @@ In addition to Sentio processor, Sentio is also compatible Subgraph, while Senti
 To create a Subgraph, first create a project and choose Subgraph as project type.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (99).png" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (99).png" alt="" />
   <figcaption></figcaption>
 </figure>
 
@@ -28,7 +28,7 @@ npx @sentio/cli graph deploy --owner $PROJECT_OWNER --name $PROJECT_NAME
 Once it get uploaded, use [data-source](data-source "mention") page to view progress. And use data studio to access either GraphQL or SQL.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (1).png" alt="" width="563" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (1).png" alt="" width="563" />
   <figcaption></figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ When uploading the subgraph, the API endpoint will be printed in console, you ca
 also find docs and API in the data studio page for the GraphQL.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/assets/subgraph-graphql.png" alt="" width="563" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/subgraph-graphql.png" alt="" width="563" />
   <figcaption></figcaption>
 </figure>
 
