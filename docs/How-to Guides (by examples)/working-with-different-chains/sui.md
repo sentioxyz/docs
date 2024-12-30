@@ -120,7 +120,7 @@ Similar to object processor, you have use [`SuiAddressProcessor`](\[https://sdk.
 
 ### Object type processor
 
-If you want to handle all objects that has the same type instead of single object, use [`SuiObjectTypeProcessor.onTimeInterval`](https://sdk.sentio.xyz/classes/sui.SuiObjectTypeProcessor.html#ontimeinterval)
+If you want to handle all objects that has the same type instead of single object, use [`SuiObjectTypeProcessor.onTimeInterval`](https://sdk.sentio.xyz/classes/sui.SuiObjectTypeProcessor.html#ontimeinterval), e.g.
 
 ```typescript
 import { staking_pool } from '@sentio/sdk/sui/builtin/0x3'
@@ -138,7 +138,7 @@ SuiObjectTypeProcessor.bind({
 
 ```
 
-If you want to handle all object changes for certain object type, use [`SuiObjectTypeProcessor.onObjectChange`](https://sdk.sentio.xyz/classes/sui.SuiObjectTypeProcessor.html#onobjectchange)
+If you want to handle all object changes for certain object type, use [`SuiObjectTypeProcessor.onObjectChange`](https://sdk.sentio.xyz/classes/sui.SuiObjectTypeProcessor.html#onobjectchange), e.g.
 
 ```typescript
 SuiObjectTypeProcessor.bind({
@@ -147,4 +147,28 @@ SuiObjectTypeProcessor.bind({
   .onObjectChange((changes, ctx) => {
     ctx.meter.Counter('updates').add(changes.length)
   })
+```
+
+## Templating object processor
+
+Some times you want to dynamic bind object processor, e.g. you want to register object handler for all pools create by an contracts (we prefer use `SuiObjectTypeProcessor` for better performance, but some times you only care about a subset of those objets).
+
+In this case, you could create [`SuiObjectProcessorTemplate`](https://sdk.sentio.xyz/classes/sui.SuiObjectProcessorTemplate.html) and call `bind`/`unbind` in other triggers, e.g.
+
+```typescript
+import { validator_set } from '@sentio/sdk/sui/builtin/0x3'
+
+const template = new SuiObjectProcessorTemplate().onTimeInterval(() => {
+  // logic to record staking pool
+})
+
+// begin watch a staking pool
+validator_set.bind({ network: SuiNetwork.TEST_NET }).onEventValidatorJoinEvent((evt, ctx) => {
+  template.bind({ objectId: evt.data_decoded.staking_pool_id }, ctx)
+})
+
+// end watch the staking pool
+validator_set.bind({ network: SuiNetwork.TEST_NET }).onEventValidatorLeaveEvent((evt, ctx) => {
+  template.unbind({ objectId: evt.data_decoded.staking_pool_id }, ctx)
+})
 ```
