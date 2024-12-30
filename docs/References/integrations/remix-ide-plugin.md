@@ -1,5 +1,5 @@
 ---
-title: 🧩 Remix IDE Plugin
+title: Remix IDE Plugin
 excerpt: ''
 deprecated: false
 hidden: false
