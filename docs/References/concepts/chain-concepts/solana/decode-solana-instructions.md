@@ -24,6 +24,6 @@ You can also write your own processor for a system program in case it's not supp
 
 ### Other types of programs
 
-If you have a customized smart contract program neither a system one nor built on top of Anchor framework, you probably have to implement your own `decodeInstruction` method to decode raw instructions from Solana based on how you encode it.&#x20;
+If you have a customized smart contract program neither a system one nor built on top of Anchor framework, you probably have to implement your own `decodeInstruction` method to decode raw instructions from Solana based on how you encode it. 
 
 For example, we've implemented a processor for the wormhole contract and added it to the Sentio SDK core, which has a customized `decodeInstruction` [method](https://github.com/sentioxyz/sentio-sdk/blob/main/sdk/src/builtin/solana/wormhole-processor.ts#L55). This can be a reference.
