@@ -14,11 +14,4 @@ Here we give a few real examples for how to submit metrics from Aptos. Make sure
 
 See the video tutorial below
 
-[block:embed]
-{
-  "html": "<iframe src=\"https://www.youtube.com/embed/l4RsxPrGyqE\" width=\"640\" height=\"480\" frameborder=\"0\"></iframe>",
-  "url": "https://www.youtube.com/embed/l4RsxPrGyqE",
-  "typeOfEmbed": "youtube",
-  "provider": "embed"
-}
-[/block]
+<Embed url="https://www.youtube.com/embed/l4RsxPrGyqE" typeOfEmbed="youtube" provider="youtube.com" title="undefined" href="https://www.youtube.com/embed/l4RsxPrGyqE" html="%3Ciframe%20src%3D%22https%3A%2F%2Fwww.youtube.com%2Fembed%2Fl4RsxPrGyqE%22%20width%3D%22640%22%20height%3D%22480%22%20frameborder%3D%220%22%3E%3C%2Fiframe%3E" />
