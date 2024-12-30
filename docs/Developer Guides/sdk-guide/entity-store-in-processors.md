@@ -13,6 +13,7 @@ next:
 You can find the general entity definition in [entities](entities "mention")
 
 ## Accessing Data in Processor
+
 After defining the schema, you can use `sentio build` to generate the TypeScript types for the schema. The generated files is located in the `src/schema` directory. The following is an example of the generated types:
 
 ```typescript
@@ -33,6 +34,7 @@ export class User extends Entity {
 The generated types can be used to access the data in the processor. use `ctx.store` to interact with the data store.
 
 ### Insert or Update Data
+
 To insert or update data in the store, you can use the `ctx.store.upsert` method. The following is an example of inserting a new user:
 
 ```typescript
@@ -53,6 +55,7 @@ ERC20Processor.onEventTransfer(
 ```
 
 ### Get entity by ID
+
 To retrieve an entity by its ID, you can use the `ctx.store.get` method. The following is an example of retrieving a user by its ID:
 
 ```typescript
@@ -66,6 +69,7 @@ ERC20Processor.onEventTransfer(
 ```
 
 ### Delete entity
+
 To delete an entity, you can use the `ctx.store.delete` method. The following is an example of deleting a user:
 
 ```typescript
@@ -77,12 +81,15 @@ await ctx.store.delete(User, id)
 ```
 
 ### Query entities
+
 In your store, there are two methods to query and filter entities: `list` and `listIterator`.
 
 #### `store.list(Entity, filters)`
+
 For simplicity, the `list` method returns entities based on the `Entity` and `filters` parameters.
 
 The following is an example of querying all users with an amount greater than 0:
+
 ```typescript
 import { User } from './schema/schema.js'
 ERC20Processor.onEventTransfer(
@@ -96,10 +103,11 @@ ERC20Processor.onEventTransfer(
 )
 ```
 
-*Please be aware that the `list` method retrieves all entities, which might not be optimal and could potentially consume a lot of memory resources in your processor. For handling larger datasets, we recommend using the `listIterator` method.*
+*Please be aware that the`list` method retrieves all entities, which might not be optimal and could potentially consume a lot of memory resources in your processor. For handling larger datasets, we recommend using the `listIterator` method.*
 
 #### `store.listIterator(Entity, filters)`
-The `listIterator` method returns an iterator that can be used to iterate over entities based on the `Entity` and `filters` parameters.
+
+The `listIterator` method returns an iterator that can be used to iterate over entities based on the `Entity` and `filters` parameters.\
 You can use the `for await` grammar to iterate over the entities.
 
 ```
@@ -111,8 +119,9 @@ ERC20Processor.onEventTransfer(
     }
 )
 ```
-Unlike the `list` method, the `listIterator` method does not load all entities into memory at once,
-you can handle entities one by one, or in batches, which is more memory-efficient.
+
+Unlike the `list` method, the `listIterator` method does not load all entities into memory at once,\
+you can handle entities one by one, or in batches, which is more memory-efficient.\
 The following is an example of handling entities in batches:
 
 ```typescript
@@ -142,23 +151,27 @@ ERC20Processor.onEventTransfer (
 ```
 
 #### Filters
-The `filters` parameter is an array of objects that specify the filter conditions. Each object has the following fields:
-- `field`: The field name to filter on.
-- `op`: The operator to use for the filter. The supported operators are:
-    - `=`: Equal
-    - `!=`: Not equal
-    - `>`: Greater than
-    - `>=`: Greater than or equal
-    - `<`: Less than
-    - `<=`: Less than or equal
-    - `in`: In the list
-    - `not in`: Not in the list
 
-- `value`: The value or the array of values to filter on.
+The `filters` parameter is an array of objects that specify the filter conditions. Each object has the following fields:
+
+* `field`: The field name to filter on.
+
+* `op`: The operator to use for the filter. The supported operators are:
+  * `=`: Equal
+  * `!=`: Not equal
+  * `>`: Greater than
+  * `>=`: Greater than or equal
+  * `<`: Less than
+  * `<=`: Less than or equal
+  * `in`: In the list
+  * `not in`: Not in the list
+
+* `value`: The value or the array of values to filter on.
 
 Multiple filters are combined using the logical AND operator.
 
 The following is an example of querying all users like the `where amount > 0 AND name = 'Alice'` in SQL:
+
 ```typescript
 ctx.store.listIterator(User, [
     {field:"amount", op:">", value: 0},
@@ -166,12 +179,13 @@ ctx.store.listIterator(User, [
 ])
 ```
 
-
 ## Query Data using SQL
-You can query the data store using SQL.  Just like you do with event logs data. The entity will show up in table schema.
+
+You can query the data store using SQL.  Just like you do with event logs data. The entity will show up in table schema.\
 ![img.png](https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/entity-sql-screenshot.png)
 
 ## Query Data using GraphQL
+
 You can query the data store using GraphQL. The query schema will be generated based on the schema definition.
 
 ![img.png](https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/entity-graqphql-screenshot.png)
