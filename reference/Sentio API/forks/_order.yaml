@@ -7,3 +7,4 @@
 - getcalltraceonforktransaction
 - getfork
 - deletefork
+- updatefork
