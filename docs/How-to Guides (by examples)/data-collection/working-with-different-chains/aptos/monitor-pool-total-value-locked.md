@@ -20,7 +20,7 @@ AptosAccountProcessor.bind({address: "0x5a97986a9d031c4567e15b797be516910cfcb415
 
 The program will fetch account resources for the given address and **trigger** `syncPools`
 
-* Every **24 \* 60** minutes when backfill of historical data.
+* Every **24\* 60** minutes when backfill of historical data.
 * Every **60** minutes when processing the real-time data.
 
 In `syncPools`, you could fetch the pools and compute the TVL
