@@ -3,3 +3,4 @@
 - getcalltraceonforkbundle
 - simulatetransactiononfork
 - getcalltraceonforksimulation
+- simulatetransactionbundleonfork
