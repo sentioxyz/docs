@@ -33,7 +33,6 @@ The supported network and its status are listed below, we are actively supportin
 | Binance | `56` | `bsc`  | ✓ | ✓ |  | ✓   | Real-time |
 | Bitlayer Mainnet | `200901` | `bitlayer`  | ✓ | ✓ |  |   | Real-time |
 | Blast Mainnet | `81457` | `blast-mainnet`  | ✓ | ✓ |  | ✓   | Real-time |
-| Blast Mainnet | `168587773` | `blast-testnet`  | ✓ | ✓ |  |   | Real-time |
 | Bob Mainnet | `60808` | `bob`  | ✓ | ✓ |  |   | Real-time |
 | Chiliz | `88888` | `chiliz`  | ✓ | ✓ |  |   | Real-time |
 | Conflux eSpace | `1030` | `conflux-espace`  | ✓ | ✓ |  |   | Real-time |
@@ -44,7 +43,6 @@ The supported network and its status are listed below, we are actively supportin
 | Ethereum | `1` | `mainnet`  | ✓ | ✓ | ✓  | ✓   | Real-time |
 | Fantom Opera | `250` | `fantom`  | ✓ | ✓ |  |   | Real-time |
 | Fraxtal Mainnet | `252` | `frax-mainnet`  | ✓ | ✓ |  |   | Real-time |
-| Holesky | `17000` | `holesky`  | ✓ | ✓ |  |   | Real-time |
 | Karak Mainnet | `2410` | `karak-mainnet`  | ✓ | ✓ |  |   | Real-time |
 | KCC Mainnet | `321` | `kucoin`  | ✓ | ✓ |  |   | Real-time |
 | Linea | `59144` | `linea`  | ✓ | ✓ | ✓  | ✓   | Real-time |
@@ -60,7 +58,6 @@ The supported network and its status are listed below, we are actively supportin
 | Polygon zkEVM | `1101` | `polygon-zkevm`  | ✓ | ✓ |  |   | Real-time |
 | Scroll | `534352` | `scroll`  | ✓ | ✓ |  | ✓   | Real-time |
 | Sei Mainnet | `1329` | `sei`  | ✓ | ✓ |  |   | Real-time |
-| Sepolia | `11155111` | `sepolia`  | ✓ | ✓ |  |   | Real-time |
 | Soneium Mainnet | `1868` | `soneium-mainnet`  | ✓ | ✓ |  |   | Real-time |
 | Sonic Mainnet | `146` | `sonic-mainnet`  | ✓ | ✓ |  |   | Real-time |
 | Swell Mainnet | `1923` | `swell-mainnet`  | ✓ | ✓ |  |   | Real-time |
@@ -111,7 +108,7 @@ To quickly create single chain processor or subgraph, you can use the following 
 
 ### Arbitrum
 
-Chain ID: 42161, chain slug: arbitrum-one.
+Chain ID: `42161`, chain slug: `arbitrum-one`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -139,7 +136,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Astar
 
-Chain ID: 592, chain slug: astar.
+Chain ID: `592`, chain slug: `astar`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -167,7 +164,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Astar zkEVM
 
-Chain ID: 3776, chain slug: astar-zkevm.
+Chain ID: `3776`, chain slug: `astar-zkevm`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -195,7 +192,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Aurora
 
-Chain ID: 1313161554, chain slug: aurora.
+Chain ID: `1313161554`, chain slug: `aurora`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -223,7 +220,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Avalanche
 
-Chain ID: 43114, chain slug: avalanche.
+Chain ID: `43114`, chain slug: `avalanche`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -251,7 +248,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### B2
 
-Chain ID: 223, chain slug: b2-mainnet.
+Chain ID: `223`, chain slug: `b2-mainnet`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -279,7 +276,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Base
 
-Chain ID: 8453, chain slug: base.
+Chain ID: `8453`, chain slug: `base`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -307,7 +304,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### BEVM
 
-Chain ID: 11501, chain slug: bevm.
+Chain ID: `11501`, chain slug: `bevm`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -335,7 +332,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Binance
 
-Chain ID: 56, chain slug: bsc.
+Chain ID: `56`, chain slug: `bsc`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -363,7 +360,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Bitlayer
 
-Chain ID: 200901, chain slug: bitlayer.
+Chain ID: `200901`, chain slug: `bitlayer`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -391,7 +388,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Blast
 
-Chain ID: 81457, chain slug: blast-mainnet.
+Chain ID: `81457`, chain slug: `blast-mainnet`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -418,37 +415,9 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 >️ Testnet is available at chain ID: 168587773, slug blast-testnet  with limited capabilities.
-### Blast
-
-Chain ID: 168587773, chain slug: blast-testnet.
-
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
-
-<details>
-<summary>Create and upload an example Sentio processor</summary>
-
-```
-npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 168587773
-...
-npx @sentio/cli@latest upload
-```
-
-</details>
-
-<details>
-<summary>Create and deploy an example Subgraph</summary>
-
-```
-npx @sentio/cli@latest graph create -n <project name> --chain-id 168587773
-...
-npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-```
-
-</details>
-
 ### Bob
 
-Chain ID: 60808, chain slug: bob.
+Chain ID: `60808`, chain slug: `bob`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -476,7 +445,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Chiliz
 
-Chain ID: 88888, chain slug: chiliz.
+Chain ID: `88888`, chain slug: `chiliz`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -504,7 +473,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Conflux eSpace
 
-Chain ID: 1030, chain slug: conflux-espace.
+Chain ID: `1030`, chain slug: `conflux-espace`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -532,7 +501,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Corn
 
-Chain ID: 21000000, chain slug: corn-maizenet.
+Chain ID: `21000000`, chain slug: `corn-maizenet`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -560,7 +529,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Cronos
 
-Chain ID: 25, chain slug: cronos.
+Chain ID: `25`, chain slug: `cronos`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -589,7 +558,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 >️ Testnet is available at chain ID: 338, slug cronos-testnet .
 ### Cronos zkEVM
 
-Chain ID: 388, chain slug: cronos-zkevm.
+Chain ID: `388`, chain slug: `cronos-zkevm`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -617,7 +586,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Derive
 
-Chain ID: 957, chain slug: derive-mainnet.
+Chain ID: `957`, chain slug: `derive-mainnet`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -645,7 +614,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Ethereum
 
-Chain ID: 1, chain slug: mainnet.
+Chain ID: `1`, chain slug: `mainnet`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -674,7 +643,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 >️ Testnets are available at chain ID: 17000, 11155111, slug holesky, sepolia  with limited capabilities.
 ### Fantom Opera
 
-Chain ID: 250, chain slug: fantom.
+Chain ID: `250`, chain slug: `fantom`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -702,7 +671,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Fraxtal
 
-Chain ID: 252, chain slug: frax-mainnet.
+Chain ID: `252`, chain slug: `frax-mainnet`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -728,37 +697,9 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 </details>
 
-### Holesky
-
-Chain ID: 17000, chain slug: holesky.
-
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
-
-<details>
-<summary>Create and upload an example Sentio processor</summary>
-
-```
-npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 17000
-...
-npx @sentio/cli@latest upload
-```
-
-</details>
-
-<details>
-<summary>Create and deploy an example Subgraph</summary>
-
-```
-npx @sentio/cli@latest graph create -n <project name> --chain-id 17000
-...
-npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-```
-
-</details>
-
 ### Karak
 
-Chain ID: 2410, chain slug: karak-mainnet.
+Chain ID: `2410`, chain slug: `karak-mainnet`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -786,7 +727,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### KCC
 
-Chain ID: 321, chain slug: kucoin.
+Chain ID: `321`, chain slug: `kucoin`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -814,7 +755,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Linea
 
-Chain ID: 59144, chain slug: linea.
+Chain ID: `59144`, chain slug: `linea`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -842,7 +783,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Manta Pacific
 
-Chain ID: 169, chain slug: manta-pacific-mainnet.
+Chain ID: `169`, chain slug: `manta-pacific-mainnet`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -870,7 +811,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Mantle
 
-Chain ID: 5000, chain slug: mantle.
+Chain ID: `5000`, chain slug: `mantle`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -898,7 +839,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Merlin
 
-Chain ID: 4200, chain slug: merlin.
+Chain ID: `4200`, chain slug: `merlin`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -926,7 +867,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Metis
 
-Chain ID: 1088, chain slug: metis.
+Chain ID: `1088`, chain slug: `metis`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -954,7 +895,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Mode
 
-Chain ID: 34443, chain slug: mode-mainnet.
+Chain ID: `34443`, chain slug: `mode-mainnet`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -982,7 +923,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Moonbeam
 
-Chain ID: 1284, chain slug: moonbeam.
+Chain ID: `1284`, chain slug: `moonbeam`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1010,7 +951,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### opBNB
 
-Chain ID: 204, chain slug: opbnb.
+Chain ID: `204`, chain slug: `opbnb`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1038,7 +979,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Optimism
 
-Chain ID: 10, chain slug: optimism.
+Chain ID: `10`, chain slug: `optimism`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1066,7 +1007,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Polygon
 
-Chain ID: 137, chain slug: matic.
+Chain ID: `137`, chain slug: `matic`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1094,7 +1035,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Polygon zkEVM
 
-Chain ID: 1101, chain slug: polygon-zkevm.
+Chain ID: `1101`, chain slug: `polygon-zkevm`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1122,7 +1063,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Scroll
 
-Chain ID: 534352, chain slug: scroll.
+Chain ID: `534352`, chain slug: `scroll`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1150,7 +1091,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Sei
 
-Chain ID: 1329, chain slug: sei.
+Chain ID: `1329`, chain slug: `sei`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1176,37 +1117,9 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 </details>
 
-### Sepolia
-
-Chain ID: 11155111, chain slug: sepolia.
-
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
-
-<details>
-<summary>Create and upload an example Sentio processor</summary>
-
-```
-npx @sentio/cli@latest create -n <project name> --chain-type eth --chain-id 11155111
-...
-npx @sentio/cli@latest upload
-```
-
-</details>
-
-<details>
-<summary>Create and deploy an example Subgraph</summary>
-
-```
-npx @sentio/cli@latest graph create -n <project name> --chain-id 11155111
-...
-npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-```
-
-</details>
-
 ### Soneium
 
-Chain ID: 1868, chain slug: soneium-mainnet.
+Chain ID: `1868`, chain slug: `soneium-mainnet`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1235,7 +1148,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 >️ Testnet is available at chain ID: 1946, slug soneium-minato .
 ### Sonic
 
-Chain ID: 146, chain slug: sonic-mainnet.
+Chain ID: `146`, chain slug: `sonic-mainnet`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1264,7 +1177,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 >️ Testnet is available at chain ID: 57054, slug sonic-testnet .
 ### Swell
 
-Chain ID: 1923, chain slug: swell-mainnet.
+Chain ID: `1923`, chain slug: `swell-mainnet`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1293,7 +1206,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 >️ Testnet is available at chain ID: 1924, slug swell-testnet .
 ### TAC
 Currently support is for testnet only.
-Chain ID: 2390, chain slug: tac-testnet.
+Chain ID: `2390`, chain slug: `tac-testnet`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1321,7 +1234,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### Taiko
 
-Chain ID: 167000, chain slug: taiko.
+Chain ID: `167000`, chain slug: `taiko`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1350,7 +1263,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 >️ Testnet is available at chain ID: 167008, slug taiko-hekla-testnet .
 ### Unichain Sepolia
 
-Chain ID: 1301, chain slug: unichain-sepolia.
+Chain ID: `1301`, chain slug: `unichain-sepolia`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1378,7 +1291,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### X Layer
 
-Chain ID: 196, chain slug: xlayer-mainnet.
+Chain ID: `196`, chain slug: `xlayer-mainnet`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1407,7 +1320,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 >️ Testnet is available at chain ID: 195, slug xlayer-sepolia  with limited capabilities.
 ### Zircuit
 
-Chain ID: 48900, chain slug: zircuit.
+Chain ID: `48900`, chain slug: `zircuit`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1436,7 +1349,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 >️ Testnet is available at chain ID: 48899, slug zircuit-testnet .
 ### zkLink Nova
 
-Chain ID: 810180, chain slug: zklink-nova.
+Chain ID: `810180`, chain slug: `zklink-nova`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
@@ -1464,7 +1377,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 ### zkSync Era
 
-Chain ID: 324, chain slug: zksync-era.
+Chain ID: `324`, chain slug: `zksync-era`.
 
 Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
 
