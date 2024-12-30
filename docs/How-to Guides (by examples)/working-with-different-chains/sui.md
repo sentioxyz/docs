@@ -99,20 +99,30 @@ If you want to watch single object content change, you could [`SuiObjectProcesso
 
 ```
 SuiObjectProcessor.bind({
-  objectId: '0xa14f85860d6ce99154ecbb13570ba5fba1d8dc16b290de13f036b016fd19a29c'
-}).onTimeInterval(async (self, objects, ctx) => {
-  const fields = await ctx.coder.getDynamicFields(
-    objects,
-    BUILTIN_TYPES.U64_TYPE,
-    single_collateral.PortfolioVault.type()
-  )
+  objectId: '0xa14f85860d6ce99154ecbb13570ba5fba1d8dc16b290de13f036b016fd19a29c',
+  startCheckpoint: 10000
+})
+  .onTimeInterval(async (self, objects, ctx) => {
+    const fields = await ctx.coder.getDynamicFields(
+      objects,
+      BUILTIN_TYPES.U64_TYPE,
+      single_collateral.PortfolioVault.type()
+    )
 
-  ctx.meter.Gauge('fields_count').record(fields.length)
-}, 60*24, 60*24)
-.onCheckpointInterval(...)
+    ctx.meter.Gauge('fields_count').record(fields.length)
+  }, 
+  60*24,   // watching time interval  
+  60*24*30 // backfill time interval
+  )
+  .onCheckpointInterval(...)
 ```
 
 It will fetch the object content and all objects belong to it (such as dynamic objects) every certain period of time in history. If more info is needed, use `ctx.objectVersion` to work with SUI Typescript SDK to do that.
+
+You may also want to carefully tune the two time intervals for better indexing performance
+
+* **Watching time interval**: how often the handler is trigger in watching state
+* **Backfill time interval**: how often the handler is trigger during processor backfill, you may want to set this a larger number
 
 ### Address processor
 
