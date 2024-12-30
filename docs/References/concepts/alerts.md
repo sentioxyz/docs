@@ -10,28 +10,33 @@ metadata:
 next:
   description: ''
 ---
-Alerts can be created for a query or formula to notify (via [notification-channel](notification-channel "mention")) when a certain condition is met.&#x20;
+Alerts can be created for a query or formula to notify (via [notification-channel](notification-channel "mention")) when a certain condition is met.
 
 ## Metrics based alert (same as [create-alerts](create-alerts "mention"))
 
-Assume we want to alert if TVL of your project is below a threshold, you could&#x20;
+Assume we want to alert if TVL of your project is below a threshold, you could
 
 * Select the metric that represents the TVL
-* Add a alert condition
+* Add an alert condition
 * Choose a notification channel [notification-channel](notification-channel "mention")
 
-<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/creatingAlert.gif" alt=""><figcaption></figcaption></figure>
+<figure>
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/creatingAlert.gif" alt="" />
+  <figcaption></figcaption>
+</figure>
 
 > ℹ️
 >
 > Note you can also use [formula](aggregation-functions-and-formulas) in alerts
 
-
 ## Log based Alerts
 
 You can count certain number of logs matching a criteria, and setup alerts based on the condition.
 
-<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/log.gif" alt=""><figcaption></figcaption></figure>
+<figure>
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/log.gif" alt="" />
+  <figcaption></figcaption>
+</figure>
 
 ## Alert Message
 
