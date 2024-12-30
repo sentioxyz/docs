@@ -1,3 +1,4 @@
 - cancelsqlquery
 - executesql
 - executesqlasync
+- querysqlresult
