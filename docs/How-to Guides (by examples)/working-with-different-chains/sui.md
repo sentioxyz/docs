@@ -97,7 +97,7 @@ You can access the event content by `event`, and SUI [transaction](https://sdk.m
 
 If you want to watch single object content change, you could [`SuiObjectProcessor`](https://sdk.sentio.xyz/classes/sui.SuiObjectProcessor.html) , e.g.
 
-```
+```typescript
 SuiObjectProcessor.bind({
   objectId: '0xa14f85860d6ce99154ecbb13570ba5fba1d8dc16b290de13f036b016fd19a29c',
   startCheckpoint: 10000
