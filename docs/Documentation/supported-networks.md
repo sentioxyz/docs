@@ -20,80 +20,80 @@ The supported network and its status are listed below, we are actively supportin
 
 ## EVM Chains
 
-|Chain	| ID| Slug |Events	| Archive RPCs |	Traces	| Debugger |	Data Staleness|
-|-------|--|--|---------|--------------|---------|----------|----------------|
-| Arbitrum | `42161` | `arbitrum-one`  | ✓ | ✓ |  | ✓   | Real-time |
-| Astar | `592` | `astar`  | ✓ | ✓ | ✓  | ✓   | Real-time |
-| Astar zkEVM | `3776` | `astar-zkevm`  | ✓ | ✓ |  |   | Real-time |
-| Aurora | `1313161554` | `aurora`  | ✓ | ✓ |  |   | Real-time |
-| Avalanche | `43114` | `avalanche`  | ✓ | ✓ |  | ✓   | Real-time |
-| B2 Mainnet | `223` | `b2-mainnet`  | ✓ | ✓ |  |   | Real-time |
-| Base | `8453` | `base`  | ✓ | ✓ |  | ✓   | Real-time |
-| BEVM | `11501` | `bevm`  | ✓ | ✓ |  |   | Real-time |
-| Binance | `56` | `bsc`  | ✓ | ✓ |  | ✓   | Real-time |
-| Bitlayer Mainnet | `200901` | `bitlayer`  | ✓ | ✓ |  |   | Real-time |
-| Blast Mainnet | `81457` | `blast-mainnet`  | ✓ | ✓ |  | ✓   | Real-time |
-| Bob Mainnet | `60808` | `bob`  | ✓ | ✓ |  |   | Real-time |
-| Chiliz | `88888` | `chiliz`  | ✓ | ✓ |  |   | Real-time |
-| Conflux eSpace | `1030` | `conflux-espace`  | ✓ | ✓ |  |   | Real-time |
-| Corn Maizenet | `21000000` | `corn-maizenet`  | ✓ | ✓ |  |   | Real-time |
-| Cronos Mainnet | `25` | `cronos`  | ✓ | ✓ |  |   | Real-time |
-| Cronos zkEVM | `388` | `cronos-zkevm`  | ✓ | ✓ |  |   | Real-time |
-| Derive Mainnet | `957` | `derive-mainnet`  | ✓ | ✓ |  |   | Real-time |
-| Ethereum | `1` | `mainnet`  | ✓ | ✓ | ✓  | ✓   | Real-time |
-| Fantom Opera | `250` | `fantom`  | ✓ | ✓ |  |   | Real-time |
-| Fraxtal Mainnet | `252` | `frax-mainnet`  | ✓ | ✓ |  |   | Real-time |
-| Karak Mainnet | `2410` | `karak-mainnet`  | ✓ | ✓ |  |   | Real-time |
-| KCC Mainnet | `321` | `kucoin`  | ✓ | ✓ |  |   | Real-time |
-| Linea | `59144` | `linea`  | ✓ | ✓ | ✓  | ✓   | Real-time |
-| Manta Pacific | `169` | `manta-pacific-mainnet`  | ✓ | ✓ |  |   | Real-time |
-| Mantle | `5000` | `mantle`  | ✓ | ✓ |  |   | Real-time |
-| Merlin Mainnet | `4200` | `merlin`  | ✓ | ✓ |  |   | Real-time |
-| Metis | `1088` | `metis`  | ✓ | ✓ |  |   | Real-time |
-| Mode Mainnet | `34443` | `mode-mainnet`  | ✓ | ✓ |  |   | Real-time |
-| Moonbeam | `1284` | `moonbeam`  | ✓ | ✓ | ✓  | ✓   | Real-time |
-| opBNB Mainnet | `204` | `opbnb`  | ✓ | ✓ |  |   | Real-time |
-| Optimism Mainnet | `10` | `optimism`  | ✓ | ✓ |  |   | Real-time |
-| Polygon | `137` | `matic`  | ✓ | ✓ | ✓  | ✓   | Real-time |
-| Polygon zkEVM | `1101` | `polygon-zkevm`  | ✓ | ✓ |  |   | Real-time |
-| Scroll | `534352` | `scroll`  | ✓ | ✓ |  | ✓   | Real-time |
-| Sei Mainnet | `1329` | `sei`  | ✓ | ✓ |  |   | Real-time |
-| Soneium Mainnet | `1868` | `soneium-mainnet`  | ✓ | ✓ |  |   | Real-time |
-| Sonic Mainnet | `146` | `sonic-mainnet`  | ✓ | ✓ |  |   | Real-time |
-| Swell Mainnet | `1923` | `swell-mainnet`  | ✓ | ✓ |  |   | Real-time |
-| TAC Testnet | `2390` | `tac-testnet`  | ✓ | ✓ |  |   | Real-time |
-| Taiko Mainnet | `167000` | `taiko`  | ✓ | ✓ |  |   | Real-time |
-| Unichain Sepolia | `1301` | `unichain-sepolia`  | ✓ | ✓ |  |   | Real-time |
-| X Layer Mainnet | `196` | `xlayer-mainnet`  | ✓ | ✓ |  | ✓   | Real-time |
-| Zircuit Mainnet | `48900` | `zircuit`  | ✓ | ✓ |  |   | Real-time |
-| zkLink Nova | `810180` | `zklink-nova`  | ✓ | ✓ |  |   | Real-time |
-| zkSync Era | `324` | `zksync-era`  | ✓ | ✓ |  |   | Real-time |
+|Chain	| ID| Slug |Events	| Archive RPCs |	Traces	| Debugger |
+|-------|--|--|---------|--------------|---------|----------|
+| Arbitrum | `42161` | `arbitrum-one`  | ✓ | ✓ |  | ✓   |
+| Astar | `592` | `astar`  | ✓ | ✓ | ✓  | ✓   |
+| Astar zkEVM | `3776` | `astar-zkevm`  | ✓ | ✓ |  |   |
+| Aurora | `1313161554` | `aurora`  | ✓ | ✓ |  |   |
+| Avalanche | `43114` | `avalanche`  | ✓ | ✓ |  | ✓   |
+| B2 Mainnet | `223` | `b2-mainnet`  | ✓ | ✓ |  |   |
+| Base | `8453` | `base`  | ✓ | ✓ |  | ✓   |
+| BEVM | `11501` | `bevm`  | ✓ | ✓ |  |   |
+| Binance | `56` | `bsc`  | ✓ | ✓ |  | ✓   |
+| Bitlayer Mainnet | `200901` | `bitlayer`  | ✓ | ✓ |  |   |
+| Blast Mainnet | `81457` | `blast-mainnet`  | ✓ | ✓ |  | ✓   |
+| Bob Mainnet | `60808` | `bob`  | ✓ | ✓ |  |   |
+| Chiliz | `88888` | `chiliz`  | ✓ | ✓ |  |   |
+| Conflux eSpace | `1030` | `conflux-espace`  | ✓ | ✓ |  |   |
+| Corn Maizenet | `21000000` | `corn-maizenet`  | ✓ | ✓ |  |   |
+| Cronos Mainnet | `25` | `cronos`  | ✓ | ✓ |  |   |
+| Cronos zkEVM | `388` | `cronos-zkevm`  | ✓ | ✓ |  |   |
+| Derive Mainnet | `957` | `derive-mainnet`  | ✓ | ✓ |  |   |
+| Ethereum | `1` | `mainnet`  | ✓ | ✓ | ✓  | ✓   |
+| Fantom Opera | `250` | `fantom`  | ✓ | ✓ |  |   |
+| Fraxtal Mainnet | `252` | `frax-mainnet`  | ✓ | ✓ |  |   |
+| Karak Mainnet | `2410` | `karak-mainnet`  | ✓ | ✓ |  |   |
+| KCC Mainnet | `321` | `kucoin`  | ✓ | ✓ |  |   |
+| Linea | `59144` | `linea`  | ✓ | ✓ | ✓  | ✓   |
+| Manta Pacific | `169` | `manta-pacific-mainnet`  | ✓ | ✓ |  |   |
+| Mantle | `5000` | `mantle`  | ✓ | ✓ |  |   |
+| Merlin Mainnet | `4200` | `merlin`  | ✓ | ✓ |  |   |
+| Metis | `1088` | `metis`  | ✓ | ✓ |  |   |
+| Mode Mainnet | `34443` | `mode-mainnet`  | ✓ | ✓ |  |   |
+| Moonbeam | `1284` | `moonbeam`  | ✓ | ✓ | ✓  | ✓   |
+| opBNB Mainnet | `204` | `opbnb`  | ✓ | ✓ |  |   |
+| Optimism Mainnet | `10` | `optimism`  | ✓ | ✓ |  |   |
+| Polygon | `137` | `matic`  | ✓ | ✓ | ✓  | ✓   |
+| Polygon zkEVM | `1101` | `polygon-zkevm`  | ✓ | ✓ |  |   |
+| Scroll | `534352` | `scroll`  | ✓ | ✓ |  | ✓   |
+| Sei Mainnet | `1329` | `sei`  | ✓ | ✓ |  |   |
+| Soneium Mainnet | `1868` | `soneium-mainnet`  | ✓ | ✓ |  |   |
+| Sonic Mainnet | `146` | `sonic-mainnet`  | ✓ | ✓ |  |   |
+| Swell Mainnet | `1923` | `swell-mainnet`  | ✓ | ✓ |  |   |
+| TAC Testnet | `2390` | `tac-testnet`  | ✓ | ✓ |  |   |
+| Taiko Mainnet | `167000` | `taiko`  | ✓ | ✓ |  |   |
+| Unichain Sepolia | `1301` | `unichain-sepolia`  | ✓ | ✓ |  |   |
+| X Layer Mainnet | `196` | `xlayer-mainnet`  | ✓ | ✓ |  | ✓   |
+| Zircuit Mainnet | `48900` | `zircuit`  | ✓ | ✓ |  |   |
+| zkLink Nova | `810180` | `zklink-nova`  | ✓ | ✓ |  |   |
+| zkSync Era | `324` | `zksync-era`  | ✓ | ✓ |  |   |
 
 
 More on [EVM](evm-chains)
 
 ## Move Chains
 
-| Chain	         | Txn	 | Event	 | Entry Func	 | Archive RPCs | Account	 | Debugger	 | Data staleness |
-|----------------|------|--------|-------------|--|----------|-----|----------------|
-| Aptos	         | ✓	   | ✓	     | ✓ 	    |  ✓   | ✓	       | 	 ✓ | Real-time      |
-| Aptos Testnet	 | ✓	   | ✓	     | ✓	     |     | 		       |     | Real-time      |
-| SUI	           | ✓	   | ✓	     | ✓	     | ✓    | ✓		      | ✓   | Real-time      |
-| SUI	Testnet    | ✓	   | ✓	     | ✓	     |     | 		       |     | Real-time      |
-| Move	Testnet   | ✓	   | ✓	     | ✓	     | ✓    | ✓		      |     | Real-time      |
+| Chain	         | Txn	 | Event	 | Entry Func	 | Archive RPCs | Account	 | Debugger	 |
+|----------------|------|--------|-------------|--|----------|-----|
+| Aptos	         | ✓	   | ✓	     | ✓ 	    |  ✓   | ✓	       | 	 ✓ |
+| Aptos Testnet	 | ✓	   | ✓	     | ✓	     |     | 		       |     |
+| SUI	           | ✓	   | ✓	     | ✓	     | ✓    | ✓		      | ✓   |
+| SUI	Testnet    | ✓	   | ✓	     | ✓	     |     | 		       |     |
+| Move	Testnet   | ✓	   | ✓	     | ✓	     | ✓    | ✓		      |     |
 More on [Aptos](aptos) and [SUI](sui)
 
 ## Fuel
-| Chain        | Stage | Log Handle | Call Handle | Transfer Handle |Data staleness |
-|--------------|-------|------------|-------------|-------------|------|
-| Fuel Mainnet | Beta  | ✓          | ✓           |✓  | Real-time      |
-| Fuel Testnet | Beta  | ✓          | ✓           |✓  | Real-time      |
+| Chain        | Stage | Log Handle | Call Handle | Transfer Handle |
+|--------------|-------|------------|-------------|-------------|
+| Fuel Mainnet | Beta  | ✓          | ✓           |✓  |
+| Fuel Testnet | Beta  | ✓          | ✓           |✓  |
 More on [Fuel](fuel)
 
 ## Starknet
-|Chain	       | Stage | Events	   | Archive RPCs |		Data Staleness|
-|--------------|-------|------------|-------------|-------------|
-| Starknet     | Beta  | ✓          |       ✓       |   Real-time        |
+|Chain	       | Stage | Events	   | Archive RPCs |
+|--------------|-------|------------|-------------|
+| Starknet     | Beta  | ✓          |       ✓       |
 More on [starknet](starknet)
 
 ## Solana

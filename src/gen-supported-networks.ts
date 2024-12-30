@@ -45,7 +45,7 @@ const traceChain = new Map(Object.entries({
 
 let supportedEvm = ""
 for (const network of mainnetInfos) {
-  supportedEvm += `| ${network.name} | \`${network.chainId}\` | \`${network.slug}\`  | ✓ | ✓ | ${traceChain.has(network.chainId) ? "✓ " : ""} | ${debuggerChains.has(network.chainId) ? "✓ " : ""}  | Real-time |\n`
+  supportedEvm += `| ${network.name} | \`${network.chainId}\` | \`${network.slug}\`  | ✓ | ✓ | ${traceChain.has(network.chainId) ? "✓ " : ""} | ${debuggerChains.has(network.chainId) ? "✓ " : ""}  |\n`
 }
 
 content = content.replace("${supported-evm}", supportedEvm)

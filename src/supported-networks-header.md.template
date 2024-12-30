@@ -20,34 +20,34 @@ The supported network and its status are listed below, we are actively supportin
 
 ## EVM Chains
 
-|Chain	| ID| Slug |Events	| Archive RPCs |	Traces	| Debugger |	Data Staleness|
-|-------|--|--|---------|--------------|---------|----------|----------------|
+|Chain	| ID| Slug |Events	| Archive RPCs |	Traces	| Debugger |
+|-------|--|--|---------|--------------|---------|----------|
 ${supported-evm}
 
 More on [EVM](evm-chains)
 
 ## Move Chains
 
-| Chain	         | Txn	 | Event	 | Entry Func	 | Archive RPCs | Account	 | Debugger	 | Data staleness |
-|----------------|------|--------|-------------|--|----------|-----|----------------|
-| Aptos	         | ✓	   | ✓	     | ✓ 	    |  ✓   | ✓	       | 	 ✓ | Real-time      |
-| Aptos Testnet	 | ✓	   | ✓	     | ✓	     |     | 		       |     | Real-time      |
-| SUI	           | ✓	   | ✓	     | ✓	     | ✓    | ✓		      | ✓   | Real-time      |
-| SUI	Testnet    | ✓	   | ✓	     | ✓	     |     | 		       |     | Real-time      |
-| Move	Testnet   | ✓	   | ✓	     | ✓	     | ✓    | ✓		      |     | Real-time      |
+| Chain	         | Txn	 | Event	 | Entry Func	 | Archive RPCs | Account	 | Debugger	 |
+|----------------|------|--------|-------------|--|----------|-----|
+| Aptos	         | ✓	   | ✓	     | ✓ 	    |  ✓   | ✓	       | 	 ✓ |
+| Aptos Testnet	 | ✓	   | ✓	     | ✓	     |     | 		       |     |
+| SUI	           | ✓	   | ✓	     | ✓	     | ✓    | ✓		      | ✓   |
+| SUI	Testnet    | ✓	   | ✓	     | ✓	     |     | 		       |     |
+| Move	Testnet   | ✓	   | ✓	     | ✓	     | ✓    | ✓		      |     |
 More on [Aptos](aptos) and [SUI](sui)
 
 ## Fuel
-| Chain        | Stage | Log Handle | Call Handle | Transfer Handle |Data staleness |
-|--------------|-------|------------|-------------|-------------|------|
-| Fuel Mainnet | Beta  | ✓          | ✓           |✓  | Real-time      |
-| Fuel Testnet | Beta  | ✓          | ✓           |✓  | Real-time      |
+| Chain        | Stage | Log Handle | Call Handle | Transfer Handle |
+|--------------|-------|------------|-------------|-------------|
+| Fuel Mainnet | Beta  | ✓          | ✓           |✓  |
+| Fuel Testnet | Beta  | ✓          | ✓           |✓  |
 More on [Fuel](fuel)
 
 ## Starknet
-|Chain	       | Stage | Events	   | Archive RPCs |		Data Staleness|
-|--------------|-------|------------|-------------|-------------|
-| Starknet     | Beta  | ✓          |       ✓       |   Real-time        |
+|Chain	       | Stage | Events	   | Archive RPCs |
+|--------------|-------|------------|-------------|
+| Starknet     | Beta  | ✓          |       ✓       |
 More on [starknet](starknet)
 
 ## Solana
