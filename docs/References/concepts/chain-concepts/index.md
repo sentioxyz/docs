@@ -2,7 +2,7 @@
 title: ⛓ Chain concepts
 excerpt: ''
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   title: ''
   description: ''
