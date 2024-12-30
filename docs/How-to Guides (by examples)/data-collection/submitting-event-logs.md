@@ -14,7 +14,6 @@ next:
 >
 > Event Log API is the same among all different chains.
 
-
 ## Typical Case For DAU
 
 Assume you'd like to emit a log for all `swap` user activities in order to compute the Daily unique wallets. You could do the followings:
