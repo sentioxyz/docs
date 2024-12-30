@@ -12,6 +12,12 @@ metadata:
 next:
   description: ''
 ---
+> ℹ️
+>
+> In this section, we will show you how to set up a simple project to monitor an ERC20 contract.
+
+In this section, we will show you how to set up a simple project to monitor an ERC20 contract.
+
 ## Step 1: Create a Sentio Account
 
 Simply go to [https://app.sentio.xyz](https://app.sentio.xyz) and login/create your account.
