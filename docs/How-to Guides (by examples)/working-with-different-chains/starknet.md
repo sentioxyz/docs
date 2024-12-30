@@ -12,7 +12,7 @@ next:
 ---
 [Starknet](https://www.starknet.io/) support is in beta stage. Here is a quick start guide to set up a processor for Starknet.
 
-## Initial project
+## Create project
 
 You can create a new project with the following command:
 
@@ -31,12 +31,6 @@ Navigate to the project directory, where you should find the following files:
 └── tsconfig.json
 ```
 
-Install the dependencies:
-
-```shell
-yarn install
-```
-
 ## Setup contract address
 
 Add the contract address in `sentio.yaml` file:
@@ -49,9 +43,9 @@ contracts:
     chain: starknet_sepolia # Chain name, starknet_mainnet or starknet_sepolia
 ```
 
-*Please use the deployed address of the contract, not the class hash.*
+Please use the deployed address of the contract, not the class hash.
 
-*Including the contract name is optional but recommended, as it assists in naming the types during code generation..*
+Including the contract name is optional but recommended, as it assists in naming the types during code generation.
 
 ## Retrieve the ABI and Generate Types
 
