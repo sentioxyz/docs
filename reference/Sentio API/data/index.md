@@ -19,7 +19,6 @@ The easiest way to build query is through UI, you could first create an insight 
 
 and then
 
-TODO
 <figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (101).png" alt="" width="563"></img><figcaption></figcaption></figure>
 
 The result is like:
