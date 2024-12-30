@@ -15,11 +15,13 @@ next:
 ## Initial project
 
 You can create a new project with the following command:
+
 ```shell
 npx @sentio/cli@latest create [your-project-name] -c starknet
 ```
 
 Navigate to the project directory, where you should find the following files:
+
 ```shell
 ├── package.json
 ├── sentio.yaml
@@ -30,6 +32,7 @@ Navigate to the project directory, where you should find the following files:
 ```
 
 Install the dependencies:
+
 ```shell
 yarn install
 ```
@@ -37,6 +40,7 @@ yarn install
 ## Setup contract address
 
 Add the contract address in `sentio.yaml` file:
+
 ```yaml
 project: your-project-name
 contracts:
@@ -52,6 +56,7 @@ contracts:
 ## Retrieve the ABI and Generate Types
 
 Run the following command to retrieve the ABI and generate the types:
+
 ```shell
 yarn sentio build
 ```
@@ -85,7 +90,6 @@ The abi will be saved in `abis/starknet` directory and the types will be generat
 ## Processor
 
 Start your processor by importing the generated code and binding the processor to the contract address. You should find `onXXX` methods if the contract has events.
-
 
 ```typescript
 import { VoteContractProcessor } from "./types/starknet/VoteContract-processor.js"
