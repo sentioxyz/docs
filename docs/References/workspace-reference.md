@@ -10,7 +10,6 @@ metadata:
 next:
   description: ''
 ---
-```mdx
 # Sentio Code Workspace - User Guide
 
 ## Introduction
