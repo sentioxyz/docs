@@ -10,13 +10,13 @@ metadata:
 next:
   description: ''
 ---
-Sentio provides a command line tool to easily create and upload processors for your project. To start using it, you need to have [Node.js](https://nodejs.org/en/download/) environment. Then you could run&#x20;
+Sentio provides a command line tool to easily create and upload processors for your project. To start using it, you need to have [Node.js](https://nodejs.org/en/download/) environment. Then you could run 
 
 ```bash
 npx @sentio/cli@latest --help
 ```
 
-to see all available commands.&#x20;
+to see all available commands. 
 
 ## sentio login
 
