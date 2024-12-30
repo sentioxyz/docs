@@ -18,7 +18,7 @@ If you have the node installed, try remove it using
 brew uninstall node
 ```
 
-Then you can install _nvm_ instead
+Then you can install *nvm* instead
 
 ```sh
 brew install nvm
@@ -26,10 +26,13 @@ brew install nvm
 
 Then you can follow the instructions:
 
-<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
+<figure>
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (31) (1).png" alt="" />
+  <figcaption></figcaption>
+</figure>
 
 > ℹ️
-> 
+>
 > Make sure you restart the terminal or run `source ~/.zshrc`
 
 Then you can run this command to install node of a specific version
