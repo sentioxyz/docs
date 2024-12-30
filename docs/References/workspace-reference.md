@@ -103,4 +103,3 @@ This error usually indicates an outdated processor template that does not includ
 ***
 
 This guide provides the essential steps for accessing and working within Sentio Code Workspace. Happy coding!
-```
