@@ -19,7 +19,7 @@ Sentio charges usage via **Sentio Units**
 * Every logical [webhook](webhook "mention") in watching stage costs **8000** Sentio Units
 * Every node RPC costs **25** in watching state Sentio Units (List will be updated)
   * [EVM calls](https://ethereum.org/en/developers/docs/apis/json-rpc/#default-block) involving the state.
-  * [get table item](https://fullnode.devnet.aptoslabs.com/v1/spec#/operations/get\_table\_item) for Aptos
+  * [get table item](https://fullnode.devnet.aptoslabs.com/v1/spec#/operations/get_table_item) for Aptos
 * All above cost zero in [Backfill](#Backfill) stage
 * All visualizations cost zero Sentio Unit
 * Every Sentio GraphQL API request costs **100** Sentio Unit
@@ -53,4 +53,4 @@ Free tier users can have at most **3 alerts**.
 
 ## How the usage of multi-version is computed?
 
-If you enabled multi-version (say the 2 versions are _X_ and _Y, X being the new version_), the backfill stage is always free. Once version _X_ reaches the state of **Watching,** the Sentio units usage of both _X_ and _Y_ will be counted until you switch to the active version to _X._ (then the usage of _Y_ will no longer be counted). Similarly, if you abandon version _X_, then the usage of _X_ will no longer be counted.
+If you enabled multi-version (say the 2 versions are *X* and *Y, X being the new version*), the backfill stage is always free. Once version *X* reaches the state of **Watching,** the Sentio units usage of both *X* and *Y* will be counted until you switch to the active version to *X.* (then the usage of *Y* will no longer be counted). Similarly, if you abandon version *X*, then the usage of *X* will no longer be counted.
