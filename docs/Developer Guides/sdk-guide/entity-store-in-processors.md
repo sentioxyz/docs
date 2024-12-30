@@ -182,10 +182,10 @@ ctx.store.listIterator(User, [
 ## Query Data using SQL
 
 You can query the data store using SQL.  Just like you do with event logs data. The entity will show up in table schema.\
-![img.png](https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/entity-sql-screenshot.png)
+![img.png](https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/entity-sql-screenshot.png)
 
 ## Query Data using GraphQL
 
 You can query the data store using GraphQL. The query schema will be generated based on the schema definition.
 
-![img.png](https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/entity-graqphql-screenshot.png)
+![img.png](https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/entity-graqphql-screenshot.png)

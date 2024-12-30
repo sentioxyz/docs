@@ -23,7 +23,7 @@ We recommend you to create project via clicking "**Create Project**" on the proj
 Though this is optional because our CLI can also automatically create a project for you upon uploading.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/createProject.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/createProject.gif" alt="" />
 
   <figcaption />
 </figure>
@@ -61,7 +61,7 @@ yarn sentio upload
 You will see a link to [data-source](data-source "mention") printed and you can open it in a browser to see the upload status.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (4) (3) (1).png" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/image (4) (3) (1).png" alt="" />
 
   <figcaption />
 </figure>

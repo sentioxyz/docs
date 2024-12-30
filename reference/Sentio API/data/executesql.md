@@ -5,7 +5,7 @@ excerpt: >-
   query and then click "Export as cURL"
 
 
-  ![screenshot](https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image%20(102).png)
+  ![screenshot](https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/image%20(102).png)
 
 
   Find more: https://docs.sentio.xyz/reference/data#sql-api

@@ -17,7 +17,7 @@ The best way to understand a transaction is to trace the fund, Sentio provides b
 After a transaction, different parties involved might have their balance changed. Sentio displays the changed balance directly.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (22).png" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/image (22).png" alt="" />
   <figcaption>
     <p>Balance Change</p>
   </figcaption>
@@ -30,7 +30,7 @@ For example, in this MEV arbitrage transaction above, each party involved has a 
 Sentio also provides detailed and **ordered** fund flow. See example below (The arbitrage made a profit by trading in a few trading venues)
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (17).png" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/image (17).png" alt="" />
   <figcaption>
     <p>Fund flow</p>
   </figcaption>

@@ -12,7 +12,7 @@ next:
 ---
 ```mdx
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (4) (3).png" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/image (4) (3).png" alt="" />
   <figcaption></figcaption>
 </figure>
 

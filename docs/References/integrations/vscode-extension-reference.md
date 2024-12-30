@@ -27,7 +27,7 @@ Sentio is a powerful VSCode extension designed to streamline the development of 
    * Download and install the Sentio extension from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=sentio.sentio).
    * Alternatively, you can install it via the VSCode Extensions sidebar by searching for "Sentio".
      <figure>
-       <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/vscode_search_extension.png" alt="" />
+       <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/vscode_search_extension.png" alt="" />
        <figcaption>
          <p>Search sentio in VSCode marketplace</p>
        </figcaption>
@@ -39,7 +39,7 @@ Sentio is a powerful VSCode extension designed to streamline the development of 
 
    * Click on the Sentio logo in the sidebar to open the Sentio panel.
      <figure>
-       <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/vscode_open_extension.gif" alt="" />
+       <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/vscode_open_extension.gif" alt="" />
        <figcaption>
          <p>Open Sentio extension in VSCode</p>
        </figcaption>
@@ -51,7 +51,7 @@ Sentio is a powerful VSCode extension designed to streamline the development of 
      - **Upload**: Compile and upload your project.
      - **Upload To**: Choose a destination project and version to upload and override.
      <figure>
-       <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/vscode_upload_to.gif" alt="" />
+       <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/vscode_upload_to.gif" alt="" />
        <figcaption>
          <p>Extension "Upload to" logic</p>
        </figcaption>

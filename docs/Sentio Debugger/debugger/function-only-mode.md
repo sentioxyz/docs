@@ -26,6 +26,6 @@ The debugger has standard definitions of
 Under this mode, users can visualize **Inputs**, **Return Value** and **Gas info**.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (8).png" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/image (8).png" alt="" />
   <figcaption></figcaption>
 </figure>

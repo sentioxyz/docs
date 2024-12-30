@@ -17,7 +17,7 @@ For the list you could view all the available metrics you submitted from the pro
 Here is one example to make a dashboard to show the daily trading volume from a metric `vol_sum` collected.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/rollup.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/rollup.gif" alt="" />
   <figcaption></figcaption>
 </figure>
 

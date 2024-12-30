@@ -13,7 +13,7 @@ next:
 You can upgrade your SDK version by modifying `package.json`
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (3) (1) (2).png" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/image (3) (1) (2).png" alt="" />
   <figcaption></figcaption>
 </figure>
 

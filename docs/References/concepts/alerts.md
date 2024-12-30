@@ -21,7 +21,7 @@ Assume we want to alert if TVL of your project is below a threshold, you could
 * Choose a notification channel [notification-channel](notification-channel "mention")
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/creatingAlert.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/creatingAlert.gif" alt="" />
   <figcaption></figcaption>
 </figure>
 
@@ -34,7 +34,7 @@ Assume we want to alert if TVL of your project is below a threshold, you could
 You can count certain number of logs matching a criteria, and setup alerts based on the condition.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/log.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/log.gif" alt="" />
   <figcaption></figcaption>
 </figure>
 

@@ -19,7 +19,7 @@ This is following the metrics submitted by [monitor-coinbase-cbeth-mint-burn-via
 Here is one example we have a dashboard to show the **Mint Activity - 24 Hours Aggregation.**
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/dashboard (1).gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/dashboard (1).gif" alt="" />
   <figcaption></figcaption>
 </figure>
 
@@ -30,7 +30,7 @@ Here we take a metric and apply a rollup function to perform 24 hours sum aggreg
 Following [monitor-pancake-swap-ifo-deposit](monitor-pancake-swap-ifo-deposit "mention"), we could build a dashboard to show Daily Active Users.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/eventAnalytics.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/eventAnalytics.gif" alt="" />
   <figcaption></figcaption>
 </figure>
 

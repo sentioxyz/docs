@@ -19,7 +19,7 @@ Assume we want to alert if TVL of your project is below a threshold, you could
 * Choose a notification channel [notification-channel](notification-channel "mention")
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/creatingAlert.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/creatingAlert.gif" alt="" />
   <figcaption></figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ Assume we want to alert if TVL of your project is below a threshold, you could
 When you receive an alert instance (assuming through email channel), you can find the attached link that directly takes you to the alert instance page.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/alertInstance.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/alertInstance.gif" alt="" />
   <figcaption>
     <p>Viewing Alert Instance</p>
   </figcaption>

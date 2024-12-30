@@ -17,7 +17,7 @@ To understand a transaction even further, users can use the debugger to visualiz
 On the upper-left section, Sentio shows the trace of the transaction, this is the same as [trace-view](trace-view "mention"). Users can use this to select a location and execute directly to that position.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (2) (4).png" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/image (2) (4).png" alt="" />
   <figcaption></figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ On the upper-left section, Sentio shows the trace of the transaction, this is th
 The bottom-left section contains the current call stack information, for example:
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (7) (5).png" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/image (7) (5).png" alt="" />
   <figcaption></figcaption>
 </figure>
 
@@ -34,4 +34,4 @@ The bottom-left section contains the current call stack information, for example
 
 Sentio has two debug modes, [function-only-mode](function-only-mode "mention") and [single-step-mode](single-step-mode "mention"), while the first one is the default, the latter enables you to examine execution in much greater detail.
 
-![](https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (2) (1).png)
+![](https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/image (2) (1).png)

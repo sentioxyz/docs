@@ -42,7 +42,7 @@ There are 3 types of permission levels for a project
 There are two types of visibility for a project, Public access or Private.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (21) (1).png" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/image (21) (1).png" alt="" />
   <figcaption></figcaption>
 </figure>
 
@@ -55,7 +55,7 @@ There are two types of visibility for a project, Public access or Private.
 ### Collaborators
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (4) (2) (1).png" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/image (4) (2) (1).png" alt="" />
   <figcaption></figcaption>
 </figure>
 

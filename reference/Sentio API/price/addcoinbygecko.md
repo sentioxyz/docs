@@ -10,7 +10,7 @@ excerpt: >-
   please AWARE that the coingecko id is NOT the same as the symbol of the coin.
 
 
-  ![screenshot](https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/coingecko_apiid.png)
+  ![screenshot](https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/coingecko_apiid.png)
 api:
   file: sentio-api.json
   operationId: AddCoinByGecko

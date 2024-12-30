@@ -36,7 +36,7 @@ Most of functions can be access through [API](https://docs.sentio.xyz/reference/
 Users can search for any transaction on the [Explorer page](https://app.sentio.xyz/explorer), and then use the debugger.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (32).png" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/image (32).png" alt="" />
   <figcaption>
     <p>Transaction Search</p>
   </figcaption>
@@ -47,6 +47,6 @@ Users can search for any transaction on the [Explorer page](https://app.sentio.x
 You can also install our [Chrome plugin](https://chromewebstore.google.com/detail/sentio/kkdofmcnddcnldoingfpiojnnkdcbhnf), which brings all the functionalities directly into your favorite explorer.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (39).png" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/image (39).png" alt="" />
   <figcaption></figcaption>
 </figure>

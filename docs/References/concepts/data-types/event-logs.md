@@ -41,14 +41,14 @@ Using the menu on the left hand side, users can filter the log based on [#log-le
 * Click a label switch between **All** and **Only**
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/allonly.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/allonly.gif" alt="" />
   <figcaption></figcaption>
 </figure>
 
 * Click the checkbox **exclude** a label
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/unselect.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/unselect.gif" alt="" />
   <figcaption></figcaption>
 </figure>
 
@@ -57,7 +57,7 @@ Using the menu on the left hand side, users can filter the log based on [#log-le
 We support **full-text search** on logs. If you want to search all the **SWAP USDC:**
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/fulltext.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/fulltext.gif" alt="" />
   <figcaption></figcaption>
 </figure>
 
@@ -68,7 +68,7 @@ We support **full-text search** on logs. If you want to search all the **SWAP US
 Let's find all the logs with a given `poolName`
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/term.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/term.gif" alt="" />
   <figcaption></figcaption>
 </figure>
 
@@ -77,7 +77,7 @@ Let's find all the logs with a given `poolName`
 Let's find all the logs with **amount** between 1000 to 10000.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/range.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/range.gif" alt="" />
   <figcaption></figcaption>
 </figure>
 
@@ -86,6 +86,6 @@ Let's find all the logs with **amount** between 1000 to 10000.
 The conditions are composable
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/composite.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/composite.gif" alt="" />
   <figcaption></figcaption>
 </figure>

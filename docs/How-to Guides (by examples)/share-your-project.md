@@ -13,14 +13,14 @@ next:
 You could share the project by making it public
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/public.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/public.gif" alt="" />
   <figcaption></figcaption>
 </figure>
 
 Or you could add collaborators here:
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/collab.gif" alt="" />
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/collab.gif" alt="" />
   <figcaption></figcaption>
 </figure>
 
