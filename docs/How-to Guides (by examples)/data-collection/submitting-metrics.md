@@ -14,7 +14,6 @@ next:
 >
 > Metrics API is the same among all different chains.
 
-
 Metrics have 2 types: [Counter](metrics#counter) and [Gauge](metrics#gauge).
 
 ```typescript
