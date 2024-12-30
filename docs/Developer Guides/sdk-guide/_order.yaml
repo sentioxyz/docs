@@ -6,3 +6,4 @@
 - export-via-webhook
 - debug-processors
 - dynamic-processor-creation
+- handle-erc-20-token
