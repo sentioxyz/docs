@@ -7,3 +7,4 @@
 - simulatetransaction
 - getcalltracebysimulation
 - simulatetransactionbundle
+- get-indexed-call-trace
