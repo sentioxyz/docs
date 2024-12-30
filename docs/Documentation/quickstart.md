@@ -1,6 +1,8 @@
 ---
 title: 💡 Quickstart
-excerpt: ''
+excerpt: >-
+  In this section, we will show you how to set up a simple project to monitor an
+  ERC20 contract.
 deprecated: false
 hidden: false
 metadata:
@@ -10,13 +12,9 @@ metadata:
 next:
   description: ''
 ---
-> ℹ️
->
-> In this section, we will show you how to set up a simple project to monitor an ERC20 contract.
-
 ## Step 1: Create a Sentio Account
 
-Simply go to [https://app.sentio.xyz](https://app.sentio.xyz) and login/create your account. 
+Simply go to [https://app.sentio.xyz](https://app.sentio.xyz) and login/create your account.
 
 ## Step 2: Create a Project (optional)
 
@@ -25,7 +23,8 @@ Though this is optional because our CLI can also automatically create a project 
 
 <figure>
   <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/createProject.gif" alt="" />
-  <figcaption></figcaption>
+
+  <figcaption />
 </figure>
 
 ## Step 3: Setup Dev environment
@@ -40,13 +39,13 @@ You can simply run the following command to create a sentio processor project.
 npx @sentio/cli@latest create `<project name>`
 ```
 
-The commands will generate a template project based on [X2Y2 token](https://github.com/X2Y2-io/x2y2-sdk). This should be a good starting point to write your own processor logic. It is also possible to create template projects for other types of chains, please refer [CLI Reference](cli-reference#sentio-create). 
+The commands will generate a template project based on [X2Y2 token](https://github.com/X2Y2-io/x2y2-sdk). This should be a good starting point to write your own processor logic. It is also possible to create template projects for other types of chains, please refer [CLI Reference](cli-reference#sentio-create).
 
 > ℹ️
 >
 > You can directly **modify the code (**`src/processor.ts`**)** to fit your use case as well.
 
-Sentio has a list of builtin ABIs. We also support custom ABIs for your own project. See [decoding-from-custom-abis](decoding-from-custom-abis "mention") for more details. 
+Sentio has a list of builtin ABIs. We also support custom ABIs for your own project. See [decoding-from-custom-abis](decoding-from-custom-abis "mention") for more details.
 
 For more information on how to write a processor you can refer to [processor-basic](processor-basic "mention")
 
@@ -62,7 +61,8 @@ You will see a link to [data-source](data-source "mention") printed and you can 
 
 <figure>
   <img src="https://raw.githubusercontent.com/sentioxyz/docs/main/.gitbook/assets/image (4) (3) (1).png" alt="" />
-  <figcaption></figcaption>
+
+  <figcaption />
 </figure>
 
 ## End: Verify Metrics
