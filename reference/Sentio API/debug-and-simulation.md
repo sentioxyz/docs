@@ -140,7 +140,7 @@ It will return a list of successful simulation results, it will stop at the tran
 
 #### State Diff
 
-Endpoint: https://app.sentio.xyz/api/v1/solidity/state_diff
+Endpoint: [https://app.sentio.xyz/api/v1/solidity/state\_diff](https://app.sentio.xyz/api/v1/solidity/state_diff)
 
 API key is required.
 
@@ -153,11 +153,11 @@ curl --location 'https://app.sentio.xyz/api/v1/solidity/state_diff?networkId=1&t
 --header 'api-key: <API_KEY>'
 ```
 
-If this is bundle simulation, then use `txId.bundleId`  instead of `txId.simulationId`, it will only return traces that were successfully executed.&#x20;
+If this is bundle simulation, then use `txId.bundleId`  instead of `txId.simulationId`, it will only return traces that were successfully executed. 
 
 #### Trace Decoded Trace
 
-Endpoint: https://app.sentio.xyz/api/v1/solidity/call_trace
+Endpoint: [https://app.sentio.xyz/api/v1/solidity/call\_trace](https://app.sentio.xyz/api/v1/solidity/call_trace)
 
 API key is required.
 
@@ -186,27 +186,30 @@ curl -L 'https://app.sentio.xyz/api/v1/solidity/simulate_bundle/<BUNDLE_ID>?&pro
 -H 'api-key: <API_KEY>'
 ```
 
-[//]: # (# Code Index)
+[//]: # "# Code Index"
 
-[//]: # (Code intelligence experience like jumping to the definition and finding reference experience is powered by index API. Two parameters to be provided, numeric chain ID &#40;e.g. polygon 137 as in the example&#41;, and the transaction ID.)
+[//]: # "Code intelligence experience like jumping to the definition and finding reference experience is powered by index API. Two parameters to be provided, numeric chain ID (e.g. polygon 137 as in the example), and the transaction ID."
 
-[//]: # ()
-[//]: # (```)
+[//]: #
 
-[//]: # (curl --header 'api-key: <API_KEY>' \)
+[//]: # "```"
 
-[//]: # (     --header 'Content-Type: application/json' \)
+[//]: # "curl --header 'api-key: <API_KEY>' \\"
 
-[//]: # (     --location 'https://app.sentio.xyz/api/v1/solidity/index/137/0x55caabb0d2b704fd0ef8192a7e35d8837e678207')
+[//]: # "     --header 'Content-Type: application/json' \\"
 
-[//]: # (```)
+[//]: # "     --location 'https://app.sentio.xyz/api/v1/solidity/index/137/0x55caabb0d2b704fd0ef8192a7e35d8837e678207'"
 
-[//]: # ()
-[//]: # (The API returns a SCIP `Index`, the details schema is documented at [https://github.com/sourcegraph/scip/blob/main/scip.proto]&#40;https://github.com/sourcegraph/scip/blob/main/scip.proto&#41;. You can read more about SCIP [here]&#40;https://docs.sourcegraph.com/code\_navigation/explanations/writing\_an\_indexer#understanding-the-scip-protobuf-schema&#41;.)
+[//]: # "```"
 
-[//]: # ()
-[//]: # (We also provided an NPM package [@sentio/scip]&#40;https://www.npmjs.com/package/@sentio/scip&#41; that provides utils to help process the results.)
+[//]: #
 
-[//]: # ()
+[//]: # "The API returns a SCIP `Index`, the details schema is documented at [https://github.com/sourcegraph/scip/blob/main/scip.proto](https://github.com/sourcegraph/scip/blob/main/scip.proto). You can read more about SCIP [here](https://docs.sourcegraph.com/code_navigation/explanations/writing_an_indexer#understanding-the-scip-protobuf-schema)."
+
+[//]: #
+
+[//]: # "We also provided an NPM package [@sentio/scip](https://www.npmjs.com/package/@sentio/scip) that provides utils to help process the results."
+
+[//]: #
 
 [//]: # (#
