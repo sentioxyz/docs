@@ -12,13 +12,13 @@ next:
 ---
 Sentio allows users to work with different chains through different APIs. Current we support 5 types of chains:
 
-* [Evm Chains](evm-chains/)
+* [EVM Chains](evm-chains/)
 * [Aptos](aptos/)
 * [SUI](doc:sui)
 * [Starknet](doc:starknet)
 * [Fuel](doc:fuel)
 
-Supported network list and its features are listed below, we are actively supporting more networks, let us know via [\
+Supported network and its features are listed below, we are actively supporting more networks, let us know via [\
 `support@sentio.xyz`](mailto:support@sentio.xyz) about your use case to help us prioritize network support.
 
 > ✅
