@@ -37,7 +37,7 @@ Contract name is optional and will make file generated more readable.
 
 Run
 
-```bash
+```shell Shell
 yarn sentio gen
 ```
 
@@ -45,7 +45,7 @@ Will generate all types bindings for the added contracts.
 
 Navigate to the project directory, where you should find the following files:
 
-```shell
+```Text Shel
 ├── package.json
 ├── sentio.yaml
 ├── abis/sui
@@ -67,7 +67,7 @@ Start your processor by importing the generated code and binding the processor t
 
 You should find `onEventXXX` methods to capture events emitted by any transactions.
 
-```
+```typescript
 import { bluemove_launchpad } from "./types/sui/0x305fdc899f4d5d13a1e03ea784eed9bc5bdcb3e3550a32466ff34518aa4627a3.js";
 
 bluemove_launchpad.bind({
@@ -85,7 +85,7 @@ bluemove_launchpad.bind({
 
 You can access the event content by `event`, and SUI [transaction](https://sdk.mystenlabs.com/typedoc/interfaces/_mysten_sui.client.SuiTransactionBlockResponse.html)  by`ctx.transaction`.  Not all fields in `ctx.transaction` are fetched by default to increase the performance, to get more fields like`objectChanges`, add fetch config. All options can be found at [MoveFetchConfig](https://sdk.sentio.xyz/interfaces/..MoveFetchConfig.html)
 
-```
+```typescript
   .onEventMintNFTEvent(async (event, ctx) => {
     ...
     },
@@ -94,3 +94,39 @@ You can access the event content by `event`, and SUI [transaction](https://sdk.m
 ```
 
 ### Object processor
+
+If you want to watch single object content change, you could [`SuiObjectProcessor`](https://sdk.sentio.xyz/classes/sui.SuiObjectProcessor.html) , e.g.
+
+```
+SuiObjectProcessor.bind({
+  objectId: '0xa14f85860d6ce99154ecbb13570ba5fba1d8dc16b290de13f036b016fd19a29c'
+}).onTimeInterval(async (self, objects, ctx) => {
+  const fields = await ctx.coder.getDynamicFields(
+    objects,
+    BUILTIN_TYPES.U64_TYPE,
+    single_collateral.PortfolioVault.type()
+  )
+
+  ctx.meter.Gauge('fields_count').record(fields.length)
+}, 60*24, 60*24)
+.onCheckpointInterval(...)
+```
+
+It will fetch the object content and all objects belong to it (such as dynamic objects) every certain period of time in history. If more info is needed, use `ctx.objectVersion` to work with SUI Typescript SDK to do that.
+
+### Address processor
+
+Similar to object processor, you have use [`SuiAddressProcessor`](\[https://sdk.sentio.xyz/classes/sui.SuiAddressProcessor.html]\(https://sdk.sentio.xyz/classes/sui.SuiAddressProcessor.html\)) to fetch all objects belong to an address every certain period of time or checkpoints.
+
+### Object type processor
+
+If you want to handle all objects that has the same type instead of single object, use \[`SuiObjectTypeProcessor.onTimeInterval`](https://sdk.sentio.xyz/classes/sui.SuiObjectTypeProcessor.html#ontimeinterval))
+
+```
+import { sui_system, validator, staking_pool } from '@sentio/sdk/sui/builtin/0x3'
+
+SuiObjectTypeProcessor.bind({
+  objectType: staking_pool.StakedSui.type()
+})
+
+```
