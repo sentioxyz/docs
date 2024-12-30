@@ -14,5 +14,6 @@ Sentio allows users to work with different chains through different APIs. In thi
 
 * [evm-chains](evm-chains/ "mention")
 * [aptos](aptos/)
-* SUI chains
+* [SUI chains](doc:sui)
+* [Starknet](doc:starknet)
 * [Fuel chains](doc:fuel)
