@@ -1,8 +1,5 @@
 ---
 title: 💡 Quickstart
-excerpt: >-
-  In this section, we will show you how to set up a simple project to monitor an
-  ERC20 contract.
 deprecated: false
 hidden: false
 metadata:
@@ -15,8 +12,6 @@ next:
 > ℹ️
 >
 > In this section, we will show you how to set up a simple project to monitor an ERC20 contract.
-
-In this section, we will show you how to set up a simple project to monitor an ERC20 contract.
 
 ## Step 1: Create a Sentio Account
 
