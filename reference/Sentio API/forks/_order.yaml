@@ -1,3 +1,4 @@
 - listforks
 - createfork
 - getcalltraceonforkbundle
+- simulatetransactiononfork
