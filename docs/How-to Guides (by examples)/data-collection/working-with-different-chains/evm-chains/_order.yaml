@@ -1,2 +1,3 @@
 - monitor-coinbase-cbeth-mint-burn-via-events
 - monitor-totalsupply-of-cbeth-via-interval
+- monitor-call-count-by-trace
