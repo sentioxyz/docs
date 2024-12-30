@@ -7,3 +7,4 @@
 - debug-processors
 - dynamic-processor-creation
 - handle-erc-20-token
+- handle-big-numbers
