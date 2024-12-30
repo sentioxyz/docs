@@ -85,33 +85,32 @@ The handler takes two parameters
   * hold the tools for doing data submission, like `eventLogger` and `meter`, which records [logs-in-processor](logs-in-processor "mention") and [metrics-in-processors](metrics-in-processors "mention").
   * hold the [FuelTransaction](https://sdk.sentio.xyz/types/fuel.FuelTransaction.html), which is extends from official SDK's [TransactionSummary](https://docs.fuel.network/docs/nightly/fuels-ts/account/#transactionsummary) and also decoded logs an
 
-[//]: # (## Call Handling  )
+## Call Handling (WIP)
 
-[//]: # ()
-[//]: # (In additional to log handler, you can also do function call handler, notice it only capture the entry transaction call:)
+In additional to log handler, you can also do function call handler, notice it only capture the entry transaction call:
 
-[//]: # ()
-[//]: # (```typescript)
 
-[//]: # (OrderbookProcessor.bind&#40;{)
+```typescript
 
-[//]: # (  chainId: FuelNetwork.TEST_NET,)
+OrderbookProcessor.bind({
 
-[//]: # (  address: '0x0f0c1065a7b82d026069c5cf070b21ee65713fd1ac92ec1d25eacc3100187f78')
+  chainId: FuelNetwork.TEST_NET,
 
-[//]: # (}&#41;)
+  address: '0x0f0c1065a7b82d026069c5cf070b21ee65713fd1ac92ec1d25eacc3100187f78'
 
-[//]: # (    .onCallMatch_orders&#40;async &#40;orderTx, ctx&#41; => {)
+})
 
-[//]: # (      for &#40;const log of orderTx.getLogsOfTypeTradeEvent&#40;&#41;&#41; {)
+    .onCallMatch_orders(async (orderTx, ctx) => {
 
-[//]: # (        // record trade event)
+      for (const log of orderTx.getLogsOfTypeTradeEvent()) {
 
-[//]: # (      })
+        // record trade event
 
-[//]: # (    }&#41;)
+      }
 
-[//]: # (```)
+    })
+
+```
 
 You can access arguments in `orderTx.args` or `orderTx.argsObject`,  and result in `orderTx.returnValue`, all the objects is typed in the TS code.
 
