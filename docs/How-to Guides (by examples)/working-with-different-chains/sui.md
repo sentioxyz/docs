@@ -121,8 +121,8 @@ It will fetch the object content and all objects belong to it (such as dynamic o
 
 You may also want to carefully tune the two time intervals for better indexing performance
 
-* **Watching time interval**: how often the handler is trigger in watching state
-* **Backfill time interval**: how often the handler is trigger during processor backfill, you may want to set this a larger number
+* **Watching time interval**: how often the handler is trigger by default
+* **Backfill time interval**: how often the handler is trigger during processor backfill, you may want to set this a larger number, especially if the object has very long history
 
 ### Address processor
 
