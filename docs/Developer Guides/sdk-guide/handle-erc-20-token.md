@@ -19,8 +19,8 @@ const tokenInfo = await token.getERC20TokenInfo(tokenAddress, chainId)
 
 `tokenInfo` contains
 
-* _symbol_
-* _name_
-* _decimal_
+* *symbol*
+* *name*
+* *decimal*
 
-We often need _decimal_ to normalize the amount, as introduced in [handle-big-numbers](handle-big-numbers "mention")
+We often need *decimal* to normalize the amount, as introduced in [handle-big-numbers](handle-big-numbers "mention")
