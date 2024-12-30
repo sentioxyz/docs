@@ -31,4 +31,4 @@ ExchangeV3Processor.bind({ address: LOOPRING_EXCHANGE }).onCallSubmitBlocks(
 
 > ✅
 >
-> See this [repo](https://github.com/sentioxyz/sentio-processors/blob/main/projects/loopring/src/processor.ts#L85) for more context.&#x20;
+> See this [repo](https://github.com/sentioxyz/sentio-processors/blob/main/projects/loopring/src/processor.ts#L85) for more context. 
