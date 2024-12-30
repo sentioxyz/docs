@@ -8,14 +8,10 @@ metadata:
   description: ''
   robots: index
 next:
-  description: ''
   pages:
-    - type: basic
-      slug: quickstart
+    - slug: quickstart
       title: 💡 Quickstart
-    - type: basic
-      slug: setup
-      title: 🔗 Setup
+      type: basic
 ---
 ## Overview
 
@@ -23,12 +19,7 @@ Sentio provides modern **monitoring**, **alerting**, log management and debuggin
 
 Users can use Sentio’s SDK to **collect** and **transform** [metrics](metrics "mention") and [event-logs](event-logs "mention") generated based on their smart contracts’ events, transactions, traces and states. Sentio fully manages the indexing process, and users can visualize and set up [alerts](alerts "mention") on the metrics and perform advanced search on the logs, all via Sentio’s web interface. Users can further dig into a transaction via [Overview](overview "mention").
 
-<figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/all.gif" alt="" />
-  <figcaption>
-    <p>Fully Integrated Experience</p>
-  </figcaption>
-</figure>
+<Image align="center" border={false} caption="Fully Integrated Experience" src="https://files.readme.io/b55d879c10b0281c5004e6af664af5110b0670c77a3af28778e9832139824c98-all.gif" />
 
 For the **complete real-time monitoring of sample projects** which cover both [metrics](metrics "mention") and [event-logs](event-logs "mention"), See
 
@@ -40,7 +31,7 @@ See [supported-networks](supported-networks "mention") for chains supported.
 
 See Sentio 101 tutorial below (The aptos version is [here](https://www.youtube.com/watch?v=l4RsxPrGyqE\&ab_channel=Sentio))
 
-<Embed url="https://www.youtube.com/embed/yKggwExqKTw" typeOfEmbed="youtube" provider="youtube.com" title="undefined" href="https://www.youtube.com/embed/yKggwExqKTw" html="%3Ciframe%20src%3D%22https%3A%2F%2Fwww.youtube.com%2Fembed%2FyKggwExqKTw%22%20width%3D%22640%22%20height%3D%22480%22%20frameborder%3D%220%22%3E%3C%2Fiframe%3E" />
+<Embed url="https://www.youtube.com/embed/yKggwExqKTw" typeOfEmbed="youtube" href="https://www.youtube.com/embed/yKggwExqKTw" html="%3Ciframe%20src%3D%22https%3A%2F%2Fwww.youtube.com%2Fembed%2FyKggwExqKTw%22%20width%3D%22640%22%20height%3D%22480%22%20frameborder%3D%220%22%3E%3C%2Fiframe%3E" />
 
 ## Get Started
 
