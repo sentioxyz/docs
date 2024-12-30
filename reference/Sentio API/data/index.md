@@ -19,7 +19,8 @@ The easiest way to build query is through UI, you could first create an insight 
 
 and then
 
-<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (101).png" alt="" width="563"><figcaption></figcaption></figure>
+TODO
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (101).png" alt="" width="563"></img><figcaption></figcaption></figure>
 
 The result is like:
 
@@ -131,7 +132,7 @@ This configuration ensures that you get hourly data points for the last 30 days,
 
 For SQL API, go to "Data Studio" -> "SQL Editor", write your query and then click "Export as cURL"
 
-<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (102).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/.gitbook/assets/image (102).png" alt="" width="563"></img><figcaption></figcaption></figure>
 
 Then it shows things like
 
