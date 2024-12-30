@@ -22,8 +22,6 @@ coin.bind().onEventWithdrawEvent((evt, ctx) => {
 })
 ```
 
-
-
 Use [#sentio-add](cli-reference#sentio-add "mention")to fetch ABIs for your modules.
 
 Then run
@@ -34,8 +32,7 @@ yarn sentio build
 
 > ℹ️
 >
-> You can also download the account modules through [https://mainnet.aptoslabs.com/v1/accounts/0x7d7e436f0b2aafde60774efb26ccc432cf881b677aca7faaf2a01879bd19fb8/modules](https://mainnet.aptoslabs.com/v1/accounts/0x7d7e436f0b2aafde60774efb26ccc432cf881b677aca7faaf2a01879bd19fb8/modules), replace the address with your own account address, and put the result as a json file under `abis/aptos` directory. &#x20;
-
+> You can also download the account modules through [https://mainnet.aptoslabs.com/v1/accounts/0x7d7e436f0b2aafde60774efb26ccc432cf881b677aca7faaf2a01879bd19fb8/modules](https://mainnet.aptoslabs.com/v1/accounts/0x7d7e436f0b2aafde60774efb26ccc432cf881b677aca7faaf2a01879bd19fb8/modules), replace the address with your own account address, and put the result as a json file under `abis/aptos` directory.  
 
 It will generate all the types under `src/types/aptos`. And download all depended account modules' abi into `abis/aptos` directory.
 
