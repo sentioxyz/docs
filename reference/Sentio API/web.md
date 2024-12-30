@@ -10,5 +10,5 @@ metadata:
 next:
   description: ''
 ---
-Web API provides utilities to interact with Sentio for basic 
+Web API provides utilities to interact with Sentio for basic\
 operations like managing projects, dashboards, etc.
