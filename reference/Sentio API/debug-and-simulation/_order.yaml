@@ -5,3 +5,4 @@
 - getsimulationbundleinproject
 - getcalltracebybundle
 - simulatetransaction
+- getcalltracebysimulation
