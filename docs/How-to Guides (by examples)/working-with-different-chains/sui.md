@@ -5,7 +5,7 @@ hidden: false
 metadata:
   robots: index
 ---
-# Create project
+## Create project
 
 You can create a new project with the following command:
 
@@ -13,7 +13,7 @@ You can create a new project with the following command:
 npx @sentio/cli@latest create <your project name> --chain-type sui
 ```
 
-# Setup contract address
+## Setup contract address
 
 Use [`sentio add`](cli-reference#sentio-add) to add contracts and fetch ABIs.
 
@@ -33,7 +33,7 @@ contracts:
 
 Contract name is optional and will make file generated more readable.
 
-# Type Generation
+## Type Generation
 
 Run
 
@@ -59,11 +59,11 @@ Navigate to the project directory, where you should find the following files:
 └── tsconfig.json
 ```
 
-# Processor
+## Processor
 
 Start your processor by importing the generated code and binding the processor to the contract address.
 
-## Event processor
+### Event processor
 
 You should find `onEventXXX` methods to capture events emitted by any transactions.
 
@@ -93,7 +93,7 @@ You can access the event content by `event`, and SUI [transaction](https://sdk.m
   })
 ```
 
-## Object processor
+### Object processor
 
 If you want to watch single object content change, you could [`SuiObjectProcessor`](https://sdk.sentio.xyz/classes/sui.SuiObjectProcessor.html) , e.g.
 
@@ -124,11 +124,11 @@ You may also want to carefully tune the two time intervals for better indexing p
 * **Watching time interval**: how often the handler is trigger by default
 * **Backfill time interval**: how often the handler is trigger during processor backfill, you may want to set this a larger number, especially if the object has very long history
 
-## Address processor
+### Address processor
 
 Similar to object processor, you have use [`SuiAddressProcessor`](\[https://sdk.sentio.xyz/classes/sui.SuiAddressProcessor.html]\(https://sdk.sentio.xyz/classes/sui.SuiAddressProcessor.html\)) to fetch all objects belong to an address every certain period of time or checkpoints.
 
-## Object type processor
+### Object type processor
 
 If you want to handle all objects that has the same type instead of single object, use [`SuiObjectTypeProcessor.onTimeInterval`](https://sdk.sentio.xyz/classes/sui.SuiObjectTypeProcessor.html#ontimeinterval), e.g.
 
@@ -159,7 +159,7 @@ SuiObjectTypeProcessor.bind({
   })
 ```
 
-## Templating object processor
+### Templating object processor
 
 Some times you want to dynamic bind object processor, e.g. you want to register object handler for all pools create by an contracts (we prefer use `SuiObjectTypeProcessor` for better performance, but some times you only care about a subset of those objets).
 
