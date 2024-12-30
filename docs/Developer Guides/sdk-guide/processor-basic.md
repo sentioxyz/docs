@@ -14,7 +14,7 @@ The core concept of a Sentio project is **Processor**. A processor is usually a 
 
 While Sentio processor provides max performance and flexibility, we also support [hosted-subgraph](hosted-subgraph "mention") that still have lots of feature like SQL/GraphQL API, analytic dashboard, multi-versioning. So that you could easily run data pipeline on Sentio without writing new code.
 
-A Sentio processor could handle multiple contracts on multiple chains. To import a contract, simple copy the contract's [ABI](abi) JSON file into `abis` directory. Run `sentio build` or `sentio gen` will generate contract processor files into the `src/types` directory.&#x20;
+A Sentio processor could handle multiple contracts on multiple chains. To import a contract, simple copy the contract's [ABI](abi) JSON file into `abis` directory. Run `sentio build` or `sentio gen` will generate contract processor files into the `src/types` directory. 
 
 Then you can use the generated contract processor class to bind to an address, and add different [handlers](handlers-and-filters), the SDK also comes up with several built-in contract processors, a minimal processor example with built-in [ERC20 processor](https://sentioxyz.github.io/sentio-sdk/classes/builtin.erc20.ERC20Processor.html) is:
 
