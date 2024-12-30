@@ -31,16 +31,16 @@ If you observe an error, it is always possible to use [debug-processors](debug-p
 When you do ethers call in your processor, it's very easy to produce errors. You could check the following list for possible causes:
 
 * You are using the wrong address for the contract, you could do `try catch`  and `console.log` the address and then verify on the blockchain explorer
-*   &#x20;You are calling to chains other than Ethereum mainnet, the get contract view function has a default chain parameter, e.g.\
-    `getERC721Contract(address: string, network: EthChainId.ETHEREUM)`\
-    you need to specific network parameters for other chains, the list of chain id could be imported at&#x20;
+*  You are calling to chains other than Ethereum mainnet, the get contract view function has a default chain parameter, e.g.\
+  `getERC721Contract(address: string, network: EthChainId.ETHEREUM)`\
+  you need to specific network parameters for other chains, the list of chain id could be imported at 
 
-    ```typescript
-    import { EthChainId } from "@sentio/sdk/eth";
-    ```
-* Using the wrong block number to call, when calling the view function, the default block number are the following, it's common that call fail for certain block, contact support@sentio.xyz, if you still have a problem.&#x20;
-  * If you are using `ctx.contract.function` then the default block number is `ctx.blockNumber`&#x20;
-  * If you just call contract view outside of context, it by default `latest`&#x20;
+  ```typescript
+  import { EthChainId } from "@sentio/sdk/eth";
+  ```
+* Using the wrong block number to call, when calling the view function, the default block number are the following, it's common that call fail for certain block, contact [support@sentio.xyz](mailto:support@sentio.xyz), if you still have a problem. 
+  * If you are using `ctx.contract.function` then the default block number is `ctx.blockNumber` 
+  * If you just call contract view outside of context, it by default `latest` 
 * If it says `UNRECOGNIZED_NAME` , it's likely that you pass invalid ENS name to a field that is the address type.
 
-&#x20;If you still have problems, feel free to [contact us](#getting-help).
+ If you still have problems, feel free to [contact us](#getting-help).
