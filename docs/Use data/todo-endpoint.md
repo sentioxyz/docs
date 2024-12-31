@@ -37,3 +37,11 @@ select * from table limit ${limit}
 By clicking on the `+ Endpoint` button, you can turn the saved query into an endpoint. The endpoint needs to have a name and a path. The path is unique to the current project and will be used to access the endpoint. You can also set the permission option for this endpoint. Once you have entered the required information, click on the `Create Endpoint` button.
 
 ![](https://files.readme.io/527a1eeb34c79ac34a88260cb491f7923e1b715ff46224ff113585972910e6b3-image.png)
+
+All of the parameters you added to the query will be converted into body parameters for the endpoint.
+
+### 4. Access the endpoint
+
+Switch to the `Docs` tab to see the details of the endpoint you created. You can see the path of the endpoint, the URL, and the parameters that the endpoint accepts. You can also test the endpoint by clicking on the `Try it ` button. This will send a request to the endpoint and display the response in the `Response` section.
+
+![](https://files.readme.io/ec72c9c5f530ce9b64f216b46715212f7e6fc56bdce84d10a38cd237854d51e1-image.png)
