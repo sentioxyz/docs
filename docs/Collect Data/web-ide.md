@@ -12,7 +12,7 @@ next:
 ---
 ## Introduction
 
-The **Sentio Code Workspace** is an online coding environment developed with the **Coder** platform, designed to facilitate the efficient development of **Sentio Processors**. Accessible directly through the Sentio App, the workspace provides developers with a streamlined environment to create and manage processor source code.
+**Sentio Web IDE** is an online coding environment designed to facilitate the efficient development of **Sentio Processors**. Accessible directly through the Sentio App, the workspace provides developers with a streamlined environment to create and manage processor source code.
 
 ### Access Path
 
