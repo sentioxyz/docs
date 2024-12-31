@@ -18,7 +18,7 @@ Sentio allows users to work with different chains through different APIs. Curren
 * [Fuel](doc:fuel): in beta stage, see [fuel-assets](https://github.com/sentioxyz/sentio-processors/tree/main/fuel/fuel-assets) for an example.
 * [Starknet](doc:starknet): in alpha stage.
 * Bitcoin: in alpha stage, see [here](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/btc) for an example.
-* Solana: in alpha stage.
+* Solana: in alpha stage, see [here](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/pyth-staking) for an example.
 
 You can also mix different chains in on project, example [here](https://github.com/sentioxyz/sentio-processors/tree/main/projects/circle).
 
