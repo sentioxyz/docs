@@ -30,7 +30,10 @@ You may want to add parameters to the query so that users can pass in values whe
 select * from table limit ${limit}
 ```
 
-```
-```
-
 ![](https://files.readme.io/7fc688c214237599b590e3d6549a8dd3141fe40718fa9f7cdea16f20b1610e72-image.png)
+
+### 3. Turn the Saved SQL query into an endpoint
+
+By clicking on the `+ Endpoint` button, you can turn the saved query into an endpoint. The endpoint needs to have a name and a path. The path is unique to the current project and will be used to access the endpoint. You can also set the permission option for this endpoint. Once you have entered the required information, click on the `Create Endpoint` button.
+
+![](https://files.readme.io/527a1eeb34c79ac34a88260cb491f7923e1b715ff46224ff113585972910e6b3-image.png)
