@@ -1,5 +1,5 @@
 ---
-title: 📦 Sentio Code workspace
+title: 📦 Code workspace
 excerpt: ''
 deprecated: false
 hidden: false
@@ -18,7 +18,7 @@ The **Sentio Code Workspace** is an online coding environment developed with the
 
 ### Access Path
 
-To access Sentio Code Workspace, navigate through:\
+To access Sentio Code Workspace, navigate through:
 **Sentio App** → **DataSource** → **Processor** → **Source Code**
 
 ### Requirements
