@@ -108,7 +108,7 @@ A sample response looks like:
 }
 ```
 
-## Use Exporter  in processor
+## Use Exporter in processor
 
 You could use `Exporter` to send webhook. Note you need to give the channel name [notification-channel](notification-channel "mention") in the exporter (config on the UI).
 
