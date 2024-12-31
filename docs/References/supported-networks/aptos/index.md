@@ -10,8 +10,6 @@ metadata:
 next:
   description: ''
 ---
-Aptos chain support is in production, example project [here](https://github.com/sentioxyz/sentio-processors/tree/main/projects/pancake-swap).
-
 Here we give a few real examples for how to submit metrics from Aptos. Make sure you briefly read our [sdk-guide](sdk-guide) to get a general idea about how it work.
 
 See the video tutorial below
