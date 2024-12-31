@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-[Fuel](https://fuel.network/) support is in beta stage. [Here](https://github.com/sentioxyz/sentio-processors/tree/main/fuel/fuel-assets) is a simple example.
+[Fuel](https://fuel.network/) support is in beta stage. Here is a simple example.
 
 Two important files:
 
