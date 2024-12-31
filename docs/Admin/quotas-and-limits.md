@@ -16,7 +16,7 @@ Sentio charges usage via **Sentio Units** and bills monthly (or optional annuall
 
 The billing model is as follow:
 
-* All usage inside processor bill to the project
+* All usage inside processor bill to the owner of project
 * All API usage bill to the caller of API (identify by API key)
 * Every UI usage is free of charge.
 
