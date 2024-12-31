@@ -1,5 +1,5 @@
 ---
-title: 💨 Entities
+title: 📂 Entities
 excerpt: ''
 deprecated: false
 hidden: false
