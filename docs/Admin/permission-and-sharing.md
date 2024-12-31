@@ -21,15 +21,18 @@ There are 3 types of permission levels for a project
       <th>Capabilities</th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
       <td>Admin</td>
       <td>Can edit the project and access</td>
     </tr>
+
     <tr>
       <td>Collaborator</td>
       <td>Can edit the project</td>
     </tr>
+
     <tr>
       <td>Viewer</td>
       <td>Can only view dashboard</td>
@@ -42,8 +45,9 @@ There are 3 types of permission levels for a project
 There are two types of visibility for a project, Public access or Private.
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/image (21) (1).png" alt="" />
-  <figcaption></figcaption>
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/public.gif" alt="" />
+
+  <figcaption />
 </figure>
 
 `Public access` means everyone, including guest visitors who have not signed up, will have `Viewer` access to the dashboard of the project. This setting is typically used when you want to share the dashboards you created publicly via social media or blogs.
@@ -55,8 +59,9 @@ There are two types of visibility for a project, Public access or Private.
 ### Collaborators
 
 <figure>
-  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/image (4) (2) (1).png" alt="" />
-  <figcaption></figcaption>
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/collab.gif" alt="" />
+
+  <figcaption />
 </figure>
 
 You can add Collaborators to your project in the `Collaborators` sub tab by adding either their email or username. Once a user is added as a collaborator, the shared project will also appear in their project selector.
