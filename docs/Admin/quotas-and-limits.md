@@ -10,6 +10,8 @@ metadata:
 next:
   description: ''
 ---
+# Limits
+
 ## Number of Series
 
 We limit the total number of [#series](metrics#series "mention") you can submit in one processor. Current the limit is set to **10,000.**
