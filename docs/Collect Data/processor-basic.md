@@ -1,5 +1,5 @@
 ---
-title: 🔥 Sentio Processor
+title: ⚡Sentio Processor
 excerpt: ''
 deprecated: false
 hidden: false
