@@ -1,8 +1,8 @@
 - decoding-from-custom-abis
 - handlers-and-filters
-- debug-processors
 - dynamic-processor-creation
 - handle-erc-20-token
 - handle-big-numbers
 - write-test
+- debug-processors
 - profile-processors-performance
