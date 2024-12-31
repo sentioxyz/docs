@@ -14,31 +14,13 @@ next:
 
 There are 3 types of permission levels for a project
 
-<table>
-  <thead>
-    <tr>
-      <th width="302">Role</th>
-      <th>Capabilities</th>
-    </tr>
-  </thead>
+<br />
 
-  <tbody>
-    <tr>
-      <td>Admin</td>
-      <td>Can edit the project and access</td>
-    </tr>
-
-    <tr>
-      <td>Collaborator</td>
-      <td>Can edit the project</td>
-    </tr>
-
-    <tr>
-      <td>Viewer</td>
-      <td>Can only view dashboard</td>
-    </tr>
-  </tbody>
-</table>
+| Role         | Capabilities                    |
+| ------------ | ------------------------------- |
+| Admin        | Can edit the project and access |
+| Collaborator | Can edit the project            |
+| Viewer       | Can only view dashboard         |
 
 ### Project visibility
 
