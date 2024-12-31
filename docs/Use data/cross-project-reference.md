@@ -1,5 +1,5 @@
 ---
-title: Cross Project Reference
+title: 🧑‍🤝‍🧑 Cross Project Reference
 deprecated: false
 hidden: true
 metadata:
