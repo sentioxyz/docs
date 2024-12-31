@@ -1,5 +1,5 @@
 ---
-title: 🔒 Quotas and Limits
+title: 🔒 Limits
 excerpt: ''
 deprecated: false
 hidden: false
