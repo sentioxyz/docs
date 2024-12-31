@@ -81,4 +81,4 @@ for (const network of mainnetInfos) {
 
 content = content.replace("${chain-content}", chainContents)
 
-fs.writeFileSync('docs/Documentation/supported-networks.md', content)
+fs.writeFileSync('docs/References/supported-networks/index.md', content)
