@@ -1,5 +1,5 @@
 ---
-title: 📦 Code workspace
+title: 📦 Web IDE
 excerpt: ''
 deprecated: false
 hidden: false
