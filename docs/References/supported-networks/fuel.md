@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-[Fuel](https://fuel.network/) support is in beta stage. Here is a simple example.
+[Fuel](https://fuel.network/) support is in beta stage. [Here](https://github.com/sentioxyz/sentio-processors/tree/main/fuel/fuel-assets) is a simple example.
 
 Two important files:
 
@@ -89,7 +89,6 @@ The handler takes two parameters
 
 In additional to log handler, you can also do function call handler, notice it only capture the entry transaction call:
 
-
 ```typescript
 
 OrderbookProcessor.bind({
@@ -113,7 +112,6 @@ OrderbookProcessor.bind({
 ```
 
 You can access arguments in `orderTx.args` or `orderTx.argsObject`,  and result in `orderTx.returnValue`, all the objects is typed in the TS code.
-
 
 ## OnTransfer Handler
 
