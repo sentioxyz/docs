@@ -1,5 +1,5 @@
 ---
-title: ➡ View And Search Event Logs
+title: ➡ View Event Logs
 excerpt: ''
 deprecated: false
 hidden: false
