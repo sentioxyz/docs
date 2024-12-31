@@ -1,5 +1,5 @@
 ---
-title: Price Feed
+title: 💰 Price Feed
 excerpt: ''
 deprecated: false
 hidden: false
