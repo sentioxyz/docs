@@ -1,5 +1,5 @@
 ---
-title: 💨 Metrics
+title: 🧭 Metrics
 excerpt: ''
 deprecated: false
 hidden: false
