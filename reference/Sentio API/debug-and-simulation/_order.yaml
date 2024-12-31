@@ -9,3 +9,13 @@
 - simulatetransactionbundle
 - get-indexed-call-trace
 - getcalltracebytransaction
+- getestimatedgasprice-1
+- searchtransactions-1
+- getsimulations-1
+- getsimulation-1
+- getsimulationbundleinproject-1
+- getcalltracebybundle-1
+- simulatetransaction-1
+- getcalltracebysimulation-1
+- simulatetransactionbundle-1
+- getcalltracebytransaction-1

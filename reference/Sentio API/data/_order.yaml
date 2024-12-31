@@ -12,3 +12,17 @@
 - getmetrics
 - queryinstant
 - queryrange
+- cancelsqlquery-1
+- executesql-1
+- executesqlasync-1
+- querysqlresult-1
+- savesql-1
+- savesql2-1
+- querylog-1
+- querylog2-1
+- listcoins2-1
+- listcoins-1
+- query-1
+- getmetrics-1
+- queryinstant-1
+- queryrange-1

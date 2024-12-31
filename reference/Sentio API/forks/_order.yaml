@@ -9,3 +9,14 @@
 - deletefork
 - updatefork
 - getforkinfo
+- listforks-1
+- createfork-1
+- getcalltraceonforkbundle-1
+- simulatetransactiononfork-1
+- getcalltraceonforksimulation-1
+- simulatetransactionbundleonfork-1
+- getcalltraceonforktransaction-1
+- getfork-1
+- deletefork-1
+- updatefork-1
+- getforkinfo-1
