@@ -1,5 +1,5 @@
 ---
-title: Processor Basic
+title: Sentio Processor
 excerpt: ''
 deprecated: false
 hidden: false
