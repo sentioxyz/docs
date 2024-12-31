@@ -12,7 +12,7 @@ next:
 ---
 Sentio provides a command line tool to easily create and upload processors for your project. To start using it, you need to have [Node.js](https://nodejs.org/en/download/) environment. Then you could run
 
-```bash
+```shell
 npx @sentio/cli@latest --help
 ```
 
@@ -22,7 +22,7 @@ to see all available commands.
 
 Login into sentio for your command line. You need first to create your API key.
 
-```bash
+```shell
 npx @sentio/cli@latest login
 ```
 
@@ -30,19 +30,19 @@ npx @sentio/cli@latest login
 
 Create a sentio processor
 
-```bash
+```shell
 npx @sentio/cli@latest create -n <project name>
 ```
 
 By default it creates EVM based project, if you want to create project for other chains, you could do
 
-```bash
+```shell
 npx @sentio/cli@latest create -c <evm|aptos|solana|raw> <project name>
 ```
 
 If you are working in a mono-repo setup with many processors in repo and have your root package.json control all versions, you need to do the following or delete the sentio dependencies in your child package.json manually.
 
-```bash
+```shell
 npx @sentio/cli@latest create --subproject -n <project name>
 ```
 
@@ -50,19 +50,19 @@ npx @sentio/cli@latest create --subproject -n <project name>
 
 Inside project directory, add contract ABI to your project and generate bindings for a contract in Ethereum mainnet.
 
-```bash
+```shell
 yarn sentio add <contract address>
 ```
 
 To use a different network, try `--chain` flag as follows
 
-```bash
+```shell
 yarn sentio add --chain <chain_id> <contract address>
 ```
 
 By default, the ABI will be downloaded with its address as the name, which will lead the generated binding to use the address for the name as well. To override the name, use `-n <name>`, e.g.
 
-```bash
+```shell
 yarn sentio add --name MyToken --chain <chain_id> <contract address>
 ```
 
@@ -70,13 +70,13 @@ yarn sentio add --name MyToken --chain <chain_id> <contract address>
 
 Inside project directory, build and upload your processor to your project.
 
-```bash
+```shell
 yarn sentio upload
 ```
 
 It's also possible hot-swap a running processor version with new logic, without re-index old data.
 
-```bash
+```shell
 yarn sentio upload --continue-from=<old version>
 ```
 
@@ -84,7 +84,7 @@ yarn sentio upload --continue-from=<old version>
 
 Inside project directory, generate type binding into `src/types` according to ABIs that in `abis` folder.
 
-```bash
+```shell
 yarn sentio gen
 ```
 
@@ -92,6 +92,6 @@ yarn sentio gen
 
 Inside project directory, generate code and then build the processor into `dist` folder.
 
-```bash
+```shell
 yarn sentio build
 ```
