@@ -5,6 +5,8 @@ hidden: false
 metadata:
   robots: index
 ---
+SUI support is currently in production. You can find example project [here](https://github.com/sentioxyz/sentio-processors/tree/main/projects/cetus).
+
 ## Create project
 
 You can create a new project with the following command:
