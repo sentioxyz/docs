@@ -1,5 +1,5 @@
 ---
-title: 💎 Supported Networks
+title: 💎 Work With Different Networks
 excerpt: ''
 deprecated: false
 hidden: false
@@ -1418,4 +1418,3 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
 </details>
-
