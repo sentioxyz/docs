@@ -1,5 +1,5 @@
 ---
-title: 🎛️ CLI
+title: 💻 CLI
 excerpt: ''
 deprecated: false
 hidden: false
