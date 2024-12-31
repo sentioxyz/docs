@@ -2,7 +2,7 @@
 title: 🖥️ Endpoint
 excerpt: Turn SQL or GraphQL into restful api endpoints
 deprecated: false
-hidden: true
+hidden: false
 metadata:
   robots: index
 ---
