@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-Sentio allows users to work with different chains through different APIs. Current we support 5 types of chains:
+Sentio allows users to work with different chains through different APIs. Current we support following types of chains:
 
 * [EVM Chains](evm-chains/): in production stage, see [coinbase](https://github.com/sentioxyz/sentio-processors/tree/main/projects/coinbase) for an example.
 * [Aptos](aptos/): in production stage, see [pancake](https://github.com/sentioxyz/sentio-processors/tree/main/projects/pancake-swap) for an example.
