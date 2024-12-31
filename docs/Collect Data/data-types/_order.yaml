@@ -3,4 +3,5 @@
 - event-logs
 - submitting-event-logs
 - entities
+- send-events-via-webhook
 - webhook
