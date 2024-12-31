@@ -22,7 +22,8 @@ Assume we want to alert if TVL of your project is below a threshold, you could
 
 <figure>
   <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/creatingAlert.gif" alt="" />
-  <figcaption></figcaption>
+
+  <figcaption />
 </figure>
 
 > ℹ️
@@ -35,7 +36,8 @@ You can count certain number of logs matching a criteria, and setup alerts based
 
 <figure>
   <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/log.gif" alt="" />
-  <figcaption></figcaption>
+
+  <figcaption />
 </figure>
 
 ## Alert Message
@@ -53,3 +55,33 @@ The syntax is straightforward here:
 
 * `{{.VARIABLE_NAME}}` is to reference a variable or field (same as you defined in your event log) by name.
 * `{{range .VARIABLE_NAME}} ... {{ end }}` is to loop through a list of elements if the variable is a list.
+
+## Define alerts
+
+Assume we want to alert if TVL of your project is below a threshold, you could
+
+* Select the metric that represents the TVL
+* Add a alert condition
+* Choose a notification channel [notification-channel](notification-channel "mention")
+
+<figure>
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/creatingAlert.gif" alt="" />
+
+  <figcaption />
+</figure>
+
+> ℹ️
+>
+> Note you can also use [formula](aggregation-functions-and-formulas) in alerts
+
+## Viewing Alert Instances
+
+When you receive an alert instance (assuming through email channel), you can find the attached link that directly takes you to the alert instance page.
+
+<figure>
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/alertInstance.gif" alt="" />
+
+  <figcaption>
+    <p>Viewing Alert Instance</p>
+  </figcaption>
+</figure>
