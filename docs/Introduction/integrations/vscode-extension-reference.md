@@ -26,33 +26,20 @@ Sentio is a powerful VSCode extension designed to streamline the development of 
 1. **Installation**
    * Download and install the Sentio extension from the [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=sentio.sentio).
    * Alternatively, you can install it via the VSCode Extensions sidebar by searching for "Sentio".
-     <figure>
-       <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/vscode_search_extension.png" alt="" />
-       <figcaption>
-         <p>Search sentio in VSCode marketplace</p>
-       </figcaption>
-     </figure>
 
+     <Image align="center" border={false} caption="Search sentio in VSCode marketplace" src="https://files.readme.io/16ea12061ba59d56ec3dd5687e1edbf6851b0a6cfb4cc9279b1a4a4f0b9ff5b6-image.png" width="50% " />
 2. **Usage**
 
    * Open your Sentio processor project in VSCode.
 
    * Click on the Sentio logo in the sidebar to open the Sentio panel.
-     <figure>
-       <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/vscode_open_extension.gif" alt="" />
-       <figcaption>
-         <p>Open Sentio extension in VSCode</p>
-       </figcaption>
-     </figure>
+
+     <Image align="center" border={false} caption="Open Sentio extension in VSCode" src="https://files.readme.io/402d3e7940786f1e730a2d6c2d2da319123d58198429c340ff96a25dad8a1a0b-image.png" />
 
    * The Sentio panel provides a user-friendly interface to access the extension's features:
-     - **Build**: Quickly compile your current project.
-     - **Code Gen**: Generate TypeScript types for your specific web3 chain and SDK.
-     - **Upload**: Compile and upload your project.
-     - **Upload To**: Choose a destination project and version to upload and override.
-     <figure>
-       <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/vscode_upload_to.gif" alt="" />
-       <figcaption>
-         <p>Extension "Upload to" logic</p>
-       </figcaption>
-     </figure>
+     * **Build**: Quickly compile your current project.
+     * **Code Gen**: Generate TypeScript types for your specific web3 chain and SDK.
+     * **Upload**: Compile and upload your project.
+     * **Upload To**: Choose a destination project and version to upload and override.
+
+       <Image align="center" border={false} caption="Extension &#x22;Upload to&#x22; logic" src="https://files.readme.io/3871bd5fc406b1199a46bdd5667446c1bba2ebb8ba9ad6540f276bb0328ea630-image.png" />
