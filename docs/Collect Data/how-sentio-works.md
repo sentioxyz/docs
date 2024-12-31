@@ -12,8 +12,8 @@ next:
 ---
 Sentio roughly works as the following
 
-* User A writes the [Sentio Processor](processor-basic) or [Hosted Subgraph](doc:hosted-subgraph)  and upload through [➡ CLI](doc:cli-reference).
-* The processor code is **triggered on user-defined conditions** (more on [💎 Supported Networks](doc:supported-networks)) and executed on Sentio internal infrastructures in **real time (automatically adjusted with chain reorg)**.
+* User writes a [Sentio Processor](processor-basic) or [Hosted Subgraph](doc:hosted-subgraph), upload it through [➡ CLI](doc:cli-reference).
+* The processor code is **triggered on user-defined conditions** (on [💎 Supported Networks](doc:supported-networks)) and executed on Sentio internal infrastructures in **real time and automatically adjusted with chain reorg)**.
 * Sentio backfills all the historical data (from contract creation time) and follows the blockchain in real time.
 * Processor code emits **Metrics, Event Logs, Entities, etc** (more on [🗂️ Data types](doc:data-types)) that shows up automatically on Sentio UI.
 * Processor code could also emit **Webhooks.**
