@@ -1,5 +1,5 @@
 ---
-title: Hosted Subgraph
+title: 🕸️ Hosted Subgraph
 excerpt: ''
 deprecated: false
 hidden: false
