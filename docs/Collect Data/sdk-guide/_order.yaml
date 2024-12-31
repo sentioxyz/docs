@@ -1,6 +1,5 @@
 - processor-basic
 - decoding-from-custom-abis
-- logs-in-processor
 - handlers-and-filters
 - export-via-webhook
 - debug-processors
