@@ -1,5 +1,5 @@
 ---
-title: 👋 Welcome to Sentio
+title: 👋 Overview
 excerpt: ''
 deprecated: false
 hidden: false
@@ -32,10 +32,6 @@ See [supported-networks](supported-networks "mention") for chains supported.
 See Sentio 101 tutorial below (The aptos version is [here](https://www.youtube.com/watch?v=l4RsxPrGyqE\&ab_channel=Sentio))
 
 <Embed url="https://www.youtube.com/embed/yKggwExqKTw" typeOfEmbed="youtube" href="https://www.youtube.com/embed/yKggwExqKTw" html="%3Ciframe%20src%3D%22https%3A%2F%2Fwww.youtube.com%2Fembed%2FyKggwExqKTw%22%20width%3D%22640%22%20height%3D%22480%22%20frameborder%3D%220%22%3E%3C%2Fiframe%3E" />
-
-## Get Started
-
-We've put together some helpful guides for you to get set up with our product quickly and easily.
 
 ## Getting Help
 
