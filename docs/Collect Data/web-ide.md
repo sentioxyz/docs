@@ -16,7 +16,7 @@ The **Sentio Code Workspace** is an online coding environment developed with the
 
 ### Access Path
 
-To access Sentio Code Workspace, navigate through:
+To access Sentio Code Workspace, navigate through:\
 **Sentio App** → **DataSource** → **Processor** → **Source Code**
 
 ### Requirements
@@ -30,13 +30,10 @@ To access Sentio Code Workspace, navigate through:
 
 ### Step 1: Create a New Workspace
 
-1. Click the **Create Workspace** button.  
-2. The system will initiate a new workspace, and the workspace status on the left will display **Starting**.  
+1. Click the **Create Workspace** button.
+2. The system will initiate a new workspace, and the workspace status on the left will display **Starting**.
 3. After a few moments, the status will update to **Running** (see Screenshot below).
-   <figure>
-     <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/Sentio_Workspace_Running.png" alt="" />
-     <figcaption><p>Running Workspace</p></figcaption>
-   </figure>
+   <Image align="center" alt="f" border={false} caption="Running Workspace" src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/Sentio_Workspace_Running.png" />
 
 ### Step 2: Open the Workspace
 
@@ -67,10 +64,7 @@ To access Sentio Code Workspace, navigate through:
 ### Workspace Lifespan and Restarting
 
 1. Each workspace has a default lifespan of **24 hours**. Once the time limit is reached, the workspace will automatically stop, with the **Workspace Status** changing to **Stopped** (see Screenshot below).
-   <figure>
-     <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/Sentio_Workspace_Stopped.png" alt="" />
-     <figcaption><p>Stopped Workspace</p></figcaption>
-   </figure>
+   <Image align="center" alt="f" border={false} caption="Stopped Workspace" src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/Sentio_Workspace_Stopped.png" />
 2. To restart, click **Restart** on the right side of the workspace panel.
 3. Once the status changes back to **Running**, you can resume work.
 
