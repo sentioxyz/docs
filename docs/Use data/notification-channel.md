@@ -16,7 +16,8 @@ We support creating notification channel for
 * Webhook
 * Slack
 * Telegram
-* PagerDuty (beta)
+* PagerDuty
+* Discord
 
 ## Creating Email Channel
 
