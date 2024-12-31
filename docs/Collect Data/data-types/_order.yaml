@@ -1,6 +1,5 @@
 - metrics
 - event-logs
-- logs-in-processor
 - entities
 - entity-store-in-processors
 - send-events-via-webhook
