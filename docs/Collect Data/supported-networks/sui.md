@@ -17,7 +17,7 @@ npx @sentio/cli@latest create <your project name> --chain-type sui
 
 Use [`sentio add`](cli-reference#sentio-add) to add contracts and fetch ABIs.
 
-```Text shell
+```Text Shell
 npx @sentio/cli@latest add --chain sui_mainnet [--name <your contract name>]  <your contract address>
 ```
 
