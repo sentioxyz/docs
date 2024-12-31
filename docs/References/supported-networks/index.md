@@ -12,11 +12,15 @@ next:
 ---
 Sentio allows users to work with different chains through different APIs. Current we support 5 types of chains:
 
-* [EVM Chains](evm-chains/)
-* [Aptos](aptos/)
-* [SUI](doc:sui)
-* [Starknet](doc:starknet)
-* [Fuel](doc:fuel)
+* [EVM Chains](evm-chains/): in production stage, see [coinbase](https://github.com/sentioxyz/sentio-processors/tree/main/projects/coinbase) for an example.
+* [Aptos](aptos/): in production stage, see [pancake](https://github.com/sentioxyz/sentio-processors/tree/main/projects/pancake-swap) for an example.
+* [SUI](doc:sui): in production stage, see [cetus](https://github.com/sentioxyz/sentio-processors/tree/main/projects/cetus) for an example.
+* [Fuel](doc:fuel): in beta stage, see [fuel-assets](https://github.com/sentioxyz/sentio-processors/tree/main/fuel/fuel-assets) for an example.
+* [Starknet](doc:starknet): in alpha stage.
+* Bitcoin: in alpha stage, see [here](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/btc) for an example.
+* Solana: in alpha stage.
+
+You can also mix different chains in on project, example [here](https://github.com/sentioxyz/sentio-processors/tree/main/projects/circle).
 
 Supported network and its features are listed below, we are actively supporting more networks, let us know via [\
 `support@sentio.xyz`](mailto:support@sentio.xyz) about your use case to help us prioritize network support.
