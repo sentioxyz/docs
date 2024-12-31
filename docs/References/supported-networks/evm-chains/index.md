@@ -10,8 +10,6 @@ metadata:
 next:
   description: ''
 ---
-EVM chain support is in production, example project [here](https://github.com/sentioxyz/sentio-processors/tree/main/projects/coinbase).
-
 Here we give a few real examples for how to submit metrics from EVM chains. Make sure you briefly read our [sdk-guide]("mention") to get a general idea about how it work.
 
 We use standard chain ID  as mentioned [here](https://chainlist.org/). You only need to put the network parameter when you bind the processor. Here is an example we bind **Goerli** instead of **ETH mainnet**.
