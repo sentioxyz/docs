@@ -16,7 +16,7 @@ next:
 
 Sentio allows you to define the json message you want to send to webhook. In every webhook call, Sentio sends **an array** of json messages along with a few more metadata fields.
 
-* **event\_id：**This is unique for the messages from a channel. If you receive a ID more than once, the new message should override the old message. This is required due to block chain reorg.
+* \*\*event\_id：\*\*This is unique for the messages from a channel. If you receive a ID more than once, the new message should override the old message. This is required due to block chain reorg.
 * **timestamp\_micros:** The timestamp in microseconds when the event happened.
 * **version:** The processor version. Every new upload of the processor bumps the version by 1.
 
@@ -63,15 +63,18 @@ GET https://app.sentio.xyz/api/v1/webhook/deadletter/{owner}/{project}?limit={li
       <th>Description</th>
     </tr>
   </thead>
+
   <tbody>
     <tr>
       <td>owner</td>
       <td>(string) The name of the project owner</td>
     </tr>
+
     <tr>
       <td>project</td>
       <td>(string) The name of the project</td>
     </tr>
+
     <tr>
       <td>limit</td>
       <td>(integer) Maximum batches of messages pulled at once, must be less equal than 10</td>
@@ -104,3 +107,27 @@ A sample response looks like:
   ]
 }
 ```
+
+## Use Exporter  in processor
+
+You could use `Exporter` to send webhook. Note you need to give the channel name [notification-channel](notification-channel "mention") in the exporter (config on the UI).
+
+```typescript
+const exporter = Exporter.register("SwapEvents", "WebhookChannel")
+```
+
+Note, the `WebhookChannel` should be replaced by the name you created on UI
+
+<figure>
+  <img src="https://raw.githubusercontent.com/sentioxyz/docs/v1.0/assets/image (4) (2).png" alt="" />
+
+  <figcaption />
+</figure>
+
+To send webhook, use:
+
+```typescript
+exporter.emit(ctx, {evt})
+```
+
+For configuring the notification channel, please refer to [notification-channel](notification-channel "mention")
