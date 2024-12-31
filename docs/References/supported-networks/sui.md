@@ -31,7 +31,7 @@ contracts:
     chain: sui_mainnet # Chain id, sui_mainnet or sui_testnet
 ```
 
-Contract name is optional and will make file generated more readable.
+Contract name is optional but will make file generated more readable.
 
 ## Type Generation
 
