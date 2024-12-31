@@ -1,5 +1,5 @@
 ---
-title: ✅ How Sentio Works
+title: ✅ How Indexer Works
 excerpt: ''
 deprecated: false
 hidden: false
