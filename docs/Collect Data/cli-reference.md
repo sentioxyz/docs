@@ -1,6 +1,5 @@
 ---
-
-title: ➡ CLI Reference
+title: ➡ CLI
 excerpt: ''
 deprecated: false
 hidden: false
@@ -10,7 +9,6 @@ metadata:
   robots: index
 next:
   description: ''
-
 ---
 
 Sentio provides a command line tool to easily create and upload processors for your project. To start using it, you need to have [Node.js](https://nodejs.org/en/download/) environment. Then you could run 
@@ -99,4 +97,4 @@ Inside project directory, generate code and then build the processor into `dist`
 yarn sentio build
 ```
 
-## 
+##
