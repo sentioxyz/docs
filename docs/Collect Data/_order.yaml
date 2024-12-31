@@ -2,8 +2,8 @@
 - processor
 - data-types
 - supported-networks
-- hosted-subgraph
 - cli-reference
 - sdk-guide
 - best-practice
 - data-source
+- hosted-subgraph
