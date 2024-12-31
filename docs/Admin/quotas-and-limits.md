@@ -1,5 +1,5 @@
 ---
-title: 🔒 Limits
+title: 🔒 Billing and Limits
 excerpt: ''
 deprecated: false
 hidden: false
