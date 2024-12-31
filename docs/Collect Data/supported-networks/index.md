@@ -1,5 +1,5 @@
 ---
-title: 💎 Work With Different Networks
+title: 💎 Supported Networks
 excerpt: ''
 deprecated: false
 hidden: false
