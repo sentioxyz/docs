@@ -12,9 +12,7 @@ next:
 ---
 ## Permission levels
 
-There are 3 types of permission levels for a project
-
-<br />
+There are 3 types of permission levels for a project:
 
 | Role         | Capabilities                    |
 | ------------ | ------------------------------- |
