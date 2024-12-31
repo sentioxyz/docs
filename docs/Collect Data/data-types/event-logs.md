@@ -10,7 +10,7 @@ metadata:
 next:
   description: ''
 ---
-Every event log is a structured data stored in Sentio. Users can submit it from Sentio Processor as described in [logs-in-processor](logs-in-processor "mention")
+Every event log is a structured but schema-less data stored in Sentio.
 
 ## Log Levels
 
