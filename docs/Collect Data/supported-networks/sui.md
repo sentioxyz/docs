@@ -121,7 +121,7 @@ SuiObjectProcessor.bind({
 
 It will fetch the object content and optionally all objects belong to it (such as dynamic objects) every certain period of time in history.
 
-To enable fetch owned objects,  the last argument ([`MoveAccountFetchConfig`](https://sdk.sentio.xyz/interfaces/..MoveAccountFetchConfig.html)) should be used , most used field is `owned`, represent if objects owned by the object need to be fetched into `objects` fields.
+To enable fetch owned objects,  the last argument of [`MoveAccountFetchConfig`](https://sdk.sentio.xyz/interfaces/..MoveAccountFetchConfig.html) should be used , most used field is `owned`, represent if objects owned by the object need to be fetched into `objects` argument of the handler.
 
 If more info for object is needed, use `ctx.objectVersion` to work with SUI Typescript SDK to do that.
 
