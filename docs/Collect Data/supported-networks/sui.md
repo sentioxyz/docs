@@ -111,13 +111,19 @@ SuiObjectProcessor.bind({
 
     ctx.meter.Gauge('fields_count').record(fields.length)
   }, 
-  60*24,   // watching time interval  
-  60*24*30 // backfill time interval
+    60*24,   // watching time interval  
+    60*24*30, // backfill time interval
+    undefined,
+    { owned: true } // whether to fetch objects owned by the object
   )
   .onCheckpointInterval(...)
 ```
 
-It will fetch the object content and all objects belong to it (such as dynamic objects) every certain period of time in history. If more info is needed, use `ctx.objectVersion` to work with SUI Typescript SDK to do that.
+It will fetch the object content and optionally all objects belong to it (such as dynamic objects) every certain period of time in history.
+
+To enable fetch owned objects,  the last argument ([`MoveAccountFetchConfig`](https://sdk.sentio.xyz/interfaces/..MoveAccountFetchConfig.html)) should be used , most used field is `owned`, represent if objects owned by the object need to be fetched into `objects` fields.
+
+If more info for object is needed, use `ctx.objectVersion` to work with SUI Typescript SDK to do that.
 
 You may also want to carefully tune the two time intervals for better indexing performance
 
@@ -143,7 +149,8 @@ SuiObjectTypeProcessor.bind({
       ctx.meter.Gauge('voting_power').record(self.data_decoded.principal, { pool: self.data_decoded.pool_id })
     },
     60,
-    60 * 24 * 30
+    60 * 24 * 30,
+    { owned: false} // optional, default false for all fields
   )
 
 ```
