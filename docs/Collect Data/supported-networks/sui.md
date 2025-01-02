@@ -111,10 +111,10 @@ SuiObjectProcessor.bind({
 
     ctx.meter.Gauge('fields_count').record(fields.length)
   }, 
-    60*24,   // watching time interval  
-    60*24*30, // backfill time interval
-    undefined,
-    { owned: true } // whether to fetch objects owned by the object
+  60*24,   // watching time interval  
+  60*24*30, // backfill time interval
+  undefined,
+  { owned: true } // whether to fetch objects owned by the object
   )
   .onCheckpointInterval(...)
 ```
