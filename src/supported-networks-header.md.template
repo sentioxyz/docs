@@ -1,0 +1,80 @@
+---
+title: 💎 Supported Networks
+excerpt: ''
+deprecated: false
+hidden: false
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+Sentio allows users to work with different chains through different APIs. Currently, we support the following types of chains:
+
+* [EVM Chains](doc:evm): in production stage, see [coinbase](https://github.com/sentioxyz/sentio-processors/tree/main/projects/coinbase) for an example.
+* [Aptos](doc:aptos): in production stage, see [pancake](https://github.com/sentioxyz/sentio-processors/tree/main/projects/pancake-swap) for an example.
+* [SUI](doc:sui): in production stage, see [cetus](https://github.com/sentioxyz/sentio-processors/tree/main/projects/cetus) for an example.
+* [IOTA](doc:iota): in production stage
+* [Fuel](doc:fuel): in beta stage, see [fuel-assets](https://github.com/sentioxyz/sentio-processors/tree/main/fuel/fuel-assets) for an example.
+* [Starknet](doc:starknet): in alpha stage.
+* Bitcoin: in alpha stage, see [here](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/btc) for an example.
+* Solana: in alpha stage, see [here](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/pyth-staking) for an example.
+
+You can also mix different chains in one project, example [here](https://github.com/sentioxyz/sentio-processors/tree/main/projects/circle).
+
+Supported networks and their features are listed below. If you want other chains supported, you could either:
+- [Contact us](doc:readme#getting-help) to add the chain support
+- [Bring your own RPC](doc:other-networks#requesting-new-chains-or-adding-custom-chain) to add support by yourself
+> ✅
+>
+> We only include mainnet in the list. The most complete supported chain list can be found at
+> the [status page](https://www.sentio.xyz/status/index.html).
+
+## EVM Chains
+
+|Chain	| ID| Slug |Events	| Archive RPCs |	Traces	| Debugger |
+|-------|--|--|---------|--------------|---------|----------|
+${supported-evm}
+
+More on [EVM](evm)
+
+## Move Chains
+
+| Chain	         | Txn	 | Event	 | Entry Func	 | Archive RPCs | Account	 | Debugger	 |
+|----------------|------|--------|-------------|--|----------|-----|
+| Aptos	         | ✓	   | ✓	     | ✓ 	    |  ✓   | ✓	       | 	 ✓ |
+| Aptos Testnet	 | ✓	   | ✓	     | ✓	     |     | 		       |     |
+| SUI	           | ✓	   | ✓	     | ✓	     | ✓    | ✓		      | ✓   |
+| SUI	Testnet    | ✓	   | ✓	     | ✓	     |     | 		       |     |
+| Move	Testnet   | ✓	   | ✓	     | ✓	     | ✓    | ✓		      |     |
+
+More on [Aptos](aptos) and [SUI](sui)
+
+## Fuel
+| Chain        | Stage | Log Handle | Call Handle | Transfer Handle |
+|--------------|-------|------------|-------------|-------------|
+| Fuel Mainnet | Beta  | ✓          | ✓           |✓  |
+| Fuel Testnet | Beta  | ✓          | ✓           |✓  |
+
+More on [Fuel](fuel)
+
+## Starknet
+|Chain	       | Stage | Events	   | Archive RPCs |
+|--------------|-------|------------|-------------|
+| Starknet     | Beta  | ✓          |       ✓       |
+
+More on [starknet](starknet)
+
+## Solana
+
+| Chain  | Stage | Transaction Handle | Instruction Handle |
+|--------|-------|--------------------|--------------------|
+| Solana | Alpha | ✓                  | ✓                  |
+
+More on [Solana](solana)
+## Examples
+
+To quickly create a single chain processor or subgraph, you can use the following command.
+
+${chain-content}

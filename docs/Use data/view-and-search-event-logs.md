@@ -1,0 +1,23 @@
+---
+title: ➡ View Event Logs
+excerpt: ''
+deprecated: false
+hidden: false
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+The logs are available from Sentio UI. They contain all the Deposit Events we submitted from [submitting-event-logs](event-logs "mention").
+
+If you'd like to do a range search on Amount between **1000 and 10000** submitted from [#submit-attributes](event-logs#submit-event-logs "mention"), you can easily do this from the UI:
+
+![](https://media.githubusercontent.com/media/sentioxyz/docs/HEAD/assets/searchlogs.gif)
+
+If you'd like to search for all the swaps from USDC, you can do full text search:
+
+![](https://media.githubusercontent.com/media/sentioxyz/docs/HEAD/assets/fulltext%20(2).gif)
+
+For more details regarding the definition of logs, refer to [event-logs](event-logs "mention").

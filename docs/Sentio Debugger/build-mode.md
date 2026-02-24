@@ -1,0 +1,41 @@
+---
+title: 🛠️ Build Mode
+excerpt: ''
+deprecated: false
+hidden: false
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+Debugging Solidity on-chain can be more tricky than you might think. Debugger results sometimes show missing function calls, unexpected parameter values, weird execution order, or mismatched source code. This is largely due to Solidity's compiler optimizations, e.g., function inlining, function specialization, etc.
+
+Sentio lets you choose different build modes of the Solidity binary on-chain to overcome this problem.
+
+You can choose Build Mode in either [trace-view](trace-view "mention") or [debugger](debugger/ "mention").
+
+![](https://media.githubusercontent.com/media/sentioxyz/docs/HEAD/assets/image%20(40).png)
+
+## Debug Build
+
+Debug build essentially replaces the binary with one that doesn't use optimization and makes the execution flow very clean. 
+
+However, in this case, it uses more gas, so you may see out-of-gas errors. Also, if some contract uses gas to perform checks, it may not work well.
+
+## Debug Build without Gas
+
+Similar to the debug build, except gas usage is ignored. 
+
+This solves the out-of-gas issue in normal debug build, but note that this may cause different code execution. For example, if the original transaction ran out of gas, using debug build without gas will make the transaction fully execute.
+
+## Example
+
+You can try this [example](https://app.sentio.xyz/tx/1/0x6585fd39cd22ad2c558855403dc367462b48cd48b56431424138dc9df8227853) and switch its build mode. You will see that the trace is different:
+
+<Image align="center" border={false} caption="release build" src="https://media.githubusercontent.com/media/sentioxyz/docs/HEAD/assets/image%20(1)%20(1)%20(1)%20(1)%20(1).png" />
+
+<Image align="center" border={false} caption="debug build" src="https://media.githubusercontent.com/media/sentioxyz/docs/HEAD/assets/image%20(3).png" />
+
+The debug build will reflect the logical code flow more accurately, while the release build reflects the actual execution order after inline optimization.

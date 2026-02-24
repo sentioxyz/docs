@@ -1,0 +1,31 @@
+---
+title: ✳ Code Intelligence
+excerpt: ''
+deprecated: false
+hidden: false
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+Sentio makes the debugging and contract reading experience smoother by fully analyzing the Solidity source code. This experience is built into every part that has Solidity source code like [trace view](trace-view), [debugger view](debugger/) or [contract view](transaction-info#contract-code-explorer).
+
+## Jump to definition / Find References
+
+You can navigate from a code usage to code definition with the "Go to Definition" button or use `cmd/ctrl`+ `left click`, or list all the usages for a definition within the contract.
+
+![](https://media.githubusercontent.com/media/sentioxyz/docs/HEAD/assets/image%20(34).png)
+
+## Find Related Transactions
+
+For external functions, you can use "Related Transaction" to search for transactions that involve this call.
+
+![](https://media.githubusercontent.com/media/sentioxyz/docs/HEAD/assets/image%20(37).png)
+
+## Structured View
+
+Sentio can show the Solidity symbol structure. Clicking any of the symbols on the left side will bring you to the actual code definition location.
+
+![](https://media.githubusercontent.com/media/sentioxyz/docs/HEAD/assets/image%20(36).png)
