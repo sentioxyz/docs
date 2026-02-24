@@ -1,7 +1,15 @@
 ---
+
 title: Authentication
-excerpt: Set up the authentication for your API to help users manage their credentials.
+excerpt: Set up the welcome page for your API to help users make their first call.
 api_config: authentication
+deprecated: false
 hidden: true
-icon: icon-key1
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+
 ---
