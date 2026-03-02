@@ -75,9 +75,9 @@ For details on epoch-based staking and governance voting, see [Network Participa
 
 Total supply: **1,000,000,000 $ST**. The allocation is designed to balance long-term ecosystem sustainability with early contributor rewards.
 
-- **Ecosystem (35.00%)** — Reserved for grants, developer programs, future product development, and long-term ecosystem growth initiatives.
-- **Airdrop & Marketing (18.90%)** — Distributed through campaigns and airdrops to grow the community.
-- **Network Incentive (10.00%)** — Allocated to reward early network participants who contribute to bootstrapping the decentralized infrastructure, such as running Sentio Nodes during the initial network phase.
-- **Early Backers (17.00%)** — Allocated to initial investors who supported the project's early development and vision.
-- **Team (15.00%)** — Reserved for core team members and key contributors driving the ongoing development of the Sentio platform and network.
-- **Liquidity (4.10%)** — Set aside for market making and exchange liquidity to ensure healthy token trading conditions.
+- **Ecosystem (35.00%)**: Reserved for grants, developer programs, future product development, and long-term ecosystem growth initiatives.
+- **Airdrop & Marketing (18.90%)**: Distributed through campaigns and airdrops to grow the community.
+- **Network Incentive (10.00%)**: Allocated to reward early network participants who contribute to bootstrapping the decentralized infrastructure, such as running Sentio Nodes during the initial network phase.
+- **Early Backers (17.00%)**: Allocated to initial investors who supported the project's early development and vision.
+- **Team (15.00%)**: Reserved for core team members and key contributors driving the ongoing development of the Sentio platform and network.
+- **Liquidity (4.10%)**: Set aside for market making and exchange liquidity to ensure healthy token trading conditions.
