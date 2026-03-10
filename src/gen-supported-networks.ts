@@ -25,7 +25,7 @@ const debuggerChains = new Map(Object.entries({
   [EthChainId.POLYGON]: true,
   [EthChainId.BSC]: true,
   [EthChainId.ARBITRUM]: true,
-  [EthChainId.AVALANCHE]: true,
+  // [EthChainId.AVALANCHE]: true,
   [EthChainId.LINEA]: true,
   [EthChainId.SCROLL]: true,
   [EthChainId.BLAST]: true,
@@ -35,6 +35,9 @@ const debuggerChains = new Map(Object.entries({
   [EthChainId.MOONBEAM]: true,
   [EthChainId.SONEIUM_MAINNET]: true,
   [EthChainId.SONIC_MAINNET]: true,
+  [EthChainId.BERACHAIN]: true,
+  [EthChainId.OPTIMISM]: true,
+  [EthChainId.HYPER_EVM]: true,
 }))
 
 const traceChain = new Map(Object.entries({

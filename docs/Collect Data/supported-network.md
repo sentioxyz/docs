@@ -40,10 +40,10 @@ Supported networks and their features are listed below. If you want other chains
 | Arc Testnet | `5042002` | `arc-testnet`  | ✓ | ✓ |  |   |
 | Astar | `592` | `astar`  | ✓ | ✓ | ✓  | ✓   |
 | Aurora | `1313161554` | `aurora`  | ✓ | ✓ |  |   |
-| Avalanche | `43114` | `avalanche`  | ✓ | ✓ |  | ✓   |
+| Avalanche | `43114` | `avalanche`  | ✓ | ✓ |  |   |
 | B2 Mainnet | `223` | `b2-mainnet`  | ✓ | ✓ |  |   |
 | Base | `8453` | `base`  | ✓ | ✓ |  | ✓   |
-| Berachain | `80094` | `berachain`  | ✓ | ✓ |  |   |
+| Berachain | `80094` | `berachain`  | ✓ | ✓ |  | ✓   |
 | BEVM | `11501` | `bevm`  | ✓ | ✓ |  |   |
 | Binance Smart Chain | `56` | `bsc`  | ✓ | ✓ |  | ✓   |
 | Bitlayer Mainnet | `200901` | `bitlayer`  | ✓ | ✓ |  |   |
@@ -61,13 +61,14 @@ Supported networks and their features are listed below. If you want other chains
 | Fraxtal Mainnet | `252` | `frax-mainnet`  | ✓ | ✓ |  |   |
 | Goat Network | `2345` | `goat`  | ✓ | ✓ |  |   |
 | Hemi | `43111` | `hemi`  | ✓ | ✓ |  |   |
-| HyperEVM | `999` | `hyperevm`  | ✓ | ✓ |  |   |
+| HyperEVM | `999` | `hyperevm`  | ✓ | ✓ |  | ✓   |
 | Karak Mainnet | `2410` | `karak-mainnet`  | ✓ | ✓ |  |   |
 | Katana Mainnet | `747474` | `katana`  | ✓ | ✓ |  |   |
 | KCC Mainnet | `321` | `kucoin`  | ✓ | ✓ |  |   |
 | Linea | `59144` | `linea`  | ✓ | ✓ | ✓  | ✓   |
 | Manta Pacific | `169` | `manta-pacific-mainnet`  | ✓ | ✓ |  |   |
 | Mantle | `5000` | `mantle`  | ✓ | ✓ |  |   |
+| MegaETH | `4326` | `megaeth`  | ✓ | ✓ |  |   |
 | Merlin Mainnet | `4200` | `merlin`  | ✓ | ✓ |  |   |
 | Metis | `1088` | `metis`  | ✓ | ✓ |  |   |
 | MEV Commit | `57173` | `mev-commit`  | ✓ | ✓ |  |   |
@@ -75,12 +76,13 @@ Supported networks and their features are listed below. If you want other chains
 | Monad Mainnet | `143` | `monad-mainnet`  | ✓ | ✓ |  |   |
 | Moonbeam | `1284` | `moonbeam`  | ✓ | ✓ | ✓  | ✓   |
 | opBNB Mainnet | `204` | `opbnb`  | ✓ | ✓ |  |   |
-| Optimism Mainnet | `10` | `optimism`  | ✓ | ✓ |  |   |
+| Optimism Mainnet | `10` | `optimism`  | ✓ | ✓ |  | ✓   |
 | Plasma Mainnet | `9745` | `plasma-mainnet`  | ✓ | ✓ |  |   |
 | Polygon | `137` | `matic`  | ✓ | ✓ | ✓  | ✓   |
 | Polygon zkEVM | `1101` | `polygon-zkevm`  | ✓ | ✓ |  |   |
 | Scroll | `534352` | `scroll`  | ✓ | ✓ |  | ✓   |
 | Sei Mainnet | `1329` | `sei`  | ✓ | ✓ |  |   |
+| Sentio testnet | `7892101` | `sentio-testnet`  | ✓ | ✓ |  |   |
 | Soneium Mainnet | `1868` | `soneium-mainnet`  | ✓ | ✓ | ✓  | ✓   |
 | Sonic Mainnet | `146` | `sonic-mainnet`  | ✓ | ✓ | ✓  | ✓   |
 | Stable Mainnet | `988` | `stable-mainnet`  | ✓ | ✓ |  |   |
@@ -1063,6 +1065,34 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 </details>
 
+### MegaETH
+
+Chain ID: `4326`, chain slug: `megaeth`.
+
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
+
+<details>
+<summary>Create and upload an example Sentio processor</summary>
+
+```
+npx @sentio/cli@latest create <project name> --chain-type eth --chain-id 4326
+...
+npx @sentio/cli@latest upload
+```
+
+</details>
+
+<details>
+<summary>Create and deploy an example Subgraph</summary>
+
+```
+npx @sentio/cli@latest graph create <project name> --chain-id 4326
+...
+npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
+```
+
+</details>
+
 ### Merlin
 
 Chain ID: `4200`, chain slug: `merlin`.
@@ -1423,6 +1453,34 @@ npx @sentio/cli@latest upload
 
 ```
 npx @sentio/cli@latest graph create <project name> --chain-id 1329
+...
+npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
+```
+
+</details>
+
+### Sentio
+
+Chain ID: `7892101`, chain slug: `sentio-testnet`.
+
+Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
+
+<details>
+<summary>Create and upload an example Sentio processor</summary>
+
+```
+npx @sentio/cli@latest create <project name> --chain-type eth --chain-id 7892101
+...
+npx @sentio/cli@latest upload
+```
+
+</details>
+
+<details>
+<summary>Create and deploy an example Subgraph</summary>
+
+```
+npx @sentio/cli@latest graph create <project name> --chain-id 7892101
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
