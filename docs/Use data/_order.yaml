@@ -4,7 +4,7 @@
 - visualizations
 - notification-channel
 - alerts
-- todo-endpoint
+- endpoint
 - materialized-views
 - action-processor
 - cross-project-reference
