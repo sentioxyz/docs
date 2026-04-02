@@ -69,7 +69,6 @@ Supported networks and their features are listed below. If you want other chains
 | Manta Pacific | `169` | `manta-pacific-mainnet`  | ✓ | ✓ |  |   |
 | Mantle | `5000` | `mantle`  | ✓ | ✓ |  |   |
 | MegaETH | `4326` | `megaeth`  | ✓ | ✓ |  |   |
-| Merlin Mainnet | `4200` | `merlin`  | ✓ | ✓ |  |   |
 | Metis | `1088` | `metis`  | ✓ | ✓ |  |   |
 | MEV Commit | `57173` | `mev-commit`  | ✓ | ✓ |  |   |
 | Mode Mainnet | `34443` | `mode-mainnet`  | ✓ | ✓ |  |   |
@@ -1087,34 +1086,6 @@ npx @sentio/cli@latest upload
 
 ```
 npx @sentio/cli@latest graph create <project name> --chain-id 4326
-...
-npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-```
-
-</details>
-
-### Merlin
-
-Chain ID: `4200`, chain slug: `merlin`.
-
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
-
-<details>
-<summary>Create and upload an example Sentio processor</summary>
-
-```
-npx @sentio/cli@latest create <project name> --chain-type eth --chain-id 4200
-...
-npx @sentio/cli@latest upload
-```
-
-</details>
-
-<details>
-<summary>Create and deploy an example Subgraph</summary>
-
-```
-npx @sentio/cli@latest graph create <project name> --chain-id 4200
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
