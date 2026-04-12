@@ -150,8 +150,7 @@ Clone the `clickhouse-proxy` repository and build the binary:
 ```bash
 git clone git@github.com:sentioxyz/clickhouse-proxy.git
 cd clickhouse-proxy
-bazel build //cmd/proxy:clickhouse-proxy
-cp bazel-bin/cmd/proxy/clickhouse-proxy_/clickhouse-proxy .
+go build -o clickhouse-proxy ./cmd/proxy
 ```
 
 ### 2. Configure Sidecar Mode
