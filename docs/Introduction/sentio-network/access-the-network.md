@@ -148,7 +148,7 @@ For direct, decentralized access to the Sentio Data Network, you can deploy the 
 Clone the `clickhouse-proxy` repository and build the binary:
 
 ```bash
-git clone git@github.com:sentioxyz/clickhouse-proxy.git
+git clone https://github.com/sentioxyz/clickhouse-proxy.git
 cd clickhouse-proxy
 go build -o clickhouse-proxy ./cmd/proxy
 ```
