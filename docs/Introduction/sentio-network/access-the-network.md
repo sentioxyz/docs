@@ -20,7 +20,7 @@ You can also access Sentio Network directly, without the Sentio Platform. This g
 Direct access takes five steps:
 
 1. Fund your Billing balance.
-2. *(Optional)* Add operator keys.
+2. _(Optional)_ Add operator keys.
 3. Upload your processor bundle to IPFS.
 4. Create the processor on-chain.
 5. Start the processor.
@@ -47,7 +47,7 @@ export CONTROLLER=0x01E46832AaF273C9A9FF5ECB5D8214AeF096E3c3
 Every contract is registered in the `AddressBook` proxy at `0x17d5aF5Ed9C2558B802bEfcCc5a94C36dE95BB0B`. Current deployment:
 
 | Key                  | Address                                      |
-|----------------------|----------------------------------------------|
+| -------------------- | -------------------------------------------- |
 | `sentio_token`       | `0xB677797765beB59D0195d92b0E4d009609187d7C` |
 | `billing`            | `0x9b780B4ecEb0144944B4afFddEe040bE67a8A224` |
 | `permissions`        | `0x6cFcA54e6cFD00dC7D758aB3825d465982A53623` |
@@ -59,6 +59,40 @@ Every contract is registered in the `AddressBook` proxy at `0x17d5aF5Ed9C2558B80
 | `voting_parameters`  | `0x4E9EcfF4122476Cb61874ff960Ce31d792ed2C0F` |
 | `usage_tracker`      | `0x898F6cd6Fd0119C24335d228aF49C9F1FaA97b58` |
 | `rewards`            | `0x5CaB0dFa84105ed52343B20AbA15dF1d6a0E6177` |
+
+<br />
+
+## Get Testnet ST from the Faucet
+
+**Sentio Testnet ST (ST)** is the test token used on the Sentio Testnet. It is required to pay for network usage, including indexing fees (charged to the processor owner) and query fees (charged to the query initiator). ST has no real economic value and is only used for testing and debugging on the Sentio Network testnet.
+Before following the steps below, you will need some ST tokens. You can claim them for free from the Faucet page on the Sentio Network App.
+
+Before following the steps below, you will need some ST tokens. You can claim them for free from the **Faucet** page on the Sentio Network App.
+
+**Steps to claim**
+
+1. Open the <Anchor label="Sentio Network App" target="_blank" href="https://test-network.sentio.xyz/">Sentio Network App</Anchor> and navigate to the **Faucet** page.
+2. Enter your wallet address in the "Wallet Address" field, or confirm it is pre-filled if your wallet is already connected.
+
+   ![](https://files.readme.io/ee17342bca6e596ad36e39248dc56450dc33186c036681627227e17599081cf3-image.png)
+3. Click "**SEND 10 ST**" to submit your claim.
+4. Wait a moment — the tokens will be sent to the specified wallet address on the Sentio Testnet.
+
+   ![](https://files.readme.io/39266e2da81671a92f6eb0cd3a74faa1d113d6ea8b54c41906b554864559e83f-image.png)
+
+<br />
+
+**Claim limits**
+
+| Parameter        | Value                              |
+| :--------------- | :--------------------------------- |
+| Amount per claim | 10 ST                              |
+| Claim frequency  | Once every 24 hours per address    |
+| Global daily cap | 1,000 ST (shared across all users) |
+
+> The faucet enforces the daily limit by checking on-chain transfer logs. Tokens are sent on the Sentio Testnet.
+
+<br />
 
 ## Step 1: Fund your Billing balance
 
@@ -166,10 +200,10 @@ Create a `config.json` file to enable sidecar mode and configure your credential
 }
 ```
 
-*   **`sidecar_mode`**: Must be set to `true` to enable the local sidecar functionality.
-*   **`sidecar_upstream`**: The remote gateway address of the Sentio Data Network.
-*   **`sidecar_private_key_hex`**: Your Ethereum private key used for query signing and authentication.
-*   **`listen`**: The local port where the proxy will listen for incoming `clickhouse-client` connections.
+* **`sidecar_mode`**: Must be set to `true` to enable the local sidecar functionality.
+* **`sidecar_upstream`**: The remote gateway address of the Sentio Data Network.
+* **`sidecar_private_key_hex`**: Your Ethereum private key used for query signing and authentication.
+* **`listen`**: The local port where the proxy will listen for incoming `clickhouse-client` connections.
 
 ### 3. Start the Proxy
 
@@ -189,3 +223,4 @@ clickhouse-client --host localhost --port 9001
 
 All queries sent through this connection will be automatically authenticated and routed to the appropriate nodes in the Sentio Data Network.
 
+<br />
