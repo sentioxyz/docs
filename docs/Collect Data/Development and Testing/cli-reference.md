@@ -39,7 +39,7 @@ npx @sentio/cli@latest create <project name>
 By default it creates an EVM-based project. If you want to create a project for other chains, you can do
 
 ```shell
-npx @sentio/cli@latest create -c <evm|aptos|solana|raw|fuel|sui|iota|starknet> <project name>
+npx @sentio/cli@latest create -c <evm|aptos|solana|raw|fuel|sui|iota> <project name>
 ```
 
 If you are working in a mono-repo setup with many processors in repo and have your root package.json control all versions, you need to do the following or delete the sentio dependencies in your child package.json manually.

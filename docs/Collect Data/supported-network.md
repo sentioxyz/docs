@@ -17,7 +17,6 @@ Sentio allows users to work with different chains through different APIs. Curren
 * [SUI](doc:sui): in production stage, see [cetus](https://github.com/sentioxyz/sentio-processors/tree/main/projects/cetus) for an example.
 * [IOTA](doc:iota): in production stage
 * [Fuel](doc:fuel): in beta stage, see [fuel-assets](https://github.com/sentioxyz/sentio-processors/tree/main/fuel/fuel-assets) for an example.
-* [Starknet](doc:starknet): in alpha stage.
 * Bitcoin: in alpha stage, see [here](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/btc) for an example.
 * Solana: in alpha stage, see [here](https://github.com/sentioxyz/sentio-sdk/tree/main/examples/pyth-staking) for an example.
 
@@ -116,13 +115,6 @@ More on [Aptos](aptos) and [SUI](sui)
 | Fuel Testnet | Beta  | ✓          | ✓           |✓  |
 
 More on [Fuel](fuel)
-
-## Starknet
-|Chain	       | Stage | Events	   | Archive RPCs |
-|--------------|-------|------------|-------------|
-| Starknet     | Beta  | ✓          |       ✓       |
-
-More on [starknet](starknet)
 
 ## Solana
 
@@ -1772,5 +1764,4 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
 
 </details>
-
 
