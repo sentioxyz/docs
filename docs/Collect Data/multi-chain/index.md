@@ -51,7 +51,6 @@ The Sentio SDK supports indexing data from the following blockchains:
 ### Other Smart Contract Platforms
 
 * [**Solana**](doc:solana): Support for Solana's instruction-based model, with facilities for decoding and processing program instructions.
-* [**Starknet**](doc:other-networks): Integration with Starknet's Layer 2 ecosystem, focusing on processing Cairo contract events.
 * [**Fuel**](doc:fuel): Support for Fuel Network's parallel transaction execution model and Sway smart contracts.
 
 ### UTXO-based Chains
