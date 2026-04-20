@@ -9748,7 +9748,7 @@
       "type": "object",
       "properties": {
         "dashboardJson": {
-          "type": "object"
+          "$ref": "#/definitions/web_service.Dashboard"
         }
       }
     },
@@ -9794,8 +9794,7 @@
           "description": "The id of the target dashboard to import into."
         },
         "dashboardJson": {
-          "type": "object",
-          "description": "The json data of a previously exported dashboard."
+          "$ref": "#/definitions/web_service.Dashboard"
         },
         "overrideLayouts": {
           "type": "boolean",
