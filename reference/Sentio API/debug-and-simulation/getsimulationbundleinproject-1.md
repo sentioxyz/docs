@@ -1,5 +1,4 @@
 ---
-title: Get bundle simulation by ID
 api:
   file: bazel-binopenapiopenapi.swagger.json
   operationId: GetSimulationBundleInProject

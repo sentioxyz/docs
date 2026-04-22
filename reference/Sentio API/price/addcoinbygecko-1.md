@@ -1,16 +1,4 @@
 ---
-title: Add coin by Gecko
-excerpt: >-
-  adds a coin by its coingecko id.
-
-
-  coingecko id the API ID of the coin in coingecko web page.
-
-
-  please AWARE that the coingecko id is NOT the same as the symbol of the coin.
-
-
-  ![screenshot](https://media.githubusercontent.com/media/sentioxyz/docs/HEAD/assets/coingecko_apiid.png)
 api:
   file: bazel-binopenapiopenapi.swagger.json
   operationId: AddCoinByGecko

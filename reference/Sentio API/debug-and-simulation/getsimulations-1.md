@@ -1,5 +1,4 @@
 ---
-title: Get list of simulations
 api:
   file: bazel-binopenapiopenapi.swagger.json
   operationId: GetSimulations

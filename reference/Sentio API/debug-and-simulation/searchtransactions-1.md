@@ -1,5 +1,4 @@
 ---
-title: Search transactions
 api:
   file: bazel-binopenapiopenapi.swagger.json
   operationId: SearchTransactions
