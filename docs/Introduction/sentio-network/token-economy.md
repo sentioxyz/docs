@@ -10,7 +10,6 @@ metadata:
 next:
   description: ''
 ---
-
 ## Sentio Token ($ST)
 
 The **Sentio Token ($ST)** serves as the native utility and governance asset of the protocol:
@@ -21,25 +20,29 @@ The **Sentio Token ($ST)** serves as the native utility and governance asset of 
 
 3. **Governance**: $ST token holders can vote on protocol-level parameters and upgrades, promoting decentralized community governance for the network.
 
+Sentio Token is deployed at both [Ethereum](https://etherscan.io/token/0x70BE40667385500c5da7f108a022E21B606045DD) and [BSC](https://bscscan.com/token/0x70BE40667385500c5da7f108a022E21B606045DD), and can be bridged natively through OFT. All tokens all initially minted on BSC.
+
+Once Sentio mainnet launched, Sentio Token will be able to be bridged between Ethereum and Sentio mainnet through Optimism native bridge.
+
 ## Sentio Units (SU)
 
 Sentio introduces **Sentio Units (SU)** as the standardized billing abstraction across all network services. All usage is metered in SU.
 
 **Initial cost parameters** (subject to node voting):
 
-| Service | Cost |
-| --- | --- |
-| **Indexing** (per new data point) | 4,000 SU |
-| **Queries** (per query) | 1,000 – 2,000 SU (based on complexity) |
-| **Node RPC Call** (per call) | 20 SU |
+| Service                           | Cost                                   |
+| --------------------------------- | -------------------------------------- |
+| **Indexing** (per new data point) | 4,000 SU                               |
+| **Queries** (per query)           | 1,000 – 2,000 SU (based on complexity) |
+| **Node RPC Call** (per call)      | 20 SU                                  |
 
 Nodes bid on the cost of SU in $ST, and jobs are preferentially assigned to nodes with a lower SU cost.
 
 **Key benefits:**
 
-- **Transparent Pricing** — SU rates are fixed by on-chain governance, ensuring predictability for developers.
-- **Flexibility** — Indexers can set their own SU-to-Token exchange rate, enabling market-driven efficiency.
-- **Extensibility** — New service types (e.g., cross-chain queries, AI analytics) can be priced in SU without altering the underlying token model.
+* **Transparent Pricing** — SU rates are fixed by on-chain governance, ensuring predictability for developers.
+* **Flexibility** — Indexers can set their own SU-to-Token exchange rate, enabling market-driven efficiency.
+* **Extensibility** — New service types (e.g., cross-chain queries, AI analytics) can be priced in SU without altering the underlying token model.
 
 ## Job Assignment
 
@@ -57,27 +60,27 @@ For nodes with available capacity and sufficient hardware resources (as configur
 
 ## Staking Model
 
-| Participant | Mechanism |
-| --- | --- |
-| **Sentio Nodes** | Must stake $ST to join the network; slashing applies for misbehavior |
-| **Delegators** | Delegate $ST to Sentio Nodes and share revenue; commission retained by operators |
+| Participant      | Mechanism                                                                        |
+| ---------------- | -------------------------------------------------------------------------------- |
+| **Sentio Nodes** | Must stake $ST to join the network; slashing applies for misbehavior             |
+| **Delegators**   | Delegate $ST to Sentio Nodes and share revenue; commission retained by operators |
 
-For details on epoch-based staking and governance voting, see [Network Participation](network-participation "mention").
+For details on epoch-based staking and governance voting, see <Anchor label="Network Participation" title="mention" href="network-participation">Network Participation</Anchor>.
 
 ## Incentives
 
-| Participant | Reward |
-| --- | --- |
-| **Sentio Nodes** | Earn SU for indexing and serving queries |
+| Participant              | Reward                                                         |
+| ------------------------ | -------------------------------------------------------------- |
+| **Sentio Nodes**         | Earn SU for indexing and serving queries                       |
 | **Stakers / Delegators** | Share in Sentio Nodes' revenue proportional to delegated stake |
 
 ## Token Distribution
 
 Total supply: **1,000,000,000 $ST**. The allocation is designed to balance long-term ecosystem sustainability with early contributor rewards.
 
-- **Ecosystem (35.00%)**: Reserved for grants, developer programs, future product development, and long-term ecosystem growth initiatives.
-- **Airdrop & Marketing (18.90%)**: Distributed through campaigns and airdrops to grow the community.
-- **Network Incentive (10.00%)**: Allocated to reward early network participants who contribute to bootstrapping the decentralized infrastructure, such as running Sentio Nodes during the initial network phase.
-- **Early Backers (17.00%)**: Allocated to initial investors who supported the project's early development and vision.
-- **Team (15.00%)**: Reserved for core team members and key contributors driving the ongoing development of the Sentio platform and network.
-- **Liquidity (4.10%)**: Set aside for market making and exchange liquidity to ensure healthy token trading conditions.
+* **Ecosystem (35.00%)**: Reserved for grants, developer programs, future product development, and long-term ecosystem growth initiatives.
+* **Airdrop & Marketing (18.90%)**: Distributed through campaigns and airdrops to grow the community.
+* **Network Incentive (10.00%)**: Allocated to reward early network participants who contribute to bootstrapping the decentralized infrastructure, such as running Sentio Nodes during the initial network phase.
+* **Early Backers (17.00%)**: Allocated to initial investors who supported the project's early development and vision.
+* **Team (15.00%)**: Reserved for core team members and key contributors driving the ongoing development of the Sentio platform and network.
+* **Liquidity (4.10%)**: Set aside for market making and exchange liquidity to ensure healthy token trading conditions.
