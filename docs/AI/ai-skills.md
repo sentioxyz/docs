@@ -10,129 +10,139 @@ metadata:
 next:
   description: ''
 ---
+Sentio publishes a set of AI skills that teach AI coding agents how to work with the Sentio platform end-to-end — building blockchain processors, running SQL queries, managing alerts, dashboards, and endpoints. Once installed, the agent automatically activates the right skill based on what you're doing, so you can describe tasks in natural language and have the agent execute them against Sentio.
 
- Sentio publishes a set of AI skills that teach AI coding agents how to work with the Sentio platform end-to-end — building blockchain processors, running SQL queries, managing alerts, dashboards, and endpoints. Once installed, the agent automatically activates the right skill based on what you're doing, so you can describe tasks in natural language and have the agent execute them against Sentio.
+https://www.youtube.com/watch?v=QGvB6Lpk72E
 
- ## What Are AI Skills?
+## What Are AI Skills?
 
- AI skills are plugins that bundle domain knowledge and tool instructions for an AI coding agent. Each skill includes:
- - **Triggering rules** — The agent knows when to activate the skill based on your intent
- - **Reference materials** — Documentation, patterns, and examples loaded on demand
- - **Tool guidance** — How to invoke the Sentio CLI, structure code, and follow best practices
+AI skills are plugins that bundle domain knowledge and tool instructions for an AI coding agent. Each skill includes:
 
- You don't call skills manually — the agent picks them up automatically when your request matches.
+* **Triggering rules** — The agent knows when to activate the skill based on your intent
+* **Reference materials** — Documentation, patterns, and examples loaded on demand
+* **Tool guidance** — How to invoke the Sentio CLI, structure code, and follow best practices
 
- ## Available Skills
+You don't call skills manually — the agent picks them up automatically when your request matches.
 
- The [`sentio-ai-kit`](https://github.com/sentioxyz/sentio-ai-kit) plugin ships two skills:
+## Available Skills
 
- ### `sentio-processor`
- Build, test, and deploy blockchain data processors with the Sentio SDK.
- - **Project lifecycle** — `sentio create` → `sentio add` → `sentio gen` → write processor → `sentio test` → `sentio upload`
- - **Processor patterns** — Event handlers, block/time intervals, transaction tracing for each chain
- - **Metrics & events** — Counters, gauges, event logging with proper labeling
- - **Store API** — Entity definitions with `schema.graphql`, CRUD operations
- - **Price feeds** — Token price lookups, USD value calculations, caching patterns
- - **Testing** — `TestProcessorServer` with chain-specific test facets
- - **DeFi patterns** — DEX/AMM, lending protocols, TVL tracking, points systems
- - **Supported chains** — Ethereum, Aptos, Sui, Solana, Starknet, Bitcoin, Cosmos, Fuel, IOTA
+The [`sentio-ai-kit`](https://github.com/sentioxyz/sentio-ai-kit) plugin ships two skills:
 
- ### `sentio-platform`
- Interact with your Sentio projects from the command line — SQL queries, alerts, dashboards, endpoints, and data exploration.
- - **SQL** — Run synchronous and async queries against Data Studio
- - **Data queries** — List and query events, metrics, and prices
- - **Alerts** — Create, update, and manage metric/event/log/SQL-based alert rules
- - **Endpoints** — Define parameterized SQL endpoints for external consumption
- - **Dashboards** — Create dashboards, add panels, import/export JSON definitions
+### `sentio-processor`
 
- ## Installation
+Build, test, and deploy blockchain data processors with the Sentio SDK.
 
- ### Option 1: Plugin Marketplace
+* **Project lifecycle** — `sentio create` → `sentio add` → `sentio gen` → write processor → `sentio test` → `sentio upload`
+* **Processor patterns** — Event handlers, block/time intervals, transaction tracing for each chain
+* **Metrics & events** — Counters, gauges, event logging with proper labeling
+* **Store API** — Entity definitions with `schema.graphql`, CRUD operations
+* **Price feeds** — Token price lookups, USD value calculations, caching patterns
+* **Testing** — `TestProcessorServer` with chain-specific test facets
+* **DeFi patterns** — DEX/AMM, lending protocols, TVL tracking, points systems
+* **Supported chains** — Ethereum, Aptos, Sui, Solana, Starknet, Bitcoin, Cosmos, Fuel, IOTA
 
- ```bash
- # Add the marketplace source
- /plugin marketplace add sentioxyz/sentio-ai-kit
+### `sentio-platform`
 
- # Install the plugin
- /plugin install sentio-ai-kit
- ```
+Interact with your Sentio projects from the command line — SQL queries, alerts, dashboards, endpoints, and data exploration.
 
- ### Option 2: ClawHub
+* **SQL** — Run synchronous and async queries against Data Studio
+* **Data queries** — List and query events, metrics, and prices
+* **Alerts** — Create, update, and manage metric/event/log/SQL-based alert rules
+* **Endpoints** — Define parameterized SQL endpoints for external consumption
+* **Dashboards** — Create dashboards, add panels, import/export JSON definitions
 
- Install skills individually:
+## Installation
 
- ```bash
- # Skill for writing and debugging Sentio processors
- npx clawhub@latest install sentio-processor
+### Option 1: Plugin Marketplace
 
- # Skill for SQL queries, dashboards, alerts, endpoints
- npx clawhub@latest install sentio-platform
- ```
+```bash
+# Add the marketplace source
+/plugin marketplace add sentioxyz/sentio-ai-kit
 
- ## Setup
+# Install the plugin
+/plugin install sentio-ai-kit
+```
 
- The `sentio-platform` skill needs an API key to talk to your Sentio account:
+### Option 2: ClawHub
 
- 1. Check login status:
-    ```bash
-    npx @sentio/cli@latest login --status
-    ```
- 2. If not logged in, generate an API key from your Sentio account settings, then run:
-    ```bash
-    npx @sentio/cli@latest login --api-key <your-api-key>
-    ```
+Install skills individually:
 
- The `sentio-processor` skill works without authentication for local development; you only need to log in when uploading processors.
+```bash
+# Skill for writing and debugging Sentio processors
+npx clawhub@latest install sentio-processor
 
- ## Usage Examples
+# Skill for SQL queries, dashboards, alerts, endpoints
+npx clawhub@latest install sentio-platform
+```
 
- Once installed, just describe what you want and the agent figures out the rest.
+## Setup
 
- ### Building Processors
- ```
- "Create a Sentio processor that tracks USDC transfers on Ethereum"
- "Add a Sui DEX swap tracker with volume metrics"
- "Set up a points system for staking rewards"
- "Generate handlers for the Uniswap V3 pool at 0x... and write tests"
- ```
+The `sentio-platform` skill needs an API key to talk to your Sentio account:
 
- The agent will scaffold the project, fetch the ABI, generate processor code with proper metrics, write tests, and walk you through deployment.
+1. Check login status:
+   ```bash
+   npx @sentio/cli@latest login --status
+   ```
+2. If not logged in, generate an API key from your Sentio account settings, then run:
+   ```bash
+   npx @sentio/cli@latest login --api-key <your-api-key>
+   ```
 
- ### Querying Data
- ```
- "Run a SQL query against my project to show the top 10 holders by balance"
- "List all metrics defined in owner/my-project"
- "Query the Transfer event grouped by hour for the last 24 hours"
- ```
+The `sentio-processor` skill works without authentication for local development; you only need to log in when uploading processors.
 
- The agent builds the right `sentio data` command, executes it, and explains the results.
+## Usage Examples
 
- ### Managing Alerts & Dashboards
- ```
- "Create an alert that fires when daily transfer volume drops below 1M"
- "Build a dashboard with TVL, daily active users, and top tokens"
- "Export the dashboard to JSON so I can version it"
- ```
+Once installed, just describe what you want and the agent figures out the rest.
 
- The agent composes the CLI invocations, stores dashboard definitions as files, and helps you iterate on layout and filters.
+### Building Processors
 
- ## How Skills Activate
+```
+"Create a Sentio processor that tracks USDC transfers on Ethereum"
+"Add a Sui DEX swap tracker with volume metrics"
+"Set up a points system for staking rewards"
+"Generate handlers for the Uniswap V3 pool at 0x... and write tests"
+```
 
- The agent reads the skill descriptions and picks one when your request matches. Triggers include:
- - Mentioning `@sentio/sdk`, `sentio.yaml`, or processor files (→ `sentio-processor`)
- - Asking about Sentio SQL, alerts, dashboards, or endpoints (→ `sentio-platform`)
- - Working inside a directory that looks like a Sentio project
+The agent will scaffold the project, fetch the ABI, generate processor code with proper metrics, write tests, and walk you through deployment.
 
- You can also explicitly mention the skill (e.g. "use sentio-processor to scaffold this") if you want to be sure.
+### Querying Data
 
- ## Tips
+```
+"Run a SQL query against my project to show the top 10 holders by balance"
+"List all metrics defined in owner/my-project"
+"Query the Transfer event grouped by hour for the last 24 hours"
+```
 
- - **Iterate in conversation** — Skills work best when you refine through follow-ups. Ask the agent to add a new metric, swap a chart type, or tighten a filter rather than rewriting from scratch.
- - **Keep `sentio.yaml` and `schema.graphql` in the working directory** — the agent reads these to understand your project state.
- - **Combine skills** — Build a processor with `sentio-processor`, then use `sentio-platform` to create dashboards and alerts on the metrics it emits.
+The agent builds the right `sentio data` command, executes it, and explains the results.
 
- ## Resources
+### Managing Alerts & Dashboards
 
- - **Plugin repo**: [sentioxyz/sentio-ai-kit](https://github.com/sentioxyz/sentio-ai-kit)
- - **Production processor examples**: [sentioxyz/sentio-processors](https://github.com/sentioxyz/sentio-processors)
- - **Sentio CLI reference**: `npx @sentio/cli@latest --help`
+```
+"Create an alert that fires when daily transfer volume drops below 1M"
+"Build a dashboard with TVL, daily active users, and top tokens"
+"Export the dashboard to JSON so I can version it"
+```
+
+The agent composes the CLI invocations, stores dashboard definitions as files, and helps you iterate on layout and filters.
+
+## How Skills Activate
+
+The agent reads the skill descriptions and picks one when your request matches. Triggers include:
+
+* Mentioning `@sentio/sdk`, `sentio.yaml`, or processor files (→ `sentio-processor`)
+* Asking about Sentio SQL, alerts, dashboards, or endpoints (→ `sentio-platform`)
+* Working inside a directory that looks like a Sentio project
+
+You can also explicitly mention the skill (e.g. "use sentio-processor to scaffold this") if you want to be sure.
+
+## Tips
+
+* **Iterate in conversation** — Skills work best when you refine through follow-ups. Ask the agent to add a new metric, swap a chart type, or tighten a filter rather than rewriting from scratch.
+* **Keep `sentio.yaml` and `schema.graphql` in the working directory** — the agent reads these to understand your project state.
+* **Combine skills** — Build a processor with `sentio-processor`, then use `sentio-platform` to create dashboards and alerts on the metrics it emits.
+
+## Resources
+
+* **Plugin repo**: [sentioxyz/sentio-ai-kit](https://github.com/sentioxyz/sentio-ai-kit)
+* **Production processor examples**: [sentioxyz/sentio-processors](https://github.com/sentioxyz/sentio-processors)
+* **Sentio CLI reference**: `npx @sentio/cli@latest --help`
