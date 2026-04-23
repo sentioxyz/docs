@@ -86,3 +86,5 @@ Total supply: **1,000,000,000 $ST**. The allocation is designed to balance long-
 * **Liquidity (4.10%)**: Set aside for market making and exchange liquidity to ensure healthy token trading conditions.
 
 Unlock schedule could be found at [CMC](https://coinmarketcap.com/currencies/sentio/#token_unlocks).
+
+<br />
