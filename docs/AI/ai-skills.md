@@ -12,6 +12,8 @@ next:
 ---
 Sentio publishes a set of AI skills that teach AI coding agents how to work with the Sentio platform end-to-end — building blockchain processors, running SQL queries, managing alerts, dashboards, and endpoints. Once installed, the agent automatically activates the right skill based on what you're doing, so you can describe tasks in natural language and have the agent execute them against Sentio.
 
+<Embed url="https://www.youtube.com/embed/QGvB6Lpk72E" typeOfEmbed="youtube" href="https://www.youtube.com/embed/QGvB6Lpk72E" html="%3Ciframe%20src%3D%22https%3A%2F%2Fwww.youtube.com%2Fembed%2FQGvB6Lpk72E%22%20width%3D%22640%22%20height%3D%22480%22%20frameborder%3D%220%22%3E%3C%2Fiframe%3E" />
+
 ## What Are AI Skills?
 
 AI skills are plugins that bundle domain knowledge and tool instructions for an AI coding agent. Each skill includes:
