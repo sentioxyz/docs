@@ -1,5 +1,5 @@
 ---
-title: 🧩 Sentio Skills for Claude
+title: 🧩 AI Skills
 excerpt: ''
 deprecated: false
 hidden: false
@@ -11,16 +11,16 @@ next:
   description: ''
 ---
 
- Sentio publishes a set of [Claude Code](https://docs.anthropic.com/en/docs/claude-code) skills that teach Claude how to work with the Sentio platform end-to-end — building blockchain processors, running SQL queries, managing alerts, dashboards, and endpoints. Once installed, Claude automatically activates the right skill based on what you're doing, so you can describe tasks in natural language and have Claude execute them against Sentio.
+ Sentio publishes a set of AI skills that teach AI coding agents how to work with the Sentio platform end-to-end — building blockchain processors, running SQL queries, managing alerts, dashboards, and endpoints. Once installed, the agent automatically activates the right skill based on what you're doing, so you can describe tasks in natural language and have the agent execute them against Sentio.
 
- ## What Are Skills?
+ ## What Are AI Skills?
 
- Skills are Claude Code plugins that bundle domain knowledge and tool instructions. Each skill includes:
- - **Triggering rules** — Claude knows when to activate the skill based on your intent
- - **Reference materials** — Documentation, patterns, and examples Claude reads on demand
+ AI skills are plugins that bundle domain knowledge and tool instructions for an AI coding agent. Each skill includes:
+ - **Triggering rules** — The agent knows when to activate the skill based on your intent
+ - **Reference materials** — Documentation, patterns, and examples loaded on demand
  - **Tool guidance** — How to invoke the Sentio CLI, structure code, and follow best practices
 
- You don't call skills manually — Claude picks them up automatically when your request matches.
+ You don't call skills manually — the agent picks them up automatically when your request matches.
 
  ## Available Skills
 
@@ -47,7 +47,7 @@ next:
 
  ## Installation
 
- ### Option 1: Claude Code Plugin (recommended)
+ ### Option 1: Plugin Marketplace
 
  ```bash
  # Add the marketplace source
@@ -86,7 +86,7 @@ next:
 
  ## Usage Examples
 
- Once installed, just describe what you want and Claude figures out the rest.
+ Once installed, just describe what you want and the agent figures out the rest.
 
  ### Building Processors
  ```
@@ -96,7 +96,7 @@ next:
  "Generate handlers for the Uniswap V3 pool at 0x... and write tests"
  ```
 
- Claude will scaffold the project, fetch the ABI, generate processor code with proper metrics, write tests with `TestProcessorServer`, and walk you through deployment.
+ The agent will scaffold the project, fetch the ABI, generate processor code with proper metrics, write tests, and walk you through deployment.
 
  ### Querying Data
  ```
@@ -105,7 +105,7 @@ next:
  "Query the Transfer event grouped by hour for the last 24 hours"
  ```
 
- Claude builds the right `sentio data` command, executes it, and explains the results.
+ The agent builds the right `sentio data` command, executes it, and explains the results.
 
  ### Managing Alerts & Dashboards
  ```
@@ -114,11 +114,11 @@ next:
  "Export the dashboard to JSON so I can version it"
  ```
 
- Claude composes the CLI invocations, stores dashboard definitions as files, and helps you iterate on layout and filters.
+ The agent composes the CLI invocations, stores dashboard definitions as files, and helps you iterate on layout and filters.
 
  ## How Skills Activate
 
- Claude reads the skill descriptions and picks one when your request matches. Triggers include:
+ The agent reads the skill descriptions and picks one when your request matches. Triggers include:
  - Mentioning `@sentio/sdk`, `sentio.yaml`, or processor files (→ `sentio-processor`)
  - Asking about Sentio SQL, alerts, dashboards, or endpoints (→ `sentio-platform`)
  - Working inside a directory that looks like a Sentio project
@@ -127,13 +127,12 @@ next:
 
  ## Tips
 
- - **Iterate in conversation** — Skills work best when you refine through follow-ups. Ask Claude to add a new metric, swap a chart type, or tighten a filter rather than rewriting from scratch.
- - **Keep `sentio.yaml` and `schema.graphql` in the working directory** — Claude reads these to understand your project state.
+ - **Iterate in conversation** — Skills work best when you refine through follow-ups. Ask the agent to add a new metric, swap a chart type, or tighten a filter rather than rewriting from scratch.
+ - **Keep `sentio.yaml` and `schema.graphql` in the working directory** — the agent reads these to understand your project state.
  - **Combine skills** — Build a processor with `sentio-processor`, then use `sentio-platform` to create dashboards and alerts on the metrics it emits.
 
  ## Resources
 
  - **Plugin repo**: [sentioxyz/sentio-ai-kit](https://github.com/sentioxyz/sentio-ai-kit)
  - **Production processor examples**: [sentioxyz/sentio-processors](https://github.com/sentioxyz/sentio-processors)
- - **Claude Code docs**: [docs.anthropic.com/claude-code](https://docs.anthropic.com/en/docs/claude-code)
  - **Sentio CLI reference**: `npx @sentio/cli@latest --help`

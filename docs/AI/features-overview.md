@@ -90,5 +90,5 @@ next:
  - [AI Insights & Analytics](doc:insights-analytics)
  - [AI Processor Generation](doc:processor-generation)
  - [AI Processor Diagnostics](doc:processor-diagnostics)
- - [Sentio Skills for Claude](doc:claude-skills)
+ - [AI Skills](doc:ai-skills)
 
