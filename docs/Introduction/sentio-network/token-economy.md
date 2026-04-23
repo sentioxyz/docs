@@ -84,3 +84,5 @@ Total supply: **1,000,000,000 $ST**. The allocation is designed to balance long-
 * **Early Backers (17.00%)**: Allocated to initial investors who supported the project's early development and vision.
 * **Team (15.00%)**: Reserved for core team members and key contributors driving the ongoing development of the Sentio platform and network.
 * **Liquidity (4.10%)**: Set aside for market making and exchange liquidity to ensure healthy token trading conditions.
+
+Unlock schedule could be found at [CMC](https://coinmarketcap.com/currencies/sentio/#token_unlocks).
