@@ -10,85 +10,94 @@ metadata:
 next:
   description: ''
 ---
+Sentio provides powerful AI-driven capabilities that make blockchain data analysis accessible through natural language queries. The AI system can generate SQL queries, create insights and visualizations, and even generate custom processor code to track specific blockchain events.
 
- Sentio provides powerful AI-driven capabilities that make blockchain data analysis accessible through natural language queries. The AI system can generate SQL queries, create insights and visualizations, and even generate custom processor code to track specific blockchain events.
+## Key AI Features
 
- ## Key AI Features
+### 🤖 Natural Language Data Querying
 
- ### 🤖 Natural Language Data Querying
- Transform plain English questions into complex blockchain data queries:
- - **SQL Generation**: Convert natural language into optimized SQL queries
- - **Smart Table Selection**: Automatically identify relevant data tables
- - **Query Explanation**: Understand what each generated query does
- - **Error Correction**: Automatically fix and improve queries
+Transform plain English questions into complex blockchain data queries:
 
- ### 📊 Intelligent Insights & Analytics
- Get instant analysis and visualizations of your blockchain data:
- - **Metrics Analysis**: Generate time-series queries for KPIs and metrics
- - **Chart Recommendations**: Suggest optimal visualization types
- - **Multi-dimensional Analysis**: Analyze data across different dimensions
- - **Automated Aggregations**: Smart grouping and summarization
+* **SQL Generation**: Convert natural language into optimized SQL queries
+* **Smart Table Selection**: Automatically identify relevant data tables
+* **Query Explanation**: Understand what each generated query does
+* **Error Correction**: Automatically fix and improve queries
 
- ### 🛠️ Processor Code Generation
- Automatically generate Sentio processor code for custom blockchain event tracking:
- - **Smart Contract Analysis**: Analyze contract ABIs and suggest relevant events
- - **TypeScript Generation**: Create complete processor implementations
- - **Test Generation**: Include comprehensive test cases
- - **Project Bootstrapping**: Set up complete Sentio projects
+### 📊 Intelligent Insights & Analytics
 
- ### 💬 Interactive Chat Interface
- Engage with your data through an intuitive conversation experience:
- - **Context-Aware**: Remembers your project context and previous queries
- - **Streaming Responses**: Real-time response generation
- - **Resource Attachments**: Reference specific tables, metrics, or files
- - **Session Management**: Persistent conversations with history
+Get instant analysis and visualizations of your blockchain data:
 
- ## Supported Use Cases
+* **Metrics Analysis**: Generate time-series queries for KPIs and metrics
+* **Chart Recommendations**: Suggest optimal visualization types
+* **Multi-dimensional Analysis**: Analyze data across different dimensions
+* **Automated Aggregations**: Smart grouping and summarization
 
- ### Data Exploration
- "Show me the top 10 tokens by trading volume on Ethereum last week"
+### 🛠️ Processor Code Generation
 
- "What's the average gas price trend over the past month?"
+Automatically generate Sentio processor code for custom blockchain event tracking:
 
- "Find all failed transactions for contract 0x..."
+* **Smart Contract Analysis**: Analyze contract ABIs and suggest relevant events
+* **TypeScript Generation**: Create complete processor implementations
+* **Test Generation**: Include comprehensive test cases
+* **Project Bootstrapping**: Set up complete Sentio projects
 
- ### Metrics & KPIs
- "Create a daily active users metric for my DeFi protocol"
+### 💬 Interactive Chat Interface
 
- "Track TVL changes over time with weekly aggregation"
+Engage with your data through an intuitive conversation experience:
 
- "Show me revenue metrics broken down by token type"
+* **Context-Aware**: Remembers your project context and previous queries
+* **Streaming Responses**: Real-time response generation
+* **Resource Attachments**: Reference specific tables, metrics, or files
+* **Session Management**: Persistent conversations with history
 
- ### Custom Development
- "Generate a processor to track Uniswap V3 swap events"
+## Supported Use Cases
 
- "Create monitoring for NFT minting on this contract"
+### Data Exploration
 
- "Build analytics for my token's transfer patterns"
+"Show me the top 10 tokens by trading volume on Ethereum last week"
 
- ## Architecture
+"What's the average gas price trend over the past month?"
 
- The AI system uses a multi-service architecture:
+"Find all failed transactions for contract 0x..."
 
- - **AI Service** (Go): Session management, authentication, routing
- - **Python AI Server**: LLM integration, specialized agents
- - **Frontend Components** (React): Chat interface, visualization
- - **Multiple LLM Support**: OpenAI GPT-4, Anthropic Claude
+### Metrics & KPIs
 
- ## Getting Started
+"Create a daily active users metric for my DeFi protocol"
 
- 1. **Access the AI Chat**: Open any project dashboard and click the AI chat panel
- 2. **Set Context**: The AI automatically understands your current project
- 3. **Ask Questions**: Use natural language to query your data
- 4. **Refine Results**: Iterate on queries and visualizations
- 5. **Save Insights**: Export or save generated queries and charts
+"Track TVL changes over time with weekly aggregation"
 
- ## Next Steps
+"Show me revenue metrics broken down by token type"
 
- - [AI Chat Interface Guide](doc:chat-interface)
- - [AI SQL Generation](doc:sql-generation)
- - [AI Insights & Analytics](doc:insights-analytics)
- - [AI Processor Generation](doc:processor-generation)
- - [AI Processor Diagnostics](doc:processor-diagnostics)
- - [AI Skills](doc:ai-skills)
+### Custom Development
 
+"Generate a processor to track Uniswap V3 swap events"
+
+"Create monitoring for NFT minting on this contract"
+
+"Build analytics for my token's transfer patterns"
+
+## Architecture
+
+The AI system uses a multi-service architecture:
+
+* **AI Service** (Go): Session management, authentication, routing
+* **Python AI Server**: LLM integration, specialized agents
+* **Frontend Components** (React): Chat interface, visualization
+* **Multiple LLM Support**: OpenAI GPT-4, Anthropic Claude
+
+## Getting Started
+
+1. **Access the AI Chat**: Open any project dashboard and click the AI chat panel
+2. **Set Context**: The AI automatically understands your current project
+3. **Ask Questions**: Use natural language to query your data
+4. **Refine Results**: Iterate on queries and visualizations
+5. **Save Insights**: Export or save generated queries and charts
+
+## Next Steps
+
+* [AI Skills](doc:ai-skills)
+* [AI Chat Interface Guide](doc:chat-interface)
+* [AI SQL Generation](doc:sql-generation)
+* [AI Insights & Analytics](doc:insights-analytics)
+* [AI Processor Generation](doc:processor-generation)
+* [AI Processor Diagnostics](doc:processor-diagnostics)
