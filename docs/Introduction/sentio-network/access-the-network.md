@@ -85,9 +85,9 @@ Before following the steps below, you will need some ST tokens. You can claim th
 
 **Claim limits**
 
-| Parameter                                    | Value                              |
+| Parameter                                    | Value (Testnet ST)                 |
 | :------------------------------------------- | :--------------------------------- |
-| Amount per claim (ST Holders)                | 10 ST                              |
+| Amount per claim (ST Holders at least 10 ST) | 10 ST                              |
 | Non-Holder Amount per claim (Non ST Holders) | 1 ST                               |
 | Claim frequency                              | Once every 24 hours per address    |
 | Global daily cap                             | 1,000 ST (shared across all users) |
