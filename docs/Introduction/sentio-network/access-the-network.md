@@ -74,9 +74,10 @@ Before following the steps below, you will need some ST tokens. You can claim th
 1. Open the <Anchor label="Sentio Network App -> Faucet Page" target="_blank" href="https://testnet-network.sentio.xyz/faucet">Sentio Network App -> Faucet Page</Anchor> .
 2. Enter your wallet address in the "Wallet Address" field, or confirm it is pre-filled if your wallet is already connected.
 
-   ![](https://files.readme.io/ee17342bca6e596ad36e39248dc56450dc33186c036681627227e17599081cf3-image.png)
-3. Click "**SEND 10 ST**" to submit your claim.
-4. Wait a moment — the tokens will be sent to the specified wallet address on the Sentio Testnet.
+   ![](https://files.readme.io/2ee9ab7797d76189d5015a9b83e03438c286e33b3aedb708742c42dac2b3026f-image.png)
+3. Users can claim test tokens once every 24 hours, receiving 1 ST if they are non-holders or 10 ST if they hold at least 10 ST on ETH Mainnet or BSC.
+4. Click "**SEND ST**" to submit your claim.
+5. Wait a moment — the tokens will be sent to the specified wallet address on the Sentio Testnet.
 
    ![](https://files.readme.io/39266e2da81671a92f6eb0cd3a74faa1d113d6ea8b54c41906b554864559e83f-image.png)
 
@@ -84,11 +85,12 @@ Before following the steps below, you will need some ST tokens. You can claim th
 
 **Claim limits**
 
-| Parameter        | Value                              |
-| :--------------- | :--------------------------------- |
-| Amount per claim | 10 ST                              |
-| Claim frequency  | Once every 24 hours per address    |
-| Global daily cap | 1,000 ST (shared across all users) |
+| Parameter                                    | Value                              |
+| :------------------------------------------- | :--------------------------------- |
+| Amount per claim (ST Holders)                | 10 ST                              |
+| Non-Holder Amount per claim (Non ST Holders) | 1 ST                               |
+| Claim frequency                              | Once every 24 hours per address    |
+| Global daily cap                             | 1,000 ST (shared across all users) |
 
 > The faucet enforces the daily limit by checking on-chain transfer logs. Tokens are sent on the Sentio Testnet.
 
