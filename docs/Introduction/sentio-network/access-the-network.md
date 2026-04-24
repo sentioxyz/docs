@@ -71,7 +71,7 @@ Before following the steps below, you will need some ST tokens. You can claim th
 
 **Steps to claim**
 
-1. Open the <Anchor label="Sentio Network App" target="_blank" href="https://network.sentio.xyz/">Sentio Network App</Anchor> and navigate to the **Faucet** page.
+1. Open the <Anchor label="Sentio Network App -> Faucet Page" target="_blank" href="https://testnet-network.sentio.xyz/faucet">Sentio Network App -> Faucet Page</Anchor> .
 2. Enter your wallet address in the "Wallet Address" field, or confirm it is pre-filled if your wallet is already connected.
 
    ![](https://files.readme.io/ee17342bca6e596ad36e39248dc56450dc33186c036681627227e17599081cf3-image.png)
