@@ -708,7 +708,7 @@ Finish Step 1-3 from <Anchor label="Quickstart" title="mention" href="quickstart
   ```
 </details>
 
-> ️ Testnets are available at chain ID: 17000, 560048, 11155111, slug holesky, hoodi, sepolia  with limited capabilities.
+> ️ Testnets are available at chain ID: 560048, 11155111, slug hoodi, sepolia  with limited capabilities.
 
 ### Etherlink
 
