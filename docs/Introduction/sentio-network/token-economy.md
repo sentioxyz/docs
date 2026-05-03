@@ -24,6 +24,8 @@ Sentio Token is deployed at both [Ethereum](https://etherscan.io/token/0x70BE406
 
 Once Sentio mainnet launched, Sentio Token will be able to be bridged between Ethereum and Sentio mainnet through Optimism native bridge.
 
+Bridge UI could be found at: https://network.sentio.xyz/bridge
+
 ## Sentio Units (SU)
 
 Sentio introduces **Sentio Units (SU)** as the standardized billing abstraction across all network services. All usage is metered in SU.
