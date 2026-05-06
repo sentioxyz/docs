@@ -34,31 +34,32 @@ cast wallet import sentio_user --interactive
 Set these environment variables for the examples:
 
 ```shell
-export SENTIO_RPC=https://testnet.sentio.xyz
-export SENTIO_TOKEN=0xB677797765beB59D0195d92b0E4d009609187d7C
-export BILLING=0x9b780B4ecEb0144944B4afFddEe040bE67a8A224
-export PERMISSIONS=0x6cFcA54e6cFD00dC7D758aB3825d465982A53623
-export PROCESSOR_REGISTRY=0x46659Cd038831023a8880487211009614c921861
-export CONTROLLER=0x01E46832AaF273C9A9FF5ECB5D8214AeF096E3c3
+export SENTIO_RPC=https://sentio-testnet.rpc.sentio.xyz
+export SENTIO_TOKEN=0x2f84Cb6E856f0C82bd44c536E022c0bCcD787411
+export BILLING=0x883556C4080621434e28129257Dc37eE39ED6351
+export PERMISSIONS=0x1326C7b6C6c02c45B63aD007e9AD84a79f3e2C5b
+export PROCESSOR_REGISTRY=0x67857f96391fF2fAce037Ff655919a3850c6b175
+export CONTROLLER=0x86a9632527bbc3873b32c83AAEF0e7fC36368acC
 ```
 
 ### Testnet contract addresses
 
-Every contract is registered in the `AddressBook` proxy at `0x17d5aF5Ed9C2558B802bEfcCc5a94C36dE95BB0B`. Current deployment:
+Every contract is registered in the `AddressBook` proxy at `0x11cDDF46f16925aa630Af9D5158028E56309868f`. Current deployment:
 
 | Key                  | Address                                      |
 |----------------------|----------------------------------------------|
-| `sentio_token`       | `0xB677797765beB59D0195d92b0E4d009609187d7C` |
-| `billing`            | `0x9b780B4ecEb0144944B4afFddEe040bE67a8A224` |
-| `permissions`        | `0x6cFcA54e6cFD00dC7D758aB3825d465982A53623` |
-| `processor_registry` | `0x46659Cd038831023a8880487211009614c921861` |
-| `controller`         | `0x01E46832AaF273C9A9FF5ECB5D8214AeF096E3c3` |
-| `indexer_registry`   | `0x130ea5163a0bA808ED8432eEAc7869351a47F99b` |
-| `staking`            | `0x9dE7C20a1441e4648fe5A40e6f14f3CEb007444A` |
-| `epoch_controller`   | `0xc0a730132fA1291717C4a7182D88a4d536A7b0FF` |
-| `voting_parameters`  | `0x4E9EcfF4122476Cb61874ff960Ce31d792ed2C0F` |
-| `usage_tracker`      | `0x898F6cd6Fd0119C24335d228aF49C9F1FaA97b58` |
-| `rewards`            | `0x5CaB0dFa84105ed52343B20AbA15dF1d6a0E6177` |
+| `sentio_token`       | `0x2f84Cb6E856f0C82bd44c536E022c0bCcD787411` |
+| `billing`            | `0x883556C4080621434e28129257Dc37eE39ED6351` |
+| `permissions`        | `0x1326C7b6C6c02c45B63aD007e9AD84a79f3e2C5b` |
+| `processor_registry` | `0x67857f96391fF2fAce037Ff655919a3850c6b175` |
+| `controller`         | `0x86a9632527bbc3873b32c83AAEF0e7fC36368acC` |
+| `indexer_registry`   | `0x2613b6a54f9A75F4A446E359a1242DF89845e1e3` |
+| `staking`            | `0x747340cE7532Dab73A09F41ec0ebD2428025190D` |
+| `epoch_controller`   | `0xAB8BC199846AF58F134118a2bA10415f711369Bb` |
+| `voting_parameters`  | `0xAc4aA8d454b688E83790b36b5889aA0768758288` |
+| `usage_tracker`      | `0x8F9090Ca5343D205dB840333841B12fA182DFE81` |
+| `rewards`            | `0x1992d26CcC4AA4137926fF877EFAcaB23351354c` |
+| `databases`          | `0xd1304f499D0BEaDA496fC0d29515e36a469643cC` |
 
 ## Step 1: Fund your Billing balance
 
@@ -101,44 +102,157 @@ cast send $PERMISSIONS "addOperator(address)" $OPERATOR \
 
 Revoke with `removeOperator(address)`.
 
-## Step 3: Upload the processor bundle to IPFS
+## Step 3: Upload, create, and start the processor
 
-TODO: the standalone upload path is still being designed. The `@sentio/cli` `upload` command currently requires a Sentio Platform account and does not publish to IPFS directly. Until a dedicated CLI ships, pin your compiled bundle through any IPFS pinning service and keep the resulting CID.
-
-## Step 4: Create the processor on-chain
-
-Register the CID in `ProcessorRegistry`:
+`@sentio/cli` ships an `upload --no-platform` flow that pins the bundle to IPFS and submits both `createProcessor` and `startProcessor` for you. Run it from your processor project directory with `PRIVATE_KEY` set to the same key you funded in Step 1:
 
 ```shell
-PROCESSOR_ID="my-cool-processor"
-IPFS_CID="QmYourProcessorBundleCid..."
-SDK_VERSION="3.0.0"
-
-cast send $PROCESSOR_REGISTRY \
-  "createProcessor(string,(uint8,string),(string,bool,bool)[],string)" \
-  "$PROCESSOR_ID" \
-  "(0,\"$IPFS_CID\")" \
-  '[("1",true,false)]' \
-  "$SDK_VERSION" \
-  --rpc-url $SENTIO_RPC --account sentio_user
+PRIVATE_KEY=0xYOUR_PRIVATE_KEY_HERE \
+  yarn sentio upload --sentio-network testnet --required-chain-id 1 --no-platform
 ```
 
-* `ProcessorSource` is `(sourceType, ipfsCid)`; `sourceType = 0` means IPFS (the only supported value today).
-* `ChainConfig` is `(chainId, enableRpc, enableTrace)`. Add one tuple per chain your processor reads. Set `enableTrace=true` only if you need call traces — indexers without trace support will be excluded.
+Pass one `--required-chain-id` per chain your processor reads. The CLI prints the resolved contract addresses, your wallet's ST + Billing balance, asks for confirmation, then runs:
 
-## Step 5: Start the processor
+1. `tsup` packages `src/processor.ts` into `dist/lib.js`.
+2. The bundle is pinned to IPFS via `https://api.sentio.xyz/v1/ipfs/add`, returning a CID.
+3. `ProcessorRegistry.createProcessor` is signed and broadcast.
+4. `Controller.startProcessor` is signed and broadcast — `Controller` then allocates the processor to an eligible indexer.
 
-`createProcessor` only stores metadata. You must explicitly start the processor to have it allocated to an indexer:
+On success the CLI prints the processor ID, IPFS CID, and the two on-chain tx hashes:
 
-```shell
-cast send $CONTROLLER "startProcessor(string)" "$PROCESSOR_ID" \
-  --rpc-url $SENTIO_RPC --account sentio_user
+```
+=== Upload Complete ===
+         Processor ID: <user>_<project-name>
+         IPFS CID: Qm…
+         Network: testnet
+         sha256: …
 ```
 
-`Controller` picks an eligible indexer (round-robin over nodes matching `requireChains`) and writes the allocation. The indexer then downloads the bundle from IPFS and starts running it.
-
-Stop with `stopProcessor(string)`. Only the owner, an operator of the owner, or an explicit processor admin can start or stop a processor.
+To stop a processor later, call `Controller.stopProcessor(string)` directly (e.g. with `cast send`). Only the owner, an operator of the owner, or an explicit processor admin can start or stop a processor.
 
 # Access Data Network via Clickhouse CLI
 
-TODO (mengyu)
+The Data Network speaks the native ClickHouse protocol. Queries must be signed by an Ethereum key whose Billing balance covers the fee, so you run a local **sidecar** that signs queries with your key on the way out:
+
+```json title="housegate-sidecar.json"
+{
+  "listen": ":9001",
+  "metrics_listen": ":9091",
+  "sidecar": {
+    "mode": true,
+    "upstream": "64.38.144.158:10001",
+    "private_key_hex": "0xYOUR_PRIVATE_KEY_HERE"
+  }
+}
+```
+
+`private_key_hex` is the key whose Billing balance gets charged. To bill a different account, have that account `addOperator(yourKey)` first — see [Step 2](#step-2-add-an-operator-optional).
+
+Start the sidecar from a checkout of [`housegate`](https://github.com/sentioxyz/housegate):
+
+```shell
+bazel run //cmd:housegate -- --config=/absolute/path/to/housegate-sidecar.json
+```
+
+Then point any `clickhouse-client` at it — no `--user`/`--password` needed.
+
+## Permission model
+
+Every database tracks a 4-bit permission bitmask per address, stored on chain:
+
+| Bit | Name | Grants |
+|---|---|---|
+| `0x01` | Read | `SELECT`, `SHOW TABLES`, `DESCRIBE` |
+| `0x02` | Write | `INSERT`, `ALTER`, `DELETE`, `CREATE TABLE`, `DROP TABLE` |
+| `0x04` | Admin | `GRANT` / `REVOKE` |
+| `0x08` | Owner | All of the above, plus `DROP DATABASE` |
+
+Defaults at creation time:
+
+* **Processor database** — processor owner gets `Admin + Read` (`0x05`). They can read the data and grant/revoke Read to others, but **cannot write**. Writes are reserved for the processor's own handler logic so the dataset stays a faithful, reproducible function of on-chain history; allowing arbitrary owner writes would break that integrity guarantee. The indexer running the processor is the only writer.
+* **User database** — creator gets `Owner` (`0x08`).
+
+`Admin` alone does **not** imply Read or Write — it is purely a delegation bit. An Admin can only grant or revoke the Read/Write bits it itself holds. A pure-Admin account (e.g. someone granted `Admin` without `Read`) can manage other people's permissions but cannot read or write the data. `Owner` is the only role with no such restriction.
+
+## Processor databases
+
+Each processor replica gets a read-only database named `${processorId}_${replicaIndex}` (e.g. `fv2CWEeV_0`). Today every processor runs as a single replica, so `replicaIndex` is always `0`; the schema is forward-compatible with multi-replica deployments. The processor owner gets Admin+Read; other readers need an explicit grant.
+
+```shell
+clickhouse client --host 127.0.0.1 --port 9001
+:) SHOW DATABASES;
+:) USE fv2CWEeV_0;
+:) SHOW TABLES;
+:) SELECT * FROM entity_AccountSnapshot LIMIT 1;
+```
+
+The owner can share read access through standard `GRANT` / `REVOKE`. Permissions are **database-level only** — the per-table form (`db.table`) is not supported:
+
+```sql
+USE fv2CWEeV_0;
+
+-- Per-address grant
+GRANT  SELECT ON fv2CWEeV_0 TO   '0x4F070AB509a55A3e11743d638A866991328Ce560';
+REVOKE SELECT ON fv2CWEeV_0 FROM '0x4F070AB509a55A3e11743d638A866991328Ce560';
+
+-- Public read (zero address = wildcard)
+GRANT  SELECT ON fv2CWEeV_0 TO   '0x0000000000000000000000000000000000000000';
+REVOKE SELECT ON fv2CWEeV_0 FROM '0x0000000000000000000000000000000000000000';
+```
+
+> **Always `USE` the database before `GRANT` / `REVOKE`.** Otherwise the statement fails with `commitgate (GRANT): permission tx ... execution reverted`. Setting `--database` in the handshake works too.
+
+## User databases
+
+For a database you can write to directly, create one with plain `CREATE DATABASE`. You become the Owner (full read/write/admin/grant), and standard ClickHouse DDL/DML works as expected:
+
+```sql
+CREATE DATABASE my_notes;
+USE my_notes;
+
+CREATE TABLE notes (id UInt64, msg String) ENGINE = MergeTree() ORDER BY id;
+INSERT INTO notes VALUES (1, 'hello'), (2, 'world'), (3, 'sentio');
+SELECT * FROM notes ORDER BY id;
+DELETE FROM notes WHERE id = 2;
+
+DROP TABLE notes;
+DROP DATABASE my_notes;
+```
+
+Because you're the Owner, you can grant any combination of Read/Write/Admin to any address — same syntax as for processor databases:
+
+```sql
+USE my_notes;
+GRANT  SELECT ON my_notes TO   '0x4F070AB509a55A3e11743d638A866991328Ce560';
+REVOKE SELECT ON my_notes FROM '0x4F070AB509a55A3e11743d638A866991328Ce560';
+```
+
+`CREATE DATABASE`, `CREATE TABLE`, and queries are all charged against your Billing balance — fund it via [Step 1](#step-1-fund-your-billing-balance) before running this section.
+
+# Monitor processors via Node JSON-RPC
+
+Each indexer node exposes a small JSON-RPC server (port `10002`) for inspecting processor execution. Hit any node — if the processor isn't local to that node, the request is forwarded to whichever indexer hosts it.
+
+| Method | Use |
+|---|---|
+| `sentio_nodeStatus` | Node identity + sync status: node type, indexer ID, current block, head block, registered capabilities. |
+| `sentio_processorStatus` | Per-chain progress for a processor: processed block / timestamp, state (`CATCHING_UP` / `PROCESSING` / …), SDK version, entity schema. |
+| `sentio_processorLogs` | Recent driver logs for a processor (paged via `limit` + cursor). |
+
+Examples:
+
+```shell
+# Node identity + sync state
+curl -s http://<indexer-host>:10002 -H 'Content-Type: application/json' \
+  --data '{"jsonrpc":"2.0","method":"sentio_nodeStatus","params":[],"id":1}'
+
+# Processor progress
+curl -s http://<indexer-host>:10002 -H 'Content-Type: application/json' \
+  --data '{"jsonrpc":"2.0","method":"sentio_processorStatus",
+           "params":[{"id":"<processor-id>"}],"id":1}'
+
+# Recent logs (last 10 entries)
+curl -s http://<indexer-host>:10002 -H 'Content-Type: application/json' \
+  --data '{"jsonrpc":"2.0","method":"sentio_processorLogs",
+           "params":[{"processor_id":"<processor-id>","limit":10}],"id":1}'
+```
