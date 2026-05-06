@@ -20,6 +20,10 @@ Solana integration uses a single main processor type:
    * **Binding:** Typically done via generated processors: `MyProgramProcessor.bind({ address: 'program_id_...', network: SolanaChainId.SOLANA_MAINNET, startBlock: 150000000 })`
    * Processors can be generated using the Sentio CLI and an Anchor IDL: `sentio gen --idl <idl_path_or_fetch_address> solana`
 
+<Callout icon="⚠️" theme="warning">
+  **Start Block Limitation:** Due to Solana's extremely high data volume, Sentio only retains the most recent portion of Solana data. If `startBlock` is set to a value earlier than `latestSlot - 10000`, indexing will automatically begin from `latestSlot - 10000` instead.
+</Callout>
+
 ### Handlers
 
 The primary handler type is for instructions:
