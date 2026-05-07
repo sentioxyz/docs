@@ -123,8 +123,10 @@ Download [storage-network-daemon](https://github.com/sentioxyz/storage-network-d
 Start the daemon with:
 
 ```shell With Operator Key
+# use binary
 storage-network-daemon --sidecar --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OPERATOR_PRIVATE_KEY --sidecar-owner=$OWNER_ADDRESS
 
+# use docker
 docker run -it ghcr.io/sentioxyz/storage-network-daemon:latest --sidecar --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OPERATOR_PRIVATE_KEY --sidecar-owner=$OWNER_ADDRESS
 ```
 ```Text With Owner Key
