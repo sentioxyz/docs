@@ -253,6 +253,10 @@ Each indexer node exposes a small JSON-RPC server (port `10002`) for inspecting 
 
 Examples:
 
+<br />
+
+**TODO: indexer-hos**t
+
 ```shell
 # Node identity + sync state
 curl -s http://<indexer-host>:10002 -H 'Content-Type: application/json' \
