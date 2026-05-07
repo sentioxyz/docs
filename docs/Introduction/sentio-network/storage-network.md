@@ -33,6 +33,25 @@ Every database tracks a 4-bit permission bitmask per address, stored on chain in
 
 Two kinds of databases live in the Storage Network. They differ only in who is allowed to write to them.
 
+### User Databases
+
+For a database you can write to directly, create one with plain `CREATE DATABASE`. The creator becomes the **Owner** (full read/write/admin/grant), and standard ClickHouse DDL/DML works as expected:
+
+```sql
+CREATE DATABASE my_notes;
+USE my_notes;
+
+CREATE TABLE notes (id UInt64, msg String) ENGINE = MergeTree() ORDER BY id;
+INSERT INTO notes VALUES (1, 'hello'), (2, 'world'), (3, 'sentio');
+SELECT * FROM notes ORDER BY id;
+DELETE FROM notes WHERE id = 2;
+
+DROP TABLE notes;
+DROP DATABASE my_notes;
+```
+
+As Owner you can grant any combination of Read/Write/Admin to any address using the same syntax as for processor databases.
+
 ### Processor Databases
 
 Each processor replica gets a database named `${processorId}_${replicaIndex}` (e.g. `fv2CWEeV_0`). Processor databases are designed to be a faithful, reproducible function of on-chain history, so writes are reserved for the processor's own handler logic running on the assigned indexer.
@@ -57,25 +76,6 @@ REVOKE SELECT ON fv2CWEeV_0 FROM '0x0000000000000000000000000000000000000000';
 ```
 
 > **Always `USE` the database before `GRANT` / `REVOKE`.** Otherwise the statement fails with `commitgate (GRANT): permission tx ... execution reverted`. Setting `--database` in the handshake works too.
-
-### User Databases
-
-For a database you can write to directly, create one with plain `CREATE DATABASE`. The creator becomes the **Owner** (full read/write/admin/grant), and standard ClickHouse DDL/DML works as expected:
-
-```sql
-CREATE DATABASE my_notes;
-USE my_notes;
-
-CREATE TABLE notes (id UInt64, msg String) ENGINE = MergeTree() ORDER BY id;
-INSERT INTO notes VALUES (1, 'hello'), (2, 'world'), (3, 'sentio');
-SELECT * FROM notes ORDER BY id;
-DELETE FROM notes WHERE id = 2;
-
-DROP TABLE notes;
-DROP DATABASE my_notes;
-```
-
-As Owner you can grant any combination of Read/Write/Admin to any address using the same syntax as for processor databases.
 
 ## Query Authentication
 
