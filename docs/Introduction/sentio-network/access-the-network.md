@@ -105,8 +105,6 @@ cd example-project
 
 Then upload processor with your operator private key (recommended) or private key 
 
- with `PRIVATE_KEY` set to the same key you funded in Step 1:
-
 ```Text With Operator Key
 PRIVATE_KEY=<OPERATOR_PRIVATE_KEY> \
   yarn sentio upload --sentio-network testnet --required-chain-id 1 --no-platform --operator-owner=<OWNER_PUBLIC_KEY>
