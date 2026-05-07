@@ -118,7 +118,7 @@ To stop a processor later, call `Controller.stopProcessor(string)` directly (e.g
 
 The Storage Network speaks the native ClickHouse protocol. Queries must be signed by an Ethereum key whose Billing balance covers the fee, so you run a local **client** that signs queries with your key on the way out:
 
-Download [storage-network-daemon](https://github.com/sentioxyz/storage-network-daemon/releases)
+Download [storage-network-daemon](https://github.com/sentioxyz/storage-network-daemon/releases) or use docker.
 
 Start the daemon with:
 
