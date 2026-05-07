@@ -1,7 +1,7 @@
 ---
 title: Access the Network
 deprecated: false
-hidden: false
+hidden: true
 metadata:
   robots: index
 ---
