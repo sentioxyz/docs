@@ -17,6 +17,12 @@ The easiest way to use Sentio Network is through [Sentio Platform](https://app.s
 
 **Note**: The host environment can only be configured at project creation and **cannot be modified afterward**.
 
+<br />
+
+```
+yarn sentio upload --sentio-network testnet --required-chain-id 1
+```
+
 # Access Directly
 
 Direct access gives you more control but loses platform benefits like version control and UI. The flow is:
@@ -85,6 +91,10 @@ cast send $BILLING "deposit(uint256)" $AMOUNT \
 
 To top up another account, use `depositTo(address,uint256)`. To withdraw, use `withdraw(uint256)`.
 
+<Image align="center" src="https://files.readme.io/6f1b44c579c7fd1ab579517423426cdecc29db3047cddb48e3bfd2133dc7b426-image.png" />
+
+<br />
+
 ## Step 2: Add an operator (optional)
 
 Adding another address as your operator gives it two powers on your behalf:
@@ -103,13 +113,15 @@ cast send $PERMISSIONS "addOperator(address)" $OPERATOR \
 
 Revoke with `removeOperator(address)`.
 
+![](https://files.readme.io/be39eb014eef627a9e759fe850f67ee05442ba7bc1a7a475cfd52420847ab769-image.png)
+
 ## Step 3: Upload, create, and start the processor
 
 `@sentio/cli` ships an `upload --no-platform` flow that pins the bundle to IPFS and submits both `createProcessor` and `startProcessor` for you. Run it from your processor project directory with `PRIVATE_KEY` set to the same key you funded in Step 1:
 
 ```shell
 PRIVATE_KEY=0xYOUR_PRIVATE_KEY_HERE \
-  yarn sentio upload --sentio-network testnet --required-chain-id 1 --no-platform
+  yarn sentio upload --sentio-network testnet --required-chain-id 1 --no-platform 
 ```
 
 Pass one `--required-chain-id` per chain your processor reads. The CLI prints the resolved contract addresses, your wallet's ST + Billing balance, asks for confirmation, then runs:
@@ -133,7 +145,9 @@ To stop a processor later, call `Controller.stopProcessor(string)` directly (e.g
 
 ## Step 4: Connect a query client
 
-The Storage Network speaks the native ClickHouse protocol. Queries must be signed by an Ethereum key whose Billing balance covers the fee, so you run a local **sidecar** that signs queries with your key on the way out:
+The Storage Network speaks the native ClickHouse protocol. Queries must be signed by an Ethereum key whose Billing balance covers the fee, so you run a local **client** that signs queries with your key on the way out:
+
+Download [storage-network-daemon](https://github.com/sentioxyz/storage-network-daemon/releases)
 
 ```json title="housegate-sidecar.json"
 {
@@ -147,12 +161,14 @@ The Storage Network speaks the native ClickHouse protocol. Queries must be signe
 }
 ```
 
-`private_key_hex` is the key whose Billing balance gets charged. To bill a different account, have that account `addOperator(yourKey)` first — see [Step 2](#step-2-add-an-operator-optional).
+`private_key_hex` is the key whose Billing balance gets charged. To bill a different account, have that account `addOperator(yourKey)` first — see [Step 2](#step-2-add-an-operator-optional)
 
-Start the sidecar from a checkout of [`housegate`](https://github.com/sentioxyz/housegate):
+Start the daemon with:
 
-```shell
-bazel run //cmd:housegate -- --config=/absolute/path/to/housegate-sidecar.json
+```shell With Operator Key
+storage-network-daemon --sidecar --state=https://testnet-gateway.sentio.xyz --listen=:10003 --sidecar-key=$OPERATOR_PRIVATE_KEY --owner=$OWNER_ADDRESS
+```
+```Text With Owner Key
 ```
 
 Then point any `clickhouse-client` at it — no `--user`/`--password` needed:
