@@ -13,6 +13,8 @@ The easiest way to use Sentio Network. You can create a Sentio project with Sent
 
 **Note**: The host environment can only be configured at project creation and **cannot be modified afterward**.
 
+**TODO**, next? is there a different in uploading?
+
 # Access Directly
 
 You can also access Sentio Network directly, without the Sentio Platform. This gives you more control but loses benefits like version control and UI.
@@ -20,7 +22,7 @@ You can also access Sentio Network directly, without the Sentio Platform. This g
 Direct access takes five steps:
 
 1. Fund your Billing balance.
-2. *(Optional)* Add operator keys.
+2. _(Optional)_ Add operator keys.
 3. Upload your processor bundle to IPFS.
 4. Create the processor on-chain.
 5. Start the processor.
@@ -47,7 +49,7 @@ export CONTROLLER=0x86a9632527bbc3873b32c83AAEF0e7fC36368acC
 Every contract is registered in the `AddressBook` proxy at `0x11cDDF46f16925aa630Af9D5158028E56309868f`. Current deployment:
 
 | Key                  | Address                                      |
-|----------------------|----------------------------------------------|
+| -------------------- | -------------------------------------------- |
 | `sentio_token`       | `0x2f84Cb6E856f0C82bd44c536E022c0bCcD787411` |
 | `billing`            | `0x883556C4080621434e28129257Dc37eE39ED6351` |
 | `permissions`        | `0x1326C7b6C6c02c45B63aD007e9AD84a79f3e2C5b` |
@@ -164,12 +166,12 @@ Then point any `clickhouse-client` at it — no `--user`/`--password` needed.
 
 Every database tracks a 4-bit permission bitmask per address, stored on chain:
 
-| Bit | Name | Grants |
-|---|---|---|
-| `0x01` | Read | `SELECT`, `SHOW TABLES`, `DESCRIBE` |
+| Bit    | Name  | Grants                                                    |
+| ------ | ----- | --------------------------------------------------------- |
+| `0x01` | Read  | `SELECT`, `SHOW TABLES`, `DESCRIBE`                       |
 | `0x02` | Write | `INSERT`, `ALTER`, `DELETE`, `CREATE TABLE`, `DROP TABLE` |
-| `0x04` | Admin | `GRANT` / `REVOKE` |
-| `0x08` | Owner | All of the above, plus `DROP DATABASE` |
+| `0x04` | Admin | `GRANT` / `REVOKE`                                        |
+| `0x08` | Owner | All of the above, plus `DROP DATABASE`                    |
 
 Defaults at creation time:
 
@@ -237,11 +239,11 @@ REVOKE SELECT ON my_notes FROM '0x4F070AB509a55A3e11743d638A866991328Ce560';
 
 Each indexer node exposes a small JSON-RPC server (port `10002`) for inspecting processor execution. Hit any node — if the processor isn't local to that node, the request is forwarded to whichever indexer hosts it.
 
-| Method | Use |
-|---|---|
-| `sentio_nodeStatus` | Node identity + sync status: node type, indexer ID, current block, head block, registered capabilities. |
+| Method                   | Use                                                                                                                                    |
+| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |
+| `sentio_nodeStatus`      | Node identity + sync status: node type, indexer ID, current block, head block, registered capabilities.                                |
 | `sentio_processorStatus` | Per-chain progress for a processor: processed block / timestamp, state (`CATCHING_UP` / `PROCESSING` / …), SDK version, entity schema. |
-| `sentio_processorLogs` | Recent driver logs for a processor (paged via `limit` + cursor). |
+| `sentio_processorLogs`   | Recent driver logs for a processor (paged via `limit` + cursor).                                                                       |
 
 Examples:
 
