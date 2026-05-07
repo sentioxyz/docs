@@ -123,7 +123,7 @@ Download [storage-network-daemon](https://github.com/sentioxyz/storage-network-d
 Start the daemon with:
 
 ```shell With Operator Key
-storage-network-daemon --sidecar --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OPERATOR_PRIVATE_KEY --sidecar-payer=$OWNER_ADDRESS
+storage-network-daemon --sidecar --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OPERATOR_PRIVATE_KEY --sidecar-owner=$OWNER_ADDRESS
 ```
 ```Text With Owner Key
 storage-network-daemon --sidecar --state=https://testnet-storage-gateway.sentio.xyz --listen=:10003 --sidecar-key=$OWNER_PRIVATE_KEY
@@ -148,19 +148,25 @@ For the database permission model and how to share read access, see [Storage Net
 Each indexer node exposes a small JSON-RPC server on port `10002` for inspecting processor execution. Hit any node — if the processor isn't local to that node, the request is forwarded to whichever indexer hosts it. Method semantics are documented in [Compute Network](compute-network#node-json-rpc).
 
 ```shell
+INDEXER_HOST=https://testnet-compute-gateway.sentio.xyz
+# or
+INDEXER_HOST=<individual indexer host:port>
+
 # Node identity + sync state
-curl -s http://<indexer-host>:10002 -H 'Content-Type: application/json' \
+curl -s $INDEXER_HOST -H 'Content-Type: application/json' \
   --data '{"jsonrpc":"2.0","method":"sentio_nodeStatus","params":[],"id":1}'
+  
+PROCESSOR_ID=<your processor ID>
 
 # Processor progress
-curl -s http://<indexer-host>:10002 -H 'Content-Type: application/json' \
+curl -s $INDEXER_HOST -H 'Content-Type: application/json' \
   --data '{"jsonrpc":"2.0","method":"sentio_processorStatus",
-           "params":[{"id":"<processor-id>"}],"id":1}'
+           "params":[{"id":"$PROCESSOR_ID"}],"id":1}'
 
 # Recent logs (last 10 entries)
-curl -s http://<indexer-host>:10002 -H 'Content-Type: application/json' \
+curl -s $INDEXER_HOST -H 'Content-Type: application/json' \
   --data '{"jsonrpc":"2.0","method":"sentio_processorLogs",
-           "params":[{"processor_id":"<processor-id>","limit":10}],"id":1}'
+           "params":[{"processor_id":"$PROCESSOR_ID","limit":10}],"id":1}'
 ```
 
 TODO use hub UI
