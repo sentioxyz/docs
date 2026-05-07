@@ -30,12 +30,6 @@ Direct access gives you more control but loses platform benefits like version co
 3. Upload your processor bundle and start it on-chain.
 4. Connect a query client through the sidecar.
 
-On-chain calls below use [`cast`](https://book.getfoundry.sh/cast/) from Foundry. Import your key once, then reference it as `--account sentio_user`:
-
-```shell
-cast wallet import sentio_user --interactive
-```
-
 Set these environment variables for the examples:
 
 ```shell
@@ -140,10 +134,10 @@ Download [storage-network-daemon](https://github.com/sentioxyz/storage-network-d
 Start the daemon with:
 
 ```shell With Operator Key
-storage-network-daemon --sidecar --state=https://testnet-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OPERATOR_PRIVATE_KEY --sidecar-payer=$OWNER_ADDRESS
+storage-network-daemon --sidecar --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OPERATOR_PRIVATE_KEY --sidecar-payer=$OWNER_ADDRESS
 ```
 ```Text With Owner Key
-storage-network-daemon --sidecar --state=https://testnet-gateway.sentio.xyz --listen=:10003 --sidecar-key=$OWNER_PRIVATE_KEY
+storage-network-daemon --sidecar --state=https://testnet-storage-gateway.sentio.xyz --listen=:10003 --sidecar-key=$OWNER_PRIVATE_KEY
 ```
 
 To avoid using private key in command line, see [Step 2](#step-2-add-an-operator-optional) to add an operator and then use operator's private key.
