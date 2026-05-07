@@ -160,7 +160,7 @@ storage-network-daemon --sidecar --state=https://testnet-gateway.sentio.xyz --li
 
 To avoid using private key in command line, see [Step 2](#step-2-add-an-operator-optional) to add an operator and then use operator's private key.
 
-Then point any `[clickhouse-client](https://clickhouse.com/docs/install/quick-install#start-clickhouse-client)` at it — no `--user`/`--password` needed:
+Then start `[clickhouse-client](https://clickhouse.com/docs/install/quick-install#start-clickhouse-client)` to connect to the daemon — no `--user`/`--password` needed:
 
 ```shell
 clickhouse client --port 9001
