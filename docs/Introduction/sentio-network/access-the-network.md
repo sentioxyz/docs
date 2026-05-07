@@ -5,6 +5,8 @@ hidden: false
 metadata:
   robots: index
 ---
+To use Sentio Network, you can use fully managed Sentio Platform, or directly.
+
 # Access through Sentio Platform
 
 The easiest way to use Sentio Network is through [Sentio Platform](https://app.sentio.xyz/). You can create a Sentio project with Sentio Network as its host environment, which makes your processor or subgraph run on Sentio Compute Network and store the data on Sentio Data Network. And you also delegate billing to Sentio Platform.
