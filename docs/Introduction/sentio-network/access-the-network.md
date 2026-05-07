@@ -17,11 +17,9 @@ The easiest way to use Sentio Network is through [Sentio Platform](https://app.s
 
 **Note**: The host environment can only be configured at project creation and **cannot be modified afterward**.
 
-<br />
+<Image align="center" width="65% " src="https://files.readme.io/87cfa5c84c9f378ffcd70e9e7ebb4d980d791103d721cb41f933c83ce25d256d-image.png" />
 
-```
-yarn sentio upload --sentio-network testnet --required-chain-id 1
-```
+Follow the Guide in UI to create and upload your processor.
 
 # Access Directly
 
@@ -96,14 +94,14 @@ Use Manage Operator in Network Hub to add account of your control.
 
 ## Step 3: Upload, create, and start the processor
 
-Create an empty Sentio project locally or using your existed project.  
+Create an empty Sentio project locally or using your existed project.
 
 ```
 npx @sentio/cli@latest create example-project
 cd example-project
 ```
 
-Then upload processor with your operator private key (recommended) or private key 
+Then upload processor with your operator private key (recommended) or private key
 
 ```Text With Operator Key
 PRIVATE_KEY=<OPERATOR_PRIVATE_KEY> \
