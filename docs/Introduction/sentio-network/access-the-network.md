@@ -124,6 +124,8 @@ Start the daemon with:
 
 ```shell With Operator Key
 storage-network-daemon --sidecar --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OPERATOR_PRIVATE_KEY --sidecar-owner=$OWNER_ADDRESS
+
+docker run -it ghcr.io/sentioxyz/storage-network-daemon:latest --sidecar --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OPERATOR_PRIVATE_KEY --sidecar-owner=$OWNER_ADDRESS
 ```
 ```Text With Owner Key
 storage-network-daemon --sidecar --state=https://testnet-storage-gateway.sentio.xyz --listen=:10003 --sidecar-key=$OWNER_PRIVATE_KEY
