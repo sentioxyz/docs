@@ -17,6 +17,10 @@ The easiest way to use Sentio Network. You can create a Sentio project with Sent
 
 # Access Directly
 
+**TODO** step 1~2 use network hub, network information move to hub.
+
+<br />
+
 You can also access Sentio Network directly, without the Sentio Platform. This gives you more control but loses benefits like version control and UI.
 
 Direct access takes five steps:
