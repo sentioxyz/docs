@@ -148,9 +148,9 @@ For the database permission model and how to share read access, see [Storage Net
 Each indexer node exposes a small JSON-RPC server on port `10002` for inspecting processor execution. Hit any node — if the processor isn't local to that node, the request is forwarded to whichever indexer hosts it. Method semantics are documented in [Compute Network](compute-network#node-json-rpc).
 
 ```shell
-INDEXER_HOST=https://testnet-compute-gateway.sentio.xyz
-# or
-INDEXER_HOST=<individual indexer host:port>
+INDEXER_HOST=<individual indexer host>:10002
+# or using gateway which is compute RPC only endpoint  
+# INDEXER_HOST=https://testnet-compute-gateway.sentio.xyz
 
 # Node identity + sync state
 curl -s $INDEXER_HOST -H 'Content-Type: application/json' \
