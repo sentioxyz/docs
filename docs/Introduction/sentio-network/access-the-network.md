@@ -26,7 +26,7 @@ Follow the Guide in UI to create and upload your processor.
 Direct access gives you more control but loses platform benefits like version control and UI (it's on our roadmap). The flow is:
 
 1. Fund your Billing balance.
-2. _(Recommended)_Add operator keys.
+2. _(Recommended)_ Add operator keys.
 3. Upload your processor bundle and start it on-chain.
 4. Connect a query client through the sidecar.
 
