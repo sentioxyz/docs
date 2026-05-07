@@ -88,7 +88,7 @@ Then upload processor with your operator private key (recommended) or private ke
 
 ```Text With Operator Key
 PRIVATE_KEY=<OPERATOR_PRIVATE_KEY> \
-  yarn sentio upload --sentio-network testnet --required-chain-id 1 --no-platform --operator-owner=<OWNER_PUBLIC_KEY>
+  yarn sentio upload --sentio-network testnet --required-chain-id 1 --no-platform --owner=<OWNER_PUBLIC_KEY>
 ```
 ```shell With Owner Key
 PRIVATE_KEY=<OWNER_PRIVATE_KEY> \
