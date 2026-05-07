@@ -151,7 +151,11 @@ clickhouse client --port 9001
 
 For the database permission model and how to share read access, see [Storage Network](storage-network).
 
-# Monitor processors via Node JSON-RPC
+# Monitor processors
+
+Processor status could be view and managed at [Network Hub](https://testnet-network.sentio.xyz/processor).
+
+<Image align="center" width="80% " src="https://files.readme.io/bb094f47924191aa5ace16998c1381963267375737e44bc04c7bf52ad835ab86-image.png" />
 
 Each indexer node exposes a small JSON-RPC server on port `10002` for inspecting processor execution. Hit any node — if the processor isn't local to that node, the request is forwarded to whichever indexer hosts it. Method semantics are documented in [Compute Network](compute-network#node-json-rpc).
 
@@ -176,3 +180,5 @@ curl -s $INDEXER_HOST -H 'Content-Type: application/json' \
   --data '{"jsonrpc":"2.0","method":"sentio_processorLogs",
            "params":[{"processor_id":"$PROCESSOR_ID","limit":10}],"id":1}'
 ```
+
+<br />
