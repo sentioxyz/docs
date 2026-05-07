@@ -149,33 +149,21 @@ The Storage Network speaks the native ClickHouse protocol. Queries must be signe
 
 Download [storage-network-daemon](https://github.com/sentioxyz/storage-network-daemon/releases)
 
-```json title="housegate-sidecar.json"
-{
-  "listen": ":9001",
-  "metrics_listen": ":9091",
-  "sidecar": {
-    "mode": true,
-    "upstream": "64.38.144.158:10001",
-    "private_key_hex": "0xYOUR_PRIVATE_KEY_HERE"
-  }
-}
-```
-
-`private_key_hex` is the key whose Billing balance gets charged. To bill a different account, have that account `addOperator(yourKey)` first — see [Step 2](#step-2-add-an-operator-optional)
-
 Start the daemon with:
 
 ```Text With Owner Key
 storage-network-daemon --sidecar --state=https://testnet-gateway.sentio.xyz --listen=:10003 --sidecar-key=$OWNER_PRIVATE_KEY
 ```
 ```shell With Operator Key
-storage-network-daemon --sidecar --state=https://testnet-gateway.sentio.xyz --listen=:10003 --sidecar-key=$OPERATOR_PRIVATE_KEY --owner=$OWNER_ADDRESS
+storage-network-daemon --sidecar --state=https://testnet-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OPERATOR_PRIVATE_KEY --owner=$OWNER_ADDRESS
 ```
 
-Then point any `clickhouse-client` at it — no `--user`/`--password` needed:
+To avoid using private key in command line, see [Step 2](#step-2-add-an-operator-optional) to add an operator and then use operator's private key.
+
+Then point any `[clickhouse-client](https://clickhouse.com/docs/install/quick-install#start-clickhouse-client)` at it — no `--user`/`--password` needed:
 
 ```shell
-clickhouse client --host 127.0.0.1 --port 9001
+clickhouse client --port 9001
 :) SHOW DATABASES;
 :) USE fv2CWEeV_0;
 :) SHOW TABLES;
