@@ -186,3 +186,5 @@ curl -s http://<indexer-host>:10002 -H 'Content-Type: application/json' \
   --data '{"jsonrpc":"2.0","method":"sentio_processorLogs",
            "params":[{"processor_id":"<processor-id>","limit":10}],"id":1}'
 ```
+
+TODO use hub UI
