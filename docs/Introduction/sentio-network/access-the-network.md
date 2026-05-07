@@ -113,6 +113,8 @@ PRIVATE_KEY=0xYOUR_PRIVATE_KEY_HERE \
   yarn sentio upload --sentio-network testnet --required-chain-id 1 --no-platform
 ```
 
+**TODO** multiple chain id handing?
+
 Pass one `--required-chain-id` per chain your processor reads. The CLI prints the resolved contract addresses, your wallet's ST + Billing balance, asks for confirmation, then runs:
 
 1. `tsup` packages `src/processor.ts` into `dist/lib.js`.
