@@ -168,5 +168,3 @@ curl -s $INDEXER_HOST -H 'Content-Type: application/json' \
   --data '{"jsonrpc":"2.0","method":"sentio_processorLogs",
            "params":[{"processor_id":"$PROCESSOR_ID","limit":10}],"id":1}'
 ```
-
-<br />
