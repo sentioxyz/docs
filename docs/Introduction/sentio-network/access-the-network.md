@@ -155,7 +155,7 @@ Start the daemon with:
 storage-network-daemon --sidecar --state=https://testnet-gateway.sentio.xyz --listen=:10003 --sidecar-key=$OWNER_PRIVATE_KEY
 ```
 ```shell With Operator Key
-storage-network-daemon --sidecar --state=https://testnet-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OPERATOR_PRIVATE_KEY --owner=$OWNER_ADDRESS
+storage-network-daemon --sidecar --state=https://testnet-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OPERATOR_PRIVATE_KEY --sidecar-payer=$OWNER_ADDRESS
 ```
 
 To avoid using private key in command line, see [Step 2](#step-2-add-an-operator-optional) to add an operator and then use operator's private key.
