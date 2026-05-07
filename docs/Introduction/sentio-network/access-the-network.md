@@ -165,10 +165,11 @@ Download [storage-network-daemon](https://github.com/sentioxyz/storage-network-d
 
 Start the daemon with:
 
+```Text With Owner Key
+storage-network-daemon --sidecar --state=https://testnet-gateway.sentio.xyz --listen=:10003 --sidecar-key=$OWNER_PRIVATE_KEY
+```
 ```shell With Operator Key
 storage-network-daemon --sidecar --state=https://testnet-gateway.sentio.xyz --listen=:10003 --sidecar-key=$OPERATOR_PRIVATE_KEY --owner=$OWNER_ADDRESS
-```
-```Text With Owner Key
 ```
 
 Then point any `clickhouse-client` at it — no `--user`/`--password` needed:
