@@ -75,25 +75,9 @@ Fees are pulled from balances in the `Billing` contract:
 * **Indexing fees** are charged to the processor **owner**.
 * **Query fees** are charged to the **query initiator**.
 
-Both parties must fund their own balance before using the network.
+You can use [Network Hub](https://testnet-network.sentio.xyz/billing) to deposit $ST tokens.
 
-Approve, then deposit 100 Sentio Token:
-
-```shell
-AMOUNT=$(cast --to-wei 100 ether)
-
-cast send $SENTIO_TOKEN "approve(address,uint256)" $BILLING $AMOUNT \
-  --rpc-url $SENTIO_RPC --account sentio_user
-
-cast send $BILLING "deposit(uint256)" $AMOUNT \
-  --rpc-url $SENTIO_RPC --account sentio_user
-```
-
-To top up another account, use `depositTo(address,uint256)`. To withdraw, use `withdraw(uint256)`.
-
-<Image align="center" src="https://files.readme.io/6f1b44c579c7fd1ab579517423426cdecc29db3047cddb48e3bfd2133dc7b426-image.png" />
-
-<br />
+<Image align="center" width="65% " src="https://files.readme.io/6f1b44c579c7fd1ab579517423426cdecc29db3047cddb48e3bfd2133dc7b426-image.png" />
 
 ## Step 2: Add an operator (optional)
 
@@ -102,25 +86,33 @@ Adding another address as your operator gives it two powers on your behalf:
 * It can manage your processors — create, start, and stop them under your ownership.
 * Queries it signs can be billed to **your** Billing balance instead of its own.
 
-This is how you let a CI bot, hot key, or teammate act for you without sharing your main key.
+Use Manage Operator in Network Hub to add account of your control.
 
-```shell
-OPERATOR=0xBEEFBEEFBEEFBEEFBEEFBEEFBEEFBEEFBEEFBEEF
+<Image align="center" width="65% " src="https://files.readme.io/e4df4bb6fa400ff9c8d2f7749dc840e7256a8666dcf96f5f1e45bdefb5268c15-image.png" />
 
-cast send $PERMISSIONS "addOperator(address)" $OPERATOR \
-  --rpc-url $SENTIO_RPC --account sentio_user
-```
+<br />
 
-Revoke with `removeOperator(address)`.
-
-![](https://files.readme.io/be39eb014eef627a9e759fe850f67ee05442ba7bc1a7a475cfd52420847ab769-image.png)
+<Image align="center" width="65% " src="https://files.readme.io/be39eb014eef627a9e759fe850f67ee05442ba7bc1a7a475cfd52420847ab769-image.png" />
 
 ## Step 3: Upload, create, and start the processor
 
-`@sentio/cli` ships an `upload --no-platform` flow that pins the bundle to IPFS and submits both `createProcessor` and `startProcessor` for you. Run it from your processor project directory with `PRIVATE_KEY` set to the same key you funded in Step 1:
+Create an empty Sentio project locally or using your existed project.  
 
-```shell
-PRIVATE_KEY=0xYOUR_PRIVATE_KEY_HERE \
+```
+npx @sentio/cli@latest create example-project
+cd example-project
+```
+
+Then upload processor with your operator private key (recommended) or private key 
+
+ with `PRIVATE_KEY` set to the same key you funded in Step 1:
+
+```Text With Operator Key
+PRIVATE_KEY=<OPERATOR_PRIVATE_KEY> \
+  yarn sentio upload --sentio-network testnet --required-chain-id 1 --no-platform --operator-owner=<OWNER_PUBLIC_KEY>
+```
+```shell With Owner Key
+PRIVATE_KEY=<OWNER_PRIVATE_KEY> \
   yarn sentio upload --sentio-network testnet --required-chain-id 1 --no-platform 
 ```
 
@@ -151,11 +143,11 @@ Download [storage-network-daemon](https://github.com/sentioxyz/storage-network-d
 
 Start the daemon with:
 
-```Text With Owner Key
-storage-network-daemon --sidecar --state=https://testnet-gateway.sentio.xyz --listen=:10003 --sidecar-key=$OWNER_PRIVATE_KEY
-```
 ```shell With Operator Key
 storage-network-daemon --sidecar --state=https://testnet-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OPERATOR_PRIVATE_KEY --sidecar-payer=$OWNER_ADDRESS
+```
+```Text With Owner Key
+storage-network-daemon --sidecar --state=https://testnet-gateway.sentio.xyz --listen=:10003 --sidecar-key=$OWNER_PRIVATE_KEY
 ```
 
 To avoid using private key in command line, see [Step 2](#step-2-add-an-operator-optional) to add an operator and then use operator's private key.
