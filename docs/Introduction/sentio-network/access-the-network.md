@@ -23,7 +23,7 @@ Follow the Guide in UI to create and upload your processor.
 
 # Access Directly
 
-Direct access gives you more control but loses platform benefits like version control and UI. The flow is:
+Direct access gives you more control but loses platform benefits like version control and UI (it's on our roadmap). The flow is:
 
 1. Fund your Billing balance.
 2. _(Recommended)_Add operator keys.
@@ -131,7 +131,7 @@ storage-network-daemon --sidecar --state=https://testnet-storage-gateway.sentio.
 
 To avoid using private key in command line, see [Step 2](#step-2-add-an-operator-optional) to add an operator and then use operator's private key.
 
-Then start `[clickhouse-client](https://clickhouse.com/docs/install/quick-install#start-clickhouse-client)` to connect to the daemon — no `--user`/`--password` needed:
+Then start [clickhouse-client](https://clickhouse.com/docs/install/quick-install#start-clickhouse-client)  to connect to the daemon — no `--user`/`--password` needed:
 
 ```shell
 clickhouse client --port 9001
