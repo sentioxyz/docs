@@ -7,7 +7,7 @@ metadata:
 ---
 # Access through Sentio Platform
 
-The easiest way to use Sentio Network. You can create a Sentio project with Sentio Network as it's environment, which makes your processor or subgraph run on Sentio Compute Network and store the data on Sentio Data Network.
+The easiest way to use Sentio Network is through [Sentio Platform](https://app.sentio.xyz/). You can create a Sentio project with Sentio Network as its host environment, which makes your processor or subgraph run on Sentio Compute Network and store the data on Sentio Data Network. And you also delegate billing to Sentio Platform.
 
 <Image align="center" alt="Host Environment in Project Setting Form" width="80% " src="https://files.readme.io/3ea0a7aa4300f1f66f7a7b752d13551a3e089248fa5d891c40dbc18088d27bb3-image.png" />
 
