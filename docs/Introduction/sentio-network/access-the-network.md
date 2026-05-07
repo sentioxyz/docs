@@ -26,20 +26,9 @@ Follow the Guide in UI to create and upload your processor.
 Direct access gives you more control but loses platform benefits like version control and UI. The flow is:
 
 1. Fund your Billing balance.
-2. _(Optional)_ Add operator keys.
+2. _(Recommended)_Add operator keys.
 3. Upload your processor bundle and start it on-chain.
 4. Connect a query client through the sidecar.
-
-Set these environment variables for the examples:
-
-```shell
-export SENTIO_RPC=https://sentio-testnet.rpc.sentio.xyz
-export SENTIO_TOKEN=0x2f84Cb6E856f0C82bd44c536E022c0bCcD787411
-export BILLING=0x883556C4080621434e28129257Dc37eE39ED6351
-export PERMISSIONS=0x1326C7b6C6c02c45B63aD007e9AD84a79f3e2C5b
-export PROCESSOR_REGISTRY=0x67857f96391fF2fAce037Ff655919a3850c6b175
-export CONTROLLER=0x86a9632527bbc3873b32c83AAEF0e7fC36368acC
-```
 
 ### Testnet contract addresses
 
