@@ -100,8 +100,13 @@ On success the CLI prints the processor ID, IPFS CID, and the two on-chain tx ha
 To stop a processor later, run:
 
 ```shell
+# Stops AND deletes the processor (default)
 PRIVATE_KEY=<OWNER_OR_OPERATOR_PRIVATE_KEY> \
   yarn sentio stop <PROCESSOR_ID> --sentio-network testnet
+
+# Stop only — keep the processor on-chain so it can be started again
+PRIVATE_KEY=<OWNER_OR_OPERATOR_PRIVATE_KEY> \
+  yarn sentio stop <PROCESSOR_ID> --sentio-network testnet --no-delete
 ```
 
 Only the owner, an operator of the owner, or an explicit processor admin can start or stop a processor. For the full processor lifecycle, see [Compute Network](compute-network#processor-lifecycle).
