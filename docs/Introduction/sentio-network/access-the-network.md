@@ -64,7 +64,7 @@ You can use [Network Hub](https://testnet-network.sentio.xyz/billing) to deposit
 
 Adding another address as your operator gives it two powers on your behalf:
 
-* It can manage your processors — create, start, and stop them under your ownership.
+* It can manage your processors — create, start, and stop them under your ownership. 
 * Queries it signs can be billed to **your** Billing balance instead of its own.
 
 Use Manage Operator in Network Hub to add account of your control.
@@ -88,7 +88,11 @@ Then upload processor with your operator private key (recommended) or private ke
 
 ```Text With Operator Key
 PRIVATE_KEY=<OPERATOR_PRIVATE_KEY> \
-  yarn sentio upload --sentio-network testnet --required-chain-id 1 --no-platform --owner=<OWNER_PUBLIC_KEY>
+yarn sentio upload --sentio-network testnet --required-chain-id 1 --no-platform --owner=<OWNER_PUBLIC_KEY>
+
+# Limitation: you need also transfer a small amount of ETH to your operator address
+# though this limitation will be lift soon, we'll only require ST be deposited into Billing contract
+
 ```
 ```shell With Owner Key
 PRIVATE_KEY=<OWNER_PRIVATE_KEY> \
