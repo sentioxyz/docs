@@ -45,7 +45,7 @@ You can use [Network Hub](https://testnet-network.sentio.xyz/billing) to deposit
 
 Adding another address as your operator gives it two powers on your behalf:
 
-* It can manage your processors — create, start, and stop them under your ownership. 
+* It can manage your processors — create, start, and stop them under your ownership.
 * Queries it signs can be billed to **your** Billing balance instead of its own.
 
 Use Manage Operator in Network Hub to add account of your control.
@@ -145,6 +145,8 @@ clickhouse client --port 9001
 :) SHOW TABLES;
 :) SELECT * FROM entity_AccountSnapshot LIMIT 1;
 ```
+
+You can also use any client library to connect to the daemon.
 
 For the database permission model and how to share read access, see [Storage Network](storage-network).
 
