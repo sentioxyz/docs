@@ -30,25 +30,6 @@ Direct access gives you more control but loses platform benefits like version co
 3. Upload your processor bundle and start it on-chain.
 4. Connect a query client through the sidecar.
 
-### Testnet contract addresses
-
-Every contract is registered in the `AddressBook` proxy at `0x11cDDF46f16925aa630Af9D5158028E56309868f`. Current deployment:
-
-| Key                  | Address                                      |
-| -------------------- | -------------------------------------------- |
-| `sentio_token`       | `0x2f84Cb6E856f0C82bd44c536E022c0bCcD787411` |
-| `billing`            | `0x883556C4080621434e28129257Dc37eE39ED6351` |
-| `permissions`        | `0x1326C7b6C6c02c45B63aD007e9AD84a79f3e2C5b` |
-| `processor_registry` | `0x67857f96391fF2fAce037Ff655919a3850c6b175` |
-| `controller`         | `0x86a9632527bbc3873b32c83AAEF0e7fC36368acC` |
-| `indexer_registry`   | `0x2613b6a54f9A75F4A446E359a1242DF89845e1e3` |
-| `staking`            | `0x747340cE7532Dab73A09F41ec0ebD2428025190D` |
-| `epoch_controller`   | `0xAB8BC199846AF58F134118a2bA10415f711369Bb` |
-| `voting_parameters`  | `0xAc4aA8d454b688E83790b36b5889aA0768758288` |
-| `usage_tracker`      | `0x8F9090Ca5343D205dB840333841B12fA182DFE81` |
-| `rewards`            | `0x1992d26CcC4AA4137926fF877EFAcaB23351354c` |
-| `databases`          | `0xd1304f499D0BEaDA496fC0d29515e36a469643cC` |
-
 ## Step 1: Fund your Billing balance
 
 Fees are pulled from balances in the `Billing` contract:
@@ -116,7 +97,19 @@ On success the CLI prints the processor ID, IPFS CID, and the two on-chain tx ha
          sha256: …
 ```
 
-To stop a processor later, call `Controller.stopProcessor(string)` directly (e.g. with `cast send`). Only the owner, an operator of the owner, or an explicit processor admin can start or stop a processor. For the full processor lifecycle, see [Compute Network](compute-network#processor-lifecycle).
+To stop a processor later, run:
+
+```shell
+# Stops AND deletes the processor (default)
+PRIVATE_KEY=<OWNER_OR_OPERATOR_PRIVATE_KEY> \
+  yarn sentio stop <PROCESSOR_ID> --sentio-network testnet
+
+# Stop only — keep the processor on-chain so it can be started again
+PRIVATE_KEY=<OWNER_OR_OPERATOR_PRIVATE_KEY> \
+  yarn sentio stop <PROCESSOR_ID> --sentio-network testnet --no-delete
+```
+
+Only the owner, an operator of the owner, or an explicit processor admin can start or stop a processor. For the full processor lifecycle, see [Compute Network](compute-network#processor-lifecycle).
 
 ## Step 4: Connect a query client
 
