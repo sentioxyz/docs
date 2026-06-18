@@ -8,3 +8,9 @@
 - processorext
 - debug-and-simulation
 - forks
+- apiv2prices
+- apiv2pricesassets
+- apiv2pricesassetsadd_by_gecko
+- apiv2pricesassetsresolve
+- apiv2pricesbatch
+- apiv2pricesseries
