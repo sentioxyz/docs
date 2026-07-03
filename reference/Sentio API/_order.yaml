@@ -6,8 +6,8 @@
 - price
 - processor
 - processorext
-- debug-and-simulation
 - forks
+- debug-and-simulation
 - apiv2prices
 - apiv2pricesassets
 - apiv2pricesassetsadd_by_gecko
