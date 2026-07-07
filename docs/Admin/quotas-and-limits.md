@@ -96,11 +96,17 @@ If you do not use auto pay, Sentio sends an invoice to the billing email on the 
 <Image src="https://media.githubusercontent.com/media/sentioxyz/docs/v2.1.0/assets/billing-payment-invoice-options.png" align="center" width="80%" caption="Invoices include Pay Crypto, Pay Fiat, and manual crypto transfer details." />
 
 
-**Pay Fiat.** Use the **Pay Fiat** button on the invoice to pay through the hosted fiat checkout flow.
+### Pay Fiat
 
-**Pay Crypto (Request Finance).** Use the **Pay Crypto** button on the invoice when you want a hosted crypto checkout flow for a specific invoice.
+Use the **Pay Fiat** button on the invoice to pay through the hosted fiat checkout flow.
 
-**Manual Crypto Transfer.** Sentio generates a unique crypto payment address for each billing account. Use manual transfer when you want to send funds directly, such as withdrawing from a centralized exchange, without going through the Request Finance checkout flow.
+### Pay Crypto (Request Finance)
+
+Use the **Pay Crypto** button on the invoice when you want a hosted crypto checkout flow for a specific invoice.
+
+### Manual Crypto Transfer
+
+Sentio generates a unique crypto payment address for each billing account. Use manual transfer when you want to send funds directly, such as withdrawing from a centralized exchange, without going through the Request Finance checkout flow.
 
 - Copy the account's crypto payment address from Billing or from the invoice's **Manual Crypto Transfer** section.
 - Send **USDC or USDT** to that address on **Ethereum Mainnet**.
