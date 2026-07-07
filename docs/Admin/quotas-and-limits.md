@@ -29,13 +29,13 @@ The following incur **no charges**:
 
 If a bill remains unpaid for one month, the service will be automatically suspended.
 
-### Payment Methods
+# Payment Methods
 
 You can manage payment details from **Billing** under your profile or organization account.
 
 Sentio supports auto pay, invoice-based payments, and prepaid credits.
 
-#### Auto pay
+## Auto pay
 
 **Credit card auto-pay.** Add a card to your account. Sentio charges the saved card automatically through Stripe when invoices are due.
 
@@ -47,7 +47,7 @@ Sentio supports auto pay, invoice-based payments, and prepaid credits.
 <Image src="https://media.githubusercontent.com/media/sentioxyz/docs/v2.1.0/assets/billing-payment-card-form.png" align="center" width="50%" caption="Enter card details in the secure payment form." />
 
 
-#### Pay by invoice
+## Pay by invoice
 
 If you do not use auto pay, Sentio sends an invoice to the billing email on the account. The invoice view includes hosted payment buttons and manual crypto transfer details.
 
@@ -70,7 +70,7 @@ If you do not use auto pay, Sentio sends an invoice to the billing email on the 
 <Image src="https://media.githubusercontent.com/media/sentioxyz/docs/v2.1.0/assets/billing-payment-crypto-address.png" align="center" width="60%" caption="The Billing page shows the account-specific Crypto Receiving Address." />
 
 
-#### Prepaid credits
+## Prepaid credits
 
 Buy credits from the Billing page with fiat or crypto checkout. Credits are added to the account balance and can be applied to future invoices.
 
