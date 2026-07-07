@@ -17,15 +17,15 @@ The USD price per SU depends on your [plan](https://www.sentio.xyz/pricing).
 
 ### Billing Rules
 
-* All **processor usage** is billed to the **project owner**.
-* All **API usage** is billed to the **API caller** (identified by API key).
+- All **processor usage** is billed to the **project owner**.
+- All **API usage** is billed to the **API caller** (identified by API key).
 
 ### Free Usage
 
 The following incur **no charges**:
 
-* Usage from the **Sentio UI**.
-* Usage from the processor in **[backfill](processor-engine#/processor-lifecycle--execution)** stage
+- Usage from the **Sentio UI**.
+- Usage from the processor in **[backfill](processor-engine#/processor-lifecycle--execution)** stage
 
 If a bill remains unpaid for one month, the service will be automatically suspended.
 
@@ -39,15 +39,21 @@ Sentio supports auto pay, invoice-based payments, and prepaid credits.
 
 **Credit card auto-pay.** Add a card to your account. Sentio charges the saved card automatically through Stripe when invoices are due.
 
-<Image align="center" border={false} caption="Add a credit card from Billing." src="https://media.githubusercontent.com/media/sentioxyz/docs/v2.1.0/assets/billing-payment-add-card.png" />
 
-<Image align="center" border={false} caption="Enter card details in the secure payment form." src="https://media.githubusercontent.com/media/sentioxyz/docs/v2.1.0/assets/billing-payment-card-form.png" width="800px" />
+<Image src="https://media.githubusercontent.com/media/sentioxyz/docs/v2.1.0/assets/billing-payment-add-card.png" align="center" width="50%" caption="Add a credit card from Billing." />
+
+
+
+<Image src="https://media.githubusercontent.com/media/sentioxyz/docs/v2.1.0/assets/billing-payment-card-form.png" align="center" width="50%" caption="Enter card details in the secure payment form." />
+
 
 #### Pay by invoice
 
 If you do not use auto pay, Sentio sends an invoice to the billing email on the account. The invoice view includes hosted payment buttons and manual crypto transfer details.
 
-<Image align="center" border={false} caption="Invoices include Pay Crypto, Pay Fiat, and manual crypto transfer details." src="https://media.githubusercontent.com/media/sentioxyz/docs/v2.1.0/assets/billing-payment-invoice-options.png" width="800px" />
+
+<Image src="https://media.githubusercontent.com/media/sentioxyz/docs/v2.1.0/assets/billing-payment-invoice-options.png" align="center" width="80%" caption="Invoices include Pay Crypto, Pay Fiat, and manual crypto transfer details." />
+
 
 **Pay Fiat.** Use the **Pay Fiat** button on the invoice to pay through the hosted fiat checkout flow.
 
@@ -55,12 +61,14 @@ If you do not use auto pay, Sentio sends an invoice to the billing email on the 
 
 **Manual Crypto Transfer.** Sentio generates a unique crypto payment address for each billing account. Use manual transfer when you want to send funds directly, such as withdrawing from a centralized exchange, without going through the Request Finance checkout flow.
 
-* Copy the account's crypto payment address from Billing or from the invoice's **Manual Crypto Transfer** section.
-* Send **USDC or USDT** to that address on **Ethereum Mainnet**.
-* Sentio verifies the on-chain transfer and credits the payment to your account balance.
-* Outstanding invoices are paid from that balance first. Any remaining amount stays in your balance for future invoices.
+- Copy the account's crypto payment address from Billing or from the invoice's **Manual Crypto Transfer** section.
+- Send **USDC or USDT** to that address on **Ethereum Mainnet**.
+- Sentio verifies the on-chain transfer and credits the payment to your account balance.
+- Outstanding invoices are paid from that balance first. Any remaining amount stays in your balance for future invoices.
 
-<Image align="center" border={false} caption="The Billing page shows the account-specific Crypto Receiving Address." src="https://media.githubusercontent.com/media/sentioxyz/docs/v2.1.0/assets/billing-payment-crypto-address.png" width="800px" />
+
+<Image src="https://media.githubusercontent.com/media/sentioxyz/docs/v2.1.0/assets/billing-payment-crypto-address.png" align="center" width="60%" caption="The Billing page shows the account-specific Crypto Receiving Address." />
+
 
 #### Prepaid credits
 
@@ -70,11 +78,11 @@ Buy credits from the Billing page with fiat or crypto checkout. Credits are adde
 
 ### Inside Processor
 
-| Activity                                                                                                                                                                                                                 | Cost (Sentio Units) |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------: |
-| Each new data point in watching stage (<Anchor label="metrics" title="mention" href="metrics">metrics</Anchor>, <Anchor label="event-logs" title="mention" href="event-logs">event-logs</Anchor>, [entities](entities))¹ |               4,000 |
-| Each [Webhook](webhook) trigger in watching stage                                                                                                                                                                        |               1,000 |
-| Each node RPC request in watching stage, with a few exceptions²                                                                                                                                                          |                  20 |
+| Activity                                                                                                                        | Cost (Sentio Units) |
+| ------------------------------------------------------------------------------------------------------------------------------- | ------------------: |
+| Each new data point in watching stage ([metrics](metrics "mention"), [event-logs](event-logs "mention"), [entities](entities))¹ |               4,000 |
+| Each [Webhook](webhook) trigger in watching stage                                                                               |               1,000 |
+| Each node RPC request in watching stage, with a few exceptions²                                                                 |                  20 |
 
 ### Outside Processor
 
@@ -103,12 +111,14 @@ Buy credits from the Billing page with fiat or crypto checkout. Credits are adde
 
 If multi-version is enabled (e.g. versions _X_ and _Y_, with _X_ being the new one):
 
-* Backfill for all versions is free.
-* Once _X_ enters **Watching**, usage for both _X_ and _Y_ is charged until you switch the active version to _X_.
-* Abandoning a version stops its usage from being counted.
+- Backfill for all versions is free.
+- Once _X_ enters **Watching**, usage for both _X_ and _Y_ is charged until you switch the active version to _X_.
+- Abandoning a version stops its usage from being counted.
 
 # Limits
 
-* **Number of Series per Processor**: max **10,000**.
-* **Free Tier Projects**: up to **3 projects**.
-* **Free Tier Alerts**: up to **3 alerts**.
+- **Number of Series per Processor**: max **10,000**.
+- **Free Tier Projects**: up to **3 projects**.
+- **Free Tier Alerts**: up to **3 alerts**.
+
+<br />
