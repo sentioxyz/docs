@@ -39,15 +39,15 @@ Sentio supports auto pay, invoice-based payments, and prepaid credits.
 
 **Credit card auto-pay.** Add a card to your account. Sentio charges the saved card automatically through Stripe when invoices are due.
 
-<Image align="center" border={false} caption="Add a credit card from Billing." src="https://media.githubusercontent.com/media/sentioxyz/docs/HEAD/assets/billing-payment-add-card.png" />
+<Image align="center" border={false} caption="Add a credit card from Billing." src="https://media.githubusercontent.com/media/sentioxyz/docs/v2.1.0/assets/billing-payment-add-card.png" />
 
-<Image align="center" border={false} caption="Enter card details in the secure payment form." src="https://media.githubusercontent.com/media/sentioxyz/docs/HEAD/assets/billing-payment-card-form.png" width="800px" />
+<Image align="center" border={false} caption="Enter card details in the secure payment form." src="https://media.githubusercontent.com/media/sentioxyz/docs/v2.1.0/assets/billing-payment-card-form.png" width="800px" />
 
 #### Pay by invoice
 
 If you do not use auto pay, Sentio sends an invoice to the billing email on the account. The invoice view includes hosted payment buttons and manual crypto transfer details.
 
-<Image align="center" border={false} caption="Invoices include Pay Crypto, Pay Fiat, and manual crypto transfer details." src="https://media.githubusercontent.com/media/sentioxyz/docs/HEAD/assets/billing-payment-invoice-options.png" width="800px" />
+<Image align="center" border={false} caption="Invoices include Pay Crypto, Pay Fiat, and manual crypto transfer details." src="https://media.githubusercontent.com/media/sentioxyz/docs/v2.1.0/assets/billing-payment-invoice-options.png" width="800px" />
 
 **Pay Fiat.** Use the **Pay Fiat** button on the invoice to pay through the hosted fiat checkout flow.
 
@@ -60,7 +60,7 @@ If you do not use auto pay, Sentio sends an invoice to the billing email on the 
 * Sentio verifies the on-chain transfer and credits the payment to your account balance.
 * Outstanding invoices are paid from that balance first. Any remaining amount stays in your balance for future invoices.
 
-<Image align="center" border={false} caption="The Billing page shows the account-specific Crypto Receiving Address." src="https://media.githubusercontent.com/media/sentioxyz/docs/HEAD/assets/billing-payment-crypto-address.png" width="800px" />
+<Image align="center" border={false} caption="The Billing page shows the account-specific Crypto Receiving Address." src="https://media.githubusercontent.com/media/sentioxyz/docs/v2.1.0/assets/billing-payment-crypto-address.png" width="800px" />
 
 #### Prepaid credits
 
