@@ -29,6 +29,43 @@ The following incur **no charges**:
 
 If a bill remains unpaid for one month, the service will be automatically suspended.
 
+### Payment Methods
+
+You can manage payment details from **Billing** under your profile or organization account.
+
+Sentio supports auto pay, invoice-based payments, and prepaid credits.
+
+#### Auto pay
+
+**Credit card auto-pay.** Add a card to your account. Sentio charges the saved card automatically through Stripe when invoices are due.
+
+<Image align="center" border={false} caption="Add a credit card from Billing." src="https://media.githubusercontent.com/media/sentioxyz/docs/HEAD/assets/billing-payment-add-card.png" />
+
+<Image align="center" border={false} caption="Enter card details in the secure payment form." src="https://media.githubusercontent.com/media/sentioxyz/docs/HEAD/assets/billing-payment-card-form.png" width="800px" />
+
+#### Pay by invoice
+
+If you do not use auto pay, Sentio sends an invoice to the billing email on the account. The invoice view includes hosted payment buttons and manual crypto transfer details.
+
+<Image align="center" border={false} caption="Invoices include Pay Crypto, Pay Fiat, and manual crypto transfer details." src="https://media.githubusercontent.com/media/sentioxyz/docs/HEAD/assets/billing-payment-invoice-options.png" width="800px" />
+
+**Pay Fiat.** Use the **Pay Fiat** button on the invoice to pay through the hosted fiat checkout flow.
+
+**Pay Crypto (Request Finance).** Use the **Pay Crypto** button on the invoice when you want a hosted crypto checkout flow for a specific invoice.
+
+**Manual Crypto Transfer.** Sentio generates a unique crypto payment address for each billing account. Use manual transfer when you want to send funds directly, such as withdrawing from a centralized exchange, without going through the Request Finance checkout flow.
+
+* Copy the account's crypto payment address from Billing or from the invoice's **Manual Crypto Transfer** section.
+* Send **USDC or USDT** to that address on **Ethereum Mainnet**.
+* Sentio verifies the on-chain transfer and credits the payment to your account balance.
+* Outstanding invoices are paid from that balance first. Any remaining amount stays in your balance for future invoices.
+
+<Image align="center" border={false} caption="The Billing page shows the account-specific Crypto Receiving Address." src="https://media.githubusercontent.com/media/sentioxyz/docs/HEAD/assets/billing-payment-crypto-address.png" width="800px" />
+
+#### Prepaid credits
+
+Buy credits from the Billing page with fiat or crypto checkout. Credits are added to the account balance and can be applied to future invoices.
+
 ## Sentio Units
 
 ### Inside Processor
