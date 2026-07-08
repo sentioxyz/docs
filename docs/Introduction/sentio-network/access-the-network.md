@@ -13,11 +13,15 @@ You can access Sentio Network through the fully managed Sentio Platform, or dire
 
 The easiest way to use Sentio Network is through [Sentio Platform](https://app.sentio.xyz/). Create a Sentio project with Sentio Network (currently testnet) as its host environment — your processor or subgraph runs on the Compute Network and stores data on the Storage Network, with billing delegated to Sentio Platform.
 
-<Image align="center" alt="Host Environment in Project Setting Form" width="80% " src="https://files.readme.io/3ea0a7aa4300f1f66f7a7b752d13551a3e089248fa5d891c40dbc18088d27bb3-image.png" />
+
+<Image src="https://files.readme.io/3ea0a7aa4300f1f66f7a7b752d13551a3e089248fa5d891c40dbc18088d27bb3-image.png" alt="Host Environment in Project Setting Form" align="center" width="80% " />
+
 
 **Note**: The host environment can only be configured at project creation and **cannot be modified afterward**.
 
-<Image align="center" width="65% " src="https://files.readme.io/87cfa5c84c9f378ffcd70e9e7ebb4d980d791103d721cb41f933c83ce25d256d-image.png" />
+
+<Image src="https://files.readme.io/87cfa5c84c9f378ffcd70e9e7ebb4d980d791103d721cb41f933c83ce25d256d-image.png" align="center" width="65% " />
+
 
 Follow the Guide in UI to create and upload your processor.
 
@@ -34,27 +38,33 @@ Direct access gives you more control but loses platform benefits like version co
 
 Fees are pulled from balances in the `Billing` contract:
 
-* **Indexing fees** are charged to the processor **owner**.
-* **Query fees** are charged to the **query initiator**.
+- **Indexing fees** are charged to the processor **owner**.
+- **Query fees** are charged to the **query initiator**.
 
 You can use [Network Hub](https://testnet-network.sentio.xyz/billing) to deposit $ST tokens.
 
-<Image align="center" width="65% " src="https://files.readme.io/6f1b44c579c7fd1ab579517423426cdecc29db3047cddb48e3bfd2133dc7b426-image.png" />
+
+<Image src="https://files.readme.io/6f1b44c579c7fd1ab579517423426cdecc29db3047cddb48e3bfd2133dc7b426-image.png" align="center" width="65% " />
+
 
 ## Step 2: Add an operator (optional)
 
 Adding another address as your operator gives it two powers on your behalf:
 
-* It can manage your processors — create, start, and stop them under your ownership.
-* Queries it signs can be billed to **your** Billing balance instead of its own.
+- It can manage your processors — create, start, and stop them under your ownership.
+- Queries it signs can be billed to **your** Billing balance instead of its own.
 
 Use Manage Operator in Network Hub to add account of your control.
 
-<Image align="center" width="65% " src="https://files.readme.io/e4df4bb6fa400ff9c8d2f7749dc840e7256a8666dcf96f5f1e45bdefb5268c15-image.png" />
+
+<Image src="https://files.readme.io/e4df4bb6fa400ff9c8d2f7749dc840e7256a8666dcf96f5f1e45bdefb5268c15-image.png" align="center" width="65% " />
+
 
 <br />
 
-<Image align="center" width="65% " src="https://files.readme.io/be39eb014eef627a9e759fe850f67ee05442ba7bc1a7a475cfd52420847ab769-image.png" />
+
+<Image src="https://files.readme.io/be39eb014eef627a9e759fe850f67ee05442ba7bc1a7a475cfd52420847ab769-image.png" align="center" width="65% " />
+
 
 ## Step 3: Upload, create, and start the processor
 
@@ -121,10 +131,10 @@ Start the daemon with:
 
 ```shell With Operator Key
 # use binary
-storage-network-daemon --sidecar --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OPERATOR_PRIVATE_KEY --sidecar-owner=$OWNER_ADDRESS
+housegate --agent --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --agent-key=$OPERATOR_PRIVATE_KEY --agent-owner=$OWNER_ADDRESS
 
 # use docker
-docker run -it -p 9001:9001 ghcr.io/sentioxyz/storage-network-daemon:latest --sidecar --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OPERATOR_PRIVATE_KEY --sidecar-owner=$OWNER_ADDRESS
+docker run -it -p 9001:9001 ghcr.io/housegate/housegate:latest --agent --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --agent-key=$OPERATOR_PRIVATE_KEY --agent-owner=$OWNER_ADDRESS
 ```
 ```Text With Owner Key
 # use binary
@@ -154,7 +164,9 @@ For the database permission model and how to share read access, see [Storage Net
 
 Processor status could be view and managed at [Network Hub](https://testnet-network.sentio.xyz/processor).
 
-<Image align="center" width="80% " src="https://files.readme.io/bb094f47924191aa5ace16998c1381963267375737e44bc04c7bf52ad835ab86-image.png" />
+
+<Image src="https://files.readme.io/bb094f47924191aa5ace16998c1381963267375737e44bc04c7bf52ad835ab86-image.png" align="center" width="80% " />
+
 
 Each indexer node exposes a small JSON-RPC server on port `10002` for inspecting processor execution. Hit any node — if the processor isn't local to that node, the request is forwarded to whichever indexer hosts it. Method semantics are documented in [Compute Network](compute-network#node-json-rpc).
 
