@@ -138,10 +138,10 @@ docker run -it -p 9001:9001 ghcr.io/housegate/housegate:latest --agent --state=h
 ```
 ```Text With Owner Key
 # use binary
-storage-network-daemon --sidecar --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OWNER_PRIVATE_KEY
+housegate --agent --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --agent-key=$OWNER_PRIVATE_KEY
 
 # use docker
-docker run -it -p 9001:9001 ghcr.io/sentioxyz/storage-network-daemon:latest --sidecar --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OWNER_PRIVATE_KEY
+docker run -it -p 9001:9001 ghcr.io/housegate/housegate:latest --agent --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --agent-key=$OWNER_PRIVATE_KEY
 ```
 
 To avoid using private key in command line, see [Step 2](#step-2-add-an-operator-optional) to add an operator and then use operator's private key.
