@@ -42,7 +42,7 @@ Indexers advertise their capabilities (supported chains, hardware tier, region) 
 
 ## Node JSON-RPC
 
-Every indexer exposes a JSON-RPC server on port `10002` for inspecting processor execution. The endpoint is location-transparent: hitting any indexer for a processor not local to it forwards the request to whichever indexer hosts the processor.
+Every indexer exposes a JSON-RPC server on its compute-node RPC port (advertised via `IndexerRegistry`) for inspecting processor execution. The endpoint is location-transparent: hitting any indexer for a processor not local to it forwards the request to whichever indexer hosts the processor.
 
 | Method                   | Returns                                                                                                                                |
 | ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------- |

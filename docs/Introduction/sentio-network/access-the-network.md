@@ -81,7 +81,7 @@ Then upload processor with your operator private key (recommended) or private ke
 PRIVATE_KEY=<OPERATOR_PRIVATE_KEY> \
 yarn sentio upload --sentio-network testnet --required-chain-id 1 --no-platform --owner=<OWNER_PUBLIC_KEY>
 
-# Limitation: you need also transfer a small amount of ETH to your operator address
+# Limitation: you need also transfer a small amount of native $ST to your operator address (for gas)
 # though this limitation will be lift soon, we'll only require ST be deposited into Billing contract
 
 ```
@@ -168,10 +168,10 @@ Processor status could be view and managed at [Network Hub](https://testnet-netw
 <Image src="https://files.readme.io/bb094f47924191aa5ace16998c1381963267375737e44bc04c7bf52ad835ab86-image.png" align="center" width="80% " />
 
 
-Each indexer node exposes a small JSON-RPC server on port `10002` for inspecting processor execution. Hit any node — if the processor isn't local to that node, the request is forwarded to whichever indexer hosts it. Method semantics are documented in [Compute Network](compute-network#node-json-rpc).
+Each indexer node exposes a small JSON-RPC server on its compute-node RPC port (advertised via `IndexerRegistry`) for inspecting processor execution. Hit any node — if the processor isn't local to that node, the request is forwarded to whichever indexer hosts it. Method semantics are documented in [Compute Network](compute-network#node-json-rpc).
 
 ```shell
-INDEXER_HOST=<individual indexer host>:10002
+INDEXER_HOST=<individual indexer host>:<compute-node-rpc-port>   # port advertised via IndexerRegistry
 # or using gateway which is compute RPC only endpoint  
 # INDEXER_HOST=https://testnet-compute-gateway.sentio.xyz
 
