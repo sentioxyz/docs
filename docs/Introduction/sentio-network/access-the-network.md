@@ -131,17 +131,17 @@ Start the daemon with:
 
 ```shell With Operator Key
 # use binary
-housegate --agent --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --agent-key=$OPERATOR_PRIVATE_KEY --agent-owner=$OWNER_ADDRESS
+storage-network-daemon --sidecar --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OPERATOR_PRIVATE_KEY --sidecar-owner=$OWNER_ADDRESS
 
 # use docker
-docker run -it -p 9001:9001 ghcr.io/housegate/housegate:latest --agent --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --agent-key=$OPERATOR_PRIVATE_KEY --agent-owner=$OWNER_ADDRESS
+docker run -it -p 9001:9001 ghcr.io/sentioxyz/storage-network-daemon:latest --sidecar --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OPERATOR_PRIVATE_KEY --sidecar-owner=$OWNER_ADDRESS
 ```
 ```Text With Owner Key
 # use binary
-housegate --agent --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --agent-key=$OWNER_PRIVATE_KEY
+storage-network-daemon --sidecar --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OWNER_PRIVATE_KEY
 
 # use docker
-docker run -it -p 9001:9001 ghcr.io/housegate/housegate:latest --agent --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --agent-key=$OWNER_PRIVATE_KEY
+docker run -it -p 9001:9001 ghcr.io/sentioxyz/storage-network-daemon:latest --sidecar --state=https://testnet-storage-gateway.sentio.xyz --listen=:9001 --sidecar-key=$OWNER_PRIVATE_KEY
 ```
 
 To avoid using private key in command line, see [Step 2](#step-2-add-an-operator-optional) to add an operator and then use operator's private key.
@@ -183,13 +183,11 @@ PROCESSOR_ID=<your processor ID>
 
 # Processor progress
 curl -s $INDEXER_HOST -H 'Content-Type: application/json' \
-  --data '{"jsonrpc":"2.0","method":"sentio_processorStatus",
-           "params":[{"id":"$PROCESSOR_ID"}],"id":1}'
+  --data '{"jsonrpc":"2.0","method":"sentio_processorStatus","params":[{"id":"'"$PROCESSOR_ID"'"}],"id":1}'
 
 # Recent logs (last 10 entries)
 curl -s $INDEXER_HOST -H 'Content-Type: application/json' \
-  --data '{"jsonrpc":"2.0","method":"sentio_processorLogs",
-           "params":[{"processor_id":"$PROCESSOR_ID","limit":10}],"id":1}'
+  --data '{"jsonrpc":"2.0","method":"sentio_processorLogs","params":[{"processor_id":"'"$PROCESSOR_ID"'","limit":10}],"id":1}'
 ```
 
 <br />

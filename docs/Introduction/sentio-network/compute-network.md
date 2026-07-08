@@ -50,7 +50,7 @@ Every indexer exposes a JSON-RPC server on its compute-node RPC port (advertised
 | `sentio_processorStatus` | Per-chain progress for a processor: processed block / timestamp, state (`CATCHING_UP` / `PROCESSING` / …), SDK version, entity schema. |
 | `sentio_processorLogs`   | Recent driver logs for a processor (paged via `limit` + cursor).                                                                       |
 
-For example invocations, see [Access the Network](access-the-network#monitor-processors-via-node-json-rpc).
+For example invocations, see [Access the Network](access-the-network#monitor-processors).
 
 ## Billing
 
