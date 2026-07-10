@@ -81,9 +81,7 @@ Supported networks and their features are listed below. If you want other chains
 | Robinhood Chain | `4663` | `robinhood`  | ✓ | ✓ |  |   |
 | Scroll | `534352` | `scroll`  | ✓ | ✓ |  | ✓   |
 | Sei Mainnet | `1329` | `sei`  | ✓ | ✓ |  |   |
-| Sentio devnet | `7892201` | `sentio-devnet`  | ✓ | ✓ |  |   |
-| Sentio testnet | `7892101` | `sentio-testnet-v1`  | ✓ | ✓ |  |   |
-| Sentio testnet v2 | `7892102` | `sentio-testnet`  | ✓ | ✓ |  |   |
+| Sentio testnet | `7892102` | `sentio-testnet`  | ✓ | ✓ |  |   |
 | Soneium Mainnet | `1868` | `soneium-mainnet`  | ✓ | ✓ | ✓  | ✓   |
 | Sonic Mainnet | `146` | `sonic-mainnet`  | ✓ | ✓ | ✓  | ✓   |
 | Stable Mainnet | `988` | `stable-mainnet`  | ✓ | ✓ |  |   |
@@ -1454,63 +1452,7 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 </details>
 
-### Sentio
-
-Chain ID: `7892201`, chain slug: `sentio-devnet`.
-
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
-
-<details>
-<summary>Create and upload an example Sentio processor</summary>
-
-```
-npx @sentio/cli@latest create <project name> --chain-type eth --chain-id 7892201
-...
-npx @sentio/cli@latest upload
-```
-
-</details>
-
-<details>
-<summary>Create and deploy an example Subgraph</summary>
-
-```
-npx @sentio/cli@latest graph create <project name> --chain-id 7892201
-...
-npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-```
-
-</details>
-
-### Sentio
-
-Chain ID: `7892101`, chain slug: `sentio-testnet-v1`.
-
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
-
-<details>
-<summary>Create and upload an example Sentio processor</summary>
-
-```
-npx @sentio/cli@latest create <project name> --chain-type eth --chain-id 7892101
-...
-npx @sentio/cli@latest upload
-```
-
-</details>
-
-<details>
-<summary>Create and deploy an example Subgraph</summary>
-
-```
-npx @sentio/cli@latest graph create <project name> --chain-id 7892101
-...
-npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-```
-
-</details>
-
-### Sentio testnet v2
+### Sentio testnet
 
 Chain ID: `7892102`, chain slug: `sentio-testnet`.
 

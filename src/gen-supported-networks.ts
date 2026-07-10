@@ -3,8 +3,21 @@ import * as fs from "node:fs";
 
 const whitelistTestnet = new Set([EthChainId.TAC_TESTNET])
 
+// Internal Sentio test/dev chains have no mainnet parent, so they can't be
+// grouped as testnets. Keep only the current testnet (v2) and drop the legacy
+// v1 testnet and the devnet.
+const excludeChains = new Set<EthChainId>([EthChainId.SENTIO_TESTNET, EthChainId.SENTIO_DEVNET])
+
+// Display-name overrides, applied to both the EVM table and the per-chain section.
+const nameOverrides = new Map<string, string>([
+  [EthChainId.SENTIO_TESTNET_V2, "Sentio testnet"],
+])
+const displayName = (info: EthChainInfo) => nameOverrides.get(info.chainId) ?? info.name
+
 let content = fs.readFileSync('./src/supported-networks-header.md.template', 'utf8');
-const mainnetInfos = Object.values(EthChainInfo).sort((a, b) => a.name.localeCompare(b.name)).filter((info) => (!info.mainnetChainId || whitelistTestnet.has(info.chainId)) && info.name !== "Custom" );
+const mainnetInfos = Object.values(EthChainInfo)
+  .filter((info) => (!info.mainnetChainId || whitelistTestnet.has(info.chainId)) && info.name !== "Custom" && !excludeChains.has(info.chainId))
+  .sort((a, b) => displayName(a).localeCompare(displayName(b)));
 
 const testChainMap = new Map<EthChainId, EthChainInfo[]>()
 for (const network of Object.values(EthChainInfo)) {
@@ -52,7 +65,7 @@ const traceChain = new Map(Object.entries({
 
 let supportedEvm = ""
 for (const network of mainnetInfos) {
-  supportedEvm += `| ${network.name} | \`${network.chainId}\` | \`${network.slug}\`  | ✓ | ✓ | ${traceChain.has(network.chainId) ? "✓ " : ""} | ${debuggerChains.has(network.chainId) ? "✓ " : ""}  |\n`
+  supportedEvm += `| ${displayName(network)} | \`${network.chainId}\` | \`${network.slug}\`  | ✓ | ✓ | ${traceChain.has(network.chainId) ? "✓ " : ""} | ${debuggerChains.has(network.chainId) ? "✓ " : ""}  |\n`
 }
 
 content = content.replace("${supported-evm}", supportedEvm)
@@ -61,7 +74,8 @@ const template = fs.readFileSync('./src/evm-chain-template.md.template', 'utf8')
 
 let chainContents = ""
 for (const network of mainnetInfos) {
-  let chainContent = template.replaceAll("${name}", network.name.replace(/ [^ ]+net$/, "")).replace(" Testnet", "").replaceAll("${chainId}", network.chainId) + '\n';
+  const sectionName = nameOverrides.get(network.chainId) ?? network.name.replace(/ [^ ]+net$/, "")
+  let chainContent = template.replaceAll("${name}", sectionName).replace(" Testnet", "").replaceAll("${chainId}", network.chainId) + '\n';
   let notes = ""
   if (whitelistTestnet.has(network.chainId)) {
     notes = "Currently support is for testnet only."
