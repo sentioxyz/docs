@@ -1,6 +1,5 @@
 ---
 title: Forks
-excerpt: ''
 deprecated: false
 hidden: false
 metadata:
