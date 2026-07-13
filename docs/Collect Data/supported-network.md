@@ -77,7 +77,6 @@ Supported networks and their features are listed below. If you want other chains
 | Optimism Mainnet | `10` | `optimism`  | ✓ | ✓ |  | ✓   |
 | Plasma Mainnet | `9745` | `plasma-mainnet`  | ✓ | ✓ |  |   |
 | Polygon | `137` | `matic`  | ✓ | ✓ | ✓  | ✓   |
-| Polygon zkEVM | `1101` | `polygon-zkevm`  | ✓ | ✓ |  |   |
 | Robinhood Chain | `4663` | `robinhood`  | ✓ | ✓ |  |   |
 | Scroll | `534352` | `scroll`  | ✓ | ✓ |  | ✓   |
 | Sei Mainnet | `1329` | `sei`  | ✓ | ✓ |  |   |
@@ -1334,34 +1333,6 @@ npx @sentio/cli@latest upload
 
 ```
 npx @sentio/cli@latest graph create <project name> --chain-id 137
-...
-npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-```
-
-</details>
-
-### Polygon zkEVM
-
-Chain ID: `1101`, chain slug: `polygon-zkevm`.
-
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
-
-<details>
-<summary>Create and upload an example Sentio processor</summary>
-
-```
-npx @sentio/cli@latest create <project name> --chain-type eth --chain-id 1101
-...
-npx @sentio/cli@latest upload
-```
-
-</details>
-
-<details>
-<summary>Create and deploy an example Subgraph</summary>
-
-```
-npx @sentio/cli@latest graph create <project name> --chain-id 1101
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
