@@ -58,8 +58,8 @@ Errors in the data pipeline that feeds and persists your processor's data. They 
 | 213  | Init Entity Failed               | Failed to initialize entity storage for the processor's schema.                                                                        |
 | 214  | Clean Entity Data Failed         | Failed to clean up previously written entity data (for example during reprocessing).                                                   |
 | 215  | Save Entity Data Failed          | Failed to write entity data to storage.                                                                                                |
-| 216  | Get Entity From DB Failed        | A `store.get` request failed at the storage level.                                                                                     |
-| 217  | List Entity From DB Failed       | A `store.list` request failed at the storage level.                                                                                    |
+| 216  | Get Entity From DB Failed        | Failed to read an entity from storage.                                                                                                 |
+| 217  | List Entity From DB Failed       | Failed to list entities from storage.                                                                                                  |
 | 218  | Invalid Entity Data              | Entity data read from or written to storage was invalid or corrupted.                                                                  |
 
 ## Processor Errors (3xx)
