@@ -1,0 +1,101 @@
+---
+title: 🚨 Error Codes
+excerpt: ''
+description: Reference of processor error codes reported by the Sentio runtime.
+deprecated: false
+hidden: false
+metadata:
+  title: ''
+  description: ''
+  robots: index
+next:
+  description: ''
+---
+When a processor stops or reports an error, the error message is prefixed with a code in the form `ERRxxx` (for example `ERR303: process failed ...`). This page lists all error codes and what they mean, so you can quickly tell whether an error is caused by your processor code, by the platform, or by billing limits.
+
+These codes apply to processors built with SDK 3.x or later, and to subgraph processors hosted on Sentio.
+
+## Error Categories
+
+The first digit of the code tells you the category:
+
+| Range | Category        | Who should act                                                                                            |
+| :---- | :-------------- | :-------------------------------------------------------------------------------------------------------- |
+| 1xx   | System errors   | Sentio. These are internal platform issues and are usually retried automatically.                          |
+| 2xx   | Driver errors   | Sentio. Errors in the data pipeline (fetching chain data, storing results). Usually transient and retried. |
+| 3xx   | Processor errors | You. Caused by the processor's code, configuration, or schema. Fix the processor and re-upload.           |
+| 4xx   | Billing errors  | You. The project has hit plan limits. Upgrade the plan or reduce usage.                                    |
+
+If a 1xx or 2xx error persists for a long time, please [contact support](doc:getting-support).
+
+## System Errors (1xx)
+
+| Code | Name                | Description                                                                                                                                       |
+| :--- | :------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 100  | System              | An unexpected internal error occurred in the runtime. Retried automatically; contact support if it persists.                                       |
+| 101  | Need Upgrade        | The processor requires capabilities that the currently running runtime version does not support yet. The platform reschedules it automatically.    |
+| 102  | Out Of Memory       | The runtime ran out of memory while processing. Often transient; if it keeps recurring, try reducing the amount of data held per handler call.     |
+
+## Driver Errors (2xx)
+
+Errors in the data pipeline that feeds and persists your processor's data. They are generally not caused by your code and are retried automatically.
+
+| Code | Name                             | Description                                                                                                                          |
+| :--- | :------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------ |
+| 200  | Call Processor Failed            | Communication with the processor runtime failed (timeout, broken stream, or unexpected response). Usually transient.                   |
+| 201  | Reset WASM Instance Failed       | Failed to reset the WebAssembly instance between executions (subgraph processors).                                                     |
+| 202  | WASM Error                       | The WebAssembly runtime reported an internal error while executing the processor (subgraph processors).                                |
+| 203  | Get Contract Start Block Failed  | Failed to resolve the creation / start block of a contract or account from the chain.                                                  |
+| 204  | Fetch Data Failed                | Failed to fetch on-chain data (blocks, transactions, logs, etc.) from the data source.                                                 |
+| 205  | Subgraph Eth Call Failed         | An `eth_call` issued by a subgraph handler failed at the RPC level (node error, timeout).                                              |
+| 206  | Subgraph IPFS Cat Failed         | An `ipfs.cat` request issued by a subgraph handler failed.                                                                             |
+| 207  | Invalid Checkpoint Data          | The processing checkpoint data was inconsistent or corrupted.                                                                          |
+| 208  | Save Checkpoint Failed           | Failed to persist the processing checkpoint to storage.                                                                                |
+| 209  | Quota Service Error              | Failed to communicate with the quota / billing service while checking usage.                                                           |
+| 210  | Clean Time Series Data Failed    | Failed to clean up previously written metric / event data (for example during reprocessing).                                           |
+| 211  | Save Time Series Data Failed     | Failed to write metric / event log data to storage.                                                                                    |
+| 212  | Send Webhook Data Failed         | Failed to deliver webhook messages emitted by the processor.                                                                           |
+| 213  | Init Entity Failed               | Failed to initialize entity storage for the processor's schema.                                                                        |
+| 214  | Clean Entity Data Failed         | Failed to clean up previously written entity data (for example during reprocessing).                                                   |
+| 215  | Save Entity Data Failed          | Failed to write entity data to storage.                                                                                                |
+| 216  | Get Entity From DB Failed        | A `store.get` request failed at the storage level.                                                                                     |
+| 217  | List Entity From DB Failed       | A `store.list` request failed at the storage level.                                                                                    |
+| 218  | Invalid Entity Data              | Entity data read from or written to storage was invalid or corrupted.                                                                  |
+
+## Processor Errors (3xx)
+
+Errors caused by the processor itself — its handler code, configuration, or schema. These require a fix in your project followed by a re-upload.
+
+| Code | Name                                     | Description                                                                                                                                                              |
+| :--- | :---------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 300  | Unexpected Processor Config               | The processor configuration does not match the data being processed — for example, data arrived for which no handler is registered.                                        |
+| 301  | Invalid Entity Schema                     | The entity schema (`schema.graphql`) is invalid or uses unsupported constructs.                                                                                            |
+| 302  | Processor Configs Has Diff                | Multiple instances of the same processor produced different configurations. This usually means the processor setup code is non-deterministic (e.g. uses random values or timestamps when registering handlers). |
+| 303  | Process Failed                            | A handler threw an error at runtime — the most common error for bugs in handler code (null access, failed assertions, unhandled exceptions). Check the error detail and stack trace, and see [Troubleshooting](doc:troubleshooting). |
+| 304  | Call WASM Export Function Failed          | Calling an exported function of the subgraph WebAssembly module failed.                                                                                                    |
+| 305  | WASM Init Failed                          | The subgraph WebAssembly module failed to initialize.                                                                                                                      |
+| 306  | WASM Stack Overflow                       | The subgraph handler overflowed the WebAssembly stack — usually caused by infinite or overly deep recursion.                                                               |
+| 307  | Create Template Failed                    | Creating a template instance failed — for example, invalid parameters passed to template instantiation.                                                                    |
+| 308  | Invalid Subgraph Manifest                 | The subgraph manifest (`subgraph.yaml`) is invalid.                                                                                                                        |
+| 309  | Get Unknown Entity                        | The handler tried to load an entity type that is not defined in the schema.                                                                                                |
+| 310  | List Unknown Entity                       | The handler tried to list an entity type that is not defined in the schema.                                                                                                |
+| 311  | List Related Entity With Invalid Field    | The handler tried to look up related entities through a field that is not a relation field.                                                                                |
+| 312  | Invalid List Entity Filter                | A `list` query used an invalid filter — for example, filtering on a field that does not exist or with an incompatible operator.                                            |
+| 313  | Invalid Upsert Entity Request             | An entity upsert request was malformed — for example, missing the entity ID or required data.                                                                              |
+| 314  | Upsert Unknown Entity                     | The handler tried to upsert an entity type that is not defined in the schema.                                                                                              |
+| 315  | Invalid Update Entity Request             | An entity update request was malformed.                                                                                                                                    |
+| 316  | Update Unknown Entity                     | The handler tried to update an entity type that is not defined in the schema.                                                                                              |
+| 317  | Invalid Delete Entity Request             | An entity delete request was malformed.                                                                                                                                    |
+| 318  | Delete Unknown Entity                     | The handler tried to delete an entity type that is not defined in the schema.                                                                                              |
+| 319  | Update Immutable Entity                   | The handler tried to modify an entity that is declared immutable in the schema.                                                                                            |
+| 320  | Invalid Entity Field Value                | An entity field value does not match its declared type — for example, wrong type, `null` for a non-nullable field, or a value out of range.                                |
+| 321  | Invalid Time Series Data                  | A metric or event log record is invalid — for example, an invalid metric / label name or an unsupported value. See [Metrics](doc:metrics) for naming rules.                |
+| 322  | Time Series Data Schema Changed           | The same metric or event log was emitted with a conflicting schema — for example, the same field written with different data types.                                        |
+| 323  | Too Many Webhook Msg Entity               | The processor emitted more webhook messages in one batch than allowed.                                                                                                     |
+| 324  | Subgraph Eth Call With Invalid Param      | An `eth_call` issued by a subgraph handler used invalid parameters — for example, a malformed address or arguments that do not match the ABI.                              |
+
+## Billing Errors (4xx)
+
+| Code | Name       | Description                                                                                                                                             |
+| :--- | :--------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| 400  | Over Quota | The project has exceeded the quota of its current plan and processing is paused. Upgrade the plan, or reduce usage (see [Cost Reduction](doc:cost-reduction)). |
