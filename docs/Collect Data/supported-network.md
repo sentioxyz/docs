@@ -1566,7 +1566,6 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 </details>
 
->️ Testnet is available at chain ID: 1924, slug swell-testnet .
 ### TAC
 Currently support is for testnet only.
 Chain ID: `2390`, chain slug: `tac-testnet`.
