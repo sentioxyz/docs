@@ -93,6 +93,7 @@ Errors caused by the processor itself — its handler code, configuration, or sc
 | 322  | Time Series Data Schema Changed           | The same metric or event log was emitted with a conflicting schema — for example, the same field written with different data types.                                        |
 | 323  | Too Many Webhook Msg Entity               | The processor emitted more webhook messages in one batch than allowed.                                                                                                     |
 | 324  | Subgraph Eth Call With Invalid Param      | An `eth_call` issued by a subgraph handler used invalid parameters — for example, a malformed address or arguments that do not match the ABI.                              |
+| 325  | Processor Heap Overflow                   | The processor exceeded its JavaScript heap limit and was terminated ("JavaScript heap out of memory"). Usually caused by holding too much data in memory — for example, accumulating large arrays, maps, or caches across handler calls. Reduce the amount of data kept in memory per handler.                                |
 
 ## Billing Errors (4xx)
 
