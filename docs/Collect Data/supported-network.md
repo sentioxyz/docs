@@ -37,7 +37,6 @@ Supported networks and their features are listed below. If you want other chains
 | Abstract            | `2741`       | `abstract`              | ✓      | ✓            |        |          |
 | Arbitrum            | `42161`      | `arbitrum-one`          | ✓      | ✓            |        | ✓        |
 | Arc Testnet         | `5042002`    | `arc-testnet`           | ✓      | ✓            |        |          |
-| Astar               | `592`        | `astar`                 | ✓      | ✓            | ✓      | ✓        |
 | Aurora              | `1313161554` | `aurora`                | ✓      | ✓            |        |          |
 | Avalanche           | `43114`      | `avalanche`             | ✓      | ✓            |        |          |
 | B2 Mainnet          | `223`        | `b2-mainnet`            | ✓      | ✓            |        |          |
@@ -88,7 +87,6 @@ Supported networks and their features are listed below. If you want other chains
 | Unichain            | `130`        | `unichain-mainnet`      | ✓      | ✓            |        |          |
 | X Layer Mainnet     | `196`        | `xlayer-mainnet`        | ✓      | ✓            |        | ✓        |
 | Zircuit Mainnet     | `48900`      | `zircuit`               | ✓      | ✓            |        |          |
-| zkLink Nova         | `810180`     | `zklink-nova`           | ✓      | ✓            |        |          |
 | zkSync Era          | `324`        | `zksync-era`            | ✓      | ✓            |        |          |
 
 More on [EVM](evm)
@@ -199,32 +197,6 @@ Finish Step 1-3 from <Anchor label="Quickstart" title="mention" href="quickstart
 
   ```
   npx @sentio/cli@latest graph create <project name> --chain-id 5042002
-  ...
-  npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-  ```
-</details>
-
-### Astar
-
-Chain ID: `592`, chain slug: `astar`.
-
-Finish Step 1-3 from <Anchor label="Quickstart" title="mention" href="quickstart">Quickstart</Anchor>. You could create indexer in either <Anchor label="sentio processor" title="mention" href="processor-basic">sentio processor</Anchor> or <Anchor label="subgraph" title="mention" href="hosted-subgraph">subgraph</Anchor> format.
-
-<details>
-  <summary>Create and upload an example Sentio processor</summary>
-
-  ```
-  npx @sentio/cli@latest create <project name> --chain-type eth --chain-id 592
-  ...
-  npx @sentio/cli@latest upload
-  ```
-</details>
-
-<details>
-  <summary>Create and deploy an example Subgraph</summary>
-
-  ```
-  npx @sentio/cli@latest graph create <project name> --chain-id 592
   ...
   npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
   ```
@@ -1557,32 +1529,6 @@ Finish Step 1-3 from <Anchor label="Quickstart" title="mention" href="quickstart
 </details>
 
 > ️ Testnet is available at chain ID: 48898, slug zircuit-garfield-testnet .
-
-### zkLink Nova
-
-Chain ID: `810180`, chain slug: `zklink-nova`.
-
-Finish Step 1-3 from <Anchor label="Quickstart" title="mention" href="quickstart">Quickstart</Anchor>. You could create indexer in either <Anchor label="sentio processor" title="mention" href="processor-basic">sentio processor</Anchor> or <Anchor label="subgraph" title="mention" href="hosted-subgraph">subgraph</Anchor> format.
-
-<details>
-  <summary>Create and upload an example Sentio processor</summary>
-
-  ```
-  npx @sentio/cli@latest create <project name> --chain-type eth --chain-id 810180
-  ...
-  npx @sentio/cli@latest upload
-  ```
-</details>
-
-<details>
-  <summary>Create and deploy an example Subgraph</summary>
-
-  ```
-  npx @sentio/cli@latest graph create <project name> --chain-id 810180
-  ...
-  npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-  ```
-</details>
 
 ### zkSync Era
 
