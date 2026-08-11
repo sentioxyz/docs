@@ -37,7 +37,6 @@ Supported networks and their features are listed below. If you want other chains
 | Abstract | `2741` | `abstract`  | ✓ | ✓ |  |   |
 | Arbitrum | `42161` | `arbitrum-one`  | ✓ | ✓ |  | ✓   |
 | Arc Testnet | `5042002` | `arc-testnet`  | ✓ | ✓ |  |   |
-| Astar | `592` | `astar`  | ✓ | ✓ | ✓  | ✓   |
 | Aurora | `1313161554` | `aurora`  | ✓ | ✓ |  |   |
 | Avalanche | `43114` | `avalanche`  | ✓ | ✓ |  |   |
 | B2 Mainnet | `223` | `b2-mainnet`  | ✓ | ✓ |  |   |
@@ -68,10 +67,8 @@ Supported networks and their features are listed below. If you want other chains
 | Mantle | `5000` | `mantle`  | ✓ | ✓ |  |   |
 | MegaETH | `4326` | `megaeth`  | ✓ | ✓ |  |   |
 | Metis | `1088` | `metis`  | ✓ | ✓ |  |   |
-| MEV Commit | `57173` | `mev-commit`  | ✓ | ✓ |  |   |
 | Mode Mainnet | `34443` | `mode-mainnet`  | ✓ | ✓ |  |   |
 | Monad Mainnet | `143` | `monad-mainnet`  | ✓ | ✓ |  |   |
-| Moonbeam | `1284` | `moonbeam`  | ✓ | ✓ | ✓  | ✓   |
 | opBNB Mainnet | `204` | `opbnb`  | ✓ | ✓ |  |   |
 | Optimism Mainnet | `10` | `optimism`  | ✓ | ✓ |  | ✓   |
 | Plasma Mainnet | `9745` | `plasma-mainnet`  | ✓ | ✓ |  |   |
@@ -90,7 +87,6 @@ Supported networks and their features are listed below. If you want other chains
 | Unichain | `130` | `unichain-mainnet`  | ✓ | ✓ |  |   |
 | X Layer Mainnet | `196` | `xlayer-mainnet`  | ✓ | ✓ |  | ✓   |
 | Zircuit Mainnet | `48900` | `zircuit`  | ✓ | ✓ |  |   |
-| zkLink Nova | `810180` | `zklink-nova`  | ✓ | ✓ |  |   |
 | zkSync Era | `324` | `zksync-era`  | ✓ | ✓ |  |   |
 
 
@@ -205,34 +201,6 @@ npx @sentio/cli@latest upload
 
 ```
 npx @sentio/cli@latest graph create <project name> --chain-id 5042002
-...
-npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-```
-
-</details>
-
-### Astar
-
-Chain ID: `592`, chain slug: `astar`.
-
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
-
-<details>
-<summary>Create and upload an example Sentio processor</summary>
-
-```
-npx @sentio/cli@latest create <project name> --chain-type eth --chain-id 592
-...
-npx @sentio/cli@latest upload
-```
-
-</details>
-
-<details>
-<summary>Create and deploy an example Subgraph</summary>
-
-```
-npx @sentio/cli@latest graph create <project name> --chain-id 592
 ...
 npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 ```
@@ -1084,34 +1052,6 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 
 </details>
 
-### MEV Commit
-
-Chain ID: `57173`, chain slug: `mev-commit`.
-
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
-
-<details>
-<summary>Create and upload an example Sentio processor</summary>
-
-```
-npx @sentio/cli@latest create <project name> --chain-type eth --chain-id 57173
-...
-npx @sentio/cli@latest upload
-```
-
-</details>
-
-<details>
-<summary>Create and deploy an example Subgraph</summary>
-
-```
-npx @sentio/cli@latest graph create <project name> --chain-id 57173
-...
-npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-```
-
-</details>
-
 ### Mode
 
 Chain ID: `34443`, chain slug: `mode-mainnet`.
@@ -1169,34 +1109,6 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 >️ Testnet is available at chain ID: 10143, slug monad-testnet .
-### Moonbeam
-
-Chain ID: `1284`, chain slug: `moonbeam`.
-
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
-
-<details>
-<summary>Create and upload an example Sentio processor</summary>
-
-```
-npx @sentio/cli@latest create <project name> --chain-type eth --chain-id 1284
-...
-npx @sentio/cli@latest upload
-```
-
-</details>
-
-<details>
-<summary>Create and deploy an example Subgraph</summary>
-
-```
-npx @sentio/cli@latest graph create <project name> --chain-id 1284
-...
-npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-```
-
-</details>
-
 ### opBNB
 
 Chain ID: `204`, chain slug: `opbnb`.
@@ -1708,34 +1620,6 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 >️ Testnet is available at chain ID: 48898, slug zircuit-garfield-testnet .
-### zkLink Nova
-
-Chain ID: `810180`, chain slug: `zklink-nova`.
-
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
-
-<details>
-<summary>Create and upload an example Sentio processor</summary>
-
-```
-npx @sentio/cli@latest create <project name> --chain-type eth --chain-id 810180
-...
-npx @sentio/cli@latest upload
-```
-
-</details>
-
-<details>
-<summary>Create and deploy an example Subgraph</summary>
-
-```
-npx @sentio/cli@latest graph create <project name> --chain-id 810180
-...
-npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-```
-
-</details>
-
 ### zkSync Era
 
 Chain ID: `324`, chain slug: `zksync-era`.
