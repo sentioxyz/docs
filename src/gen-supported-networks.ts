@@ -32,7 +32,6 @@ const debuggerChains = new Map(Object.entries({
   [EthChainId.BASE]: true,
   [EthChainId.XLAYER_MAINNET]: true,
   [EthChainId.ASTAR]: true,
-  [EthChainId.MOONBEAM]: true,
   [EthChainId.SONEIUM_MAINNET]: true,
   [EthChainId.SONIC_MAINNET]: true,
   [EthChainId.BERACHAIN]: true,
@@ -44,7 +43,6 @@ const traceChain = new Map(Object.entries({
   [EthChainId.ETHEREUM]: true,
   [EthChainId.ASTAR]: true,
   [EthChainId.LINEA]: true,
-  [EthChainId.MOONBEAM]: true,
   [EthChainId.POLYGON]: true,
   [EthChainId.SONEIUM_MAINNET]: true,
   [EthChainId.SONIC_MAINNET]: true

@@ -72,7 +72,6 @@ Supported networks and their features are listed below. If you want other chains
 | MEV Commit          | `57173`      | `mev-commit`            | ✓      | ✓            |        |          |
 | Mode Mainnet        | `34443`      | `mode-mainnet`          | ✓      | ✓            |        |          |
 | Monad Mainnet       | `143`        | `monad-mainnet`         | ✓      | ✓            |        |          |
-| Moonbeam            | `1284`       | `moonbeam`              | ✓      | ✓            | ✓      | ✓        |
 | opBNB Mainnet       | `204`        | `opbnb`                 | ✓      | ✓            |        |          |
 | Optimism Mainnet    | `10`         | `optimism`              | ✓      | ✓            |        | ✓        |
 | Plasma Mainnet      | `9745`       | `plasma-mainnet`        | ✓      | ✓            |        |          |
@@ -1127,32 +1126,6 @@ Finish Step 1-3 from <Anchor label="Quickstart" title="mention" href="quickstart
 </details>
 
 > ️ Testnet is available at chain ID: 10143, slug monad-testnet .
-
-### Moonbeam
-
-Chain ID: `1284`, chain slug: `moonbeam`.
-
-Finish Step 1-3 from <Anchor label="Quickstart" title="mention" href="quickstart">Quickstart</Anchor>. You could create indexer in either <Anchor label="sentio processor" title="mention" href="processor-basic">sentio processor</Anchor> or <Anchor label="subgraph" title="mention" href="hosted-subgraph">subgraph</Anchor> format.
-
-<details>
-  <summary>Create and upload an example Sentio processor</summary>
-
-  ```
-  npx @sentio/cli@latest create <project name> --chain-type eth --chain-id 1284
-  ...
-  npx @sentio/cli@latest upload
-  ```
-</details>
-
-<details>
-  <summary>Create and deploy an example Subgraph</summary>
-
-  ```
-  npx @sentio/cli@latest graph create <project name> --chain-id 1284
-  ...
-  npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-  ```
-</details>
 
 ### opBNB
 
