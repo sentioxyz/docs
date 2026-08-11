@@ -69,7 +69,6 @@ Supported networks and their features are listed below. If you want other chains
 | Mantle              | `5000`       | `mantle`                | ✓      | ✓            |        |          |
 | MegaETH             | `4326`       | `megaeth`               | ✓      | ✓            |        |          |
 | Metis               | `1088`       | `metis`                 | ✓      | ✓            |        |          |
-| MEV Commit          | `57173`      | `mev-commit`            | ✓      | ✓            |        |          |
 | Mode Mainnet        | `34443`      | `mode-mainnet`          | ✓      | ✓            |        |          |
 | Monad Mainnet       | `143`        | `monad-mainnet`         | ✓      | ✓            |        |          |
 | opBNB Mainnet       | `204`        | `opbnb`                 | ✓      | ✓            |        |          |
@@ -1042,32 +1041,6 @@ Finish Step 1-3 from <Anchor label="Quickstart" title="mention" href="quickstart
 
   ```
   npx @sentio/cli@latest graph create <project name> --chain-id 1088
-  ...
-  npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-  ```
-</details>
-
-### MEV Commit
-
-Chain ID: `57173`, chain slug: `mev-commit`.
-
-Finish Step 1-3 from <Anchor label="Quickstart" title="mention" href="quickstart">Quickstart</Anchor>. You could create indexer in either <Anchor label="sentio processor" title="mention" href="processor-basic">sentio processor</Anchor> or <Anchor label="subgraph" title="mention" href="hosted-subgraph">subgraph</Anchor> format.
-
-<details>
-  <summary>Create and upload an example Sentio processor</summary>
-
-  ```
-  npx @sentio/cli@latest create <project name> --chain-type eth --chain-id 57173
-  ...
-  npx @sentio/cli@latest upload
-  ```
-</details>
-
-<details>
-  <summary>Create and deploy an example Subgraph</summary>
-
-  ```
-  npx @sentio/cli@latest graph create <project name> --chain-id 57173
   ...
   npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
   ```
