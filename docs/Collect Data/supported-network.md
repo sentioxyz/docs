@@ -81,7 +81,6 @@ Supported networks and their features are listed below. If you want other chains
 | Soneium Mainnet     | `1868`       | `soneium-mainnet`       | ✓      | ✓            | ✓      | ✓        |
 | Sonic Mainnet       | `146`        | `sonic-mainnet`         | ✓      | ✓            | ✓      | ✓        |
 | Stable Mainnet      | `988`        | `stable-mainnet`        | ✓      | ✓            |        |          |
-| Swell Mainnet       | `1923`       | `swell-mainnet`         | ✓      | ✓            |        |          |
 | TAC Testnet         | `2390`       | `tac-testnet`           | ✓      | ✓            |        |          |
 | Taiko Mainnet       | `167000`     | `taiko`                 | ✓      | ✓            |        |          |
 | Unichain            | `130`        | `unichain-mainnet`      | ✓      | ✓            |        |          |
@@ -1365,34 +1364,6 @@ Finish Step 1-3 from <Anchor label="Quickstart" title="mention" href="quickstart
 </details>
 
 > ️ Testnet is available at chain ID: 2201, slug stable-testnet .
-
-### Swell
-
-Chain ID: `1923`, chain slug: `swell-mainnet`.
-
-Finish Step 1-3 from <Anchor label="Quickstart" title="mention" href="quickstart">Quickstart</Anchor>. You could create indexer in either <Anchor label="sentio processor" title="mention" href="processor-basic">sentio processor</Anchor> or <Anchor label="subgraph" title="mention" href="hosted-subgraph">subgraph</Anchor> format.
-
-<details>
-  <summary>Create and upload an example Sentio processor</summary>
-
-  ```
-  npx @sentio/cli@latest create <project name> --chain-type eth --chain-id 1923
-  ...
-  npx @sentio/cli@latest upload
-  ```
-</details>
-
-<details>
-  <summary>Create and deploy an example Subgraph</summary>
-
-  ```
-  npx @sentio/cli@latest graph create <project name> --chain-id 1923
-  ...
-  npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-  ```
-</details>
-
-> ️ Testnet is available at chain ID: 1924, slug swell-testnet .
 
 ### TAC
 
