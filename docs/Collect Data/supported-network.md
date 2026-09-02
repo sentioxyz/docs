@@ -52,7 +52,6 @@ Supported networks and their features are listed below. If you want other chains
 | Core                | `1116`       | `core-mainnet`          | ✓      | ✓            |        |          |
 | Corn Maizenet       | `21000000`   | `corn-maizenet`         | ✓      | ✓            |        |          |
 | Cronos Mainnet      | `25`         | `cronos`                | ✓      | ✓            |        |          |
-| Cronos zkEVM        | `388`        | `cronos-zkevm`          | ✓      | ✓            |        |          |
 | Derive Mainnet      | `957`        | `derive-mainnet`        | ✓      | ✓            |        |          |
 | Ethereum            | `1`          | `mainnet`               | ✓      | ✓            | ✓      | ✓        |
 | Etherlink           | `42793`      | `etherlink`             | ✓      | ✓            |        |          |
@@ -598,32 +597,6 @@ Finish Step 1-3 from <Anchor label="Quickstart" title="mention" href="quickstart
 </details>
 
 > ️ Testnet is available at chain ID: 338, slug cronos-testnet .
-
-### Cronos zkEVM
-
-Chain ID: `388`, chain slug: `cronos-zkevm`.
-
-Finish Step 1-3 from <Anchor label="Quickstart" title="mention" href="quickstart">Quickstart</Anchor>. You could create indexer in either <Anchor label="sentio processor" title="mention" href="processor-basic">sentio processor</Anchor> or <Anchor label="subgraph" title="mention" href="hosted-subgraph">subgraph</Anchor> format.
-
-<details>
-  <summary>Create and upload an example Sentio processor</summary>
-
-  ```
-  npx @sentio/cli@latest create <project name> --chain-type eth --chain-id 388
-  ...
-  npx @sentio/cli@latest upload
-  ```
-</details>
-
-<details>
-  <summary>Create and deploy an example Subgraph</summary>
-
-  ```
-  npx @sentio/cli@latest graph create <project name> --chain-id 388
-  ...
-  npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-  ```
-</details>
 
 ### Derive
 
