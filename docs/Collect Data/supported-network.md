@@ -51,7 +51,6 @@ Supported networks and their features are listed below. If you want other chains
 | Conflux eSpace | `1030` | `conflux-espace`  | ✓ | ✓ |  |   |
 | Core | `1116` | `core-mainnet`  | ✓ | ✓ |  |   |
 | Cronos Mainnet | `25` | `cronos`  | ✓ | ✓ |  |   |
-| Cronos zkEVM | `388` | `cronos-zkevm`  | ✓ | ✓ |  |   |
 | Derive Mainnet | `957` | `derive-mainnet`  | ✓ | ✓ |  |   |
 | Ethereum | `1` | `mainnet`  | ✓ | ✓ | ✓  | ✓   |
 | Etherlink | `42793` | `etherlink`  | ✓ | ✓ |  |   |
@@ -602,34 +601,6 @@ npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
 </details>
 
 >️ Testnet is available at chain ID: 338, slug cronos-testnet .
-### Cronos zkEVM
-
-Chain ID: `388`, chain slug: `cronos-zkevm`.
-
-Finish Step 1-3 from [Quickstart](quickstart "mention"). You could create indexer in either [sentio processor](processor-basic "mention") or [subgraph](hosted-subgraph "mention") format.
-
-<details>
-<summary>Create and upload an example Sentio processor</summary>
-
-```
-npx @sentio/cli@latest create <project name> --chain-type eth --chain-id 388
-...
-npx @sentio/cli@latest upload
-```
-
-</details>
-
-<details>
-<summary>Create and deploy an example Subgraph</summary>
-
-```
-npx @sentio/cli@latest graph create <project name> --chain-id 388
-...
-npx @sentio/cli@latest graph deploy --owner <owner> --name <project name>
-```
-
-</details>
-
 ### Derive
 
 Chain ID: `957`, chain slug: `derive-mainnet`.
