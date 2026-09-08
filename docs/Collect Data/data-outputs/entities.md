@@ -308,7 +308,7 @@ An update carries one operation per field:
 | `multiply(n)` | `field = field * n` | numeric | the previous value counts as `0` |
 | `expr('...')` | `field = <expression>` | any non-list field | field references are `null`, see below |
 
-An update on an entity that does not exist creates it: the fields you do not mention get the zero value of their type (`0`, `''`, `false`, `null` for nullable fields). Updates cannot target list fields or fields declared with `@derivedFrom`, and they are rejected for timeseries entities: every write of a timeseries entity is a new row, so there is nothing to update, use `upsert`.
+An update on an entity that does not exist creates it: the fields you do not mention get the zero value of their type (`0`, `''`, `false`, `null` for nullable fields). An update that sets every field with a plain value replaces the whole entity and is treated exactly like an `upsert`. Updates cannot target list fields or fields declared with `@derivedFrom`, and they are rejected for immutable entities (`@entity(immutable: true)` and timeseries entities): an update corrects the previous version, which an immutable entity must not have, so use `upsert` (or set every field) there.
 
 #### Expressions
 
