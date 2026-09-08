@@ -299,34 +299,88 @@ await User.update({
 })
 ```
 
-- `add(n)` and `multiply(n)` work on numeric fields and treat a missing previous value as `0`.
-- `expr('...')` sets the field to the result of an expression evaluated against the previous version of the entity. The expression can reference any field of the same entity by its schema name, so a field can be computed from other fields.
+An update carries one operation per field:
 
-Expressions support:
+| Operation | Effect | Field types | When the entity does not exist yet |
+| --- | --- | --- | --- |
+| plain value | replaces the value | any | the value is stored |
+| `add(n)` | `field = field + n` | numeric | the previous value counts as `0` |
+| `multiply(n)` | `field = field * n` | numeric | the previous value counts as `0` |
+| `expr('...')` | `field = <expression>` | any non-list field | field references are `null`, see below |
 
-| Syntax | Meaning |
+An update on an entity that does not exist creates it: the fields you do not mention get the zero value of their type (`0`, `''`, `false`, `null` for nullable fields). Updates cannot target list fields or fields declared with `@derivedFrom`.
+
+#### Expressions
+
+`expr('...')` sets the field to the result of an expression that the server evaluates against the **previous version of the entity**, that is, the entity as it was right before this update, including the effect of earlier `upsert` and `update` calls in the same block. All expressions of one `update` call read the same previous version, so their order inside the call does not matter and a field can be computed from the old value of another field that the same call replaces.
+
+Any error in an expression is reported when the update is sent, from the `update` call in your handler: unknown fields, type mismatches, wrong argument counts and division by a literal zero are all rejected before anything is stored. The only errors that can occur later, when the entity is stored, are a division by a value that turns out to be zero and a `null` result for a non-null field.
+
+**Types.** Every value has one of these types, determined from the schema before the expression runs:
+
+| Expression type | Schema field types | Literals |
+| --- | --- | --- |
+| integer | `Int`, `Int8`, `BigInt`, `Timestamp` (microseconds) | digits only: `0`, `42`, `-7` |
+| number | `Float`, `BigDecimal` | with a decimal point or exponent: `1.5`, `-0.25`, `1e18` |
+| string | `String`, `ID`, `Bytes` (as `0x…` hex), enums, references to other entities (the id) | single quotes: `'abc'`, `'it\'s'` |
+| boolean | `Boolean` | `true`, `false` |
+| null | — | `null` |
+
+An integer is accepted wherever a number is; the result of mixing the two is a number. Typing is strict otherwise: strings, numbers and booleans never convert into each other, so `'a' + 1`, `count and flag`, `name > 1` or `if(count, 1, 2)` are rejected. Use `toString` and `concat` to build strings from other values.
+
+The result of the expression must match the type of the target field: a number (including the result of `/`) may be stored into an integer field, in which case it is rounded half away from zero (`2.5` becomes `3`, `-2.5` becomes `-3`); anything else must be the same type as the field, or `null`.
+
+**Field references.** Write the name of the field exactly as declared in the schema (names are case sensitive). Fields with a list type or declared with `@derivedFrom` cannot be referenced. A field named `and`, `or`, `not` or `div` cannot be referenced either, those words are operators. Every field reference is `null` when the entity does not exist yet.
+
+**Operators**, from the loosest to the tightest binding; use parentheses to override:
+
+| Precedence | Operators | Operands | Result |
+| --- | --- | --- | --- |
+| 1 (loosest) | `or` | boolean, boolean | boolean |
+| 2 | `and` | boolean, boolean | boolean |
+| 3 | `not` | boolean | boolean |
+| 4 | `=`, `!=` | two values of the same type | boolean |
+| 4 | `>`, `>=`, `<`, `<=` | two numbers or two strings (byte-wise order) | boolean |
+| 5 | `+`, `-` | numbers | integer when both sides are integers, otherwise number |
+| 6 (tightest) | `*` | numbers | integer when both sides are integers, otherwise number |
+| 6 | `/` | numbers | number (decimal division, never truncated) |
+| 6 | `div` | integers | integer (integer division, truncated toward zero: `7 div 2` is `3`, `-7 div 2` is `-3`) |
+
+So `not a = b` means `not (a = b)`, `not a and b` means `(not a) and b`, and `a + 1 > b * 2 and c` means `((a + 1) > (b * 2)) and c`. Operators binding at the same level associate to the left. A unary minus only applies to number literals (`-1`, `-2.5`); write `0 - x` to negate a field.
+
+**Functions.** Function names are case insensitive:
+
+| Function | Result |
 | --- | --- |
-| `+ - * /`, `( )` | arithmetic on numeric fields; `/` is decimal division, rounded (half away from zero) when stored into an integer field |
-| `a div b` | integer division, truncating toward zero; both sides must be integers (`Int`, `Int8`, `BigInt`, `Timestamp` fields or digit-only literals) |
-| `1`, `-2.5`, `1e18`, `'abc'`, `true`, `false`, `null` | literals |
-| `=`, `!=`, `>`, `>=`, `<`, `<=` | comparison of numbers or strings |
-| `a and b`, `a or b`, `not a` | logic; `not` binds tighter than `and` / `or` and looser than a comparison |
-| `exist()` | `true` when the entity already has a previous version |
-| `isNull(x)` | `true` when `x` evaluates to `null` |
-| `coalesce(a, b, ...)` | the first argument that is not `null` |
-| `if(cond, a, b)` | `a` when `cond` is `true`, otherwise `b` |
+| `exist()` | `true` when the entity already has a previous version, `false` when this update creates it |
+| `isNull(x)` | `true` when `x` evaluates to `null` (so `isNull(field)` is `true` for a new entity) |
+| `coalesce(a, b, ...)` | the first argument that is not `null`, `null` when all are; all arguments must have the same type |
+| `if(cond, a, b)` | `a` when `cond` is `true`, otherwise `b` (a `null` condition counts as `false`); `a` and `b` must have the same type |
+| `concat(a, b, ...)` | the strings joined together; every argument must be a string |
+| `toString(x)` | the value as a string: numbers in their shortest decimal form (`10`, `2.5`, `1000000000000000`), booleans as `true` / `false`, strings unchanged |
 
-Typing is strict: numbers, strings and booleans never convert into each other, so `'a' + 1`, `count and flag` or `name > 1` are rejected when the update is sent. Null handling follows SQL: a field reference is `null` when the entity does not exist yet, arithmetic or comparisons with a `null` operand are `null`, `and` / `or` use three-valued logic, and `if` treats a `null` condition as `false`. Storing `null` into a non-null field fails the update, so guard fields that may be written for the first time:
+`if` and `coalesce` only evaluate the branches they need, so `if(count = 0, 0, total / count)` never divides by zero.
+
+**Null.** Null follows SQL rules:
+
+- a field reference is `null` when the entity does not exist yet, or when a nullable field holds `null`;
+- `+`, `-`, `*`, `/`, `div`, every comparison, `concat` and `toString` return `null` as soon as one operand is `null`;
+- `and` and `or` use three-valued logic: `false and null` is `false`, `true or null` is `true`, `true and null` and `false or null` are `null`; `not null` is `null`;
+- `if` treats a `null` condition as `false`; `coalesce` skips `null` arguments; `isNull` and `exist` never return `null`;
+- storing `null` into a non-null field fails the update, so guard fields that may be written for the first time:
 
 ```typescript
 await User.update({
   id,
   balance: expr('coalesce(balance, 0) + amount'),
-  updates: expr('if(exist(), updates + 1, 1)')
+  updates: expr('if(exist(), updates + 1, 1)'),
+  label: expr("concat(coalesce(label, ''), '|', toString(amount))")
 })
 ```
 
 Only `expr` sees a missing entity as `null`; `add` and `multiply` keep treating it as `0`.
+
+**Arithmetic precision.** Every numeric type is computed with exact decimal arithmetic regardless of the field type, so `BigInt` and `BigDecimal` fields never lose precision inside an expression; `Float` values are converted from their decimal representation. Division by zero is an error: `x / 0` and `x div 0` are rejected when the update is sent, `x / y` with `y` equal to `0` fails when the entity is stored, and a `null` divisor yields `null` instead.
 
 ### Get entity by ID
 
