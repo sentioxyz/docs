@@ -295,7 +295,7 @@ await User.update({
   transfers: add(1),             // transfers = transfers + 1
   score: multiply(0.9),          // score = score * 0.9
   balance: expr('balance - amount'),
-  status: expr("if(gt(balance, 0), 'active', 'idle')")
+  status: expr("if(balance > 0, 'active', 'idle')")
 })
 ```
 
@@ -308,8 +308,8 @@ Expressions support:
 | --- | --- |
 | `+ - * /`, `( )` | arithmetic on numeric fields; `/` is decimal division, rounded for integer fields |
 | `1`, `-2.5`, `1e18`, `'abc'`, `true`, `false`, `null` | literals |
-| `eq(a, b)`, `ne(a, b)`, `gt(a, b)`, `gte(a, b)`, `lt(a, b)`, `lte(a, b)` | comparison of numbers or strings |
-| `a and b`, `a or b`, `not a` | logic |
+| `=`, `!=`, `>`, `>=`, `<`, `<=` | comparison of numbers or strings |
+| `a and b`, `a or b`, `not a` | logic; `not` binds tighter than `and` / `or` and looser than a comparison |
 | `exist()` | `true` when the entity already has a previous version |
 | `isNull(x)` | `true` when `x` evaluates to `null` |
 | `coalesce(a, b, ...)` | the first argument that is not `null` |
