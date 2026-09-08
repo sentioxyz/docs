@@ -281,6 +281,52 @@ ERC20Processor.onEventTransfer(
 )
 ```
 
+### Partial update
+
+`ctx.store.upsert` replaces the whole entity. When you only want to change a few fields of an entity that already exists, or when several handlers change the same entity, use `update` (also available as a static method on every generated entity class). Fields you do not mention keep their latest value, and the update is applied on the server, so no `get` round trip is needed:
+
+```typescript
+import { User } from './schema/schema.js'
+import { add, multiply, expr } from '@sentio/sdk/store'
+
+await User.update({
+  id: event.args.from,
+  name: 'alice',                 // set
+  transfers: add(1),             // transfers = transfers + 1
+  score: multiply(0.9),          // score = score * 0.9
+  balance: expr('balance - amount'),
+  status: expr("if(gt(balance, 0), 'active', 'idle')")
+})
+```
+
+- `add(n)` and `multiply(n)` work on numeric fields and treat a missing previous value as `0`.
+- `expr('...')` sets the field to the result of an expression evaluated against the previous version of the entity. The expression can reference any field of the same entity by its schema name, so a field can be computed from other fields.
+
+Expressions support:
+
+| Syntax | Meaning |
+| --- | --- |
+| `+ - * /`, `( )` | arithmetic on numeric fields; `/` is decimal division, rounded for integer fields |
+| `1`, `-2.5`, `1e18`, `'abc'`, `true`, `false`, `null` | literals |
+| `eq(a, b)`, `ne(a, b)`, `gt(a, b)`, `gte(a, b)`, `lt(a, b)`, `lte(a, b)` | comparison of numbers or strings |
+| `a and b`, `a or b`, `not a` | logic |
+| `exist()` | `true` when the entity already has a previous version |
+| `isNull(x)` | `true` when `x` evaluates to `null` |
+| `coalesce(a, b, ...)` | the first argument that is not `null` |
+| `if(cond, a, b)` | `a` when `cond` is `true`, otherwise `b` |
+
+Null handling follows SQL: a field reference is `null` when the entity does not exist yet, arithmetic or comparisons with a `null` operand are `null`, `and` / `or` use three-valued logic, and `if` treats a `null` condition as `false`. Storing `null` into a non-null field fails the update, so guard fields that may be written for the first time:
+
+```typescript
+await User.update({
+  id,
+  balance: expr('coalesce(balance, 0) + amount'),
+  updates: expr('if(exist(), updates + 1, 1)')
+})
+```
+
+Only `expr` sees a missing entity as `null`; `add` and `multiply` keep treating it as `0`.
+
 ### Get entity by ID
 
 To retrieve an entity by its ID, you can use the `ctx.store.get` method. The following is an example of retrieving a user by its ID:
