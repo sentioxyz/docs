@@ -306,7 +306,8 @@ Expressions support:
 
 | Syntax | Meaning |
 | --- | --- |
-| `+ - * /`, `( )` | arithmetic on numeric fields; `/` is decimal division, rounded for integer fields |
+| `+ - * /`, `( )` | arithmetic on numeric fields; `/` is decimal division, rounded (half away from zero) when stored into an integer field |
+| `a div b` | integer division, truncating toward zero; both sides must be integers (`Int`, `Int8`, `BigInt`, `Timestamp` fields or digit-only literals) |
 | `1`, `-2.5`, `1e18`, `'abc'`, `true`, `false`, `null` | literals |
 | `=`, `!=`, `>`, `>=`, `<`, `<=` | comparison of numbers or strings |
 | `a and b`, `a or b`, `not a` | logic; `not` binds tighter than `and` / `or` and looser than a comparison |
@@ -315,7 +316,7 @@ Expressions support:
 | `coalesce(a, b, ...)` | the first argument that is not `null` |
 | `if(cond, a, b)` | `a` when `cond` is `true`, otherwise `b` |
 
-Null handling follows SQL: a field reference is `null` when the entity does not exist yet, arithmetic or comparisons with a `null` operand are `null`, `and` / `or` use three-valued logic, and `if` treats a `null` condition as `false`. Storing `null` into a non-null field fails the update, so guard fields that may be written for the first time:
+Typing is strict: numbers, strings and booleans never convert into each other, so `'a' + 1`, `count and flag` or `name > 1` are rejected when the update is sent. Null handling follows SQL: a field reference is `null` when the entity does not exist yet, arithmetic or comparisons with a `null` operand are `null`, `and` / `or` use three-valued logic, and `if` treats a `null` condition as `false`. Storing `null` into a non-null field fails the update, so guard fields that may be written for the first time:
 
 ```typescript
 await User.update({
