@@ -330,7 +330,7 @@ An integer is accepted wherever a number is; the result of mixing the two is a n
 
 The result of the expression must match the type of the target field: a number (including the result of `/`) may be stored into an integer field, in which case it is rounded half away from zero (`2.5` becomes `3`, `-2.5` becomes `-3`); anything else must be the same type as the field, or `null`.
 
-**Field references.** Write the name of the field exactly as declared in the schema (names are case sensitive). Fields with a list type or declared with `@derivedFrom` cannot be referenced. A field named `and`, `or`, `not` or `div` cannot be referenced either, those words are operators. Every field reference is `null` when the entity does not exist yet.
+**Field references.** Write the name of the field exactly as declared in the schema (names are case sensitive). Fields with a list type or declared with `@derivedFrom` cannot be referenced. A field named `and`, `or`, `not`, `div`, `true`, `false` or `null` cannot be referenced either, those words are operators and literals. Every field reference is `null` when the entity does not exist yet.
 
 **Operators**, from the loosest to the tightest binding; use parentheses to override:
 
