@@ -1,0 +1,61 @@
+name: SDK Reference version
+
+# Pins each new stable @sentio/sdk release (npm `latest`; rc releases use other dist-tags) in
+# scripts/sdk-docs, with the @typemove versions that release pins, then starts the test deploy,
+# whose build regenerates the SDK Reference tab. Production is released manually as usual.
+on:
+  schedule:
+    # Daily, 02:17 UTC (10:17 Beijing)
+    - cron: '17 2 * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: sdk-version
+
+permissions:
+  contents: write
+  # gh workflow run: pushes made with GITHUB_TOKEN do not trigger the push-based deploy
+  actions: write
+
+jobs:
+  bump:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: scripts/sdk-docs/package-lock.json
+
+      - id: check
+        run: |
+          latest=$(npm view @sentio/sdk dist-tags.latest)
+          pinned=$(node -p "require('./scripts/sdk-docs/package.json').devDependencies['@sentio/sdk']")
+          echo "latest=$latest" >> "$GITHUB_OUTPUT"
+          if [ "$latest" = "$pinned" ]; then
+            echo "@sentio/sdk $pinned is current"
+          else
+            echo "bump=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - if: steps.check.outputs.bump
+        working-directory: scripts/sdk-docs
+        run: npm install --save-dev --save-exact --no-audit --no-fund "@sentio/sdk@${{ steps.check.outputs.latest }}"
+
+      # Nothing is pushed when the new release does not generate
+      - if: steps.check.outputs.bump
+        run: node scripts/generate-sdk.mjs
+
+      - if: steps.check.outputs.bump
+        env:
+          GH_TOKEN: ${{ github.token }}
+          VERSION: ${{ steps.check.outputs.latest }}
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -am "chore(sdk-docs): pin @sentio/sdk $VERSION"
+          git push
+          gh workflow run deploy.yml --ref main

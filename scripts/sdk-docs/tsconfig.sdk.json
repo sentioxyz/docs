@@ -1,0 +1,51 @@
+{
+  // Both packages ship their src/. Resolve @sentio/sdk's self-imports (@sentio/sdk/move, ...) and
+  // the @typemove packages to that src rather than to dist/*.d.ts, so references resolve to the
+  // declarations TypeDoc documents
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "skipLibCheck": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "paths": {
+      "@sentio/sdk/*": [
+        "./node_modules/@sentio/sdk/src/*/index.ts"
+      ],
+      "@typemove/move": [
+        "./node_modules/@typemove/move/src/index.ts"
+      ],
+      "@typemove/move/*": [
+        "./node_modules/@typemove/move/src/*"
+      ],
+      "@typemove/aptos": [
+        "./node_modules/@typemove/aptos/src/index.ts"
+      ],
+      "@typemove/aptos/*": [
+        "./node_modules/@typemove/aptos/src/*"
+      ],
+      "@typemove/sui": [
+        "./node_modules/@typemove/sui/src/index.ts"
+      ],
+      "@typemove/sui/*": [
+        "./node_modules/@typemove/sui/src/*"
+      ],
+      "@typemove/iota": [
+        "./node_modules/@typemove/iota/src/index.ts"
+      ],
+      "@typemove/iota/*": [
+        "./node_modules/@typemove/iota/src/*"
+      ]
+    }
+  },
+  "include": [
+    "node_modules/@sentio/sdk/src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules/@sentio/sdk/src/**/tests/**",
+    "node_modules/@sentio/sdk/src/**/*.test.ts"
+  ]
+}

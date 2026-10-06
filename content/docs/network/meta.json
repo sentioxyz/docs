@@ -1,0 +1,15 @@
+{
+  "title": "Sentio Network",
+  "description": "A decentralized network for Sentio's storage and processor layers",
+  "root": true,
+  "pagesIndex": "index",
+  "pages": [
+    "index",
+    "litepaper",
+    "compute-network",
+    "storage-network",
+    "network-participation",
+    "token-economy",
+    "access-the-network"
+  ]
+}

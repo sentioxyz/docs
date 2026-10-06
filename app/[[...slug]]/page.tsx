@@ -1,0 +1,109 @@
+import { openapi, source } from '@/lib/source';
+import { OpenAPIPage } from '@/components/openapi-page';
+import {
+  DocsBody,
+  DocsDescription,
+  DocsPage,
+  DocsTitle,
+  MarkdownCopyButton,
+  ViewOptionsPopover,
+} from 'fumadocs-ui/layouts/docs/page';
+import { notFound } from 'next/navigation';
+import { getMDXComponents } from '@/components/mdx';
+import type { Metadata } from 'next';
+import { createRelativeLink } from 'fumadocs-ui/mdx';
+import type { ComponentProps } from 'react';
+import {
+  SITE_DESCRIPTION,
+  basePath,
+  getPageImageUrl,
+  getPageMarkdownUrl,
+  isSdkUrl,
+} from '@/lib/shared';
+
+export default async function Page(props: PageProps<'/[[...slug]]'>) {
+  const params = await props.params;
+  const page = source.getPage(params.slug);
+  if (!page) notFound();
+
+  const MDX = page.data.body;
+  const RelativeLink = createRelativeLink(source, page);
+  const markdownUrl = getPageMarkdownUrl(page).url;
+  const preloaded = (page.data as { _openapi?: unknown })._openapi
+    ? await openapi.preloadOpenAPIPage(page)
+    : undefined;
+
+  return (
+    <DocsPage toc={page.data.toc} full={page.data.full}>
+      <header className="flex flex-col gap-3 border-b pb-6">
+        {/* Page actions sit to the right of the title and wrap below it on narrow screens */}
+        <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-3">
+          <DocsTitle className="min-w-0">{page.data.title}</DocsTitle>
+          <div className="flex shrink-0 flex-row items-center gap-2">
+            <MarkdownCopyButton markdownUrl={markdownUrl} />
+            <ViewOptionsPopover />
+          </div>
+        </div>
+        <DocsDescription className="mb-0">{page.data.description}</DocsDescription>
+      </header>
+      <DocsBody>
+        <MDX
+          components={getMDXComponents({
+            // this allows you to link to other pages with relative file paths; SDK Reference pages
+            // are the other build's (see lib/shared.ts), so a plain link loads them
+            a: (props: ComponentProps<'a'>) =>
+              props.href && isSdkUrl(props.href) ? (
+                <a {...props} href={`${basePath}${props.href}`} />
+              ) : (
+                <RelativeLink {...props} />
+              ),
+            ...(preloaded
+              ? {
+                  OpenAPIPage: (p: Record<string, unknown>) => {
+                    const merged = {
+                      ...p,
+                      ...preloaded,
+                    } as Parameters<typeof OpenAPIPage>[0];
+                    return <OpenAPIPage {...merged} />;
+                  },
+                }
+              : {}),
+          })}
+        />
+      </DocsBody>
+    </DocsPage>
+  );
+}
+
+export async function generateStaticParams() {
+  return source.generateParams();
+}
+
+export async function generateMetadata(props: PageProps<'/[[...slug]]'>): Promise<Metadata> {
+  const params = await props.params;
+  const page = source.getPage(params.slug);
+  if (!page) notFound();
+
+  const title = page.data.title;
+  // Pages without a frontmatter description would otherwise emit no description/og:description at all
+  const description = page.data.description ?? SITE_DESCRIPTION;
+  const image = getPageImageUrl(page).url;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      type: 'article',
+      siteName: 'Sentio Docs',
+      title,
+      description,
+      images: [{ url: image, width: 1200, height: 630, alt: title }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title,
+      description,
+      images: [image],
+    },
+  };
+}

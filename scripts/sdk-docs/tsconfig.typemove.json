@@ -1,0 +1,47 @@
+{
+  // @typemove/aptos etc. import @typemove/move: resolve it to its src/, which TypeDoc documents,
+  // rather than to dist/*.d.ts
+  "compilerOptions": {
+    "target": "es2022",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
+    "strict": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "noEmit": true,
+    "paths": {
+      "@typemove/move": [
+        "./node_modules/@typemove/move/src/index.ts"
+      ],
+      "@typemove/move/*": [
+        "./node_modules/@typemove/move/src/*"
+      ],
+      "@typemove/aptos": [
+        "./node_modules/@typemove/aptos/src/index.ts"
+      ],
+      "@typemove/aptos/*": [
+        "./node_modules/@typemove/aptos/src/*"
+      ],
+      "@typemove/sui": [
+        "./node_modules/@typemove/sui/src/index.ts"
+      ],
+      "@typemove/sui/*": [
+        "./node_modules/@typemove/sui/src/*"
+      ],
+      "@typemove/iota": [
+        "./node_modules/@typemove/iota/src/index.ts"
+      ],
+      "@typemove/iota/*": [
+        "./node_modules/@typemove/iota/src/*"
+      ]
+    }
+  },
+  "include": [
+    "node_modules/@typemove/*/src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules/@typemove/*/src/**/tests/**",
+    "node_modules/@typemove/*/src/**/*.test.ts",
+    "node_modules/@typemove/*/src/codegen/**"
+  ]
+}

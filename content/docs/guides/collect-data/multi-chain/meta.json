@@ -1,0 +1,12 @@
+{
+  "title": "🪙 Chain Specifics",
+  "pages": [
+    "evm",
+    "aptos",
+    "sui",
+    "iota",
+    "solana",
+    "fuel",
+    "other-networks"
+  ]
+}
