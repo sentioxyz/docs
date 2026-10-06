@@ -51,6 +51,11 @@ function describe(status: number, reason?: string): string {
         : 'The assistant is still answering the previous question. Please wait a moment.';
     case 413:
       return 'Your message is too long. Please shorten it and try again.';
+    case 422:
+      // The agent's API gate judged the question off-topic for the docs assistant
+      return reason === 'declined'
+        ? 'The docs assistant only answers questions about Sentio. Please ask about Sentio features, the SDK, or the API.'
+        : 'The docs assistant could not answer right now. Please try again.';
     case 429:
       return 'Too many questions in a short time. Please wait a minute and try again.';
     case 503:
@@ -62,7 +67,7 @@ function describe(status: number, reason?: string): string {
 
 function errorResponse(status: number, message = describe(status)) {
   // Collapse internal failures (bad key, unknown agent, ...) into a 502
-  const out = [400, 404, 409, 413, 429, 503].includes(status) ? status : 502;
+  const out = [400, 404, 409, 413, 422, 429, 503].includes(status) ? status : 502;
   return new Response(message, {
     status: out,
     headers: { 'content-type': 'text/plain; charset=utf-8', 'cache-control': 'no-store' },
