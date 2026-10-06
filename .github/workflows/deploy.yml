@@ -20,6 +20,9 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    env:
+      # Inlined at build time (metadataBase, OG image URLs); also part of the SDK export's cache key
+      NEXT_PUBLIC_SITE_URL: https://website-test.sentio.xyz
     environment:
       name: test
       url: https://website-test.sentio.xyz/docs
@@ -37,18 +40,19 @@ jobs:
 
       - run: npm ci
 
-      # The SDK Reference's static export (~3.5 min) is rebuilt only when its inputs change: the
-      # files below must match EXPORT_PATHS and generatorHash() in scripts/sdk-inputs.mjs, which
-      # verifies the restored export and rebuilds it on any mismatch
+      # The SDK Reference's static export (~3.5 min) is rebuilt only when its inputs change:
+      # scripts/sdk-inputs.mjs hashes the generator, the files the SDK build imports and its config,
+      # and build-sdk.mjs checks the restored export against the same hash
+      - id: sdk-inputs
+        run: echo "hash=$(node scripts/sdk-inputs.mjs)" >> "$GITHUB_OUTPUT"
+
       - uses: actions/cache@v6
         with:
           path: .next-sdk
-          key: sdk-export-test-${{ hashFiles('scripts/sdk-docs/package-lock.json', 'scripts/sdk-docs/generate.mjs', 'scripts/sdk-docs/tsconfig.*.json', 'scripts/sdk-docs/*.md', 'app/**', 'components/**', 'lib/**', 'public/**', 'patches/**', 'next.config.mjs', 'postcss.config.mjs', 'package-lock.json', 'scripts/build-sdk.mjs', 'scripts/sdk-inputs.mjs') }}
+          key: sdk-export-test-${{ steps.sdk-inputs.outputs.hash }}
 
       - name: Build and deploy
         run: npm run deploy
         env:
-          # Inlined at build time (metadataBase, OG image URLs)
-          NEXT_PUBLIC_SITE_URL: https://website-test.sentio.xyz
           CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
