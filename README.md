@@ -87,7 +87,8 @@ npm run dev:sdk     # dev server for the SDK pages only, on port 3001
 ```
 
 `sdk-version.yml` pins each new stable `@sentio/sdk` daily. The deploy workflows cache
-`.next-sdk`, so a deploy rebuilds it only when the SDK version or the site code changes.
+`.next-sdk`, keyed by `scripts/sdk-inputs.mjs`: a deploy rebuilds it only when the SDK version,
+the files the SDK pages import (`node scripts/sdk-inputs.mjs --files`) or the build config change.
 
 ## Deploy
 
