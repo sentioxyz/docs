@@ -1,6 +1,6 @@
 ---
 title: "🤖 Connect your assistant"
-description: "Add Sentio Connect to Claude, ChatGPT, Codex, Grok or any MCP client"
+description: "Add Sentio Connect to Claude, ChatGPT, Codex, Grok, Cursor, VS Code or any MCP client"
 ---
 
 import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
@@ -13,7 +13,7 @@ https://connect.sentio.xyz/v1/mcp
 
 You never paste an API key. The first time your assistant connects, it sends you to the Sentio Connect consent page, where you sign in (if you aren't already) and click **Allow connection**.
 
-<Tabs items={['Claude', 'ChatGPT', 'Grok', 'Other MCP clients']} updateAnchor>
+<Tabs items={['Claude', 'ChatGPT', 'Codex', 'Grok', 'Cursor', 'VS Code', 'Other MCP clients']} updateAnchor>
 <Tab value="Claude" id="claude">
 
 Works in Claude on the web, Claude Desktop and the Claude mobile apps.
@@ -41,21 +41,17 @@ Claude renders token balances and DeFi positions as interactive cards. Click a r
 
 Like Claude, ChatGPT shows token balances and DeFi positions as interactive cards.
 
-### Codex
+</Tab>
+<Tab value="Codex" id="codex">
 
-Point Codex straight at the server and log in:
+Point Codex at the server and log in:
 
 ```bash
 codex mcp add sentio --url https://connect.sentio.xyz/v1/mcp
 codex mcp login sentio
 ```
 
-Or install the Sentio Connect plugin, which bundles the server entry with a skill that teaches Codex when to use each tool:
-
-```text
-/plugin marketplace add sentioxyz/sentio-connector
-/plugin install sentio-connector@sentio
-```
+`codex mcp login` opens the Sentio Connect consent page in your browser. Click **Allow connection**.
 
 Codex doesn't render interactive cards; tool results appear as text.
 
@@ -70,6 +66,41 @@ Codex doesn't render interactive cards; tool results appear as text.
 4. Grok discovers the Sentio tools automatically. Enable the connector in a conversation and ask a question about your wallets.
 
 On Grok Business and Enterprise, an admin may need to allow custom connectors first.
+
+</Tab>
+<Tab value="Cursor" id="cursor">
+
+[**Add to Cursor**](https://cursor.com/en/install-mcp?name=sentio&config=eyJ1cmwiOiJodHRwczovL2Nvbm5lY3Quc2VudGlvLnh5ei92MS9tY3AifQ%3D%3D) installs the server in one click. To add it by hand, put this in `~/.cursor/mcp.json` (all projects) or `.cursor/mcp.json` (one project):
+
+```json
+{
+  "mcpServers": {
+    "sentio": {
+      "url": "https://connect.sentio.xyz/v1/mcp"
+    }
+  }
+}
+```
+
+Then open the MCP section of **Cursor Settings** and click the sign-in button next to `sentio`. On the Sentio Connect consent page, click **Allow connection**.
+
+</Tab>
+<Tab value="VS Code" id="vs-code">
+
+[**Install in VS Code**](https://vscode.dev/redirect/mcp/install?name=sentio&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Fconnect.sentio.xyz%2Fv1%2Fmcp%22%7D) adds the server to your user settings in one click. To add it by hand, run **MCP: Add Server** from the Command Palette, choose **HTTP**, and enter `https://connect.sentio.xyz/v1/mcp`. Or put this in `.vscode/mcp.json`:
+
+```json
+{
+  "servers": {
+    "sentio": {
+      "type": "http",
+      "url": "https://connect.sentio.xyz/v1/mcp"
+    }
+  }
+}
+```
+
+When you start the server, VS Code asks to sign in. On the Sentio Connect consent page, click **Allow connection**. The Sentio tools are then available in Copilot Chat's agent mode.
 
 </Tab>
 <Tab value="Other MCP clients" id="other-mcp-clients">
@@ -97,6 +128,14 @@ Clients that only support local (stdio) servers can bridge with [`mcp-remote`](h
 
 </Tab>
 </Tabs>
+
+## Find Sentio Connect in MCP directories
+
+Sentio Connect is also listed in these directories, under the same server URL:
+
+- [Official MCP Registry](https://registry.modelcontextprotocol.io/v0/servers?search=xyz.sentio): `xyz.sentio/connect`. Clients and directories that read the registry pick it up from here.
+- [Smithery](https://smithery.ai/servers/sentio/connect)
+- [Glama](https://glama.ai/mcp/connectors/xyz.sentio/connect)
 
 ## Read-only vs. read-write connections
 
