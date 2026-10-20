@@ -75,7 +75,7 @@ SDK 4.0 also modernizes the build toolchain and trims custom forks:
    pnpm add @sentio/sdk@^4.0.0 @sentio/cli@^4.0.0
    ```
 2. **Upgrade to Node.js 24+.**
-3. **Rebuild, re-test, and re-upload** your processor:
+3. **Rebuild, re-test, and re-upload** your processor as a new version (without `--continue-from`, see below):
    ```bash
    sentio build
    sentio test
@@ -85,8 +85,8 @@ SDK 4.0 also modernizes the build toolchain and trims custom forks:
 
 ### Do you need to re-index?
 
-* **Upgrading from SDK 3.x → 4.0:** No re-index required. The upgrade is **[hot-swappable](/cli-reference#sentio-upload)** — upload your 4.0 processor and it continues from where your existing version left off.
-* **Upgrading from SDK 2.x → 4.0:** A **full re-index is required**. The data model changed in SDK 3.0, so 2.x processors cannot hot-swap to 4.0 and must re-index from your configured start block. Please take a look at [v3 change](/changelog/sentio-sdk-30-released) log for more details.&#x20;
+* **Yes, a full re-index is required — from SDK 3.x as well as 2.x.** Upload your 4.0 processor as a new version, **without** `--continue-from`, and it re-indexes from your configured start block. `--continue-from` keeps the existing version's data pipeline, which a 4.0 processor cannot run on, so it only works for updates within the same major SDK version.
+* **Upgrading from SDK 2.x → 4.0:** the data model also changed in SDK 3.0; take a look at the [v3 changelog](/changelog/sentio-sdk-30-released) for details.
 * **What's the cost:&#x20;**&#x41;t Sentio, backfill data is always **free**, cost will generated after catching up. More on [Billing.](/quotas-and-limits) &#x20;
 
 ## 💬 Feedback & Support
