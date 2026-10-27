@@ -68,6 +68,58 @@ Click any node to access its detailed configuration page, where you can:
 * **Copy Full Endpoint URL**: Your unique RPC endpoint for integration with Web3 applications, SDKs (Ethers.js, Aptos SDK), or direct API calls
 * **Toggle Node Status**: Enable or disable your RPC node as needed
 
+### Connecting over gRPC
+
+Networks that expose a native gRPC API (currently **Sui Mainnet** and **Sui Testnet**) can also be reached over gRPC. When a network supports it, the node page shows a **gRPC Endpoint** and a `grpcurl` example next to the HTTP endpoint.
+
+gRPC uses a different addressing scheme from JSON-RPC, because the URL path of a gRPC request is always the method name (for example `/sui.rpc.v2.LedgerService/GetServiceInfo`):
+
+| | JSON-RPC | gRPC |
+| --- | --- | --- |
+| **Endpoint** | `https://sui.rpc.sentio.xyz/<your-node-id>` | `sui.rpc.sentio.xyz:443` (TLS) |
+| **Network** | Selected by the subdomain | Selected by the subdomain, e.g. `sui` or `sui-testnet` |
+| **Node ID** | Part of the URL path | Sent as the `x-endpoint-id` request metadata header |
+
+<Callout type="warn">
+Do not append the node ID to the gRPC endpoint. A request such as `sui.rpc.sentio.xyz/<your-node-id>` fails with `UNIMPLEMENTED`; the node ID must be sent in the `x-endpoint-id` header instead.
+</Callout>
+
+Requests without the `x-endpoint-id` header are served as anonymous requests: they are not attributed to your node, so they do not show up in its usage, logs, or cost.
+
+Server reflection is enabled, so `grpcurl` can discover services without local proto files:
+
+```bash
+# List the available services
+grpcurl -H "x-endpoint-id: <your-node-id>" sui.rpc.sentio.xyz:443 list
+
+# Call a method
+grpcurl -H "x-endpoint-id: <your-node-id>" -d '{}' \
+  sui.rpc.sentio.xyz:443 sui.rpc.v2.LedgerService/GetServiceInfo
+```
+
+In application code, attach the header to every call. For example, in Go:
+
+```go
+conn, err := grpc.NewClient("sui.rpc.sentio.xyz:443",
+	grpc.WithTransportCredentials(credentials.NewTLS(&tls.Config{})))
+if err != nil {
+	return err
+}
+ctx = metadata.AppendToOutgoingContext(ctx, "x-endpoint-id", "<your-node-id>")
+info, err := rpcv2.NewLedgerServiceClient(conn).GetServiceInfo(ctx, &rpcv2.GetServiceInfoRequest{})
+```
+
+Streaming methods such as `SubscriptionService/SubscribeCheckpoints` are supported as well.
+
+Common errors:
+
+| gRPC status | Meaning |
+| --- | --- |
+| `NOT_FOUND` (5) `rpc node <id> not found` | The node ID is wrong, or the node is disabled |
+| `NOT_FOUND` (5) `no grpc endpoint configured for chain` | The network does not offer gRPC; use its JSON-RPC endpoint |
+| `PERMISSION_DENIED` (7) | The network is not enabled for this node |
+| `UNIMPLEMENTED` (12) | The request path is not a gRPC method, usually because the node ID was put in the URL |
+
 ***
 
 ## Monitoring & Analytics
