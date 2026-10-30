@@ -71,7 +71,7 @@ Testing your processor logic locally before deployment is crucial for catching b
 ### Test Setup
 
 * **Test Files:** Tests are typically placed in files ending with `.test.ts` (e.g., `src/processor.test.ts`).
-* **Node.js Version:** Requires Node.js version 22 or higher for the native test runner.
+* **Node.js Version:** Requires Node.js version 26 or higher.
 * **Test Server:** The core component is `TestProcessorServer` from `@sentio/sdk/testing`. It loads your processor code (specified by the import path to your compiled JS output, usually `processor.js` if your source is `processor.ts`) and provides methods to simulate blockchain events.
 
 ```typescript
