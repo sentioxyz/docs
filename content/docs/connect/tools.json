@@ -1,0 +1,632 @@
+{
+  "tools": [
+    {
+      "name": "get_wallet_balances",
+      "title": "Get wallet balances",
+      "capability": "balances",
+      "capabilityName": "Token balances",
+      "readOnly": true,
+      "destructive": false,
+      "description": "Native coin + token balances valued in USD, read from the Sentio portfolio API. `address` is a 0x EVM address, or a 64-hex Sui address for sui_mainnet. `chain` is one chain id or a list of them (each one of 1 Ethereum, 10 Optimism, 56 BNB Chain, 143 Monad, 8453 Base, 42161 Arbitrum, 43114 Avalanche, sui_mainnet Sui; one wallet is either EVM or Sui, so a list stays within one of those). Pass address + one chain for that wallet on that chain; address + a list of chains for the same wallet on each of them in one call; address alone for every chain of the address's kind (Ethereum, Optimism, BNB Chain, Monad, Base, Arbitrum, Avalanche for an EVM address; Sui for a Sui address); or no arguments for every wallet address you track, listing the chains each one holds tokens on. Token addresses are contract addresses on EVM chains and coin types (0x…::sui::SUI) on Sui. Across every tracked wallet, each wallet is read from its latest stored portfolio sample (the Sentio API samples tracked wallets hourly): such an entry says `source: \"sample\"` and gives its time as `asOf`. A wallet without a recent sample, and any Sui wallet (its stored history covers fewer protocols), is scanned live (`source: \"live\"`). For one wallet's current state, ask for it by address. An aggregate answers within about 40 s: a wallet it could not re-read in time is answered from its last live read of the past 15 minutes when there is one (`asOf` says when), and otherwise comes back with `pending: true`, `partial: true` and no figures, and the total is marked partial. Its scan keeps running, so asking again in a minute usually returns it — do not report a pending wallet as empty. The Sentio portfolio API answers within about 25 s: when it stops a scan before reading everything, or a chain or protocol read fails (for example the wallet token-balance provider), the result (and each affected entry) carries `partial: true` and `missing` lists the chains and protocols not read. Its values are then incomplete and can be too low or too high (an unread position is left out; a debt left unpriced overstates a net value) — say so, and retry later or ask for fewer chains rather than reporting them as complete.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "chain": {
+            "anyOf": [
+              {
+                "description": "Chain id: 1 Ethereum, 10 Optimism, 56 BNB Chain, 143 Monad, 8453 Base, 42161 Arbitrum, 43114 Avalanche, sui_mainnet Sui",
+                "title": "One chain",
+                "type": "string",
+                "oneOf": [
+                  {
+                    "type": "string",
+                    "title": "Ethereum",
+                    "enum": [
+                      "1"
+                    ]
+                  },
+                  {
+                    "type": "string",
+                    "title": "Optimism",
+                    "enum": [
+                      "10"
+                    ]
+                  },
+                  {
+                    "type": "string",
+                    "title": "BNB Chain",
+                    "enum": [
+                      "56"
+                    ]
+                  },
+                  {
+                    "type": "string",
+                    "title": "Monad",
+                    "enum": [
+                      "143"
+                    ]
+                  },
+                  {
+                    "type": "string",
+                    "title": "Base",
+                    "enum": [
+                      "8453"
+                    ]
+                  },
+                  {
+                    "type": "string",
+                    "title": "Arbitrum",
+                    "enum": [
+                      "42161"
+                    ]
+                  },
+                  {
+                    "type": "string",
+                    "title": "Avalanche",
+                    "enum": [
+                      "43114"
+                    ]
+                  },
+                  {
+                    "type": "string",
+                    "title": "Sui",
+                    "enum": [
+                      "sui_mainnet"
+                    ]
+                  }
+                ]
+              },
+              {
+                "minItems": 1,
+                "maxItems": 8,
+                "type": "array",
+                "items": {
+                  "description": "Chain id: 1 Ethereum, 10 Optimism, 56 BNB Chain, 143 Monad, 8453 Base, 42161 Arbitrum, 43114 Avalanche, sui_mainnet Sui",
+                  "type": "string",
+                  "oneOf": [
+                    {
+                      "type": "string",
+                      "title": "Ethereum",
+                      "enum": [
+                        "1"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "title": "Optimism",
+                      "enum": [
+                        "10"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "title": "BNB Chain",
+                      "enum": [
+                        "56"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "title": "Monad",
+                      "enum": [
+                        "143"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "title": "Base",
+                      "enum": [
+                        "8453"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "title": "Arbitrum",
+                      "enum": [
+                        "42161"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "title": "Avalanche",
+                      "enum": [
+                        "43114"
+                      ]
+                    },
+                    {
+                      "type": "string",
+                      "title": "Sui",
+                      "enum": [
+                        "sui_mainnet"
+                      ]
+                    }
+                  ]
+                },
+                "title": "Several chains"
+              }
+            ],
+            "description": "One or more chain ids, all EVM or all Sui: 1 Ethereum, 10 Optimism, 56 BNB Chain, 143 Monad, 8453 Base, 42161 Arbitrum, 43114 Avalanche, sui_mainnet Sui"
+          },
+          "address": {
+            "type": "string",
+            "maxLength": 255
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "get_token_price",
+      "title": "Get token price",
+      "capability": "prices",
+      "capabilityName": "Token prices",
+      "readOnly": true,
+      "destructive": false,
+      "description": "USD spot price for a token, by symbol (e.g. ETH, SUI) or by token address + chain (one of 1 Ethereum, 10 Optimism, 56 BNB Chain, 143 Monad, 8453 Base, 42161 Arbitrum, 43114 Avalanche, sui_mainnet Sui): a contract address on EVM chains, a coin type such as 0x2::sui::SUI on Sui.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 20
+          },
+          "address": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "chain": {
+            "description": "Chain id: 1 Ethereum, 10 Optimism, 56 BNB Chain, 143 Monad, 8453 Base, 42161 Arbitrum, 43114 Avalanche, sui_mainnet Sui",
+            "type": "string",
+            "oneOf": [
+              {
+                "type": "string",
+                "title": "Ethereum",
+                "enum": [
+                  "1"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "Optimism",
+                "enum": [
+                  "10"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "BNB Chain",
+                "enum": [
+                  "56"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "Monad",
+                "enum": [
+                  "143"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "Base",
+                "enum": [
+                  "8453"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "Arbitrum",
+                "enum": [
+                  "42161"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "Avalanche",
+                "enum": [
+                  "43114"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "Sui",
+                "enum": [
+                  "sui_mainnet"
+                ]
+              }
+            ]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "get_token_history_price",
+      "title": "Get historical token prices",
+      "capability": "prices",
+      "capabilityName": "Token prices",
+      "readOnly": true,
+      "destructive": false,
+      "description": "Historical USD prices for one token at 1–100 requested timestamps, without a wallet or tracked holding. Identify the token by symbol (e.g. ETH, SUI) or address + chain (one of 1 Ethereum, 10 Optimism, 56 BNB Chain, 143 Monad, 8453 Base, 42161 Arbitrum, 43114 Avalanche, sui_mainnet Sui; contract address on EVM, coin type on Sui). Pass timestamps as ISO 8601 date-times with Z or a timezone offset. Returns available price samples with their actual timestamps, which may differ from the requested instants; check those timestamps before using a quote. Missing samples are omitted, and an empty prices array means no historical prices were found, never a zero price.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "symbol": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 20
+          },
+          "address": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "chain": {
+            "description": "Chain id: 1 Ethereum, 10 Optimism, 56 BNB Chain, 143 Monad, 8453 Base, 42161 Arbitrum, 43114 Avalanche, sui_mainnet Sui",
+            "type": "string",
+            "oneOf": [
+              {
+                "type": "string",
+                "title": "Ethereum",
+                "enum": [
+                  "1"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "Optimism",
+                "enum": [
+                  "10"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "BNB Chain",
+                "enum": [
+                  "56"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "Monad",
+                "enum": [
+                  "143"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "Base",
+                "enum": [
+                  "8453"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "Arbitrum",
+                "enum": [
+                  "42161"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "Avalanche",
+                "enum": [
+                  "43114"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "Sui",
+                "enum": [
+                  "sui_mainnet"
+                ]
+              }
+            ]
+          },
+          "timestamps": {
+            "minItems": 1,
+            "maxItems": 100,
+            "type": "array",
+            "items": {
+              "type": "string",
+              "format": "date-time",
+              "pattern": "^(?:(?:\\d\\d[2468][048]|\\d\\d[13579][26]|\\d\\d0[48]|[02468][048]00|[13579][26]00)-02-29|\\d{4}-(?:(?:0[13578]|1[02])-(?:0[1-9]|[12]\\d|3[01])|(?:0[469]|11)-(?:0[1-9]|[12]\\d|30)|(?:02)-(?:0[1-9]|1\\d|2[0-8])))T(?:(?:[01]\\d|2[0-3]):[0-5]\\d(?::[0-5]\\d(?:\\.\\d+)?)?(?:Z|([+-](?:[01]\\d|2[0-3]):[0-5]\\d)))$"
+            }
+          }
+        },
+        "required": [
+          "timestamps"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "get_portfolio_value",
+      "title": "Get portfolio value",
+      "capability": "portfolio",
+      "capabilityName": "Portfolio value",
+      "readOnly": true,
+      "destructive": false,
+      "description": "Total USD value across every wallet address you track: wallet token balances plus DeFi positions (lending, staking, LPs, rewards — net of debt), with the split as `walletValue` + `defiValue` = `totalValue`, overall and per address and chain. Receipt and LP tokens a DeFi position already counts are not also counted as wallet balances. Rows cover the chains each address holds something on. A row whose `walletValue` is null is a chain where the address holds DeFi positions but whose wallet balances the connector does not read. A row with an `error` could not be read at all. Across every tracked wallet, each wallet is read from its latest stored portfolio sample (the Sentio API samples tracked wallets hourly): such an entry says `source: \"sample\"` and gives its time as `asOf`. A wallet without a recent sample, and any Sui wallet (its stored history covers fewer protocols), is scanned live (`source: \"live\"`). For one wallet's current state, ask for it by address. An aggregate answers within about 40 s: a wallet it could not re-read in time is answered from its last live read of the past 15 minutes when there is one (`asOf` says when), and otherwise comes back with `pending: true`, `partial: true` and no figures, and the total is marked partial. Its scan keeps running, so asking again in a minute usually returns it — do not report a pending wallet as empty. The Sentio portfolio API answers within about 25 s: when it stops a scan before reading everything, or a chain or protocol read fails (for example the wallet token-balance provider), the result (and each affected entry) carries `partial: true` and `missing` lists the chains and protocols not read. Its values are then incomplete and can be too low or too high (an unread position is left out; a debt left unpriced overstates a net value) — say so, and retry later or ask for fewer chains rather than reporting them as complete.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "open_portfolio",
+      "title": "Open portfolio",
+      "capability": "portfolio",
+      "capabilityName": "Portfolio value",
+      "readOnly": true,
+      "destructive": false,
+      "description": "Open the portfolio as an interactive view beside the conversation: token balances and DeFi positions of every wallet address you track, with filters and per-holding history the user can explore. Use it when the user asks to open, show or explore their portfolio; use get_portfolio_value for a quick figure. Returns the same data as get_portfolio_value. In hosts without a side panel the view renders inline. Across every tracked wallet, each wallet is read from its latest stored portfolio sample (the Sentio API samples tracked wallets hourly): such an entry says `source: \"sample\"` and gives its time as `asOf`. A wallet without a recent sample, and any Sui wallet (its stored history covers fewer protocols), is scanned live (`source: \"live\"`). For one wallet's current state, ask for it by address. An aggregate answers within about 40 s: a wallet it could not re-read in time is answered from its last live read of the past 15 minutes when there is one (`asOf` says when), and otherwise comes back with `pending: true`, `partial: true` and no figures, and the total is marked partial. Its scan keeps running, so asking again in a minute usually returns it — do not report a pending wallet as empty. The Sentio portfolio API answers within about 25 s: when it stops a scan before reading everything, or a chain or protocol read fails (for example the wallet token-balance provider), the result (and each affected entry) carries `partial: true` and `missing` lists the chains and protocols not read. Its values are then incomplete and can be too low or too high (an unread position is left out; a debt left unpriced overstates a net value) — say so, and retry later or ask for fewer chains rather than reporting them as complete.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "list_wallet_addresses",
+      "title": "List tracked wallets",
+      "capability": "addresses",
+      "capabilityName": "Tracked addresses",
+      "readOnly": true,
+      "destructive": false,
+      "description": "The wallet addresses you track. Each one covers every supported chain of its kind (EVM or Sui), listed in `chains`.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "get_defi_positions",
+      "title": "Get DeFi positions",
+      "capability": "defi",
+      "capabilityName": "DeFi positions",
+      "readOnly": true,
+      "destructive": false,
+      "description": "Cross-chain DeFi positions (lending, staking, LPs, rewards) — lending markets, liquid staking, LP pools and more, across every chain the Sentio portfolio API covers (EVM chains for a 0x EVM address, Sui for a 64-hex Sui address). Pass address for one wallet, or pass no arguments to get the positions of every wallet you track in a single call. Each position carries its `chain` id. A wallet with an `error` could not be read at all. Across every tracked wallet, each wallet is read from its latest stored portfolio sample (the Sentio API samples tracked wallets hourly): such an entry says `source: \"sample\"` and gives its time as `asOf`. A wallet without a recent sample, and any Sui wallet (its stored history covers fewer protocols), is scanned live (`source: \"live\"`). For one wallet's current state, ask for it by address. An aggregate answers within about 40 s: a wallet it could not re-read in time is answered from its last live read of the past 15 minutes when there is one (`asOf` says when), and otherwise comes back with `pending: true`, `partial: true` and no figures, and the total is marked partial. Its scan keeps running, so asking again in a minute usually returns it — do not report a pending wallet as empty. The Sentio portfolio API answers within about 25 s: when it stops a scan before reading everything, or a chain or protocol read fails (for example the wallet token-balance provider), the result (and each affected entry) carries `partial: true` and `missing` lists the chains and protocols not read. Its values are then incomplete and can be too low or too high (an unread position is left out; a debt left unpriced overstates a net value) — say so, and retry later or ask for fewer chains rather than reporting them as complete.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "get_token_balance_history",
+      "title": "Get token balance history",
+      "capability": "balances",
+      "capabilityName": "Token balances",
+      "readOnly": true,
+      "destructive": false,
+      "description": "How the USD value of one wallet token changed over the last 24h or 7d, as hourly points each valued at that instant's price (the amount held and price are not reported). A chain's native coin and its wrapped twin (ETH, WETH, ...) are read the slower way instead — one historical portfolio scan per point on a coarser grid, with the amount and price reported. Identify the holding from a get_wallet_balances row: `address` is the wallet, `chain` its chain id (a numeric EVM chain id, or sui_mainnet), `symbol` the token symbol and `token` the contract address (omit `token` for an EVM chain's native coin; on Sui `token` is required — the coin type, SUI's included). `range` is 24h (13 points · every 2h) or 7d (15 points · every 12h). Ordinary tokens are one stored-history read and fast; native and wrapped coins take tens of seconds. Use it for one holding at a time.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "chain": {
+            "type": "string",
+            "description": "Chain id: a numeric EVM chain id, or sui_mainnet; tracked chains are 1 Ethereum, 10 Optimism, 56 BNB Chain, 143 Monad, 8453 Base, 42161 Arbitrum, 43114 Avalanche, sui_mainnet Sui"
+          },
+          "symbol": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 40
+          },
+          "token": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "range": {
+            "default": "24h",
+            "type": "string",
+            "enum": [
+              "24h",
+              "7d"
+            ]
+          }
+        },
+        "required": [
+          "address",
+          "chain",
+          "symbol"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "get_defi_position_history",
+      "title": "Get DeFi position history",
+      "capability": "defi",
+      "capabilityName": "DeFi positions",
+      "readOnly": true,
+      "destructive": false,
+      "description": "How the size of one DeFi position changed over the last 24h or 7d, as a series of USD values. Identify the position from a get_defi_positions row: `address` is the wallet, `chain` the position's chain id (a numeric EVM chain id, or sui_mainnet), `protocol` its protocolId, `label` its label and `group` its id (labels can repeat within a protocol — e.g. one 'Lending' row per market — and `group` picks the right one). Values are the position's size at today's prices (the portfolio API does not reprice past states), so the curve shows deposits, withdrawals, accrued debt and rewards — not price moves. `range` is 24h (13 points · every 2h) or 7d (15 points · every 12h). Each point is one historical portfolio scan, so this call is slow (tens of seconds) — use it for one position at a time.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "string",
+            "maxLength": 255
+          },
+          "chain": {
+            "type": "string",
+            "description": "Chain id: a numeric EVM chain id, or sui_mainnet; tracked chains are 1 Ethereum, 10 Optimism, 56 BNB Chain, 143 Monad, 8453 Base, 42161 Arbitrum, 43114 Avalanche, sui_mainnet Sui"
+          },
+          "protocol": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 100
+          },
+          "label": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 200
+          },
+          "group": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 300
+          },
+          "range": {
+            "default": "24h",
+            "type": "string",
+            "enum": [
+              "24h",
+              "7d"
+            ]
+          }
+        },
+        "required": [
+          "address",
+          "chain",
+          "protocol",
+          "label"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "add_wallet_address",
+      "title": "Track wallet address",
+      "capability": "addresses",
+      "capabilityName": "Tracked addresses",
+      "readOnly": false,
+      "destructive": false,
+      "description": "Track a wallet address for this account, so every other tool (balances, portfolio value, DeFi positions) starts covering it. Accepts a 0x EVM address, a .eth ENS name (resolved to an address before saving) or a 64-hex Sui address. A wallet covers every supported chain of its kind — Ethereum, Optimism, BNB Chain, Monad, Base, Arbitrum, Avalanche for an EVM address or ENS name; Sui for a Sui address — and picks up newly supported chains automatically; the result lists them in `chains`. Idempotent: an address already tracked comes back as its existing entry, flagged `alreadyTracked`, instead of being duplicated.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "string",
+            "maxLength": 255
+          }
+        },
+        "required": [
+          "address"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "remove_wallet_address",
+      "title": "Stop tracking wallet address",
+      "capability": "addresses",
+      "capabilityName": "Tracked addresses",
+      "readOnly": false,
+      "destructive": true,
+      "description": "Stop tracking a wallet address for this account, on every chain it covers, so balances, portfolio value and DeFi positions no longer include it. Accepts a 0x EVM address, a .eth ENS name (resolved before matching) or a Sui address. Returns the removed entry; fails with \"not tracked\" when the address is not tracked. Only affects this account's own tracked-address list.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "address": {
+            "type": "string",
+            "maxLength": 255
+          }
+        },
+        "required": [
+          "address"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "call_rpc",
+      "title": "Call blockchain RPC",
+      "capability": "rpc",
+      "capabilityName": "Blockchain RPC",
+      "readOnly": true,
+      "destructive": false,
+      "description": "Run one read-only JSON-RPC method against a chain node through Sentio's RPC service, for on-chain data the other tools do not cover: a contract's storage or code, an eth_call to a view function, a transaction or receipt, a block, event logs. EVM chains only: `chain` is one of 1 Ethereum, 10 Optimism, 56 BNB Chain, 143 Monad, 8453 Base, 42161 Arbitrum, 43114 Avalanche. `method` is the node's own method name (eth_*, net_version, web3_clientVersion) and `params` its positional parameter array, exactly as the node expects them (hex quantities, 0x-prefixed addresses). Only read methods are allowed — sending transactions, signing and debug/trace methods are rejected. eth_call and eth_estimateGas are capped at 10M gas. eth_getLogs needs blockHash, or fromBlock and toBlock as hex block numbers at most 1000 blocks apart (call eth_blockNumber first for the latest block). Results over 100k characters are refused rather than truncated — narrow the request. Values come back raw (hex, unscaled by token decimals); prefer get_wallet_balances and get_token_price for balances and prices.",
+      "inputSchema": {
+        "type": "object",
+        "properties": {
+          "chain": {
+            "description": "Chain id: 1 Ethereum, 10 Optimism, 56 BNB Chain, 143 Monad, 8453 Base, 42161 Arbitrum, 43114 Avalanche",
+            "type": "string",
+            "oneOf": [
+              {
+                "type": "string",
+                "title": "Ethereum",
+                "enum": [
+                  "1"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "Optimism",
+                "enum": [
+                  "10"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "BNB Chain",
+                "enum": [
+                  "56"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "Monad",
+                "enum": [
+                  "143"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "Base",
+                "enum": [
+                  "8453"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "Arbitrum",
+                "enum": [
+                  "42161"
+                ]
+              },
+              {
+                "type": "string",
+                "title": "Avalanche",
+                "enum": [
+                  "43114"
+                ]
+              }
+            ]
+          },
+          "method": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64,
+            "description": "JSON-RPC method name, e.g. eth_call or eth_getLogs"
+          },
+          "params": {
+            "default": [],
+            "description": "Positional JSON-RPC params",
+            "maxItems": 8,
+            "type": "array",
+            "items": {}
+          }
+        },
+        "required": [
+          "chain",
+          "method"
+        ],
+        "additionalProperties": false
+      }
+    }
+  ]
+}

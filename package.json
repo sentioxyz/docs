@@ -5,8 +5,9 @@
   "scripts": {
     "gen:api": "node scripts/generate-api.mjs && node scripts/generate-api-index.mjs",
     "gen:sdk": "node scripts/generate-sdk.mjs",
-    "prebuild": "npm run gen:api",
+    "prebuild": "npm run gen:api && npm run check:connect-tools",
     "build": "next build",
+    "check:connect-tools": "node scripts/check-connect-tools.mjs",
     "predev": "npm run gen:api",
     "dev": "next dev",
     "start": "next start",
