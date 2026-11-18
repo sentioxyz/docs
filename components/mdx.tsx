@@ -3,6 +3,7 @@ import type { MDXComponents } from 'mdx/types';
 import type { ComponentProps } from 'react';
 import { OpenAPIPage } from './openapi-page';
 import { Embed } from './embed';
+import { ConnectToolsTable } from './connect-tools-table';
 
 const DefaultImage = defaultMdxComponents.img;
 
@@ -24,6 +25,7 @@ export function getMDXComponents(components?: MDXComponents) {
     img: MdxImage,
     OpenAPIPage,
     Embed,
+    ConnectToolsTable,
     ...components,
   } satisfies MDXComponents;
 }

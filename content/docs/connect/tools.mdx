@@ -3,24 +3,13 @@ title: "🛠️ Tools reference"
 description: "Every MCP tool Sentio Connect exposes, with arguments and results"
 ---
 
-Sentio Connect exposes twelve tools. Ten are read-only; two (`add_wallet_address`, `remove_wallet_address`) change your tracked-address list and need a connection with the `mcp:write` scope. Each tool belongs to a [capability](/connect/dashboard#data-your-assistant-can-read) you can turn off.
+Sentio Connect exposes the tools below. Most are read-only; the write tools change your tracked-address list and need a connection with the `mcp:write` scope. Each tool belongs to a [capability](/connect/dashboard#data-your-assistant-can-read) you can turn off.
 
 You don't call these tools yourself — your assistant picks them based on your question. This page helps you understand what the assistant can do and write better prompts.
 
-| Tool | Capability | Access |
-| --- | --- | --- |
-| [`get_wallet_balances`](#get_wallet_balances) | Token balances | read-only |
-| [`get_token_balance_history`](#get_token_balance_history) | Token balances | read-only |
-| [`get_portfolio_value`](#get_portfolio_value) | Portfolio value | read-only |
-| [`open_portfolio`](#open_portfolio) | Portfolio value | read-only |
-| [`list_wallet_addresses`](#list_wallet_addresses) | Tracked addresses | read-only |
-| [`add_wallet_address`](#add_wallet_address) | Tracked addresses | **write** |
-| [`remove_wallet_address`](#remove_wallet_address) | Tracked addresses | **write**, destructive |
-| [`get_token_price`](#get_token_price) | Token prices | read-only |
-| [`get_token_history_price`](#get_token_history_price) | Token prices | read-only |
-| [`get_defi_positions`](#get_defi_positions) | DeFi positions | read-only |
-| [`get_defi_position_history`](#get_defi_position_history) | DeFi positions | read-only |
-| [`call_rpc`](#call_rpc) | Blockchain RPC | read-only |
+<ConnectToolsTable />
+
+Arguments marked `?` are optional.
 
 ## Common arguments
 

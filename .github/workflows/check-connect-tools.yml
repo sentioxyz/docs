@@ -1,0 +1,21 @@
+# Fails a PR whose Sentio Connect tools reference has drifted from the synced tool
+# list (content/docs/connect/tools.json): a tool without a written section, or a
+# section for a tool that's gone. The same check runs before every build.
+name: Check Connect tools
+
+on:
+  pull_request:
+    paths:
+      - content/docs/connect/**
+      - scripts/check-connect-tools.mjs
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+      - run: node scripts/check-connect-tools.mjs
