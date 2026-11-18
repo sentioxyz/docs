@@ -11,9 +11,9 @@ The Sentio Connect web app at [connect.sentio.xyz](https://connect.sentio.xyz) i
 
 ### Your wallets
 
-Lists every wallet you track, with its chain and current USD value.
+Lists every wallet you track, with the chains it covers and its current USD value.
 
-- **Add a wallet** — click **Add wallet**, enter a `0x…` address, an ENS name (`name.eth`) or a Sui address, and select one or more chains. An EVM address can be tracked on several EVM chains at once; each (address, chain) pair counts as one wallet.
+- **Add a wallet** — click **Add wallet**, enter a `0x…` address, an ENS name (`name.eth`) or a Sui address. The wallet covers every supported chain of its kind — every EVM chain for an EVM address, Sui for a Sui address — and the modal shows which.
 - **Remove a wallet** — click the **×** on its chip.
 
 Your assistant can do the same from a conversation with `add_wallet_address` and `remove_wallet_address`; changes show up here immediately.
@@ -50,10 +50,11 @@ Each card is a **capability**. Turn a capability off and the tools that depend o
 | Capability | Tools it enables |
 | --- | --- |
 | Token balances | `get_wallet_balances`, `get_token_balance_history` |
-| Token prices | `get_token_price` |
-| Portfolio value | `get_portfolio_value` |
+| Token prices | `get_token_price`, `get_token_history_price` |
+| Portfolio value | `get_portfolio_value`, `open_portfolio` |
 | Tracked addresses | `list_wallet_addresses`, `add_wallet_address`, `remove_wallet_address` |
 | DeFi positions | `get_defi_positions`, `get_defi_position_history` |
+| Blockchain RPC | `call_rpc` |
 
 ## Tools
 

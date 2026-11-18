@@ -3,18 +3,35 @@ title: "🛠️ Tools reference"
 description: "Every MCP tool Sentio Connect exposes, with arguments and results"
 ---
 
-Sentio Connect exposes nine tools. Seven are read-only; two (`add_wallet_address`, `remove_wallet_address`) change your tracked-address list and need a connection with the `mcp:write` scope. Each tool belongs to a [capability](/connect/dashboard#data-your-assistant-can-read) you can turn off.
+Sentio Connect exposes twelve tools. Ten are read-only; two (`add_wallet_address`, `remove_wallet_address`) change your tracked-address list and need a connection with the `mcp:write` scope. Each tool belongs to a [capability](/connect/dashboard#data-your-assistant-can-read) you can turn off.
 
 You don't call these tools yourself — your assistant picks them based on your question. This page helps you understand what the assistant can do and write better prompts.
+
+| Tool | Capability | Access |
+| --- | --- | --- |
+| [`get_wallet_balances`](#get_wallet_balances) | Token balances | read-only |
+| [`get_token_balance_history`](#get_token_balance_history) | Token balances | read-only |
+| [`get_portfolio_value`](#get_portfolio_value) | Portfolio value | read-only |
+| [`open_portfolio`](#open_portfolio) | Portfolio value | read-only |
+| [`list_wallet_addresses`](#list_wallet_addresses) | Tracked addresses | read-only |
+| [`add_wallet_address`](#add_wallet_address) | Tracked addresses | **write** |
+| [`remove_wallet_address`](#remove_wallet_address) | Tracked addresses | **write**, destructive |
+| [`get_token_price`](#get_token_price) | Token prices | read-only |
+| [`get_token_history_price`](#get_token_history_price) | Token prices | read-only |
+| [`get_defi_positions`](#get_defi_positions) | DeFi positions | read-only |
+| [`get_defi_position_history`](#get_defi_position_history) | DeFi positions | read-only |
+| [`call_rpc`](#call_rpc) | Blockchain RPC | read-only |
 
 ## Common arguments
 
 | Argument | Format |
 | --- | --- |
 | `address` | EVM: a `0x` address (40 hex chars) or an ENS name such as `vitalik.eth`. Sui: a `0x` address (64 hex chars). |
-| `chain` | `1` (Ethereum), `56` (BNB Chain), `8453` (Base), `42161` (Arbitrum) or `sui_mainnet`. Defaults to `1` where optional. |
+| `chain` | `1` (Ethereum), `10` (Optimism), `56` (BNB Chain), `143` (Monad), `8453` (Base), `42161` (Arbitrum), `43114` (Avalanche) or `sui_mainnet`. |
 | `token` | EVM: the token contract address (omit for the chain's native coin). Sui: the coin type, such as `0x2::sui::SUI` — always required on Sui. |
-| `range` | `24h` (13 points, every 2 hours) or `7d` (15 points, every 12 hours). Defaults to `24h`. |
+| `range` | `24h` or `7d`. Defaults to `24h`. |
+
+A tracked wallet is an **address**, not an (address, chain) pair: an EVM address covers every supported EVM chain, and a Sui address covers Sui. Newly supported chains are picked up automatically.
 
 ## Wallet & balances
 
@@ -28,35 +45,45 @@ Native coin and token balances, each valued in USD.
 | --- | --- |
 | `address` + `chain` | That wallet on that chain |
 | `address` + a list of chains | That wallet on several chains in one call (EVM chains together, or `sui_mainnet` alone) |
-| `address` only | That wallet on every chain it's tracked on (every chain of its family if untracked) |
-| No arguments | Every tracked wallet, with a grand total |
+| `address` only | That wallet on every chain of its kind (every EVM chain, or Sui) |
+| No arguments | Every tracked wallet, listing only the chains each one holds tokens on |
 
-Each token row includes `symbol`, `address`, `decimals`, `amount`, `price` and `value`.
+Each token row includes `symbol`, `address`, `decimals`, `amount`, `price` and `value`. Balances only — DeFi positions are in [`get_defi_positions`](#get_defi_positions) and [`get_portfolio_value`](#get_portfolio_value).
 
 ### `get_token_balance_history`
 
 **Capability:** Token balances · read-only
 
-How one wallet's balance of one token changed over the last 24 hours or 7 days.
+How the USD value of one wallet token changed over the last 24 hours or 7 days.
 
-- **Arguments:** `address`, `chain`, `symbol`, `token` (see above), `range`
-- **Returns:** a list of points with `timestamp`, `amount`, `priceUsd` (the price at that instant) and `valueUsd`
-
-<Callout type="info">
-  History takes one portfolio scan per point and can take tens of seconds. Assistants call it for one holding at a time.
-</Callout>
+- **Arguments:** `address`, `chain`, `symbol`, `token` (see above), `range` — identify the holding from a `get_wallet_balances` row
+- **Returns:** `points`, each with `timestamp` and `valueUsd`, valued at the price **at that instant**
+- Ordinary tokens come back as hourly points from stored history and return quickly; `amount` and `priceUsd` are not reported for them.
+- A chain's native coin and its wrapped twin (ETH, WETH, …) are read by replaying the portfolio at each point on a coarser grid (every 2 hours for `24h`, every 12 hours for `7d`), with `amount` and `priceUsd` reported. This takes tens of seconds.
 
 ### `get_portfolio_value`
 
 **Capability:** Portfolio value · read-only
 
-Total USD value across every tracked wallet, broken down per address and chain. Takes no arguments.
+Total USD value across every tracked wallet: token balances **plus** DeFi positions (net of debt). Takes no arguments.
+
+- **Returns:** `totalValue` = `walletValue` + `defiValue`, overall and per address and chain.
+- Receipt and LP tokens already counted by a DeFi position are not counted again as wallet balances.
+- A row with `walletValue: null` is a chain where the address holds DeFi positions but whose wallet balances Sentio Connect doesn't read.
+
+### `open_portfolio`
+
+**Capability:** Portfolio value · read-only
+
+Opens your portfolio as an interactive view: token balances and DeFi positions of every tracked wallet, with filters and per-holding history charts. Takes no arguments and returns the same data as `get_portfolio_value`.
+
+Assistants use it when you ask to *open*, *show* or *explore* your portfolio, and `get_portfolio_value` for a quick figure. Claude opens the view in its side panel; other hosts that support [interactive cards](#interactive-cards) render it inline.
 
 ### `list_wallet_addresses`
 
 **Capability:** Tracked addresses · read-only
 
-The wallets you track and the chain each is tracked on. Takes no arguments.
+The wallets you track, each with the chains it covers (`chains`). Takes no arguments.
 
 ### `add_wallet_address`
 
@@ -64,18 +91,18 @@ The wallets you track and the chain each is tracked on. Takes no arguments.
 
 Start tracking a wallet from the conversation.
 
-- **Arguments:** `address` (`0x` address, `.eth` name, or Sui address), `chain` (defaults to `1`)
-- ENS names are resolved before saving.
-- Idempotent: adding a wallet you already track returns the existing entry.
+- **Arguments:** `address` — a `0x` EVM address, a `.eth` name, or a Sui address. No chain is needed: the wallet covers every supported chain of its kind, listed in the result's `chains`.
+- ENS names are resolved before saving; the result includes `ensName`.
+- Idempotent: adding a wallet you already track returns the existing entry, flagged `alreadyTracked`.
 
 ### `remove_wallet_address`
 
 **Capability:** Tracked addresses · **write** (`mcp:write`), destructive
 
-Stop tracking a wallet from the conversation.
+Stop tracking a wallet from the conversation, on every chain it covers.
 
-- **Arguments:** `address`, optional `chain`. Pass `chain` to untrack the wallet on one chain; omit it to untrack it everywhere.
-- Returns the removed entries, or a "not tracked" error when nothing matched.
+- **Arguments:** `address` — a `0x` address, a `.eth` name, or a Sui address.
+- Returns the removed entry, or a "not tracked" error when the address isn't tracked.
 - The tool is marked destructive, so assistants typically ask you to confirm before running it.
 
 ## Prices
@@ -89,6 +116,16 @@ USD spot price for a token.
 - **By symbol:** `symbol`, for example `ETH` or `SUI`
 - **By token:** `address` + `chain` — a contract address on EVM chains, or a coin type such as `0x2::sui::SUI` on Sui
 
+### `get_token_history_price`
+
+**Capability:** Token prices · read-only
+
+Historical USD prices for one token at the instants you ask for. No wallet or tracked holding is required.
+
+- **Arguments:** `symbol` alone, **or** `address` + `chain` (as in `get_token_price`); `timestamps` — 1 to 100 ISO 8601 date-times with `Z` or a timezone offset, none in the future
+- **Returns:** `prices`, each with `price`, `timestamp` and an optional `source`. The timestamp is the actual sample time, which can differ from the instant requested.
+- Instants without a sample are left out; an empty list means no historical price was found, never a price of zero.
+
 ## DeFi positions
 
 ### `get_defi_positions`
@@ -97,7 +134,7 @@ USD spot price for a token.
 
 Lending, staking, liquidity and reward positions across every chain the Sentio portfolio API covers.
 
-- **Arguments:** optional `address`. Omit it to get every tracked wallet.
+- **Arguments:** optional `address`. Omit it to get every tracked wallet in one call.
 - **Returns:** per-protocol totals (asset, debt and reward value) and individual positions, each with `protocolId`, `protocolName`, `chain`, `label`, `valueUsd` and its asset / debt / reward components.
 
 ### `get_defi_position_history`
@@ -106,9 +143,25 @@ Lending, staking, liquidity and reward positions across every chain the Sentio p
 
 How the size of one DeFi position changed over the last 24 hours or 7 days, valued at **today's** prices — so the curve shows deposits, withdrawals, accrued debt and rewards, not price moves.
 
-- **Arguments:** `address`, `chain`, `protocol` (the position's `protocolId`), `label`, `range`
-- Like token history, this is slow and runs for one position at a time.
+- **Arguments:** `address`, `chain`, `protocol` (the position's `protocolId`), `label`, optional `group` (the position's id — labels can repeat within a protocol, such as one "Lending" row per market), `range`
+- One portfolio scan per point (every 2 hours for `24h`, every 12 hours for `7d`), so it takes tens of seconds and runs for one position at a time.
+
+## Blockchain RPC
+
+### `call_rpc`
+
+**Capability:** Blockchain RPC · read-only
+
+Runs one read-only JSON-RPC method against a chain node through Sentio's RPC service, for on-chain data the other tools don't cover: contract storage or code, an `eth_call` to a view function, a transaction or receipt, a block, event logs.
+
+- **Arguments:** `chain` — an EVM chain id from the list above (Sui is not supported); `method` — the node's method name; `params` — its positional parameter array, exactly as the node expects (hex quantities, `0x` addresses)
+- **Returns:** `{ chain, method, result }`, with values raw (hex, not scaled by token decimals)
+- **Allowed methods:** `eth_blockNumber`, `eth_chainId`, `eth_syncing`, `eth_gasPrice`, `eth_maxPriorityFeePerGas`, `eth_feeHistory`, `eth_getBalance`, `eth_getCode`, `eth_getStorageAt`, `eth_getTransactionCount`, `eth_getProof`, `eth_call`, `eth_estimateGas`, `eth_getBlockByNumber`, `eth_getBlockByHash`, `eth_getBlockReceipts`, `eth_getBlockTransactionCountByNumber`, `eth_getBlockTransactionCountByHash`, `eth_getTransactionByHash`, `eth_getTransactionByBlockNumberAndIndex`, `eth_getTransactionByBlockHashAndIndex`, `eth_getTransactionReceipt`, `eth_getLogs`, `net_version`, `web3_clientVersion`
+
+<Callout type="info">
+  Sending transactions, signing, and debug / trace / filter methods are always rejected. `eth_call` and `eth_estimateGas` are capped at 10M gas. `eth_getLogs` needs a `blockHash`, or hex `fromBlock` and `toBlock` at most 1,000 blocks apart. Results over 100k characters are refused rather than truncated — narrow the request.
+</Callout>
 
 ## Interactive cards
 
-In hosts that support [MCP Apps](https://modelcontextprotocol.io/), such as Claude and ChatGPT, `get_wallet_balances` and `get_defi_positions` render as interactive cards. Click a row to chart that holding's history without leaving the conversation. Other hosts, such as Codex, show the same data as text.
+In hosts that support [MCP Apps](https://modelcontextprotocol.io/), such as Claude and ChatGPT, `get_wallet_balances`, `get_portfolio_value` and `get_defi_positions` render as interactive cards, and `open_portfolio` renders the full portfolio view. Click a row to chart that holding's history without leaving the conversation — the card calls `get_token_balance_history` or `get_defi_position_history` for you. In Claude, a card can also expand into the side panel. Other hosts, such as Codex, show the same data as text.

@@ -17,7 +17,7 @@ Open [connect.sentio.xyz](https://connect.sentio.xyz) and sign in. No API key is
 
 ### Add a wallet
 
-On **Home**, click **Add wallet**. Enter an EVM address (`0x…`), an ENS name (`name.eth`) or a Sui address, pick one or more chains, and click **Add wallet**.
+On **Home**, click **Add wallet**. Enter an EVM address (`0x…`), an ENS name (`name.eth`) or a Sui address, and click **Add wallet**. It is tracked on every supported chain of its kind.
 
 ![Add wallet dialog](/assets/connect/add-wallet.jpg)
 
@@ -57,7 +57,10 @@ The assistant calls `get_portfolio_value` and `get_wallet_balances` and answers 
 | "List my wallets." | `list_wallet_addresses` |
 | "What do I hold on Base?" | `get_wallet_balances` for your wallets on chain `8453` |
 | "What's the price of SUI?" | `get_token_price` by symbol |
+| "What was ETH worth on January 1st?" | `get_token_history_price` |
+| "Open my portfolio." | `open_portfolio` — Claude shows it in the side panel |
 | "Show my Aave and Uniswap positions." | `get_defi_positions` |
 | "How did my WETH change over the past week?" | `get_token_balance_history` with `range: 7d` |
-| "Track `0x…` on Ethereum and Arbitrum." | `add_wallet_address` (needs write access) |
+| "Track `0x…`." | `add_wallet_address` — covers every EVM chain (needs write access) |
 | "Stop tracking my Sui wallet." | `remove_wallet_address` — most assistants ask you to confirm first |
+| "What's the total supply of USDC on Base?" | `call_rpc` with an `eth_call` to the token contract |
